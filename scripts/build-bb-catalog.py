@@ -232,32 +232,13 @@ BB_WOMEN_SHOE_SIZE_CHART = {
     ],
 }
 
-# Burberry apparel body charts (UK / IT) — coats, trench, jackets, ready-to-wear
+# Official Burberry body charts (uk.burberry.com size-guide, centimetres).
+# Coats, dresses, jackets and tops share one women's UK table that starts at 0.
+# Do not replace these with the older 02–20 table.
 BB_WOMEN_APPAREL_UK_CHART = {
     "id": "bb-women-apparel-uk",
     "titleKo": "버버리 여성 의류 사이즈 차트 (UK)",
-    "noteKo": "신체 치수(cm) 기준입니다. 트렌치·코트·재킷 등 UK 숫자 사이즈에 해당합니다. 두 사이즈 사이라면 여유 핏은 큰 사이즈를 선택하세요.",
-    "headers": ["UK", "가슴", "허리", "엉덩이"],
-    "rows": [
-        ["02", "78", "59", "85"],
-        ["04", "80", "61", "87"],
-        ["06", "83", "64", "90"],
-        ["08", "86", "67", "93"],
-        ["10", "89", "70", "96"],
-        ["12", "94", "75", "101"],
-        ["14", "99", "80", "106"],
-        ["16", "104", "85", "111"],
-        ["18", "111", "93", "118"],
-        ["20", "116", "98", "123"],
-    ],
-}
-
-# Official UK guide for Long Cashmere Kensington Trench Coat (p81361211).
-# The shared apparel chart starts at UK 02 and does not match this guide.
-BB_LONG_CASHMERE_KENSINGTON_COAT_CHART = {
-    "id": "bb-81361211-women-uk",
-    "titleKo": "버버리 여성 의류 사이즈 차트 (UK)",
-    "noteKo": "영국 공식 사이즈 가이드의 신체 치수(cm)입니다. 이 코트는 UK 0부터 판매됩니다. 두 사이즈 사이라면 여유 핏은 큰 사이즈를 선택하세요.",
+    "noteKo": "영국 공식 사이즈 가이드의 신체 치수(cm)입니다. UK 0부터 18까지입니다. 두 사이즈 사이라면 여유 핏은 큰 사이즈를 선택하세요.",
     "headers": ["UK", "가슴", "허리", "엉덩이"],
     "rows": [
         ["0", "72", "55", "80"],
@@ -276,69 +257,122 @@ BB_LONG_CASHMERE_KENSINGTON_COAT_CHART = {
 BB_WOMEN_APPAREL_ALPHA_CHART = {
     "id": "bb-women-apparel-alpha",
     "titleKo": "버버리 여성 의류 사이즈 차트 (알파)",
-    "noteKo": "신체 치수(cm) 기준입니다. XXS–XXXL 알파 사이즈 상품에 해당합니다.",
+    "noteKo": "영국 공식 사이즈 가이드의 신체 치수(cm)입니다. XXXS–XXXL 알파 사이즈에 해당합니다.",
     "headers": ["사이즈", "가슴", "허리", "엉덩이"],
     "rows": [
-        ["XXS", "78", "59", "85"],
-        ["XS", "81", "62", "88"],
-        ["S", "86", "67", "93"],
-        ["M", "91", "72", "98"],
-        ["L", "97", "78", "104"],
-        ["XL", "104", "85", "111"],
-        ["XXL", "111", "93", "118"],
-        ["XXXL", "118", "100", "125"],
+        ["XXXS", "66", "49", "74"],
+        ["XXS", "72", "55", "80"],
+        ["XS", "78", "61", "86"],
+        ["S", "84", "67", "92"],
+        ["M", "90", "73", "98"],
+        ["L", "96", "79", "104"],
+        ["XL", "102", "85", "110"],
+        ["XXL", "108", "91", "116"],
+        ["XXXL", "114", "97", "122"],
     ],
 }
 
 BB_MEN_APPAREL_IT_CHART = {
     "id": "bb-men-apparel-it",
     "titleKo": "버버리 남성 의류 사이즈 차트 (IT)",
-    "noteKo": "신체 치수(cm) 기준입니다. 트렌치·코트·재킷 등 IT 숫자 사이즈에 해당합니다.",
-    "headers": ["IT", "가슴", "허리"],
+    "noteKo": "영국 공식 사이즈 가이드의 신체 치수(cm)입니다. 재킷·코트 IT 42–60에 해당합니다.",
+    "headers": ["IT", "가슴", "허리", "엉덩이"],
     "rows": [
-        ["44", "88", "76"],
-        ["46", "92", "80"],
-        ["48", "96", "84"],
-        ["50", "100", "88"],
-        ["52", "104", "92"],
-        ["54", "108", "96"],
-        ["56", "112", "100"],
-        ["58", "116", "104"],
-        ["60", "120", "108"],
+        ["42", "86", "71", "85"],
+        ["44", "90", "75", "89"],
+        ["46", "94", "79", "93"],
+        ["48", "98", "83", "97"],
+        ["50", "102", "87", "101"],
+        ["52", "106", "91", "105"],
+        ["54", "110", "95", "109"],
+        ["56", "114", "99", "113"],
+        ["58", "118", "103", "117"],
+        ["60", "122", "107", "121"],
     ],
 }
 
 BB_MEN_APPAREL_ALPHA_CHART = {
     "id": "bb-men-apparel-alpha",
     "titleKo": "버버리 남성 의류 사이즈 차트 (알파)",
-    "noteKo": "신체 치수(cm) 기준입니다. XS–XXXL 알파 사이즈 상품에 해당합니다.",
-    "headers": ["사이즈", "가슴", "허리"],
+    "noteKo": "영국 공식 사이즈 가이드의 신체 치수(cm)입니다. XXXS–XXXL 알파 사이즈에 해당합니다.",
+    "headers": ["사이즈", "가슴", "허리", "엉덩이"],
     "rows": [
-        ["XS", "88", "76"],
-        ["S", "94", "82"],
-        ["M", "100", "88"],
-        ["L", "106", "94"],
-        ["XL", "114", "102"],
-        ["XXL", "122", "110"],
-        ["XXXL", "130", "118"],
+        ["XXXS", "74", "59", "73"],
+        ["XXS", "80", "65", "79"],
+        ["XS", "86", "71", "85"],
+        ["S", "92", "77", "91"],
+        ["M", "98", "83", "97"],
+        ["L", "104", "89", "103"],
+        ["XL", "110", "95", "109"],
+        ["XXL", "116", "101", "115"],
+        ["XXXL", "122", "107", "121"],
     ],
 }
 
 BB_KIDS_APPAREL_CHART = {
     "id": "bb-kids-apparel",
     "titleKo": "버버리 키즈 의류 사이즈 차트",
-    "noteKo": "연령·키(cm) 참고 가이드입니다. 상품별 표기 사이즈를 우선하세요.",
-    "headers": ["사이즈", "연령", "키(cm)", "가슴"],
+    "noteKo": "영국 공식 키즈 의류 가이드의 키·가슴·허리(cm)입니다. 개월 사이즈는 공식 가이드에 치수가 없습니다.",
+    "headers": ["사이즈", "키", "가슴", "허리"],
     "rows": [
-        ["3Y", "3세", "98", "55"],
-        ["4Y", "4세", "104", "57"],
-        ["6Y", "6세", "116", "61"],
-        ["8Y", "8세", "128", "66"],
-        ["10Y", "10세", "140", "71"],
-        ["12Y", "12세", "152", "76"],
-        ["14Y", "14세", "164", "81"],
+        ["3Y", "98", "54.5", "52.5"],
+        ["4Y", "104", "56", "54.5"],
+        ["5Y", "110", "58", "55"],
+        ["6Y", "116", "60.5", "56"],
+        ["7Y", "122", "63", "57"],
+        ["8Y", "128", "64", "59"],
+        ["10Y", "140", "71", "63.5"],
+        ["12Y", "152", "78", "68"],
+        ["14Y", "164", "86", "73"],
+        ["S", "86 - 92", "51 - 52", "49.75 - 50.5"],
+        ["M", "98 - 116", "54.5 - 60.5", "52.5 - 59"],
+        ["L", "128 - 164", "64 - 86", "59 - 73"],
     ],
 }
+
+BB_MEN_JEANS_CHART = {
+    "id": "bb-men-jeans",
+    "titleKo": "버버리 남성 진 사이즈 차트",
+    "noteKo": "영국 공식 진 가이드의 허리·엉덩이(cm)입니다. 사이즈 숫자는 허리 표기입니다.",
+    "headers": ["사이즈", "허리", "엉덩이"],
+    "rows": [
+        ["28", "71", "85"],
+        ["29", "73.5", "87.5"],
+        ["30", "76", "90"],
+        ["31", "78.5", "92.5"],
+        ["32", "81", "95"],
+        ["33", "83.5", "97.5"],
+        ["34", "86", "100"],
+        ["35", "88.5", "102.5"],
+        ["36", "91", "105"],
+        ["38", "96", "110"],
+        ["40", "101", "115"],
+        ["42", "106", "120"],
+    ],
+}
+
+BB_MEN_BELT_CHART = {
+    "id": "bb-men-belts",
+    "titleKo": "버버리 남성 벨트 사이즈 차트",
+    "noteKo": "영국 공식 벨트 가이드의 길이(cm)입니다.",
+    "headers": ["사이즈", "길이"],
+    "rows": [
+        ["75", "75cm"],
+        ["80", "80cm"],
+        ["85", "85cm"],
+        ["90", "90cm"],
+        ["95", "95cm"],
+        ["100", "100cm"],
+        ["105", "105cm"],
+        ["115", "115cm"],
+        ["120", "120cm"],
+    ],
+}
+
+_UK_APPAREL = {"0", "00", "02", "04", "06", "08", "10", "12", "14", "16", "18", "20"}
+_IT_APPAREL = {"42", "44", "46", "48", "50", "52", "54", "56", "58", "60"}
+_ALPHA = {"XXXS", "XXS", "XS", "S", "M", "L", "XL", "XXL", "XXXL", "XXXXL", "3XL", "4XL"}
+_BELT = {"65", "70", "75", "80", "85", "90", "95", "100", "105", "110", "115", "120"}
 
 
 def is_kids_product(cols: list[str]) -> bool:
@@ -419,84 +453,100 @@ def one_size_chart(measurements: str | None) -> dict | None:
     }
 
 
-def official_size_chart_for_product(pid: str) -> dict | None:
-    """Per-product official charts. Shared Burberry charts stay as they are."""
-    if pid == "bb-long-cashmere-kensington-trench-coat-7":
-        return BB_LONG_CASHMERE_KENSINGTON_COAT_CHART
-    return None
+def _chart_labels(size_labels: list[str] | None) -> list[str]:
+    return [
+        str(s).strip()
+        for s in (size_labels or [])
+        if str(s).strip() and str(s).strip() != "프리사이즈"
+    ]
+
+
+def _tabbed_chart(chart_id: str, title: str, note: str, tabs: list[dict]) -> dict:
+    first = tabs[0]
+    return {
+        "id": chart_id,
+        "titleKo": title,
+        "noteKo": note,
+        "headers": first["headers"],
+        "rows": first["rows"],
+        "tabs": tabs,
+    }
+
+
+def _is_waist_jeans(labels: list[str]) -> bool:
+    """Waist-labelled denim (24–42), not UK 02–18 and not a dress-shirt collar."""
+    if any(s in _UK_APPAREL for s in labels):
+        return False
+    nums = []
+    for s in labels:
+        if not re.fullmatch(r"\d{2}", s):
+            return False
+        nums.append(int(s))
+    if len(nums) < 4 or min(nums) > 32 or max(nums) > 42:
+        return False
+    return True
 
 
 def size_chart_for_collections(cols: list[str], size_labels: list[str] | None = None) -> dict | None:
-    """Pick shoe or apparel size chart for Burberry collections."""
-    labels = [str(s).upper() for s in (size_labels or [])]
-    numeric_uk = any(re.fullmatch(r"0?\d{1,2}", s) for s in labels)
-    numeric_it = any(re.fullmatch(r"4\d|5\d|6\d", s) for s in labels)
-    alpha = any(
-        s in {"XXS", "XS", "S", "M", "L", "XL", "XXL", "XXXL", "3XL", "4XL"}
-        for s in labels
-    )
-
+    """Pick the official Burberry chart that matches the sizes actually sold."""
+    labels = _chart_labels(size_labels)
+    upper = [s.upper() for s in labels]
     shoe = shoe_size_chart_for_collections(cols)
     if shoe:
         return shoe
 
-    if is_kids_product(cols) or any(str(c).startswith("bb-kids") for c in cols):
-        return BB_KIDS_APPAREL_CHART
+    if labels and all(s in _BELT for s in labels):
+        return BB_MEN_BELT_CHART
 
-    # Apparel / trench / coats / ready-to-wear
-    apparelish = any(
-        any(
-            k in str(c)
-            for k in (
-                "trench",
-                "coat",
-                "jacket",
-                "clothes",
-                "dress",
-                "knit",
-                "trouser",
-                "skirt",
-                "top",
-                "shirt",
-                "polo",
-                "hoodie",
-                "sweat",
-                "latest",
-                "classics",
-                "summer",
-                "poncho",
-                "cape",
-                "outerwear",
-                "ready-to-wear",
-                "bb-girl",
-                "bb-boy",
-                "tailoring",
-                "quilt",
-                "down",
-                "parka",
+    uk = [s for s in labels if s in _UK_APPAREL]
+    it = [s for s in labels if s in _IT_APPAREL]
+    alpha = [s for s in upper if s in _ALPHA]
+    kids_labels = [s for s in upper if re.fullmatch(r"\d+[MY]", s)]
+    men_only = _is_men_cols(cols) and not _is_women_cols(cols)
+    kids_product = is_kids_product(cols)
+
+    if _is_waist_jeans(labels) and men_only:
+        return BB_MEN_JEANS_CHART
+
+    include_kids = len(kids_labels) >= 2 and (
+        kids_product or len(kids_labels) >= max(1, len(labels) / 2)
+    )
+    sections: list[tuple[str, str, dict]] = []
+    if len(uk) >= 2:
+        sections.append(("uk", "UK", BB_WOMEN_APPAREL_UK_CHART))
+    if len(it) >= 2:
+        sections.append(("it", "IT", BB_MEN_APPAREL_IT_CHART))
+    if len(alpha) >= 2 and not include_kids:
+        sections.append(
+            (
+                "alpha",
+                "알파",
+                BB_MEN_APPAREL_ALPHA_CHART if men_only else BB_WOMEN_APPAREL_ALPHA_CHART,
             )
         )
-        for c in cols
-    ) or bool(labels)
+    if include_kids:
+        sections.append(("kids", "키즈", BB_KIDS_APPAREL_CHART))
 
-    if not apparelish and not labels:
-        return None
-
-    if _is_men_cols(cols) and not _is_women_cols(cols):
-        if numeric_it or (not alpha and numeric_uk is False and any("trench" in str(c) or "coat" in str(c) for c in cols)):
-            # Men trench/coats are typically IT 44–60
-            if numeric_it or any("trench" in str(c) or "coat" in str(c) for c in cols):
-                return BB_MEN_APPAREL_IT_CHART
-        if alpha or not numeric_it:
-            return BB_MEN_APPAREL_ALPHA_CHART
-        return BB_MEN_APPAREL_IT_CHART
-
-    # Default women / unisex gifts-her style
-    if numeric_uk or any("trench" in str(c) for c in cols):
-        return BB_WOMEN_APPAREL_UK_CHART
-    if alpha:
-        return BB_WOMEN_APPAREL_ALPHA_CHART
-    return BB_WOMEN_APPAREL_UK_CHART if _is_women_cols(cols) else BB_MEN_APPAREL_IT_CHART
+    if len(sections) >= 2:
+        return _tabbed_chart(
+            "bb-apparel-" + "-".join(key for key, _, _ in sections),
+            "버버리 의류 사이즈 차트",
+            "영국 공식 사이즈 가이드의 신체 치수(cm)입니다. 판매 중인 사이즈 체계를 나눠 두었습니다.",
+            [
+                {
+                    "id": key,
+                    "labelKo": label,
+                    "headers": chart["headers"],
+                    "rows": chart["rows"],
+                }
+                for key, label, chart in sections
+            ],
+        )
+    if len(sections) == 1:
+        return sections[0][2]
+    if kids_product and kids_labels:
+        return BB_KIDS_APPAREL_CHART
+    return None
 
 
 def shoe_size_chart_for_collections(cols: list[str]) -> dict | None:
@@ -896,8 +946,7 @@ def main() -> None:
                 "storySections": story or None,
                 "featuresKo": features or None,
                 "techSpecs": tech or None,
-                "sizeChart": official_size_chart_for_product(pid)
-                or (
+                "sizeChart": (
                     size_chart_for_collections(
                         cols_sorted,
                         [
