@@ -13,6 +13,8 @@ const MEDIA_ORIGIN =
 const nextConfig: NextConfig = {
   // mobile/ is a separate Expo app
   turbopack: {},
+  // Native TLS impersonation. Bundling it breaks the platform binary.
+  serverExternalPackages: ["impit"],
   // Hide the "N" dev tools badge (dev server only; production never shows it)
   devIndicators: false,
   experimental: {
@@ -22,6 +24,10 @@ const nextConfig: NextConfig = {
   outputFileTracingIncludes: {
     "/": ["./catalog-dist/**/*.json.gz"],
     "/**/*": ["./catalog-dist/**/*.json.gz"],
+    "/api/qa": [
+      "./node_modules/impit/**/*",
+      "./node_modules/impit-linux-x64-gnu/**/*",
+    ],
   },
   // Shop/product HTML only changes with a deploy (catalogue is bundled, cart badge
   // is client-side) and Vercel purges the CDN on deploy, so serve it from the edge
