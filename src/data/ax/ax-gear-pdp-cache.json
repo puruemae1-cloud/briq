@@ -6711,7 +6711,6 @@
     },
     "variants": [
       {
-        "variantSku": "X000010358011",
         "color": "Kasumi",
         "size": "NA",
         "stockStatus": "OutOfStock",
@@ -6720,7 +6719,6 @@
         "gbpListPrice": 70
       },
       {
-        "variantSku": "X000010358008",
         "color": "Aquaculture",
         "size": "NA",
         "stockStatus": "InStock",
@@ -6729,7 +6727,6 @@
         "gbpListPrice": 70
       },
       {
-        "variantSku": "X000010358013",
         "color": "Lt Renegade",
         "size": "NA",
         "stockStatus": "OutOfStock",
@@ -6738,7 +6735,6 @@
         "gbpListPrice": 70
       },
       {
-        "variantSku": "X000010358010",
         "color": "Dark Jade",
         "size": "NA",
         "stockStatus": "OutOfStock",
@@ -6747,7 +6743,6 @@
         "gbpListPrice": 70
       },
       {
-        "variantSku": "X000010358006",
         "color": "Black",
         "size": "NA",
         "stockStatus": "InStock",
@@ -6756,7 +6751,6 @@
         "gbpListPrice": 70
       },
       {
-        "variantSku": "X000010358005",
         "color": "Sea Salt",
         "size": "NA",
         "stockStatus": "OutOfStock",
@@ -6765,7 +6759,6 @@
         "gbpListPrice": 70
       },
       {
-        "variantSku": "X000010358004",
         "color": "Reef",
         "size": "NA",
         "stockStatus": "InStock",
@@ -6774,10 +6767,9 @@
         "gbpListPrice": 70
       },
       {
-        "variantSku": "X000010358014",
         "color": "Ultima",
         "size": "NA",
-        "stockStatus": "InStock",
+        "stockStatus": "LowStock",
         "inStock": true,
         "gbpPrice": 70,
         "gbpListPrice": 70

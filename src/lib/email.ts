@@ -8,6 +8,16 @@
  * Support inbox defaults to support@hjstoryltd.com
  */
 
+import {
+  applyResendUsage,
+  loadResendQuota,
+  RESEND_FREE_DAILY,
+  RESEND_FREE_MONTHLY,
+  resendQuotaBlockReason,
+  resendQuotaWarning,
+  saveResendQuota,
+} from "@/lib/resend-quota";
+
 export const SUPPORT_INBOX =
   process.env.MAIL_TO_SUPPORT?.trim() || "support@hjstoryltd.com";
 
@@ -49,6 +59,10 @@ export function mailDocument(title: string, rows: { label: string; value: string
 }
 
 export async function sendMail(payload: MailPayload): Promise<MailResult> {
+  return deliverMail(payload, true);
+}
+
+async function deliverMail(payload: MailPayload, enforceQuota: boolean): Promise<MailResult> {
   const to = payload.to ?? SUPPORT_INBOX;
   const recipients = Array.isArray(to) ? to : [to];
   const from =
@@ -67,6 +81,13 @@ export async function sendMail(payload: MailPayload): Promise<MailResult> {
       message:
         "메일 키가 없어 데모 로그만 남겼습니다. RESEND_API_KEY와 MAIL_FROM을 설정하면 support 메일함으로 발송됩니다.",
     };
+  }
+
+  if (enforceQuota) {
+    const blocked = resendQuotaBlockReason(await loadResendQuota());
+    if (blocked) {
+      return { ok: false, mode: "resend", message: blocked };
+    }
   }
 
   try {
@@ -89,14 +110,52 @@ export async function sendMail(payload: MailPayload): Promise<MailResult> {
     const data = (await res.json().catch(() => ({}))) as {
       id?: string;
       message?: string;
+      name?: string;
     };
 
     if (!res.ok) {
+      if (res.status === 429) {
+        const state = await loadResendQuota();
+        const reason = `${data.name || ""} ${data.message || ""}`;
+        if (/monthly/i.test(reason)) state.monthlyUsed = RESEND_FREE_MONTHLY;
+        if (/daily/i.test(reason)) state.dailyUsed = RESEND_FREE_DAILY;
+        await saveResendQuota(state);
+      }
       return {
         ok: false,
         mode: "resend",
         message: data.message || `Resend error (${res.status})`,
       };
+    }
+
+    const monthly = Number(res.headers.get("x-resend-monthly-quota"));
+    const daily = Number(res.headers.get("x-resend-daily-quota"));
+    if (!enforceQuota) {
+      return { ok: true, mode: "resend", id: data.id };
+    }
+    const state = applyResendUsage(
+      await loadResendQuota(),
+      Number.isFinite(monthly) ? monthly : undefined,
+      Number.isFinite(daily) ? daily : undefined,
+    );
+    const warning = resendQuotaWarning(state);
+    if (warning) {
+      if (warning.includes("이번 달")) state.warnedMonth = true;
+      if (warning.includes("오늘")) state.warnedDay = true;
+    }
+    await saveResendQuota(state);
+    if (warning) {
+      await deliverMail(
+        {
+          to: SUPPORT_INBOX,
+          subject: "[Briq] Resend 무료 메일 한도가 얼마 남지 않았습니다",
+          text: warning,
+          html: mailDocument("Resend 무료 메일 한도", [
+            { label: "안내", value: warning },
+          ]),
+        },
+        false,
+      );
     }
 
     return { ok: true, mode: "resend", id: data.id };
