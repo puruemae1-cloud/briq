@@ -7,7 +7,9 @@ export async function mailCustomerReply(item: QaItem, answer: string): Promise<M
     return { ok: false, mode: "log", message: "고객 이메일이 없습니다." };
   }
   const productUrl = `${getSiteUrl()}/product/${encodeURIComponent(item.productId)}`;
-  const greeting = `${item.authorName || "고객"}님, 남겨 주신 문의에 답글을 드립니다.`;
+  const greeting =
+    "고객님 안녕하세요. Briq 고객센터입니다. 남겨주신 문의에 대한 답글 드립니다.";
+  const closing = "briq 고객센터 드림";
   const rows = [
     { label: "상품", value: item.productName },
     { label: "상품 페이지", value: productUrl },
@@ -17,8 +19,12 @@ export async function mailCustomerReply(item: QaItem, answer: string): Promise<M
   const result = await sendMail({
     to: item.authorEmail,
     subject: `[Briq] 문의하신 상품에 답글이 등록되었습니다`,
-    text: [greeting, "", ...rows.map((row) => `${row.label}: ${row.value}`)].join("\n"),
-    html: mailDocument("문의 답글이 등록되었습니다", [{ label: "안내", value: greeting }, ...rows]),
+    text: [greeting, "", ...rows.map((row) => `${row.label}: ${row.value}`), "", closing].join("\n"),
+    html: mailDocument(
+      "문의 답글이 등록되었습니다",
+      [{ label: "안내", value: greeting }, ...rows],
+      { closing, markUrl: `${getSiteUrl()}/apple-icon.png` },
+    ),
   });
   if (!result.ok) {
     const reason = result.message;

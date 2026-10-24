@@ -42,18 +42,29 @@ function escapeHtml(value: string) {
 }
 
 /** Simple HTML wrapper for support emails. */
-export function mailDocument(title: string, rows: { label: string; value: string }[]) {
+export function mailDocument(
+  title: string,
+  rows: { label: string; value: string }[],
+  signOff?: { closing: string; markUrl: string },
+) {
   const body = rows
     .map(
       (r) =>
         `<tr><td style="padding:8px 12px;color:#6b7280;vertical-align:top;white-space:nowrap">${escapeHtml(r.label)}</td><td style="padding:8px 12px;color:#111;white-space:pre-wrap">${escapeHtml(r.value)}</td></tr>`,
     )
     .join("");
+  const closing = signOff
+    ? `<div style="margin:28px 0 0;padding-top:22px;border-top:1px solid #e6e0d4;text-align:center">
+    <p style="margin:0 0 16px;font-size:15px;line-height:1.6;color:#0b1210">${escapeHtml(signOff.closing)}</p>
+    <img src="${escapeHtml(signOff.markUrl)}" width="48" height="48" alt="Briq" style="display:inline-block;width:48px;height:48px;border:0;border-radius:10px">
+  </div>`
+    : "";
   return `<!doctype html><html><body style="font-family:Georgia,'Times New Roman',serif;background:#f7f8f5;padding:24px">
   <div style="max-width:560px;margin:0 auto;background:#fff;border:1px solid #e5e7eb;padding:28px 24px">
     <p style="margin:0 0 4px;letter-spacing:.2em;font-size:11px;color:#b7a16a;text-transform:uppercase">Briq</p>
-    <h1 style="margin:0 0 18px;font-size:22px;font-weight:500">${escapeHtml(title)}</h1>
+    <h1 style="margin:0 0 18px;font-size:22px;font-weight:500;color:#0b1210">${escapeHtml(title)}</h1>
     <table style="width:100%;border-collapse:collapse;font-size:14px;line-height:1.55">${body}</table>
+    ${closing}
   </div>
   </body></html>`;
 }
