@@ -1,3 +1,4 @@
+import { get, put } from "@vercel/blob";
 import { promises as fs } from "fs";
 import path from "path";
 import type { QaItem } from "@/lib/qa-store";
@@ -8,6 +9,7 @@ type GlobalQa = {
 
 const g = globalThis as typeof globalThis & GlobalQa;
 
+const BLOB_PATH = "qa/inbox.json";
 const DATA_DIR = process.env.VERCEL
   ? path.join("/tmp", "briq-qa")
   : path.join(process.cwd(), "data");
@@ -16,6 +18,10 @@ const DATA_FILE = path.join(DATA_DIR, "qa.json");
 function memoryItems(): QaItem[] {
   if (!g.__briqQaInbox) g.__briqQaInbox = [];
   return g.__briqQaInbox;
+}
+
+function blobEnabled(): boolean {
+  return Boolean(process.env.BLOB_READ_WRITE_TOKEN);
 }
 
 function isQaItem(value: unknown): value is QaItem {
@@ -31,12 +37,19 @@ function isQaItem(value: unknown): value is QaItem {
   );
 }
 
-async function readFileItems(): Promise<QaItem[]> {
+function parseItems(raw: string): QaItem[] {
   try {
-    const raw = await fs.readFile(DATA_FILE, "utf8");
     const parsed = JSON.parse(raw) as unknown;
     if (!Array.isArray(parsed)) return [];
     return parsed.filter(isQaItem);
+  } catch {
+    return [];
+  }
+}
+
+async function readFileItems(): Promise<QaItem[]> {
+  try {
+    return parseItems(await fs.readFile(DATA_FILE, "utf8"));
   } catch {
     return [];
   }
@@ -49,6 +62,22 @@ async function writeFileItems(items: QaItem[]) {
   } catch {
     /* read-only hosts — memory still holds the row */
   }
+}
+
+async function readBlobItems(): Promise<QaItem[]> {
+  const result = await get(BLOB_PATH, { access: "private", useCache: false });
+  if (!result || result.statusCode !== 200 || !result.stream) return [];
+  return parseItems(await new Response(result.stream).text());
+}
+
+async function writeBlobItems(items: QaItem[]) {
+  await put(BLOB_PATH, JSON.stringify(items), {
+    access: "private",
+    addRandomSuffix: false,
+    allowOverwrite: true,
+    contentType: "application/json",
+    cacheControlMaxAge: 60,
+  });
 }
 
 function mergeById(a: QaItem[], b: QaItem[]): QaItem[] {
@@ -64,9 +93,22 @@ function mergeById(a: QaItem[], b: QaItem[]): QaItem[] {
   );
 }
 
+async function readDurable(): Promise<QaItem[]> {
+  if (blobEnabled()) return readBlobItems();
+  return readFileItems();
+}
+
+async function writeDurable(items: QaItem[]) {
+  if (blobEnabled()) {
+    await writeBlobItems(items);
+    return;
+  }
+  await writeFileItems(items);
+}
+
 export async function listQa(): Promise<QaItem[]> {
-  const file = await readFileItems();
-  const merged = mergeById(memoryItems(), file);
+  const stored = await readDurable();
+  const merged = mergeById(memoryItems(), stored);
   g.__briqQaInbox = merged;
   return merged;
 }
@@ -75,7 +117,7 @@ export async function addQa(item: QaItem): Promise<QaItem[]> {
   const current = await listQa();
   const next = mergeById(current, [item]);
   g.__briqQaInbox = next;
-  await writeFileItems(next);
+  await writeDurable(next);
   return next;
 }
 
@@ -97,6 +139,6 @@ export async function answerQa(
   const next = [...current];
   next[idx] = updated;
   g.__briqQaInbox = next;
-  await writeFileItems(next);
+  await writeDurable(next);
   return updated;
 }
