@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { mailDocument, sendMail } from "@/lib/email";
+import { mailCustomerReply } from "@/lib/qa-reply-mail";
 import { addQa, answerQa, listQa } from "@/lib/qa-inbox";
 import { isStaffRequest } from "@/lib/qa-staff";
 import type { QaItem, QaVisibility } from "@/lib/qa-store";
@@ -168,6 +169,13 @@ export async function PATCH(req: Request) {
       { ok: false, message: "문의를 찾을 수 없습니다." },
       { status: 404 },
     );
+  }
+  if (updated.authorEmail && updated.answer) {
+    try {
+      await mailCustomerReply(updated, updated.answer);
+    } catch {
+      // The reply is already saved on the product page.
+    }
   }
   const items = (await listQa()).flatMap((row) => {
     const view = viewItem(row, true);

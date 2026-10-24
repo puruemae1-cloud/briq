@@ -5421,6 +5421,14 @@ body:has(.pdp-dock) .back-to-top {
   color: rgba(11, 18, 16, 0.55);
 }
 
+.engage-form__note {
+  margin: 0;
+  font-size: 0.94rem;
+  line-height: 1.7;
+  letter-spacing: -0.01em;
+  color: rgba(11, 18, 16, 0.78);
+}
+
 .engage-check {
   display: flex;
   align-items: flex-start;

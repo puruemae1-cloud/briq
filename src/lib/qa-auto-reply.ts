@@ -1,6 +1,7 @@
 import { mailDocument, sendMail, SUPPORT_INBOX } from "@/lib/email";
 import { answerQa, listQa } from "@/lib/qa-inbox";
 import { isAutoReplyDue, soldOutReplyFor } from "@/lib/qa-soldout-reply";
+import { mailCustomerReply } from "@/lib/qa-reply-mail";
 import type { QaItem } from "@/lib/qa-store";
 import { getSiteUrl } from "@/lib/site";
 
@@ -19,23 +20,7 @@ async function mailPostedReply(item: QaItem, answer: string) {
     html: mailDocument("자동 답글이 등록되었습니다", rows),
     replyTo: item.authorEmail,
   });
-
-  if (!item.authorEmail) return;
-  const customerRows = [
-    { label: "상품", value: item.productName },
-    { label: "상품 페이지", value: productUrl },
-    { label: "답글", value: answer },
-  ];
-  await sendMail({
-    to: item.authorEmail,
-    subject: `[Briq] 문의하신 상품에 답글이 등록되었습니다`,
-    text: [
-      `${item.authorName}님, 남겨 주신 문의에 답글을 등록했습니다.`,
-      "",
-      ...customerRows.map((row) => `${row.label}: ${row.value}`),
-    ].join("\n"),
-    html: mailDocument("문의 답글이 등록되었습니다", customerRows),
-  });
+  await mailCustomerReply(item, answer);
 }
 
 /** Post sold-out replies that have waited 10 minutes, then mail that they were posted. */

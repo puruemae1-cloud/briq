@@ -46,6 +46,7 @@ export function ProductQA({
   useEffect(() => {
     if (user && !isAdmin) {
       setName(user.name || "");
+      setEmail((current) => current || user.email || "");
     }
   }, [user, isAdmin]);
 
@@ -67,7 +68,7 @@ export function ProductQA({
       setError("문의 내용을 입력해 주세요.");
       return;
     }
-    if (secret && authorEmail && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(authorEmail)) {
+    if (authorEmail && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(authorEmail)) {
       setError("이메일 형식을 확인해 주세요.");
       return;
     }
@@ -81,7 +82,7 @@ export function ProductQA({
           productId,
           productName,
           authorName,
-          authorEmail: secret ? authorEmail : undefined,
+          authorEmail: authorEmail || undefined,
           question: q,
           visibility: secret ? "private" : "public",
         }),
@@ -95,10 +96,11 @@ export function ProductQA({
       setSecret(false);
       setEmail("");
       await refreshQa(productId, { staff: isAdmin });
+      const mailed = authorEmail ? " 답글이 등록되면 입력하신 이메일로 보내 드립니다." : "";
       setNotice(
         secret
-          ? "비밀 문의로 등록되었습니다. 다른 고객에게는 보이지 않고 Briq만 확인합니다."
-          : "질문이 등록되었습니다. 이 페이지를 보는 누구나 확인할 수 있습니다.",
+          ? `비밀 문의로 등록되었습니다. 다른 고객에게는 보이지 않고 Briq만 확인합니다.${mailed}`
+          : `질문이 등록되었습니다. 이 페이지를 보는 누구나 확인할 수 있습니다.${mailed}`,
       );
     } catch {
       setError("문의를 등록하지 못했습니다.");
@@ -184,7 +186,11 @@ export function ProductQA({
             <span>비밀 문의로 남기기. 다른 고객에게는 보이지 않습니다.</span>
           </label>
 
-          <div className="engage-form__grid">
+          <p className="engage-form__note">
+            답글을 이메일로 받아보시려면 주소를 남겨 주십시오. 답변이 등록되면 그 주소로 내용을 보내 드립니다.
+          </p>
+
+          <div className="engage-form__grid engage-form__grid--2">
             <label className="engage-field">
               <span>이름 (선택)</span>
               <input
@@ -194,23 +200,22 @@ export function ProductQA({
                 autoComplete="name"
               />
             </label>
-            {secret ? (
-              <label className="engage-field">
-                <span>이메일 (선택)</span>
-                <input
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="답변을 메일로 받으려면 입력"
-                  autoComplete="email"
-                />
-              </label>
-            ) : null}
+            <label className="engage-field">
+              <span>이메일 (선택)</span>
+              <input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="답글을 받으실 주소"
+                autoComplete="email"
+                inputMode="email"
+              />
+            </label>
           </div>
 
           {secret ? (
             <p className="engage-form__hint">
-              비밀 문의는 상품 페이지에 공개되지 않습니다. Briq이 확인하고, 이메일을 남기면 그 주소로 답장을 드릴 수 있습니다.
+              비밀 문의는 상품 페이지에 공개되지 않습니다. Briq만 확인합니다.
             </p>
           ) : null}
 
