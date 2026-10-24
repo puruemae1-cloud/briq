@@ -4,6 +4,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { ProductDetail } from "@/components/ProductDetail";
 import { formatKrw, getProduct, isProductInStock, productDisplayPrice } from "@/data/products";
 import { listQa } from "@/lib/qa-inbox";
+import { maskInquiryEmail } from "@/lib/qa-privacy";
 import { mediaUrl } from "@/lib/product-image";
 import { getSiteUrl } from "@/lib/site";
 
@@ -84,6 +85,7 @@ export default async function ProductPage({ params, searchParams }: Props) {
       productId: item.productId,
       productName: item.productName,
       authorName: item.authorName,
+      authorEmail: item.authorEmail ? maskInquiryEmail(item.authorEmail) : undefined,
       question: item.question,
       visibility: "public" as const,
       createdAt: item.createdAt,

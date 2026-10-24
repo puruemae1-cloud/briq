@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { mailDocument, sendMail } from "@/lib/email";
 import { mailCustomerReply } from "@/lib/qa-reply-mail";
 import { addQa, answerQa, listQa } from "@/lib/qa-inbox";
+import { maskInquiryEmail } from "@/lib/qa-privacy";
 import { isStaffRequest } from "@/lib/qa-staff";
 import type { QaItem, QaVisibility } from "@/lib/qa-store";
 import { getSiteUrl } from "@/lib/site";
@@ -17,7 +18,11 @@ function viewItem(item: QaItem, staff: boolean): QaItem | null {
     productId: item.productId,
     productName: item.productName,
     authorName: item.authorName,
-    authorEmail: staff ? item.authorEmail : undefined,
+    authorEmail: item.authorEmail
+      ? staff
+        ? item.authorEmail
+        : maskInquiryEmail(item.authorEmail)
+      : undefined,
     authorPhone: staff ? item.authorPhone : undefined,
     question: item.question,
     visibility,
@@ -126,7 +131,7 @@ export async function POST(req: Request) {
   });
   return NextResponse.json({
     ok: true,
-    item: viewItem(item, true),
+    item: viewItem(item, staff),
     items,
     mailed: mail.ok,
   });

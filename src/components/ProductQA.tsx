@@ -4,6 +4,7 @@ import { FormEvent, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { MessageCircleQuestion } from "lucide-react";
 import { isAdminUser, useAuthStore } from "@/lib/auth-store";
+import { maskInquiryEmail } from "@/lib/qa-privacy";
 import { qaStaffHeaders, refreshQa, useQaStore, type QaItem } from "@/lib/qa-store";
 
 export function ProductQA({
@@ -229,7 +230,13 @@ export function ProductQA({
         {list.length === 0 ? (
           <li className="engage-empty">아직 등록된 문의가 없습니다.</li>
         ) : (
-          list.map((item) => (
+          list.map((item) => {
+            const shownEmail = item.authorEmail
+              ? isAdmin
+                ? item.authorEmail
+                : maskInquiryEmail(item.authorEmail)
+              : undefined;
+            return (
             <li key={item.id} className="engage-item">
               <div className="engage-item__meta">
                 <span className="engage-item__author">
@@ -245,9 +252,11 @@ export function ProductQA({
                   <span className="engage-pill">비밀</span>
                 ) : null}
               </div>
-              {isAdmin && (item.authorEmail || item.authorPhone) ? (
+              {shownEmail || (isAdmin && item.authorPhone) ? (
                 <p className="engage-item__contact">
-                  {[item.authorEmail, item.authorPhone].filter(Boolean).join(" · ")}
+                  {[shownEmail, isAdmin ? item.authorPhone : undefined]
+                    .filter(Boolean)
+                    .join(" · ")}
                 </p>
               ) : null}
               <p className="engage-item__body">{item.question}</p>
@@ -312,7 +321,8 @@ export function ProductQA({
                 </form>
               ) : null}
             </li>
-          ))
+            );
+          })
         )}
       </ul>
     </div>
