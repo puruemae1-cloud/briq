@@ -252,6 +252,27 @@ BB_WOMEN_APPAREL_UK_CHART = {
     ],
 }
 
+# Official UK guide for Long Cashmere Kensington Trench Coat (p81361211).
+# The shared apparel chart starts at UK 02 and does not match this guide.
+BB_LONG_CASHMERE_KENSINGTON_COAT_CHART = {
+    "id": "bb-81361211-women-uk",
+    "titleKo": "버버리 여성 의류 사이즈 차트 (UK)",
+    "noteKo": "영국 공식 사이즈 가이드의 신체 치수(cm)입니다. 이 코트는 UK 0부터 판매됩니다. 두 사이즈 사이라면 여유 핏은 큰 사이즈를 선택하세요.",
+    "headers": ["UK", "가슴", "허리", "엉덩이"],
+    "rows": [
+        ["0", "72", "55", "80"],
+        ["02", "74", "57", "82"],
+        ["04", "76", "59", "84"],
+        ["06", "80", "63", "88"],
+        ["08", "84", "67", "92"],
+        ["10", "88", "71", "96"],
+        ["12", "92", "75", "100"],
+        ["14", "97", "80", "105"],
+        ["16", "102", "85", "110"],
+        ["18", "107", "90", "115"],
+    ],
+}
+
 BB_WOMEN_APPAREL_ALPHA_CHART = {
     "id": "bb-women-apparel-alpha",
     "titleKo": "버버리 여성 의류 사이즈 차트 (알파)",
@@ -396,6 +417,13 @@ def one_size_chart(measurements: str | None) -> dict | None:
         "headers": ["사이즈", "가로 × 세로 (cm)", "가로 × 세로 (inch)"],
         "rows": [["프리사이즈", f"{w_cm} × {h_cm}", f"{w_in} × {h_in}"]],
     }
+
+
+def official_size_chart_for_product(pid: str) -> dict | None:
+    """Per-product official charts. Shared Burberry charts stay as they are."""
+    if pid == "bb-long-cashmere-kensington-trench-coat-7":
+        return BB_LONG_CASHMERE_KENSINGTON_COAT_CHART
+    return None
 
 
 def size_chart_for_collections(cols: list[str], size_labels: list[str] | None = None) -> dict | None:
@@ -868,16 +896,19 @@ def main() -> None:
                 "storySections": story or None,
                 "featuresKo": features or None,
                 "techSpecs": tech or None,
-                "sizeChart": size_chart_for_collections(
-                    cols_sorted,
-                    [
-                        str(v.get("size") or "")
-                        for v in flat_variants
-                        if v.get("size") and v.get("size") != "프리사이즈"
-                    ],
-                )
-                if any(v.get("size") != "프리사이즈" for v in flat_variants)
-                else one_size_chart(primary.get("measurements")),
+                "sizeChart": official_size_chart_for_product(pid)
+                or (
+                    size_chart_for_collections(
+                        cols_sorted,
+                        [
+                            str(v.get("size") or "")
+                            for v in flat_variants
+                            if v.get("size") and v.get("size") != "프리사이즈"
+                        ],
+                    )
+                    if any(v.get("size") != "프리사이즈" for v in flat_variants)
+                    else one_size_chart(primary.get("measurements"))
+                ),
                 "variants": flat_variants,
                 "inStock": any(v.get("inStock") for v in flat_variants),
             }
