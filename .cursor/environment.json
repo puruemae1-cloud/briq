@@ -1,0 +1,16 @@
+{
+  "name": "Briq + TwinSwing",
+  "install": "npm install && npm --prefix swingtwin install",
+  "terminals": [
+    {
+      "name": "TwinSwing dev",
+      "command": "npm --prefix swingtwin run dev"
+    }
+  ],
+  "ports": [
+    {
+      "name": "TwinSwing",
+      "port": 3001
+    }
+  ]
+}
