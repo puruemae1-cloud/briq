@@ -85,7 +85,7 @@ export function soldOutReplyText(sizeLabel: string, brandEn: string): string {
     "",
     "다만 재입고 일정은 브랜드사에서 별도로 공유해 주지 않아, 정확한 일정 안내가 어려운 점 양해 부탁드립니다.",
     "",
-    "추가로 궁금하신 점이 있으시면 대표 메일이나 상품 문의로 편하게 연락 주세요.",
+    "추가로 궁금하신 점이 있으시면 대표 메일 (support@hjstoryltd.com)이나 상품 문의로 편하게 연락 주세요.",
     "감사합니다.",
   ].join("\n");
 }
