@@ -3,6 +3,10 @@
 # dependencies
 /node_modules
 /mobile/node_modules
+/baedaeji/web/node_modules
+/baedaeji/web/.next
+/baedaeji/web/.data
+/baedaeji/web/tsconfig.tsbuildinfo
 /.pnp
 .pnp.*
 .yarn/*
