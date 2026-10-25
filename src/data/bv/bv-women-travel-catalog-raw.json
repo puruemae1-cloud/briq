@@ -1,7 +1,7 @@
 {
   "hub": "women-travel",
   "category": "accessories",
-  "scrapedAt": "2026-10-24T06:56:08.767018+00:00",
+  "scrapedAt": "2026-10-25T06:52:47.020039+00:00",
   "leaves": [
     "bv-women-travel"
   ],
@@ -870,7 +870,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/vanity-case-espresso-869368V5B702028.html",
       "gbpPrice": 1960.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Colour: Espresso",
         "Hardware: Brass",
@@ -910,7 +910,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1960.0,
           "listGbpPrice": null
         }
@@ -1138,7 +1138,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-duffle-black-781053V2HL18803.html",
       "gbpPrice": 4370.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Canvas",
         "Colour: Black",
@@ -1180,7 +1180,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 4370.0,
           "listGbpPrice": null
         }
