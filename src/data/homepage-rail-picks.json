@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-10-24T05:18:17Z",
+  "generatedAt": "2026-10-25T05:19:12Z",
   "limit": 4,
   "rails": {
     "luxury": {
       "productIds": [
-        "ce-ry13h5590-28bl",
-        "ce-ry1365593-07rd",
-        "ce-ry11m0x73-38no",
-        "ce-rr0in106z-38no"
+        "bv-a003brv6zf02201",
+        "bv-871198v6or01010",
+        "bv-875219v6oe01010",
+        "bv-871316v6ko02549"
       ],
       "brands": [
-        "celine",
-        "celine",
-        "celine",
-        "celine"
+        "보테가-베네타",
+        "보테가-베네타",
+        "보테가-베네타",
+        "보테가-베네타"
       ]
     },
     "watches": {
@@ -46,30 +46,30 @@
     },
     "shoes": {
       "productIds": [
-        "vw-72030040-41671-am-black",
-        "vw-71010061-11010-am-red",
-        "vw-72030040-41454-am-beige",
-        "vw-72010006-41671-am-black"
+        "ps-paul-smith-loves-barbour-womens-green-tall-wellingtons",
+        "ps-grey-dover-trainers",
+        "ps-khaki-dover-trainers-brown",
+        "ps-paul-smith-loves-barbour-womens-navy-tall-wellingtons"
       ],
       "brands": [
-        "vivienne-westwood",
-        "vivienne-westwood",
-        "vivienne-westwood",
-        "vivienne-westwood"
+        "paul-smith",
+        "paul-smith",
+        "paul-smith",
+        "paul-smith"
       ]
     },
     "accessories": {
       "productIds": [
-        "gc-443123aaf9k1000",
-        "gc-527390j84408184",
-        "gc-5861689plp79115",
-        "gc-5861689plp79203"
+        "ce-4s226cplb-19rh",
+        "ce-4s342cplb-38no",
+        "ce-4s342cplb-19sp",
+        "ce-4s342cplb-01av"
       ],
       "brands": [
-        "gucci",
-        "gucci",
-        "gucci",
-        "gucci"
+        "celine",
+        "celine",
+        "celine",
+        "celine"
       ]
     },
     "sports": {
@@ -89,10 +89,10 @@
   },
   "brands": {
     "celine": [
-      "luxury",
-      "luxury",
-      "luxury",
-      "luxury"
+      "accessories",
+      "accessories",
+      "accessories",
+      "accessories"
     ],
     "christopher-ward": [
       "watches",
@@ -106,23 +106,23 @@
       "sports",
       "sports"
     ],
-    "gucci": [
-      "accessories",
-      "accessories",
-      "accessories",
-      "accessories"
-    ],
     "mulberry": [
       "bags",
       "bags",
       "bags",
       "bags"
     ],
-    "vivienne-westwood": [
+    "paul-smith": [
       "shoes",
       "shoes",
       "shoes",
       "shoes"
+    ],
+    "보테가-베네타": [
+      "luxury",
+      "luxury",
+      "luxury",
+      "luxury"
     ]
   },
   "overlaps": {},
