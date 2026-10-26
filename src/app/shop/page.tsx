@@ -531,6 +531,7 @@ export default async function ShopPage({ searchParams }: Props) {
                 sort: isNewArrivals ? "new" : sort,
               }}
               liveOrdersRank={sort === "orders"}
+              startOffset={offset}
             />
             {nextHref ? (
               <p className="shop-browse__count">

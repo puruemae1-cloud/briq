@@ -50,6 +50,7 @@ export function ShopProductGrid({
   pageSize = DEFAULT_PAGE_SIZE,
   query,
   liveOrdersRank = false,
+  startOffset = 0,
 }: {
   products: Product[];
   /** SSR page-2 cards — first "더보기" is instant. */
@@ -58,6 +59,8 @@ export function ShopProductGrid({
   pageSize?: number;
   query: ShopGridQuery;
   liveOrdersRank?: boolean;
+  /** Catalogue index of the first SSR card. Page 1 is 0. */
+  startOffset?: number;
 }) {
   const [products, setProducts] = useState(initialProducts);
   const [total, setTotal] = useState(totalCount);
@@ -92,7 +95,7 @@ export function ShopProductGrid({
     });
   }, [products, liveOrdersRank, counts]);
 
-  const remaining = Math.max(0, total - products.length);
+  const remaining = Math.max(0, total - startOffset - products.length);
   const canShowMore = remaining > 0;
 
   const fetchPage = useCallback(
@@ -122,11 +125,11 @@ export function ShopProductGrid({
   // Prefetch the next *network* page (skip idle — cold API is slow).
   useEffect(() => {
     if (remaining <= 0) return;
-    const nextOffset = products.length;
+    const nextOffset = startOffset + products.length;
     const target =
       !ssrNextConsumed.current &&
       nextPageProducts.length > 0 &&
-      nextOffset === initialProducts.length
+      products.length === initialProducts.length
         ? nextOffset + pageSize
         : nextOffset;
     ensurePrefetch(target);
@@ -137,6 +140,7 @@ export function ShopProductGrid({
     nextPageProducts.length,
     initialProducts.length,
     pageSize,
+    startOffset,
   ]);
 
   const appendPage = useCallback((data: ShopPagePayload) => {
@@ -165,12 +169,12 @@ export function ShopProductGrid({
     if (loadingMore || remaining <= 0) return;
     setLoadingMore(true);
     setError(null);
-    const offset = products.length;
+    const offset = startOffset + products.length;
     try {
       if (
         !ssrNextConsumed.current &&
         nextPageProducts.length > 0 &&
-        offset === initialProducts.length
+        products.length === initialProducts.length
       ) {
         ssrNextConsumed.current = true;
         appendPage({ products: nextPageProducts, total });
@@ -200,6 +204,7 @@ export function ShopProductGrid({
     loadingMore,
     remaining,
     products.length,
+    startOffset,
     nextPageProducts,
     initialProducts.length,
     total,
