@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T05:26:36Z",
+  "generatedAt": "2026-10-26T05:22:21Z",
   "limit": 4,
   "rails": {
     "luxury": {
@@ -46,10 +46,10 @@
     },
     "shoes": {
       "productIds": [
+        "ps-light-blue-dover-trainers",
+        "ps-silver-chilly-trainers",
         "ps-paul-smith-loves-barbour-womens-green-tall-wellingtons",
-        "ps-grey-dover-trainers",
-        "ps-khaki-dover-trainers-brown",
-        "ps-paul-smith-loves-barbour-womens-navy-tall-wellingtons"
+        "ps-grey-dover-trainers"
       ],
       "brands": [
         "paul-smith",
