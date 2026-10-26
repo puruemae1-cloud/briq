@@ -1,7 +1,7 @@
 {
   "hub": "men-travel",
   "category": "accessories",
-  "scrapedAt": "2026-10-25T05:49:33.591453+00:00",
+  "scrapedAt": "2026-10-26T06:04:52.673034+00:00",
   "leaves": [
     "bv-men-travel"
   ],
@@ -1081,7 +1081,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/vanity-case-espresso-869368V5B702028.html",
       "gbpPrice": 1960.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Espresso",
         "Hardware: Brass",
@@ -1121,7 +1121,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 1960.0,
           "listGbpPrice": null
         }
@@ -2441,7 +2441,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/diago-backpack-black-A0053EV4FV08803.html",
       "gbpPrice": 3460.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Canvas",
         "Colour: Black",
@@ -2479,7 +2479,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 3460.0,
           "listGbpPrice": null
         }
@@ -3954,7 +3954,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/palazzo-slipper-with-travel-case-black-837952V2ED01000.html",
       "gbpPrice": 1690.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Lambskin",
         "Colour: Black",
@@ -4115,7 +4115,7 @@
           "id": "39",
           "value": "39",
           "displayValue": "39",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 1690.0,
           "listGbpPrice": null
         },
@@ -4131,7 +4131,7 @@
           "id": "41",
           "value": "41",
           "displayValue": "41",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 1690.0,
           "listGbpPrice": null
         },
@@ -4396,7 +4396,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-duffle-black-781053V2HL18803.html",
       "gbpPrice": 4370.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Canvas",
         "Colour: Black",
@@ -4438,7 +4438,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 4370.0,
           "listGbpPrice": null
         }

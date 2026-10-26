@@ -1,7 +1,7 @@
 {
   "hub": "women-bags",
   "category": "bags",
-  "scrapedAt": "2026-10-25T06:08:51.979144+00:00",
+  "scrapedAt": "2026-10-26T06:24:32.921893+00:00",
   "leaves": [
     "bv-women-bags-mini",
     "bv-women-bags-crossbody",
@@ -2885,7 +2885,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/mini-jodie-chalk-gold-651876VCPP59143.html",
       "gbpPrice": 2220.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Calfskin",
         "Colour: Chalk",
@@ -2922,7 +2922,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 2220.0,
           "listGbpPrice": null
         }
@@ -6603,7 +6603,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/small-andiamo-obsidian-grey-766014V5ZZ11699.html",
       "gbpPrice": 3650.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Suede bonded Intrecciato",
         "Colour: Obsidian Grey",
@@ -6648,7 +6648,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 3650.0,
           "listGbpPrice": null
         }
@@ -10947,7 +10947,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/small-jodie-travertine-690225VCPP02916.html",
       "gbpPrice": 3120.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Calfskin",
         "Colour: Travertine",
@@ -10988,7 +10988,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 3120.0,
           "listGbpPrice": null
         }
@@ -14601,7 +14601,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/small-andiamo--bucket-pickle-855759VCPP13297.html",
       "gbpPrice": 3660.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Lambskin bonded Intrecciato",
         "Colour: Pickle",
@@ -14642,7 +14642,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 3660.0,
           "listGbpPrice": null
         }
