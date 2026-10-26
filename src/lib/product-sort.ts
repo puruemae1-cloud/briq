@@ -306,6 +306,7 @@ export function buildShopHref(params: {
   sub?: string;
   q?: string;
   sort?: ProductSort;
+  offset?: number;
 }) {
   const sp = new URLSearchParams();
   if (params.category && params.category !== "all") {
@@ -313,6 +314,7 @@ export function buildShopHref(params: {
   }
   if (params.sub) sp.set("sub", params.sub);
   if (params.q?.trim()) sp.set("q", params.q.trim());
+  if (params.offset && params.offset > 0) sp.set("offset", String(params.offset));
   // Always persist sort explicitly so shares / filters keep 최신등록순 visible.
   sp.set("sort", params.sort ?? DEFAULT_PRODUCT_SORT);
   const qs = sp.toString();

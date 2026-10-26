@@ -3,7 +3,7 @@ import { navCategories } from "@/data/categories";
 import { products } from "@/data/products";
 import {
   PRODUCT_CHUNK,
-  newestProductLastmod,
+  HUB_SITEMAP_LASTMOD,
   productLastmod,
   sitemapCount,
 } from "@/lib/sitemap-chunks";
@@ -21,26 +21,26 @@ export default async function sitemap(props: {
   // silently produced empty sitemaps.
   const id = Number(await props.id);
   const site = getSiteUrl();
-  const catalogUpdated = newestProductLastmod();
+  const catalogUpdated = new Date(HUB_SITEMAP_LASTMOD);
 
   if (id === 0) {
     const staticUrls: MetadataRoute.Sitemap = [
       {
         url: site,
         lastModified: catalogUpdated,
-        changeFrequency: "daily",
+        changeFrequency: "weekly",
         priority: 1,
       },
       {
         url: `${site}/shop`,
         lastModified: catalogUpdated,
-        changeFrequency: "daily",
+        changeFrequency: "weekly",
         priority: 0.95,
       },
       {
         url: `${site}/shop?sort=new`,
         lastModified: catalogUpdated,
-        changeFrequency: "daily",
+        changeFrequency: "weekly",
         priority: 0.9,
       },
       {
@@ -85,7 +85,7 @@ export default async function sitemap(props: {
       staticUrls.push({
         url: `${site}${cat.href}`,
         lastModified: catalogUpdated,
-        changeFrequency: "daily",
+        changeFrequency: "weekly",
         priority: 0.85,
       });
     }
@@ -100,7 +100,7 @@ export default async function sitemap(props: {
       staticUrls.push({
         url: `${site}${brand.shopHref}`,
         lastModified: catalogUpdated,
-        changeFrequency: "daily",
+        changeFrequency: "weekly",
         priority: 0.75,
       });
     }

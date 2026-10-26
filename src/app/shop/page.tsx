@@ -82,6 +82,7 @@ type Props = {
     sub?: string;
     q?: string;
     sort?: string;
+    offset?: string;
   }>;
 };
 
@@ -89,6 +90,7 @@ export async function generateMetadata({
   searchParams,
 }: Props): Promise<Metadata> {
   const params = await searchParams;
+  const offset = Math.max(0, Number.parseInt(params.offset || "0", 10) || 0);
   const category = params.category ?? "all";
   const sub = params.sub;
   const brand = resolveShopBrand(category, sub);
@@ -126,11 +128,13 @@ export async function generateMetadata({
     sub,
     q: params.q,
     sort: params.sort === "new" ? "new" : undefined,
+    offset,
   });
 
   return {
     title,
     description,
+    robots: offset > 0 ? { index: false, follow: true } : undefined,
     alternates: { canonical: `${getSiteUrl()}${canonicalPath}` },
     openGraph: {
       title,
@@ -151,6 +155,7 @@ function chipClass(node: NavChild, sub: string | undefined, pathIds: Set<string>
 
 export default async function ShopPage({ searchParams }: Props) {
   const params = await searchParams;
+  const offset = Math.max(0, Number.parseInt(params.offset || "0", 10) || 0);
   const category = params.category ?? "all";
   const sub = params.sub;
   if (sub === "belstaff-bags") {
@@ -188,12 +193,23 @@ export default async function ShopPage({ searchParams }: Props) {
     q: params.q,
     sort: params.sort,
   });
-  const pageProducts = sliceShopPage(list, 0, SHOP_PAGE_SIZE).map(toCardProduct);
+  const pageProducts = sliceShopPage(list, offset, SHOP_PAGE_SIZE).map(toCardProduct);
   const nextPageProducts = sliceShopPage(
     list,
-    SHOP_PAGE_SIZE,
+    offset + SHOP_PAGE_SIZE,
     SHOP_PAGE_SIZE,
   ).map(toCardProduct);
+  const nextOffset = offset + SHOP_PAGE_SIZE;
+  const nextHref =
+    nextOffset < list.length
+      ? buildShopHref({
+          category,
+          sub,
+          q: params.q,
+          sort,
+          offset: nextOffset,
+        })
+      : null;
 
   const current = category !== "all" ? findCategory(category) : undefined;
   const subNode = sub && current ? findSubcategory(category, sub) : undefined;
@@ -503,7 +519,7 @@ export default async function ShopPage({ searchParams }: Props) {
             </div>
 
             <ShopProductGrid
-              key={`${category}-${sub ?? ""}-${sort}-${params.q ?? ""}`}
+              key={`${category}-${sub ?? ""}-${sort}-${params.q ?? ""}-${offset}`}
               products={pageProducts}
               nextPageProducts={nextPageProducts}
               totalCount={list.length}
@@ -516,6 +532,11 @@ export default async function ShopPage({ searchParams }: Props) {
               }}
               liveOrdersRank={sort === "orders"}
             />
+            {nextHref ? (
+              <p className="shop-browse__count">
+                <a href={nextHref}>다음 상품</a>
+              </p>
+            ) : null}
           </div>
         </div>
       </section>

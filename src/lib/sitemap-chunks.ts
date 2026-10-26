@@ -9,6 +9,13 @@ export const PRODUCT_CHUNK = 4000;
  */
 export const SITEMAP_FALLBACK_LASTMOD = "2020-01-01T00:00:00.000Z";
 
+/**
+ * Hub pages (home, shop, brand landings) do not change when one product is
+ * registered. A fresh lastmod on every sync made Naver spend its small daily
+ * fetch on the same landing pages.
+ */
+export const HUB_SITEMAP_LASTMOD = "2026-10-01T00:00:00.000Z";
+
 /** Newest real registrations listed ahead of the full catalogue. */
 export const RECENT_SITEMAP_DAYS = 14;
 export const RECENT_SITEMAP_CAP = 500;
@@ -40,7 +47,7 @@ export function newestProductLastmod(): Date {
 
 /** lastmod for /sitemap/{id}.xml. Unchanged catalogues keep the same value across deploys. */
 export function chunkLastmod(id: number): Date {
-  if (id === 0) return newestProductLastmod();
+  if (id === 0) return new Date(HUB_SITEMAP_LASTMOD);
   const start = (id - 1) * PRODUCT_CHUNK;
   const slice = products.slice(start, start + PRODUCT_CHUNK);
   let max = Date.parse(SITEMAP_FALLBACK_LASTMOD);

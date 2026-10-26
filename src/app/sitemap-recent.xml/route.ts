@@ -1,8 +1,8 @@
 import { products } from "@/data/products";
 import {
+  HUB_SITEMAP_LASTMOD,
   RECENT_SITEMAP_CAP,
   RECENT_SITEMAP_DAYS,
-  newestProductLastmod,
   registeredAtMs,
 } from "@/lib/sitemap-chunks";
 import { SEO_BRANDS, getSiteUrl } from "@/lib/site";
@@ -15,7 +15,7 @@ export const dynamic = "force-static";
  */
 export async function GET() {
   const site = getSiteUrl();
-  const catalogUpdated = newestProductLastmod().toISOString();
+  const hubUpdated = HUB_SITEMAP_LASTMOD;
   const cutoff = Date.now() - RECENT_SITEMAP_DAYS * 24 * 60 * 60 * 1000;
   const pages = [
     site,
@@ -35,13 +35,13 @@ export async function GET() {
     .slice(0, RECENT_SITEMAP_CAP);
 
   const urls = [
-    ...pages.map(
-      (url) =>
-        `  <url>\n    <loc>${url}</loc>\n    <lastmod>${catalogUpdated}</lastmod>\n  </url>`,
-    ),
     ...recent.map(
       ({ product, at }) =>
         `  <url>\n    <loc>${site}/product/${encodeURIComponent(product.id)}</loc>\n    <lastmod>${new Date(at).toISOString()}</lastmod>\n  </url>`,
+    ),
+    ...pages.map(
+      (url) =>
+        `  <url>\n    <loc>${url}</loc>\n    <lastmod>${hubUpdated}</lastmod>\n  </url>`,
     ),
   ];
   const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.join("\n")}\n</urlset>\n`;

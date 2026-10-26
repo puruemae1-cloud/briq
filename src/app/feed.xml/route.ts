@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { products } from "@/data/products";
+import { newestProductLastmod, SITEMAP_FALLBACK_LASTMOD } from "@/lib/sitemap-chunks";
 import { getSiteUrl } from "@/lib/site";
 import { sortProducts } from "@/lib/product-sort";
 
@@ -22,7 +23,7 @@ export async function GET() {
         .join(" · ");
       const date = p.registeredAt
         ? new Date(p.registeredAt).toUTCString()
-        : new Date().toUTCString();
+        : new Date(SITEMAP_FALLBACK_LASTMOD).toUTCString();
       return `<item>
   <title><![CDATA[${title}]]></title>
   <link>${link}</link>
@@ -40,7 +41,7 @@ export async function GET() {
   <link>${site}</link>
   <description>영국 셀렉트숍 Briq의 명품의류·가방·시계·악세서리 신상품 피드. 명품직구·명품구매대행.</description>
   <language>ko</language>
-  <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
+  <lastBuildDate>${newestProductLastmod().toUTCString()}</lastBuildDate>
 ${items}
 </channel>
 </rss>`;
