@@ -1,7 +1,7 @@
 {
   "hub": "men-travel",
   "category": "accessories",
-  "scrapedAt": "2026-10-26T06:04:52.673034+00:00",
+  "scrapedAt": "2026-10-27T06:12:13.266606+00:00",
   "leaves": [
     "bv-men-travel"
   ],
@@ -2441,7 +2441,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/diago-backpack-black-A0053EV4FV08803.html",
       "gbpPrice": 3460.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Canvas",
         "Colour: Black",
@@ -2479,7 +2479,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 3460.0,
           "listGbpPrice": null
         }
@@ -4396,7 +4396,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-duffle-black-781053V2HL18803.html",
       "gbpPrice": 4370.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Canvas",
         "Colour: Black",
@@ -4438,7 +4438,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 4370.0,
           "listGbpPrice": null
         }
