@@ -1,7 +1,7 @@
 {
   "hub": "men-clothing",
   "category": "luxury",
-  "scrapedAt": "2026-10-28T02:34:58.882332+00:00",
+  "scrapedAt": "2026-10-28T23:37:59.517429+00:00",
   "leaves": [
     "bv-men-clothing-coats",
     "bv-men-clothing-jackets",
@@ -2110,7 +2110,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/leather-coat-steel-853940V64W03521.html",
       "gbpPrice": 9740.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Steel"
       ],
@@ -2214,7 +2214,7 @@
           "id": "46",
           "value": "46",
           "displayValue": "46",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 9740.0,
           "listGbpPrice": null
         },
@@ -14831,7 +14831,7 @@
           "id": "L",
           "value": "L",
           "displayValue": "L",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1960.0,
           "listGbpPrice": null
         },
@@ -15139,7 +15139,7 @@
           "id": "M",
           "value": "M",
           "displayValue": "M",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 2320.0,
           "listGbpPrice": null
         },
@@ -26349,7 +26349,7 @@
           "id": "50",
           "value": "50",
           "displayValue": "50",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1160.0,
           "listGbpPrice": null
         },
@@ -26983,7 +26983,7 @@
           "id": "52",
           "value": "52",
           "displayValue": "52",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 800.0,
           "listGbpPrice": null
         },

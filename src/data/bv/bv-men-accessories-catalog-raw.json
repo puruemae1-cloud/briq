@@ -1,7 +1,7 @@
 {
   "hub": "men-accessories",
   "category": "accessories",
-  "scrapedAt": "2026-10-28T02:42:15.438391+00:00",
+  "scrapedAt": "2026-10-28T23:44:48.149131+00:00",
   "leaves": [
     "bv-men-acc-key-rings",
     "bv-men-acc-belts",
@@ -4842,12 +4842,14 @@
         ]
       },
       "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/c666baf8-d2cf-46ad-8eeb-0cc26e479248/eCom/651820V0HW12916_A.jpg?v=6",
         "https://bottega-veneta.dam.kering.com/asset/60daa909-9c4a-4197-9b11-0c0f18b55dd1/eCom/651820V0HW12916_B.jpg?v=8",
-        "https://bottega-veneta.dam.kering.com/asset/60daa909-9c4a-4197-9b11-0c0f18b55dd1/Small/651820V0HW12916_B.jpg?v=8"
+        "https://bottega-veneta.dam.kering.com/asset/c666baf8-d2cf-46ad-8eeb-0cc26e479248/Small/651820V0HW12916_A.jpg?v=6"
       ],
       "localImages": [
         "/products/bv-pdp/651820v0hw12916/1.jpg",
-        "/products/bv-pdp/651820v0hw12916/2.jpg"
+        "/products/bv-pdp/651820v0hw12916/2.jpg",
+        "/products/bv-pdp/651820v0hw12916/3.jpg"
       ],
       "sizes": [
         {
@@ -7610,7 +7612,7 @@
           "id": "110",
           "value": "110",
           "displayValue": "110",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 560.0,
           "listGbpPrice": null
         },
@@ -9497,7 +9499,7 @@
           "id": "90",
           "value": "90",
           "displayValue": "90",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 500.0,
           "listGbpPrice": null
         },
@@ -9840,7 +9842,7 @@
           "id": "80",
           "value": "80",
           "displayValue": "80",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 500.0,
           "listGbpPrice": null
         },
@@ -9848,7 +9850,7 @@
           "id": "85",
           "value": "85",
           "displayValue": "85",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 500.0,
           "listGbpPrice": null
         },
@@ -14284,7 +14286,7 @@
           "id": "120",
           "value": "120",
           "displayValue": "120",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 580.0,
           "listGbpPrice": null
         }

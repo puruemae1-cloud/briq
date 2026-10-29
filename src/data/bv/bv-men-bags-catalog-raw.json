@@ -1,7 +1,7 @@
 {
   "hub": "men-bags",
   "category": "bags",
-  "scrapedAt": "2026-10-28T01:59:45.269358+00:00",
+  "scrapedAt": "2026-10-28T22:58:28.330713+00:00",
   "leaves": [
     "bv-men-bags-intrecciato",
     "bv-men-bags-diago",
@@ -8524,7 +8524,6 @@
         "https://bottega-veneta.dam.kering.com/m/5478ccef68cb7b47/eCom-806279V4RU01019_A.jpg?v=4",
         "https://bottega-veneta.dam.kering.com/m/2719fdaeba73826e/eCom-806279V4RU01019_B.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/m/5ecabfcdd730279d/eCom-806279V4RU01019_C.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/407ac3f8-f44b-46b7-84f2-9d50e6d0bfb5/eCom/806279V4RU01019_D.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/m/3ce5ef549678305c/eCom-806279V4RU01019_E.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/m/2127669bf54e34f9/eCom-806279V4RU01019_F.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/m/609463ee319f43b7/eCom-806279V4RU01019_G.jpg?v=1",
@@ -8537,8 +8536,7 @@
         "/products/bv-pdp/806279v4ru01019/4.jpg",
         "/products/bv-pdp/806279v4ru01019/5.jpg",
         "/products/bv-pdp/806279v4ru01019/6.jpg",
-        "/products/bv-pdp/806279v4ru01019/7.jpg",
-        "/products/bv-pdp/806279v4ru01019/8.jpg"
+        "/products/bv-pdp/806279v4ru01019/7.jpg"
       ],
       "sizes": [
         {
@@ -8595,15 +8593,13 @@
         "https://bottega-veneta.dam.kering.com/asset/4f36adbc-7877-40a7-91fe-e318eebf8ec5/eCom/795643V09C52549_A.jpg?v=4",
         "https://bottega-veneta.dam.kering.com/asset/9d40478c-ccdc-4c19-a2ab-8324785b0ee3/eCom/795643V09C52549_B.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/asset/f436555f-eb21-488d-9cf6-622df0c354bb/eCom/795643V09C52549_C.jpg?v=2",
-        "https://bottega-veneta.dam.kering.com/asset/2098ee94-8cef-44fb-9f9e-2ca470ea68fa/eCom/795643V09C52549_D.jpg?v=3",
         "https://bottega-veneta.dam.kering.com/asset/4f36adbc-7877-40a7-91fe-e318eebf8ec5/Small/795643V09C52549_A.jpg?v=4"
       ],
       "localImages": [
         "/products/bv-pdp/795643v09c52549/1.jpg",
         "/products/bv-pdp/795643v09c52549/2.jpg",
         "/products/bv-pdp/795643v09c52549/3.jpg",
-        "/products/bv-pdp/795643v09c52549/4.jpg",
-        "/products/bv-pdp/795643v09c52549/5.jpg"
+        "/products/bv-pdp/795643v09c52549/4.jpg"
       ],
       "sizes": [
         {
@@ -13379,7 +13375,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/traveler-kaki-806974V4TD13386.html",
       "gbpPrice": 4010.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Suede",
         "Colour: Kaki",
@@ -13418,7 +13414,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 4010.0,
           "listGbpPrice": null
         }

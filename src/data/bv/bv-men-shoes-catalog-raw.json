@@ -1,7 +1,7 @@
 {
   "hub": "men-shoes",
   "category": "shoes",
-  "scrapedAt": "2026-10-28T02:15:46.852882+00:00",
+  "scrapedAt": "2026-10-28T23:16:51.186359+00:00",
   "leaves": [
     "bv-men-shoes-shot",
     "bv-men-shoes-orbit-flash",
@@ -15424,7 +15424,7 @@
           "id": "45",
           "value": "45",
           "displayValue": "45",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 820.0,
           "listGbpPrice": null
         },
@@ -19873,7 +19873,7 @@
           "id": "42",
           "value": "42",
           "displayValue": "42",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 860.0,
           "listGbpPrice": null
         },
@@ -22045,7 +22045,7 @@
           "id": "46",
           "value": "46",
           "displayValue": "46",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 1120.0,
           "listGbpPrice": null
         }
@@ -26804,7 +26804,7 @@
           "id": "41",
           "value": "41",
           "displayValue": "41",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 760.0,
           "listGbpPrice": null
         },
@@ -29148,7 +29148,7 @@
           "id": "42",
           "value": "42",
           "displayValue": "42",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1120.0,
           "listGbpPrice": null
         },
