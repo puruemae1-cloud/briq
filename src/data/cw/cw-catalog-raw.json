@@ -1,10 +1,10 @@
 {
-  "scrapedAt": "2026-10-29T20:17:28Z",
+  "scrapedAt": "2026-10-29T21:42:32Z",
   "categoryCounts": {
     "cw-new-releases": 92,
     "cw-bestsellers": 44,
     "cw-hidden-gems": 9,
-    "cw-clearance": 529,
+    "cw-clearance": 545,
     "cw-atelier": 143,
     "cw-dive": 153,
     "cw-integrated-sports": 39,
@@ -169,6 +169,10 @@
       "C12-38H2H1-SK0K0-B0"
     ],
     "cw-clearance": [
+      "C63-39C3H4-S00W0-B1",
+      "C63-39C3H4-S00B0-VB",
+      "C63-39C3H4-S00P0-B1",
+      "C63-39C3H4-S00V0-VV",
       "C01-41H6D1-S00B1-B1",
       "C01-41H6D1-S00A0-VT",
       "C01-41H6D1-S00K0-B1",
@@ -204,6 +208,10 @@
       "C12-36AHC1-T00B1-B0R",
       "C60-42ADA31S0BB3-B0",
       "C60-40ADA31S00W1-B0",
+      "C63-39C3H4-S00W0-VT",
+      "C63-39C3H4-S00B0-B1",
+      "C63-39C3H4-S00P0-VG",
+      "C63-39C3H4-S00V0-B1",
       "C01-41H6D1-S00B1-VB",
       "C01-41H6D1-S00A0-B1",
       "C01-41H6D1-S00K0-VK",
@@ -243,6 +251,10 @@
       "C01-41APT4-T00W0-RV",
       "C60-42ADC31B0KK0-VT1",
       "C12-41H6D1-S00K0-B0",
+      "C63-39C3H4-S00W0-VC",
+      "C63-39C3H4-S00B0-VDB",
+      "C63-39C3H4-S00P0-VW",
+      "C63-39C3H4-S00V0-VT",
       "C01-41H6D1-S00B1-VC",
       "C01-41H6D1-S00A0-VB",
       "C01-41H6D1-S00K0-VT",
@@ -295,6 +307,10 @@
       "C60-41C3H31T0BB0-B0",
       "C12-40ADA1-S00W1-B0",
       "C60-40AGM31S0BB0-B1",
+      "C63-39C3H4-S00W0-VB",
+      "C63-39C3H4-S00B0-VW",
+      "C63-39C3H4-S00P0-VB",
+      "C63-39C3H4-S00V0-VC",
       "C01-41H6D1-S00B1-VW",
       "C01-41H6D1-S00A0-VW",
       "C01-41H6D1-S00K0-VC",
@@ -11686,13 +11702,14 @@
       "url": "https://www.christopherward.com/c63-sealander-yalos/C6345.html",
       "image": "/products/cw-pdp/c63-39c3h4-s00b0-b1/1.jpg",
       "badge": "New",
-      "gbpPrice": 1495.0,
+      "gbpPrice": 2095.0,
       "gbpListPrice": null,
       "collections": [
         "cw-new-releases",
+        "cw-clearance",
         "cw-sealander"
       ],
-      "primaryCollection": "cw-new-releases",
+      "primaryCollection": "cw-clearance",
       "inStock": true
     },
     {
@@ -11702,13 +11719,14 @@
       "url": "https://www.christopherward.com/c63-sealander-yalos/C6345.html",
       "image": "/products/cw-pdp/c63-39c3h4-s00b0-vb/1.jpg",
       "badge": "New",
-      "gbpPrice": 1290.0,
+      "gbpPrice": 1815.0,
       "gbpListPrice": null,
       "collections": [
         "cw-new-releases",
+        "cw-clearance",
         "cw-sealander"
       ],
-      "primaryCollection": "cw-new-releases",
+      "primaryCollection": "cw-clearance",
       "inStock": true
     },
     {
@@ -11718,13 +11736,14 @@
       "url": "https://www.christopherward.com/c63-sealander-yalos/C6345.html",
       "image": "/products/cw-pdp/c63-39c3h4-s00b0-vdb/1.jpg",
       "badge": "New",
-      "gbpPrice": 1290.0,
+      "gbpPrice": 1815.0,
       "gbpListPrice": null,
       "collections": [
         "cw-new-releases",
+        "cw-clearance",
         "cw-sealander"
       ],
-      "primaryCollection": "cw-new-releases",
+      "primaryCollection": "cw-clearance",
       "inStock": true
     },
     {
@@ -11734,13 +11753,14 @@
       "url": "https://www.christopherward.com/c63-sealander-yalos/C6345.html",
       "image": "/products/cw-pdp/c63-39c3h4-s00b0-vw/1.jpg",
       "badge": "New",
-      "gbpPrice": 1290.0,
+      "gbpPrice": 1815.0,
       "gbpListPrice": null,
       "collections": [
         "cw-new-releases",
+        "cw-clearance",
         "cw-sealander"
       ],
-      "primaryCollection": "cw-new-releases",
+      "primaryCollection": "cw-clearance",
       "inStock": true
     },
     {
@@ -11750,13 +11770,14 @@
       "url": "https://www.christopherward.com/c63-sealander-yalos/C6345.html",
       "image": "/products/cw-pdp/c63-39c3h4-s00p0-b1/1.jpg",
       "badge": "New",
-      "gbpPrice": 1495.0,
+      "gbpPrice": 2095.0,
       "gbpListPrice": null,
       "collections": [
         "cw-new-releases",
+        "cw-clearance",
         "cw-sealander"
       ],
-      "primaryCollection": "cw-new-releases",
+      "primaryCollection": "cw-clearance",
       "inStock": true
     },
     {
@@ -11766,13 +11787,14 @@
       "url": "https://www.christopherward.com/c63-sealander-yalos/C6345.html",
       "image": "/products/cw-pdp/c63-39c3h4-s00p0-vb/1.jpg",
       "badge": "New",
-      "gbpPrice": 1290.0,
+      "gbpPrice": 1815.0,
       "gbpListPrice": null,
       "collections": [
         "cw-new-releases",
+        "cw-clearance",
         "cw-sealander"
       ],
-      "primaryCollection": "cw-new-releases",
+      "primaryCollection": "cw-clearance",
       "inStock": true
     },
     {
@@ -11782,13 +11804,14 @@
       "url": "https://www.christopherward.com/c63-sealander-yalos/C6345.html",
       "image": "/products/cw-pdp/c63-39c3h4-s00p0-vg/1.jpg",
       "badge": "New",
-      "gbpPrice": 1290.0,
+      "gbpPrice": 1815.0,
       "gbpListPrice": null,
       "collections": [
         "cw-new-releases",
+        "cw-clearance",
         "cw-sealander"
       ],
-      "primaryCollection": "cw-new-releases",
+      "primaryCollection": "cw-clearance",
       "inStock": true
     },
     {
@@ -11798,13 +11821,14 @@
       "url": "https://www.christopherward.com/c63-sealander-yalos/C6345.html",
       "image": "/products/cw-pdp/c63-39c3h4-s00p0-vw/1.jpg",
       "badge": "New",
-      "gbpPrice": 1290.0,
+      "gbpPrice": 1815.0,
       "gbpListPrice": null,
       "collections": [
         "cw-new-releases",
+        "cw-clearance",
         "cw-sealander"
       ],
-      "primaryCollection": "cw-new-releases",
+      "primaryCollection": "cw-clearance",
       "inStock": true
     },
     {
@@ -11814,13 +11838,14 @@
       "url": "https://www.christopherward.com/c63-sealander-yalos/C6345.html",
       "image": "/products/cw-pdp/c63-39c3h4-s00v0-b1/1.jpg",
       "badge": "New",
-      "gbpPrice": 1495.0,
+      "gbpPrice": 2095.0,
       "gbpListPrice": null,
       "collections": [
         "cw-new-releases",
+        "cw-clearance",
         "cw-sealander"
       ],
-      "primaryCollection": "cw-new-releases",
+      "primaryCollection": "cw-clearance",
       "inStock": true
     },
     {
@@ -11830,13 +11855,14 @@
       "url": "https://www.christopherward.com/c63-sealander-yalos/C6345.html",
       "image": "/products/cw-pdp/c63-39c3h4-s00v0-vc/1.jpg",
       "badge": "New",
-      "gbpPrice": 1290.0,
+      "gbpPrice": 1815.0,
       "gbpListPrice": null,
       "collections": [
         "cw-new-releases",
+        "cw-clearance",
         "cw-sealander"
       ],
-      "primaryCollection": "cw-new-releases",
+      "primaryCollection": "cw-clearance",
       "inStock": true
     },
     {
@@ -11846,13 +11872,14 @@
       "url": "https://www.christopherward.com/c63-sealander-yalos/C6345.html",
       "image": "/products/cw-pdp/c63-39c3h4-s00v0-vt/1.jpg",
       "badge": "New",
-      "gbpPrice": 1290.0,
+      "gbpPrice": 1815.0,
       "gbpListPrice": null,
       "collections": [
         "cw-new-releases",
+        "cw-clearance",
         "cw-sealander"
       ],
-      "primaryCollection": "cw-new-releases",
+      "primaryCollection": "cw-clearance",
       "inStock": true
     },
     {
@@ -11862,13 +11889,14 @@
       "url": "https://www.christopherward.com/c63-sealander-yalos/C6345.html",
       "image": "/products/cw-pdp/c63-39c3h4-s00v0-vv/1.jpg",
       "badge": "New",
-      "gbpPrice": 1290.0,
+      "gbpPrice": 1815.0,
       "gbpListPrice": null,
       "collections": [
         "cw-new-releases",
+        "cw-clearance",
         "cw-sealander"
       ],
-      "primaryCollection": "cw-new-releases",
+      "primaryCollection": "cw-clearance",
       "inStock": true
     },
     {
@@ -11878,13 +11906,14 @@
       "url": "https://www.christopherward.com/c63-sealander-yalos/C6345.html",
       "image": "/products/cw-pdp/c63-39c3h4-s00w0-b1/1.jpg",
       "badge": "New",
-      "gbpPrice": 1495.0,
+      "gbpPrice": 2095.0,
       "gbpListPrice": null,
       "collections": [
         "cw-new-releases",
+        "cw-clearance",
         "cw-sealander"
       ],
-      "primaryCollection": "cw-new-releases",
+      "primaryCollection": "cw-clearance",
       "inStock": true
     },
     {
@@ -11894,13 +11923,14 @@
       "url": "https://www.christopherward.com/c63-sealander-yalos/C6345.html",
       "image": "/products/cw-pdp/c63-39c3h4-s00w0-vb/1.jpg",
       "badge": "New",
-      "gbpPrice": 1290.0,
+      "gbpPrice": 1815.0,
       "gbpListPrice": null,
       "collections": [
         "cw-new-releases",
+        "cw-clearance",
         "cw-sealander"
       ],
-      "primaryCollection": "cw-new-releases",
+      "primaryCollection": "cw-clearance",
       "inStock": true
     },
     {
@@ -11910,13 +11940,14 @@
       "url": "https://www.christopherward.com/c63-sealander-yalos/C6345.html",
       "image": "/products/cw-pdp/c63-39c3h4-s00w0-vc/1.jpg",
       "badge": "New",
-      "gbpPrice": 1290.0,
+      "gbpPrice": 1815.0,
       "gbpListPrice": null,
       "collections": [
         "cw-new-releases",
+        "cw-clearance",
         "cw-sealander"
       ],
-      "primaryCollection": "cw-new-releases",
+      "primaryCollection": "cw-clearance",
       "inStock": true
     },
     {
@@ -11926,13 +11957,14 @@
       "url": "https://www.christopherward.com/c63-sealander-yalos/C6345.html",
       "image": "/products/cw-pdp/c63-39c3h4-s00w0-vt/1.jpg",
       "badge": "New",
-      "gbpPrice": 1290.0,
+      "gbpPrice": 1815.0,
       "gbpListPrice": null,
       "collections": [
         "cw-new-releases",
+        "cw-clearance",
         "cw-sealander"
       ],
-      "primaryCollection": "cw-new-releases",
+      "primaryCollection": "cw-clearance",
       "inStock": true
     }
   ]
