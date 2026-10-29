@@ -36,6 +36,13 @@ PHRASES = [
     (r"Jump Hour", "점프아워"),
     (r"Cranwell", "크랜웰"),
     (r"Dune Aeolian", "듄 에올리안"),
+    (r"Ice Blue", "아이스 블루"),
+    (r"Salt Pink", "솔트 핑크"),
+    (r"Sea Green", "씨 그린"),
+    (r"Sand White", "샌드 화이트"),
+    (r"Dark Blue", "다크 블루"),
+    (r"Yalos", "얄로스"),
+
     (r"Full Lume", "풀 룸"),
     (r"Nearly New", "니얼리 뉴"),
     (r"Fine Italian", "파인 이탈리안"),
@@ -45,6 +52,9 @@ WORDS = [
     ("Trident", "트라이던트"),
     ("Bronze", "브론즈"),
     ("Sealander", "시랜더"),
+    ("Yalos", "얄로스"),
+    ("Vesuvio", "베수비오"),
+
     ("Biscay", "비스케이"),
     ("Twelve", "트웰브"),
     ("Moonphase", "문페이즈"),
@@ -232,6 +242,14 @@ STRAP_SUFFIX_LABELS = {
     "B0R": "Bader Bracelet",
     "B1": "Consort Bracelet",
     "B1R": "Consort Bracelet",
+    "VB": "Blue Vesuvio Leather",
+    "VDB": "Dark Blue Vesuvio Leather",
+    "VW": "White Vesuvio Leather",
+    "VG": "Grey Vesuvio Leather",
+    "VC": "Camel Vesuvio Leather",
+    "VT": "Tan Vesuvio Leather",
+    "VV": "Green Vesuvio Leather",
+    "VK": "Black Vesuvio Leather",
     "HB": "Blue Hybrid Rubber",
     "HV": "Khaki Hybrid Rubber",
     "HK": "Black Hybrid Rubber",
@@ -744,10 +762,13 @@ for i, (gkey, g) in enumerate(sorted(grouped.items(), key=lambda x: x[0])):
                 label = sv.get("labelEn")
                 break
         if not label:
-            sub = clean_sub(m.get("subtitle") or "")
-            cand = sub.split("·")[-1].strip() if sub else ""
-            if cand and "attribute" not in cand.lower() and len(cand) >= 3 and not cand.upper().startswith("C60-"):
-                label = cand
+            # Subtitle is often "39mm · Ice Blue" — that is the dial only, not a
+            # strap chip. On multi-dial PDPs always include dial × strap.
+            if not multi_dial:
+                sub = clean_sub(m.get("subtitle") or "")
+                cand = sub.split("·")[-1].strip() if sub else ""
+                if cand and "attribute" not in cand.lower() and len(cand) >= 3 and not cand.upper().startswith("C60-"):
+                    label = cand
         if not label:
             label = option_label_from_sku(msku, men, multi_dial=multi_dial)
         # Avoid dumping raw SKUs into the option picker.

@@ -1,27 +1,17 @@
 {
-  "generatedAt": "2026-10-29T00:00:21Z",
+  "generatedAt": "2026-10-29T20:30:04Z",
   "limit": 4,
   "rails": {
     "luxury": {
-      "productIds": [
-        "bv-a003brv6zf02201",
-        "bv-874364v6n602112",
-        "bv-871198v6or01010",
-        "bv-875219v6oe01010"
-      ],
-      "brands": [
-        "보테가-베네타",
-        "보테가-베네타",
-        "보테가-베네타",
-        "보테가-베네타"
-      ]
+      "productIds": [],
+      "brands": []
     },
     "watches": {
       "productIds": [
-        "cw-c01-39ajh4-s00e0-b1",
-        "cw-c01-39ajh4-s00b0-b1",
-        "cw-c01-41apt4-t00v0-rw",
-        "cw-c60-44ada31s0bb1-b0"
+        "cw-c63-39c3h4-s00w0-b1",
+        "cw-c63-40apg3-s00k0-b0",
+        "cw-c63-40apg3-s00w0-ro",
+        "cw-c63-39ada4-s00b0-rk"
       ],
       "brands": [
         "christopher-ward",
@@ -31,98 +21,28 @@
       ]
     },
     "bags": {
-      "productIds": [
-        "mb-xl-delilah",
-        "mb-woven-tote",
-        "mb-tree-tote-raffia",
-        "mb-tree-tote"
-      ],
-      "brands": [
-        "mulberry",
-        "mulberry",
-        "mulberry",
-        "mulberry"
-      ]
+      "productIds": [],
+      "brands": []
     },
     "shoes": {
-      "productIds": [
-        "ps-men-s-black-miyata-trainers-with-tonal-sole",
-        "ps-navy-leather-albany-trainers",
-        "ps-black-leather-travel-slipper",
-        "ps-cobalt-blue-leather-travel-slipper"
-      ],
-      "brands": [
-        "paul-smith",
-        "paul-smith",
-        "paul-smith",
-        "paul-smith"
-      ]
+      "productIds": [],
+      "brands": []
     },
     "accessories": {
-      "productIds": [
-        "ce-4s226cplb-19rh",
-        "ce-4s342cplb-38no",
-        "ce-4s342cplb-19sp",
-        "ce-4s342cplb-01av"
-      ],
-      "brands": [
-        "celine",
-        "celine",
-        "celine",
-        "celine"
-      ]
+      "productIds": [],
+      "brands": []
     },
     "sports": {
-      "productIds": [
-        "gg-marty-tour",
-        "gg-don-tour",
-        "gg-darryl-tour",
-        "gg-stanley"
-      ],
-      "brands": [
-        "galvin-green",
-        "galvin-green",
-        "galvin-green",
-        "galvin-green"
-      ]
+      "productIds": [],
+      "brands": []
     }
   },
   "brands": {
-    "celine": [
-      "accessories",
-      "accessories",
-      "accessories",
-      "accessories"
-    ],
     "christopher-ward": [
       "watches",
       "watches",
       "watches",
       "watches"
-    ],
-    "galvin-green": [
-      "sports",
-      "sports",
-      "sports",
-      "sports"
-    ],
-    "mulberry": [
-      "bags",
-      "bags",
-      "bags",
-      "bags"
-    ],
-    "paul-smith": [
-      "shoes",
-      "shoes",
-      "shoes",
-      "shoes"
-    ],
-    "보테가-베네타": [
-      "luxury",
-      "luxury",
-      "luxury",
-      "luxury"
     ]
   },
   "overlaps": {},

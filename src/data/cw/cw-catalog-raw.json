@@ -1,7 +1,7 @@
 {
-  "scrapedAt": "2026-10-28T23:06:21Z",
+  "scrapedAt": "2026-10-29T20:17:28Z",
   "categoryCounts": {
-    "cw-new-releases": 76,
+    "cw-new-releases": 92,
     "cw-bestsellers": 44,
     "cw-hidden-gems": 9,
     "cw-clearance": 529,
@@ -11,13 +11,29 @@
     "cw-adventure-field": 47,
     "cw-military": 4,
     "cw-bel-canto": 11,
-    "cw-sealander": 151,
+    "cw-sealander": 167,
     "cw-twelve": 55,
     "cw-trident": 65,
     "cw-moonphase": 7
   },
   "categories": {
     "cw-new-releases": [
+      "C63-39C3H4-S00W0-B1",
+      "C63-39C3H4-S00B0-B1",
+      "C63-39C3H4-S00P0-B1",
+      "C63-39C3H4-S00V0-B1",
+      "C63-39C3H4-S00B0-VB",
+      "C63-39C3H4-S00B0-VDB",
+      "C63-39C3H4-S00B0-VW",
+      "C63-39C3H4-S00P0-VB",
+      "C63-39C3H4-S00P0-VG",
+      "C63-39C3H4-S00P0-VW",
+      "C63-39C3H4-S00V0-VC",
+      "C63-39C3H4-S00V0-VT",
+      "C63-39C3H4-S00V0-VV",
+      "C63-39C3H4-S00W0-VB",
+      "C63-39C3H4-S00W0-VC",
+      "C63-39C3H4-S00W0-VT",
       "C01-41H6D1-S00A0-VT",
       "C01-41H6D1-S00A0-VB",
       "C01-41H6D1-S00A0-VK",
@@ -1093,6 +1109,22 @@
       "C01-41APT3-T00V0-B0"
     ],
     "cw-sealander": [
+      "C63-39C3H4-S00W0-B1",
+      "C63-39C3H4-S00B0-B1",
+      "C63-39C3H4-S00P0-B1",
+      "C63-39C3H4-S00V0-B1",
+      "C63-39C3H4-S00B0-VB",
+      "C63-39C3H4-S00B0-VDB",
+      "C63-39C3H4-S00B0-VW",
+      "C63-39C3H4-S00P0-VB",
+      "C63-39C3H4-S00P0-VG",
+      "C63-39C3H4-S00P0-VW",
+      "C63-39C3H4-S00V0-VC",
+      "C63-39C3H4-S00V0-VT",
+      "C63-39C3H4-S00V0-VV",
+      "C63-39C3H4-S00W0-VB",
+      "C63-39C3H4-S00W0-VC",
+      "C63-39C3H4-S00W0-VT",
       "C63-39ADA4-S00P0-B1",
       "C63-36ADA4-S00V0-B0",
       "C63-39AGM4-S00P0-B0",
@@ -11645,6 +11677,262 @@
         "cw-atelier"
       ],
       "primaryCollection": "cw-clearance",
+      "inStock": true
+    },
+    {
+      "sku": "C63-39C3H4-S00B0-B1",
+      "name": "C63 Sealander Yalos",
+      "subtitle": "39mm · Ice Blue",
+      "url": "https://www.christopherward.com/c63-sealander-yalos/C6345.html",
+      "image": "/products/cw-pdp/c63-39c3h4-s00b0-b1/1.jpg",
+      "badge": "New",
+      "gbpPrice": 1495.0,
+      "gbpListPrice": null,
+      "collections": [
+        "cw-new-releases",
+        "cw-sealander"
+      ],
+      "primaryCollection": "cw-new-releases",
+      "inStock": true
+    },
+    {
+      "sku": "C63-39C3H4-S00B0-VB",
+      "name": "C63 Sealander Yalos",
+      "subtitle": "39mm · Ice Blue",
+      "url": "https://www.christopherward.com/c63-sealander-yalos/C6345.html",
+      "image": "/products/cw-pdp/c63-39c3h4-s00b0-vb/1.jpg",
+      "badge": "New",
+      "gbpPrice": 1290.0,
+      "gbpListPrice": null,
+      "collections": [
+        "cw-new-releases",
+        "cw-sealander"
+      ],
+      "primaryCollection": "cw-new-releases",
+      "inStock": true
+    },
+    {
+      "sku": "C63-39C3H4-S00B0-VDB",
+      "name": "C63 Sealander Yalos",
+      "subtitle": "39mm · Ice Blue",
+      "url": "https://www.christopherward.com/c63-sealander-yalos/C6345.html",
+      "image": "/products/cw-pdp/c63-39c3h4-s00b0-vdb/1.jpg",
+      "badge": "New",
+      "gbpPrice": 1290.0,
+      "gbpListPrice": null,
+      "collections": [
+        "cw-new-releases",
+        "cw-sealander"
+      ],
+      "primaryCollection": "cw-new-releases",
+      "inStock": true
+    },
+    {
+      "sku": "C63-39C3H4-S00B0-VW",
+      "name": "C63 Sealander Yalos",
+      "subtitle": "39mm · Ice Blue",
+      "url": "https://www.christopherward.com/c63-sealander-yalos/C6345.html",
+      "image": "/products/cw-pdp/c63-39c3h4-s00b0-vw/1.jpg",
+      "badge": "New",
+      "gbpPrice": 1290.0,
+      "gbpListPrice": null,
+      "collections": [
+        "cw-new-releases",
+        "cw-sealander"
+      ],
+      "primaryCollection": "cw-new-releases",
+      "inStock": true
+    },
+    {
+      "sku": "C63-39C3H4-S00P0-B1",
+      "name": "C63 Sealander Yalos",
+      "subtitle": "39mm · Salt Pink",
+      "url": "https://www.christopherward.com/c63-sealander-yalos/C6345.html",
+      "image": "/products/cw-pdp/c63-39c3h4-s00p0-b1/1.jpg",
+      "badge": "New",
+      "gbpPrice": 1495.0,
+      "gbpListPrice": null,
+      "collections": [
+        "cw-new-releases",
+        "cw-sealander"
+      ],
+      "primaryCollection": "cw-new-releases",
+      "inStock": true
+    },
+    {
+      "sku": "C63-39C3H4-S00P0-VB",
+      "name": "C63 Sealander Yalos",
+      "subtitle": "39mm · Salt Pink",
+      "url": "https://www.christopherward.com/c63-sealander-yalos/C6345.html",
+      "image": "/products/cw-pdp/c63-39c3h4-s00p0-vb/1.jpg",
+      "badge": "New",
+      "gbpPrice": 1290.0,
+      "gbpListPrice": null,
+      "collections": [
+        "cw-new-releases",
+        "cw-sealander"
+      ],
+      "primaryCollection": "cw-new-releases",
+      "inStock": true
+    },
+    {
+      "sku": "C63-39C3H4-S00P0-VG",
+      "name": "C63 Sealander Yalos",
+      "subtitle": "39mm · Salt Pink",
+      "url": "https://www.christopherward.com/c63-sealander-yalos/C6345.html",
+      "image": "/products/cw-pdp/c63-39c3h4-s00p0-vg/1.jpg",
+      "badge": "New",
+      "gbpPrice": 1290.0,
+      "gbpListPrice": null,
+      "collections": [
+        "cw-new-releases",
+        "cw-sealander"
+      ],
+      "primaryCollection": "cw-new-releases",
+      "inStock": true
+    },
+    {
+      "sku": "C63-39C3H4-S00P0-VW",
+      "name": "C63 Sealander Yalos",
+      "subtitle": "39mm · Salt Pink",
+      "url": "https://www.christopherward.com/c63-sealander-yalos/C6345.html",
+      "image": "/products/cw-pdp/c63-39c3h4-s00p0-vw/1.jpg",
+      "badge": "New",
+      "gbpPrice": 1290.0,
+      "gbpListPrice": null,
+      "collections": [
+        "cw-new-releases",
+        "cw-sealander"
+      ],
+      "primaryCollection": "cw-new-releases",
+      "inStock": true
+    },
+    {
+      "sku": "C63-39C3H4-S00V0-B1",
+      "name": "C63 Sealander Yalos",
+      "subtitle": "39mm · Sea Green",
+      "url": "https://www.christopherward.com/c63-sealander-yalos/C6345.html",
+      "image": "/products/cw-pdp/c63-39c3h4-s00v0-b1/1.jpg",
+      "badge": "New",
+      "gbpPrice": 1495.0,
+      "gbpListPrice": null,
+      "collections": [
+        "cw-new-releases",
+        "cw-sealander"
+      ],
+      "primaryCollection": "cw-new-releases",
+      "inStock": true
+    },
+    {
+      "sku": "C63-39C3H4-S00V0-VC",
+      "name": "C63 Sealander Yalos",
+      "subtitle": "39mm · Sea Green",
+      "url": "https://www.christopherward.com/c63-sealander-yalos/C6345.html",
+      "image": "/products/cw-pdp/c63-39c3h4-s00v0-vc/1.jpg",
+      "badge": "New",
+      "gbpPrice": 1290.0,
+      "gbpListPrice": null,
+      "collections": [
+        "cw-new-releases",
+        "cw-sealander"
+      ],
+      "primaryCollection": "cw-new-releases",
+      "inStock": true
+    },
+    {
+      "sku": "C63-39C3H4-S00V0-VT",
+      "name": "C63 Sealander Yalos",
+      "subtitle": "39mm · Sea Green",
+      "url": "https://www.christopherward.com/c63-sealander-yalos/C6345.html",
+      "image": "/products/cw-pdp/c63-39c3h4-s00v0-vt/1.jpg",
+      "badge": "New",
+      "gbpPrice": 1290.0,
+      "gbpListPrice": null,
+      "collections": [
+        "cw-new-releases",
+        "cw-sealander"
+      ],
+      "primaryCollection": "cw-new-releases",
+      "inStock": true
+    },
+    {
+      "sku": "C63-39C3H4-S00V0-VV",
+      "name": "C63 Sealander Yalos",
+      "subtitle": "39mm · Sea Green",
+      "url": "https://www.christopherward.com/c63-sealander-yalos/C6345.html",
+      "image": "/products/cw-pdp/c63-39c3h4-s00v0-vv/1.jpg",
+      "badge": "New",
+      "gbpPrice": 1290.0,
+      "gbpListPrice": null,
+      "collections": [
+        "cw-new-releases",
+        "cw-sealander"
+      ],
+      "primaryCollection": "cw-new-releases",
+      "inStock": true
+    },
+    {
+      "sku": "C63-39C3H4-S00W0-B1",
+      "name": "C63 Sealander Yalos",
+      "subtitle": "39mm · Sand White",
+      "url": "https://www.christopherward.com/c63-sealander-yalos/C6345.html",
+      "image": "/products/cw-pdp/c63-39c3h4-s00w0-b1/1.jpg",
+      "badge": "New",
+      "gbpPrice": 1495.0,
+      "gbpListPrice": null,
+      "collections": [
+        "cw-new-releases",
+        "cw-sealander"
+      ],
+      "primaryCollection": "cw-new-releases",
+      "inStock": true
+    },
+    {
+      "sku": "C63-39C3H4-S00W0-VB",
+      "name": "C63 Sealander Yalos",
+      "subtitle": "39mm · Sand White",
+      "url": "https://www.christopherward.com/c63-sealander-yalos/C6345.html",
+      "image": "/products/cw-pdp/c63-39c3h4-s00w0-vb/1.jpg",
+      "badge": "New",
+      "gbpPrice": 1290.0,
+      "gbpListPrice": null,
+      "collections": [
+        "cw-new-releases",
+        "cw-sealander"
+      ],
+      "primaryCollection": "cw-new-releases",
+      "inStock": true
+    },
+    {
+      "sku": "C63-39C3H4-S00W0-VC",
+      "name": "C63 Sealander Yalos",
+      "subtitle": "39mm · Sand White",
+      "url": "https://www.christopherward.com/c63-sealander-yalos/C6345.html",
+      "image": "/products/cw-pdp/c63-39c3h4-s00w0-vc/1.jpg",
+      "badge": "New",
+      "gbpPrice": 1290.0,
+      "gbpListPrice": null,
+      "collections": [
+        "cw-new-releases",
+        "cw-sealander"
+      ],
+      "primaryCollection": "cw-new-releases",
+      "inStock": true
+    },
+    {
+      "sku": "C63-39C3H4-S00W0-VT",
+      "name": "C63 Sealander Yalos",
+      "subtitle": "39mm · Sand White",
+      "url": "https://www.christopherward.com/c63-sealander-yalos/C6345.html",
+      "image": "/products/cw-pdp/c63-39c3h4-s00w0-vt/1.jpg",
+      "badge": "New",
+      "gbpPrice": 1290.0,
+      "gbpListPrice": null,
+      "collections": [
+        "cw-new-releases",
+        "cw-sealander"
+      ],
+      "primaryCollection": "cw-new-releases",
       "inStock": true
     }
   ]
