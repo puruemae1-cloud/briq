@@ -485,6 +485,10 @@ def polish_ko(out: str) -> str:
     out = out.replace("로꼬", "Loco").replace("로코", "Loco")
     out = out.replace("크리스토퍼와드(Christopher Ward)", "크리스토퍼와드")
     out = out.replace("Christopher Ward", "크리스토퍼와드")
+    out = out.replace("stainless steel", "스테인리스 스틸")
+    out = out.replace("Stainless steel", "스테인리스 스틸")
+    out = out.replace("Center Seconds", "센터 세컨즈")
+    out = out.replace("Light-catcher", "라이트캐처").replace("Light-Catcher", "라이트캐처")
     return out
 
 
@@ -500,6 +504,83 @@ def _looks_untranslated(src: str, out: str) -> bool:
     return hangul < max(8, int(src_latin * 0.25)) and out_latin > hangul * 2
 
 
+# Exact EN→KO for PDP copy that phrase/to_ko stubs leave half-English (esp. BRIQ_TX_OFFLINE).
+FEATURE_COPY_KO = {
+    "Swiss made mechanical chronometer movement": "스위스 메이드 기계식 크로노미터 무브먼트",
+    "Elaboré-grade Colimaçoné movement finishing": "엘라보레 등급 콜리마초네 무브먼트 마감",
+    "Brushed and polished 904L stainless steel case": "브러시·폴리싱 마감 904L 스테인리스 스틸 케이스",
+    "Anti-reflective concave front sapphire crystal": "전면 반사 방지 오목형 사파이어 크리스탈",
+    "Embossed crown and concave exhibition caseback": "엠보스 크라운과 오목형 전시 케이스백",
+    "Stamped dial with a unique pattern for each colourway": "컬러마다 다른 패턴의 스탬프 다이얼",
+    "Diamond-polished, multi-faceted indexes and hands": "다이아몬드 폴리싱 다면 컷 인덱스와 바늘",
+    "iLink™  bracelet with “no tool” removable links, an engraved micro-adjustable clasp and quick-release system": "공구 없이 링크를 뺄 수 있는 iLink™ 브레이슬릿, 미세 조절 클래스프와 퀵 릴리스",
+    'iLink™ bracelet with "no tool" removable links, an engraved micro-adjustable clasp and quick-release system': "공구 없이 링크를 뺄 수 있는 iLink™ 브레이슬릿, 미세 조절 클래스프와 퀵 릴리스",
+}
+
+SHORT_COPY_KO = {
+    (
+        "Experience the slimmest, purest Sealander yet. A chronometer that carries the spirit of our "
+        "go-anywhere, do-everything series, elevated and enhanced in the most discreet way. Featuring four "
+        "stamped dials inspired by the textures and shifting lights of nature – with four colours, one per "
+        "dial. Plus, a no-bezel design with a deeper, concave box-sapphire crystal for a retro feel – and a "
+        "wider view onto the dial. With lume-free, all-steel indexes and hands – reproportioned and polished "
+        "for legibility. Powered by the COSC-certified Sellita SW300-1, selected for its slim profile and "
+        "56-hour power reserve. All brought together in a 39mm Light-catcher™ case crafted in lustrous 904L "
+        "steel that’s just 9.9mm high."
+    ): (
+        "시랜더 시리즈에서 가장 얇고 순수한 얄로스를 만나보세요. "
+        "어디에나 어울리는 시랜더의 정신을 담은 크로노미터를, 가장 절제된 방식으로 한층 끌어올렸습니다. "
+        "자연의 결감과 빛의 변화를 모티브로 한 네 가지 스탬프 다이얼을 각각 다른 컬러로 선보입니다. "
+        "베젤을 없애고 더 깊고 오목한 박스형 사파이어 크리스탈을 올려 레트로한 느낌을 살리면서도 다이얼이 더 넓게 보이도록 했습니다. "
+        "야광 없이 올스틸 인덱스와 바늘을 비율부터 다시 잡고 폴리싱해 가독성을 높였습니다. "
+        "슬림한 두께와 56시간 파워리저브를 위해 고른 COSC 인증 Sellita SW300-1이 구동합니다. "
+        "이 모든 요소를 광택 나는 904L 스틸 라이트캐처™ 39mm 케이스에 담았고, 두께는 단 9.9mm입니다."
+    ),
+}
+
+_KO_LATIN_ALLOW = re.compile(
+    r"(?:"
+    r"COSC|Sellita|SW\d{2,4}-?\d*[a-zA-Z]?|ETA|JJ\d{2}|FS\d{2}|CW-?\d{3}"
+    r"|904L|ATM|mm|Hz|p/?hr|p/?day|Ti|GMT|DLC|LE|Mk\.?\s*[IVX]+"
+    r"|Super-?LumiNova|Globolight|iLink|Light-?catcher|Consort|Bader|Vacona"
+    r"|Colima[cç]on[eé]|Elabor[eé]|Sonnerie|Bel\s*Canto"
+    r"|C\d{1,2}|N\d{2}"
+    r")",
+    re.I,
+)
+
+
+def _copy_override(text: str) -> str | None:
+    t = (text or "").strip()
+    if not t:
+        return None
+    if t in SHORT_COPY_KO:
+        return SHORT_COPY_KO[t]
+    if t in FEATURE_COPY_KO:
+        return FEATURE_COPY_KO[t]
+    compact = re.sub(r"\s+", " ", t.replace("“", '"').replace("”", '"').replace("’", "'"))
+    for k, v in FEATURE_COPY_KO.items():
+        kk = re.sub(r"\s+", " ", k.replace("“", '"').replace("”", '"').replace("’", "'"))
+        if kk == compact:
+            return v
+    return None
+
+
+def _has_english_residue(text: str) -> bool:
+    """True when customer-facing KO copy still reads as English prose."""
+    if not text:
+        return False
+    scrubbed = _KO_LATIN_ALLOW.sub(" ", text)
+    scrubbed = re.sub(r"[0-9]+(?:\.[0-9]+)?", " ", scrubbed)
+    scrubbed = re.sub(r"[™®©]", " ", scrubbed)
+    words = re.findall(r"[A-Za-z]{4,}", scrubbed)
+    hangul = len(re.findall(r"[가-힣]", text))
+    if len(words) >= 6 and hangul < max(12, len(words) * 2):
+        return True
+    if len(words) >= 3 and hangul == 0:
+        return True
+    return False
+
 def translate_en(text: str) -> str:
     """Google Translate (gtx) with CW term post-pass; MyMemory fallback on 429."""
     import os
@@ -509,12 +590,24 @@ def translate_en(text: str) -> str:
     text = (text or "").strip()
     if not text:
         return ""
+    override = _copy_override(text)
+    if override:
+        out = polish_ko(override)
+        _TX_CACHE[text] = out
+        return out
     cached = _TX_CACHE.get(text)
-    if cached is not None and not _looks_untranslated(text, cached):
+    if cached is not None and not _looks_untranslated(text, cached) and not _has_english_residue(cached):
         return polish_ko(cached)
-    # Offline / CI-safe: use phrase dictionary only (avoid rate limits mid-rebuild)
+    if cached is not None:
+        _TX_CACHE.pop(text, None)
+    # Offline / CI-safe: phrase dictionary only — refuse leftover English prose
     if os.environ.get("BRIQ_TX_OFFLINE") == "1":
         out = polish_ko(to_ko(text))
+        if _looks_untranslated(text, out) or _has_english_residue(out):
+            raise RuntimeError(
+                "BRIQ_TX_OFFLINE left English PDP copy; add FEATURE_COPY_KO/SHORT_COPY_KO: "
+                + text[:120]
+            )
         return out
     # Protect model codes
     protected = {}
@@ -584,10 +677,52 @@ def translate_en(text: str) -> str:
     return out
 
 
+
+def ensure_ko(src_en: str, translated: str, *, field: str) -> str:
+    """Force natural Korean for PDP fields; never ship leftover English prose."""
+    import os
+    override = _copy_override(src_en)
+    if override:
+        return polish_ko(override)
+    out = polish_ko(translated or "")
+    if src_en and (_looks_untranslated(src_en, out) or _has_english_residue(out)):
+        _TX_CACHE.pop(src_en, None)
+        if os.environ.get("BRIQ_TX_OFFLINE") == "1":
+            raise RuntimeError(
+                f"CW catalog KO incomplete for {field}: {src_en[:120]!r}. "
+                "Unset BRIQ_TX_OFFLINE or add FEATURE_COPY_KO/SHORT_COPY_KO."
+            )
+        out = polish_ko(translate_en(src_en))
+    if src_en and (_looks_untranslated(src_en, out) or _has_english_residue(out)):
+        raise RuntimeError(
+            f"CW catalog still English in {field}: {out[:160]!r} (from {src_en[:80]!r})"
+        )
+    return out
+
+
+def assert_product_ko(product: dict) -> None:
+    sku = product.get("sku") or product.get("id")
+    val = product.get("descriptionKo") or ""
+    if _has_english_residue(val):
+        raise RuntimeError(f"{sku} descriptionKo still English: {val[:160]!r}")
+    for i, feat in enumerate(product.get("featuresKo") or []):
+        if _has_english_residue(feat):
+            raise RuntimeError(f"{sku} featuresKo[{i}] still English: {feat!r}")
+    for i, sec in enumerate(product.get("storySections") or []):
+        body = sec.get("bodyKo") or ""
+        if _has_english_residue(body):
+            raise RuntimeError(f"{sku} storySections[{i}].bodyKo still English: {body[:160]!r}")
+    for i, spec in enumerate(product.get("techSpecs") or []):
+        for key in ("labelKo", "valueKo"):
+            v = spec.get(key) or ""
+            if _has_english_residue(v):
+                raise RuntimeError(f"{sku} techSpecs[{i}].{key} still English: {v!r}")
+
+
 def translate_story(name_en: str, short_en: str, features: list[str], images: list[str]) -> list[dict]:
     """Natural Korean PDP story blocks."""
     name_ko = to_ko(name_en)
-    body_ko = translate_en(short_en) if short_en else f"{name_ko} — 크리스토퍼와드의 시그니처 타임피스."
+    body_ko = ensure_ko(short_en, translate_en(short_en), field="story.intro") if short_en else f"{name_ko} — 크리스토퍼와드의 시그니처 타임피스."
 
     sections = [
         {
@@ -619,7 +754,8 @@ def translate_story(name_en: str, short_en: str, features: list[str], images: li
             img = images[3]
         elif title == "스트랩" and len(images) > 4:
             img = images[4]
-        body = translate_en(". ".join(matched[:6]))
+        joined = ". ".join(matched[:6])
+        body = ensure_ko(joined, translate_en(joined), field=f"story.{title}")
         sections.append({"titleKo": title, "bodyKo": body, "image": img, "reverse": title in ("다이얼", "스트랩")})
 
     if len(sections) == 1 and len(images) > 1:
@@ -968,7 +1104,10 @@ for i, (gkey, g) in enumerate(sorted(grouped.items(), key=lambda x: x[0])):
             story = intro + ed_sections
 
     tech_specs = build_tech_specs(en)
-    features_ko = [translate_en(f) for f in (en.get("featuresEn") or [])[:16]]
+    features_ko = [
+        ensure_ko(f, translate_en(f), field=f"featuresKo[{i}]")
+        for i, f in enumerate((en.get("featuresEn") or [])[:16])
+    ]
 
     # min price across variants for card
     if variants:
@@ -983,12 +1122,11 @@ for i, (gkey, g) in enumerate(sorted(grouped.items(), key=lambda x: x[0])):
 
     desc = f"크리스토퍼와드 {name_ko}."
     if en.get("shortDescriptionEn") and not is_nearly_new(en.get("nameEn")):
-        desc = translate_en(en["shortDescriptionEn"])  # full official short description (no hard truncate)
+        desc = ensure_ko(en["shortDescriptionEn"], translate_en(en["shortDescriptionEn"]), field="descriptionKo")
 
     source_url = best_source_url(members, en)
 
-    products_out.append(
-        {
+    product_row = {
             "id": f"cw-{slugify(primary_sku)}",
             "name": name_en,
             "nameKo": name_ko[:140],
@@ -1027,7 +1165,8 @@ for i, (gkey, g) in enumerate(sorted(grouped.items(), key=lambda x: x[0])):
             "multiCase": multi_case,
             "caseSizes": case_sizes,
         }
-    )
+    assert_product_ko(product_row)
+    products_out.append(product_row)
 
 # registeredAt: new-releases order
 new_order = RAW["categories"].get("cw-new-releases", [])
