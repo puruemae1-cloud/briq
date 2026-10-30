@@ -3,9 +3,15 @@
 
 The key file already lives at the site root. One request holds at most
 10,000 URLs. Stops when Naver asks us to slow down.
+
+Modes:
+  (default)     every product URL in sitemap-index.xml
+  --recent      URLs from sitemap-recent.xml (hubs + newest)
+  --naver       URLs from sitemap-naver.xml (tiny priority list)
 """
 from __future__ import annotations
 
+import argparse
 import json
 import time
 import urllib.error
@@ -52,6 +58,10 @@ def product_urls() -> list[str]:
     return list(dict.fromkeys(urls))
 
 
+def sitemap_urls(path: str) -> list[str]:
+    return list(dict.fromkeys(locs(fetch(f"{SITE}{path}"))))
+
+
 def submit(key: str, batch: list[str]) -> int:
     body = json.dumps(
         {
@@ -81,9 +91,31 @@ def submit(key: str, batch: list[str]) -> int:
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    mode = parser.add_mutually_exclusive_group()
+    mode.add_argument(
+        "--recent",
+        action="store_true",
+        help="submit sitemap-recent.xml only (hubs + newest)",
+    )
+    mode.add_argument(
+        "--naver",
+        action="store_true",
+        help="submit sitemap-naver.xml only (tiny priority list)",
+    )
+    args = parser.parse_args()
+
     key = indexnow_key()
-    urls = product_urls()
-    print("products", len(urls), flush=True)
+    if args.naver:
+        urls = sitemap_urls("/sitemap-naver.xml")
+        label = "naver-priority"
+    elif args.recent:
+        urls = sitemap_urls("/sitemap-recent.xml")
+        label = "recent"
+    else:
+        urls = product_urls()
+        label = "products"
+    print(label, len(urls), flush=True)
     if not urls:
         raise SystemExit(1)
     for start in range(0, len(urls), BATCH):

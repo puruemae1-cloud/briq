@@ -30,7 +30,12 @@ export default function robots(): MetadataRoute.Robots {
         ],
       },
     ],
-    sitemap: [`${site}/sitemap-index.xml`, `${site}/sitemap-recent.xml`],
+    // Naver (Yeti) first: tiny priority list, then recent, then full index.
+    sitemap: [
+      `${site}/sitemap-naver.xml`,
+      `${site}/sitemap-recent.xml`,
+      `${site}/sitemap-index.xml`,
+    ],
     host: site,
   };
 }
