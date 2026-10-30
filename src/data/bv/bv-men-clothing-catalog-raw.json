@@ -1,7 +1,7 @@
 {
   "hub": "men-clothing",
   "category": "luxury",
-  "scrapedAt": "2026-10-28T23:37:59.517429+00:00",
+  "scrapedAt": "2026-10-29T22:10:07.018035+00:00",
   "leaves": [
     "bv-men-clothing-coats",
     "bv-men-clothing-jackets",
@@ -20,28 +20,28 @@
       "scraped": 19
     },
     "bv-men-clothing-jackets": {
-      "official": 72,
-      "scraped": 72
+      "official": 73,
+      "scraped": 73
     },
     "bv-men-clothing-knitwear": {
-      "official": 25,
-      "scraped": 25
+      "official": 26,
+      "scraped": 26
     },
     "bv-men-clothing-leather": {
       "official": 33,
       "scraped": 33
     },
     "bv-men-clothing-trousers": {
-      "official": 45,
-      "scraped": 45
+      "official": 48,
+      "scraped": 48
     },
     "bv-men-clothing-denim": {
       "official": 24,
       "scraped": 24
     },
     "bv-men-clothing-shirts": {
-      "official": 42,
-      "scraped": 42
+      "official": 43,
+      "scraped": 43
     },
     "bv-men-clothing-tshirts": {
       "official": 11,
@@ -11099,7 +11099,7 @@
           "id": "52",
           "value": "52",
           "displayValue": "52",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 4960.0,
           "listGbpPrice": null
         },
@@ -30980,7 +30980,7 @@
           "id": "48",
           "value": "48",
           "displayValue": "48",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 1610.0,
           "listGbpPrice": null
         },
@@ -36404,7 +36404,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/cotton-jersey-t-shirt-nightfall-838924V4N501468.html",
       "url": "https://www.bottegaveneta.com/en-gb/cotton-jersey-t-shirt-nightfall-838924V4N501468.html",
-      "gbpPrice": 630.0,
+      "gbpPrice": 670.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -36502,7 +36502,7 @@
           "value": "XS",
           "displayValue": "XS",
           "inStock": false,
-          "gbpPrice": 630.0,
+          "gbpPrice": 670.0,
           "listGbpPrice": null
         },
         {
@@ -36510,7 +36510,7 @@
           "value": "S",
           "displayValue": "S",
           "inStock": false,
-          "gbpPrice": 630.0,
+          "gbpPrice": 670.0,
           "listGbpPrice": null
         },
         {
@@ -36518,7 +36518,7 @@
           "value": "M",
           "displayValue": "M",
           "inStock": true,
-          "gbpPrice": 630.0,
+          "gbpPrice": 670.0,
           "listGbpPrice": null
         },
         {
@@ -36526,7 +36526,7 @@
           "value": "L",
           "displayValue": "L",
           "inStock": true,
-          "gbpPrice": 630.0,
+          "gbpPrice": 670.0,
           "listGbpPrice": null
         },
         {
@@ -36534,7 +36534,7 @@
           "value": "XL",
           "displayValue": "XL",
           "inStock": true,
-          "gbpPrice": 630.0,
+          "gbpPrice": 670.0,
           "listGbpPrice": null
         },
         {
@@ -36542,7 +36542,7 @@
           "value": "XXL",
           "displayValue": "XXL",
           "inStock": true,
-          "gbpPrice": 630.0,
+          "gbpPrice": 670.0,
           "listGbpPrice": null
         }
       ],
@@ -36852,7 +36852,7 @@
           "id": "XL",
           "value": "XL",
           "displayValue": "XL",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 630.0,
           "listGbpPrice": null
         },
@@ -37674,7 +37674,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/pima-cotton-jersey-t-shirt-chalk-838924V4N509071.html",
       "url": "https://www.bottegaveneta.com/en-gb/pima-cotton-jersey-t-shirt-chalk-838924V4N509071.html",
-      "gbpPrice": 630.0,
+      "gbpPrice": 670.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -37772,7 +37772,7 @@
           "value": "XXS",
           "displayValue": "XXS",
           "inStock": false,
-          "gbpPrice": 630.0,
+          "gbpPrice": 670.0,
           "listGbpPrice": null
         },
         {
@@ -37780,7 +37780,7 @@
           "value": "XS",
           "displayValue": "XS",
           "inStock": true,
-          "gbpPrice": 630.0,
+          "gbpPrice": 670.0,
           "listGbpPrice": null
         },
         {
@@ -37788,7 +37788,7 @@
           "value": "S",
           "displayValue": "S",
           "inStock": true,
-          "gbpPrice": 630.0,
+          "gbpPrice": 670.0,
           "listGbpPrice": null
         },
         {
@@ -37796,7 +37796,7 @@
           "value": "M",
           "displayValue": "M",
           "inStock": true,
-          "gbpPrice": 630.0,
+          "gbpPrice": 670.0,
           "listGbpPrice": null
         },
         {
@@ -37804,7 +37804,7 @@
           "value": "L",
           "displayValue": "L",
           "inStock": true,
-          "gbpPrice": 630.0,
+          "gbpPrice": 670.0,
           "listGbpPrice": null
         },
         {
@@ -37812,7 +37812,7 @@
           "value": "XL",
           "displayValue": "XL",
           "inStock": true,
-          "gbpPrice": 630.0,
+          "gbpPrice": 670.0,
           "listGbpPrice": null
         },
         {
@@ -37820,7 +37820,7 @@
           "value": "XXL",
           "displayValue": "XXL",
           "inStock": false,
-          "gbpPrice": 630.0,
+          "gbpPrice": 670.0,
           "listGbpPrice": null
         }
       ],
@@ -38732,6 +38732,955 @@
       ],
       "leafId": "bv-men-clothing-swimwear",
       "cgid": "men-swimwear",
+      "hubCategory": "luxury"
+    },
+    {
+      "id": "A004SMV6YC01010",
+      "sku": "A004SMV6YC01010",
+      "internalId": "A004SMV6YC01010",
+      "name": "Wool Twill Jacket",
+      "brand": "bottega veneta",
+      "color": "Double black",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/wool-twill-jacket-double-black-A004SMV6YC01010.html",
+      "url": "https://www.bottegaveneta.com/en-gb/wool-twill-jacket-double-black-A004SMV6YC01010.html",
+      "gbpPrice": 3210.0,
+      "listGbpPrice": null,
+      "inStock": false,
+      "shortDescription": [
+        "Color: Double Black"
+      ],
+      "longDescription": [
+        "Lightweight wool twill jacket",
+        "Intrecciato silk lapels",
+        "Button closure",
+        "Fully lined",
+        "Regular fit"
+      ],
+      "compactedLongDesc": "Jacket in lightweight wool twill featuring Intrecciato silk lapels.",
+      "composition": "• Material: 100% Wool",
+      "material": "",
+      "productCare": "#N/A",
+      "sizeModel": "",
+      "sizeChartId": "default-M-RTW",
+      "sizeGuide": {
+        "id": "default-M-RTW",
+        "titleKo": "Men's Clothing",
+        "noteKo": "보테가 베네타 공홈 사이즈 가이드 기준입니다.",
+        "headers": [
+          "BV",
+          "UK",
+          "US",
+          "KR"
+        ],
+        "rows": [
+          [
+            "44",
+            "34",
+            "34",
+            "90"
+          ],
+          [
+            "46",
+            "36",
+            "36",
+            "95"
+          ],
+          [
+            "48",
+            "38",
+            "38",
+            "100"
+          ],
+          [
+            "50",
+            "40",
+            "40",
+            "100"
+          ],
+          [
+            "52",
+            "42",
+            "42",
+            "105"
+          ],
+          [
+            "54",
+            "44",
+            "44",
+            "110"
+          ],
+          [
+            "56",
+            "46",
+            "46",
+            "115"
+          ],
+          [
+            "58",
+            "48",
+            "48",
+            "125"
+          ]
+        ]
+      },
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/adee4e8f-552a-4a41-84cd-51c10a242760/eCom/A004SMV6YC01010_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/dee65869-f20c-4e45-a293-fcc41cc4b036/eCom/A004SMV6YC01010_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/49b562fa-f2f4-42f1-a99e-7bec5ac402d7/eCom/A004SMV6YC01010_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/2d48dc72-ab8f-436e-98ad-349636a919c1/eCom/A004SMV6YC01010_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/adee4e8f-552a-4a41-84cd-51c10a242760/Small/A004SMV6YC01010_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a004smv6yc01010/1.jpg",
+        "/products/bv-pdp/a004smv6yc01010/2.jpg",
+        "/products/bv-pdp/a004smv6yc01010/3.jpg",
+        "/products/bv-pdp/a004smv6yc01010/4.jpg",
+        "/products/bv-pdp/a004smv6yc01010/5.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "44",
+          "value": "44",
+          "displayValue": "44",
+          "inStock": false,
+          "gbpPrice": 3210.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "46",
+          "value": "46",
+          "displayValue": "46",
+          "inStock": false,
+          "gbpPrice": 3210.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "48",
+          "value": "48",
+          "displayValue": "48",
+          "inStock": false,
+          "gbpPrice": 3210.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "50",
+          "value": "50",
+          "displayValue": "50",
+          "inStock": false,
+          "gbpPrice": 3210.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "52",
+          "value": "52",
+          "displayValue": "52",
+          "inStock": false,
+          "gbpPrice": 3210.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "54",
+          "value": "54",
+          "displayValue": "54",
+          "inStock": false,
+          "gbpPrice": 3210.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bv-men",
+        "bv-men-clothing",
+        "bv-men-clothing-jackets"
+      ],
+      "leafId": "bv-men-clothing-jackets",
+      "cgid": "men-jackets",
+      "hubCategory": "luxury"
+    },
+    {
+      "id": "A0057NV70E04071",
+      "sku": "A0057NV70E04071",
+      "internalId": "A0057NV70E04071",
+      "name": "Wool And Cashmere Sweater",
+      "brand": "bottega veneta",
+      "color": "Midnight blue",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/wool-and-cashmere-sweater-midnight-blue-A0057NV70E04071.html",
+      "url": "https://www.bottegaveneta.com/en-gb/wool-and-cashmere-sweater-midnight-blue-A0057NV70E04071.html",
+      "gbpPrice": 1960.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Color: Midnight Blue"
+      ],
+      "longDescription": [
+        "Double wool and cashmere sweater",
+        "Embossed Intrecciato leather front patch",
+        "Regular fit"
+      ],
+      "compactedLongDesc": "Sweater in double wool and cashmere with embossed Intrecciato leather front patch.",
+      "composition": "• Material: 50% Wool, 50% cashmere",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "",
+      "sizeChartId": "default-M-RTW",
+      "sizeGuide": {
+        "id": "default-M-RTW",
+        "titleKo": "Men's Clothing",
+        "noteKo": "보테가 베네타 공홈 사이즈 가이드 기준입니다.",
+        "headers": [
+          "BV",
+          "UK",
+          "US",
+          "KR"
+        ],
+        "rows": [
+          [
+            "44",
+            "34",
+            "34",
+            "90"
+          ],
+          [
+            "46",
+            "36",
+            "36",
+            "95"
+          ],
+          [
+            "48",
+            "38",
+            "38",
+            "100"
+          ],
+          [
+            "50",
+            "40",
+            "40",
+            "100"
+          ],
+          [
+            "52",
+            "42",
+            "42",
+            "105"
+          ],
+          [
+            "54",
+            "44",
+            "44",
+            "110"
+          ],
+          [
+            "56",
+            "46",
+            "46",
+            "115"
+          ],
+          [
+            "58",
+            "48",
+            "48",
+            "125"
+          ]
+        ]
+      },
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/752f6d0e-506e-4500-a65e-85b5d4907849/eCom/A0057NV70E04071_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/46026d01-6390-4d27-a613-1cb91961fbc9/eCom/A0057NV70E04071_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/2ff31470-2a3a-4850-94cd-cdc8d3389e9a/eCom/A0057NV70E04071_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/c839c654-fda3-4c2e-b11c-d45c9f71f0ca/eCom/A0057NV70E04071_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/752f6d0e-506e-4500-a65e-85b5d4907849/Small/A0057NV70E04071_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a0057nv70e04071/1.jpg",
+        "/products/bv-pdp/a0057nv70e04071/2.jpg",
+        "/products/bv-pdp/a0057nv70e04071/3.jpg",
+        "/products/bv-pdp/a0057nv70e04071/4.jpg",
+        "/products/bv-pdp/a0057nv70e04071/5.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "XS",
+          "value": "XS",
+          "displayValue": "XS",
+          "inStock": false,
+          "gbpPrice": 1960.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "S",
+          "value": "S",
+          "displayValue": "S",
+          "inStock": true,
+          "gbpPrice": 1960.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "M",
+          "value": "M",
+          "displayValue": "M",
+          "inStock": true,
+          "gbpPrice": 1960.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "L",
+          "value": "L",
+          "displayValue": "L",
+          "inStock": true,
+          "gbpPrice": 1960.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "XL",
+          "value": "XL",
+          "displayValue": "XL",
+          "inStock": true,
+          "gbpPrice": 1960.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "XXL",
+          "value": "XXL",
+          "displayValue": "XXL",
+          "inStock": false,
+          "gbpPrice": 1960.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bv-men",
+        "bv-men-clothing",
+        "bv-men-clothing-knitwear"
+      ],
+      "leafId": "bv-men-clothing-knitwear",
+      "cgid": "men-knitwear",
+      "hubCategory": "luxury"
+    },
+    {
+      "id": "A0072BV6YC01010",
+      "sku": "A0072BV6YC01010",
+      "internalId": "A0072BV6YC01010",
+      "name": "Wool Twill Trousers",
+      "brand": "bottega veneta",
+      "color": "Double black",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/wool-twill-trousers-double-black-A0072BV6YC01010.html",
+      "url": "https://www.bottegaveneta.com/en-gb/wool-twill-trousers-double-black-A0072BV6YC01010.html",
+      "gbpPrice": 1960.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Color: Double Black"
+      ],
+      "longDescription": [
+        "Lightweight wool twill trousers",
+        "Straight leg",
+        "Intrecciato silk side band",
+        "Zip and hook closure"
+      ],
+      "compactedLongDesc": "Trousers with straight leg in lightweight wool twill, featuring an Intrecciato silk band at the side.",
+      "composition": "• Material: 100% Wool",
+      "material": "",
+      "productCare": "#N/A",
+      "sizeModel": "",
+      "sizeChartId": "default-M-RTW",
+      "sizeGuide": {
+        "id": "default-M-RTW",
+        "titleKo": "Men's Clothing",
+        "noteKo": "보테가 베네타 공홈 사이즈 가이드 기준입니다.",
+        "headers": [
+          "BV",
+          "UK",
+          "US",
+          "KR"
+        ],
+        "rows": [
+          [
+            "44",
+            "34",
+            "34",
+            "90"
+          ],
+          [
+            "46",
+            "36",
+            "36",
+            "95"
+          ],
+          [
+            "48",
+            "38",
+            "38",
+            "100"
+          ],
+          [
+            "50",
+            "40",
+            "40",
+            "100"
+          ],
+          [
+            "52",
+            "42",
+            "42",
+            "105"
+          ],
+          [
+            "54",
+            "44",
+            "44",
+            "110"
+          ],
+          [
+            "56",
+            "46",
+            "46",
+            "115"
+          ],
+          [
+            "58",
+            "48",
+            "48",
+            "125"
+          ]
+        ]
+      },
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/cc559489-9ce8-4f8a-9292-cd3f23e614f3/eCom/A0072BV6YC01010_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/dce8d847-b580-4165-9242-4e5ea2dc0591/eCom/A0072BV6YC01010_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/138092fc-cda1-4998-ae3d-b7ae8abbc187/eCom/A0072BV6YC01010_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/cc559489-9ce8-4f8a-9292-cd3f23e614f3/Small/A0072BV6YC01010_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a0072bv6yc01010/1.jpg",
+        "/products/bv-pdp/a0072bv6yc01010/2.jpg",
+        "/products/bv-pdp/a0072bv6yc01010/3.jpg",
+        "/products/bv-pdp/a0072bv6yc01010/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "44",
+          "value": "44",
+          "displayValue": "44",
+          "inStock": false,
+          "gbpPrice": 1960.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "46",
+          "value": "46",
+          "displayValue": "46",
+          "inStock": true,
+          "gbpPrice": 1960.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "48",
+          "value": "48",
+          "displayValue": "48",
+          "inStock": true,
+          "gbpPrice": 1960.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "50",
+          "value": "50",
+          "displayValue": "50",
+          "inStock": true,
+          "gbpPrice": 1960.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "52",
+          "value": "52",
+          "displayValue": "52",
+          "inStock": false,
+          "gbpPrice": 1960.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "54",
+          "value": "54",
+          "displayValue": "54",
+          "inStock": false,
+          "gbpPrice": 1960.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bv-men",
+        "bv-men-clothing",
+        "bv-men-clothing-trousers"
+      ],
+      "leafId": "bv-men-clothing-trousers",
+      "cgid": "men-trousers",
+      "hubCategory": "luxury"
+    },
+    {
+      "id": "A003VRV6YL03918",
+      "sku": "A003VRV6YL03918",
+      "internalId": "A003VRV6YL03918",
+      "name": "Compact Wool Flannel Trousers",
+      "brand": "bottega veneta",
+      "color": "Green/mudstone mel",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/compact-wool-flannel-trousers-green-mudstone-mel-A003VRV6YL03918.html",
+      "url": "https://www.bottegaveneta.com/en-gb/compact-wool-flannel-trousers-green-mudstone-mel-A003VRV6YL03918.html",
+      "gbpPrice": 1430.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Color: Green/Mudstone Mel"
+      ],
+      "longDescription": [
+        "Compact wool flannel trousers",
+        "Straight leg",
+        "Elasticated waistband"
+      ],
+      "compactedLongDesc": "Elasticated trousers with straight leg in compact wool flannel.",
+      "composition": "• Material: 100% Wool",
+      "material": "",
+      "productCare": "#N/A",
+      "sizeModel": "",
+      "sizeChartId": "default-M-RTW",
+      "sizeGuide": {
+        "id": "default-M-RTW",
+        "titleKo": "Men's Clothing",
+        "noteKo": "보테가 베네타 공홈 사이즈 가이드 기준입니다.",
+        "headers": [
+          "BV",
+          "UK",
+          "US",
+          "KR"
+        ],
+        "rows": [
+          [
+            "44",
+            "34",
+            "34",
+            "90"
+          ],
+          [
+            "46",
+            "36",
+            "36",
+            "95"
+          ],
+          [
+            "48",
+            "38",
+            "38",
+            "100"
+          ],
+          [
+            "50",
+            "40",
+            "40",
+            "100"
+          ],
+          [
+            "52",
+            "42",
+            "42",
+            "105"
+          ],
+          [
+            "54",
+            "44",
+            "44",
+            "110"
+          ],
+          [
+            "56",
+            "46",
+            "46",
+            "115"
+          ],
+          [
+            "58",
+            "48",
+            "48",
+            "125"
+          ]
+        ]
+      },
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/9226fc3f-03d7-48b7-ad90-714127681fb1/eCom/A003VRV6YL03918_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/38035b3b-e79b-4590-9b67-bf1d712320bd/eCom/A003VRV6YL03918_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/a92f0b31-4a33-4dc3-95c4-1d237e9a977f/eCom/A003VRV6YL03918_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/9226fc3f-03d7-48b7-ad90-714127681fb1/Small/A003VRV6YL03918_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a003vrv6yl03918/1.jpg",
+        "/products/bv-pdp/a003vrv6yl03918/2.jpg",
+        "/products/bv-pdp/a003vrv6yl03918/3.jpg",
+        "/products/bv-pdp/a003vrv6yl03918/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "44",
+          "value": "44",
+          "displayValue": "44",
+          "inStock": true,
+          "gbpPrice": 1430.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "46",
+          "value": "46",
+          "displayValue": "46",
+          "inStock": true,
+          "gbpPrice": 1430.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "48",
+          "value": "48",
+          "displayValue": "48",
+          "inStock": true,
+          "gbpPrice": 1430.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "50",
+          "value": "50",
+          "displayValue": "50",
+          "inStock": true,
+          "gbpPrice": 1430.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "52",
+          "value": "52",
+          "displayValue": "52",
+          "inStock": true,
+          "gbpPrice": 1430.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bv-men",
+        "bv-men-clothing",
+        "bv-men-clothing-trousers"
+      ],
+      "leafId": "bv-men-clothing-trousers",
+      "cgid": "men-trousers",
+      "hubCategory": "luxury"
+    },
+    {
+      "id": "A00795V70E04071",
+      "sku": "A00795V70E04071",
+      "internalId": "A00795V70E04071",
+      "name": "Wool And Cashmere Trousers",
+      "brand": "bottega veneta",
+      "color": "Midnight blue",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/wool-and-cashmere-trousers-midnight-blue-A00795V70E04071.html",
+      "url": "https://www.bottegaveneta.com/en-gb/wool-and-cashmere-trousers-midnight-blue-A00795V70E04071.html",
+      "gbpPrice": 1650.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Color: Midnight Blue"
+      ],
+      "longDescription": [
+        "Double wool and cashmere trousers",
+        "Straight leg",
+        "Embossed Intrecciato leather back patch",
+        "Drawstring closure"
+      ],
+      "compactedLongDesc": "Trousers with straight leg in double wool and cashmere, featuring an embossed Intrecciato leather back patch.",
+      "composition": "• Material: 50% Wool, 50% cashmere",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "",
+      "sizeChartId": "default-M-RTW",
+      "sizeGuide": {
+        "id": "default-M-RTW",
+        "titleKo": "Men's Clothing",
+        "noteKo": "보테가 베네타 공홈 사이즈 가이드 기준입니다.",
+        "headers": [
+          "BV",
+          "UK",
+          "US",
+          "KR"
+        ],
+        "rows": [
+          [
+            "44",
+            "34",
+            "34",
+            "90"
+          ],
+          [
+            "46",
+            "36",
+            "36",
+            "95"
+          ],
+          [
+            "48",
+            "38",
+            "38",
+            "100"
+          ],
+          [
+            "50",
+            "40",
+            "40",
+            "100"
+          ],
+          [
+            "52",
+            "42",
+            "42",
+            "105"
+          ],
+          [
+            "54",
+            "44",
+            "44",
+            "110"
+          ],
+          [
+            "56",
+            "46",
+            "46",
+            "115"
+          ],
+          [
+            "58",
+            "48",
+            "48",
+            "125"
+          ]
+        ]
+      },
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/2836cea5-aa91-466a-a995-dd248dae336e/eCom/A00795V70E04071_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/30b31375-bd5f-4f29-857a-f49538def4c9/eCom/A00795V70E04071_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/c26435b4-d14f-4d54-835f-b72b637da745/eCom/A00795V70E04071_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/df9d959e-89e7-40b0-9840-26fe27299c20/eCom/A00795V70E04071_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/2836cea5-aa91-466a-a995-dd248dae336e/Small/A00795V70E04071_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a00795v70e04071/1.jpg",
+        "/products/bv-pdp/a00795v70e04071/2.jpg",
+        "/products/bv-pdp/a00795v70e04071/3.jpg",
+        "/products/bv-pdp/a00795v70e04071/4.jpg",
+        "/products/bv-pdp/a00795v70e04071/5.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "XS",
+          "value": "XS",
+          "displayValue": "XS",
+          "inStock": false,
+          "gbpPrice": 1650.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "S",
+          "value": "S",
+          "displayValue": "S",
+          "inStock": true,
+          "gbpPrice": 1650.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "M",
+          "value": "M",
+          "displayValue": "M",
+          "inStock": true,
+          "gbpPrice": 1650.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "L",
+          "value": "L",
+          "displayValue": "L",
+          "inStock": true,
+          "gbpPrice": 1650.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "XL",
+          "value": "XL",
+          "displayValue": "XL",
+          "inStock": true,
+          "gbpPrice": 1650.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bv-men",
+        "bv-men-clothing",
+        "bv-men-clothing-trousers"
+      ],
+      "leafId": "bv-men-clothing-trousers",
+      "cgid": "men-trousers",
+      "hubCategory": "luxury"
+    },
+    {
+      "id": "A003WZV6YL03918",
+      "sku": "A003WZV6YL03918",
+      "internalId": "A003WZV6YL03918",
+      "name": "Compact Wool Flannel Shirt",
+      "brand": "bottega veneta",
+      "color": "Green/mudstone mel",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/compact-wool-flannel-shirt-green-mudstone-mel-A003WZV6YL03918.html",
+      "url": "https://www.bottegaveneta.com/en-gb/compact-wool-flannel-shirt-green-mudstone-mel-A003WZV6YL03918.html",
+      "gbpPrice": 1520.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Color: Green/Mudstone Mel"
+      ],
+      "longDescription": [
+        "Compact wool flannel shirt",
+        "BV embroidery",
+        "Button closure",
+        "Relaxed fit"
+      ],
+      "compactedLongDesc": "Shirt in compact wool flannel, featuring house embroidery at the front.",
+      "composition": "• Material: 52% viscose, 29% silk, 19% polyester",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "",
+      "sizeChartId": "default-M-RTW",
+      "sizeGuide": {
+        "id": "default-M-RTW",
+        "titleKo": "Men's Clothing",
+        "noteKo": "보테가 베네타 공홈 사이즈 가이드 기준입니다.",
+        "headers": [
+          "BV",
+          "UK",
+          "US",
+          "KR"
+        ],
+        "rows": [
+          [
+            "44",
+            "34",
+            "34",
+            "90"
+          ],
+          [
+            "46",
+            "36",
+            "36",
+            "95"
+          ],
+          [
+            "48",
+            "38",
+            "38",
+            "100"
+          ],
+          [
+            "50",
+            "40",
+            "40",
+            "100"
+          ],
+          [
+            "52",
+            "42",
+            "42",
+            "105"
+          ],
+          [
+            "54",
+            "44",
+            "44",
+            "110"
+          ],
+          [
+            "56",
+            "46",
+            "46",
+            "115"
+          ],
+          [
+            "58",
+            "48",
+            "48",
+            "125"
+          ]
+        ]
+      },
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/64b4dbb4-44e0-4140-83b7-5b13999b368e/eCom/A003WZV6YL03918_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/a32e071e-5424-4ed5-88c1-aa5873d2afc3/eCom/A003WZV6YL03918_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/1392635e-7898-497e-83ca-8afed8038b54/eCom/A003WZV6YL03918_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/5676a1a6-ca43-429e-8c00-5761f9ebd594/eCom/A003WZV6YL03918_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/64b4dbb4-44e0-4140-83b7-5b13999b368e/Small/A003WZV6YL03918_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a003wzv6yl03918/1.jpg",
+        "/products/bv-pdp/a003wzv6yl03918/2.jpg",
+        "/products/bv-pdp/a003wzv6yl03918/3.jpg",
+        "/products/bv-pdp/a003wzv6yl03918/4.jpg",
+        "/products/bv-pdp/a003wzv6yl03918/5.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "44",
+          "value": "44",
+          "displayValue": "44",
+          "inStock": true,
+          "gbpPrice": 1520.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "46",
+          "value": "46",
+          "displayValue": "46",
+          "inStock": true,
+          "gbpPrice": 1520.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "48",
+          "value": "48",
+          "displayValue": "48",
+          "inStock": true,
+          "gbpPrice": 1520.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "50",
+          "value": "50",
+          "displayValue": "50",
+          "inStock": true,
+          "gbpPrice": 1520.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "52",
+          "value": "52",
+          "displayValue": "52",
+          "inStock": false,
+          "gbpPrice": 1520.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bv-men",
+        "bv-men-clothing",
+        "bv-men-clothing-shirts"
+      ],
+      "leafId": "bv-men-clothing-shirts",
+      "cgid": "men-shirts",
       "hubCategory": "luxury"
     }
   ]

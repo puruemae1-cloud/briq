@@ -1,7 +1,7 @@
 {
   "hub": "men-bags",
   "category": "bags",
-  "scrapedAt": "2026-10-28T22:58:28.330713+00:00",
+  "scrapedAt": "2026-10-29T21:31:49.884174+00:00",
   "leaves": [
     "bv-men-bags-intrecciato",
     "bv-men-bags-diago",
@@ -18,8 +18,8 @@
   ],
   "leafCounts": {
     "bv-men-bags-intrecciato": {
-      "official": 49,
-      "scraped": 49
+      "official": 50,
+      "scraped": 50
     },
     "bv-men-bags-diago": {
       "official": 32,
@@ -42,8 +42,8 @@
       "scraped": 16
     },
     "bv-men-bags-crossbody": {
-      "official": 69,
-      "scraped": 69
+      "official": 70,
+      "scraped": 70
     },
     "bv-men-bags-tote": {
       "official": 60,
@@ -360,7 +360,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/small-intrecciato-zipped-tote-midnight-795628V2HL14330.html",
       "url": "https://www.bottegaveneta.com/en-gb/small-intrecciato-zipped-tote-midnight-795628V2HL14330.html",
-      "gbpPrice": 3210.0,
+      "gbpPrice": 3300.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -401,7 +401,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 3210.0,
+          "gbpPrice": 3300.0,
           "listGbpPrice": null
         }
       ],
@@ -568,7 +568,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/small-intrecciato-backpack-black-828524V2HL28803.html",
       "url": "https://www.bottegaveneta.com/en-gb/small-intrecciato-backpack-black-828524V2HL28803.html",
-      "gbpPrice": 3030.0,
+      "gbpPrice": 3120.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -611,7 +611,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 3030.0,
+          "gbpPrice": 3120.0,
           "listGbpPrice": null
         }
       ],
@@ -637,7 +637,7 @@
       "gender": "E",
       "link": "https://www.bottegaveneta.com/en-gb/intrecciato-backpack-black-828527V2HL28803.html",
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-backpack-black-828527V2HL28803.html",
-      "gbpPrice": 3390.0,
+      "gbpPrice": 3480.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -680,7 +680,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 3390.0,
+          "gbpPrice": 3480.0,
           "listGbpPrice": null
         }
       ],
@@ -706,7 +706,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/intrecciato-back-to-school-backpack-deep-mahogany-805971V2HL16144.html",
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-back-to-school-backpack-deep-mahogany-805971V2HL16144.html",
-      "gbpPrice": 3740.0,
+      "gbpPrice": 3830.0,
       "listGbpPrice": null,
       "inStock": false,
       "shortDescription": [
@@ -747,7 +747,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": false,
-          "gbpPrice": 3740.0,
+          "gbpPrice": 3830.0,
           "listGbpPrice": null
         }
       ],
@@ -759,8 +759,8 @@
         "bv-men-bags-intrecciato",
         "bv-men-bags-backpack"
       ],
-      "leafId": "bv-men-bags-backpack",
-      "cgid": "men-backpacks",
+      "leafId": "bv-men-bags-intrecciato",
+      "cgid": "men-intrecciato",
       "hubCategory": "bags"
     },
     {
@@ -773,7 +773,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/back-to-school-backpack-black-805971V2HL18803.html",
       "url": "https://www.bottegaveneta.com/en-gb/back-to-school-backpack-black-805971V2HL18803.html",
-      "gbpPrice": 3740.0,
+      "gbpPrice": 3830.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -820,7 +820,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 3740.0,
+          "gbpPrice": 3830.0,
           "listGbpPrice": null
         }
       ],
@@ -846,7 +846,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/intrecciato-back-to-school-backpack-black-805971V4FW28803.html",
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-back-to-school-backpack-black-805971V4FW28803.html",
-      "gbpPrice": 4010.0,
+      "gbpPrice": 4100.0,
       "listGbpPrice": null,
       "inStock": false,
       "shortDescription": [
@@ -889,7 +889,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": false,
-          "gbpPrice": 4010.0,
+          "gbpPrice": 4100.0,
           "listGbpPrice": null
         }
       ],
@@ -915,7 +915,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/intrecciato-back-to-school-backpack-black-805971V71Q08803.html",
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-back-to-school-backpack-black-805971V71Q08803.html",
-      "gbpPrice": 4100.0,
+      "gbpPrice": 4190.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -960,7 +960,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 4100.0,
+          "gbpPrice": 4190.0,
           "listGbpPrice": null
         }
       ],
@@ -1054,7 +1054,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/small-intrecciato-zipped-tote-obsidian-grey-795628V2HL11689.html",
       "url": "https://www.bottegaveneta.com/en-gb/small-intrecciato-zipped-tote-obsidian-grey-795628V2HL11689.html",
-      "gbpPrice": 3210.0,
+      "gbpPrice": 3300.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -1095,7 +1095,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 3210.0,
+          "gbpPrice": 3300.0,
           "listGbpPrice": null
         }
       ],
@@ -1187,7 +1187,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/intrecciato-backpack-natural-fondant-874794V3BOD9814.html",
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-backpack-natural-fondant-874794V3BOD9814.html",
-      "gbpPrice": 3210.0,
+      "gbpPrice": 3300.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -1230,7 +1230,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 3210.0,
+          "gbpPrice": 3300.0,
           "listGbpPrice": null
         }
       ],
@@ -1256,9 +1256,9 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/small-intrecciato-zipped-tote-black-795628V2HL18803.html",
       "url": "https://www.bottegaveneta.com/en-gb/small-intrecciato-zipped-tote-black-795628V2HL18803.html",
-      "gbpPrice": 3210.0,
+      "gbpPrice": 3300.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Canvas",
         "Colour: Black",
@@ -1298,8 +1298,8 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
-          "gbpPrice": 3210.0,
+          "inStock": true,
+          "gbpPrice": 3300.0,
           "listGbpPrice": null
         }
       ],
@@ -1325,9 +1325,9 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/small-intrecciato-zipped-tote-black-795628V71Q08803.html",
       "url": "https://www.bottegaveneta.com/en-gb/small-intrecciato-zipped-tote-black-795628V71Q08803.html",
-      "gbpPrice": 3570.0,
+      "gbpPrice": 3660.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Canvas",
         "Colour: Black",
@@ -1369,8 +1369,8 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
-          "gbpPrice": 3570.0,
+          "inStock": false,
+          "gbpPrice": 3660.0,
           "listGbpPrice": null
         }
       ],
@@ -1396,7 +1396,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/small-intrecciato-document-case-with-wristlet-ardoise-693675V2E412077.html",
       "url": "https://www.bottegaveneta.com/en-gb/small-intrecciato-document-case-with-wristlet-ardoise-693675V2E412077.html",
-      "gbpPrice": 1570.0,
+      "gbpPrice": 1650.0,
       "listGbpPrice": null,
       "inStock": false,
       "shortDescription": [
@@ -1437,7 +1437,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": false,
-          "gbpPrice": 1570.0,
+          "gbpPrice": 1650.0,
           "listGbpPrice": null
         }
       ],
@@ -1463,7 +1463,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/small-intrecciato-zipped-tote-natural-fondant-874790V3BOC9814.html",
       "url": "https://www.bottegaveneta.com/en-gb/small-intrecciato-zipped-tote-natural-fondant-874790V3BOC9814.html",
-      "gbpPrice": 2940.0,
+      "gbpPrice": 3120.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -1508,7 +1508,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 2940.0,
+          "gbpPrice": 3120.0,
           "listGbpPrice": null
         }
       ],
@@ -1534,7 +1534,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/small-intrecciato-document-case-with-wristlet-black-693675V2E418803.html",
       "url": "https://www.bottegaveneta.com/en-gb/small-intrecciato-document-case-with-wristlet-black-693675V2E418803.html",
-      "gbpPrice": 1570.0,
+      "gbpPrice": 1650.0,
       "listGbpPrice": null,
       "inStock": false,
       "shortDescription": [
@@ -1577,7 +1577,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": false,
-          "gbpPrice": 1570.0,
+          "gbpPrice": 1650.0,
           "listGbpPrice": null
         }
       ],
@@ -1603,7 +1603,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/intrecciato-document-case-with-wristlet-black-732638V2E418803.html",
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-document-case-with-wristlet-black-732638V2E418803.html",
-      "gbpPrice": 1710.0,
+      "gbpPrice": 1740.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -1644,7 +1644,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 1710.0,
+          "gbpPrice": 1740.0,
           "listGbpPrice": null
         }
       ],
@@ -2237,9 +2237,9 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/intrecciato-cabin-duffle-black-795287V2HL18803.html",
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-cabin-duffle-black-795287V2HL18803.html",
-      "gbpPrice": 4720.0,
+      "gbpPrice": 4900.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Canvas",
         "Colour: Black",
@@ -2277,8 +2277,8 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
-          "gbpPrice": 4720.0,
+          "inStock": false,
+          "gbpPrice": 4900.0,
           "listGbpPrice": null
         }
       ],
@@ -2442,7 +2442,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/large-intrecciato-duffle-black-781069V2HL18803.html",
       "url": "https://www.bottegaveneta.com/en-gb/large-intrecciato-duffle-black-781069V2HL18803.html",
-      "gbpPrice": 5080.0,
+      "gbpPrice": 5260.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -2485,7 +2485,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 5080.0,
+          "gbpPrice": 5260.0,
           "listGbpPrice": null
         }
       ],
@@ -2714,7 +2714,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/small-intrecciato-camera-bag-black-755923V71Q08803.html",
       "url": "https://www.bottegaveneta.com/en-gb/small-intrecciato-camera-bag-black-755923V71Q08803.html",
-      "gbpPrice": 2410.0,
+      "gbpPrice": 2500.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -2757,7 +2757,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 2410.0,
+          "gbpPrice": 2500.0,
           "listGbpPrice": null
         }
       ],
@@ -2783,7 +2783,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/small-intrecciato-camera-bag-denim-755923V2HL14093.html",
       "url": "https://www.bottegaveneta.com/en-gb/small-intrecciato-camera-bag-denim-755923V2HL14093.html",
-      "gbpPrice": 2040.0,
+      "gbpPrice": 2140.0,
       "listGbpPrice": null,
       "inStock": false,
       "shortDescription": [
@@ -2823,7 +2823,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": false,
-          "gbpPrice": 2040.0,
+          "gbpPrice": 2140.0,
           "listGbpPrice": null
         }
       ],
@@ -2849,7 +2849,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/small-intrecciato-camera-bag-blue-venezia-755923V2HL14017.html",
       "url": "https://www.bottegaveneta.com/en-gb/small-intrecciato-camera-bag-blue-venezia-755923V2HL14017.html",
-      "gbpPrice": 2040.0,
+      "gbpPrice": 2140.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -2889,7 +2889,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 2040.0,
+          "gbpPrice": 2140.0,
           "listGbpPrice": null
         }
       ],
@@ -2914,7 +2914,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/small-intrecciato-camera-bag-black-755923V2HL18803.html",
       "url": "https://www.bottegaveneta.com/en-gb/small-intrecciato-camera-bag-black-755923V2HL18803.html",
-      "gbpPrice": 2040.0,
+      "gbpPrice": 2140.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -2954,7 +2954,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 2040.0,
+          "gbpPrice": 2140.0,
           "listGbpPrice": null
         }
       ],
@@ -2980,7 +2980,7 @@
       "gender": "E",
       "link": "https://www.bottegaveneta.com/en-gb/small-intrecciato-camera-bag-dark-green-710048V2E423009.html",
       "url": "https://www.bottegaveneta.com/en-gb/small-intrecciato-camera-bag-dark-green-710048V2E423009.html",
-      "gbpPrice": 2040.0,
+      "gbpPrice": 2140.0,
       "listGbpPrice": null,
       "inStock": false,
       "shortDescription": [
@@ -3020,7 +3020,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": false,
-          "gbpPrice": 2040.0,
+          "gbpPrice": 2140.0,
           "listGbpPrice": null
         }
       ],
@@ -3046,7 +3046,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/small-intrecciato-camera-bag-black-755923V5WN48966.html",
       "url": "https://www.bottegaveneta.com/en-gb/small-intrecciato-camera-bag-black-755923V5WN48966.html",
-      "gbpPrice": 2310.0,
+      "gbpPrice": 2410.0,
       "listGbpPrice": null,
       "inStock": false,
       "shortDescription": [
@@ -3084,7 +3084,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": false,
-          "gbpPrice": 2310.0,
+          "gbpPrice": 2410.0,
           "listGbpPrice": null
         }
       ],
@@ -3110,7 +3110,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/small-intrecciato-camera-bag-black-755923V4G318803.html",
       "url": "https://www.bottegaveneta.com/en-gb/small-intrecciato-camera-bag-black-755923V4G318803.html",
-      "gbpPrice": 2040.0,
+      "gbpPrice": 2140.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -3150,7 +3150,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 2040.0,
+          "gbpPrice": 2140.0,
           "listGbpPrice": null
         }
       ],
@@ -3176,7 +3176,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/small-intrecciato-camera-bag-black-755923V6PC18803.html",
       "url": "https://www.bottegaveneta.com/en-gb/small-intrecciato-camera-bag-black-755923V6PC18803.html",
-      "gbpPrice": 2320.0,
+      "gbpPrice": 2410.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -3217,7 +3217,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 2320.0,
+          "gbpPrice": 2410.0,
           "listGbpPrice": null
         }
       ],
@@ -4072,7 +4072,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/diago-zipped-messenger-fondant-837112V4FV12145.html",
       "url": "https://www.bottegaveneta.com/en-gb/diago-zipped-messenger-fondant-837112V4FV12145.html",
-      "gbpPrice": 1860.0,
+      "gbpPrice": 1960.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -4114,7 +4114,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 1860.0,
+          "gbpPrice": 1960.0,
           "listGbpPrice": null
         }
       ],
@@ -4140,7 +4140,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/large-diago-bark-green-815796V4FV13770.html",
       "url": "https://www.bottegaveneta.com/en-gb/large-diago-bark-green-815796V4FV13770.html",
-      "gbpPrice": 2850.0,
+      "gbpPrice": 2940.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -4184,7 +4184,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 2850.0,
+          "gbpPrice": 2940.0,
           "listGbpPrice": null
         }
       ],
@@ -4210,7 +4210,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/diago-tote-bark-green-843840V4FW03770.html",
       "url": "https://www.bottegaveneta.com/en-gb/diago-tote-bark-green-843840V4FW03770.html",
-      "gbpPrice": 3030.0,
+      "gbpPrice": 3210.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -4256,7 +4256,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 3030.0,
+          "gbpPrice": 3210.0,
           "listGbpPrice": null
         }
       ],
@@ -4282,7 +4282,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/diago-zipped-messenger-deep-mahogany-837112V4FV16144.html",
       "url": "https://www.bottegaveneta.com/en-gb/diago-zipped-messenger-deep-mahogany-837112V4FV16144.html",
-      "gbpPrice": 1860.0,
+      "gbpPrice": 1960.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -4322,7 +4322,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 1860.0,
+          "gbpPrice": 1960.0,
           "listGbpPrice": null
         }
       ],
@@ -4347,7 +4347,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/diago-zipped-messenger-old-wood-837112V4FV12116.html",
       "url": "https://www.bottegaveneta.com/en-gb/diago-zipped-messenger-old-wood-837112V4FV12116.html",
-      "gbpPrice": 1860.0,
+      "gbpPrice": 1960.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -4387,7 +4387,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 1860.0,
+          "gbpPrice": 1960.0,
           "listGbpPrice": null
         }
       ],
@@ -4412,7 +4412,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/diago-zipped-messenger-black-837112V4FV18803.html",
       "url": "https://www.bottegaveneta.com/en-gb/diago-zipped-messenger-black-837112V4FV18803.html",
-      "gbpPrice": 1860.0,
+      "gbpPrice": 1960.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -4452,7 +4452,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 1860.0,
+          "gbpPrice": 1960.0,
           "listGbpPrice": null
         }
       ],
@@ -4893,7 +4893,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/large-diago-black-815796V4FV18803.html",
       "url": "https://www.bottegaveneta.com/en-gb/large-diago-black-815796V4FV18803.html",
-      "gbpPrice": 2850.0,
+      "gbpPrice": 2940.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -4937,7 +4937,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 2850.0,
+          "gbpPrice": 2940.0,
           "listGbpPrice": null
         }
       ],
@@ -4963,7 +4963,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/diago-zipped-messenger-nocturnal-837112V4FV14182.html",
       "url": "https://www.bottegaveneta.com/en-gb/diago-zipped-messenger-nocturnal-837112V4FV14182.html",
-      "gbpPrice": 1860.0,
+      "gbpPrice": 1960.0,
       "listGbpPrice": null,
       "inStock": false,
       "shortDescription": [
@@ -5002,7 +5002,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": false,
-          "gbpPrice": 1860.0,
+          "gbpPrice": 1960.0,
           "listGbpPrice": null
         }
       ],
@@ -5170,7 +5170,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/large-diago-espresso-lava-red-815796V56A12008.html",
       "url": "https://www.bottegaveneta.com/en-gb/large-diago-espresso-lava-red-815796V56A12008.html",
-      "gbpPrice": 2850.0,
+      "gbpPrice": 2940.0,
       "listGbpPrice": null,
       "inStock": false,
       "shortDescription": [
@@ -5216,7 +5216,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": false,
-          "gbpPrice": 2850.0,
+          "gbpPrice": 2940.0,
           "listGbpPrice": null
         }
       ],
@@ -5242,7 +5242,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/large-diago-alpi-green-815796V4FV13123.html",
       "url": "https://www.bottegaveneta.com/en-gb/large-diago-alpi-green-815796V4FV13123.html",
-      "gbpPrice": 2850.0,
+      "gbpPrice": 2940.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -5286,7 +5286,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 2850.0,
+          "gbpPrice": 2940.0,
           "listGbpPrice": null
         }
       ],
@@ -5311,7 +5311,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/large-diago-old-wood-815796V4FV12116.html",
       "url": "https://www.bottegaveneta.com/en-gb/large-diago-old-wood-815796V4FV12116.html",
-      "gbpPrice": 2850.0,
+      "gbpPrice": 2940.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -5351,7 +5351,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 2850.0,
+          "gbpPrice": 2940.0,
           "listGbpPrice": null
         }
       ],
@@ -5376,7 +5376,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/large-diago-fondant-815796V4FV12145.html",
       "url": "https://www.bottegaveneta.com/en-gb/large-diago-fondant-815796V4FV12145.html",
-      "gbpPrice": 2850.0,
+      "gbpPrice": 2940.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -5418,7 +5418,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 2850.0,
+          "gbpPrice": 2940.0,
           "listGbpPrice": null
         }
       ],
@@ -5443,7 +5443,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/diago-hobo-black-795125V4FV18803.html",
       "url": "https://www.bottegaveneta.com/en-gb/diago-hobo-black-795125V4FV18803.html",
-      "gbpPrice": 2850.0,
+      "gbpPrice": 3030.0,
       "listGbpPrice": null,
       "inStock": false,
       "shortDescription": [
@@ -5487,7 +5487,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": false,
-          "gbpPrice": 2850.0,
+          "gbpPrice": 3030.0,
           "listGbpPrice": null
         }
       ],
@@ -5582,7 +5582,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/diago-hobo-old-wood-795125V4FV12116.html",
       "url": "https://www.bottegaveneta.com/en-gb/diago-hobo-old-wood-795125V4FV12116.html",
-      "gbpPrice": 2850.0,
+      "gbpPrice": 3030.0,
       "listGbpPrice": null,
       "inStock": false,
       "shortDescription": [
@@ -5624,7 +5624,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": false,
-          "gbpPrice": 2850.0,
+          "gbpPrice": 3030.0,
           "listGbpPrice": null
         }
       ],
@@ -5649,7 +5649,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/veneto-messenger-midnight-843836V5KD04330.html",
       "url": "https://www.bottegaveneta.com/en-gb/veneto-messenger-midnight-843836V5KD04330.html",
-      "gbpPrice": 2600.0,
+      "gbpPrice": 2770.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -5693,7 +5693,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 2600.0,
+          "gbpPrice": 2770.0,
           "listGbpPrice": null
         }
       ],
@@ -5791,7 +5791,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/veneto-messenger-black-843836V5KD08803.html",
       "url": "https://www.bottegaveneta.com/en-gb/veneto-messenger-black-843836V5KD08803.html",
-      "gbpPrice": 2600.0,
+      "gbpPrice": 2770.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -5835,7 +5835,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 2600.0,
+          "gbpPrice": 2770.0,
           "listGbpPrice": null
         }
       ],
@@ -5932,7 +5932,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/veneto-small-tote-deep-mahogany-876338V5KD06144.html",
       "url": "https://www.bottegaveneta.com/en-gb/veneto-small-tote-deep-mahogany-876338V5KD06144.html",
-      "gbpPrice": 3120.0,
+      "gbpPrice": 3210.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -5977,7 +5977,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 3120.0,
+          "gbpPrice": 3210.0,
           "listGbpPrice": null
         }
       ],
@@ -6002,7 +6002,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/veneto-tote-espresso-876338V5KD02008.html",
       "url": "https://www.bottegaveneta.com/en-gb/veneto-tote-espresso-876338V5KD02008.html",
-      "gbpPrice": 3120.0,
+      "gbpPrice": 3210.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -6045,7 +6045,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 3120.0,
+          "gbpPrice": 3210.0,
           "listGbpPrice": null
         }
       ],
@@ -6071,7 +6071,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/veneto-tote-butter-yellow-876338V5KD07256.html",
       "url": "https://www.bottegaveneta.com/en-gb/veneto-tote-butter-yellow-876338V5KD07256.html",
-      "gbpPrice": 3120.0,
+      "gbpPrice": 3210.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -6114,7 +6114,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 3120.0,
+          "gbpPrice": 3210.0,
           "listGbpPrice": null
         }
       ],
@@ -6140,7 +6140,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/veneto-small-tote-black-876338V5KD08803.html",
       "url": "https://www.bottegaveneta.com/en-gb/veneto-small-tote-black-876338V5KD08803.html",
-      "gbpPrice": 3120.0,
+      "gbpPrice": 3210.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -6177,7 +6177,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 3120.0,
+          "gbpPrice": 3210.0,
           "listGbpPrice": null
         }
       ],
@@ -6335,7 +6335,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/veneto-flap-messenger-neptune-843836V5Y304035.html",
       "url": "https://www.bottegaveneta.com/en-gb/veneto-flap-messenger-neptune-843836V5Y304035.html",
-      "gbpPrice": 2600.0,
+      "gbpPrice": 2770.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -6381,7 +6381,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 2600.0,
+          "gbpPrice": 2770.0,
           "listGbpPrice": null
         }
       ],
@@ -6407,7 +6407,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/small-veneto-fondant-836918V5RI12145.html",
       "url": "https://www.bottegaveneta.com/en-gb/small-veneto-fondant-836918V5RI12145.html",
-      "gbpPrice": 2410.0,
+      "gbpPrice": 2500.0,
       "listGbpPrice": null,
       "inStock": false,
       "shortDescription": [
@@ -6447,7 +6447,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": false,
-          "gbpPrice": 2410.0,
+          "gbpPrice": 2500.0,
           "listGbpPrice": null
         }
       ],
@@ -6472,7 +6472,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/veneto-messenger-dark-green-843836V5KD03009.html",
       "url": "https://www.bottegaveneta.com/en-gb/veneto-messenger-dark-green-843836V5KD03009.html",
-      "gbpPrice": 2600.0,
+      "gbpPrice": 2770.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -6516,7 +6516,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 2600.0,
+          "gbpPrice": 2770.0,
           "listGbpPrice": null
         }
       ],
@@ -6541,7 +6541,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/small-veneto-deep-mahogany-836918V5RI16144.html",
       "url": "https://www.bottegaveneta.com/en-gb/small-veneto-deep-mahogany-836918V5RI16144.html",
-      "gbpPrice": 2410.0,
+      "gbpPrice": 2500.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -6581,7 +6581,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 2410.0,
+          "gbpPrice": 2500.0,
           "listGbpPrice": null
         }
       ],
@@ -6607,7 +6607,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/small-veneto-crocodile-836918V5RI13248.html",
       "url": "https://www.bottegaveneta.com/en-gb/small-veneto-crocodile-836918V5RI13248.html",
-      "gbpPrice": 2410.0,
+      "gbpPrice": 2500.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -6647,7 +6647,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 2410.0,
+          "gbpPrice": 2500.0,
           "listGbpPrice": null
         }
       ],
@@ -6672,7 +6672,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/small-veneto-limestone-836918V5RI12816.html",
       "url": "https://www.bottegaveneta.com/en-gb/small-veneto-limestone-836918V5RI12816.html",
-      "gbpPrice": 2410.0,
+      "gbpPrice": 2500.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -6712,7 +6712,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 2410.0,
+          "gbpPrice": 2500.0,
           "listGbpPrice": null
         }
       ],
@@ -6737,7 +6737,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/veneto-fondant-826877V5KD02145.html",
       "url": "https://www.bottegaveneta.com/en-gb/veneto-fondant-826877V5KD02145.html",
-      "gbpPrice": 2850.0,
+      "gbpPrice": 2940.0,
       "listGbpPrice": null,
       "inStock": false,
       "shortDescription": [
@@ -6781,7 +6781,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": false,
-          "gbpPrice": 2850.0,
+          "gbpPrice": 2940.0,
           "listGbpPrice": null
         }
       ],
@@ -6807,7 +6807,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/veneto-black-826877V5KD08803.html",
       "url": "https://www.bottegaveneta.com/en-gb/veneto-black-826877V5KD08803.html",
-      "gbpPrice": 2850.0,
+      "gbpPrice": 2940.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -6849,7 +6849,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 2850.0,
+          "gbpPrice": 2940.0,
           "listGbpPrice": null
         }
       ],
@@ -6874,7 +6874,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/veneto-midnight-826877V5KD04330.html",
       "url": "https://www.bottegaveneta.com/en-gb/veneto-midnight-826877V5KD04330.html",
-      "gbpPrice": 2850.0,
+      "gbpPrice": 2940.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -6914,7 +6914,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 2850.0,
+          "gbpPrice": 2940.0,
           "listGbpPrice": null
         }
       ],
@@ -6940,7 +6940,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/veneto-crocodile-826877V5KD03248.html",
       "url": "https://www.bottegaveneta.com/en-gb/veneto-crocodile-826877V5KD03248.html",
-      "gbpPrice": 2850.0,
+      "gbpPrice": 2940.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -6978,7 +6978,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 2850.0,
+          "gbpPrice": 2940.0,
           "listGbpPrice": null
         }
       ],
@@ -7003,7 +7003,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/small-veneto-black-836918V5RI18803.html",
       "url": "https://www.bottegaveneta.com/en-gb/small-veneto-black-836918V5RI18803.html",
-      "gbpPrice": 2410.0,
+      "gbpPrice": 2500.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -7043,7 +7043,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 2410.0,
+          "gbpPrice": 2500.0,
           "listGbpPrice": null
         }
       ],
@@ -7068,7 +7068,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/small-veneto-mud-836918V5Y302877.html",
       "url": "https://www.bottegaveneta.com/en-gb/small-veneto-mud-836918V5Y302877.html",
-      "gbpPrice": 2410.0,
+      "gbpPrice": 2500.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -7108,7 +7108,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 2410.0,
+          "gbpPrice": 2500.0,
           "listGbpPrice": null
         }
       ],
@@ -7134,7 +7134,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/veneto-messenger-deep-mahogany-843836V5KD06144.html",
       "url": "https://www.bottegaveneta.com/en-gb/veneto-messenger-deep-mahogany-843836V5KD06144.html",
-      "gbpPrice": 2600.0,
+      "gbpPrice": 2770.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -7178,7 +7178,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 2600.0,
+          "gbpPrice": 2770.0,
           "listGbpPrice": null
         }
       ],
@@ -7203,7 +7203,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/andiamo-voyager-black-827066V2HLD1208.html",
       "url": "https://www.bottegaveneta.com/en-gb/andiamo-voyager-black-827066V2HLD1208.html",
-      "gbpPrice": 6560.0,
+      "gbpPrice": 6770.0,
       "listGbpPrice": null,
       "inStock": false,
       "shortDescription": [
@@ -7249,7 +7249,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": false,
-          "gbpPrice": 6560.0,
+          "gbpPrice": 6770.0,
           "listGbpPrice": null
         }
       ],
@@ -7275,7 +7275,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/andiamo-messenger-midnight-807715V2HLD4329.html",
       "url": "https://www.bottegaveneta.com/en-gb/andiamo-messenger-midnight-807715V2HLD4329.html",
-      "gbpPrice": 4370.0,
+      "gbpPrice": 4640.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -7321,7 +7321,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 4370.0,
+          "gbpPrice": 4640.0,
           "listGbpPrice": null
         }
       ],
@@ -7347,7 +7347,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/small-andiamo-messenger-fondant-815781V2HLD2364.html",
       "url": "https://www.bottegaveneta.com/en-gb/small-andiamo-messenger-fondant-815781V2HLD2364.html",
-      "gbpPrice": 3650.0,
+      "gbpPrice": 3830.0,
       "listGbpPrice": null,
       "inStock": false,
       "shortDescription": [
@@ -7393,7 +7393,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": false,
-          "gbpPrice": 3650.0,
+          "gbpPrice": 3830.0,
           "listGbpPrice": null
         }
       ],
@@ -7420,7 +7420,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/small-andiamo-messenger-black-815781V2HLD1208.html",
       "url": "https://www.bottegaveneta.com/en-gb/small-andiamo-messenger-black-815781V2HLD1208.html",
-      "gbpPrice": 3650.0,
+      "gbpPrice": 3830.0,
       "listGbpPrice": null,
       "inStock": false,
       "shortDescription": [
@@ -7466,7 +7466,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": false,
-          "gbpPrice": 3650.0,
+          "gbpPrice": 3830.0,
           "listGbpPrice": null
         }
       ],
@@ -7639,7 +7639,7 @@
       "gender": "Women",
       "link": "https://www.bottegaveneta.com/en-gb/large-andiamo-deep-mahogany-766019V5ZZ16159.html",
       "url": "https://www.bottegaveneta.com/en-gb/large-andiamo-deep-mahogany-766019V5ZZ16159.html",
-      "gbpPrice": 6380.0,
+      "gbpPrice": 6680.0,
       "listGbpPrice": null,
       "inStock": false,
       "shortDescription": [
@@ -7691,7 +7691,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": false,
-          "gbpPrice": 6380.0,
+          "gbpPrice": 6680.0,
           "listGbpPrice": null
         }
       ],
@@ -7717,7 +7717,7 @@
       "gender": "Women",
       "link": "https://www.bottegaveneta.com/en-gb/large-andiamo-black-766019VCPP11139.html",
       "url": "https://www.bottegaveneta.com/en-gb/large-andiamo-black-766019VCPP11139.html",
-      "gbpPrice": 6380.0,
+      "gbpPrice": 6680.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -7767,7 +7767,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 6380.0,
+          "gbpPrice": 6680.0,
           "listGbpPrice": null
         }
       ],
@@ -7792,7 +7792,7 @@
       "gender": "Women",
       "link": "https://www.bottegaveneta.com/en-gb/large-andiamo-black-766019VCPP11249.html",
       "url": "https://www.bottegaveneta.com/en-gb/large-andiamo-black-766019VCPP11249.html",
-      "gbpPrice": 6380.0,
+      "gbpPrice": 6680.0,
       "listGbpPrice": null,
       "inStock": false,
       "shortDescription": [
@@ -7840,7 +7840,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": false,
-          "gbpPrice": 6380.0,
+          "gbpPrice": 6680.0,
           "listGbpPrice": null
         }
       ],
@@ -7866,7 +7866,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/andiamo-messenger-fondant-807715V2HLD2364.html",
       "url": "https://www.bottegaveneta.com/en-gb/andiamo-messenger-fondant-807715V2HLD2364.html",
-      "gbpPrice": 4370.0,
+      "gbpPrice": 4640.0,
       "listGbpPrice": null,
       "inStock": false,
       "shortDescription": [
@@ -7912,7 +7912,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": false,
-          "gbpPrice": 4370.0,
+          "gbpPrice": 4640.0,
           "listGbpPrice": null
         }
       ],
@@ -7937,7 +7937,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/andiamo-messenger-black-807715V4FW28803.html",
       "url": "https://www.bottegaveneta.com/en-gb/andiamo-messenger-black-807715V4FW28803.html",
-      "gbpPrice": 4640.0,
+      "gbpPrice": 4900.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -7981,7 +7981,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 4640.0,
+          "gbpPrice": 4900.0,
           "listGbpPrice": null
         }
       ],
@@ -8008,7 +8008,7 @@
       "gender": "Women",
       "link": "https://www.bottegaveneta.com/en-gb/andiamo-white-red-836368V5SB19213.html",
       "url": "https://www.bottegaveneta.com/en-gb/andiamo-white-red-836368V5SB19213.html",
-      "gbpPrice": 3390.0,
+      "gbpPrice": 3570.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -8058,7 +8058,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 3390.0,
+          "gbpPrice": 3570.0,
           "listGbpPrice": null
         }
       ],
@@ -8083,7 +8083,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/andiamo-messenger-black-807715V2HLD1208.html",
       "url": "https://www.bottegaveneta.com/en-gb/andiamo-messenger-black-807715V2HLD1208.html",
-      "gbpPrice": 4370.0,
+      "gbpPrice": 4640.0,
       "listGbpPrice": null,
       "inStock": false,
       "shortDescription": [
@@ -8133,7 +8133,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": false,
-          "gbpPrice": 4370.0,
+          "gbpPrice": 4640.0,
           "listGbpPrice": null
         }
       ],
@@ -8633,7 +8633,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/getaway-briefcase-black-766361V2HL18803.html",
       "url": "https://www.bottegaveneta.com/en-gb/getaway-briefcase-black-766361V2HL18803.html",
-      "gbpPrice": 3740.0,
+      "gbpPrice": 3920.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -8679,7 +8679,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 3740.0,
+          "gbpPrice": 3920.0,
           "listGbpPrice": null
         }
       ],
@@ -8907,7 +8907,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/getaway-briefcase-black-766361V4FW28803.html",
       "url": "https://www.bottegaveneta.com/en-gb/getaway-briefcase-black-766361V4FW28803.html",
-      "gbpPrice": 4010.0,
+      "gbpPrice": 4190.0,
       "listGbpPrice": null,
       "inStock": false,
       "shortDescription": [
@@ -8953,7 +8953,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": false,
-          "gbpPrice": 4010.0,
+          "gbpPrice": 4190.0,
           "listGbpPrice": null
         }
       ],
@@ -8979,7 +8979,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/getaway-briefcase-black-766361V6PC18803.html",
       "url": "https://www.bottegaveneta.com/en-gb/getaway-briefcase-black-766361V6PC18803.html",
-      "gbpPrice": 4100.0,
+      "gbpPrice": 4280.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -9025,7 +9025,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 4100.0,
+          "gbpPrice": 4280.0,
           "listGbpPrice": null
         }
       ],
@@ -9051,7 +9051,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/getaway-briefcase-fondant-766361V2HL12145.html",
       "url": "https://www.bottegaveneta.com/en-gb/getaway-briefcase-fondant-766361V2HL12145.html",
-      "gbpPrice": 3740.0,
+      "gbpPrice": 3920.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -9096,7 +9096,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 3740.0,
+          "gbpPrice": 3920.0,
           "listGbpPrice": null
         }
       ],
@@ -9190,7 +9190,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/getaway-briefcase-black-786662V2HL18803.html",
       "url": "https://www.bottegaveneta.com/en-gb/getaway-briefcase-black-786662V2HL18803.html",
-      "gbpPrice": 3010.0,
+      "gbpPrice": 3210.0,
       "listGbpPrice": null,
       "inStock": false,
       "shortDescription": [
@@ -9235,7 +9235,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": false,
-          "gbpPrice": 3010.0,
+          "gbpPrice": 3210.0,
           "listGbpPrice": null
         }
       ],
@@ -9465,7 +9465,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/getaway-document-case-black-786664V2HL18803.html",
       "url": "https://www.bottegaveneta.com/en-gb/getaway-document-case-black-786664V2HL18803.html",
-      "gbpPrice": 1570.0,
+      "gbpPrice": 1650.0,
       "listGbpPrice": null,
       "inStock": false,
       "shortDescription": [
@@ -9504,7 +9504,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": false,
-          "gbpPrice": 1570.0,
+          "gbpPrice": 1650.0,
           "listGbpPrice": null
         }
       ],
@@ -9805,7 +9805,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/orto-messenger-espresso-876364V6SO02010.html",
       "url": "https://www.bottegaveneta.com/en-gb/orto-messenger-espresso-876364V6SO02010.html",
-      "gbpPrice": 2220.0,
+      "gbpPrice": 2320.0,
       "listGbpPrice": null,
       "inStock": false,
       "shortDescription": [
@@ -9849,7 +9849,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": false,
-          "gbpPrice": 2220.0,
+          "gbpPrice": 2320.0,
           "listGbpPrice": null
         }
       ],
@@ -9874,7 +9874,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/orto-messenger-black-876364V6SO01089.html",
       "url": "https://www.bottegaveneta.com/en-gb/orto-messenger-black-876364V6SO01089.html",
-      "gbpPrice": 2220.0,
+      "gbpPrice": 2320.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -9918,7 +9918,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 2220.0,
+          "gbpPrice": 2320.0,
           "listGbpPrice": null
         }
       ],
@@ -10080,7 +10080,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/dustbag-bike-black-876011V2HL08803.html",
       "url": "https://www.bottegaveneta.com/en-gb/dustbag-bike-black-876011V2HL08803.html",
-      "gbpPrice": 1730.0,
+      "gbpPrice": 1870.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -10123,7 +10123,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 1730.0,
+          "gbpPrice": 1870.0,
           "listGbpPrice": null
         }
       ],
@@ -10355,7 +10355,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/traveler-phone-pouch-midnight-844018V2HL04330.html",
       "url": "https://www.bottegaveneta.com/en-gb/traveler-phone-pouch-midnight-844018V2HL04330.html",
-      "gbpPrice": 1340.0,
+      "gbpPrice": 1430.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -10396,7 +10396,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 1340.0,
+          "gbpPrice": 1430.0,
           "listGbpPrice": null
         }
       ],
@@ -10489,7 +10489,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/traveler-phone-pouch-black-844018V2HL08803.html",
       "url": "https://www.bottegaveneta.com/en-gb/traveler-phone-pouch-black-844018V2HL08803.html",
-      "gbpPrice": 1340.0,
+      "gbpPrice": 1430.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -10528,7 +10528,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 1340.0,
+          "gbpPrice": 1430.0,
           "listGbpPrice": null
         }
       ],
@@ -10890,7 +10890,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/corriere-black-867484V60G08803.html",
       "url": "https://www.bottegaveneta.com/en-gb/corriere-black-867484V60G08803.html",
-      "gbpPrice": 3460.0,
+      "gbpPrice": 3740.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -10932,7 +10932,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 3460.0,
+          "gbpPrice": 3740.0,
           "listGbpPrice": null
         }
       ],
@@ -10957,7 +10957,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/corriere-alabaster-867484V60G09533.html",
       "url": "https://www.bottegaveneta.com/en-gb/corriere-alabaster-867484V60G09533.html",
-      "gbpPrice": 3460.0,
+      "gbpPrice": 3740.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -10997,7 +10997,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 3460.0,
+          "gbpPrice": 3740.0,
           "listGbpPrice": null
         }
       ],
@@ -11091,7 +11091,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/corriere-midnight-867484V60G04330.html",
       "url": "https://www.bottegaveneta.com/en-gb/corriere-midnight-867484V60G04330.html",
-      "gbpPrice": 3460.0,
+      "gbpPrice": 3740.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -11135,7 +11135,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 3460.0,
+          "gbpPrice": 3740.0,
           "listGbpPrice": null
         }
       ],
@@ -11434,7 +11434,7 @@
       "gender": "Women",
       "link": "https://www.bottegaveneta.com/en-gb/large-barbara-tote-black-868114V5KD01007.html",
       "url": "https://www.bottegaveneta.com/en-gb/large-barbara-tote-black-868114V5KD01007.html",
-      "gbpPrice": 5760.0,
+      "gbpPrice": 6150.0,
       "listGbpPrice": null,
       "inStock": false,
       "shortDescription": [
@@ -11482,7 +11482,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": false,
-          "gbpPrice": 5760.0,
+          "gbpPrice": 6150.0,
           "listGbpPrice": null
         }
       ],
@@ -11507,7 +11507,7 @@
       "gender": "Women",
       "link": "https://www.bottegaveneta.com/en-gb/large-barbara-tote-grey-clay-868114V5KD02866.html",
       "url": "https://www.bottegaveneta.com/en-gb/large-barbara-tote-grey-clay-868114V5KD02866.html",
-      "gbpPrice": 5760.0,
+      "gbpPrice": 6150.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -11557,7 +11557,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 5760.0,
+          "gbpPrice": 6150.0,
           "listGbpPrice": null
         }
       ],
@@ -11582,7 +11582,7 @@
       "gender": "Women",
       "link": "https://www.bottegaveneta.com/en-gb/large-barbara-tote-espresso-868114V6G102094.html",
       "url": "https://www.bottegaveneta.com/en-gb/large-barbara-tote-espresso-868114V6G102094.html",
-      "gbpPrice": 5580.0,
+      "gbpPrice": 5970.0,
       "listGbpPrice": null,
       "inStock": false,
       "shortDescription": [
@@ -11629,7 +11629,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": false,
-          "gbpPrice": 5580.0,
+          "gbpPrice": 5970.0,
           "listGbpPrice": null
         }
       ],
@@ -11654,7 +11654,7 @@
       "gender": "Women",
       "link": "https://www.bottegaveneta.com/en-gb/maxi-barbara-tote-dark-olive-868118V6G103779.html",
       "url": "https://www.bottegaveneta.com/en-gb/maxi-barbara-tote-dark-olive-868118V6G103779.html",
-      "gbpPrice": 7090.0,
+      "gbpPrice": 7570.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -11703,7 +11703,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 7090.0,
+          "gbpPrice": 7570.0,
           "listGbpPrice": null
         }
       ],
@@ -11861,7 +11861,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/intrecciato-backpack-fondant-old-wood-828527V4O9P2104.html",
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-backpack-fondant-old-wood-828527V4O9P2104.html",
-      "gbpPrice": 3740.0,
+      "gbpPrice": 3830.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -11905,7 +11905,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 3740.0,
+          "gbpPrice": 3830.0,
           "listGbpPrice": null
         }
       ],
@@ -11930,7 +11930,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/intrecciato-backpack-fondant-828527V2HL22145.html",
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-backpack-fondant-828527V2HL22145.html",
-      "gbpPrice": 3390.0,
+      "gbpPrice": 3480.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -11971,7 +11971,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 3390.0,
+          "gbpPrice": 3480.0,
           "listGbpPrice": null
         }
       ],
@@ -12266,7 +12266,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/veneto-messenger--espresso-843836V71S22008.html",
       "url": "https://www.bottegaveneta.com/en-gb/veneto-messenger--espresso-843836V71S22008.html",
-      "gbpPrice": 2770.0,
+      "gbpPrice": 2940.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -12310,7 +12310,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 2770.0,
+          "gbpPrice": 2940.0,
           "listGbpPrice": null
         }
       ],
@@ -12404,7 +12404,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/getaway-briefcase-black-766361V71R08966.html",
       "url": "https://www.bottegaveneta.com/en-gb/getaway-briefcase-black-766361V71R08966.html",
-      "gbpPrice": 4100.0,
+      "gbpPrice": 4280.0,
       "listGbpPrice": null,
       "inStock": false,
       "shortDescription": [
@@ -12446,7 +12446,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": false,
-          "gbpPrice": 4100.0,
+          "gbpPrice": 4280.0,
           "listGbpPrice": null
         }
       ],
@@ -12472,7 +12472,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/dustbag-bike-espresso-876011V2HL02008.html",
       "url": "https://www.bottegaveneta.com/en-gb/dustbag-bike-espresso-876011V2HL02008.html",
-      "gbpPrice": 1730.0,
+      "gbpPrice": 1870.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -12517,7 +12517,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 1730.0,
+          "gbpPrice": 1870.0,
           "listGbpPrice": null
         }
       ],
@@ -12542,7 +12542,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/corriere-espresso-867484V71S22008.html",
       "url": "https://www.bottegaveneta.com/en-gb/corriere-espresso-867484V71S22008.html",
-      "gbpPrice": 3660.0,
+      "gbpPrice": 3920.0,
       "listGbpPrice": null,
       "inStock": false,
       "shortDescription": [
@@ -12588,7 +12588,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": false,
-          "gbpPrice": 3660.0,
+          "gbpPrice": 3920.0,
           "listGbpPrice": null
         }
       ],
@@ -13025,7 +13025,7 @@
       "gender": "Women",
       "link": "https://www.bottegaveneta.com/en-gb/large-andiamo-fondant-766019VCPP12272.html",
       "url": "https://www.bottegaveneta.com/en-gb/large-andiamo-fondant-766019VCPP12272.html",
-      "gbpPrice": 6380.0,
+      "gbpPrice": 6680.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -13073,7 +13073,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 6380.0,
+          "gbpPrice": 6680.0,
           "listGbpPrice": null
         }
       ],
@@ -13173,7 +13173,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/traveler-phone-pouch-bark-green-844018V4TD13770.html",
       "url": "https://www.bottegaveneta.com/en-gb/traveler-phone-pouch-bark-green-844018V4TD13770.html",
-      "gbpPrice": 1520.0,
+      "gbpPrice": 1610.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -13214,7 +13214,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 1520.0,
+          "gbpPrice": 1610.0,
           "listGbpPrice": null
         }
       ],
@@ -13571,6 +13571,142 @@
       ],
       "leafId": "bv-men-bags-tote",
       "cgid": "men-tote-bags",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "A006VSV3AF01701",
+      "sku": "A006VSV3AF01701",
+      "internalId": "814435792",
+      "name": "Small Intrecciato Camera Bag",
+      "brand": "bottega veneta",
+      "color": "Obsidian grey/radar",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/small-intrecciato-camera-bag-obsidian-grey-radar-A006VSV3AF01701.html",
+      "url": "https://www.bottegaveneta.com/en-gb/small-intrecciato-camera-bag-obsidian-grey-radar-A006VSV3AF01701.html",
+      "gbpPrice": 2320.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Canvas",
+        "Colour: Obsidian Grey/Radar",
+        "Hardware: Silver finish"
+      ],
+      "longDescription": [
+        "Small Intrecciato bi-colour leather cross-body bag",
+        "Detachable strap and metal D-ring",
+        "One interior flat pocket",
+        "Zip closure"
+      ],
+      "compactedLongDesc": "Cross-body bag in bi-colour Intrecciato leather with detachable strap.",
+      "composition": "• Material: calfskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 15 cm | 5.9\"\n\n• Width: 24.5 cm | 9.6\"\n\n• Depth: 6 cm | 2.3\"\n\n• Strap drop: 55 cm | 21.7\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/657f0201-15fb-40b6-8da8-d183c779232e/eCom/A006VSV3AF01701_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/4fa54b4c-26e6-46db-b48e-bdcefeac66c1/eCom/A006VSV3AF01701_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/336b8093-8648-4ca8-8be4-d2c9d68c323e/eCom/A006VSV3AF01701_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/f2bcacd6-e06e-431a-9a2a-cb94e6f1531c/eCom/A006VSV3AF01701_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/657f0201-15fb-40b6-8da8-d183c779232e/Small/A006VSV3AF01701_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a006vsv3af01701/1.jpg",
+        "/products/bv-pdp/a006vsv3af01701/2.jpg",
+        "/products/bv-pdp/a006vsv3af01701/3.jpg",
+        "/products/bv-pdp/a006vsv3af01701/4.jpg",
+        "/products/bv-pdp/a006vsv3af01701/5.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 2320.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-men",
+        "bv-men-bags",
+        "bv-men-bags-intrecciato",
+        "bv-men-bags-crossbody"
+      ],
+      "leafId": "bv-men-bags-crossbody",
+      "cgid": "men-crossbody-bags",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "A006VUV3AF01701",
+      "sku": "A006VUV3AF01701",
+      "internalId": "814435794",
+      "name": "Intrecciato Back To School Backpack",
+      "brand": "bottega veneta",
+      "color": "Obsidian grey/radar",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/intrecciato-back-to-school-backpack-obsidian-grey-radar-A006VUV3AF01701.html",
+      "url": "https://www.bottegaveneta.com/en-gb/intrecciato-back-to-school-backpack-obsidian-grey-radar-A006VUV3AF01701.html",
+      "gbpPrice": 4010.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Canvas",
+        "Colour: Obsidian Grey/Radar",
+        "Hardware: Silver finish"
+      ],
+      "longDescription": [
+        "Intrecciato bi-colour leather backpack",
+        "Two exterior flap pockets",
+        "Metal D-Ring",
+        "Single interior laptop compartment and two open pockets",
+        "Flap closure"
+      ],
+      "compactedLongDesc": "Backpack in bi-colour Intrecciato leather, featuring external pockets and flap closure.",
+      "composition": "• Material: calfskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 39 cm | 15.4\"\n\n• Width: 31 cm | 12.2\"\n\n• Depth: 14 cm | 5.5\"\n\n• Handle drop: 6 cm | 2.3”",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/80eaff61-a1c4-4d85-b2a3-71326efee957/eCom/A006VUV3AF01701_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/0f3dd9fa-af18-4d25-90af-5e05e0e84da9/eCom/A006VUV3AF01701_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/9b10a1b9-0e71-4cf7-b420-3e781bdbbf6c/eCom/A006VUV3AF01701_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/a0b90a07-7a40-4a7a-9b2b-eca133757fc0/eCom/A006VUV3AF01701_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/5bcaf72d-f5d3-4e32-8f9f-95e0fe5b2f4f/eCom/A006VUV3AF01701_F.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/80eaff61-a1c4-4d85-b2a3-71326efee957/Small/A006VUV3AF01701_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a006vuv3af01701/1.jpg",
+        "/products/bv-pdp/a006vuv3af01701/2.jpg",
+        "/products/bv-pdp/a006vuv3af01701/3.jpg",
+        "/products/bv-pdp/a006vuv3af01701/4.jpg",
+        "/products/bv-pdp/a006vuv3af01701/5.jpg",
+        "/products/bv-pdp/a006vuv3af01701/6.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 4010.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-men",
+        "bv-men-bags",
+        "bv-men-bags-backpack"
+      ],
+      "leafId": "bv-men-bags-backpack",
+      "cgid": "men-backpacks",
       "hubCategory": "bags"
     }
   ]

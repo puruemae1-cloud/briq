@@ -1,7 +1,7 @@
 {
   "hub": "men-jewellery",
   "category": "accessories",
-  "scrapedAt": "2026-10-28T23:48:43.094233+00:00",
+  "scrapedAt": "2026-10-29T22:20:56.757237+00:00",
   "leaves": [
     "bv-men-jewellery-earrings",
     "bv-men-jewellery-rings",
@@ -6492,7 +6492,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/friendship-bracelet-black-815941V58O11000.html",
       "gbpPrice": 260.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Color: Black"
       ],
@@ -6617,7 +6617,7 @@
           "id": "L",
           "value": "L",
           "displayValue": "L",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 260.0,
           "listGbpPrice": null
         }

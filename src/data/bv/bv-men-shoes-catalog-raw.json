@@ -1,7 +1,7 @@
 {
   "hub": "men-shoes",
   "category": "shoes",
-  "scrapedAt": "2026-10-28T23:16:51.186359+00:00",
+  "scrapedAt": "2026-10-29T21:49:06.755152+00:00",
   "leaves": [
     "bv-men-shoes-shot",
     "bv-men-shoes-orbit-flash",
@@ -19,8 +19,8 @@
   ],
   "leafCounts": {
     "bv-men-shoes-shot": {
-      "official": 4,
-      "scraped": 4
+      "official": 5,
+      "scraped": 5
     },
     "bv-men-shoes-orbit-flash": {
       "official": 25,
@@ -39,8 +39,8 @@
       "scraped": 15
     },
     "bv-men-shoes-palazzo": {
-      "official": 11,
-      "scraped": 11
+      "official": 12,
+      "scraped": 12
     },
     "bv-men-shoes-haddock": {
       "official": 8,
@@ -548,8 +548,8 @@
         "bv-men-shoes-shot",
         "bv-men-shoes-sneakers"
       ],
-      "leafId": "bv-men-shoes-sneakers",
-      "cgid": "men-sneakers",
+      "leafId": "bv-men-shoes-shot",
+      "cgid": "men-shot",
       "hubCategory": "shoes"
     },
     {
@@ -9416,7 +9416,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/orbit-sneaker-sea-salt-796481V4JE19031.html",
       "url": "https://www.bottegaveneta.com/en-gb/orbit-sneaker-sea-salt-796481V4JE19031.html",
-      "gbpPrice": 710.0,
+      "gbpPrice": 760.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -9579,7 +9579,7 @@
           "value": "38",
           "displayValue": "38",
           "inStock": false,
-          "gbpPrice": 710.0,
+          "gbpPrice": 760.0,
           "listGbpPrice": null
         },
         {
@@ -9587,7 +9587,7 @@
           "value": "39",
           "displayValue": "39",
           "inStock": true,
-          "gbpPrice": 710.0,
+          "gbpPrice": 760.0,
           "listGbpPrice": null
         },
         {
@@ -9595,7 +9595,7 @@
           "value": "40",
           "displayValue": "40",
           "inStock": false,
-          "gbpPrice": 710.0,
+          "gbpPrice": 760.0,
           "listGbpPrice": null
         },
         {
@@ -9603,7 +9603,7 @@
           "value": "41",
           "displayValue": "41",
           "inStock": false,
-          "gbpPrice": 710.0,
+          "gbpPrice": 760.0,
           "listGbpPrice": null
         },
         {
@@ -9611,7 +9611,7 @@
           "value": "42",
           "displayValue": "42",
           "inStock": false,
-          "gbpPrice": 710.0,
+          "gbpPrice": 760.0,
           "listGbpPrice": null
         },
         {
@@ -9619,7 +9619,7 @@
           "value": "43",
           "displayValue": "43",
           "inStock": false,
-          "gbpPrice": 710.0,
+          "gbpPrice": 760.0,
           "listGbpPrice": null
         },
         {
@@ -9627,7 +9627,7 @@
           "value": "44",
           "displayValue": "44",
           "inStock": false,
-          "gbpPrice": 710.0,
+          "gbpPrice": 760.0,
           "listGbpPrice": null
         },
         {
@@ -9635,7 +9635,7 @@
           "value": "45",
           "displayValue": "45",
           "inStock": false,
-          "gbpPrice": 710.0,
+          "gbpPrice": 760.0,
           "listGbpPrice": null
         },
         {
@@ -9643,7 +9643,7 @@
           "value": "46",
           "displayValue": "46",
           "inStock": false,
-          "gbpPrice": 710.0,
+          "gbpPrice": 760.0,
           "listGbpPrice": null
         },
         {
@@ -9651,7 +9651,7 @@
           "value": "47",
           "displayValue": "47",
           "inStock": false,
-          "gbpPrice": 710.0,
+          "gbpPrice": 760.0,
           "listGbpPrice": null
         }
       ],
@@ -10713,7 +10713,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/orbit-sneaker-olive-oil-796481V4JE13310.html",
       "url": "https://www.bottegaveneta.com/en-gb/orbit-sneaker-olive-oil-796481V4JE13310.html",
-      "gbpPrice": 710.0,
+      "gbpPrice": 760.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -10875,7 +10875,7 @@
           "value": "38",
           "displayValue": "38",
           "inStock": true,
-          "gbpPrice": 710.0,
+          "gbpPrice": 760.0,
           "listGbpPrice": null
         },
         {
@@ -10883,7 +10883,7 @@
           "value": "39",
           "displayValue": "39",
           "inStock": true,
-          "gbpPrice": 710.0,
+          "gbpPrice": 760.0,
           "listGbpPrice": null
         },
         {
@@ -10891,7 +10891,7 @@
           "value": "40",
           "displayValue": "40",
           "inStock": false,
-          "gbpPrice": 710.0,
+          "gbpPrice": 760.0,
           "listGbpPrice": null
         },
         {
@@ -10899,7 +10899,7 @@
           "value": "41",
           "displayValue": "41",
           "inStock": false,
-          "gbpPrice": 710.0,
+          "gbpPrice": 760.0,
           "listGbpPrice": null
         },
         {
@@ -10907,7 +10907,7 @@
           "value": "42",
           "displayValue": "42",
           "inStock": true,
-          "gbpPrice": 710.0,
+          "gbpPrice": 760.0,
           "listGbpPrice": null
         },
         {
@@ -10915,7 +10915,7 @@
           "value": "43",
           "displayValue": "43",
           "inStock": false,
-          "gbpPrice": 710.0,
+          "gbpPrice": 760.0,
           "listGbpPrice": null
         },
         {
@@ -10923,7 +10923,7 @@
           "value": "44",
           "displayValue": "44",
           "inStock": false,
-          "gbpPrice": 710.0,
+          "gbpPrice": 760.0,
           "listGbpPrice": null
         },
         {
@@ -10931,7 +10931,7 @@
           "value": "45",
           "displayValue": "45",
           "inStock": false,
-          "gbpPrice": 710.0,
+          "gbpPrice": 760.0,
           "listGbpPrice": null
         },
         {
@@ -10939,7 +10939,7 @@
           "value": "46",
           "displayValue": "46",
           "inStock": false,
-          "gbpPrice": 710.0,
+          "gbpPrice": 760.0,
           "listGbpPrice": null
         },
         {
@@ -10947,7 +10947,7 @@
           "value": "47",
           "displayValue": "47",
           "inStock": false,
-          "gbpPrice": 710.0,
+          "gbpPrice": 760.0,
           "listGbpPrice": null
         }
       ],
@@ -14666,7 +14666,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/astaire-loafer-black-796445V3XP01000.html",
       "url": "https://www.bottegaveneta.com/en-gb/astaire-loafer-black-796445V3XP01000.html",
-      "gbpPrice": 820.0,
+      "gbpPrice": 850.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -14827,7 +14827,7 @@
           "value": "38",
           "displayValue": "38",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -14835,7 +14835,7 @@
           "value": "39",
           "displayValue": "39",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -14843,7 +14843,7 @@
           "value": "39_5",
           "displayValue": "39.5",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -14851,7 +14851,7 @@
           "value": "40",
           "displayValue": "40",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -14859,7 +14859,7 @@
           "value": "40_5",
           "displayValue": "40.5",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -14867,7 +14867,7 @@
           "value": "41",
           "displayValue": "41",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -14875,7 +14875,7 @@
           "value": "41_5",
           "displayValue": "41.5",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -14883,7 +14883,7 @@
           "value": "42",
           "displayValue": "42",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -14891,7 +14891,7 @@
           "value": "42_5",
           "displayValue": "42.5",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -14899,7 +14899,7 @@
           "value": "43",
           "displayValue": "43",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -14907,7 +14907,7 @@
           "value": "43_5",
           "displayValue": "43.5",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -14915,7 +14915,7 @@
           "value": "44",
           "displayValue": "44",
           "inStock": true,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -14923,7 +14923,7 @@
           "value": "44_5",
           "displayValue": "44.5",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -14931,7 +14931,7 @@
           "value": "45",
           "displayValue": "45",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -14939,7 +14939,7 @@
           "value": "45_5",
           "displayValue": "45.5",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -14947,7 +14947,7 @@
           "value": "46",
           "displayValue": "46",
           "inStock": true,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -14955,7 +14955,7 @@
           "value": "47",
           "displayValue": "47",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         }
       ],
@@ -14981,7 +14981,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/astaire-loafer-dark-green-796445V3XP03264.html",
       "url": "https://www.bottegaveneta.com/en-gb/astaire-loafer-dark-green-796445V3XP03264.html",
-      "gbpPrice": 820.0,
+      "gbpPrice": 850.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -15142,7 +15142,7 @@
           "value": "40",
           "displayValue": "40",
           "inStock": true,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -15150,7 +15150,7 @@
           "value": "41",
           "displayValue": "41",
           "inStock": true,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -15158,7 +15158,7 @@
           "value": "42",
           "displayValue": "42",
           "inStock": true,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -15166,7 +15166,7 @@
           "value": "43",
           "displayValue": "43",
           "inStock": true,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -15174,7 +15174,7 @@
           "value": "44",
           "displayValue": "44",
           "inStock": true,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -15182,7 +15182,7 @@
           "value": "45",
           "displayValue": "45",
           "inStock": true,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -15190,7 +15190,7 @@
           "value": "46",
           "displayValue": "46",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -15198,7 +15198,7 @@
           "value": "47",
           "displayValue": "47",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         }
       ],
@@ -15224,7 +15224,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/astaire-loafer-black-796445V5DZ01000.html",
       "url": "https://www.bottegaveneta.com/en-gb/astaire-loafer-black-796445V5DZ01000.html",
-      "gbpPrice": 820.0,
+      "gbpPrice": 850.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -15385,7 +15385,7 @@
           "value": "40",
           "displayValue": "40",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -15393,7 +15393,7 @@
           "value": "41",
           "displayValue": "41",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -15401,7 +15401,7 @@
           "value": "42",
           "displayValue": "42",
           "inStock": true,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -15409,7 +15409,7 @@
           "value": "43",
           "displayValue": "43",
           "inStock": true,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -15417,7 +15417,7 @@
           "value": "44",
           "displayValue": "44",
           "inStock": true,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -15425,7 +15425,7 @@
           "value": "45",
           "displayValue": "45",
           "inStock": true,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -15433,7 +15433,7 @@
           "value": "46",
           "displayValue": "46",
           "inStock": true,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -15441,7 +15441,7 @@
           "value": "47",
           "displayValue": "47",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         }
       ],
@@ -15467,7 +15467,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/astaire-loafer-fondant-796445V3XP02113.html",
       "url": "https://www.bottegaveneta.com/en-gb/astaire-loafer-fondant-796445V3XP02113.html",
-      "gbpPrice": 820.0,
+      "gbpPrice": 850.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -15628,7 +15628,7 @@
           "value": "39",
           "displayValue": "39",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -15636,7 +15636,7 @@
           "value": "39_5",
           "displayValue": "39.5",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -15644,7 +15644,7 @@
           "value": "40",
           "displayValue": "40",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -15652,7 +15652,7 @@
           "value": "40_5",
           "displayValue": "40.5",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -15660,7 +15660,7 @@
           "value": "41",
           "displayValue": "41",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -15668,7 +15668,7 @@
           "value": "41_5",
           "displayValue": "41.5",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -15676,7 +15676,7 @@
           "value": "42",
           "displayValue": "42",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -15684,7 +15684,7 @@
           "value": "42_5",
           "displayValue": "42.5",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -15692,7 +15692,7 @@
           "value": "43",
           "displayValue": "43",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -15700,7 +15700,7 @@
           "value": "43_5",
           "displayValue": "43.5",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -15708,7 +15708,7 @@
           "value": "44",
           "displayValue": "44",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -15716,7 +15716,7 @@
           "value": "44_5",
           "displayValue": "44.5",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -15724,7 +15724,7 @@
           "value": "45",
           "displayValue": "45",
           "inStock": true,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -15732,7 +15732,7 @@
           "value": "45_5",
           "displayValue": "45.5",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -15740,7 +15740,7 @@
           "value": "46",
           "displayValue": "46",
           "inStock": true,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         }
       ],
@@ -15765,7 +15765,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/astaire-loafer-fondant-796445V4R302113.html",
       "url": "https://www.bottegaveneta.com/en-gb/astaire-loafer-fondant-796445V4R302113.html",
-      "gbpPrice": 820.0,
+      "gbpPrice": 850.0,
       "listGbpPrice": null,
       "inStock": false,
       "shortDescription": [
@@ -15926,7 +15926,7 @@
           "value": "38",
           "displayValue": "38",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -15934,7 +15934,7 @@
           "value": "38_5",
           "displayValue": "38.5",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -15942,7 +15942,7 @@
           "value": "39",
           "displayValue": "39",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -15950,7 +15950,7 @@
           "value": "39_5",
           "displayValue": "39.5",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -15958,7 +15958,7 @@
           "value": "40",
           "displayValue": "40",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -15966,7 +15966,7 @@
           "value": "40_5",
           "displayValue": "40.5",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -15974,7 +15974,7 @@
           "value": "41",
           "displayValue": "41",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -15982,7 +15982,7 @@
           "value": "41_5",
           "displayValue": "41.5",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -15990,7 +15990,7 @@
           "value": "42",
           "displayValue": "42",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -15998,7 +15998,7 @@
           "value": "42_5",
           "displayValue": "42.5",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -16006,7 +16006,7 @@
           "value": "43",
           "displayValue": "43",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -16014,7 +16014,7 @@
           "value": "43_5",
           "displayValue": "43.5",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -16022,7 +16022,7 @@
           "value": "44",
           "displayValue": "44",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -16030,7 +16030,7 @@
           "value": "44_5",
           "displayValue": "44.5",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -16038,7 +16038,7 @@
           "value": "45",
           "displayValue": "45",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -16046,7 +16046,7 @@
           "value": "45_5",
           "displayValue": "45.5",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -16054,7 +16054,7 @@
           "value": "46",
           "displayValue": "46",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         }
       ],
@@ -16323,7 +16323,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/astaire-loafer-barolo-796445V5DZ02240.html",
       "url": "https://www.bottegaveneta.com/en-gb/astaire-loafer-barolo-796445V5DZ02240.html",
-      "gbpPrice": 820.0,
+      "gbpPrice": 850.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -16486,7 +16486,7 @@
           "value": "40",
           "displayValue": "40",
           "inStock": true,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -16494,7 +16494,7 @@
           "value": "41",
           "displayValue": "41",
           "inStock": true,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -16502,7 +16502,7 @@
           "value": "42",
           "displayValue": "42",
           "inStock": true,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -16510,7 +16510,7 @@
           "value": "42_5",
           "displayValue": "42.5",
           "inStock": true,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -16518,7 +16518,7 @@
           "value": "43",
           "displayValue": "43",
           "inStock": true,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -16526,7 +16526,7 @@
           "value": "43_5",
           "displayValue": "43.5",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -16534,7 +16534,7 @@
           "value": "44",
           "displayValue": "44",
           "inStock": true,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -16542,7 +16542,7 @@
           "value": "44_5",
           "displayValue": "44.5",
           "inStock": true,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -16550,7 +16550,7 @@
           "value": "45",
           "displayValue": "45",
           "inStock": true,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -16558,7 +16558,7 @@
           "value": "45_5",
           "displayValue": "45.5",
           "inStock": true,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -16566,7 +16566,7 @@
           "value": "46",
           "displayValue": "46",
           "inStock": true,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         }
       ],
@@ -16592,7 +16592,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/astaire--loafer-dark-green-796445V5DZ03264.html",
       "url": "https://www.bottegaveneta.com/en-gb/astaire--loafer-dark-green-796445V5DZ03264.html",
-      "gbpPrice": 820.0,
+      "gbpPrice": 850.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -16753,7 +16753,7 @@
           "value": "39",
           "displayValue": "39",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -16761,7 +16761,7 @@
           "value": "40",
           "displayValue": "40",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -16769,7 +16769,7 @@
           "value": "40_5",
           "displayValue": "40.5",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -16777,7 +16777,7 @@
           "value": "41",
           "displayValue": "41",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -16785,7 +16785,7 @@
           "value": "41_5",
           "displayValue": "41.5",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -16793,7 +16793,7 @@
           "value": "42",
           "displayValue": "42",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -16801,7 +16801,7 @@
           "value": "42_5",
           "displayValue": "42.5",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -16809,7 +16809,7 @@
           "value": "43",
           "displayValue": "43",
           "inStock": true,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -16817,7 +16817,7 @@
           "value": "43_5",
           "displayValue": "43.5",
           "inStock": true,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -16825,7 +16825,7 @@
           "value": "44",
           "displayValue": "44",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -16833,7 +16833,7 @@
           "value": "44_5",
           "displayValue": "44.5",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -16841,7 +16841,7 @@
           "value": "45",
           "displayValue": "45",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         }
       ],
@@ -16866,7 +16866,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/astaire-loafer-fondant-796445V5DZ02113.html",
       "url": "https://www.bottegaveneta.com/en-gb/astaire-loafer-fondant-796445V5DZ02113.html",
-      "gbpPrice": 820.0,
+      "gbpPrice": 850.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -17027,7 +17027,7 @@
           "value": "38",
           "displayValue": "38",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -17035,7 +17035,7 @@
           "value": "38_5",
           "displayValue": "38.5",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -17043,7 +17043,7 @@
           "value": "39",
           "displayValue": "39",
           "inStock": true,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -17051,15 +17051,15 @@
           "value": "39_5",
           "displayValue": "39.5",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
           "id": "40",
           "value": "40",
           "displayValue": "40",
-          "inStock": true,
-          "gbpPrice": 820.0,
+          "inStock": false,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -17067,7 +17067,7 @@
           "value": "40_5",
           "displayValue": "40.5",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -17075,7 +17075,7 @@
           "value": "41",
           "displayValue": "41",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -17083,7 +17083,7 @@
           "value": "41_5",
           "displayValue": "41.5",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -17091,7 +17091,7 @@
           "value": "42",
           "displayValue": "42",
           "inStock": true,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -17099,7 +17099,7 @@
           "value": "42_5",
           "displayValue": "42.5",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -17107,7 +17107,7 @@
           "value": "43",
           "displayValue": "43",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -17115,7 +17115,7 @@
           "value": "43_5",
           "displayValue": "43.5",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -17123,7 +17123,7 @@
           "value": "44",
           "displayValue": "44",
           "inStock": true,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -17131,7 +17131,7 @@
           "value": "44_5",
           "displayValue": "44.5",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -17139,7 +17139,7 @@
           "value": "45",
           "displayValue": "45",
           "inStock": true,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -17147,7 +17147,7 @@
           "value": "45_5",
           "displayValue": "45.5",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -17155,7 +17155,7 @@
           "value": "46",
           "displayValue": "46",
           "inStock": true,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -17163,7 +17163,7 @@
           "value": "46_5",
           "displayValue": "46.5",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -17171,7 +17171,7 @@
           "value": "47",
           "displayValue": "47",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         }
       ],
@@ -17197,7 +17197,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/astaire-loafer-midnight-796445V3QE14128.html",
       "url": "https://www.bottegaveneta.com/en-gb/astaire-loafer-midnight-796445V3QE14128.html",
-      "gbpPrice": 820.0,
+      "gbpPrice": 850.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -17358,7 +17358,7 @@
           "value": "39",
           "displayValue": "39",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -17366,7 +17366,7 @@
           "value": "40",
           "displayValue": "40",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -17374,7 +17374,7 @@
           "value": "41",
           "displayValue": "41",
           "inStock": true,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -17382,7 +17382,7 @@
           "value": "42",
           "displayValue": "42",
           "inStock": true,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -17390,7 +17390,7 @@
           "value": "43",
           "displayValue": "43",
           "inStock": true,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -17398,7 +17398,7 @@
           "value": "44",
           "displayValue": "44",
           "inStock": true,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -17406,7 +17406,7 @@
           "value": "45",
           "displayValue": "45",
           "inStock": true,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -17414,7 +17414,7 @@
           "value": "46",
           "displayValue": "46",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         }
       ],
@@ -17440,7 +17440,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/astaire-loafer-cypress-796445V3QE13224.html",
       "url": "https://www.bottegaveneta.com/en-gb/astaire-loafer-cypress-796445V3QE13224.html",
-      "gbpPrice": 820.0,
+      "gbpPrice": 850.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -17601,7 +17601,7 @@
           "value": "39",
           "displayValue": "39",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -17609,7 +17609,7 @@
           "value": "40",
           "displayValue": "40",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -17617,7 +17617,7 @@
           "value": "41",
           "displayValue": "41",
           "inStock": true,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -17625,7 +17625,7 @@
           "value": "42",
           "displayValue": "42",
           "inStock": true,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -17633,7 +17633,7 @@
           "value": "43",
           "displayValue": "43",
           "inStock": true,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -17641,7 +17641,7 @@
           "value": "44",
           "displayValue": "44",
           "inStock": true,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -17649,7 +17649,7 @@
           "value": "45",
           "displayValue": "45",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -17657,7 +17657,7 @@
           "value": "46",
           "displayValue": "46",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         }
       ],
@@ -17682,7 +17682,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/astaire-loafer-graphite-796445V3QE11029.html",
       "url": "https://www.bottegaveneta.com/en-gb/astaire-loafer-graphite-796445V3QE11029.html",
-      "gbpPrice": 820.0,
+      "gbpPrice": 850.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -17843,7 +17843,7 @@
           "value": "39",
           "displayValue": "39",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -17851,7 +17851,7 @@
           "value": "40",
           "displayValue": "40",
           "inStock": true,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -17859,7 +17859,7 @@
           "value": "41",
           "displayValue": "41",
           "inStock": true,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -17867,7 +17867,7 @@
           "value": "42",
           "displayValue": "42",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -17875,7 +17875,7 @@
           "value": "43",
           "displayValue": "43",
           "inStock": true,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -17883,7 +17883,7 @@
           "value": "44",
           "displayValue": "44",
           "inStock": true,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -17891,7 +17891,7 @@
           "value": "45",
           "displayValue": "45",
           "inStock": true,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         },
         {
@@ -17899,7 +17899,7 @@
           "value": "46",
           "displayValue": "46",
           "inStock": false,
-          "gbpPrice": 820.0,
+          "gbpPrice": 850.0,
           "listGbpPrice": null
         }
       ],
@@ -17925,7 +17925,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/palazzo-slipper-espresso-867804V6X212006.html",
       "url": "https://www.bottegaveneta.com/en-gb/palazzo-slipper-espresso-867804V6X212006.html",
-      "gbpPrice": 860.0,
+      "gbpPrice": 890.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -18083,7 +18083,7 @@
           "value": "40",
           "displayValue": "40",
           "inStock": false,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         },
         {
@@ -18091,7 +18091,7 @@
           "value": "41",
           "displayValue": "41",
           "inStock": false,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         },
         {
@@ -18099,7 +18099,7 @@
           "value": "42",
           "displayValue": "42",
           "inStock": false,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         },
         {
@@ -18107,7 +18107,7 @@
           "value": "43",
           "displayValue": "43",
           "inStock": true,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         },
         {
@@ -18115,7 +18115,7 @@
           "value": "44",
           "displayValue": "44",
           "inStock": true,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         },
         {
@@ -18123,7 +18123,7 @@
           "value": "45",
           "displayValue": "45",
           "inStock": true,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         },
         {
@@ -18131,7 +18131,7 @@
           "value": "46",
           "displayValue": "46",
           "inStock": false,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         },
         {
@@ -18139,7 +18139,7 @@
           "value": "47",
           "displayValue": "47",
           "inStock": false,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         }
       ],
@@ -18165,7 +18165,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/palazzo-slipper-espresso-867806V2ED02006.html",
       "url": "https://www.bottegaveneta.com/en-gb/palazzo-slipper-espresso-867806V2ED02006.html",
-      "gbpPrice": 990.0,
+      "gbpPrice": 1030.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -18325,7 +18325,7 @@
           "value": "40",
           "displayValue": "40",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -18333,7 +18333,7 @@
           "value": "41",
           "displayValue": "41",
           "inStock": true,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -18341,7 +18341,7 @@
           "value": "42",
           "displayValue": "42",
           "inStock": true,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -18349,7 +18349,7 @@
           "value": "43",
           "displayValue": "43",
           "inStock": true,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -18357,7 +18357,7 @@
           "value": "44",
           "displayValue": "44",
           "inStock": true,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -18365,7 +18365,7 @@
           "value": "45",
           "displayValue": "45",
           "inStock": true,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -18373,7 +18373,7 @@
           "value": "46",
           "displayValue": "46",
           "inStock": true,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -18381,7 +18381,7 @@
           "value": "47",
           "displayValue": "47",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         }
       ],
@@ -18406,7 +18406,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/palazzo-slipper-espresso-867806V6X212006.html",
       "url": "https://www.bottegaveneta.com/en-gb/palazzo-slipper-espresso-867806V6X212006.html",
-      "gbpPrice": 990.0,
+      "gbpPrice": 1030.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -18564,7 +18564,7 @@
           "value": "39",
           "displayValue": "39",
           "inStock": true,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -18572,7 +18572,7 @@
           "value": "40",
           "displayValue": "40",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -18580,7 +18580,7 @@
           "value": "41",
           "displayValue": "41",
           "inStock": true,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -18588,7 +18588,7 @@
           "value": "42",
           "displayValue": "42",
           "inStock": true,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -18596,7 +18596,7 @@
           "value": "43",
           "displayValue": "43",
           "inStock": true,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -18604,7 +18604,7 @@
           "value": "44",
           "displayValue": "44",
           "inStock": true,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -18612,7 +18612,7 @@
           "value": "45",
           "displayValue": "45",
           "inStock": true,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -18620,7 +18620,7 @@
           "value": "46",
           "displayValue": "46",
           "inStock": true,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -18628,7 +18628,7 @@
           "value": "47",
           "displayValue": "47",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         }
       ],
@@ -18654,7 +18654,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/palazzo-slipper-black-867806V2ED01000.html",
       "url": "https://www.bottegaveneta.com/en-gb/palazzo-slipper-black-867806V2ED01000.html",
-      "gbpPrice": 990.0,
+      "gbpPrice": 1030.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -18814,7 +18814,7 @@
           "value": "39",
           "displayValue": "39",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -18822,7 +18822,7 @@
           "value": "39_5",
           "displayValue": "39.5",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -18830,7 +18830,7 @@
           "value": "40",
           "displayValue": "40",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -18838,7 +18838,7 @@
           "value": "40_5",
           "displayValue": "40.5",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -18846,7 +18846,7 @@
           "value": "41",
           "displayValue": "41",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -18854,7 +18854,7 @@
           "value": "41_5",
           "displayValue": "41.5",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -18862,7 +18862,7 @@
           "value": "42",
           "displayValue": "42",
           "inStock": true,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -18870,7 +18870,7 @@
           "value": "42_5",
           "displayValue": "42.5",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -18878,7 +18878,7 @@
           "value": "43",
           "displayValue": "43",
           "inStock": true,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -18886,7 +18886,7 @@
           "value": "43_5",
           "displayValue": "43.5",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -18894,7 +18894,7 @@
           "value": "44",
           "displayValue": "44",
           "inStock": true,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -18902,7 +18902,7 @@
           "value": "44_5",
           "displayValue": "44.5",
           "inStock": true,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -18910,7 +18910,7 @@
           "value": "45",
           "displayValue": "45",
           "inStock": true,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -18918,7 +18918,7 @@
           "value": "45_5",
           "displayValue": "45.5",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -18926,7 +18926,7 @@
           "value": "46",
           "displayValue": "46",
           "inStock": true,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -18934,7 +18934,7 @@
           "value": "47",
           "displayValue": "47",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         }
       ],
@@ -18960,7 +18960,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/palazzo-slipper-with-travel-case-black-837952V2ED01000.html",
       "url": "https://www.bottegaveneta.com/en-gb/palazzo-slipper-with-travel-case-black-837952V2ED01000.html",
-      "gbpPrice": 1690.0,
+      "gbpPrice": 1700.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -19124,7 +19124,7 @@
           "value": "39",
           "displayValue": "39",
           "inStock": true,
-          "gbpPrice": 1690.0,
+          "gbpPrice": 1700.0,
           "listGbpPrice": null
         },
         {
@@ -19132,7 +19132,7 @@
           "value": "40",
           "displayValue": "40",
           "inStock": false,
-          "gbpPrice": 1690.0,
+          "gbpPrice": 1700.0,
           "listGbpPrice": null
         },
         {
@@ -19140,7 +19140,7 @@
           "value": "41",
           "displayValue": "41",
           "inStock": true,
-          "gbpPrice": 1690.0,
+          "gbpPrice": 1700.0,
           "listGbpPrice": null
         },
         {
@@ -19148,7 +19148,7 @@
           "value": "42",
           "displayValue": "42",
           "inStock": false,
-          "gbpPrice": 1690.0,
+          "gbpPrice": 1700.0,
           "listGbpPrice": null
         },
         {
@@ -19156,7 +19156,7 @@
           "value": "43",
           "displayValue": "43",
           "inStock": false,
-          "gbpPrice": 1690.0,
+          "gbpPrice": 1700.0,
           "listGbpPrice": null
         },
         {
@@ -19164,7 +19164,7 @@
           "value": "44",
           "displayValue": "44",
           "inStock": false,
-          "gbpPrice": 1690.0,
+          "gbpPrice": 1700.0,
           "listGbpPrice": null
         },
         {
@@ -19172,7 +19172,7 @@
           "value": "45",
           "displayValue": "45",
           "inStock": false,
-          "gbpPrice": 1690.0,
+          "gbpPrice": 1700.0,
           "listGbpPrice": null
         },
         {
@@ -19180,7 +19180,7 @@
           "value": "46",
           "displayValue": "46",
           "inStock": false,
-          "gbpPrice": 1690.0,
+          "gbpPrice": 1700.0,
           "listGbpPrice": null
         }
       ],
@@ -19206,7 +19206,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/palazzo-slipper-alpi-green-867804V2ED03076.html",
       "url": "https://www.bottegaveneta.com/en-gb/palazzo-slipper-alpi-green-867804V2ED03076.html",
-      "gbpPrice": 860.0,
+      "gbpPrice": 890.0,
       "listGbpPrice": null,
       "inStock": false,
       "shortDescription": [
@@ -19366,7 +19366,7 @@
           "value": "40",
           "displayValue": "40",
           "inStock": false,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         },
         {
@@ -19374,7 +19374,7 @@
           "value": "41",
           "displayValue": "41",
           "inStock": false,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         },
         {
@@ -19382,7 +19382,7 @@
           "value": "42",
           "displayValue": "42",
           "inStock": false,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         },
         {
@@ -19390,7 +19390,7 @@
           "value": "43",
           "displayValue": "43",
           "inStock": false,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         },
         {
@@ -19398,7 +19398,7 @@
           "value": "44",
           "displayValue": "44",
           "inStock": false,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         },
         {
@@ -19406,7 +19406,7 @@
           "value": "45",
           "displayValue": "45",
           "inStock": false,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         },
         {
@@ -19414,7 +19414,7 @@
           "value": "46",
           "displayValue": "46",
           "inStock": false,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         }
       ],
@@ -19426,8 +19426,8 @@
         "bv-men-shoes-palazzo",
         "bv-men-shoes-slippers"
       ],
-      "leafId": "bv-men-shoes-slippers",
-      "cgid": "men-slippers",
+      "leafId": "bv-men-shoes-palazzo",
+      "cgid": "men-palazzo",
       "hubCategory": "shoes"
     },
     {
@@ -19440,7 +19440,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/palazzo-slipper-espresso-867804V2ED02006.html",
       "url": "https://www.bottegaveneta.com/en-gb/palazzo-slipper-espresso-867804V2ED02006.html",
-      "gbpPrice": 860.0,
+      "gbpPrice": 890.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -19600,7 +19600,7 @@
           "value": "40",
           "displayValue": "40",
           "inStock": false,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         },
         {
@@ -19608,7 +19608,7 @@
           "value": "41",
           "displayValue": "41",
           "inStock": false,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         },
         {
@@ -19616,7 +19616,7 @@
           "value": "42",
           "displayValue": "42",
           "inStock": true,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         },
         {
@@ -19624,7 +19624,7 @@
           "value": "43",
           "displayValue": "43",
           "inStock": true,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         },
         {
@@ -19632,7 +19632,7 @@
           "value": "44",
           "displayValue": "44",
           "inStock": false,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         },
         {
@@ -19640,7 +19640,7 @@
           "value": "45",
           "displayValue": "45",
           "inStock": true,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         },
         {
@@ -19648,7 +19648,7 @@
           "value": "46",
           "displayValue": "46",
           "inStock": true,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         },
         {
@@ -19656,7 +19656,7 @@
           "value": "47",
           "displayValue": "47",
           "inStock": false,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         }
       ],
@@ -19682,7 +19682,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/palazzo-slipper-black-867804V2ED01000.html",
       "url": "https://www.bottegaveneta.com/en-gb/palazzo-slipper-black-867804V2ED01000.html",
-      "gbpPrice": 860.0,
+      "gbpPrice": 890.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -19842,7 +19842,7 @@
           "value": "38",
           "displayValue": "38",
           "inStock": false,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         },
         {
@@ -19850,7 +19850,7 @@
           "value": "39",
           "displayValue": "39",
           "inStock": false,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         },
         {
@@ -19858,7 +19858,7 @@
           "value": "40",
           "displayValue": "40",
           "inStock": true,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         },
         {
@@ -19866,15 +19866,15 @@
           "value": "41",
           "displayValue": "41",
           "inStock": false,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         },
         {
           "id": "42",
           "value": "42",
           "displayValue": "42",
-          "inStock": true,
-          "gbpPrice": 860.0,
+          "inStock": false,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         },
         {
@@ -19882,7 +19882,7 @@
           "value": "43",
           "displayValue": "43",
           "inStock": true,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         },
         {
@@ -19890,7 +19890,7 @@
           "value": "44",
           "displayValue": "44",
           "inStock": true,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         },
         {
@@ -19898,7 +19898,7 @@
           "value": "45",
           "displayValue": "45",
           "inStock": false,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         },
         {
@@ -19906,7 +19906,7 @@
           "value": "46",
           "displayValue": "46",
           "inStock": false,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         },
         {
@@ -19914,7 +19914,7 @@
           "value": "47",
           "displayValue": "47",
           "inStock": false,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         }
       ],
@@ -19940,7 +19940,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/palazzo-slipper-tannin-867806V3QE02388.html",
       "url": "https://www.bottegaveneta.com/en-gb/palazzo-slipper-tannin-867806V3QE02388.html",
-      "gbpPrice": 990.0,
+      "gbpPrice": 1030.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -20100,7 +20100,7 @@
           "value": "40",
           "displayValue": "40",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -20108,7 +20108,7 @@
           "value": "41",
           "displayValue": "41",
           "inStock": true,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -20116,7 +20116,7 @@
           "value": "42",
           "displayValue": "42",
           "inStock": true,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -20124,7 +20124,7 @@
           "value": "43",
           "displayValue": "43",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -20132,7 +20132,7 @@
           "value": "44",
           "displayValue": "44",
           "inStock": true,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -20140,7 +20140,7 @@
           "value": "45",
           "displayValue": "45",
           "inStock": true,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -20148,7 +20148,7 @@
           "value": "46",
           "displayValue": "46",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -20156,7 +20156,7 @@
           "value": "47",
           "displayValue": "47",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         }
       ],
@@ -20182,7 +20182,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/palazzo-slipper-deep-mahogany-867806V2ED06176.html",
       "url": "https://www.bottegaveneta.com/en-gb/palazzo-slipper-deep-mahogany-867806V2ED06176.html",
-      "gbpPrice": 990.0,
+      "gbpPrice": 1030.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -20342,7 +20342,7 @@
           "value": "40",
           "displayValue": "40",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -20350,7 +20350,7 @@
           "value": "41",
           "displayValue": "41",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -20358,7 +20358,7 @@
           "value": "42",
           "displayValue": "42",
           "inStock": true,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -20366,7 +20366,7 @@
           "value": "43",
           "displayValue": "43",
           "inStock": true,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -20374,7 +20374,7 @@
           "value": "44",
           "displayValue": "44",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -20382,7 +20382,7 @@
           "value": "45",
           "displayValue": "45",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -20390,7 +20390,7 @@
           "value": "46",
           "displayValue": "46",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         }
       ],
@@ -20415,7 +20415,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/palazzo-slipper-alpi-green-867806V2ED03076.html",
       "url": "https://www.bottegaveneta.com/en-gb/palazzo-slipper-alpi-green-867806V2ED03076.html",
-      "gbpPrice": 990.0,
+      "gbpPrice": 1030.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -20575,7 +20575,7 @@
           "value": "40",
           "displayValue": "40",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -20583,7 +20583,7 @@
           "value": "41",
           "displayValue": "41",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -20591,7 +20591,7 @@
           "value": "42",
           "displayValue": "42",
           "inStock": true,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -20599,7 +20599,7 @@
           "value": "43",
           "displayValue": "43",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -20607,7 +20607,7 @@
           "value": "44",
           "displayValue": "44",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -20615,7 +20615,7 @@
           "value": "45",
           "displayValue": "45",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -20623,7 +20623,7 @@
           "value": "46",
           "displayValue": "46",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         }
       ],
@@ -20648,7 +20648,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/haddock-lace-up-shoe-dark-caramel-776576V3QE09866.html",
       "url": "https://www.bottegaveneta.com/en-gb/haddock-lace-up-shoe-dark-caramel-776576V3QE09866.html",
-      "gbpPrice": 1120.0,
+      "gbpPrice": 1160.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -20806,7 +20806,7 @@
           "value": "40",
           "displayValue": "40",
           "inStock": true,
-          "gbpPrice": 1120.0,
+          "gbpPrice": 1160.0,
           "listGbpPrice": null
         },
         {
@@ -20814,7 +20814,7 @@
           "value": "41",
           "displayValue": "41",
           "inStock": true,
-          "gbpPrice": 1120.0,
+          "gbpPrice": 1160.0,
           "listGbpPrice": null
         },
         {
@@ -20822,7 +20822,7 @@
           "value": "42",
           "displayValue": "42",
           "inStock": true,
-          "gbpPrice": 1120.0,
+          "gbpPrice": 1160.0,
           "listGbpPrice": null
         },
         {
@@ -20830,7 +20830,7 @@
           "value": "43",
           "displayValue": "43",
           "inStock": true,
-          "gbpPrice": 1120.0,
+          "gbpPrice": 1160.0,
           "listGbpPrice": null
         },
         {
@@ -20838,7 +20838,7 @@
           "value": "44",
           "displayValue": "44",
           "inStock": true,
-          "gbpPrice": 1120.0,
+          "gbpPrice": 1160.0,
           "listGbpPrice": null
         },
         {
@@ -20846,7 +20846,7 @@
           "value": "45",
           "displayValue": "45",
           "inStock": true,
-          "gbpPrice": 1120.0,
+          "gbpPrice": 1160.0,
           "listGbpPrice": null
         },
         {
@@ -20854,7 +20854,7 @@
           "value": "46",
           "displayValue": "46",
           "inStock": false,
-          "gbpPrice": 1120.0,
+          "gbpPrice": 1160.0,
           "listGbpPrice": null
         }
       ],
@@ -21352,7 +21352,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/haddock-lace-up-shoe-dark-green-776576V2WT23264.html",
       "url": "https://www.bottegaveneta.com/en-gb/haddock-lace-up-shoe-dark-green-776576V2WT23264.html",
-      "gbpPrice": 1120.0,
+      "gbpPrice": 1160.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -21514,7 +21514,7 @@
           "value": "40",
           "displayValue": "40",
           "inStock": true,
-          "gbpPrice": 1120.0,
+          "gbpPrice": 1160.0,
           "listGbpPrice": null
         },
         {
@@ -21522,7 +21522,7 @@
           "value": "41",
           "displayValue": "41",
           "inStock": false,
-          "gbpPrice": 1120.0,
+          "gbpPrice": 1160.0,
           "listGbpPrice": null
         },
         {
@@ -21530,7 +21530,7 @@
           "value": "42",
           "displayValue": "42",
           "inStock": false,
-          "gbpPrice": 1120.0,
+          "gbpPrice": 1160.0,
           "listGbpPrice": null
         },
         {
@@ -21538,7 +21538,7 @@
           "value": "43",
           "displayValue": "43",
           "inStock": false,
-          "gbpPrice": 1120.0,
+          "gbpPrice": 1160.0,
           "listGbpPrice": null
         },
         {
@@ -21546,7 +21546,7 @@
           "value": "44",
           "displayValue": "44",
           "inStock": false,
-          "gbpPrice": 1120.0,
+          "gbpPrice": 1160.0,
           "listGbpPrice": null
         },
         {
@@ -21554,7 +21554,7 @@
           "value": "45",
           "displayValue": "45",
           "inStock": true,
-          "gbpPrice": 1120.0,
+          "gbpPrice": 1160.0,
           "listGbpPrice": null
         },
         {
@@ -21562,7 +21562,7 @@
           "value": "46",
           "displayValue": "46",
           "inStock": false,
-          "gbpPrice": 1120.0,
+          "gbpPrice": 1160.0,
           "listGbpPrice": null
         },
         {
@@ -21570,7 +21570,7 @@
           "value": "47",
           "displayValue": "47",
           "inStock": false,
-          "gbpPrice": 1120.0,
+          "gbpPrice": 1160.0,
           "listGbpPrice": null
         }
       ],
@@ -21596,7 +21596,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/haddock-loafer-black-764508V2WT01000.html",
       "url": "https://www.bottegaveneta.com/en-gb/haddock-loafer-black-764508V2WT01000.html",
-      "gbpPrice": 1120.0,
+      "gbpPrice": 1160.0,
       "listGbpPrice": null,
       "inStock": false,
       "shortDescription": [
@@ -21756,7 +21756,7 @@
           "value": "39",
           "displayValue": "39",
           "inStock": false,
-          "gbpPrice": 1120.0,
+          "gbpPrice": 1160.0,
           "listGbpPrice": null
         },
         {
@@ -21764,7 +21764,7 @@
           "value": "40",
           "displayValue": "40",
           "inStock": false,
-          "gbpPrice": 1120.0,
+          "gbpPrice": 1160.0,
           "listGbpPrice": null
         },
         {
@@ -21772,7 +21772,7 @@
           "value": "41",
           "displayValue": "41",
           "inStock": false,
-          "gbpPrice": 1120.0,
+          "gbpPrice": 1160.0,
           "listGbpPrice": null
         },
         {
@@ -21780,7 +21780,7 @@
           "value": "42",
           "displayValue": "42",
           "inStock": false,
-          "gbpPrice": 1120.0,
+          "gbpPrice": 1160.0,
           "listGbpPrice": null
         },
         {
@@ -21788,7 +21788,7 @@
           "value": "43",
           "displayValue": "43",
           "inStock": false,
-          "gbpPrice": 1120.0,
+          "gbpPrice": 1160.0,
           "listGbpPrice": null
         },
         {
@@ -21796,7 +21796,7 @@
           "value": "44",
           "displayValue": "44",
           "inStock": false,
-          "gbpPrice": 1120.0,
+          "gbpPrice": 1160.0,
           "listGbpPrice": null
         },
         {
@@ -21804,7 +21804,7 @@
           "value": "45",
           "displayValue": "45",
           "inStock": false,
-          "gbpPrice": 1120.0,
+          "gbpPrice": 1160.0,
           "listGbpPrice": null
         }
       ],
@@ -21830,7 +21830,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/haddock-lace-up-shoe-fondant-776576V2WT22113.html",
       "url": "https://www.bottegaveneta.com/en-gb/haddock-lace-up-shoe-fondant-776576V2WT22113.html",
-      "gbpPrice": 1120.0,
+      "gbpPrice": 1160.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -21990,7 +21990,7 @@
           "value": "39",
           "displayValue": "39",
           "inStock": false,
-          "gbpPrice": 1120.0,
+          "gbpPrice": 1160.0,
           "listGbpPrice": null
         },
         {
@@ -21998,7 +21998,7 @@
           "value": "40",
           "displayValue": "40",
           "inStock": true,
-          "gbpPrice": 1120.0,
+          "gbpPrice": 1160.0,
           "listGbpPrice": null
         },
         {
@@ -22006,7 +22006,7 @@
           "value": "41",
           "displayValue": "41",
           "inStock": true,
-          "gbpPrice": 1120.0,
+          "gbpPrice": 1160.0,
           "listGbpPrice": null
         },
         {
@@ -22014,7 +22014,7 @@
           "value": "42",
           "displayValue": "42",
           "inStock": true,
-          "gbpPrice": 1120.0,
+          "gbpPrice": 1160.0,
           "listGbpPrice": null
         },
         {
@@ -22022,7 +22022,7 @@
           "value": "43",
           "displayValue": "43",
           "inStock": true,
-          "gbpPrice": 1120.0,
+          "gbpPrice": 1160.0,
           "listGbpPrice": null
         },
         {
@@ -22030,7 +22030,7 @@
           "value": "44",
           "displayValue": "44",
           "inStock": true,
-          "gbpPrice": 1120.0,
+          "gbpPrice": 1160.0,
           "listGbpPrice": null
         },
         {
@@ -22038,7 +22038,7 @@
           "value": "45",
           "displayValue": "45",
           "inStock": true,
-          "gbpPrice": 1120.0,
+          "gbpPrice": 1160.0,
           "listGbpPrice": null
         },
         {
@@ -22046,7 +22046,7 @@
           "value": "46",
           "displayValue": "46",
           "inStock": true,
-          "gbpPrice": 1120.0,
+          "gbpPrice": 1160.0,
           "listGbpPrice": null
         }
       ],
@@ -22308,7 +22308,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/haddock-lace-up-shoe-black-776576V2WT21000.html",
       "url": "https://www.bottegaveneta.com/en-gb/haddock-lace-up-shoe-black-776576V2WT21000.html",
-      "gbpPrice": 1120.0,
+      "gbpPrice": 1160.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -22470,7 +22470,7 @@
           "value": "39",
           "displayValue": "39",
           "inStock": false,
-          "gbpPrice": 1120.0,
+          "gbpPrice": 1160.0,
           "listGbpPrice": null
         },
         {
@@ -22478,7 +22478,7 @@
           "value": "40",
           "displayValue": "40",
           "inStock": true,
-          "gbpPrice": 1120.0,
+          "gbpPrice": 1160.0,
           "listGbpPrice": null
         },
         {
@@ -22486,7 +22486,7 @@
           "value": "41",
           "displayValue": "41",
           "inStock": true,
-          "gbpPrice": 1120.0,
+          "gbpPrice": 1160.0,
           "listGbpPrice": null
         },
         {
@@ -22494,7 +22494,7 @@
           "value": "42",
           "displayValue": "42",
           "inStock": true,
-          "gbpPrice": 1120.0,
+          "gbpPrice": 1160.0,
           "listGbpPrice": null
         },
         {
@@ -22502,7 +22502,7 @@
           "value": "43",
           "displayValue": "43",
           "inStock": true,
-          "gbpPrice": 1120.0,
+          "gbpPrice": 1160.0,
           "listGbpPrice": null
         },
         {
@@ -22510,7 +22510,7 @@
           "value": "44",
           "displayValue": "44",
           "inStock": true,
-          "gbpPrice": 1120.0,
+          "gbpPrice": 1160.0,
           "listGbpPrice": null
         },
         {
@@ -22518,7 +22518,7 @@
           "value": "45",
           "displayValue": "45",
           "inStock": true,
-          "gbpPrice": 1120.0,
+          "gbpPrice": 1160.0,
           "listGbpPrice": null
         },
         {
@@ -22526,7 +22526,7 @@
           "value": "46",
           "displayValue": "46",
           "inStock": true,
-          "gbpPrice": 1120.0,
+          "gbpPrice": 1160.0,
           "listGbpPrice": null
         }
       ],
@@ -25622,7 +25622,7 @@
           "id": "42",
           "value": "42",
           "displayValue": "42",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 980.0,
           "listGbpPrice": null
         },
@@ -25638,7 +25638,7 @@
           "id": "44",
           "value": "44",
           "displayValue": "44",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 980.0,
           "listGbpPrice": null
         },
@@ -25680,7 +25680,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/james-loafer-black-855165VBPB01000.html",
       "url": "https://www.bottegaveneta.com/en-gb/james-loafer-black-855165VBPB01000.html",
-      "gbpPrice": 1290.0,
+      "gbpPrice": 1340.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -25840,7 +25840,7 @@
           "value": "39",
           "displayValue": "39",
           "inStock": false,
-          "gbpPrice": 1290.0,
+          "gbpPrice": 1340.0,
           "listGbpPrice": null
         },
         {
@@ -25848,7 +25848,7 @@
           "value": "40",
           "displayValue": "40",
           "inStock": true,
-          "gbpPrice": 1290.0,
+          "gbpPrice": 1340.0,
           "listGbpPrice": null
         },
         {
@@ -25856,7 +25856,7 @@
           "value": "41",
           "displayValue": "41",
           "inStock": true,
-          "gbpPrice": 1290.0,
+          "gbpPrice": 1340.0,
           "listGbpPrice": null
         },
         {
@@ -25864,7 +25864,7 @@
           "value": "42",
           "displayValue": "42",
           "inStock": true,
-          "gbpPrice": 1290.0,
+          "gbpPrice": 1340.0,
           "listGbpPrice": null
         },
         {
@@ -25872,7 +25872,7 @@
           "value": "43",
           "displayValue": "43",
           "inStock": true,
-          "gbpPrice": 1290.0,
+          "gbpPrice": 1340.0,
           "listGbpPrice": null
         },
         {
@@ -25880,7 +25880,7 @@
           "value": "44",
           "displayValue": "44",
           "inStock": true,
-          "gbpPrice": 1290.0,
+          "gbpPrice": 1340.0,
           "listGbpPrice": null
         },
         {
@@ -25888,7 +25888,7 @@
           "value": "45",
           "displayValue": "45",
           "inStock": true,
-          "gbpPrice": 1290.0,
+          "gbpPrice": 1340.0,
           "listGbpPrice": null
         },
         {
@@ -25896,7 +25896,7 @@
           "value": "46",
           "displayValue": "46",
           "inStock": true,
-          "gbpPrice": 1290.0,
+          "gbpPrice": 1340.0,
           "listGbpPrice": null
         }
       ],
@@ -26162,7 +26162,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/pier-boat-shoe-espresso-876072V6TG12006.html",
       "url": "https://www.bottegaveneta.com/en-gb/pier-boat-shoe-espresso-876072V6TG12006.html",
-      "gbpPrice": 1120.0,
+      "gbpPrice": 1160.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -26324,7 +26324,7 @@
           "value": "40",
           "displayValue": "40",
           "inStock": true,
-          "gbpPrice": 1120.0,
+          "gbpPrice": 1160.0,
           "listGbpPrice": null
         },
         {
@@ -26332,7 +26332,7 @@
           "value": "41",
           "displayValue": "41",
           "inStock": true,
-          "gbpPrice": 1120.0,
+          "gbpPrice": 1160.0,
           "listGbpPrice": null
         },
         {
@@ -26340,7 +26340,7 @@
           "value": "42",
           "displayValue": "42",
           "inStock": true,
-          "gbpPrice": 1120.0,
+          "gbpPrice": 1160.0,
           "listGbpPrice": null
         },
         {
@@ -26348,7 +26348,7 @@
           "value": "43",
           "displayValue": "43",
           "inStock": true,
-          "gbpPrice": 1120.0,
+          "gbpPrice": 1160.0,
           "listGbpPrice": null
         },
         {
@@ -26356,7 +26356,7 @@
           "value": "44",
           "displayValue": "44",
           "inStock": true,
-          "gbpPrice": 1120.0,
+          "gbpPrice": 1160.0,
           "listGbpPrice": null
         },
         {
@@ -26364,7 +26364,7 @@
           "value": "45",
           "displayValue": "45",
           "inStock": true,
-          "gbpPrice": 1120.0,
+          "gbpPrice": 1160.0,
           "listGbpPrice": null
         },
         {
@@ -26372,7 +26372,7 @@
           "value": "46",
           "displayValue": "46",
           "inStock": true,
-          "gbpPrice": 1120.0,
+          "gbpPrice": 1160.0,
           "listGbpPrice": null
         }
       ],
@@ -30466,7 +30466,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/sunday-slipper-abyss-730273V2ED04259.html",
       "url": "https://www.bottegaveneta.com/en-gb/sunday-slipper-abyss-730273V2ED04259.html",
-      "gbpPrice": 860.0,
+      "gbpPrice": 890.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -30626,7 +30626,7 @@
           "value": "39",
           "displayValue": "39",
           "inStock": true,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         },
         {
@@ -30634,7 +30634,7 @@
           "value": "40",
           "displayValue": "40",
           "inStock": false,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         },
         {
@@ -30642,7 +30642,7 @@
           "value": "41",
           "displayValue": "41",
           "inStock": false,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         },
         {
@@ -30650,7 +30650,7 @@
           "value": "42",
           "displayValue": "42",
           "inStock": false,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         },
         {
@@ -30658,7 +30658,7 @@
           "value": "43",
           "displayValue": "43",
           "inStock": false,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         },
         {
@@ -30666,7 +30666,7 @@
           "value": "44",
           "displayValue": "44",
           "inStock": false,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         },
         {
@@ -30674,7 +30674,7 @@
           "value": "45",
           "displayValue": "45",
           "inStock": false,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         },
         {
@@ -30682,7 +30682,7 @@
           "value": "46",
           "displayValue": "46",
           "inStock": false,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         }
       ],
@@ -30707,7 +30707,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/sunday-slipper-fondant-730273V3H682113.html",
       "url": "https://www.bottegaveneta.com/en-gb/sunday-slipper-fondant-730273V3H682113.html",
-      "gbpPrice": 890.0,
+      "gbpPrice": 980.0,
       "listGbpPrice": null,
       "inStock": false,
       "shortDescription": [
@@ -30869,7 +30869,7 @@
           "value": "39",
           "displayValue": "39",
           "inStock": false,
-          "gbpPrice": 890.0,
+          "gbpPrice": 980.0,
           "listGbpPrice": null
         },
         {
@@ -30877,7 +30877,7 @@
           "value": "40",
           "displayValue": "40",
           "inStock": false,
-          "gbpPrice": 890.0,
+          "gbpPrice": 980.0,
           "listGbpPrice": null
         },
         {
@@ -30885,7 +30885,7 @@
           "value": "41",
           "displayValue": "41",
           "inStock": false,
-          "gbpPrice": 890.0,
+          "gbpPrice": 980.0,
           "listGbpPrice": null
         },
         {
@@ -30893,7 +30893,7 @@
           "value": "42",
           "displayValue": "42",
           "inStock": false,
-          "gbpPrice": 890.0,
+          "gbpPrice": 980.0,
           "listGbpPrice": null
         },
         {
@@ -30901,7 +30901,7 @@
           "value": "43",
           "displayValue": "43",
           "inStock": false,
-          "gbpPrice": 890.0,
+          "gbpPrice": 980.0,
           "listGbpPrice": null
         },
         {
@@ -30909,7 +30909,7 @@
           "value": "44",
           "displayValue": "44",
           "inStock": false,
-          "gbpPrice": 890.0,
+          "gbpPrice": 980.0,
           "listGbpPrice": null
         },
         {
@@ -30917,7 +30917,7 @@
           "value": "45",
           "displayValue": "45",
           "inStock": false,
-          "gbpPrice": 890.0,
+          "gbpPrice": 980.0,
           "listGbpPrice": null
         },
         {
@@ -30925,7 +30925,7 @@
           "value": "46",
           "displayValue": "46",
           "inStock": false,
-          "gbpPrice": 890.0,
+          "gbpPrice": 980.0,
           "listGbpPrice": null
         }
       ],
@@ -30950,7 +30950,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/sunday-slipper-black-730275V2ED01000.html",
       "url": "https://www.bottegaveneta.com/en-gb/sunday-slipper-black-730275V2ED01000.html",
-      "gbpPrice": 990.0,
+      "gbpPrice": 1030.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -31107,7 +31107,7 @@
           "value": "38",
           "displayValue": "38",
           "inStock": true,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -31115,7 +31115,7 @@
           "value": "38_5",
           "displayValue": "38.5",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -31123,7 +31123,7 @@
           "value": "39",
           "displayValue": "39",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -31131,7 +31131,7 @@
           "value": "39_5",
           "displayValue": "39.5",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -31139,7 +31139,7 @@
           "value": "40",
           "displayValue": "40",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -31147,7 +31147,7 @@
           "value": "40_5",
           "displayValue": "40.5",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -31155,7 +31155,7 @@
           "value": "41",
           "displayValue": "41",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -31163,7 +31163,7 @@
           "value": "41_5",
           "displayValue": "41.5",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -31171,7 +31171,7 @@
           "value": "42",
           "displayValue": "42",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -31179,7 +31179,7 @@
           "value": "42_5",
           "displayValue": "42.5",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -31187,7 +31187,7 @@
           "value": "43",
           "displayValue": "43",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -31195,7 +31195,7 @@
           "value": "43_5",
           "displayValue": "43.5",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -31203,7 +31203,7 @@
           "value": "44",
           "displayValue": "44",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -31211,7 +31211,7 @@
           "value": "44_5",
           "displayValue": "44.5",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -31219,7 +31219,7 @@
           "value": "45",
           "displayValue": "45",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -31227,7 +31227,7 @@
           "value": "45_5",
           "displayValue": "45.5",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -31235,7 +31235,7 @@
           "value": "46",
           "displayValue": "46",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         }
       ],
@@ -31260,7 +31260,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/sunday-slipper-black-730273V2ED01000.html",
       "url": "https://www.bottegaveneta.com/en-gb/sunday-slipper-black-730273V2ED01000.html",
-      "gbpPrice": 860.0,
+      "gbpPrice": 890.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -31419,7 +31419,7 @@
           "value": "38",
           "displayValue": "38",
           "inStock": false,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         },
         {
@@ -31427,7 +31427,7 @@
           "value": "38_5",
           "displayValue": "38.5",
           "inStock": false,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         },
         {
@@ -31435,7 +31435,7 @@
           "value": "39",
           "displayValue": "39",
           "inStock": false,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         },
         {
@@ -31443,7 +31443,7 @@
           "value": "39_5",
           "displayValue": "39.5",
           "inStock": false,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         },
         {
@@ -31451,7 +31451,7 @@
           "value": "40",
           "displayValue": "40",
           "inStock": true,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         },
         {
@@ -31459,7 +31459,7 @@
           "value": "40_5",
           "displayValue": "40.5",
           "inStock": false,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         },
         {
@@ -31467,7 +31467,7 @@
           "value": "41",
           "displayValue": "41",
           "inStock": false,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         },
         {
@@ -31475,7 +31475,7 @@
           "value": "41_5",
           "displayValue": "41.5",
           "inStock": false,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         },
         {
@@ -31483,7 +31483,7 @@
           "value": "42",
           "displayValue": "42",
           "inStock": false,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         },
         {
@@ -31491,7 +31491,7 @@
           "value": "42_5",
           "displayValue": "42.5",
           "inStock": false,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         },
         {
@@ -31499,7 +31499,7 @@
           "value": "43",
           "displayValue": "43",
           "inStock": false,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         },
         {
@@ -31507,7 +31507,7 @@
           "value": "43_5",
           "displayValue": "43.5",
           "inStock": false,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         },
         {
@@ -31515,7 +31515,7 @@
           "value": "44",
           "displayValue": "44",
           "inStock": false,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         },
         {
@@ -31523,7 +31523,7 @@
           "value": "44_5",
           "displayValue": "44.5",
           "inStock": false,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         },
         {
@@ -31531,7 +31531,7 @@
           "value": "45",
           "displayValue": "45",
           "inStock": false,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         },
         {
@@ -31539,7 +31539,7 @@
           "value": "45_5",
           "displayValue": "45.5",
           "inStock": false,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         },
         {
@@ -31547,7 +31547,7 @@
           "value": "46",
           "displayValue": "46",
           "inStock": false,
-          "gbpPrice": 860.0,
+          "gbpPrice": 890.0,
           "listGbpPrice": null
         }
       ],
@@ -31572,7 +31572,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/sunday-slipper-dark-barolo-730275V2ED02241.html",
       "url": "https://www.bottegaveneta.com/en-gb/sunday-slipper-dark-barolo-730275V2ED02241.html",
-      "gbpPrice": 990.0,
+      "gbpPrice": 1030.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -31732,7 +31732,7 @@
           "value": "39",
           "displayValue": "39",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -31740,7 +31740,7 @@
           "value": "40",
           "displayValue": "40",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -31748,7 +31748,7 @@
           "value": "41",
           "displayValue": "41",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -31756,7 +31756,7 @@
           "value": "42",
           "displayValue": "42",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -31764,7 +31764,7 @@
           "value": "43",
           "displayValue": "43",
           "inStock": true,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -31772,7 +31772,7 @@
           "value": "44",
           "displayValue": "44",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -31780,7 +31780,7 @@
           "value": "45",
           "displayValue": "45",
           "inStock": true,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -31788,7 +31788,7 @@
           "value": "46",
           "displayValue": "46",
           "inStock": true,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         }
       ],
@@ -31813,7 +31813,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/sunday-slipper-abyss-730275V2ED04259.html",
       "url": "https://www.bottegaveneta.com/en-gb/sunday-slipper-abyss-730275V2ED04259.html",
-      "gbpPrice": 990.0,
+      "gbpPrice": 1030.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -31973,7 +31973,7 @@
           "value": "39",
           "displayValue": "39",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -31981,7 +31981,7 @@
           "value": "40",
           "displayValue": "40",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -31989,7 +31989,7 @@
           "value": "41",
           "displayValue": "41",
           "inStock": true,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -31997,7 +31997,7 @@
           "value": "42",
           "displayValue": "42",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -32005,7 +32005,7 @@
           "value": "43",
           "displayValue": "43",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -32013,7 +32013,7 @@
           "value": "44",
           "displayValue": "44",
           "inStock": true,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -32021,7 +32021,7 @@
           "value": "45",
           "displayValue": "45",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -32029,7 +32029,7 @@
           "value": "46",
           "displayValue": "46",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -32037,7 +32037,7 @@
           "value": "47",
           "displayValue": "47",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         }
       ],
@@ -32062,7 +32062,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/sunday-slipper-fondant-730275V2ED02113.html",
       "url": "https://www.bottegaveneta.com/en-gb/sunday-slipper-fondant-730275V2ED02113.html",
-      "gbpPrice": 990.0,
+      "gbpPrice": 1030.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -32223,7 +32223,7 @@
           "value": "38",
           "displayValue": "38",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -32231,7 +32231,7 @@
           "value": "38_5",
           "displayValue": "38.5",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -32239,7 +32239,7 @@
           "value": "39",
           "displayValue": "39",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -32247,7 +32247,7 @@
           "value": "39_5",
           "displayValue": "39.5",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -32255,7 +32255,7 @@
           "value": "40",
           "displayValue": "40",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -32263,7 +32263,7 @@
           "value": "40_5",
           "displayValue": "40.5",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -32271,7 +32271,7 @@
           "value": "41",
           "displayValue": "41",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -32279,7 +32279,7 @@
           "value": "41_5",
           "displayValue": "41.5",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -32287,7 +32287,7 @@
           "value": "42",
           "displayValue": "42",
           "inStock": true,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -32295,7 +32295,7 @@
           "value": "42_5",
           "displayValue": "42.5",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -32303,7 +32303,7 @@
           "value": "43",
           "displayValue": "43",
           "inStock": true,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -32311,7 +32311,7 @@
           "value": "43_5",
           "displayValue": "43.5",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -32319,7 +32319,7 @@
           "value": "44",
           "displayValue": "44",
           "inStock": true,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -32327,7 +32327,7 @@
           "value": "44_5",
           "displayValue": "44.5",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -32335,7 +32335,7 @@
           "value": "45",
           "displayValue": "45",
           "inStock": true,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -32343,7 +32343,7 @@
           "value": "45_5",
           "displayValue": "45.5",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -32351,7 +32351,7 @@
           "value": "46",
           "displayValue": "46",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         }
       ],
@@ -32376,7 +32376,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/sunday-slipper-cane-sugar-730275V2ED02624.html",
       "url": "https://www.bottegaveneta.com/en-gb/sunday-slipper-cane-sugar-730275V2ED02624.html",
-      "gbpPrice": 990.0,
+      "gbpPrice": 1030.0,
       "listGbpPrice": null,
       "inStock": false,
       "shortDescription": [
@@ -32533,7 +32533,7 @@
           "value": "38",
           "displayValue": "38",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -32541,7 +32541,7 @@
           "value": "38_5",
           "displayValue": "38.5",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -32549,7 +32549,7 @@
           "value": "39",
           "displayValue": "39",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -32557,7 +32557,7 @@
           "value": "39_5",
           "displayValue": "39.5",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -32565,7 +32565,7 @@
           "value": "40",
           "displayValue": "40",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -32573,7 +32573,7 @@
           "value": "40_5",
           "displayValue": "40.5",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -32581,7 +32581,7 @@
           "value": "41",
           "displayValue": "41",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -32589,7 +32589,7 @@
           "value": "41_5",
           "displayValue": "41.5",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -32597,7 +32597,7 @@
           "value": "42",
           "displayValue": "42",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -32605,7 +32605,7 @@
           "value": "42_5",
           "displayValue": "42.5",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -32613,7 +32613,7 @@
           "value": "43",
           "displayValue": "43",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -32621,7 +32621,7 @@
           "value": "43_5",
           "displayValue": "43.5",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -32629,7 +32629,7 @@
           "value": "44",
           "displayValue": "44",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -32637,7 +32637,7 @@
           "value": "44_5",
           "displayValue": "44.5",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -32645,7 +32645,7 @@
           "value": "45",
           "displayValue": "45",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -32653,7 +32653,7 @@
           "value": "45_5",
           "displayValue": "45.5",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -32661,7 +32661,7 @@
           "value": "46",
           "displayValue": "46",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         }
       ],
@@ -32686,7 +32686,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/sunday-slipper-fondant-730275V3H682113.html",
       "url": "https://www.bottegaveneta.com/en-gb/sunday-slipper-fondant-730275V3H682113.html",
-      "gbpPrice": 1030.0,
+      "gbpPrice": 1070.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -32844,7 +32844,7 @@
           "value": "39",
           "displayValue": "39",
           "inStock": false,
-          "gbpPrice": 1030.0,
+          "gbpPrice": 1070.0,
           "listGbpPrice": null
         },
         {
@@ -32852,7 +32852,7 @@
           "value": "40",
           "displayValue": "40",
           "inStock": false,
-          "gbpPrice": 1030.0,
+          "gbpPrice": 1070.0,
           "listGbpPrice": null
         },
         {
@@ -32860,7 +32860,7 @@
           "value": "41",
           "displayValue": "41",
           "inStock": false,
-          "gbpPrice": 1030.0,
+          "gbpPrice": 1070.0,
           "listGbpPrice": null
         },
         {
@@ -32868,7 +32868,7 @@
           "value": "42",
           "displayValue": "42",
           "inStock": true,
-          "gbpPrice": 1030.0,
+          "gbpPrice": 1070.0,
           "listGbpPrice": null
         },
         {
@@ -32876,7 +32876,7 @@
           "value": "43",
           "displayValue": "43",
           "inStock": false,
-          "gbpPrice": 1030.0,
+          "gbpPrice": 1070.0,
           "listGbpPrice": null
         },
         {
@@ -32884,7 +32884,7 @@
           "value": "44",
           "displayValue": "44",
           "inStock": true,
-          "gbpPrice": 1030.0,
+          "gbpPrice": 1070.0,
           "listGbpPrice": null
         },
         {
@@ -32892,7 +32892,7 @@
           "value": "45",
           "displayValue": "45",
           "inStock": true,
-          "gbpPrice": 1030.0,
+          "gbpPrice": 1070.0,
           "listGbpPrice": null
         },
         {
@@ -32900,7 +32900,7 @@
           "value": "46",
           "displayValue": "46",
           "inStock": false,
-          "gbpPrice": 1030.0,
+          "gbpPrice": 1070.0,
           "listGbpPrice": null
         },
         {
@@ -32908,7 +32908,7 @@
           "value": "47",
           "displayValue": "47",
           "inStock": false,
-          "gbpPrice": 1030.0,
+          "gbpPrice": 1070.0,
           "listGbpPrice": null
         }
       ],
@@ -32933,7 +32933,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/sunday-slipper-dark-praline-730275V2ED09891.html",
       "url": "https://www.bottegaveneta.com/en-gb/sunday-slipper-dark-praline-730275V2ED09891.html",
-      "gbpPrice": 990.0,
+      "gbpPrice": 1030.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -33095,7 +33095,7 @@
           "value": "39",
           "displayValue": "39",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -33103,7 +33103,7 @@
           "value": "40",
           "displayValue": "40",
           "inStock": true,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -33111,7 +33111,7 @@
           "value": "41",
           "displayValue": "41",
           "inStock": true,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -33119,7 +33119,7 @@
           "value": "41_5",
           "displayValue": "41.5",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -33127,7 +33127,7 @@
           "value": "42",
           "displayValue": "42",
           "inStock": true,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -33135,7 +33135,7 @@
           "value": "42_5",
           "displayValue": "42.5",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -33143,7 +33143,7 @@
           "value": "43",
           "displayValue": "43",
           "inStock": true,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -33151,7 +33151,7 @@
           "value": "43_5",
           "displayValue": "43.5",
           "inStock": false,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -33159,7 +33159,7 @@
           "value": "44",
           "displayValue": "44",
           "inStock": true,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -33167,7 +33167,7 @@
           "value": "45",
           "displayValue": "45",
           "inStock": true,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         },
         {
@@ -33175,7 +33175,7 @@
           "value": "46",
           "displayValue": "46",
           "inStock": true,
-          "gbpPrice": 990.0,
+          "gbpPrice": 1030.0,
           "listGbpPrice": null
         }
       ],
@@ -33200,7 +33200,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/sunday-slipper-black-775315V2ED01000.html",
       "url": "https://www.bottegaveneta.com/en-gb/sunday-slipper-black-775315V2ED01000.html",
-      "gbpPrice": 1030.0,
+      "gbpPrice": 1070.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -33359,7 +33359,7 @@
           "value": "38",
           "displayValue": "38",
           "inStock": true,
-          "gbpPrice": 1030.0,
+          "gbpPrice": 1070.0,
           "listGbpPrice": null
         },
         {
@@ -33367,7 +33367,7 @@
           "value": "39",
           "displayValue": "39",
           "inStock": true,
-          "gbpPrice": 1030.0,
+          "gbpPrice": 1070.0,
           "listGbpPrice": null
         },
         {
@@ -33375,7 +33375,7 @@
           "value": "40",
           "displayValue": "40",
           "inStock": true,
-          "gbpPrice": 1030.0,
+          "gbpPrice": 1070.0,
           "listGbpPrice": null
         },
         {
@@ -33383,7 +33383,7 @@
           "value": "40_5",
           "displayValue": "40.5",
           "inStock": false,
-          "gbpPrice": 1030.0,
+          "gbpPrice": 1070.0,
           "listGbpPrice": null
         },
         {
@@ -33391,7 +33391,7 @@
           "value": "41",
           "displayValue": "41",
           "inStock": false,
-          "gbpPrice": 1030.0,
+          "gbpPrice": 1070.0,
           "listGbpPrice": null
         },
         {
@@ -33399,7 +33399,7 @@
           "value": "41_5",
           "displayValue": "41.5",
           "inStock": false,
-          "gbpPrice": 1030.0,
+          "gbpPrice": 1070.0,
           "listGbpPrice": null
         },
         {
@@ -33407,7 +33407,7 @@
           "value": "42",
           "displayValue": "42",
           "inStock": false,
-          "gbpPrice": 1030.0,
+          "gbpPrice": 1070.0,
           "listGbpPrice": null
         },
         {
@@ -33415,7 +33415,7 @@
           "value": "42_5",
           "displayValue": "42.5",
           "inStock": true,
-          "gbpPrice": 1030.0,
+          "gbpPrice": 1070.0,
           "listGbpPrice": null
         },
         {
@@ -33423,7 +33423,7 @@
           "value": "43",
           "displayValue": "43",
           "inStock": false,
-          "gbpPrice": 1030.0,
+          "gbpPrice": 1070.0,
           "listGbpPrice": null
         },
         {
@@ -33431,7 +33431,7 @@
           "value": "43_5",
           "displayValue": "43.5",
           "inStock": false,
-          "gbpPrice": 1030.0,
+          "gbpPrice": 1070.0,
           "listGbpPrice": null
         },
         {
@@ -33439,7 +33439,7 @@
           "value": "44",
           "displayValue": "44",
           "inStock": false,
-          "gbpPrice": 1030.0,
+          "gbpPrice": 1070.0,
           "listGbpPrice": null
         },
         {
@@ -33447,7 +33447,7 @@
           "value": "44_5",
           "displayValue": "44.5",
           "inStock": false,
-          "gbpPrice": 1030.0,
+          "gbpPrice": 1070.0,
           "listGbpPrice": null
         },
         {
@@ -33455,7 +33455,7 @@
           "value": "45",
           "displayValue": "45",
           "inStock": true,
-          "gbpPrice": 1030.0,
+          "gbpPrice": 1070.0,
           "listGbpPrice": null
         },
         {
@@ -33463,7 +33463,7 @@
           "value": "45_5",
           "displayValue": "45.5",
           "inStock": false,
-          "gbpPrice": 1030.0,
+          "gbpPrice": 1070.0,
           "listGbpPrice": null
         },
         {
@@ -33471,7 +33471,7 @@
           "value": "46",
           "displayValue": "46",
           "inStock": false,
-          "gbpPrice": 1030.0,
+          "gbpPrice": 1070.0,
           "listGbpPrice": null
         }
       ],
@@ -33496,7 +33496,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/sunday-slipper-fondant-775315V2ED02113.html",
       "url": "https://www.bottegaveneta.com/en-gb/sunday-slipper-fondant-775315V2ED02113.html",
-      "gbpPrice": 1030.0,
+      "gbpPrice": 1070.0,
       "listGbpPrice": null,
       "inStock": false,
       "shortDescription": [
@@ -33658,7 +33658,7 @@
           "value": "38",
           "displayValue": "38",
           "inStock": false,
-          "gbpPrice": 1030.0,
+          "gbpPrice": 1070.0,
           "listGbpPrice": null
         },
         {
@@ -33666,7 +33666,7 @@
           "value": "38_5",
           "displayValue": "38.5",
           "inStock": false,
-          "gbpPrice": 1030.0,
+          "gbpPrice": 1070.0,
           "listGbpPrice": null
         },
         {
@@ -33674,7 +33674,7 @@
           "value": "39",
           "displayValue": "39",
           "inStock": false,
-          "gbpPrice": 1030.0,
+          "gbpPrice": 1070.0,
           "listGbpPrice": null
         },
         {
@@ -33682,7 +33682,7 @@
           "value": "39_5",
           "displayValue": "39.5",
           "inStock": false,
-          "gbpPrice": 1030.0,
+          "gbpPrice": 1070.0,
           "listGbpPrice": null
         },
         {
@@ -33690,7 +33690,7 @@
           "value": "40",
           "displayValue": "40",
           "inStock": false,
-          "gbpPrice": 1030.0,
+          "gbpPrice": 1070.0,
           "listGbpPrice": null
         },
         {
@@ -33698,7 +33698,7 @@
           "value": "40_5",
           "displayValue": "40.5",
           "inStock": false,
-          "gbpPrice": 1030.0,
+          "gbpPrice": 1070.0,
           "listGbpPrice": null
         },
         {
@@ -33706,7 +33706,7 @@
           "value": "41",
           "displayValue": "41",
           "inStock": false,
-          "gbpPrice": 1030.0,
+          "gbpPrice": 1070.0,
           "listGbpPrice": null
         },
         {
@@ -33714,7 +33714,7 @@
           "value": "41_5",
           "displayValue": "41.5",
           "inStock": false,
-          "gbpPrice": 1030.0,
+          "gbpPrice": 1070.0,
           "listGbpPrice": null
         },
         {
@@ -33722,7 +33722,7 @@
           "value": "42",
           "displayValue": "42",
           "inStock": false,
-          "gbpPrice": 1030.0,
+          "gbpPrice": 1070.0,
           "listGbpPrice": null
         },
         {
@@ -33730,7 +33730,7 @@
           "value": "42_5",
           "displayValue": "42.5",
           "inStock": false,
-          "gbpPrice": 1030.0,
+          "gbpPrice": 1070.0,
           "listGbpPrice": null
         },
         {
@@ -33738,7 +33738,7 @@
           "value": "43",
           "displayValue": "43",
           "inStock": false,
-          "gbpPrice": 1030.0,
+          "gbpPrice": 1070.0,
           "listGbpPrice": null
         },
         {
@@ -33746,7 +33746,7 @@
           "value": "43_5",
           "displayValue": "43.5",
           "inStock": false,
-          "gbpPrice": 1030.0,
+          "gbpPrice": 1070.0,
           "listGbpPrice": null
         },
         {
@@ -33754,7 +33754,7 @@
           "value": "44",
           "displayValue": "44",
           "inStock": false,
-          "gbpPrice": 1030.0,
+          "gbpPrice": 1070.0,
           "listGbpPrice": null
         },
         {
@@ -33762,7 +33762,7 @@
           "value": "44_5",
           "displayValue": "44.5",
           "inStock": false,
-          "gbpPrice": 1030.0,
+          "gbpPrice": 1070.0,
           "listGbpPrice": null
         },
         {
@@ -33770,7 +33770,7 @@
           "value": "45",
           "displayValue": "45",
           "inStock": false,
-          "gbpPrice": 1030.0,
+          "gbpPrice": 1070.0,
           "listGbpPrice": null
         },
         {
@@ -33778,7 +33778,7 @@
           "value": "45_5",
           "displayValue": "45.5",
           "inStock": false,
-          "gbpPrice": 1030.0,
+          "gbpPrice": 1070.0,
           "listGbpPrice": null
         },
         {
@@ -33786,7 +33786,7 @@
           "value": "46",
           "displayValue": "46",
           "inStock": false,
-          "gbpPrice": 1030.0,
+          "gbpPrice": 1070.0,
           "listGbpPrice": null
         }
       ],
@@ -37863,6 +37863,484 @@
       ],
       "leafId": "bv-men-shoes-sandals",
       "cgid": "men-sandals",
+      "hubCategory": "shoes"
+    },
+    {
+      "id": "A007OIV74J31663",
+      "sku": "A007OIV74J31663",
+      "internalId": "A007OIV74J31663",
+      "name": "Shot Sneaker",
+      "brand": "bottega veneta",
+      "color": "Obsidan grey/cardinal",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/shot-sneaker-obsidan-grey-cardinal-A007OIV74J31663.html",
+      "url": "https://www.bottegaveneta.com/en-gb/shot-sneaker-obsidan-grey-cardinal-A007OIV74J31663.html",
+      "gbpPrice": 760.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Lambskin",
+        "Color: Obsidian Grey/Cardinal",
+        "Rubber outsole"
+      ],
+      "longDescription": [
+        "Suede and leather lace-up sneaker with contrasted detailing"
+      ],
+      "compactedLongDesc": "Low top lace-up sneaker in smooth calfskin leather and soft suede with contrasted detail at the back.",
+      "composition": "• Material: calfskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "",
+      "sizeChartId": "default-M-SHOES",
+      "sizeGuide": {
+        "id": "default-M-SHOES",
+        "titleKo": "Men's Shoes",
+        "noteKo": "보테가 베네타 공홈 사이즈 가이드 기준입니다.",
+        "headers": [
+          "BV",
+          "UK",
+          "US",
+          "KR"
+        ],
+        "rows": [
+          [
+            "38",
+            "4",
+            "5",
+            "230"
+          ],
+          [
+            "38.5",
+            "4.5",
+            "5.5",
+            "235"
+          ],
+          [
+            "39",
+            "5",
+            "6",
+            "240"
+          ],
+          [
+            "39.5",
+            "5.5",
+            "6.5",
+            "245"
+          ],
+          [
+            "40",
+            "6",
+            "7",
+            "250"
+          ],
+          [
+            "40.5",
+            "6.5",
+            "7.5",
+            "255"
+          ],
+          [
+            "41",
+            "7",
+            "8",
+            "260"
+          ],
+          [
+            "41.5",
+            "7.5",
+            "8.5",
+            "265"
+          ],
+          [
+            "42",
+            "8",
+            "9",
+            "270"
+          ],
+          [
+            "42.5",
+            "8.5",
+            "9.5",
+            "275"
+          ],
+          [
+            "43",
+            "9",
+            "10",
+            "280"
+          ],
+          [
+            "43.5",
+            "9.5",
+            "10.5",
+            "285"
+          ],
+          [
+            "44",
+            "10",
+            "11",
+            "290"
+          ],
+          [
+            "44.5",
+            "10.5",
+            "11.5",
+            "295"
+          ],
+          [
+            "45",
+            "11",
+            "12",
+            "300"
+          ],
+          [
+            "45.5",
+            "11.5",
+            "12.5",
+            "305"
+          ],
+          [
+            "46",
+            "12",
+            "13",
+            "310"
+          ],
+          [
+            "46.5",
+            "12.5",
+            "13.5",
+            "315"
+          ]
+        ]
+      },
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/4f9cc626-0b8c-47bc-ba08-63d69bc3fc9f/eCom/A007OIV74J31663_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/6d5e8a9d-6974-49a7-8b1a-670e406ea8c8/eCom/A007OIV74J31663_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/e2b1d925-4d92-4ee6-bfc3-1190f86e9aec/eCom/A007OIV74J31663_E.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/4f9cc626-0b8c-47bc-ba08-63d69bc3fc9f/Small/A007OIV74J31663_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a007oiv74j31663/1.jpg",
+        "/products/bv-pdp/a007oiv74j31663/2.jpg",
+        "/products/bv-pdp/a007oiv74j31663/3.jpg",
+        "/products/bv-pdp/a007oiv74j31663/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "38",
+          "value": "38",
+          "displayValue": "38",
+          "inStock": false,
+          "gbpPrice": 760.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "39",
+          "value": "39",
+          "displayValue": "39",
+          "inStock": false,
+          "gbpPrice": 760.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "40",
+          "value": "40",
+          "displayValue": "40",
+          "inStock": true,
+          "gbpPrice": 760.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "41",
+          "value": "41",
+          "displayValue": "41",
+          "inStock": true,
+          "gbpPrice": 760.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "42",
+          "value": "42",
+          "displayValue": "42",
+          "inStock": true,
+          "gbpPrice": 760.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "43",
+          "value": "43",
+          "displayValue": "43",
+          "inStock": true,
+          "gbpPrice": 760.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "44",
+          "value": "44",
+          "displayValue": "44",
+          "inStock": true,
+          "gbpPrice": 760.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "45",
+          "value": "45",
+          "displayValue": "45",
+          "inStock": true,
+          "gbpPrice": 760.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "46",
+          "value": "46",
+          "displayValue": "46",
+          "inStock": true,
+          "gbpPrice": 760.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-shoes",
+        "bv-men",
+        "bv-men-shoes",
+        "bv-men-shoes-shot",
+        "bv-men-shoes-sneakers"
+      ],
+      "leafId": "bv-men-shoes-sneakers",
+      "cgid": "men-sneakers",
+      "hubCategory": "shoes"
+    },
+    {
+      "id": "A007OHV2ED01663",
+      "sku": "A007OHV2ED01663",
+      "internalId": "A007OHV2ED01663",
+      "name": "Palazzo Slipper",
+      "brand": "bottega veneta",
+      "color": "Obsidan grey/cardinal",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/palazzo-slipper-obsidan-grey-cardinal-A007OHV2ED01663.html",
+      "url": "https://www.bottegaveneta.com/en-gb/palazzo-slipper-obsidan-grey-cardinal-A007OHV2ED01663.html",
+      "gbpPrice": 1700.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Lambskin",
+        "Color: Obsidan Grey/Cardinal",
+        "Suede sole"
+      ],
+      "longDescription": [
+        "Intrecciato leather travel slipper with contrasting woven detail",
+        "Intrecciato leather case",
+        "Suitable for indoor wear"
+      ],
+      "compactedLongDesc": "Open-back slipper realised in soft nappa leather with all-over Intrecciato craft, featuring a constrasted woven detail and matching case.",
+      "composition": "• Material: lambskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "",
+      "sizeChartId": "default-M-SHOES",
+      "sizeGuide": {
+        "id": "default-M-SHOES",
+        "titleKo": "Men's Shoes",
+        "noteKo": "보테가 베네타 공홈 사이즈 가이드 기준입니다.",
+        "headers": [
+          "BV",
+          "UK",
+          "US",
+          "KR"
+        ],
+        "rows": [
+          [
+            "38",
+            "4",
+            "5",
+            "230"
+          ],
+          [
+            "38.5",
+            "4.5",
+            "5.5",
+            "235"
+          ],
+          [
+            "39",
+            "5",
+            "6",
+            "240"
+          ],
+          [
+            "39.5",
+            "5.5",
+            "6.5",
+            "245"
+          ],
+          [
+            "40",
+            "6",
+            "7",
+            "250"
+          ],
+          [
+            "40.5",
+            "6.5",
+            "7.5",
+            "255"
+          ],
+          [
+            "41",
+            "7",
+            "8",
+            "260"
+          ],
+          [
+            "41.5",
+            "7.5",
+            "8.5",
+            "265"
+          ],
+          [
+            "42",
+            "8",
+            "9",
+            "270"
+          ],
+          [
+            "42.5",
+            "8.5",
+            "9.5",
+            "275"
+          ],
+          [
+            "43",
+            "9",
+            "10",
+            "280"
+          ],
+          [
+            "43.5",
+            "9.5",
+            "10.5",
+            "285"
+          ],
+          [
+            "44",
+            "10",
+            "11",
+            "290"
+          ],
+          [
+            "44.5",
+            "10.5",
+            "11.5",
+            "295"
+          ],
+          [
+            "45",
+            "11",
+            "12",
+            "300"
+          ],
+          [
+            "45.5",
+            "11.5",
+            "12.5",
+            "305"
+          ],
+          [
+            "46",
+            "12",
+            "13",
+            "310"
+          ],
+          [
+            "46.5",
+            "12.5",
+            "13.5",
+            "315"
+          ]
+        ]
+      },
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/fc565127-7b51-4125-83af-5915fa095139/eCom/A007OHV2ED01663_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/a8169081-1f31-4d4c-85b1-7bb193b6fdd2/eCom/A007OHV2ED01663_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/4bbc3e8f-df6f-48f8-aec9-d1fea1d0cae7/eCom/A007OHV2ED01663_E.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/fc565127-7b51-4125-83af-5915fa095139/Small/A007OHV2ED01663_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a007ohv2ed01663/1.jpg",
+        "/products/bv-pdp/a007ohv2ed01663/2.jpg",
+        "/products/bv-pdp/a007ohv2ed01663/3.jpg",
+        "/products/bv-pdp/a007ohv2ed01663/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "40",
+          "value": "40",
+          "displayValue": "40",
+          "inStock": true,
+          "gbpPrice": 1700.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "41",
+          "value": "41",
+          "displayValue": "41",
+          "inStock": true,
+          "gbpPrice": 1700.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "42",
+          "value": "42",
+          "displayValue": "42",
+          "inStock": true,
+          "gbpPrice": 1700.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "43",
+          "value": "43",
+          "displayValue": "43",
+          "inStock": true,
+          "gbpPrice": 1700.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "44",
+          "value": "44",
+          "displayValue": "44",
+          "inStock": true,
+          "gbpPrice": 1700.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "45",
+          "value": "45",
+          "displayValue": "45",
+          "inStock": true,
+          "gbpPrice": 1700.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "46",
+          "value": "46",
+          "displayValue": "46",
+          "inStock": true,
+          "gbpPrice": 1700.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-shoes",
+        "bv-men",
+        "bv-men-shoes",
+        "bv-men-shoes-palazzo",
+        "bv-men-shoes-slippers"
+      ],
+      "leafId": "bv-men-shoes-slippers",
+      "cgid": "men-slippers",
       "hubCategory": "shoes"
     }
   ]

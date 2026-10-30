@@ -1,14 +1,14 @@
 {
   "hub": "women-travel",
   "category": "accessories",
-  "scrapedAt": "2026-10-29T00:53:03.234532+00:00",
+  "scrapedAt": "2026-10-29T23:19:06.249440+00:00",
   "leaves": [
     "bv-women-travel"
   ],
   "leafCounts": {
     "bv-women-travel": {
-      "official": 67,
-      "scraped": 67
+      "official": 70,
+      "scraped": 70
     }
   },
   "products": [
@@ -3157,7 +3157,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intreccio-perfume-travel-case--black-849631V2K101135.html",
       "gbpPrice": 190.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Colour: Black"
       ],
@@ -3191,7 +3191,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 190.0,
           "listGbpPrice": null
         }
@@ -3344,7 +3344,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intreccio-perfume-travel-case--gold-849631V2K108020.html",
       "gbpPrice": 190.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Colour: Gold"
       ],
@@ -3378,7 +3378,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 190.0,
           "listGbpPrice": null
         }
@@ -4428,6 +4428,213 @@
           "displayValue": "U",
           "inStock": true,
           "gbpPrice": 6640.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-women",
+        "bv-women-travel"
+      ],
+      "leafId": "bv-women-travel",
+      "cgid": "women-travel",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "A00AJTV56Y21701",
+      "sku": "A00AJTV56Y21701",
+      "internalId": "814491186",
+      "name": "Odyssey Intrecciato Cabin Suitcase",
+      "brand": "bottega veneta",
+      "color": "Obsidian grey/radar",
+      "gender": "E",
+      "link": "https://www.bottegaveneta.com/en-gb/odyssey-intrecciato-cabin-suitcase-obsidian-grey-radar-A00AJTV56Y21701.html",
+      "url": "https://www.bottegaveneta.com/en-gb/odyssey-intrecciato-cabin-suitcase-obsidian-grey-radar-A00AJTV56Y21701.html",
+      "gbpPrice": 6860.0,
+      "listGbpPrice": null,
+      "inStock": false,
+      "shortDescription": [
+        "Lining: Canvas",
+        "Colour: Obsidian Grey/Radar",
+        "Hardware: Silver finish"
+      ],
+      "longDescription": [
+        "Intrecciato calf leather trolley",
+        "Cabin size",
+        "Volume: 38L",
+        "Calf leather handles and trims",
+        "Detachable Intrecciato leather tag holder",
+        "Organised canvas interior, divider with flat zipped pocket",
+        "Zip closure with TSA lock system",
+        "Four 360° wheels and telescopic handle"
+      ],
+      "compactedLongDesc": "Suitcase realised using signature Intrecciato craftsmanship in calfskin leather. Features contrasted handles, trims, and a detachable Intrecciato leather tag holder.",
+      "composition": "• Material: calfskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 55 cm | 21.7\"\n\n• Width: 35 cm | 13.8\"\n\n• Depth: 21 cm | 8.3\"\n\n• Handle drop: 3.5 cm | 1.4”",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/1bdf2e66-aab5-4134-a716-b460fe963d1d/eCom/A00AJTV56Y21701_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/078c45bb-12d2-4eaf-9ef6-cd654298b58c/eCom/A00AJTV56Y21701_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/f5568768-0991-416d-b20b-8e6bef1eaf0d/eCom/A00AJTV56Y21701_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/0b6995b7-c101-46b7-bc65-bc91c49fdf87/eCom/A00AJTV56Y21701_F.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/6ff8880b-918b-4122-8d33-619f2f391bcc/eCom/A00AJTV56Y21701_G.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/1bdf2e66-aab5-4134-a716-b460fe963d1d/Small/A00AJTV56Y21701_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a00ajtv56y21701/1.jpg",
+        "/products/bv-pdp/a00ajtv56y21701/2.jpg",
+        "/products/bv-pdp/a00ajtv56y21701/3.jpg",
+        "/products/bv-pdp/a00ajtv56y21701/4.jpg",
+        "/products/bv-pdp/a00ajtv56y21701/5.jpg",
+        "/products/bv-pdp/a00ajtv56y21701/6.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": false,
+          "gbpPrice": 6860.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-women",
+        "bv-women-travel"
+      ],
+      "leafId": "bv-women-travel",
+      "cgid": "women-travel",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "A006VTV3AF01701",
+      "sku": "A006VTV3AF01701",
+      "internalId": "814435793",
+      "name": "Intrecciato Cabin Duffle",
+      "brand": "bottega veneta",
+      "color": "Obsidian grey/radar",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/intrecciato-cabin-duffle-obsidian-grey-radar-A006VTV3AF01701.html",
+      "url": "https://www.bottegaveneta.com/en-gb/intrecciato-cabin-duffle-obsidian-grey-radar-A006VTV3AF01701.html",
+      "gbpPrice": 5080.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Canvas",
+        "Colour: Obsidian Grey/Radar",
+        "Hardware: Silver finish"
+      ],
+      "longDescription": [
+        "Intrecciato bi-colour leather duffle bag with adjustable and detachable strap",
+        "Single exterior side zipped pocket",
+        "Metal D-Ring",
+        "One interior zipped pocket, double flat open pockets",
+        "Zip closure"
+      ],
+      "compactedLongDesc": "Duffle bag in bi-colour Intrecciato leather with adjustable and detachable strap.",
+      "composition": "• Material: calfskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 29 cm | 11.4\"\n\n• Width: 55 cm | 21.7\"\n\n• Depth: 24 cm | 9.4\"\n\n• Handle drop: 15 cm | 5.9”\n\n• Strap drop: 53 cm | 20.9\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/06348a5f-a197-4a9d-9e27-fdcd08550a03/eCom/A006VTV3AF01701_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/61d78b68-44ee-4e0b-aa94-bec92968162d/eCom/A006VTV3AF01701_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/3ee03cf4-2733-40fd-b115-1066045f7bc5/eCom/A006VTV3AF01701_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/15f97590-95ab-4492-8bb9-7625b26a332c/eCom/A006VTV3AF01701_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/c23daea8-e459-4579-80b1-1eddd3984804/eCom/A006VTV3AF01701_E.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/06348a5f-a197-4a9d-9e27-fdcd08550a03/Small/A006VTV3AF01701_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a006vtv3af01701/1.jpg",
+        "/products/bv-pdp/a006vtv3af01701/2.jpg",
+        "/products/bv-pdp/a006vtv3af01701/3.jpg",
+        "/products/bv-pdp/a006vtv3af01701/4.jpg",
+        "/products/bv-pdp/a006vtv3af01701/5.jpg",
+        "/products/bv-pdp/a006vtv3af01701/6.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 5080.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-women",
+        "bv-women-travel"
+      ],
+      "leafId": "bv-women-travel",
+      "cgid": "women-travel",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "A006VUV3AF01701",
+      "sku": "A006VUV3AF01701",
+      "internalId": "814435794",
+      "name": "Intrecciato Back To School Backpack",
+      "brand": "bottega veneta",
+      "color": "Obsidian grey/radar",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/intrecciato-back-to-school-backpack-obsidian-grey-radar-A006VUV3AF01701.html",
+      "url": "https://www.bottegaveneta.com/en-gb/intrecciato-back-to-school-backpack-obsidian-grey-radar-A006VUV3AF01701.html",
+      "gbpPrice": 4010.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Canvas",
+        "Colour: Obsidian Grey/Radar",
+        "Hardware: Silver finish"
+      ],
+      "longDescription": [
+        "Intrecciato bi-colour leather backpack",
+        "Two exterior flap pockets",
+        "Metal D-Ring",
+        "Single interior laptop compartment and two open pockets",
+        "Flap closure"
+      ],
+      "compactedLongDesc": "Backpack in bi-colour Intrecciato leather, featuring external pockets and flap closure.",
+      "composition": "• Material: calfskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 39 cm | 15.4\"\n\n• Width: 31 cm | 12.2\"\n\n• Depth: 14 cm | 5.5\"\n\n• Handle drop: 6 cm | 2.3”",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/80eaff61-a1c4-4d85-b2a3-71326efee957/eCom/A006VUV3AF01701_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/0f3dd9fa-af18-4d25-90af-5e05e0e84da9/eCom/A006VUV3AF01701_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/9b10a1b9-0e71-4cf7-b420-3e781bdbbf6c/eCom/A006VUV3AF01701_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/a0b90a07-7a40-4a7a-9b2b-eca133757fc0/eCom/A006VUV3AF01701_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/5bcaf72d-f5d3-4e32-8f9f-95e0fe5b2f4f/eCom/A006VUV3AF01701_F.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/80eaff61-a1c4-4d85-b2a3-71326efee957/Small/A006VUV3AF01701_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a006vuv3af01701/1.jpg",
+        "/products/bv-pdp/a006vuv3af01701/2.jpg",
+        "/products/bv-pdp/a006vuv3af01701/3.jpg",
+        "/products/bv-pdp/a006vuv3af01701/4.jpg",
+        "/products/bv-pdp/a006vuv3af01701/5.jpg",
+        "/products/bv-pdp/a006vuv3af01701/6.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 4010.0,
           "listGbpPrice": null
         }
       ],

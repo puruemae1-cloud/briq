@@ -1,7 +1,7 @@
 {
   "hub": "women-clothing",
   "category": "luxury",
-  "scrapedAt": "2026-10-29T00:50:10.759432+00:00",
+  "scrapedAt": "2026-10-29T23:16:26.579564+00:00",
   "leaves": [
     "bv-women-clothing-outerwear",
     "bv-women-clothing-jackets",
@@ -33,16 +33,16 @@
       "scraped": 40
     },
     "bv-women-clothing-dresses": {
-      "official": 38,
-      "scraped": 38
+      "official": 40,
+      "scraped": 40
     },
     "bv-women-clothing-skirts": {
       "official": 36,
       "scraped": 36
     },
     "bv-women-clothing-trousers": {
-      "official": 31,
-      "scraped": 31
+      "official": 32,
+      "scraped": 32
     },
     "bv-women-clothing-denim": {
       "official": 21,
@@ -53,8 +53,8 @@
       "scraped": 40
     },
     "bv-women-clothing-tops": {
-      "official": 37,
-      "scraped": 37
+      "official": 38,
+      "scraped": 38
     },
     "bv-women-clothing-swimwear": {
       "official": 4,
@@ -6019,7 +6019,7 @@
           "id": "40",
           "value": "40",
           "displayValue": "40",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 2590.0,
           "listGbpPrice": null
         },
@@ -6715,7 +6715,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/cotton-blouson-sahara-852425V6KO02549.html",
       "gbpPrice": 2570.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Colour: Sahara"
       ],
@@ -6850,7 +6850,7 @@
           "id": "42",
           "value": "42",
           "displayValue": "42",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 2570.0,
           "listGbpPrice": null
         },
@@ -12112,7 +12112,7 @@
           "id": "XS",
           "value": "XS",
           "displayValue": "XS",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 1700.0,
           "listGbpPrice": null
         },
@@ -47370,6 +47370,600 @@
           "displayValue": "XL",
           "inStock": false,
           "gbpPrice": 670.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bv-women",
+        "bv-women-clothing",
+        "bv-women-clothing-tops"
+      ],
+      "leafId": "bv-women-clothing-tops",
+      "cgid": "women-tops",
+      "hubCategory": "luxury"
+    },
+    {
+      "id": "A0009NV6ZO04071",
+      "sku": "A0009NV6ZO04071",
+      "internalId": "A0009NV6ZO04071",
+      "name": "Viscose And Silk Fil Coupé Dress",
+      "brand": "bottega veneta",
+      "color": "Midnight blue",
+      "gender": "Women",
+      "link": "https://www.bottegaveneta.com/en-gb/viscose-and-silk-fil-coupe-dress-midnight-blue-A0009NV6ZO04071.html",
+      "url": "https://www.bottegaveneta.com/en-gb/viscose-and-silk-fil-coupe-dress-midnight-blue-A0009NV6ZO04071.html",
+      "gbpPrice": 2410.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Color: Midnight Blue"
+      ],
+      "longDescription": [
+        "Viscose and silk faille fil coupé mini dress",
+        "Rounded Cabat shoulder construction",
+        "Zip closure",
+        "Fully lined",
+        "Regular fit"
+      ],
+      "compactedLongDesc": "Mini dress with rounded Cabat-inspired shoulders made from viscose and silk faille fil coupé.",
+      "composition": "• Material: 52% viscose, 29% silk, 19% polyester",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "",
+      "sizeChartId": "default-W-RTW",
+      "sizeGuide": {
+        "id": "default-W-RTW",
+        "titleKo": "Women's Clothing",
+        "noteKo": "보테가 베네타 공홈 사이즈 가이드 기준입니다.",
+        "headers": [
+          "BV",
+          "UK",
+          "US",
+          "KR"
+        ],
+        "rows": [
+          [
+            "34",
+            "2",
+            "00",
+            "44"
+          ],
+          [
+            "36",
+            "4",
+            "0",
+            "44"
+          ],
+          [
+            "38",
+            "6",
+            "2",
+            "55"
+          ],
+          [
+            "40",
+            "8",
+            "4",
+            "55"
+          ],
+          [
+            "42",
+            "10",
+            "6",
+            "66"
+          ],
+          [
+            "44",
+            "12",
+            "8",
+            "66"
+          ],
+          [
+            "46",
+            "14",
+            "10",
+            "77"
+          ]
+        ]
+      },
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/1fc9a0fd-4cbe-48b3-b920-f296c57cec3f/eCom/A0009NV6ZO04071_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/604cbf53-2d0a-4188-aa06-5297142e20b9/eCom/A0009NV6ZO04071_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/36872242-a674-452e-aefe-e43689320fc7/eCom/A0009NV6ZO04071_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/64fa7810-5dc5-43f9-97bd-b370e024e436/eCom/A0009NV6ZO04071_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/1fc9a0fd-4cbe-48b3-b920-f296c57cec3f/Small/A0009NV6ZO04071_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a0009nv6zo04071/1.jpg",
+        "/products/bv-pdp/a0009nv6zo04071/2.jpg",
+        "/products/bv-pdp/a0009nv6zo04071/3.jpg",
+        "/products/bv-pdp/a0009nv6zo04071/4.jpg",
+        "/products/bv-pdp/a0009nv6zo04071/5.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "34",
+          "value": "34",
+          "displayValue": "34",
+          "inStock": false,
+          "gbpPrice": 2410.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "36",
+          "value": "36",
+          "displayValue": "36",
+          "inStock": true,
+          "gbpPrice": 2410.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "38",
+          "value": "38",
+          "displayValue": "38",
+          "inStock": true,
+          "gbpPrice": 2410.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "40",
+          "value": "40",
+          "displayValue": "40",
+          "inStock": true,
+          "gbpPrice": 2410.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "42",
+          "value": "42",
+          "displayValue": "42",
+          "inStock": true,
+          "gbpPrice": 2410.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bv-women",
+        "bv-women-clothing",
+        "bv-women-clothing-dresses"
+      ],
+      "leafId": "bv-women-clothing-dresses",
+      "cgid": "women-dresses",
+      "hubCategory": "luxury"
+    },
+    {
+      "id": "A009YAV6NJ04170",
+      "sku": "A009YAV6NJ04170",
+      "internalId": "A009YAV6NJ04170",
+      "name": "Crepe Viscose Jersey Dress",
+      "brand": "bottega veneta",
+      "color": "Azurite",
+      "gender": "Women",
+      "link": "https://www.bottegaveneta.com/en-gb/crepe-viscose-jersey-dress-azurite-A009YAV6NJ04170.html",
+      "url": "https://www.bottegaveneta.com/en-gb/crepe-viscose-jersey-dress-azurite-A009YAV6NJ04170.html",
+      "gbpPrice": 2500.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Color: Azurite"
+      ],
+      "longDescription": [
+        "Crepe viscose jersey long dress",
+        "Claw metal brooch",
+        "Zip and hook closure",
+        "Regular fit"
+      ],
+      "compactedLongDesc": "Long dress with asymmetric silhouette in fluid crepe viscose jersey, featuring a sculptural claw-inspired metal brooch.",
+      "composition": "• Material: 100% viscose",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "",
+      "sizeChartId": "default-W-RTW",
+      "sizeGuide": {
+        "id": "default-W-RTW",
+        "titleKo": "Women's Clothing",
+        "noteKo": "보테가 베네타 공홈 사이즈 가이드 기준입니다.",
+        "headers": [
+          "BV",
+          "UK",
+          "US",
+          "KR"
+        ],
+        "rows": [
+          [
+            "34",
+            "2",
+            "00",
+            "44"
+          ],
+          [
+            "36",
+            "4",
+            "0",
+            "44"
+          ],
+          [
+            "38",
+            "6",
+            "2",
+            "55"
+          ],
+          [
+            "40",
+            "8",
+            "4",
+            "55"
+          ],
+          [
+            "42",
+            "10",
+            "6",
+            "66"
+          ],
+          [
+            "44",
+            "12",
+            "8",
+            "66"
+          ],
+          [
+            "46",
+            "14",
+            "10",
+            "77"
+          ]
+        ]
+      },
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/cf5495a3-bc6d-4023-925b-61a4a9232707/eCom/A009YAV6NJ04170_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/69afc2f0-4217-4914-b507-c7df4193624b/eCom/A009YAV6NJ04170_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/f6cb0cdb-e03c-43c1-b2ea-b91da37a311d/eCom/A009YAV6NJ04170_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/cf5495a3-bc6d-4023-925b-61a4a9232707/Small/A009YAV6NJ04170_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a009yav6nj04170/1.jpg",
+        "/products/bv-pdp/a009yav6nj04170/2.jpg",
+        "/products/bv-pdp/a009yav6nj04170/3.jpg",
+        "/products/bv-pdp/a009yav6nj04170/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "32",
+          "value": "32",
+          "displayValue": "32",
+          "inStock": false,
+          "gbpPrice": 2500.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "36",
+          "value": "36",
+          "displayValue": "36",
+          "inStock": true,
+          "gbpPrice": 2500.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "38",
+          "value": "38",
+          "displayValue": "38",
+          "inStock": true,
+          "gbpPrice": 2500.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "40",
+          "value": "40",
+          "displayValue": "40",
+          "inStock": true,
+          "gbpPrice": 2500.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "42",
+          "value": "42",
+          "displayValue": "42",
+          "inStock": false,
+          "gbpPrice": 2500.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "44",
+          "value": "44",
+          "displayValue": "44",
+          "inStock": false,
+          "gbpPrice": 2500.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bv-women",
+        "bv-women-clothing",
+        "bv-women-clothing-dresses"
+      ],
+      "leafId": "bv-women-clothing-dresses",
+      "cgid": "women-dresses",
+      "hubCategory": "luxury"
+    },
+    {
+      "id": "A002ZYV6ZL01379",
+      "sku": "A002ZYV6ZL01379",
+      "internalId": "A002ZYV6ZL01379",
+      "name": "Mohair And Silk Trousers",
+      "brand": "bottega veneta",
+      "color": "Harbor grey",
+      "gender": "Women",
+      "link": "https://www.bottegaveneta.com/en-gb/mohair-and-silk-trousers-harbor-grey-A002ZYV6ZL01379.html",
+      "url": "https://www.bottegaveneta.com/en-gb/mohair-and-silk-trousers-harbor-grey-A002ZYV6ZL01379.html",
+      "gbpPrice": 1520.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Color: Harbor Grey"
+      ],
+      "longDescription": [
+        "Mohair wool and mikado silk trousers",
+        "Wide tapered leg",
+        "Mid waist",
+        "Box pleat",
+        "Zip, hook and button closure"
+      ],
+      "compactedLongDesc": "Trousers with box pleat and wide, tapered leg in mohair wool and mikado silk.",
+      "composition": "• Material: 45% viscose, 25% silk, 20% mohair, 9% polyamide, 1% wool",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "",
+      "sizeChartId": "default-W-RTW",
+      "sizeGuide": {
+        "id": "default-W-RTW",
+        "titleKo": "Women's Clothing",
+        "noteKo": "보테가 베네타 공홈 사이즈 가이드 기준입니다.",
+        "headers": [
+          "BV",
+          "UK",
+          "US",
+          "KR"
+        ],
+        "rows": [
+          [
+            "34",
+            "2",
+            "00",
+            "44"
+          ],
+          [
+            "36",
+            "4",
+            "0",
+            "44"
+          ],
+          [
+            "38",
+            "6",
+            "2",
+            "55"
+          ],
+          [
+            "40",
+            "8",
+            "4",
+            "55"
+          ],
+          [
+            "42",
+            "10",
+            "6",
+            "66"
+          ],
+          [
+            "44",
+            "12",
+            "8",
+            "66"
+          ],
+          [
+            "46",
+            "14",
+            "10",
+            "77"
+          ]
+        ]
+      },
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/6113d4f9-7439-43e6-a1f8-c0feefe3d6ff/eCom/A002ZYV6ZL01379_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/d2224e43-5fc9-4396-93eb-e766818104e8/eCom/A002ZYV6ZL01379_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/9f0629b6-e94c-477a-a2e7-5f6a8217f6b6/eCom/A002ZYV6ZL01379_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/ab6737e3-6098-47a1-abf2-4a514ac623fd/eCom/A002ZYV6ZL01379_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/6113d4f9-7439-43e6-a1f8-c0feefe3d6ff/Small/A002ZYV6ZL01379_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a002zyv6zl01379/1.jpg",
+        "/products/bv-pdp/a002zyv6zl01379/2.jpg",
+        "/products/bv-pdp/a002zyv6zl01379/3.jpg",
+        "/products/bv-pdp/a002zyv6zl01379/4.jpg",
+        "/products/bv-pdp/a002zyv6zl01379/5.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "36",
+          "value": "36",
+          "displayValue": "36",
+          "inStock": true,
+          "gbpPrice": 1520.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "38",
+          "value": "38",
+          "displayValue": "38",
+          "inStock": true,
+          "gbpPrice": 1520.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "40",
+          "value": "40",
+          "displayValue": "40",
+          "inStock": true,
+          "gbpPrice": 1520.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "42",
+          "value": "42",
+          "displayValue": "42",
+          "inStock": true,
+          "gbpPrice": 1520.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bv-women",
+        "bv-women-clothing",
+        "bv-women-clothing-trousers"
+      ],
+      "leafId": "bv-women-clothing-trousers",
+      "cgid": "women-trousers",
+      "hubCategory": "luxury"
+    },
+    {
+      "id": "A003GVV6ZL01379",
+      "sku": "A003GVV6ZL01379",
+      "internalId": "A003GVV6ZL01379",
+      "name": "Mohair And Silk Mikado Top",
+      "brand": "bottega veneta",
+      "color": "Harbor grey",
+      "gender": "Women",
+      "link": "https://www.bottegaveneta.com/en-gb/mohair-and-silk-mikado-top-harbor-grey-A003GVV6ZL01379.html",
+      "url": "https://www.bottegaveneta.com/en-gb/mohair-and-silk-mikado-top-harbor-grey-A003GVV6ZL01379.html",
+      "gbpPrice": 1870.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Color: Harbor Grey"
+      ],
+      "longDescription": [
+        "Mohair wool and mikado silk top",
+        "Zip and hook closure",
+        "Fully lined",
+        "Relaxed Fit"
+      ],
+      "compactedLongDesc": "Top in mohair wool and mikado silk.",
+      "composition": "• Material: 45% viscose, 25% silk, 20% mohair, 9% polyamide, 1% wool",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "",
+      "sizeChartId": "default-W-RTW",
+      "sizeGuide": {
+        "id": "default-W-RTW",
+        "titleKo": "Women's Clothing",
+        "noteKo": "보테가 베네타 공홈 사이즈 가이드 기준입니다.",
+        "headers": [
+          "BV",
+          "UK",
+          "US",
+          "KR"
+        ],
+        "rows": [
+          [
+            "34",
+            "2",
+            "00",
+            "44"
+          ],
+          [
+            "36",
+            "4",
+            "0",
+            "44"
+          ],
+          [
+            "38",
+            "6",
+            "2",
+            "55"
+          ],
+          [
+            "40",
+            "8",
+            "4",
+            "55"
+          ],
+          [
+            "42",
+            "10",
+            "6",
+            "66"
+          ],
+          [
+            "44",
+            "12",
+            "8",
+            "66"
+          ],
+          [
+            "46",
+            "14",
+            "10",
+            "77"
+          ]
+        ]
+      },
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/f040601e-d69f-4e88-b152-9ea38489f579/eCom/A003GVV6ZL01379_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/683f7207-45a3-4d4e-ba0e-c732ca4e5201/eCom/A003GVV6ZL01379_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/c95710a1-bef5-4f47-aaef-d4b48c28e9da/eCom/A003GVV6ZL01379_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/f040601e-d69f-4e88-b152-9ea38489f579/Small/A003GVV6ZL01379_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a003gvv6zl01379/1.jpg",
+        "/products/bv-pdp/a003gvv6zl01379/2.jpg",
+        "/products/bv-pdp/a003gvv6zl01379/3.jpg",
+        "/products/bv-pdp/a003gvv6zl01379/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "32",
+          "value": "32",
+          "displayValue": "32",
+          "inStock": false,
+          "gbpPrice": 1870.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "36",
+          "value": "36",
+          "displayValue": "36",
+          "inStock": true,
+          "gbpPrice": 1870.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "38",
+          "value": "38",
+          "displayValue": "38",
+          "inStock": true,
+          "gbpPrice": 1870.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "40",
+          "value": "40",
+          "displayValue": "40",
+          "inStock": true,
+          "gbpPrice": 1870.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "42",
+          "value": "42",
+          "displayValue": "42",
+          "inStock": true,
+          "gbpPrice": 1870.0,
           "listGbpPrice": null
         }
       ],
