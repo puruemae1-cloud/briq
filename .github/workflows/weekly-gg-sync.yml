@@ -1,0 +1,49 @@
+name: Weekly GG stock sync
+
+on:
+  schedule:
+    # Every Monday 09:00 UTC (~18:00 KST)
+    - cron: "0 9 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-gg-stock-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Sync Galvin Green collections + stock
+        run: python3 scripts/weekly-gg-stock-sync.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "briq-bot"
+          git config user.email "briq-bot@users.noreply.github.com"
+          git add -A src/data/gg public/products/gg-pdp
+          if git diff --staged --quiet; then
+            echo "No catalog changes."
+            exit 0
+          fi
+          git commit -m "$(cat <<'EOF'
+          chore: weekly Galvin Green stock + catalogue sync
+
+          Auto-refresh GG collection membership, prices, and inStock from galvingreen.com.
+          EOF
+          )"
+          git push

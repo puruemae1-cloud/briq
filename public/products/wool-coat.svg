@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2C2A28"/>
+      <stop offset="100%" stop-color="#0b1210"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#g)"/>
+  <circle cx="560" cy="280" r="180" fill="rgba(183,161,106,0.18)"/>
+  <text x="64" y="140" fill="#f7f8f5" font-family="Georgia, serif" font-size="72" letter-spacing="8">Briq</text>
+  <text x="64" y="880" fill="rgba(247,248,245,0.85)" font-family="Helvetica, Arial, sans-serif" font-size="42" letter-spacing="6">COAT</text>
+</svg>
