@@ -1,7 +1,7 @@
 {
   "hub": "women-accessories",
   "category": "accessories",
-  "scrapedAt": "2026-10-29T23:21:39.194315+00:00",
+  "scrapedAt": "2026-10-30T21:08:03.832129+00:00",
   "leaves": [
     "bv-women-acc-key-rings",
     "bv-women-acc-belts",
@@ -3650,7 +3650,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/badge-holder-on-strap-fondant-855187V4L312113.html",
       "gbpPrice": 350.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Calfskin",
         "Colour: Fondant"
@@ -3718,7 +3718,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 350.0,
           "listGbpPrice": null
         }
@@ -6494,7 +6494,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/letter-i-charm-abyss-844681V3D814140.html",
       "gbpPrice": 380.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Unlined",
         "Colour: Abyss"
@@ -6560,7 +6560,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 380.0,
           "listGbpPrice": null
         }
@@ -6606,10 +6606,10 @@
       "material": "",
       "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
       "sizeModel": "• Height: 2 cm | 0.8\"\n\n• Width: 2 cm | 0.8\"\n\n• Depth: 0.5 cm | 0.2\"",
-      "sizeChartId": "default-W-GLOVES",
+      "sizeChartId": "default-W-BELTS",
       "sizeGuide": {
-        "id": "default-W-GLOVES",
-        "titleKo": "Women's Gloves",
+        "id": "default-W-BELTS",
+        "titleKo": "Women's Belts",
         "noteKo": "보테가 베네타 공홈 사이즈 가이드 기준입니다.",
         "headers": [
           "BV",
@@ -6617,27 +6617,43 @@
         ],
         "rows": [
           [
-            "6",
-            "XS"
-          ],
-          [
-            "6.5",
+            "65",
             "S"
           ],
           [
-            "7",
+            "70",
             "S"
           ],
           [
-            "7.5",
+            "75",
+            "S"
+          ],
+          [
+            "80",
             "M"
           ],
           [
-            "8",
+            "85",
+            "M"
+          ],
+          [
+            "90",
+            "M"
+          ],
+          [
+            "95",
             "L"
           ],
           [
-            "8.5",
+            "100",
+            "L"
+          ],
+          [
+            "105",
+            "L"
+          ],
+          [
+            "110",
             "L"
           ]
         ]
@@ -6740,10 +6756,10 @@
       "material": "",
       "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
       "sizeModel": "• Height: 2 cm | 0.8 in \n\n• Depth: 0.5 cm | 0.2 in",
-      "sizeChartId": "default-W-GLOVES",
+      "sizeChartId": "default-W-BELTS",
       "sizeGuide": {
-        "id": "default-W-GLOVES",
-        "titleKo": "Women's Gloves",
+        "id": "default-W-BELTS",
+        "titleKo": "Women's Belts",
         "noteKo": "보테가 베네타 공홈 사이즈 가이드 기준입니다.",
         "headers": [
           "BV",
@@ -6751,27 +6767,43 @@
         ],
         "rows": [
           [
-            "6",
-            "XS"
-          ],
-          [
-            "6.5",
+            "65",
             "S"
           ],
           [
-            "7",
+            "70",
             "S"
           ],
           [
-            "7.5",
+            "75",
+            "S"
+          ],
+          [
+            "80",
             "M"
           ],
           [
-            "8",
+            "85",
+            "M"
+          ],
+          [
+            "90",
+            "M"
+          ],
+          [
+            "95",
             "L"
           ],
           [
-            "8.5",
+            "100",
+            "L"
+          ],
+          [
+            "105",
+            "L"
+          ],
+          [
+            "110",
             "L"
           ]
         ]
@@ -6891,10 +6923,10 @@
       "material": "",
       "productCare": "",
       "sizeModel": "• Height: 2 cm | 0.8\"\n\n• Width: 2 cm | 0.8\"\n\n• Depth: 0.5 cm | 0.2\"",
-      "sizeChartId": "default-W-GLOVES",
+      "sizeChartId": "default-W-BELTS",
       "sizeGuide": {
-        "id": "default-W-GLOVES",
-        "titleKo": "Women's Gloves",
+        "id": "default-W-BELTS",
+        "titleKo": "Women's Belts",
         "noteKo": "보테가 베네타 공홈 사이즈 가이드 기준입니다.",
         "headers": [
           "BV",
@@ -6902,27 +6934,43 @@
         ],
         "rows": [
           [
-            "6",
-            "XS"
-          ],
-          [
-            "6.5",
+            "65",
             "S"
           ],
           [
-            "7",
+            "70",
             "S"
           ],
           [
-            "7.5",
+            "75",
+            "S"
+          ],
+          [
+            "80",
             "M"
           ],
           [
-            "8",
+            "85",
+            "M"
+          ],
+          [
+            "90",
+            "M"
+          ],
+          [
+            "95",
             "L"
           ],
           [
-            "8.5",
+            "100",
+            "L"
+          ],
+          [
+            "105",
+            "L"
+          ],
+          [
+            "110",
             "L"
           ]
         ]
@@ -6956,7 +7004,7 @@
           "id": "75",
           "value": "75",
           "displayValue": "75",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 710.0,
           "listGbpPrice": null
         },
@@ -7042,10 +7090,10 @@
       "material": "",
       "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
       "sizeModel": "• Height: 2 cm\n\n• Depth: 0,5 cm",
-      "sizeChartId": "default-W-GLOVES",
+      "sizeChartId": "default-W-BELTS",
       "sizeGuide": {
-        "id": "default-W-GLOVES",
-        "titleKo": "Women's Gloves",
+        "id": "default-W-BELTS",
+        "titleKo": "Women's Belts",
         "noteKo": "보테가 베네타 공홈 사이즈 가이드 기준입니다.",
         "headers": [
           "BV",
@@ -7053,27 +7101,43 @@
         ],
         "rows": [
           [
-            "6",
-            "XS"
-          ],
-          [
-            "6.5",
+            "65",
             "S"
           ],
           [
-            "7",
+            "70",
             "S"
           ],
           [
-            "7.5",
+            "75",
+            "S"
+          ],
+          [
+            "80",
             "M"
           ],
           [
-            "8",
+            "85",
+            "M"
+          ],
+          [
+            "90",
+            "M"
+          ],
+          [
+            "95",
             "L"
           ],
           [
-            "8.5",
+            "100",
+            "L"
+          ],
+          [
+            "105",
+            "L"
+          ],
+          [
+            "110",
             "L"
           ]
         ]
@@ -7123,7 +7187,7 @@
           "id": "85",
           "value": "85",
           "displayValue": "85",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 710.0,
           "listGbpPrice": null
         },
@@ -7192,10 +7256,10 @@
       "material": "",
       "productCare": "",
       "sizeModel": "• Height: 3.5 cm | 1.4\"\n\n• Width: 3.5 cm | 1.4\"\n\n• Depth: 0.5 cm | 0.2\"",
-      "sizeChartId": "default-W-GLOVES",
+      "sizeChartId": "default-W-BELTS",
       "sizeGuide": {
-        "id": "default-W-GLOVES",
-        "titleKo": "Women's Gloves",
+        "id": "default-W-BELTS",
+        "titleKo": "Women's Belts",
         "noteKo": "보테가 베네타 공홈 사이즈 가이드 기준입니다.",
         "headers": [
           "BV",
@@ -7203,27 +7267,43 @@
         ],
         "rows": [
           [
-            "6",
-            "XS"
-          ],
-          [
-            "6.5",
+            "65",
             "S"
           ],
           [
-            "7",
+            "70",
             "S"
           ],
           [
-            "7.5",
+            "75",
+            "S"
+          ],
+          [
+            "80",
             "M"
           ],
           [
-            "8",
+            "85",
+            "M"
+          ],
+          [
+            "90",
+            "M"
+          ],
+          [
+            "95",
             "L"
           ],
           [
-            "8.5",
+            "100",
+            "L"
+          ],
+          [
+            "105",
+            "L"
+          ],
+          [
+            "110",
             "L"
           ]
         ]
@@ -7309,10 +7389,10 @@
       "material": "",
       "productCare": "",
       "sizeModel": "• Height: 3 cm | 1.2\"\n\n• Width: 3 cm | 1.2\"\n\n• Depth: 0.5 cm | 0.2\"",
-      "sizeChartId": "default-W-GLOVES",
+      "sizeChartId": "default-W-BELTS",
       "sizeGuide": {
-        "id": "default-W-GLOVES",
-        "titleKo": "Women's Gloves",
+        "id": "default-W-BELTS",
+        "titleKo": "Women's Belts",
         "noteKo": "보테가 베네타 공홈 사이즈 가이드 기준입니다.",
         "headers": [
           "BV",
@@ -7320,27 +7400,43 @@
         ],
         "rows": [
           [
-            "6",
-            "XS"
-          ],
-          [
-            "6.5",
+            "65",
             "S"
           ],
           [
-            "7",
+            "70",
             "S"
           ],
           [
-            "7.5",
+            "75",
+            "S"
+          ],
+          [
+            "80",
             "M"
           ],
           [
-            "8",
+            "85",
+            "M"
+          ],
+          [
+            "90",
+            "M"
+          ],
+          [
+            "95",
             "L"
           ],
           [
-            "8.5",
+            "100",
+            "L"
+          ],
+          [
+            "105",
+            "L"
+          ],
+          [
+            "110",
             "L"
           ]
         ]
@@ -7450,10 +7546,10 @@
       "material": "",
       "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
       "sizeModel": "• Height: 3 cm\n\n• Depth: 0,5 cm",
-      "sizeChartId": "default-W-GLOVES",
+      "sizeChartId": "default-W-BELTS",
       "sizeGuide": {
-        "id": "default-W-GLOVES",
-        "titleKo": "Women's Gloves",
+        "id": "default-W-BELTS",
+        "titleKo": "Women's Belts",
         "noteKo": "보테가 베네타 공홈 사이즈 가이드 기준입니다.",
         "headers": [
           "BV",
@@ -7461,27 +7557,43 @@
         ],
         "rows": [
           [
-            "6",
-            "XS"
-          ],
-          [
-            "6.5",
+            "65",
             "S"
           ],
           [
-            "7",
+            "70",
             "S"
           ],
           [
-            "7.5",
+            "75",
+            "S"
+          ],
+          [
+            "80",
             "M"
           ],
           [
-            "8",
+            "85",
+            "M"
+          ],
+          [
+            "90",
+            "M"
+          ],
+          [
+            "95",
             "L"
           ],
           [
-            "8.5",
+            "100",
+            "L"
+          ],
+          [
+            "105",
+            "L"
+          ],
+          [
+            "110",
             "L"
           ]
         ]
@@ -7599,10 +7711,10 @@
       "material": "",
       "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
       "sizeModel": "• Height: 3 cm | 1.2 in \n\n• Depth: 0.5 cm | 0.2 in",
-      "sizeChartId": "default-W-GLOVES",
+      "sizeChartId": "default-W-BELTS",
       "sizeGuide": {
-        "id": "default-W-GLOVES",
-        "titleKo": "Women's Gloves",
+        "id": "default-W-BELTS",
+        "titleKo": "Women's Belts",
         "noteKo": "보테가 베네타 공홈 사이즈 가이드 기준입니다.",
         "headers": [
           "BV",
@@ -7610,27 +7722,43 @@
         ],
         "rows": [
           [
-            "6",
-            "XS"
-          ],
-          [
-            "6.5",
+            "65",
             "S"
           ],
           [
-            "7",
+            "70",
             "S"
           ],
           [
-            "7.5",
+            "75",
+            "S"
+          ],
+          [
+            "80",
             "M"
           ],
           [
-            "8",
+            "85",
+            "M"
+          ],
+          [
+            "90",
+            "M"
+          ],
+          [
+            "95",
             "L"
           ],
           [
-            "8.5",
+            "100",
+            "L"
+          ],
+          [
+            "105",
+            "L"
+          ],
+          [
+            "110",
             "L"
           ]
         ]
@@ -7747,10 +7875,10 @@
       "material": "",
       "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
       "sizeModel": "• Height: 1.5 cm | 0.4\"\n\n• Width: 1.5 cm | 0.4\"\n\n• Depth: 0.5 cm | 0.2\"",
-      "sizeChartId": "default-W-GLOVES",
+      "sizeChartId": "default-W-BELTS",
       "sizeGuide": {
-        "id": "default-W-GLOVES",
-        "titleKo": "Women's Gloves",
+        "id": "default-W-BELTS",
+        "titleKo": "Women's Belts",
         "noteKo": "보테가 베네타 공홈 사이즈 가이드 기준입니다.",
         "headers": [
           "BV",
@@ -7758,27 +7886,43 @@
         ],
         "rows": [
           [
-            "6",
-            "XS"
-          ],
-          [
-            "6.5",
+            "65",
             "S"
           ],
           [
-            "7",
+            "70",
             "S"
           ],
           [
-            "7.5",
+            "75",
+            "S"
+          ],
+          [
+            "80",
             "M"
           ],
           [
-            "8",
+            "85",
+            "M"
+          ],
+          [
+            "90",
+            "M"
+          ],
+          [
+            "95",
             "L"
           ],
           [
-            "8.5",
+            "100",
+            "L"
+          ],
+          [
+            "105",
+            "L"
+          ],
+          [
+            "110",
             "L"
           ]
         ]
@@ -7881,10 +8025,10 @@
       "material": "",
       "productCare": "",
       "sizeModel": "• Height: 2 cm | 0.8\"\n\n• Width: 2 cm | 0.8\"\n\n• Depth: 0.5 cm | 0.2\"",
-      "sizeChartId": "default-W-GLOVES",
+      "sizeChartId": "default-W-BELTS",
       "sizeGuide": {
-        "id": "default-W-GLOVES",
-        "titleKo": "Women's Gloves",
+        "id": "default-W-BELTS",
+        "titleKo": "Women's Belts",
         "noteKo": "보테가 베네타 공홈 사이즈 가이드 기준입니다.",
         "headers": [
           "BV",
@@ -7892,27 +8036,43 @@
         ],
         "rows": [
           [
-            "6",
-            "XS"
-          ],
-          [
-            "6.5",
+            "65",
             "S"
           ],
           [
-            "7",
+            "70",
             "S"
           ],
           [
-            "7.5",
+            "75",
+            "S"
+          ],
+          [
+            "80",
             "M"
           ],
           [
-            "8",
+            "85",
+            "M"
+          ],
+          [
+            "90",
+            "M"
+          ],
+          [
+            "95",
             "L"
           ],
           [
-            "8.5",
+            "100",
+            "L"
+          ],
+          [
+            "105",
+            "L"
+          ],
+          [
+            "110",
             "L"
           ]
         ]
@@ -8021,10 +8181,10 @@
       "material": "",
       "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
       "sizeModel": "• Height: 1.5 cm | 0.4\"\n\n• Width: 1.5 cm | 0.4\"\n\n• Depth: 0.5 cm | 0.2\"",
-      "sizeChartId": "default-W-GLOVES",
+      "sizeChartId": "default-W-BELTS",
       "sizeGuide": {
-        "id": "default-W-GLOVES",
-        "titleKo": "Women's Gloves",
+        "id": "default-W-BELTS",
+        "titleKo": "Women's Belts",
         "noteKo": "보테가 베네타 공홈 사이즈 가이드 기준입니다.",
         "headers": [
           "BV",
@@ -8032,27 +8192,43 @@
         ],
         "rows": [
           [
-            "6",
-            "XS"
-          ],
-          [
-            "6.5",
+            "65",
             "S"
           ],
           [
-            "7",
+            "70",
             "S"
           ],
           [
-            "7.5",
+            "75",
+            "S"
+          ],
+          [
+            "80",
             "M"
           ],
           [
-            "8",
+            "85",
+            "M"
+          ],
+          [
+            "90",
+            "M"
+          ],
+          [
+            "95",
             "L"
           ],
           [
-            "8.5",
+            "100",
+            "L"
+          ],
+          [
+            "105",
+            "L"
+          ],
+          [
+            "110",
             "L"
           ]
         ]
@@ -8155,10 +8331,10 @@
       "material": "",
       "productCare": "",
       "sizeModel": "• Height: 2 cm | 0.8\"\n\n• Width: 2 cm | 0.8\"\n\n• Depth: 0.5 cm | 0.2\"",
-      "sizeChartId": "default-W-GLOVES",
+      "sizeChartId": "default-W-BELTS",
       "sizeGuide": {
-        "id": "default-W-GLOVES",
-        "titleKo": "Women's Gloves",
+        "id": "default-W-BELTS",
+        "titleKo": "Women's Belts",
         "noteKo": "보테가 베네타 공홈 사이즈 가이드 기준입니다.",
         "headers": [
           "BV",
@@ -8166,27 +8342,43 @@
         ],
         "rows": [
           [
-            "6",
-            "XS"
-          ],
-          [
-            "6.5",
+            "65",
             "S"
           ],
           [
-            "7",
+            "70",
             "S"
           ],
           [
-            "7.5",
+            "75",
+            "S"
+          ],
+          [
+            "80",
             "M"
           ],
           [
-            "8",
+            "85",
+            "M"
+          ],
+          [
+            "90",
+            "M"
+          ],
+          [
+            "95",
             "L"
           ],
           [
-            "8.5",
+            "100",
+            "L"
+          ],
+          [
+            "105",
+            "L"
+          ],
+          [
+            "110",
             "L"
           ]
         ]
@@ -8305,10 +8497,10 @@
       "material": "",
       "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
       "sizeModel": "• Height: 2 cm | 0.8\"\n\n• Depth: 0.5 cm | 0.2\"",
-      "sizeChartId": "default-W-GLOVES",
+      "sizeChartId": "default-W-BELTS",
       "sizeGuide": {
-        "id": "default-W-GLOVES",
-        "titleKo": "Women's Gloves",
+        "id": "default-W-BELTS",
+        "titleKo": "Women's Belts",
         "noteKo": "보테가 베네타 공홈 사이즈 가이드 기준입니다.",
         "headers": [
           "BV",
@@ -8316,27 +8508,43 @@
         ],
         "rows": [
           [
-            "6",
-            "XS"
-          ],
-          [
-            "6.5",
+            "65",
             "S"
           ],
           [
-            "7",
+            "70",
             "S"
           ],
           [
-            "7.5",
+            "75",
+            "S"
+          ],
+          [
+            "80",
             "M"
           ],
           [
-            "8",
+            "85",
+            "M"
+          ],
+          [
+            "90",
+            "M"
+          ],
+          [
+            "95",
             "L"
           ],
           [
-            "8.5",
+            "100",
+            "L"
+          ],
+          [
+            "105",
+            "L"
+          ],
+          [
+            "110",
             "L"
           ]
         ]
@@ -8423,10 +8631,10 @@
       "material": "",
       "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
       "sizeModel": "• Height: 2 cm | 0.8\"\n\n• Width: 2 cm | 0.8\"\n\n• Depth: 0.5 cm | 0.2\"",
-      "sizeChartId": "default-W-GLOVES",
+      "sizeChartId": "default-W-BELTS",
       "sizeGuide": {
-        "id": "default-W-GLOVES",
-        "titleKo": "Women's Gloves",
+        "id": "default-W-BELTS",
+        "titleKo": "Women's Belts",
         "noteKo": "보테가 베네타 공홈 사이즈 가이드 기준입니다.",
         "headers": [
           "BV",
@@ -8434,27 +8642,43 @@
         ],
         "rows": [
           [
-            "6",
-            "XS"
-          ],
-          [
-            "6.5",
+            "65",
             "S"
           ],
           [
-            "7",
+            "70",
             "S"
           ],
           [
-            "7.5",
+            "75",
+            "S"
+          ],
+          [
+            "80",
             "M"
           ],
           [
-            "8",
+            "85",
+            "M"
+          ],
+          [
+            "90",
+            "M"
+          ],
+          [
+            "95",
             "L"
           ],
           [
-            "8.5",
+            "100",
+            "L"
+          ],
+          [
+            "105",
+            "L"
+          ],
+          [
+            "110",
             "L"
           ]
         ]
@@ -8541,10 +8765,10 @@
       "material": "",
       "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
       "sizeModel": "• Height: 2 cm | 0.8\"\n\n• Width: 1.5 cm | 0.4\"\n\n• Depth: 0.5 cm | 0.2\"",
-      "sizeChartId": "default-W-GLOVES",
+      "sizeChartId": "default-W-BELTS",
       "sizeGuide": {
-        "id": "default-W-GLOVES",
-        "titleKo": "Women's Gloves",
+        "id": "default-W-BELTS",
+        "titleKo": "Women's Belts",
         "noteKo": "보테가 베네타 공홈 사이즈 가이드 기준입니다.",
         "headers": [
           "BV",
@@ -8552,27 +8776,43 @@
         ],
         "rows": [
           [
-            "6",
-            "XS"
-          ],
-          [
-            "6.5",
+            "65",
             "S"
           ],
           [
-            "7",
+            "70",
             "S"
           ],
           [
-            "7.5",
+            "75",
+            "S"
+          ],
+          [
+            "80",
             "M"
           ],
           [
-            "8",
+            "85",
+            "M"
+          ],
+          [
+            "90",
+            "M"
+          ],
+          [
+            "95",
             "L"
           ],
           [
-            "8.5",
+            "100",
+            "L"
+          ],
+          [
+            "105",
+            "L"
+          ],
+          [
+            "110",
             "L"
           ]
         ]
@@ -8657,10 +8897,10 @@
       "material": "",
       "productCare": "",
       "sizeModel": "• Height: 2 cm | 0.8\"\n\n• Width: 2 cm | 0.8\"\n\n• Depth: 0.5 cm | 0.2\"",
-      "sizeChartId": "default-W-GLOVES",
+      "sizeChartId": "default-W-BELTS",
       "sizeGuide": {
-        "id": "default-W-GLOVES",
-        "titleKo": "Women's Gloves",
+        "id": "default-W-BELTS",
+        "titleKo": "Women's Belts",
         "noteKo": "보테가 베네타 공홈 사이즈 가이드 기준입니다.",
         "headers": [
           "BV",
@@ -8668,27 +8908,43 @@
         ],
         "rows": [
           [
-            "6",
-            "XS"
-          ],
-          [
-            "6.5",
+            "65",
             "S"
           ],
           [
-            "7",
+            "70",
             "S"
           ],
           [
-            "7.5",
+            "75",
+            "S"
+          ],
+          [
+            "80",
             "M"
           ],
           [
-            "8",
+            "85",
+            "M"
+          ],
+          [
+            "90",
+            "M"
+          ],
+          [
+            "95",
             "L"
           ],
           [
-            "8.5",
+            "100",
+            "L"
+          ],
+          [
+            "105",
+            "L"
+          ],
+          [
+            "110",
             "L"
           ]
         ]
@@ -8797,10 +9053,10 @@
       "material": "",
       "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
       "sizeModel": "• Height: 2.5 cm | 0.8\"\n\n• Depth: 2.5 cm | 0.8\"",
-      "sizeChartId": "default-W-GLOVES",
+      "sizeChartId": "default-W-BELTS",
       "sizeGuide": {
-        "id": "default-W-GLOVES",
-        "titleKo": "Women's Gloves",
+        "id": "default-W-BELTS",
+        "titleKo": "Women's Belts",
         "noteKo": "보테가 베네타 공홈 사이즈 가이드 기준입니다.",
         "headers": [
           "BV",
@@ -8808,27 +9064,43 @@
         ],
         "rows": [
           [
-            "6",
-            "XS"
-          ],
-          [
-            "6.5",
+            "65",
             "S"
           ],
           [
-            "7",
+            "70",
             "S"
           ],
           [
-            "7.5",
+            "75",
+            "S"
+          ],
+          [
+            "80",
             "M"
           ],
           [
-            "8",
+            "85",
+            "M"
+          ],
+          [
+            "90",
+            "M"
+          ],
+          [
+            "95",
             "L"
           ],
           [
-            "8.5",
+            "100",
+            "L"
+          ],
+          [
+            "105",
+            "L"
+          ],
+          [
+            "110",
             "L"
           ]
         ]
@@ -8911,10 +9183,10 @@
       "material": "",
       "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
       "sizeModel": "• Height: 3.5 cm | 1.2\"\n\n• Width: 3.5 cm | 1.2\"\n\n• Depth: 0.5 cm | 0.2\"",
-      "sizeChartId": "default-W-GLOVES",
+      "sizeChartId": "default-W-BELTS",
       "sizeGuide": {
-        "id": "default-W-GLOVES",
-        "titleKo": "Women's Gloves",
+        "id": "default-W-BELTS",
+        "titleKo": "Women's Belts",
         "noteKo": "보테가 베네타 공홈 사이즈 가이드 기준입니다.",
         "headers": [
           "BV",
@@ -8922,27 +9194,43 @@
         ],
         "rows": [
           [
-            "6",
-            "XS"
-          ],
-          [
-            "6.5",
+            "65",
             "S"
           ],
           [
-            "7",
+            "70",
             "S"
           ],
           [
-            "7.5",
+            "75",
+            "S"
+          ],
+          [
+            "80",
             "M"
           ],
           [
-            "8",
+            "85",
+            "M"
+          ],
+          [
+            "90",
+            "M"
+          ],
+          [
+            "95",
             "L"
           ],
           [
-            "8.5",
+            "100",
+            "L"
+          ],
+          [
+            "105",
+            "L"
+          ],
+          [
+            "110",
             "L"
           ]
         ]
@@ -9025,10 +9313,10 @@
       "material": "",
       "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
       "sizeModel": "• Height: 4.5 cm | 1.6\"\n\n• Width: 4.5 cm | 1.6\"\n\n• Depth: 0.5 cm | 0.2\"",
-      "sizeChartId": "default-W-GLOVES",
+      "sizeChartId": "default-W-BELTS",
       "sizeGuide": {
-        "id": "default-W-GLOVES",
-        "titleKo": "Women's Gloves",
+        "id": "default-W-BELTS",
+        "titleKo": "Women's Belts",
         "noteKo": "보테가 베네타 공홈 사이즈 가이드 기준입니다.",
         "headers": [
           "BV",
@@ -9036,27 +9324,43 @@
         ],
         "rows": [
           [
-            "6",
-            "XS"
-          ],
-          [
-            "6.5",
+            "65",
             "S"
           ],
           [
-            "7",
+            "70",
             "S"
           ],
           [
-            "7.5",
+            "75",
+            "S"
+          ],
+          [
+            "80",
             "M"
           ],
           [
-            "8",
+            "85",
+            "M"
+          ],
+          [
+            "90",
+            "M"
+          ],
+          [
+            "95",
             "L"
           ],
           [
-            "8.5",
+            "100",
+            "L"
+          ],
+          [
+            "105",
+            "L"
+          ],
+          [
+            "110",
             "L"
           ]
         ]
@@ -9139,10 +9443,10 @@
       "material": "",
       "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
       "sizeModel": "• Height: 9 cm\n\n• Depth: 0,5 cm",
-      "sizeChartId": "default-W-GLOVES",
+      "sizeChartId": "default-W-BELTS",
       "sizeGuide": {
-        "id": "default-W-GLOVES",
-        "titleKo": "Women's Gloves",
+        "id": "default-W-BELTS",
+        "titleKo": "Women's Belts",
         "noteKo": "보테가 베네타 공홈 사이즈 가이드 기준입니다.",
         "headers": [
           "BV",
@@ -9150,27 +9454,43 @@
         ],
         "rows": [
           [
-            "6",
-            "XS"
-          ],
-          [
-            "6.5",
+            "65",
             "S"
           ],
           [
-            "7",
+            "70",
             "S"
           ],
           [
-            "7.5",
+            "75",
+            "S"
+          ],
+          [
+            "80",
             "M"
           ],
           [
-            "8",
+            "85",
+            "M"
+          ],
+          [
+            "90",
+            "M"
+          ],
+          [
+            "95",
             "L"
           ],
           [
-            "8.5",
+            "100",
+            "L"
+          ],
+          [
+            "105",
+            "L"
+          ],
+          [
+            "110",
             "L"
           ]
         ]
@@ -9255,10 +9575,10 @@
       "material": "",
       "productCare": "",
       "sizeModel": "• Height: 9 cm | 3.5\"\n\n• Width: 9 cm | 3.5\"\n\n• Depth: 0.5 cm | 0.2\"",
-      "sizeChartId": "default-W-GLOVES",
+      "sizeChartId": "default-W-BELTS",
       "sizeGuide": {
-        "id": "default-W-GLOVES",
-        "titleKo": "Women's Gloves",
+        "id": "default-W-BELTS",
+        "titleKo": "Women's Belts",
         "noteKo": "보테가 베네타 공홈 사이즈 가이드 기준입니다.",
         "headers": [
           "BV",
@@ -9266,27 +9586,43 @@
         ],
         "rows": [
           [
-            "6",
-            "XS"
-          ],
-          [
-            "6.5",
+            "65",
             "S"
           ],
           [
-            "7",
+            "70",
             "S"
           ],
           [
-            "7.5",
+            "75",
+            "S"
+          ],
+          [
+            "80",
             "M"
           ],
           [
-            "8",
+            "85",
+            "M"
+          ],
+          [
+            "90",
+            "M"
+          ],
+          [
+            "95",
             "L"
           ],
           [
-            "8.5",
+            "100",
+            "L"
+          ],
+          [
+            "105",
+            "L"
+          ],
+          [
+            "110",
             "L"
           ]
         ]
@@ -9371,10 +9707,10 @@
       "material": "",
       "productCare": "",
       "sizeModel": "• Height: 9 cm | 3.5\"\n\n• Width: 9 cm | 3.5\"\n\n• Depth: 0.5 cm | 0.2\"",
-      "sizeChartId": "default-W-GLOVES",
+      "sizeChartId": "default-W-BELTS",
       "sizeGuide": {
-        "id": "default-W-GLOVES",
-        "titleKo": "Women's Gloves",
+        "id": "default-W-BELTS",
+        "titleKo": "Women's Belts",
         "noteKo": "보테가 베네타 공홈 사이즈 가이드 기준입니다.",
         "headers": [
           "BV",
@@ -9382,27 +9718,43 @@
         ],
         "rows": [
           [
-            "6",
-            "XS"
-          ],
-          [
-            "6.5",
+            "65",
             "S"
           ],
           [
-            "7",
+            "70",
             "S"
           ],
           [
-            "7.5",
+            "75",
+            "S"
+          ],
+          [
+            "80",
             "M"
           ],
           [
-            "8",
+            "85",
+            "M"
+          ],
+          [
+            "90",
+            "M"
+          ],
+          [
+            "95",
             "L"
           ],
           [
-            "8.5",
+            "100",
+            "L"
+          ],
+          [
+            "105",
+            "L"
+          ],
+          [
+            "110",
             "L"
           ]
         ]
@@ -9511,10 +9863,10 @@
       "material": "",
       "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
       "sizeModel": "• Height: 2 cm | 0.8\" \n\n• Depth: 0.5 cm | 0.2\"",
-      "sizeChartId": "default-W-GLOVES",
+      "sizeChartId": "default-W-BELTS",
       "sizeGuide": {
-        "id": "default-W-GLOVES",
-        "titleKo": "Women's Gloves",
+        "id": "default-W-BELTS",
+        "titleKo": "Women's Belts",
         "noteKo": "보테가 베네타 공홈 사이즈 가이드 기준입니다.",
         "headers": [
           "BV",
@@ -9522,27 +9874,43 @@
         ],
         "rows": [
           [
-            "6",
-            "XS"
-          ],
-          [
-            "6.5",
+            "65",
             "S"
           ],
           [
-            "7",
+            "70",
             "S"
           ],
           [
-            "7.5",
+            "75",
+            "S"
+          ],
+          [
+            "80",
             "M"
           ],
           [
-            "8",
+            "85",
+            "M"
+          ],
+          [
+            "90",
+            "M"
+          ],
+          [
+            "95",
             "L"
           ],
           [
-            "8.5",
+            "100",
+            "L"
+          ],
+          [
+            "105",
+            "L"
+          ],
+          [
+            "110",
             "L"
           ]
         ]
@@ -9655,10 +10023,10 @@
       "material": "",
       "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
       "sizeModel": "• Height: 2.5 cm | 1 in \n\n• Depth: 0.5 cm | 0.2 in",
-      "sizeChartId": "default-W-GLOVES",
+      "sizeChartId": "default-W-BELTS",
       "sizeGuide": {
-        "id": "default-W-GLOVES",
-        "titleKo": "Women's Gloves",
+        "id": "default-W-BELTS",
+        "titleKo": "Women's Belts",
         "noteKo": "보테가 베네타 공홈 사이즈 가이드 기준입니다.",
         "headers": [
           "BV",
@@ -9666,27 +10034,43 @@
         ],
         "rows": [
           [
-            "6",
-            "XS"
-          ],
-          [
-            "6.5",
+            "65",
             "S"
           ],
           [
-            "7",
+            "70",
             "S"
           ],
           [
-            "7.5",
+            "75",
+            "S"
+          ],
+          [
+            "80",
             "M"
           ],
           [
-            "8",
+            "85",
+            "M"
+          ],
+          [
+            "90",
+            "M"
+          ],
+          [
+            "95",
             "L"
           ],
           [
-            "8.5",
+            "100",
+            "L"
+          ],
+          [
+            "105",
+            "L"
+          ],
+          [
+            "110",
             "L"
           ]
         ]
@@ -9803,10 +10187,10 @@
       "material": "",
       "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
       "sizeModel": "• Height: 2.5 cm | 1” \n\n• Depth: 0.5 cm | 0.2”",
-      "sizeChartId": "default-W-GLOVES",
+      "sizeChartId": "default-W-BELTS",
       "sizeGuide": {
-        "id": "default-W-GLOVES",
-        "titleKo": "Women's Gloves",
+        "id": "default-W-BELTS",
+        "titleKo": "Women's Belts",
         "noteKo": "보테가 베네타 공홈 사이즈 가이드 기준입니다.",
         "headers": [
           "BV",
@@ -9814,27 +10198,43 @@
         ],
         "rows": [
           [
-            "6",
-            "XS"
-          ],
-          [
-            "6.5",
+            "65",
             "S"
           ],
           [
-            "7",
+            "70",
             "S"
           ],
           [
-            "7.5",
+            "75",
+            "S"
+          ],
+          [
+            "80",
             "M"
           ],
           [
-            "8",
+            "85",
+            "M"
+          ],
+          [
+            "90",
+            "M"
+          ],
+          [
+            "95",
             "L"
           ],
           [
-            "8.5",
+            "100",
+            "L"
+          ],
+          [
+            "105",
+            "L"
+          ],
+          [
+            "110",
             "L"
           ]
         ]
@@ -9941,10 +10341,10 @@
       "material": "",
       "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
       "sizeModel": "• Height: 1.5 cm | 0.6” \n\n• Depth: 0.5 cm | 0.2”",
-      "sizeChartId": "default-W-GLOVES",
+      "sizeChartId": "default-W-BELTS",
       "sizeGuide": {
-        "id": "default-W-GLOVES",
-        "titleKo": "Women's Gloves",
+        "id": "default-W-BELTS",
+        "titleKo": "Women's Belts",
         "noteKo": "보테가 베네타 공홈 사이즈 가이드 기준입니다.",
         "headers": [
           "BV",
@@ -9952,27 +10352,43 @@
         ],
         "rows": [
           [
-            "6",
-            "XS"
-          ],
-          [
-            "6.5",
+            "65",
             "S"
           ],
           [
-            "7",
+            "70",
             "S"
           ],
           [
-            "7.5",
+            "75",
+            "S"
+          ],
+          [
+            "80",
             "M"
           ],
           [
-            "8",
+            "85",
+            "M"
+          ],
+          [
+            "90",
+            "M"
+          ],
+          [
+            "95",
             "L"
           ],
           [
-            "8.5",
+            "100",
+            "L"
+          ],
+          [
+            "105",
+            "L"
+          ],
+          [
+            "110",
             "L"
           ]
         ]
@@ -10097,10 +10513,10 @@
       "material": "",
       "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
       "sizeModel": "• Height: 1.2 cm | 0.5\" \n\n• Depth: 0.5 cm | 0.2\"",
-      "sizeChartId": "default-W-GLOVES",
+      "sizeChartId": "default-W-BELTS",
       "sizeGuide": {
-        "id": "default-W-GLOVES",
-        "titleKo": "Women's Gloves",
+        "id": "default-W-BELTS",
+        "titleKo": "Women's Belts",
         "noteKo": "보테가 베네타 공홈 사이즈 가이드 기준입니다.",
         "headers": [
           "BV",
@@ -10108,27 +10524,43 @@
         ],
         "rows": [
           [
-            "6",
-            "XS"
-          ],
-          [
-            "6.5",
+            "65",
             "S"
           ],
           [
-            "7",
+            "70",
             "S"
           ],
           [
-            "7.5",
+            "75",
+            "S"
+          ],
+          [
+            "80",
             "M"
           ],
           [
-            "8",
+            "85",
+            "M"
+          ],
+          [
+            "90",
+            "M"
+          ],
+          [
+            "95",
             "L"
           ],
           [
-            "8.5",
+            "100",
+            "L"
+          ],
+          [
+            "105",
+            "L"
+          ],
+          [
+            "110",
             "L"
           ]
         ]
@@ -10176,7 +10608,7 @@
           "id": "80",
           "value": "80",
           "displayValue": "80",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 380.0,
           "listGbpPrice": null
         },
@@ -10253,10 +10685,10 @@
       "material": "",
       "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
       "sizeModel": "• Height: 2 cm | 0.8\" \n\n• Depth: 0.5 cm | 0.2\"",
-      "sizeChartId": "default-W-GLOVES",
+      "sizeChartId": "default-W-BELTS",
       "sizeGuide": {
-        "id": "default-W-GLOVES",
-        "titleKo": "Women's Gloves",
+        "id": "default-W-BELTS",
+        "titleKo": "Women's Belts",
         "noteKo": "보테가 베네타 공홈 사이즈 가이드 기준입니다.",
         "headers": [
           "BV",
@@ -10264,27 +10696,43 @@
         ],
         "rows": [
           [
-            "6",
-            "XS"
-          ],
-          [
-            "6.5",
+            "65",
             "S"
           ],
           [
-            "7",
+            "70",
             "S"
           ],
           [
-            "7.5",
+            "75",
+            "S"
+          ],
+          [
+            "80",
             "M"
           ],
           [
-            "8",
+            "85",
+            "M"
+          ],
+          [
+            "90",
+            "M"
+          ],
+          [
+            "95",
             "L"
           ],
           [
-            "8.5",
+            "100",
+            "L"
+          ],
+          [
+            "105",
+            "L"
+          ],
+          [
+            "110",
             "L"
           ]
         ]
@@ -10411,10 +10859,10 @@
       "material": "",
       "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
       "sizeModel": "• Height: 2 cm | 0.8\" \n\n• Depth: 0.5 cm | 0.2\"",
-      "sizeChartId": "default-W-GLOVES",
+      "sizeChartId": "default-W-BELTS",
       "sizeGuide": {
-        "id": "default-W-GLOVES",
-        "titleKo": "Women's Gloves",
+        "id": "default-W-BELTS",
+        "titleKo": "Women's Belts",
         "noteKo": "보테가 베네타 공홈 사이즈 가이드 기준입니다.",
         "headers": [
           "BV",
@@ -10422,27 +10870,43 @@
         ],
         "rows": [
           [
-            "6",
-            "XS"
-          ],
-          [
-            "6.5",
+            "65",
             "S"
           ],
           [
-            "7",
+            "70",
             "S"
           ],
           [
-            "7.5",
+            "75",
+            "S"
+          ],
+          [
+            "80",
             "M"
           ],
           [
-            "8",
+            "85",
+            "M"
+          ],
+          [
+            "90",
+            "M"
+          ],
+          [
+            "95",
             "L"
           ],
           [
-            "8.5",
+            "100",
+            "L"
+          ],
+          [
+            "105",
+            "L"
+          ],
+          [
+            "110",
             "L"
           ]
         ]
@@ -10797,7 +11261,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 380.0,
           "listGbpPrice": null
         }
@@ -13558,59 +14022,39 @@
       "material": "",
       "productCare": "Do Not Wash.\nDo Not Bleach.\nDo Not Tumble Dry.\nDo Not Iron.\nDo Not Dry Clean.\nUse A Specialist Leather And Fur Cleaning Service Only.",
       "sizeModel": "",
-      "sizeChartId": "default-W-RTW",
+      "sizeChartId": "default-W-GLOVES",
       "sizeGuide": {
-        "id": "default-W-RTW",
-        "titleKo": "Women's Clothing",
+        "id": "default-W-GLOVES",
+        "titleKo": "Women's Gloves",
         "noteKo": "보테가 베네타 공홈 사이즈 가이드 기준입니다.",
         "headers": [
           "BV",
-          "UK",
-          "US",
-          "KR"
+          "사이즈"
         ],
         "rows": [
           [
-            "34",
-            "2",
-            "00",
-            "44"
-          ],
-          [
-            "36",
-            "4",
-            "0",
-            "44"
-          ],
-          [
-            "38",
             "6",
-            "2",
-            "55"
+            "XS"
           ],
           [
-            "40",
+            "6.5",
+            "S"
+          ],
+          [
+            "7",
+            "S"
+          ],
+          [
+            "7.5",
+            "M"
+          ],
+          [
             "8",
-            "4",
-            "55"
+            "L"
           ],
           [
-            "42",
-            "10",
-            "6",
-            "66"
-          ],
-          [
-            "44",
-            "12",
-            "8",
-            "66"
-          ],
-          [
-            "46",
-            "14",
-            "10",
-            "77"
+            "8.5",
+            "L"
           ]
         ]
       },
@@ -13701,59 +14145,39 @@
       "material": "",
       "productCare": "Do Not Wash.\nDo Not Bleach.\nDo Not Tumble Dry.\nDo Not Iron.\nDo Not Dry Clean.\nUse A Specialist Leather And Fur Cleaning Service Only.",
       "sizeModel": "",
-      "sizeChartId": "default-W-RTW",
+      "sizeChartId": "default-W-GLOVES",
       "sizeGuide": {
-        "id": "default-W-RTW",
-        "titleKo": "Women's Clothing",
+        "id": "default-W-GLOVES",
+        "titleKo": "Women's Gloves",
         "noteKo": "보테가 베네타 공홈 사이즈 가이드 기준입니다.",
         "headers": [
           "BV",
-          "UK",
-          "US",
-          "KR"
+          "사이즈"
         ],
         "rows": [
           [
-            "34",
-            "2",
-            "00",
-            "44"
-          ],
-          [
-            "36",
-            "4",
-            "0",
-            "44"
-          ],
-          [
-            "38",
             "6",
-            "2",
-            "55"
+            "XS"
           ],
           [
-            "40",
+            "6.5",
+            "S"
+          ],
+          [
+            "7",
+            "S"
+          ],
+          [
+            "7.5",
+            "M"
+          ],
+          [
             "8",
-            "4",
-            "55"
+            "L"
           ],
           [
-            "42",
-            "10",
-            "6",
-            "66"
-          ],
-          [
-            "44",
-            "12",
-            "8",
-            "66"
-          ],
-          [
-            "46",
-            "14",
-            "10",
-            "77"
+            "8.5",
+            "L"
           ]
         ]
       },
@@ -15926,10 +16350,10 @@
       "material": "",
       "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
       "sizeModel": "• Height: 6 cm\n\n• Depth: 0,5 cm",
-      "sizeChartId": "default-W-GLOVES",
+      "sizeChartId": "default-W-BELTS",
       "sizeGuide": {
-        "id": "default-W-GLOVES",
-        "titleKo": "Women's Gloves",
+        "id": "default-W-BELTS",
+        "titleKo": "Women's Belts",
         "noteKo": "보테가 베네타 공홈 사이즈 가이드 기준입니다.",
         "headers": [
           "BV",
@@ -15937,27 +16361,43 @@
         ],
         "rows": [
           [
-            "6",
-            "XS"
-          ],
-          [
-            "6.5",
+            "65",
             "S"
           ],
           [
-            "7",
+            "70",
             "S"
           ],
           [
-            "7.5",
+            "75",
+            "S"
+          ],
+          [
+            "80",
             "M"
           ],
           [
-            "8",
+            "85",
+            "M"
+          ],
+          [
+            "90",
+            "M"
+          ],
+          [
+            "95",
             "L"
           ],
           [
-            "8.5",
+            "100",
+            "L"
+          ],
+          [
+            "105",
+            "L"
+          ],
+          [
+            "110",
             "L"
           ]
         ]
@@ -16021,7 +16461,7 @@
           "id": "95",
           "value": "95",
           "displayValue": "95",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 800.0,
           "listGbpPrice": null
         },
@@ -16074,10 +16514,10 @@
       "material": "",
       "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
       "sizeModel": "• Height: 4 cm\n\n• Depth: 0,5 cm",
-      "sizeChartId": "default-W-GLOVES",
+      "sizeChartId": "default-W-BELTS",
       "sizeGuide": {
-        "id": "default-W-GLOVES",
-        "titleKo": "Women's Gloves",
+        "id": "default-W-BELTS",
+        "titleKo": "Women's Belts",
         "noteKo": "보테가 베네타 공홈 사이즈 가이드 기준입니다.",
         "headers": [
           "BV",
@@ -16085,27 +16525,43 @@
         ],
         "rows": [
           [
-            "6",
-            "XS"
-          ],
-          [
-            "6.5",
+            "65",
             "S"
           ],
           [
-            "7",
+            "70",
             "S"
           ],
           [
-            "7.5",
+            "75",
+            "S"
+          ],
+          [
+            "80",
             "M"
           ],
           [
-            "8",
+            "85",
+            "M"
+          ],
+          [
+            "90",
+            "M"
+          ],
+          [
+            "95",
             "L"
           ],
           [
-            "8.5",
+            "100",
+            "L"
+          ],
+          [
+            "105",
+            "L"
+          ],
+          [
+            "110",
             "L"
           ]
         ]
@@ -16200,24 +16656,24 @@
       "id": "A006A7V3D841927",
       "sku": "A006A7V3D841927",
       "internalId": "814398268",
-      "name": "Sheep Charm ",
+      "name": "Dog Charm",
       "brand": "bottega veneta",
       "color": "Obsidian grey/dark truffle",
       "gender": "Men",
-      "link": "https://www.bottegaveneta.com/en-gb/sheep-charm--obsidian-grey-dark-truffle-A006A7V3D841927.html",
-      "url": "https://www.bottegaveneta.com/en-gb/sheep-charm--obsidian-grey-dark-truffle-A006A7V3D841927.html",
+      "link": "https://www.bottegaveneta.com/en-gb/dog-charm-obsidian-grey-dark-truffle-A006A7V3D841927.html",
+      "url": "https://www.bottegaveneta.com/en-gb/dog-charm-obsidian-grey-dark-truffle-A006A7V3D841927.html",
       "gbpPrice": 580.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Colour: Obsidian Grey/Dark Truffle"
       ],
       "longDescription": [
-        "Intreccio nappa leather and shearling sheep charm",
+        "Intreccio nappa leather and shearling dog charm",
         "Bottega Veneta leather tag",
         "Leather lanyard designed to be attached to any handle"
       ],
-      "compactedLongDesc": "Charm realised in Intreccio nappa leather and soft shearling with sheep shape, featuring a leather lanyard.",
+      "compactedLongDesc": "Charm realised in Intreccio nappa leather and soft shearling with dog shape, featuring a leather lanyard.",
       "composition": "• Material: Lambskin leather",
       "material": "",
       "productCare": "USE AND CARE\n\nThis is the product of artisanal craftsmanship made with our finest materials.\nAny variations, marks, veining, or irregularities are unique characteristics we embrace.\nStore and treat with particular care, avoiding excessive handling.\nThis item is not suitable for children, it may contain small parts. Avoid contact with any liquids, moisture, direct sunlight, heat, creams, oils, make-up, perfumes and abrasive surfaces.",
@@ -16273,7 +16729,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 580.0,
           "listGbpPrice": null
         }
@@ -16295,12 +16751,12 @@
       "id": "A006A7V3D842453",
       "sku": "A006A7V3D842453",
       "internalId": "814493073",
-      "name": "Sheep Charm",
+      "name": "Dog Charm",
       "brand": "bottega veneta",
       "color": "Espresso/gingerbread",
       "gender": "Men",
-      "link": "https://www.bottegaveneta.com/en-gb/sheep-charm-espresso-gingerbread-A006A7V3D842453.html",
-      "url": "https://www.bottegaveneta.com/en-gb/sheep-charm-espresso-gingerbread-A006A7V3D842453.html",
+      "link": "https://www.bottegaveneta.com/en-gb/dog-charm-espresso-gingerbread-A006A7V3D842453.html",
+      "url": "https://www.bottegaveneta.com/en-gb/dog-charm-espresso-gingerbread-A006A7V3D842453.html",
       "gbpPrice": 580.0,
       "listGbpPrice": null,
       "inStock": true,
@@ -16308,11 +16764,11 @@
         "Colour: Espresso/Gingerbread"
       ],
       "longDescription": [
-        "Intreccio nappa leather and shearling sheep charm",
+        "Intreccio nappa leather and shearling dog charm",
         "Bottega Veneta leather tag",
         "Leather lanyard designed to be attached to any handle"
       ],
-      "compactedLongDesc": "Charm realised in Intreccio nappa leather and soft shearling with sheep shape, featuring a leather lanyard.",
+      "compactedLongDesc": "Charm realised in Intreccio nappa leather and soft shearling with dog shape, featuring a leather lanyard.",
       "composition": "• Material: Lambskin leather",
       "material": "",
       "productCare": "USE AND CARE\n\nThis is the product of artisanal craftsmanship made with our finest materials.\nAny variations, marks, veining, or irregularities are unique characteristics we embrace.\nStore and treat with particular care, avoiding excessive handling.\nThis item is not suitable for children, it may contain small parts. Avoid contact with any liquids, moisture, direct sunlight, heat, creams, oils, make-up, perfumes and abrasive surfaces.",

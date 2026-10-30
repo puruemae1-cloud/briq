@@ -1,7 +1,7 @@
 {
   "hub": "men-bags",
   "category": "bags",
-  "scrapedAt": "2026-10-29T21:31:49.884174+00:00",
+  "scrapedAt": "2026-10-30T19:23:19.232822+00:00",
   "leaves": [
     "bv-men-bags-intrecciato",
     "bv-men-bags-diago",
@@ -1258,7 +1258,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/small-intrecciato-zipped-tote-black-795628V2HL18803.html",
       "gbpPrice": 3300.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Canvas",
         "Colour: Black",
@@ -1298,7 +1298,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 3300.0,
           "listGbpPrice": null
         }
@@ -1875,7 +1875,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-duffle-black-781053V2HL18803.html",
       "gbpPrice": 4370.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Canvas",
         "Colour: Black",
@@ -1917,7 +1917,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 4370.0,
           "listGbpPrice": null
         }
@@ -2239,7 +2239,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-cabin-duffle-black-795287V2HL18803.html",
       "gbpPrice": 4900.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Canvas",
         "Colour: Black",
@@ -2277,7 +2277,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 4900.0,
           "listGbpPrice": null
         }
@@ -3470,8 +3470,8 @@
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/122ab7d8-9c06-43db-9bda-7fe3add2362d/eCom/A0053EV4FV08803_A.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/f960f04b-9bc7-448d-b4a3-494e92d045a7/eCom/A0053EV4FV08803_C.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/061af61d-0cf7-42d7-9324-63be01d6dbfb/eCom/A0053EV4FV08803_D.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/b2f4a450-e092-41d8-aa23-e3d5374217ca/eCom/A0053EV4FV08803_E.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/061af61d-0cf7-42d7-9324-63be01d6dbfb/eCom/A0053EV4FV08803_D.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/b2f4a450-e092-41d8-aa23-e3d5374217ca/eCom/A0053EV4FV08803_E.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/asset/122ab7d8-9c06-43db-9bda-7fe3add2362d/Small/A0053EV4FV08803_A.jpg?v=1"
       ],
       "localImages": [

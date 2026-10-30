@@ -1,7 +1,7 @@
 {
   "hub": "women-wallets",
   "category": "accessories",
-  "scrapedAt": "2026-10-29T23:18:15.651486+00:00",
+  "scrapedAt": "2026-10-30T21:04:32.100034+00:00",
   "leaves": [
     "bv-women-wallets-small",
     "bv-women-wallets-long",
@@ -2008,7 +2008,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/andiamo-medium-bi-fold-wallet-black-876346VCPP21019.html",
       "gbpPrice": 820.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Colour: Black",
         "Hardware: Brass finish",
@@ -2045,7 +2045,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 820.0,
           "listGbpPrice": null
         }
@@ -2869,14 +2869,16 @@
       "sizeChartId": "",
       "sizeGuide": null,
       "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/03009b18-390a-4f85-9b46-42604deab028/eCom/814674VCPP28425_A.jpg?v=4",
         "https://bottega-veneta.dam.kering.com/m/20553622861333e1/eCom-814674VCPP28425_B.jpg?v=3",
         "https://bottega-veneta.dam.kering.com/m/6e4d7bef0ae9d507/eCom-814674VCPP28425_D.jpg?v=3",
-        "https://bottega-veneta.dam.kering.com/m/20553622861333e1/Small-814674VCPP28425_B.jpg?v=3"
+        "https://bottega-veneta.dam.kering.com/asset/03009b18-390a-4f85-9b46-42604deab028/Small/814674VCPP28425_A.jpg?v=4"
       ],
       "localImages": [
         "/products/bv-pdp/814674vcpp28425/1.jpg",
         "/products/bv-pdp/814674vcpp28425/2.jpg",
-        "/products/bv-pdp/814674vcpp28425/3.jpg"
+        "/products/bv-pdp/814674vcpp28425/3.jpg",
+        "/products/bv-pdp/814674vcpp28425/4.jpg"
       ],
       "sizes": [
         {
@@ -4601,7 +4603,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-business-card-case-fondant-814091VCPP32132.html",
       "gbpPrice": 440.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Calfskin",
         "Colour: Fondant",
@@ -4636,7 +4638,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 440.0,
           "listGbpPrice": null
         }
@@ -6669,7 +6671,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-small-flat-pouch-black-749919VCPP98425.html",
       "gbpPrice": 850.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Cotton",
         "Colour: Black",
@@ -6702,7 +6704,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 850.0,
           "listGbpPrice": null
         }

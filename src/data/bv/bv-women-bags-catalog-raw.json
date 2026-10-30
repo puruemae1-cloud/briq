@@ -1,7 +1,7 @@
 {
   "hub": "women-bags",
   "category": "bags",
-  "scrapedAt": "2026-10-29T22:33:22.824259+00:00",
+  "scrapedAt": "2026-10-30T20:21:28.240608+00:00",
   "leaves": [
     "bv-women-bags-mini",
     "bv-women-bags-crossbody",
@@ -24,8 +24,8 @@
   ],
   "leafCounts": {
     "bv-women-bags-mini": {
-      "official": 94,
-      "scraped": 94
+      "official": 96,
+      "scraped": 96
     },
     "bv-women-bags-crossbody": {
       "official": 62,
@@ -40,8 +40,8 @@
       "scraped": 68
     },
     "bv-women-bags-tote": {
-      "official": 64,
-      "scraped": 64
+      "official": 66,
+      "scraped": 66
     },
     "bv-women-bags-clutch": {
       "official": 48,
@@ -781,7 +781,7 @@
       "composition": "• Material: Lambskin leather",
       "material": "",
       "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
-      "sizeModel": "• Height: 13 cm | 5.1\"\n\n• Width: 22.5 cm | 8.8\"\n\n• Depth: 4.5 cm | 1.8\"\n\n• Handle drop: 26 cm | 10.2\"\n\n• Strap drop: 48 cm | 18.9”\n• Fits iPhone 17 Pro Max, a credit card case and keys.\n\n• Fits iPhone 17 Pro Max, a credit card case and keys.",
+      "sizeModel": "• Height: 13 cm | 5.1\"\n\n• Width: 22.5 cm | 8.8\"\n\n• Depth: 4.5 cm | 1.8\"\n\n• Handle drop: 26 cm | 10.2\"\n\n• Strap drop: 48 cm | 18.9”\n• Fits iPhone 17 Pro Max, a credit card case and keys.",
       "sizeChartId": "",
       "sizeGuide": null,
       "imageUrls": [
@@ -908,7 +908,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/andiamo-clutch-25-black-A005POV0HW01019.html",
       "gbpPrice": 2580.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Lambskin",
         "Colour: Black",
@@ -948,7 +948,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 2580.0,
           "listGbpPrice": null
         }
@@ -963,8 +963,8 @@
         "bv-women-bags-top-handle",
         "bv-women-bags-clutch"
       ],
-      "leafId": "bv-women-bags-clutch",
-      "cgid": "women-clutches",
+      "leafId": "bv-women-bags-crossbody",
+      "cgid": "women-crossbody-bags",
       "hubCategory": "bags"
     },
     {
@@ -1205,7 +1205,7 @@
       "composition": "• Material: Calfskin leather",
       "material": "",
       "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
-      "sizeModel": "• Height: 15 cm | 5.9\"\n\n• Width: 20 cm | 7.9\"\n\n• Depth: 9 cm | 3.5\"\n\n• Handle drop: 6 cm | 2.4\"\n\n• Strap drop: 53 cm | 20.9”\n\n• Fits iPhone 17 Pro Max, a credit card case and keys.",
+      "sizeModel": "• Height: 15 cm | 5.9\"\n\n• Width: 20 cm | 7.9\"\n\n• Depth: 9 cm | 3.5\"\n\n• Handle drop: 6 cm | 2.4\"\n\n• Strap drop: 53 cm | 20.9”\n\n• Fits iPhone 17 Pro Max, a credit card case and keys.\n• Fits iPhone 17 Pro Max, a credit card case and keys.",
       "sizeChartId": "",
       "sizeGuide": null,
       "imageUrls": [
@@ -2647,12 +2647,13 @@
       "sizeChartId": "",
       "sizeGuide": null,
       "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/1696f455-8ae0-4e7f-9bb8-bb329e628ac6/eCom/857657V6FQ14545_A.jpg?v=4",
         "https://bottega-veneta.dam.kering.com/asset/38f52afa-c71d-4253-9bd4-be2c6a401ee7/eCom/857657V6FQ14545_B.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/asset/6d38f52d-9816-464c-8337-09f523d1e38c/eCom/857657V6FQ14545_C.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/asset/5eabc517-f5e3-494e-966a-544dee9c56e0/eCom/857657V6FQ14545_D.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/asset/a996340d-8a2a-43f1-a56b-0d21dea9ca20/eCom/857657V6FQ14545_E.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/asset/e5da53fb-c07f-47e5-8cee-06de05f7b0b1/eCom/857657V6FQ14545_F.jpg?v=2",
-        "https://bottega-veneta.dam.kering.com/asset/38f52afa-c71d-4253-9bd4-be2c6a401ee7/Small/857657V6FQ14545_B.jpg?v=2"
+        "https://bottega-veneta.dam.kering.com/asset/1696f455-8ae0-4e7f-9bb8-bb329e628ac6/Small/857657V6FQ14545_A.jpg?v=4"
       ],
       "localImages": [
         "/products/bv-pdp/857657v6fq14545/1.jpg",
@@ -2660,7 +2661,8 @@
         "/products/bv-pdp/857657v6fq14545/3.jpg",
         "/products/bv-pdp/857657v6fq14545/4.jpg",
         "/products/bv-pdp/857657v6fq14545/5.jpg",
-        "/products/bv-pdp/857657v6fq14545/6.jpg"
+        "/products/bv-pdp/857657v6fq14545/6.jpg",
+        "/products/bv-pdp/857657v6fq14545/7.jpg"
       ],
       "sizes": [
         {
@@ -10949,7 +10951,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/small-jodie-travertine-690225VCPP02916.html",
       "gbpPrice": 3300.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Calfskin",
         "Colour: Travertine",
@@ -10990,7 +10992,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 3300.0,
           "listGbpPrice": null
         }
@@ -11586,7 +11588,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/veneta-fondant-873189V66V02009.html",
       "gbpPrice": 4370.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Suede",
         "Colour: Fondant",
@@ -11623,7 +11625,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 4370.0,
           "listGbpPrice": null
         }
@@ -22691,7 +22693,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/andiamo-clutch-25-dark-caramel-20-A005POV0HW09874.html",
       "gbpPrice": 2580.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Lambskin",
         "Colour: Dark Caramel 20",
@@ -22727,7 +22729,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 2580.0,
           "listGbpPrice": null
         }
@@ -26800,7 +26802,7 @@
       "composition": "• Material: lambskin",
       "material": "",
       "productCare": "",
-      "sizeModel": "• Height: 12.5 cm | 4.9\"\n\n• Width: 20 cm | 7.9\"\n\n• Depth: 9 cm | 3.5\"\n\n• Handle drop: 13.5 cm | 5.3”\n\n• Strap drop: 55 cm | 21.7\"",
+      "sizeModel": "• Height: 12.5 cm | 4.9\"\n\n• Width: 20 cm | 7.9\"\n\n• Depth: 9 cm | 3.5\"\n\n• Handle drop: 13.5 cm | 5.3”\n\n• Strap drop: 55 cm | 21.7\"\n\n• Fits iPhone 17 Pro Max, a credit card case and keys.",
       "sizeChartId": "",
       "sizeGuide": null,
       "imageUrls": [
@@ -26845,12 +26847,12 @@
       "id": "A00AEGV79U36360",
       "sku": "A00AEGV79U36360",
       "internalId": "814483572",
-      "name": "Dustbag  ",
+      "name": "Dustbag",
       "brand": "bottega veneta",
       "color": "Radar",
       "gender": "Women",
-      "link": "https://www.bottegaveneta.com/en-gb/dustbag---radar-A00AEGV79U36360.html",
-      "url": "https://www.bottegaveneta.com/en-gb/dustbag---radar-A00AEGV79U36360.html",
+      "link": "https://www.bottegaveneta.com/en-gb/dustbag-radar-A00AEGV79U36360.html",
+      "url": "https://www.bottegaveneta.com/en-gb/dustbag-radar-A00AEGV79U36360.html",
       "gbpPrice": 2320.0,
       "listGbpPrice": null,
       "inStock": true,
@@ -26909,12 +26911,12 @@
       "id": "A006NYV5ZZE9359",
       "sku": "A006NYV5ZZE9359",
       "internalId": "814435789",
-      "name": "Dustbag  ",
+      "name": "Dustbag",
       "brand": "bottega veneta",
       "color": "String/plaster",
       "gender": "Women",
-      "link": "https://www.bottegaveneta.com/en-gb/dustbag---string-plaster-A006NYV5ZZE9359.html",
-      "url": "https://www.bottegaveneta.com/en-gb/dustbag---string-plaster-A006NYV5ZZE9359.html",
+      "link": "https://www.bottegaveneta.com/en-gb/dustbag-string-plaster-A006NYV5ZZE9359.html",
+      "url": "https://www.bottegaveneta.com/en-gb/dustbag-string-plaster-A006NYV5ZZE9359.html",
       "gbpPrice": 2230.0,
       "listGbpPrice": null,
       "inStock": true,
@@ -26975,12 +26977,12 @@
       "id": "796728V4PJ28034",
       "sku": "796728V4PJ28034",
       "internalId": "814482703",
-      "name": "Dustbag  ",
+      "name": "Dustbag",
       "brand": "bottega veneta",
       "color": "Supermoon/silver",
       "gender": "Women",
-      "link": "https://www.bottegaveneta.com/en-gb/dustbag---supermoon-silver-796728V4PJ28034.html",
-      "url": "https://www.bottegaveneta.com/en-gb/dustbag---supermoon-silver-796728V4PJ28034.html",
+      "link": "https://www.bottegaveneta.com/en-gb/dustbag-supermoon-silver-796728V4PJ28034.html",
+      "url": "https://www.bottegaveneta.com/en-gb/dustbag-supermoon-silver-796728V4PJ28034.html",
       "gbpPrice": 2320.0,
       "listGbpPrice": null,
       "inStock": true,
@@ -27066,7 +27068,7 @@
       "composition": "• Material: lambskin",
       "material": "",
       "productCare": "",
-      "sizeModel": "• Height: 13 cm | 5.1\"\n\n• Width: 26 cm | 10.2\"\n\n• Depth: 5 cm | 2\"\n\n• Handle drop: 10 cm | 3.9”",
+      "sizeModel": "• Height: 13 cm | 5.1\"\n\n• Width: 26 cm | 10.2\"\n\n• Depth: 5 cm | 2\"\n\n• Handle drop: 10 cm | 3.9”\n\n• Fits iPhone 17 Pro Max, a credit card case and keys.",
       "sizeChartId": "",
       "sizeGuide": null,
       "imageUrls": [
@@ -27131,7 +27133,7 @@
       "composition": "• Material: lambskin",
       "material": "",
       "productCare": "",
-      "sizeModel": "• Height: 13 cm | 5.1\"\n\n• Width: 26 cm | 10.2\"\n\n• Depth: 5 cm | 2\"\n\n• Handle drop: 10 cm | 3.9”",
+      "sizeModel": "• Height: 13 cm | 5.1\"\n\n• Width: 26 cm | 10.2\"\n\n• Depth: 5 cm | 2\"\n\n• Handle drop: 10 cm | 3.9”\n\n• Fits iPhone 17 Pro Max, a credit card case and keys.",
       "sizeChartId": "",
       "sizeGuide": null,
       "imageUrls": [
@@ -27173,12 +27175,12 @@
       "id": "844107V4PJ28034",
       "sku": "844107V4PJ28034",
       "internalId": "814438127",
-      "name": "Andiamo Wallet On Chain",
+      "name": "Andiamo Pouch on Chain",
       "brand": "bottega veneta",
       "color": "Supermoon/silver",
       "gender": "Women",
-      "link": "https://www.bottegaveneta.com/en-gb/andiamo-wallet-on-chain-supermoon-silver-844107V4PJ28034.html",
-      "url": "https://www.bottegaveneta.com/en-gb/andiamo-wallet-on-chain-supermoon-silver-844107V4PJ28034.html",
+      "link": "https://www.bottegaveneta.com/en-gb/andiamo-pouch-on-chain-supermoon-silver-844107V4PJ28034.html",
+      "url": "https://www.bottegaveneta.com/en-gb/andiamo-pouch-on-chain-supermoon-silver-844107V4PJ28034.html",
       "gbpPrice": 2320.0,
       "listGbpPrice": null,
       "inStock": false,
@@ -27338,7 +27340,7 @@
       "composition": "• Material: lambskin",
       "material": "",
       "productCare": "",
-      "sizeModel": "• Height: 15 cm | 5.9\"\n\n• Width: 25 cm | 9.8\"\n\n• Depth: 12.5 cm | 4.9\"\n\n• Handle drop: 8 cm | 3.1\"\n\n• Strap drop: 53 cm | 20.9\"\n\n• Fits iPhone 17 Pro Max, a credit card case and keys.",
+      "sizeModel": "• Height: 15 cm | 5.9\" \n\n• Width: 20 cm | 7.9\" \n\n• Depth: 12 cm | 4.7\" \n\n• Handle drop: 7.5 cm | 3\" \n\n• Strap drop: 50 cm | 19.7\" \n\n• Fits iPhone 17 Pro Max, a credit card case, airpods and keys.",
       "sizeChartId": "",
       "sizeGuide": null,
       "imageUrls": [
@@ -27375,7 +27377,8 @@
         "bv-women",
         "bv-women-bags",
         "bv-women-bags-mini",
-        "bv-women-bags-cabat"
+        "bv-women-bags-cabat",
+        "bv-women-bags-tote"
       ],
       "leafId": "bv-women-bags-cabat",
       "cgid": "women-cabat",
@@ -27385,12 +27388,12 @@
       "id": "A005PEV75E08019",
       "sku": "A005PEV75E08019",
       "internalId": "814482561",
-      "name": "Campana",
+      "name": "Baby Campana",
       "brand": "bottega veneta",
       "color": "Supermoon",
       "gender": "Women",
-      "link": "https://www.bottegaveneta.com/en-gb/campana-supermoon-A005PEV75E08019.html",
-      "url": "https://www.bottegaveneta.com/en-gb/campana-supermoon-A005PEV75E08019.html",
+      "link": "https://www.bottegaveneta.com/en-gb/baby-campana-supermoon-A005PEV75E08019.html",
+      "url": "https://www.bottegaveneta.com/en-gb/baby-campana-supermoon-A005PEV75E08019.html",
       "gbpPrice": 2940.0,
       "listGbpPrice": null,
       "inStock": true,
@@ -27407,7 +27410,7 @@
       "composition": "• Material: lambskin",
       "material": "",
       "productCare": "",
-      "sizeModel": "• Height: 12.5 cm | 4.9\"\n\n• Width: 20 cm | 7.9\"\n\n• Depth: 9 cm | 3.5\"\n\n• Handle drop: 13.5 cm | 5.3”\n\n• Strap drop: 55 cm | 21.7\"",
+      "sizeModel": "• Height: 12.5 cm | 4.9\"\n\n• Width: 20 cm | 7.9\"\n\n• Depth: 9 cm | 3.5\"\n\n• Handle drop: 13.5 cm | 5.3”\n\n• Strap drop: 55 cm | 21.7\"\n\n• Fits iPhone 17 Pro Max, a credit card case and keys.",
       "sizeChartId": "",
       "sizeGuide": null,
       "imageUrls": [
@@ -27442,7 +27445,8 @@
         "bv-women",
         "bv-women-bags",
         "bv-women-bags-crossbody",
-        "bv-women-bags-campana"
+        "bv-women-bags-campana",
+        "bv-women-bags-mini"
       ],
       "leafId": "bv-women-bags-campana",
       "cgid": "women-campana",
@@ -27452,12 +27456,12 @@
       "id": "A005POV0HW06306",
       "sku": "A005POV0HW06306",
       "internalId": "814651372",
-      "name": "Andiamo Clutch",
+      "name": "Andiamo Clutch 25",
       "brand": "bottega veneta",
       "color": "Radar",
       "gender": "Women",
-      "link": "https://www.bottegaveneta.com/en-gb/andiamo-clutch-radar-A005POV0HW06306.html",
-      "url": "https://www.bottegaveneta.com/en-gb/andiamo-clutch-radar-A005POV0HW06306.html",
+      "link": "https://www.bottegaveneta.com/en-gb/andiamo-clutch-25-radar-A005POV0HW06306.html",
+      "url": "https://www.bottegaveneta.com/en-gb/andiamo-clutch-25-radar-A005POV0HW06306.html",
       "gbpPrice": 2580.0,
       "listGbpPrice": null,
       "inStock": true,
@@ -27474,7 +27478,7 @@
       "composition": "• Material: Lambskin leather",
       "material": "",
       "productCare": "",
-      "sizeModel": "• Height: 13.5 cm | 5.3\"\n\n• Width: 24 cm | 9.4\"\n\n• Depth: 7 cm | 2.7\"\n\n• Handle drop: 3.5 cm | 5.5”\n\n• Strap drop: 43 cm | 16.9\"",
+      "sizeModel": "• Height: 12.5 cm | 4.9\"\n\n• Width: 20 cm | 7.9\"\n\n• Depth: 9 cm | 3.5\"\n\n• Handle drop: 13.5 cm | 5.3”\n\n• Strap drop: 55 cm | 21.7\"\n\n• Fits iPhone 17 Pro Max, a credit card case and keys.",
       "sizeChartId": "",
       "sizeGuide": null,
       "imageUrls": [
@@ -27505,22 +27509,23 @@
         "bv-women",
         "bv-women-bags",
         "bv-women-bags-crossbody",
-        "bv-women-bags-top-handle"
+        "bv-women-bags-top-handle",
+        "bv-women-bags-clutch"
       ],
-      "leafId": "bv-women-bags-top-handle",
-      "cgid": "women-top-handle-bags",
+      "leafId": "bv-women-bags-clutch",
+      "cgid": "women-clutches",
       "hubCategory": "bags"
     },
     {
       "id": "A005PEV0HW06306",
       "sku": "A005PEV0HW06306",
       "internalId": "814482560",
-      "name": "Campana",
+      "name": "Baby Campana",
       "brand": "bottega veneta",
       "color": "Radar",
       "gender": "Women",
-      "link": "https://www.bottegaveneta.com/en-gb/campana-radar-A005PEV0HW06306.html",
-      "url": "https://www.bottegaveneta.com/en-gb/campana-radar-A005PEV0HW06306.html",
+      "link": "https://www.bottegaveneta.com/en-gb/baby-campana-radar-A005PEV0HW06306.html",
+      "url": "https://www.bottegaveneta.com/en-gb/baby-campana-radar-A005PEV0HW06306.html",
       "gbpPrice": 2770.0,
       "listGbpPrice": null,
       "inStock": true,
@@ -27537,7 +27542,7 @@
       "composition": "• Material: lambskin",
       "material": "",
       "productCare": "",
-      "sizeModel": "• Height: 12.5 cm | 4.9\"\n\n• Width: 20 cm | 7.9\"\n\n• Depth: 9 cm | 3.5\"\n\n• Handle drop: 13.5 cm | 5.3”\n\n• Strap drop: 55 cm | 21.7\"",
+      "sizeModel": "• Height: 12.5 cm | 4.9\"\n\n• Width: 20 cm | 7.9\"\n\n• Depth: 9 cm | 3.5\"\n\n• Handle drop: 13.5 cm | 5.3”\n\n• Strap drop: 55 cm | 21.7\"\n\n• Fits iPhone 17 Pro Max, a credit card case and keys.",
       "sizeChartId": "",
       "sizeGuide": null,
       "imageUrls": [
@@ -27572,7 +27577,8 @@
         "bv-women",
         "bv-women-bags",
         "bv-women-bags-crossbody",
-        "bv-women-bags-campana"
+        "bv-women-bags-campana",
+        "bv-women-bags-mini"
       ],
       "leafId": "bv-women-bags-campana",
       "cgid": "women-campana",
@@ -27605,7 +27611,7 @@
       "composition": "• Material: lambskin",
       "material": "",
       "productCare": "",
-      "sizeModel": "• Height: 15 cm | 5.9\"\n\n• Width: 20 cm | 7.9\"\n\n• Depth: 7.5 cm | 2.9\"\n\n• Handle drop: 7 cm | 2.7”\n\n• Strap drop: 50 cm | 19.7\"",
+      "sizeModel": "• Height: 15 cm | 5.9\"\n\n• Width: 20 cm | 7.9\"\n\n• Depth: 9 cm | 3.5\"\n\n• Handle drop: 6 cm | 2.4\"\n\n• Strap drop: 53 cm | 20.9\"\n\n• Fits iPhone 17 Pro Max, a credit card case and keys.",
       "sizeChartId": "",
       "sizeGuide": null,
       "imageUrls": [
@@ -27643,7 +27649,8 @@
         "bv-women-bags",
         "bv-women-bags-crossbody",
         "bv-women-bags-top-handle",
-        "bv-women-bags-andiamo"
+        "bv-women-bags-andiamo",
+        "bv-women-bags-mini"
       ],
       "leafId": "bv-women-bags-andiamo",
       "cgid": "women-andiamo",
@@ -27653,12 +27660,12 @@
       "id": "A0069UV75D06355",
       "sku": "A0069UV75D06355",
       "internalId": "814482590",
-      "name": "Andiamo",
+      "name": "Small Andiamo",
       "brand": "bottega veneta",
       "color": "Radar",
       "gender": "Women",
-      "link": "https://www.bottegaveneta.com/en-gb/andiamo-radar-A0069UV75D06355.html",
-      "url": "https://www.bottegaveneta.com/en-gb/andiamo-radar-A0069UV75D06355.html",
+      "link": "https://www.bottegaveneta.com/en-gb/small-andiamo-radar-A0069UV75D06355.html",
+      "url": "https://www.bottegaveneta.com/en-gb/small-andiamo-radar-A0069UV75D06355.html",
       "gbpPrice": 4010.0,
       "listGbpPrice": null,
       "inStock": true,
@@ -27676,7 +27683,7 @@
       "composition": "• Material: lambskin",
       "material": "",
       "productCare": "",
-      "sizeModel": "• Height: 20 cm | 4.2\"\n\n• Width: 25 cm | 18.7\"\n\n• Depth: 10 cm | 3.9\"\n\n• Handle drop: 6 cm | 5.5”\n\n• Strap drop: 50 cm | 19.7\"",
+      "sizeModel": "• Height: 20 cm\n\n• Width: 25 cm\n\n• Depth: 10 cm\n\n• Handle drop: 6 cm\n\n• Strap drop: 50 cm",
       "sizeChartId": "",
       "sizeGuide": null,
       "imageUrls": [
@@ -27726,12 +27733,12 @@
       "id": "A0062GV5ZZE9330",
       "sku": "A0062GV5ZZE9330",
       "internalId": "814435797",
-      "name": "Andiamo",
+      "name": "Small Andiamo",
       "brand": "bottega veneta",
       "color": "String/plaster",
       "gender": "Women",
-      "link": "https://www.bottegaveneta.com/en-gb/andiamo-string-plaster-A0062GV5ZZE9330.html",
-      "url": "https://www.bottegaveneta.com/en-gb/andiamo-string-plaster-A0062GV5ZZE9330.html",
+      "link": "https://www.bottegaveneta.com/en-gb/small-andiamo-string-plaster-A0062GV5ZZE9330.html",
+      "url": "https://www.bottegaveneta.com/en-gb/small-andiamo-string-plaster-A0062GV5ZZE9330.html",
       "gbpPrice": 4990.0,
       "listGbpPrice": null,
       "inStock": true,
@@ -27741,7 +27748,7 @@
         "Hardware: Brass finish"
       ],
       "longDescription": [
-        "Intrecciato suede leather top handle bag with curly shearling trim and sliding cross-body strap_x000D_",
+        "Small Intrecciato suede leather top handle bag with curly shearling trim and sliding cross-body strap_x000D_",
         "Compartmented interior with one zipped pocket, two open pockets_x000D_",
         "Magnetic closure"
       ],
@@ -27749,7 +27756,7 @@
       "composition": "• Material: calfskin",
       "material": "",
       "productCare": "",
-      "sizeModel": "• Height: 25.5 cm | 10\"\n\n• Width: 32 cm | 12.6\"\n\n• Depth: 12 cm | 4.2\"\n\n• Handle drop: 9 cm | 3.5”\n\n• Strap drop: 45 cm | 17.7\"",
+      "sizeModel": "• Height: 20 cm\n\n• Width: 25 cm\n\n• Depth: 10 cm\n\n• Handle drop: 6 cm\n\n• Strap drop: 50 cm",
       "sizeChartId": "",
       "sizeGuide": null,
       "imageUrls": [
@@ -28008,12 +28015,12 @@
       "id": "A005PEV75E08140",
       "sku": "A005PEV75E08140",
       "internalId": "814482562",
-      "name": "Campana",
+      "name": "Baby Campana",
       "brand": "bottega veneta",
       "color": "Silver",
       "gender": "Women",
-      "link": "https://www.bottegaveneta.com/en-gb/campana-silver-A005PEV75E08140.html",
-      "url": "https://www.bottegaveneta.com/en-gb/campana-silver-A005PEV75E08140.html",
+      "link": "https://www.bottegaveneta.com/en-gb/baby-campana-silver-A005PEV75E08140.html",
+      "url": "https://www.bottegaveneta.com/en-gb/baby-campana-silver-A005PEV75E08140.html",
       "gbpPrice": 2940.0,
       "listGbpPrice": null,
       "inStock": true,
@@ -28030,7 +28037,7 @@
       "composition": "• Material: lambskin",
       "material": "",
       "productCare": "",
-      "sizeModel": "• Height: 12.5 cm | 4.9\"\n\n• Width: 20 cm | 7.9\"\n\n• Depth: 9 cm | 3.5\"\n\n• Handle drop: 13.5 cm | 5.3”\n\n• Strap drop: 55 cm | 21.7\"",
+      "sizeModel": "• Height: 12.5 cm | 4.9\"\n\n• Width: 20 cm | 7.9\"\n\n• Depth: 9 cm | 3.5\"\n\n• Handle drop: 13.5 cm | 5.3”\n\n• Strap drop: 55 cm | 21.7\"\n\n• Fits iPhone 17 Pro Max, a credit card case and keys.",
       "sizeChartId": "",
       "sizeGuide": null,
       "imageUrls": [
@@ -28066,7 +28073,8 @@
         "bottega-veneta-bags",
         "bv-women",
         "bv-women-bags",
-        "bv-women-bags-campana"
+        "bv-women-bags-campana",
+        "bv-women-bags-mini"
       ],
       "leafId": "bv-women-bags-campana",
       "cgid": "women-campana",
@@ -28099,7 +28107,7 @@
       "composition": "• Material: lambskin",
       "material": "",
       "productCare": "",
-      "sizeModel": "• Height: 11.5 cm | 4.5\"\n\n• Width: 19 cm | 7.5\"\n\n• Depth: 4 cm | 1.6\"",
+      "sizeModel": "• Height: 11.5 cm | 4.5\"\n\n• Width: 19 cm | 7.5\"\n\n• Depth: 4 cm | 1.6\"\n\n• Fits iPhone 17 Pro Max, a credit card case and keys.",
       "sizeChartId": "",
       "sizeGuide": null,
       "imageUrls": [
@@ -28135,10 +28143,79 @@
         "bottega-veneta-bags",
         "bv-women",
         "bv-women-bags",
-        "bv-women-bags-knot-clutch"
+        "bv-women-bags-knot-clutch",
+        "bv-women-bags-clutch"
       ],
       "leafId": "bv-women-bags-knot-clutch",
       "cgid": "women-knot-clutch",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "A0069TV75C19466",
+      "sku": "A0069TV75C19466",
+      "internalId": "814435800",
+      "name": "Mini Cabat",
+      "brand": "bottega veneta",
+      "color": "Plaster/string",
+      "gender": "Women",
+      "link": "https://www.bottegaveneta.com/en-gb/mini-cabat-plaster-string-A0069TV75C19466.html",
+      "url": "https://www.bottegaveneta.com/en-gb/mini-cabat-plaster-string-A0069TV75C19466.html",
+      "gbpPrice": 4900.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Unlined",
+        "Colour: Plaster/String",
+        "Hardware: Gold finish"
+      ],
+      "longDescription": [
+        "Intreccio shearling mini tote bag with an adjustable strap _x000D_",
+        "Single detachable interior zipped pocket"
+      ],
+      "compactedLongDesc": "Tote bag in soft Intreccio shearling with adjustable strap.",
+      "composition": "• Material: lambskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 15 cm | 5.9\" \n\n• Width: 20 cm | 7.9\" \n\n• Depth: 12 cm | 4.7\" \n\n• Handle drop: 7.5 cm | 3\" \n\n• Strap drop: 50 cm | 19.7\" \n\n• Fits iPhone 17 Pro Max, a credit card case, airpods and keys.",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/acab3b29-0c80-4f20-9749-0babe5ad159a/eCom/A0069TV75C19466_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/c90984c5-a4ca-4703-b4ef-94ee2a5a1f80/eCom/A0069TV75C19466_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/4a5bfb3c-29ac-4ed6-b357-d927edadfe92/eCom/A0069TV75C19466_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/713588d7-7594-4383-a2e0-cada97897954/eCom/A0069TV75C19466_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/b23874d5-45fb-4d71-b8b3-256f4478e75f/eCom/A0069TV75C19466_E.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/06314426-1045-496f-b1c9-96ba9026f7c4/eCom/A0069TV75C19466_F.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/acab3b29-0c80-4f20-9749-0babe5ad159a/Small/A0069TV75C19466_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a0069tv75c19466/1.jpg",
+        "/products/bv-pdp/a0069tv75c19466/2.jpg",
+        "/products/bv-pdp/a0069tv75c19466/3.jpg",
+        "/products/bv-pdp/a0069tv75c19466/4.jpg",
+        "/products/bv-pdp/a0069tv75c19466/5.jpg",
+        "/products/bv-pdp/a0069tv75c19466/6.jpg",
+        "/products/bv-pdp/a0069tv75c19466/7.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 4900.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-women",
+        "bv-women-bags",
+        "bv-women-bags-tote"
+      ],
+      "leafId": "bv-women-bags-tote",
+      "cgid": "women-tote-bags",
       "hubCategory": "bags"
     }
   ]
