@@ -25,6 +25,10 @@ const classic = Nanum_Myeongjo({
   subsets: ["latin"],
   weight: ["400", "700", "800"],
   display: "swap",
+  // Nanum Myeongjo ships ~276 unicode-range files. Preloading every file
+  // bloated HTML (~30KB of <link rel=preload>) for Yeti/Naver crawl size.
+  // The browser still fetches only the ranges used on the page.
+  preload: false,
 });
 
 const body = Outfit({

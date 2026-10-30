@@ -157,14 +157,21 @@ export function ProductCardMedia({
       onKeyDown={onKey}
     >
       <div className="product-frame product-frame--card product-card-media__frame">
-        {slides.map((src, i) => (
-          <CardSlide
-            key={src}
-            src={src}
-            alt={i === 0 ? product.nameKo : ""}
-            current={i === index}
-          />
-        ))}
+        {/*
+          SSR / first paint: only the primary packshot. Extra gallery frames
+          mount after hover/focus so PLP HTML stays small for Naver Yeti.
+        */}
+        {(active && multi ? slides : slides.slice(0, 1)).map((src, i) => {
+          const slideIndex = active && multi ? i : 0;
+          return (
+            <CardSlide
+              key={src}
+              src={src}
+              alt={slideIndex === 0 ? product.nameKo : ""}
+              current={slideIndex === index}
+            />
+          );
+        })}
         {children}
         {multi ? (
           <>
