@@ -34,19 +34,116 @@ function discountRatio(p: Product): number {
   return (compare - price) / compare;
 }
 
-/** In-stock Flannels (women+men clearance) — highest discount first. */
+/** Party / formal / swim — keep these off the Flannels homepage rail. */
+const FLANNELS_HOME_EXCLUDE =
+  /dress|gown|sequin|party|evening|bridal|corset|bodysuit|bikini|swimsuit|heel|sandal|skirt|blouse|camisole|slip|tulle|cocktail|shirt[-\s]*dress|suit[-\s]*jacket|waistcoat|tuxedo|tailored|double[-\s]*breasted|single[-\s]*breasted|biker[-\s]*short|shorts?\b|bandeau|jumper[-\s]*dress|드레스|스팽글|파티|가운|비키니|샌들|힐|스커트|블라우스|바디수트|수트|정장|양복|쇼트/i;
+
+/** Casual winter-friendly pieces (layers + everyday denim/cargo). */
+const FLANNELS_HOME_CASUAL =
+  /\bcoats?\b|parka|puffer|down|quilt|padded|bomber|varsity|denim[-\s]*jacket|leather[-\s]*jacket|hoodie|fleece|sweat(?:shirt)?|jumper|cardigan|sweater|knit(?:ted)?|wool|cashmere|shearling|gilet|anorak|overcoat|trench|jeans?\b|denim|jogger|cargo|boots?\b|코트|패딩|점퍼|봄버|후드|플리스|스웨터|니트|가디건|진|청바지|조거|카고|부츠|재킷|자켓|질레|파카|퍼퍼/i;
+
+/** Prefer thick layers in the first slots (not bottoms-only). */
+const FLANNELS_HOME_LAYER =
+  /\bcoats?\b|parka|puffer|down|quilt|padded|bomber|varsity|denim[-\s]*jacket|leather[-\s]*jacket|hoodie|fleece|sweatshirt|jumper(?![-\s]*dress)|cardigan|sweater|shearling|gilet|anorak|overcoat|trench|코트|패딩|점퍼|봄버|후드|플리스|스웨터|니트|가디건|재킷|자켓|질레|파카|퍼퍼/i;
+
+const FLANNELS_HOME_HEAVY =
+  /parka|puffer|padded|down|quilt|fleece|shearling|insulated|heavyweight|파카|퍼퍼|패딩|플리스|헤비/i;
+
+const FLANNELS_GENERIC_TAGS = new Set([
+  "flannels",
+  "fl-women",
+  "fl-men",
+  "women",
+  "men",
+  "sale",
+  "clothing",
+  "shoes",
+  "sandals",
+  "accessories",
+  "bags",
+]);
+
+function flannelsText(p: Product): string {
+  const tags = Array.isArray(p.tags) ? p.tags.join(" ") : "";
+  return `${p.id || ""} ${p.name || ""} ${p.nameKo || ""} ${tags}`;
+}
+
+function flannelsGender(p: Product): "w" | "m" | "?" {
+  const tags = Array.isArray(p.tags) ? p.tags : [];
+  if (tags.includes("fl-women") || tags.includes("women")) return "w";
+  if (tags.includes("fl-men") || tags.includes("men")) return "m";
+  const t = flannelsText(p).toLowerCase();
+  if (t.includes("womens") || t.includes("women") || t.includes("여성")) return "w";
+  if (t.includes("mens") || t.includes("남성") || /\bmen\b/.test(t)) return "m";
+  return "?";
+}
+
+function flannelsBrandKey(p: Product): string {
+  const tags = Array.isArray(p.tags)
+    ? p.tags.filter((t) => !FLANNELS_GENERIC_TAGS.has(t) && !t.startsWith("fl-"))
+    : [];
+  if (tags[0]) return tags[0];
+  const m = /^(?:fl)-(.+?)-(?:womens?|mens?)-/i.exec(p.id || "");
+  return m?.[1] || (p.id || "").split("-")[1] || p.id || "";
+}
+
+function flannelsBaseId(id: string): string {
+  return id.replace(/-\d{6,}$/, "");
+}
+
+function flannelsHomeScore(p: Product): number {
+  const t = flannelsText(p);
+  let s = discountRatio(p);
+  if (FLANNELS_HOME_LAYER.test(t)) s += 0.12;
+  if (FLANNELS_HOME_HEAVY.test(t)) s += 0.1;
+  return s;
+}
+
+/**
+ * In-stock Flannels for the homepage rail: casual winter layers
+ * (parkas, puffers, jackets, knits) — not party dresses / formalwear.
+ */
 function getFlannelsHomepageProducts(limit = 4): Product[] {
-  const list = getHomepageCategoryProducts("luxury", "flannels").filter(
-    (p) => p.inStock !== false,
-  );
-  list.sort((a, b) => {
-    const d = discountRatio(b) - discountRatio(a);
+  const pool = getHomepageCategoryProducts("luxury", "flannels").filter((p) => {
+    if (p.inStock === false) return false;
+    const t = flannelsText(p);
+    if (FLANNELS_HOME_EXCLUDE.test(t)) return false;
+    return FLANNELS_HOME_CASUAL.test(t);
+  });
+  pool.sort((a, b) => {
+    const d = flannelsHomeScore(b) - flannelsHomeScore(a);
     if (d !== 0) return d;
     const tb = Date.parse(b.registeredAt || b.updatedAt || "") || 0;
     const ta = Date.parse(a.registeredAt || a.updatedAt || "") || 0;
     return tb - ta;
   });
-  return list.slice(0, limit).map(toProductCardProduct);
+
+  const picked: Product[] = [];
+  const seenBase = new Set<string>();
+  const seenBrand = new Set<string>();
+  const genderCount: Record<string, number> = { w: 0, m: 0, "?": 0 };
+
+  const tryPick = (requireLayer: boolean) => {
+    for (const p of pool) {
+      if (picked.length >= limit) break;
+      const t = flannelsText(p);
+      if (requireLayer && !FLANNELS_HOME_LAYER.test(t)) continue;
+      const base = flannelsBaseId(p.id);
+      if (seenBase.has(base)) continue;
+      const brand = flannelsBrandKey(p);
+      if (seenBrand.has(brand)) continue;
+      const g = flannelsGender(p);
+      if ((g === "w" || g === "m") && (genderCount[g] || 0) >= 2) continue;
+      picked.push(p);
+      seenBase.add(base);
+      seenBrand.add(brand);
+      genderCount[g] = (genderCount[g] || 0) + 1;
+    }
+  };
+
+  tryPick(true);
+  tryPick(false);
+  return picked.map(toProductCardProduct);
 }
 
 let memo: HomepageData | null = null;
