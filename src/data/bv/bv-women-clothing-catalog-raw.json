@@ -1,7 +1,7 @@
 {
   "hub": "women-clothing",
   "category": "luxury",
-  "scrapedAt": "2026-10-30T21:02:32.013591+00:00",
+  "scrapedAt": "2026-10-31T23:33:55.100605+00:00",
   "leaves": [
     "bv-women-clothing-outerwear",
     "bv-women-clothing-jackets",
@@ -4562,7 +4562,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/satin-nylon-blouson-tarragon-A000ZAV6C503167.html",
       "gbpPrice": 2850.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Color: Tarragon"
       ],
@@ -4664,7 +4664,7 @@
           "id": "38",
           "value": "38",
           "displayValue": "38",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 2850.0,
           "listGbpPrice": null
         },

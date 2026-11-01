@@ -1,7 +1,7 @@
 {
   "hub": "women-eyewear",
   "category": "accessories",
-  "scrapedAt": "2026-10-30T21:10:25.285296+00:00",
+  "scrapedAt": "2026-10-31T23:41:51.253414+00:00",
   "leaves": [
     "bv-women-eyewear-sunglasses",
     "bv-women-eyewear-opticals",
@@ -5941,7 +5941,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/knot-aviator-sunglasses-brown-841235VBL802042.html",
       "gbpPrice": 490.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Brown"
       ],
@@ -5979,7 +5979,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 490.0,
           "listGbpPrice": null
         }
@@ -10826,7 +10826,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/classic-recycled-acetate-cat-eye-eyeglasses-black-transparent-770654V2Q301423.html",
       "gbpPrice": 290.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Colour: Black/Transparent"
       ],
@@ -10861,7 +10861,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 290.0,
           "listGbpPrice": null
         }

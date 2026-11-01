@@ -1,7 +1,7 @@
 {
   "hub": "men-wallets",
   "category": "accessories",
-  "scrapedAt": "2026-10-30T19:59:45.173816+00:00",
+  "scrapedAt": "2026-10-31T22:39:01.851377+00:00",
   "leaves": [
     "bv-men-wallets-small",
     "bv-men-wallets-long",
@@ -4511,7 +4511,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/cassette-zip-around-wallet-black-parakeet-814649VBWD51042.html",
       "gbpPrice": 770.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Calfskin",
         "Colour: Black/Parakeet",
@@ -4547,7 +4547,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 770.0,
           "listGbpPrice": null
         }
@@ -11882,7 +11882,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-piccolo--card-case-dark-green-817397V4LQ13009.html",
       "gbpPrice": 350.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Calf leather",
         "Colour: Dark Green"
@@ -11914,7 +11914,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 350.0,
           "listGbpPrice": null
         }

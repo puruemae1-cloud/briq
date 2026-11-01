@@ -1,7 +1,7 @@
 {
   "hub": "women-bags",
   "category": "bags",
-  "scrapedAt": "2026-10-30T20:21:28.240608+00:00",
+  "scrapedAt": "2026-10-31T22:57:03.874724+00:00",
   "leaves": [
     "bv-women-bags-mini",
     "bv-women-bags-crossbody",
@@ -998,11 +998,11 @@
       "sizeChartId": "",
       "sizeGuide": null,
       "imageUrls": [
-        "https://bottega-veneta.dam.kering.com/asset/f348221c-0215-4dba-a275-8755292af2dd/eCom/874957VCPP11911_A.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/f348221c-0215-4dba-a275-8755292af2dd/eCom/874957VCPP11911_A.jpg?v=3",
         "https://bottega-veneta.dam.kering.com/asset/3a2e7a3a-6778-4daa-8b7c-32606503e75b/eCom/874957VCPP11911_C.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/42e63b62-9815-4478-9bd7-e1ff3fb2a84e/eCom/874957VCPP11911_D.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/c71369dc-8fd5-4fce-a911-5ce5441045bc/eCom/874957VCPP11911_F.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/f348221c-0215-4dba-a275-8755292af2dd/Small/874957VCPP11911_A.jpg?v=2"
+        "https://bottega-veneta.dam.kering.com/asset/f348221c-0215-4dba-a275-8755292af2dd/Small/874957VCPP11911_A.jpg?v=3"
       ],
       "localImages": [
         "/products/bv-pdp/874957vcpp11911/1.jpg",
@@ -22693,7 +22693,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/andiamo-clutch-25-dark-caramel-20-A005POV0HW09874.html",
       "gbpPrice": 2580.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Lambskin",
         "Colour: Dark Caramel 20",
@@ -22729,7 +22729,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 2580.0,
           "listGbpPrice": null
         }

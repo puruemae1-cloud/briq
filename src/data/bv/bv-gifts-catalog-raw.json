@@ -1,7 +1,7 @@
 {
   "hub": "gifts",
   "category": "accessories",
-  "scrapedAt": "2026-10-30T21:34:11.972878+00:00",
+  "scrapedAt": "2026-11-01T00:05:43.686628+00:00",
   "leaves": [
     "bv-gifts-her-bags",
     "bv-gifts-her-shoes",
@@ -1065,11 +1065,11 @@
       "sizeChartId": "",
       "sizeGuide": null,
       "imageUrls": [
-        "https://bottega-veneta.dam.kering.com/asset/f348221c-0215-4dba-a275-8755292af2dd/eCom/874957VCPP11911_A.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/f348221c-0215-4dba-a275-8755292af2dd/eCom/874957VCPP11911_A.jpg?v=3",
         "https://bottega-veneta.dam.kering.com/asset/3a2e7a3a-6778-4daa-8b7c-32606503e75b/eCom/874957VCPP11911_C.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/42e63b62-9815-4478-9bd7-e1ff3fb2a84e/eCom/874957VCPP11911_D.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/c71369dc-8fd5-4fce-a911-5ce5441045bc/eCom/874957VCPP11911_F.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/f348221c-0215-4dba-a275-8755292af2dd/Small/874957VCPP11911_A.jpg?v=2"
+        "https://bottega-veneta.dam.kering.com/asset/f348221c-0215-4dba-a275-8755292af2dd/Small/874957VCPP11911_A.jpg?v=3"
       ],
       "localImages": [
         "/products/bv-pdp/874957vcpp11911/1.jpg",
@@ -9107,7 +9107,7 @@
           "id": "35",
           "value": "35",
           "displayValue": "35",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 760.0,
           "listGbpPrice": null
         },
@@ -13903,14 +13903,6 @@
           "listGbpPrice": null
         },
         {
-          "id": "35_5",
-          "value": "35_5",
-          "displayValue": "35.5",
-          "inStock": false,
-          "gbpPrice": 1110.0,
-          "listGbpPrice": null
-        },
-        {
           "id": "36",
           "value": "36",
           "displayValue": "36",
@@ -13962,7 +13954,7 @@
           "id": "42",
           "value": "42",
           "displayValue": "42",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1110.0,
           "listGbpPrice": null
         }
@@ -18886,7 +18878,7 @@
           "id": "37",
           "value": "37",
           "displayValue": "37",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 880.0,
           "listGbpPrice": null
         },
@@ -40023,7 +40015,7 @@
           "id": "90",
           "value": "90",
           "displayValue": "90",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 560.0,
           "listGbpPrice": null
         },
@@ -42165,7 +42157,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/knot-aviator-sunglasses-brown-841235VBL802042.html",
       "gbpPrice": 490.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Brown"
       ],
@@ -42203,7 +42195,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 490.0,
           "listGbpPrice": null
         }
@@ -45035,7 +45027,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/small-intrecciato-zipped-tote-black-795628V71Q08803.html",
       "gbpPrice": 3660.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Canvas",
         "Colour: Black",
@@ -45077,7 +45069,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 3660.0,
           "listGbpPrice": null
         }
@@ -46913,7 +46905,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/diago-deep-mahogany-795637V4FV16144.html",
       "gbpPrice": 2220.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Calfskin bonded Intreccio",
         "Colour: Deep Mahogany",
@@ -46954,7 +46946,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 2220.0,
           "listGbpPrice": null
         }
@@ -63257,7 +63249,7 @@
           "id": "45",
           "value": "45",
           "displayValue": "45",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 710.0,
           "listGbpPrice": null
         },
@@ -71385,7 +71377,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/cassette-zip-around-wallet-black-parakeet-814649VBWD51042.html",
       "gbpPrice": 770.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Calfskin",
         "Colour: Black/Parakeet",
@@ -71421,7 +71413,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 770.0,
           "listGbpPrice": null
         }

@@ -1,7 +1,7 @@
 {
   "hub": "men-clothing",
   "category": "luxury",
-  "scrapedAt": "2026-10-30T19:57:12.289777+00:00",
+  "scrapedAt": "2026-10-31T22:36:40.244315+00:00",
   "leaves": [
     "bv-men-clothing-coats",
     "bv-men-clothing-jackets",
@@ -17966,7 +17966,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/cashmere-cardigan-navy-777588V2MM04121.html",
       "gbpPrice": 1750.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Colour: Navy"
       ],
@@ -18086,7 +18086,7 @@
           "id": "XL",
           "value": "XL",
           "displayValue": "XL",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1750.0,
           "listGbpPrice": null
         }
@@ -18831,7 +18831,7 @@
           "id": "52",
           "value": "52",
           "displayValue": "52",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 4280.0,
           "listGbpPrice": null
         }
@@ -32053,7 +32053,7 @@
           "id": "46",
           "value": "46",
           "displayValue": "46",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 1430.0,
           "listGbpPrice": null
         },
