@@ -37,9 +37,34 @@ function CardSlide({
     setStatus("loading");
   }, [resolved]);
 
+  useEffect(() => {
+    if (status !== "loading" || !shown) return;
+    const t = window.setTimeout(() => {
+      const altUrl = mediaUrlFallback(resolved);
+      if (altUrl && altUrl !== shown) {
+        setShown(altUrl);
+        setStatus("loading");
+        return;
+      }
+      setStatus("failed");
+    }, 4500);
+    return () => window.clearTimeout(t);
+  }, [status, shown, resolved]);
+
   const markReady = (el: HTMLImageElement | null) => {
-    if (el && el.complete && el.naturalWidth > 0) {
+    if (!el) return;
+    if (el.complete && el.naturalWidth > 0) {
       setStatus("ready");
+      return;
+    }
+    if (el.complete && el.naturalWidth === 0) {
+      const altUrl = mediaUrlFallback(resolved);
+      if (altUrl && altUrl !== shown) {
+        setShown(altUrl);
+        setStatus("loading");
+        return;
+      }
+      setStatus("failed");
     }
   };
 
