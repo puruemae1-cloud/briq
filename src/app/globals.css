@@ -2758,11 +2758,6 @@ body:has(.nav-drawer-toggle:checked) {
 }
 
 /* Flannels interstitial — Option 3 concise chic under 시그니처 의류 rail */
-.look-banner--flannels .look-banner__eyebrow {
-  font-size: 1.44rem;
-  letter-spacing: 0.28em;
-}
-
 .look-banner--flannels {
   margin-top: 0.35rem;
 }
@@ -2798,7 +2793,15 @@ body:has(.nav-drawer-toggle:checked) {
 }
 
 .look-banner--flannels .look-banner__support {
-  max-width: 22rem;
+  max-width: 38rem;
+  white-space: nowrap;
+}
+
+@media (max-width: 899px) {
+  .look-banner--flannels .look-banner__support {
+    max-width: min(38rem, 92vw);
+    white-space: normal;
+  }
 }
 
 .look-banner--flannels .look-banner__shade {
@@ -2826,9 +2829,7 @@ body:has(.nav-drawer-toggle:checked) {
     );
   }
 
-  .look-banner--flannels .look-banner__support {
-    max-width: 20rem;
-  }
+  /* support width handled above */
 }
 
 
