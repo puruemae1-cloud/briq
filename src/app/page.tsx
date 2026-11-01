@@ -5,6 +5,7 @@ import { BannerImage } from "@/components/BannerImage";
 import {
   Collection100,
 } from "@/components/Collection100";
+import { FlannelsHomeBanner } from "@/components/FlannelsHomeBanner";
 import { LookBannerBlock } from "@/components/LookBanner";
 import { ProductCard } from "@/components/ProductCard";
 import { heroImage, homeLookBanners, resolveHomeRailLinks } from "@/data/home-banners";
@@ -145,6 +146,8 @@ export default async function HomePage() {
                   </div>
                 </section>
               ) : null}
+
+              {banner.id === "luxury" ? <FlannelsHomeBanner /> : null}
 
               {banner.id === "watches" ? (
                 <section className="manifesto" aria-label="Briq manifesto">
