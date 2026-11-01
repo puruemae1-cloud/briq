@@ -2799,15 +2799,15 @@ body:has(.nav-drawer-toggle:checked) {
 .look-banner--flannels .look-banner__shade {
   background: linear-gradient(
     90deg,
-    rgba(12, 10, 8, 0.72) 0%,
-    rgba(12, 10, 8, 0.42) 38%,
-    rgba(12, 10, 8, 0.12) 62%,
-    transparent 78%
+    rgba(12, 10, 8, 0.78) 0%,
+    rgba(12, 10, 8, 0.52) 36%,
+    rgba(12, 10, 8, 0.22) 58%,
+    rgba(12, 10, 8, 0.08) 78%
   );
 }
 
 @media (max-width: 899px) {
-  /* Official Amplience mobile hero is 1:1 — don’t force 4/3 crop */
+  /* Liberty store interior — square crop on mobile asset, stage 1:1 */
   .look-banner--flannels.look-banner--fullframe {
     aspect-ratio: 1 / 1;
   }
@@ -2815,9 +2815,9 @@ body:has(.nav-drawer-toggle:checked) {
   .look-banner--flannels .look-banner__shade {
     background: linear-gradient(
       180deg,
-      transparent 28%,
-      rgba(12, 10, 8, 0.35) 52%,
-      rgba(12, 10, 8, 0.78) 100%
+      rgba(12, 10, 8, 0.28) 0%,
+      rgba(12, 10, 8, 0.45) 45%,
+      rgba(12, 10, 8, 0.82) 100%
     );
   }
 

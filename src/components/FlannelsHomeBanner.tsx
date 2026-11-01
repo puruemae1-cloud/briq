@@ -6,8 +6,8 @@ import { bannerFocalForSrc } from "@/lib/banner-focal";
 /** Locked Christmas 2026 Burberry dual-gender hero — Flannels Amplience. */
 const IMAGE = "/banners/flannels-heritage-britain.jpg";
 const HREF = "/shop?category=luxury&sub=flannels";
-/** Left third is log wall / skis — keep models toward the right. */
-const FOCAL = "62% 48%";
+/** Store interior — keep FLANNELS sign + counter in frame. */
+const FOCAL = "50% 42%";
 
 /**
  * Interstitial under 시그니처 의류 컬렉션 (luxury rail).
@@ -21,7 +21,7 @@ export function FlannelsHomeBanner() {
       className="look-banner look-banner--flannels look-banner--left look-banner--fullframe"
       style={
         {
-          "--look-banner-aspect": "3000 / 1000",
+          "--look-banner-aspect": "4 / 3",
         } as CSSProperties
       }
       aria-label="FLANNELS Heritage of Britain"
