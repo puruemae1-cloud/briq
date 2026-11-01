@@ -17,7 +17,7 @@
       "sale",
       "moschino"
     ],
-    "descriptionKo": "플랫폼 솔로 높이감과 안정감을 함께 주는 모스키노 여성 샌들입니다. 오픈형 디자인으로 따뜻한 계절에 착용하기 좋습니다.",
+    "descriptionKo": "모스키노 여성 플랫폼 샌들로 자신감 있는 실루엣을 완성해 보세요. 높이감은 살리면서도 균형은 놓치지 않는 플랫폼 솔이 안정적인 보행을 도와, 존재감과 편안함을 함께 담았습니다.\n\n제품 포인트\n• 안정적인 발걸음을 돕는 플랫폼 솔\n• 따뜻한 계절에 어울리는 오픈형 디자인\n• 캐주얼 룩에도 잘 맞는 모던한 실루엣",
     "image": "https://cdn.media.amplience.net/i/frasersdev/23265001_o.jpg?v=20260323101131",
     "images": [
       "https://cdn.media.amplience.net/i/frasersdev/23265001_o.jpg?v=20260323101131",
@@ -42,6 +42,8 @@
         "nameKo": "모스키노 여성 플랫폼 샌들 — UK 2",
         "sku": "23265001-UK2",
         "size": "UK 2 (EU 35)",
+        "colorKey": "white",
+        "colorNameKo": "화이트",
         "gbpPrice": 68.0,
         "price": 156000,
         "compareAtPrice": 1030800,
@@ -60,6 +62,8 @@
         "nameKo": "모스키노 여성 플랫폼 샌들 — UK 3",
         "sku": "23265001-UK3",
         "size": "UK 3 (EU 36)",
+        "colorKey": "white",
+        "colorNameKo": "화이트",
         "gbpPrice": 68.0,
         "price": 156000,
         "compareAtPrice": 1030800,
@@ -78,6 +82,8 @@
         "nameKo": "모스키노 여성 플랫폼 샌들 — UK 3.5",
         "sku": "23265001-UK3.5",
         "size": "UK 3.5 (EU 36.5)",
+        "colorKey": "white",
+        "colorNameKo": "화이트",
         "gbpPrice": 68.0,
         "price": 156000,
         "compareAtPrice": 1030800,
@@ -96,6 +102,8 @@
         "nameKo": "모스키노 여성 플랫폼 샌들 — UK 4",
         "sku": "23265001-UK4",
         "size": "UK 4 (EU 37)",
+        "colorKey": "white",
+        "colorNameKo": "화이트",
         "gbpPrice": 68.0,
         "price": 156000,
         "compareAtPrice": 1030800,
@@ -114,6 +122,8 @@
         "nameKo": "모스키노 여성 플랫폼 샌들 — UK 4.5",
         "sku": "23265001-UK4.5",
         "size": "UK 4.5 (EU 37.5)",
+        "colorKey": "white",
+        "colorNameKo": "화이트",
         "gbpPrice": 68.0,
         "price": 156000,
         "compareAtPrice": 1030800,
@@ -132,6 +142,8 @@
         "nameKo": "모스키노 여성 플랫폼 샌들 — UK 5",
         "sku": "23265001-UK5",
         "size": "UK 5 (EU 38)",
+        "colorKey": "white",
+        "colorNameKo": "화이트",
         "gbpPrice": 68.0,
         "price": 156000,
         "compareAtPrice": 1030800,
@@ -143,7 +155,121 @@
           "https://cdn.media.amplience.net/i/frasersdev/23265001_o_a5.jpg?v=20260323101141"
         ],
         "inStock": true
+      },
+      {
+        "id": "fl-moschino-womens-flatform-sandals-232650-uk55",
+        "name": "Moschino Womens Flatform Sandals — UK 5.5",
+        "nameKo": "모스키노 여성 플랫폼 샌들 — UK 5.5",
+        "sku": "23265001-UK5.5",
+        "size": "UK 5.5 (EU 38.5)",
+        "colorKey": "white",
+        "colorNameKo": "화이트",
+        "gbpPrice": 68.0,
+        "price": 156000,
+        "compareAtPrice": 1030800,
+        "image": "https://cdn.media.amplience.net/i/frasersdev/23265001_o.jpg?v=20260323101131",
+        "images": [
+          "https://cdn.media.amplience.net/i/frasersdev/23265001_o.jpg?v=20260323101131",
+          "https://cdn.media.amplience.net/i/frasersdev/23265001_o_a1.jpg?v=20260323101135",
+          "https://cdn.media.amplience.net/i/frasersdev/23265001_o_a4.jpg?v=20260323101138",
+          "https://cdn.media.amplience.net/i/frasersdev/23265001_o_a5.jpg?v=20260323101141"
+        ],
+        "inStock": false
       }
-    ]
+    ],
+    "featuresKo": [
+      "안정적인 발걸음을 돕는 플랫폼 솔",
+      "따뜻한 계절에 어울리는 오픈형 디자인",
+      "캐주얼 룩에도 잘 맞는 모던한 실루엣"
+    ],
+    "colorNameKo": "화이트",
+    "shopColorKey": "white",
+    "sizeChart": {
+      "id": "fl-womens-footwear-general",
+      "titleKo": "Flannels 여성 슈즈 사이즈 가이드",
+      "noteKo": "브랜드·모델에 따라 사이즈가 다를 수 있습니다. Briq 표기는 Flannels 사이즈 가이드(General) 기준이며, 상품 옵션의 UK(EU) 표기를 우선해 주세요.",
+      "headers": [
+        "UK",
+        "US",
+        "EU"
+      ],
+      "rows": [
+        [
+          "2.5",
+          "5",
+          "35"
+        ],
+        [
+          "3",
+          "5.5",
+          "35½"
+        ],
+        [
+          "3.5",
+          "6",
+          "36"
+        ],
+        [
+          "4",
+          "6.5",
+          "36⅔"
+        ],
+        [
+          "4.5",
+          "7",
+          "37⅓"
+        ],
+        [
+          "5",
+          "7.5",
+          "38"
+        ],
+        [
+          "5.5",
+          "8",
+          "38⅔"
+        ],
+        [
+          "6",
+          "8.5",
+          "39⅓"
+        ],
+        [
+          "6.5",
+          "9",
+          "40"
+        ],
+        [
+          "7",
+          "9.5",
+          "40⅔"
+        ],
+        [
+          "7.5",
+          "10",
+          "41⅓"
+        ],
+        [
+          "8",
+          "10.5",
+          "42"
+        ],
+        [
+          "8.5",
+          "11",
+          "42⅔"
+        ],
+        [
+          "9",
+          "11.5",
+          "43⅓"
+        ],
+        [
+          "9.5",
+          "12",
+          "44"
+        ]
+      ]
+    }
   }
 ]

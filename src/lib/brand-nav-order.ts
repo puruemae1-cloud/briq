@@ -16,6 +16,8 @@ const STRUCTURAL_IDS = new Set([
 
 /** Lower = further left / higher in the list. */
 const FAMILY_RANK: Record<string, number> = {
+  /** Featured UK multi-brand clearance mall — pin to top of category nav. */
+  flannels: 10,
   /** Watches: Christopher Ward before Chanel. */
   "christopher-ward": 50,
   chanel: 100,
@@ -32,7 +34,6 @@ const FAMILY_RANK: Record<string, number> = {
   mismo: 262,
   prada: 265,
   "all-saints": 270,
-  flannels: 271,
   moncler: 272,
   "galvin-green": 275,
   /** Slot for newly added brands — always after known houses, before Burberry. */
@@ -181,6 +182,7 @@ export function sortNavChildrenByBrandOrder<T extends { id: string }>(
 
 /** Preferred slug order for SEO brand hub pages. */
 export const SEO_BRAND_SLUG_ORDER = [
+  "flannels",
   "christopher-ward",
   "chanel",
   "gucci",
