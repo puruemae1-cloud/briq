@@ -83,6 +83,15 @@ const SEO_BRANDS_BY_SLUG: Record<string, SeoBrand> = {
     blurb:
       "멀버리 가방·액세서리를 Briq 영국 셀렉션으로 만나보세요.",
   },
+  flannels: {
+    slug: "flannels",
+    nameEn: "FLANNELS",
+    nameKo: "FLANNELS (영국현지명품몰)",
+    shopHref: "/shop?category=luxury&sub=flannels",
+    keywords: ["플래널스", "Flannels", "FLANNELS", "영국 명품몰", "영국현지명품몰"],
+    blurb:
+      "영국 현지 명품몰 Flannels 클리어런스 셀렉션을 Briq에서 만나보세요.",
+  },
   mismo: {
     slug: "mismo",
     nameEn: "Mismo",

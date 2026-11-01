@@ -17,6 +17,11 @@ export const HOME_FEATURED_DAYS = 30;
 
 export const HOME_FEATURED: HomeFeaturedEntry[] = [
   {
+    id: "fl-moschino-womens-flatform-sandals-232650",
+    featuredAt: "2026-11-01T12:52:49Z",
+    note: "FLANNELS sample — Moschino flatform sandals",
+  },
+  {
     id: "cw-c60-41c3h31t0kk0-b0",
     featuredAt: "2026-10-14T21:50:42Z",
     note: "C60 Trident Lumière black bracelet restock",

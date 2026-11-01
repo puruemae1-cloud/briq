@@ -28,6 +28,7 @@ const FAMILY_DISPLAY: Record<string, string> = {
   prada: "Prada",
   "all-saints": "AllSaints",
   moncler: "Moncler",
+  flannels: "FLANNELS",
   hermes: "Hermès",
 };
 

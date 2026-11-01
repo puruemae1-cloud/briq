@@ -67,6 +67,7 @@ export type BrandKey =
   | "all-saints-accessories"
   | "london-undercover"
   | "moncler"
+  | "flannels"
   | "moncler-shoes"
   | "moncler-accessories"
   | "mismo";
@@ -592,6 +593,15 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     logoSrc: "/brands/moncler.svg",
     // Locked FW26 men's clothing hero.
     images: ["/banners/brand-moncler-accessories.jpg"],
+  },
+  flannels: {
+    key: "flannels",
+    nameEn: "FLANNELS",
+    nameKo: "FLANNELS (영국현지명품몰)",
+    logoSrc: "",
+    images: [
+      "https://cdn.media.amplience.net/i/frasersdev/23265001_o.jpg?v=20260323101131",
+    ],
   },
   mismo: {
     key: "mismo",
@@ -1143,6 +1153,9 @@ export const brandRootToKey: Record<string, BrandKey> = {
   "london-undercover": "london-undercover",
   umbrellas: "london-undercover",
   moncler: "moncler",
+  flannels: "flannels",
+  "fl-women": "flannels",
+  "fl-men": "flannels",
   "moncler-shoes": "moncler-shoes",
   "moncler-accessories": "moncler-accessories",
   mismo: "mismo",

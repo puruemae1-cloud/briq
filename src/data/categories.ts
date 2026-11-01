@@ -1508,6 +1508,9 @@ export type SubcategoryId =
   | "bv-gifts-him-jewellery"
   | "bv-gifts-him-accessories"
   | "moncler"
+  | "flannels"
+  | "fl-women"
+  | "fl-men"
   | "mc-men"
   | "mc-men-outerwear"
   | "mc-outer-short-down"
@@ -5571,6 +5574,9 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "bv-gifts-him-wallets": ["bv-gifts-him-wallets"],
   "bv-gifts-him-jewellery": ["bv-gifts-him-jewellery"],
   "bv-gifts-him-accessories": ["bv-gifts-him-accessories"],
+  flannels: ["fl-women", "fl-men"],
+  "fl-women": ["fl-women"],
+  "fl-men": ["fl-men"],
   moncler: [
     "mc-men",
     "mc-men-outerwear",
@@ -5976,6 +5982,23 @@ export const navCategories: NavCategory[] = [
                 ],
               },
             ],
+          },
+        ],
+      },
+      {
+        id: "flannels",
+        labelKo: "FLANNELS (영국현지명품몰)",
+        href: "/shop?category=luxury&sub=flannels",
+        children: [
+          {
+            id: "fl-women",
+            labelKo: "여성용",
+            href: "/shop?category=luxury&sub=fl-women",
+          },
+          {
+            id: "fl-men",
+            labelKo: "남성용",
+            href: "/shop?category=luxury&sub=fl-men",
           },
         ],
       },
