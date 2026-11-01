@@ -25,7 +25,8 @@ export default async function HomePage() {
 
   // Cross-rail brand exclusivity: a brand on 시그니처 cannot also fill 슈즈/악세서리 등.
   // Watches rail is locked to Christopher Ward New Releases (+ HOME_FEATURED).
-  const { rails: railProducts, deployKey } = await getHomepageData();
+  const { rails: railProducts, flannels: flannelsProducts = [], deployKey } =
+    await getHomepageData();
 
   return (
     <>
@@ -147,7 +148,30 @@ export default async function HomePage() {
                 </section>
               ) : null}
 
-              {banner.id === "luxury" ? <FlannelsHomeBanner /> : null}
+              {banner.id === "luxury" ? (
+                <>
+                  <FlannelsHomeBanner />
+                  {flannelsProducts.length > 0 ? (
+                    <section className="section lookbook__rail lookbook__rail--bleed">
+                      <div className="lookbook__rail-inner">
+                        <div className="section__head">
+                          <div>
+                            <h2>FLANNELS</h2>
+                          </div>
+                          <Link href="/shop?category=luxury&sub=flannels">
+                            전체 보기
+                          </Link>
+                        </div>
+                        <div className="product-grid product-grid--lookbook">
+                          {flannelsProducts.map((p) => (
+                            <ProductCard key={p.id} product={p} />
+                          ))}
+                        </div>
+                      </div>
+                    </section>
+                  ) : null}
+                </>
+              ) : null}
 
               {banner.id === "watches" ? (
                 <section className="manifesto" aria-label="Briq manifesto">
