@@ -19,7 +19,7 @@ export const HOME_FEATURED: HomeFeaturedEntry[] = [
   {
     id: "fl-moschino-womens-flatform-sandals-232650",
     featuredAt: "2026-11-01T12:52:49Z",
-    note: "FLANNELS sample — Moschino flatform sandals",
+    note: "FLANNELS clearance — discount TOP women/men batch",
   },
   {
     id: "cw-c60-41c3h31t0kk0-b0",
