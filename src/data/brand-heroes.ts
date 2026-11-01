@@ -599,9 +599,8 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     nameEn: "FLANNELS",
     nameKo: "FLANNELS (영국현지명품몰)",
     logoSrc: "",
-    images: [
-      "https://cdn.media.amplience.net/i/frasersdev/23265001_o.jpg?v=20260323101131",
-    ],
+    // Christmas 2026 dual-gender Burberry outerwear hero (desktop / banners/m mobile).
+    images: ["/banners/brand-flannels.jpg"],
   },
   mismo: {
     key: "mismo",

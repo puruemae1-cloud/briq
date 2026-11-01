@@ -11,6 +11,8 @@ type Manifest = {
 /** Locked creatives with a preferred object-position (head/product framing). */
 const FOCAL_OVERRIDES: Record<string, string> = {
   /* Burberry RTW — scarf hood; eyes to mouth on 1920 PC */
+  "brand-flannels.jpg": "center 42%",
+  "brand-flannels.webp": "center 42%",
   "brand-burberry-scarf.jpg": "center 46%",
   "brand-burberry-scarf.webp": "center 46%",
   /* Bags PLP night check tote — face + tote */
