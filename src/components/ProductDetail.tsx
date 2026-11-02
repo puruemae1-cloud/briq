@@ -157,7 +157,7 @@ export function ProductDetail({
       return allVariants.map((v) => ({
         key: v.id,
         nameKo: v.nameKo,
-        image: v.image,
+        image: v.swatchImage || v.image,
         variants: [v],
         inStock: v.inStock,
       }));
@@ -172,14 +172,16 @@ export function ProductDetail({
         map.set(key, {
           key,
           nameKo: v.colorNameKo || (hasExplicitColorKeys ? v.nameKo : "기본"),
-          image: v.image,
+          image: v.swatchImage || v.image,
           variants: [v],
           inStock: v.inStock,
         });
       } else {
         existing.variants.push(v);
         if (v.inStock) existing.inStock = true;
-        if (!existing.image && v.image) existing.image = v.image;
+        if (!existing.image && (v.swatchImage || v.image)) {
+          existing.image = v.swatchImage || v.image;
+        }
       }
     }
     const groups = Array.from(map.values());
@@ -316,14 +318,27 @@ export function ProductDetail({
   const primaryImage = resolveProductImage(product.image, selected?.image);
   const galleryImages = (() => {
     const variantGallery = selected?.images?.filter(Boolean) ?? [];
-    if (variantGallery.length > 0) return variantGallery;
-    const productGallery = product.images?.filter(Boolean) ?? [];
-    if (selected?.image) {
-      const rest = productGallery.filter((src) => src !== selected.image);
-      return [selected.image, ...rest];
+    let base: string[];
+    if (variantGallery.length > 0) {
+      base = variantGallery;
+    } else {
+      const productGallery = product.images?.filter(Boolean) ?? [];
+      if (selected?.image) {
+        const rest = productGallery.filter((src) => src !== selected.image);
+        base = [selected.image, ...rest];
+      } else if (productGallery.length > 0) {
+        base = productGallery;
+      } else {
+        base = [primaryImage];
+      }
     }
-    if (productGallery.length > 0) return productGallery;
-    return [primaryImage];
+    // Buckle / hardware: lead the gallery with the option photo so clicking a
+    // clasp/buckle chip visibly changes the hero (packshots follow).
+    const swatch = selected?.swatchImage;
+    if (swatch) {
+      return [swatch, ...base.filter((src) => src !== swatch)];
+    }
+    return base;
   })();
   const soldOut = !selectedAvailable;
   const salePct = productSalePercent(product, selected);
@@ -345,10 +360,17 @@ export function ProductDetail({
       : selected.nameKo
     : "";
 
+  const buckleOnlyOptions =
+    product.brand === "NORQAIN" &&
+    !hasSizes &&
+    allVariants.length > 1 &&
+    allVariants.every((v) => Boolean(v.swatchImage));
   const variantLabel =
     product.brand === "Christopher Ward"
       ? "스트랩"
-      : "컬러";
+      : buckleOnlyOptions
+        ? "버클"
+        : "컬러";
 
   const sizeAxisLabel = isCw ? "케이스 사이즈" : "사이즈";
 
@@ -370,6 +392,11 @@ export function ProductDetail({
             <span className="product-detail__stock"> · Sold Out</span>
           ) : null}
         </p>
+        {buckleOnlyOptions ? (
+          <p className="variant-block__hint">
+            시계 본체·스트랩은 같고, 아래 사진은 버클(잠금장치) 옵션입니다.
+          </p>
+        ) : null}
         <ColorSwatches
           productId={product.id}
           colors={colorGroupsForUi}

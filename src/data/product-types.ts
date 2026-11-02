@@ -29,6 +29,12 @@ export type ProductVariant = {
   /** Optional multi-image gallery for this strap/colour option. */
   images?: string[];
   /**
+   * Optional picker thumbnail when the packshot alone cannot tell options
+   * apart (e.g. NORQAIN buckle material). Color swatches prefer this over
+   * `image`; the main gallery can surface it after the hero packshot.
+   */
+  swatchImage?: string;
+  /**
    * Official brand PLP hover/swap photo for this colourway.
    * When omitted, cards fall back to the first gallery frame ≠ primary.
    */
