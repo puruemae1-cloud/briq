@@ -1,0 +1,33 @@
+name: PLP thumb load guard
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "src/components/ProductCardMedia.tsx"
+      - "src/components/ProductImage.tsx"
+      - "src/app/globals.css"
+      - "scripts/check-plp-thumb-load.py"
+  pull_request:
+    paths:
+      - "src/components/ProductCardMedia.tsx"
+      - "src/components/ProductImage.tsx"
+      - "src/app/globals.css"
+      - "scripts/check-plp-thumb-load.py"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: plp-thumb-load-guard
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Guard mobile PLP thumb eager-load contract
+        run: python3 scripts/check-plp-thumb-load.py
