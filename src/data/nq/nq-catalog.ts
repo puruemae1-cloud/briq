@@ -609,7 +609,7 @@ const _nqCatalogProducts: Product[] = [
     registeredAt: "2026-03-30T10:00:56Z",
     editTier: "signature",
     featuresKo: ["매뉴팩처 칼리버", "Yellow Flex Strap X-Lite", "Case construction with more than 30 components", "Double layered rubber or stretch strap", "Black NORTEQ® case parts (top, bottom and side parts)", "Sandblasted black DLC titanium container with an aluminium case back", "양면 반사 방지·스크래치 방지 평면 사파이어 글라스", "스크래치 방지 평면 사파이어 글라스의 오픈 케이스백 printed with “리미티드 에디션, ONE of 200” in yellow", "NORTEQ® screw-down crown, overmolded with yellow rubber and NORQAIN logo", "Engraved black NORTEQ® NORQAIN plate on the left side of the case", "Skeletonised black dial with yellow printings", "Yellow Super-LumiNova® outlined index on dial"],
-    techSpecs: [{"labelKo": "컬렉션", "valueKo": "Wild ONE"}, {"labelKo": "4K 매뉴팩처 칼리버", "valueKo": "COSC 인증"}, {"labelKo": "직경", "valueKo": "41.00mm"}, {"labelKo": "두께", "valueKo": "11.95mm"}, {"labelKo": "Width between lugs", "valueKo": "20.00mm"}, {"labelKo": "Lug to lug", "valueKo": "48.70mm"}, {"labelKo": "원산지", "valueKo": "스위스 메이드"}],
+    techSpecs: [{"labelKo": "컬렉션", "valueKo": "Wild ONE"}, {"labelKo": "4K 매뉴팩처 칼리버", "valueKo": "COSC 인증"}, {"labelKo": "직경", "valueKo": "41.00mm"}, {"labelKo": "두께", "valueKo": "11.95mm"}, {"labelKo": "러그 폭", "valueKo": "20.00mm"}, {"labelKo": "러그 투 러그", "valueKo": "48.70mm"}, {"labelKo": "원산지", "valueKo": "스위스 메이드"}],
     storySections: [
       {
         titleKo: "초경량이면서 매우 견고한 케이스 구조",
@@ -677,7 +677,7 @@ const _nqCatalogProducts: Product[] = [
     registeredAt: "2026-03-31T14:23:19Z",
     editTier: "signature",
     featuresKo: ["매뉴팩처 칼리버", "Flyback 크로노 movement", "Black NORTEQ® case back (bottom part)", "Sandblasted titanium container and case back", "양면 반사 방지·스크래치 방지 평면 사파이어 글라스", "스크래치 방지 평면 사파이어 글라스의 오픈 케이스백 printed with \"리미티드 에디션, ONE of 75\" in gold", "Screw-down crown, overmolded with grey rubber and NORQAIN logo", "Engraved black 18 ct 5N red gold NORQAIN plate on the left side of the case", "Skeletonised black dial with white and gold printings", "Diamond-cut, faceted, gold plated indexes filled with white Super-LumiNova®", "Diamond-cut faceted hour and minute hands, gold plated, filled with white Super-LumiNova®", "Diamond-cut flat central 크로노 hand, gold plated, filled with white Super-LumiNova®"],
-    techSpecs: [{"labelKo": "컬렉션", "valueKo": "Wild ONE"}, {"labelKo": "8K 매뉴팩처 칼리버", "valueKo": "COSC 인증"}, {"labelKo": "직경", "valueKo": "42.00mm"}, {"labelKo": "두께", "valueKo": "13.60mm"}, {"labelKo": "Width between lugs", "valueKo": "22.00mm"}, {"labelKo": "Lug to lug", "valueKo": "49.40mm"}, {"labelKo": "원산지", "valueKo": "스위스 메이드"}],
+    techSpecs: [{"labelKo": "컬렉션", "valueKo": "Wild ONE"}, {"labelKo": "8K 매뉴팩처 칼리버", "valueKo": "COSC 인증"}, {"labelKo": "직경", "valueKo": "42.00mm"}, {"labelKo": "두께", "valueKo": "13.60mm"}, {"labelKo": "러그 폭", "valueKo": "22.00mm"}, {"labelKo": "러그 투 러그", "valueKo": "49.40mm"}, {"labelKo": "원산지", "valueKo": "스위스 메이드"}],
     storySections: [
       {
         titleKo: "FLOATING TRANSPARENT DISCS",
@@ -757,7 +757,7 @@ const _nqCatalogProducts: Product[] = [
     registeredAt: "2026-03-31T14:21:54Z",
     editTier: "signature",
     featuresKo: ["매뉴팩처 칼리버", "Pin buckle", "Flyback 크로노 movement", "Ultra-robust & ultra-light NORTEQ® Material", "Burgundy NORTEQ® cage (top and bottom parts)", "Sandblasted titanium container and case back", "양면 반사 방지·스크래치 방지 평면 사파이어 글라스", "스크래치 방지 평면 사파이어 글라스의 오픈 케이스백 printed with \"리미티드 에디션, ONE of 400\" in burgundy", "Screw-down crown, overmolded with black rubber and NORQAIN logo", "Engraved burgundy NORTEQ® NORQAIN plate on the left side of the case", "Skeletonised black dial with white and burgundy printings", "Diamond-cut, faceted, rhodium plated indexes filled with white Super-LumiNova®"],
-    techSpecs: [{"labelKo": "컬렉션", "valueKo": "Wild ONE"}, {"labelKo": "8K 매뉴팩처 칼리버", "valueKo": "COSC 인증"}, {"labelKo": "직경", "valueKo": "42.00mm"}, {"labelKo": "두께", "valueKo": "13.60mm"}, {"labelKo": "Width between lugs", "valueKo": "22.00mm"}, {"labelKo": "Lug to lug", "valueKo": "49.40mm"}, {"labelKo": "원산지", "valueKo": "스위스 메이드"}],
+    techSpecs: [{"labelKo": "컬렉션", "valueKo": "Wild ONE"}, {"labelKo": "8K 매뉴팩처 칼리버", "valueKo": "COSC 인증"}, {"labelKo": "직경", "valueKo": "42.00mm"}, {"labelKo": "두께", "valueKo": "13.60mm"}, {"labelKo": "러그 폭", "valueKo": "22.00mm"}, {"labelKo": "러그 투 러그", "valueKo": "49.40mm"}, {"labelKo": "원산지", "valueKo": "스위스 메이드"}],
     storySections: [
       {
         titleKo: "FLOATING TRANSPARENT DISCS",
@@ -825,7 +825,7 @@ const _nqCatalogProducts: Product[] = [
     registeredAt: "2026-03-18T10:50:22Z",
     editTier: "signature",
     featuresKo: ["매뉴팩처 칼리버", "Pin buckle", "Flyback 크로노 movement", "Ultra-robust & ultra-light NORTEQ® Material", "Black NORTEQ® cage (top and bottom parts)", "Sandblasted titanium container and case back", "양면 반사 방지·스크래치 방지 평면 사파이어 글라스", "스크래치 방지 평면 사파이어 글라스의 오픈 케이스백", "Screw-down crown, overmolded with black rubber and NORQAIN logo", "Engraved black NORTEQ® NORQAIN plate on the left side of the case", "Skeletonised black dial with white and 터콰이즈 printings", "Diamond-cut, faceted, rhodium plated indexes filled with 터콰이즈 Super-LumiNova®"],
-    techSpecs: [{"labelKo": "컬렉션", "valueKo": "Wild ONE"}, {"labelKo": "8K 매뉴팩처 칼리버", "valueKo": "COSC 인증"}, {"labelKo": "직경", "valueKo": "42.00mm"}, {"labelKo": "두께", "valueKo": "13.60mm"}, {"labelKo": "Width between lugs", "valueKo": "22.00mm"}, {"labelKo": "Lug to lug", "valueKo": "49.40mm"}, {"labelKo": "원산지", "valueKo": "스위스 메이드"}],
+    techSpecs: [{"labelKo": "컬렉션", "valueKo": "Wild ONE"}, {"labelKo": "8K 매뉴팩처 칼리버", "valueKo": "COSC 인증"}, {"labelKo": "직경", "valueKo": "42.00mm"}, {"labelKo": "두께", "valueKo": "13.60mm"}, {"labelKo": "러그 폭", "valueKo": "22.00mm"}, {"labelKo": "러그 투 러그", "valueKo": "49.40mm"}, {"labelKo": "원산지", "valueKo": "스위스 메이드"}],
     storySections: [
       {
         titleKo: "FLOATING TRANSPARENT DISCS",

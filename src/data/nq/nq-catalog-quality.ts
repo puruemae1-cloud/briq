@@ -35,6 +35,12 @@ export function assertNqCatalogQuality(products: Product[]): void {
     }
     if (!p.techSpecs || p.techSpecs.length < 4) {
       errors.push(`${id}: techSpecs too few`);
+    } else {
+      for (const [i, spec] of p.techSpecs.entries()) {
+        if (/^[A-Za-z][A-Za-z \/-]{2,}$/.test(spec.labelKo || "")) {
+          errors.push(`${id}: techSpecs[${i}] label still English (${spec.labelKo})`);
+        }
+      }
     }
     if (!p.featuresKo || p.featuresKo.length < 2) {
       errors.push(`${id}: featuresKo too few`);
