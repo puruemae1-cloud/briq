@@ -17,9 +17,13 @@ const RAIL_BLOCKED_BRANDS: Record<string, ReadonlySet<string>> = {
   luxury: new Set(["arcteryx", "belstaff"]),
 };
 
-/** Minimum distinct brands on a rail, so one new launch cannot fill every slot. */
+/** @deprecated Picker always unique-brands first; kept for call-site compat. */
 const RAIL_MIN_BRANDS: Record<string, number> = {
-  luxury: 3,
+  luxury: 4,
+  bags: 4,
+  shoes: 4,
+  accessories: 4,
+  sports: 4,
 };
 
 /** Homepage watches rail is locked to Christopher Ward New Releases (all devices). */
@@ -85,6 +89,7 @@ const ID_PREFIX_BRAND: Array<{ prefix: string; brand: string }> = [
   { prefix: "cw-", brand: "christopher-ward" },
   { prefix: "lu-", brand: "london-undercover" },
   { prefix: "mc-", brand: "moncler" },
+  { prefix: "fl-", brand: "flannels" },
 ];
 
 const BRAND_ALIASES: Array<{ re: RegExp; brand: string }> = [
@@ -106,6 +111,7 @@ const BRAND_ALIASES: Array<{ re: RegExp; brand: string }> = [
   { re: /christopher\s*ward|크리스토퍼/i, brand: "christopher-ward" },
   { re: /london\s*undercover|런던언더커버/i, brand: "london-undercover" },
   { re: /moncler|몽클레/i, brand: "moncler" },
+  { re: /flannels|플란넬/i, brand: "flannels" },
 ];
 
 /** Stable brand key for homepage cross-rail exclusivity. */
@@ -129,18 +135,15 @@ export function homepageBrandKey(product: Product): string {
 
 /**
  * Pick up to `limit` newest in-stock products, skipping brands in `excludeBrands`.
- * Does not soft-fill with excluded brands — empty slots stay empty so another
- * brand can surface rather than repeating a brand already on an earlier rail.
- *
- * With `minBrands`, a repeat of an already-picked brand is skipped while the
- * remaining slots are needed to reach that many brands; skipped products only
- * back-fill when the pool has too few brands.
+ * Always prefers one product per brand first so lookbook rails stay mixed
+ * (bags/shoes/luxury/…). Same-brand extras only soft-fill when the pool has
+ * fewer distinct brands than slots (e.g. watches = Christopher Ward only).
  */
 export function getHomepageRailProductsExclusive(
   list: Product[],
   limit = 4,
   excludeBrands: ReadonlySet<string> = new Set(),
-  minBrands = 1,
+  _minBrands = 1,
 ): Product[] {
   const inStock = list.filter((p) => isProductInStock(p));
   const eligible = (inStock.length >= limit ? inStock : list).filter(
@@ -154,16 +157,14 @@ export function getHomepageRailProductsExclusive(
     const key = homepageBrandKey(product);
     if (excludeBrands.has(key) && homepageFeaturedAt(product) == null) continue;
     if (brands.has(key)) {
-      const slotsAfter = limit - out.length - 1;
-      if (minBrands - brands.size > slotsAfter) {
-        skipped.push(product);
-        continue;
-      }
+      skipped.push(product);
+      continue;
     }
     out.push(product);
     brands.add(key);
     if (out.length >= limit) break;
   }
+  // Soft-fill only after unique brands are exhausted.
   for (const product of skipped) {
     if (out.length >= limit) break;
     out.push(product);
