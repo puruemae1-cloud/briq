@@ -447,7 +447,7 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
   "norqain": {
     key: "norqain",
     nameEn: "NORQAIN",
-    nameKo: "노르케인",
+    nameKo: "NORQAIN",
     logoSrc: "/brands/norqain.svg",
     images: ["/banners/brand-norqain.jpg"],
   },

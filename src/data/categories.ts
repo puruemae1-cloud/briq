@@ -7129,7 +7129,7 @@ export const navCategories: NavCategory[] = [
       },
       {
         id: "norqain",
-        labelKo: "노르케인",
+        labelKo: "NORQAIN",
         href: "/shop?category=watches&sub=norqain",
         children: [
           {
