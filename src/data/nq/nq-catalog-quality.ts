@@ -18,6 +18,14 @@ export function assertNqCatalogQuality(products: Product[]): void {
     if (/공홈 기준 옵션·가격을 반영했습니다/.test(p.descriptionKo || "")) {
       errors.push(`${id}: stub descriptionKo`);
     }
+    {
+      const text = p.descriptionKo || "";
+      const latin = (text.match(/[A-Za-z]/g) || []).length;
+      const hangul = (text.match(/[\uac00-\ud7a3]/g) || []).length;
+      if (latin > 40 && latin > hangul) {
+        errors.push(`${id}: descriptionKo still mostly English`);
+      }
+    }
     if (!p.storySections || p.storySections.length < 1) {
       errors.push(`${id}: missing storySections`);
     } else {
