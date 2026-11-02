@@ -14,6 +14,15 @@ export type SubcategoryId =
   | "mens"
   | "golf"
   | "christopher-ward"
+  | "norqain"
+  | "nq-ladies"
+  | "nq-gents"
+  | "nq-limited"
+  | "nq-manufacture"
+  | "nq-freedom"
+  | "nq-adventure"
+  | "nq-independence"
+  | "nq-wild-one"
   | "cw-new-releases"
   | "cw-bestsellers"
   | "cw-hidden-gems"
@@ -5575,6 +5584,15 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "bv-gifts-him-jewellery": ["bv-gifts-him-jewellery"],
   "bv-gifts-him-accessories": ["bv-gifts-him-accessories"],
   flannels: ["fl-women", "fl-men"],
+  norqain: ["nq-wild-one", "nq-independence", "nq-adventure", "nq-freedom", "nq-manufacture", "nq-limited", "nq-gents", "nq-ladies"],
+  "nq-wild-one": ["nq-wild-one"],
+  "nq-independence": ["nq-independence"],
+  "nq-adventure": ["nq-adventure"],
+  "nq-freedom": ["nq-freedom"],
+  "nq-manufacture": ["nq-manufacture"],
+  "nq-limited": ["nq-limited"],
+  "nq-gents": ["nq-gents"],
+  "nq-ladies": ["nq-ladies"],
   "fl-women": ["fl-women"],
   "fl-men": ["fl-men"],
   moncler: [
@@ -7109,6 +7127,54 @@ export const navCategories: NavCategory[] = [
           },
         ],
       },
+      {
+        id: "norqain",
+        labelKo: "노르케인",
+        href: "/shop?category=watches&sub=norqain",
+        children: [
+          {
+            id: "nq-wild-one",
+            labelKo: "Wild ONE",
+            href: "/shop?category=watches&sub=nq-wild-one",
+          },
+          {
+            id: "nq-independence",
+            labelKo: "Independence",
+            href: "/shop?category=watches&sub=nq-independence",
+          },
+          {
+            id: "nq-adventure",
+            labelKo: "Adventure",
+            href: "/shop?category=watches&sub=nq-adventure",
+          },
+          {
+            id: "nq-freedom",
+            labelKo: "Freedom",
+            href: "/shop?category=watches&sub=nq-freedom",
+          },
+          {
+            id: "nq-manufacture",
+            labelKo: "Manufacture Calibre",
+            href: "/shop?category=watches&sub=nq-manufacture",
+          },
+          {
+            id: "nq-limited",
+            labelKo: "Limited Edition",
+            href: "/shop?category=watches&sub=nq-limited",
+          },
+          {
+            id: "nq-gents",
+            labelKo: "Gents",
+            href: "/shop?category=watches&sub=nq-gents",
+          },
+          {
+            id: "nq-ladies",
+            labelKo: "Ladies",
+            href: "/shop?category=watches&sub=nq-ladies",
+          },
+        ],
+      },
+
       {
         id: "chanel-watches",
         labelKo: "샤넬",
