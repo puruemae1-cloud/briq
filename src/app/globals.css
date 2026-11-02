@@ -8323,6 +8323,7 @@ body:has(.pdp-dock) .back-to-top {
 }
 
 /* Entry notice — centered maison split: campaign still + ivory type panel. */
+/* Flannels arrival promo — full-bleed 4:3 desk / 4:5 mobile */
 .welcome-popup {
   position: fixed;
   inset: 0;
@@ -8330,156 +8331,165 @@ body:has(.pdp-dock) .back-to-top {
   display: grid;
   place-items: center;
   padding: 1.25rem;
-  background: rgba(11, 18, 16, 0.56);
+  background: rgba(8, 6, 5, 0.62);
 }
 
-.welcome-popup__panel {
+.welcome-popup__panel--flannels {
   position: relative;
-  display: grid;
-  grid-template-columns: minmax(220px, 0.82fr) minmax(280px, 1.18fr);
-  width: min(880px, 100%);
-  max-height: min(640px, calc(100vh - 2.5rem));
-  background: #f7f5f0;
-  color: var(--ink);
+  display: block;
+  width: min(920px, 100%);
+  aspect-ratio: 4 / 3;
+  max-height: min(86vh, calc(100vh - 2.5rem));
+  background: #141210;
+  color: #f7f5f0;
   overflow: hidden;
   animation: welcome-popup-in 0.45s ease;
 }
 
-.welcome-popup__visual {
-  position: relative;
-  min-height: 100%;
-  background: #d5cfc4;
+.welcome-popup__panel--flannels .welcome-popup__visual {
+  position: absolute;
+  inset: 0;
+  min-height: 0;
+  background: #141210;
 }
 
-.welcome-popup__visual img {
+.welcome-popup__panel--flannels .welcome-popup__visual img {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 50% 64%;
+  object-position: 52% 32%;
   display: block;
 }
 
-.welcome-popup__body {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  min-height: 0;
-  padding: 2.4rem 2.15rem 1.45rem;
-  overflow: auto;
+.welcome-popup__shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(8, 6, 5, 0.78) 0%,
+    rgba(8, 6, 5, 0.48) 36%,
+    rgba(8, 6, 5, 0.16) 58%,
+    transparent 76%
+  );
+  pointer-events: none;
 }
 
-.welcome-popup__close {
+.welcome-popup__panel--flannels .welcome-popup__body {
   position: absolute;
-  top: 0.7rem;
-  right: 0.7rem;
-  width: 2.25rem;
-  height: 2.25rem;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-height: 0;
+  padding: clamp(1.6rem, 4.2vw, 3rem) clamp(1.4rem, 4vw, 2.8rem);
+  overflow: hidden;
+  background: transparent;
+}
+
+.welcome-popup__panel--flannels .welcome-popup__close {
+  position: absolute;
+  top: 0.85rem;
+  right: 0.85rem;
+  width: 2.35rem;
+  height: 2.35rem;
   padding: 0;
   border: 0;
-  background: transparent;
-  color: var(--ink);
+  border-radius: 999px;
+  background: rgba(8, 6, 5, 0.35);
+  color: #f7f5f0;
   cursor: pointer;
 }
 
-.welcome-popup__close svg {
+.welcome-popup__panel--flannels .welcome-popup__close svg {
   width: 0.95rem;
   height: 0.95rem;
   stroke: currentColor;
-  stroke-width: 1;
+  stroke-width: 1.2;
   fill: none;
 }
 
-.welcome-popup__close:focus-visible,
-.welcome-popup__cta:focus-visible,
-.welcome-popup__later:focus-visible {
-  outline: 1px solid var(--ink);
+.welcome-popup__panel--flannels .welcome-popup__close:focus-visible,
+.welcome-popup__panel--flannels .welcome-popup__cta:focus-visible,
+.welcome-popup__panel--flannels .welcome-popup__later:focus-visible {
+  outline: 1px solid #f7f5f0;
   outline-offset: 3px;
 }
 
-.welcome-popup__eyebrow {
-  margin: 0 0 0.85rem;
+.welcome-popup__panel--flannels .welcome-popup__eyebrow {
+  margin: 0;
+  padding-bottom: 0.55rem;
+  border-bottom: 1.5px solid rgba(212, 175, 110, 0.9);
+  width: fit-content;
   font-family: var(--font-body), sans-serif;
-  font-size: 0.68rem;
-  font-weight: 500;
-  letter-spacing: 0.28em;
-  text-transform: uppercase;
-  color: rgba(11, 18, 16, 0.62);
-}
-
-.welcome-popup__title {
-  margin: 0 2rem 1.25rem 0;
-  font-family: var(--font-classic), "Nanum Myeongjo", serif;
-  font-size: clamp(1.45rem, 2.1vw, 1.85rem);
-  font-weight: 700;
-  line-height: 1.38;
-  letter-spacing: -0.02em;
-}
-
-.welcome-popup__title span {
-  display: block;
-}
-
-.welcome-popup__points {
-  margin: 0 0 1.35rem;
-  padding: 0;
-  list-style: none;
-}
-
-.welcome-popup__points li {
-  display: grid;
-  gap: 0.28rem;
-  padding: 0.8rem 0;
-  border-top: 1px solid rgba(11, 18, 16, 0.12);
-}
-
-.welcome-popup__points li:last-child {
-  border-bottom: 1px solid rgba(11, 18, 16, 0.12);
-}
-
-.welcome-popup__points strong {
-  font-family: var(--font-pretendard);
-  font-size: 0.92rem;
+  font-size: 0.78rem;
   font-weight: 600;
-  letter-spacing: -0.01em;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(247, 245, 240, 0.92);
 }
 
-.welcome-popup__points span {
-  font-family: var(--font-pretendard);
-  font-size: 0.84rem;
+.welcome-popup__panel--flannels .welcome-popup__title {
+  margin: 1.15rem 0 0;
+  max-width: 16ch;
+  font-family: var(--font-pretendard), "Apple SD Gothic Neo", sans-serif;
+  font-size: clamp(1.55rem, 3.2vw, 2.35rem);
+  font-weight: 700;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.welcome-popup__support {
+  margin: 0.85rem 0 0;
+  max-width: 22rem;
+  font-family: var(--font-pretendard), "Apple SD Gothic Neo", sans-serif;
+  font-size: clamp(0.92rem, 1.5vw, 1.12rem);
+  font-weight: 500;
   line-height: 1.55;
-  color: rgba(11, 18, 16, 0.72);
+  color: rgba(255, 255, 255, 0.88);
 }
 
-.welcome-popup__cta {
-  margin-top: auto;
-  min-height: 2.9rem;
-  border: 0;
-  background: #0b1210;
-  color: #f7f5f0;
-  font-family: var(--font-pretendard);
-  font-size: 0.82rem;
-  letter-spacing: 0.14em;
+.welcome-popup__panel--flannels .welcome-popup__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.55rem;
+  min-height: 3.35rem;
+  padding: 0.85rem 1.55rem;
+  border: 1.5px solid rgba(255, 255, 255, 0.92);
+  background: transparent;
+  color: #fff;
+  font-family: var(--font-body), sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-decoration: none;
   cursor: pointer;
 }
 
-.welcome-popup__cta:hover {
-  background: #1a2420;
+.welcome-popup__panel--flannels .welcome-popup__cta:hover {
+  background: rgba(255, 255, 255, 0.1);
 }
 
-.welcome-popup__later {
-  align-self: center;
-  margin-top: 0.75rem;
-  padding: 0.2rem 0.4rem;
+.welcome-popup__panel--flannels .welcome-popup__later {
+  position: absolute;
+  right: clamp(1.2rem, 3.5vw, 2.4rem);
+  bottom: clamp(1rem, 3vw, 1.6rem);
+  align-self: auto;
+  margin: 0;
+  padding: 0.15rem 0;
   border: 0;
   background: transparent;
-  color: rgba(11, 18, 16, 0.55);
-  font-family: var(--font-pretendard);
-  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.88);
+  font-family: var(--font-pretendard), "Apple SD Gothic Neo", sans-serif;
+  font-size: clamp(0.95rem, 1.4vw, 1.12rem);
+  font-weight: 500;
   letter-spacing: -0.01em;
   text-decoration: underline;
-  text-underline-offset: 0.22em;
+  text-underline-offset: 0.28em;
   cursor: pointer;
 }
 
@@ -8499,30 +8509,43 @@ body:has(.pdp-dock) .back-to-top {
     padding: 0.75rem;
   }
 
-  .welcome-popup__panel {
-    grid-template-columns: 1fr;
+  .welcome-popup__panel--flannels {
     width: min(440px, 100%);
+    aspect-ratio: 4 / 5;
     max-height: calc(100vh - 1.5rem);
-    overflow: auto;
   }
 
-  .welcome-popup__visual {
-    height: 11.5rem;
-    min-height: 0;
+  .welcome-popup__shade {
+    background: linear-gradient(
+      180deg,
+      rgba(8, 6, 5, 0.55) 0%,
+      rgba(8, 6, 5, 0.28) 38%,
+      rgba(8, 6, 5, 0.55) 100%
+    );
   }
 
-  .welcome-popup__body {
-    padding: 1.35rem 1.2rem 1.15rem;
+  .welcome-popup__panel--flannels .welcome-popup__body {
+    padding: 1.35rem 1.2rem 3.4rem;
   }
 
-  .welcome-popup__title {
-    margin-right: 1.5rem;
-    font-size: 1.38rem;
+  .welcome-popup__panel--flannels .welcome-popup__title {
+    max-width: 12ch;
+    font-size: 1.45rem;
+  }
+
+  .welcome-popup__panel--flannels .welcome-popup__cta {
+    min-height: 3rem;
+    font-size: 0.95rem;
+  }
+
+  .welcome-popup__panel--flannels .welcome-popup__later {
+    font-size: 0.98rem;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .welcome-popup__panel {
+  .welcome-popup__panel--flannels {
     animation: none;
   }
 }
+
