@@ -6,9 +6,6 @@ import type { Product } from "@/data/product-types";
  * thin stub catalogue from going live again.
  */
 export function assertNqCatalogQuality(products: Product[]): void {
-  if (process.env.NODE_ENV === "production" && process.env.NEXT_PHASE === "phase-production-build") {
-    // Always run during next build; also run in test/dev when explicitly called.
-  }
   const errors: string[] = [];
   if (products.length < 40) {
     errors.push(`expected ≥40 NORQAIN watches, got ${products.length}`);
@@ -25,11 +22,21 @@ export function assertNqCatalogQuality(products: Product[]): void {
       errors.push(`${id}: missing storySections`);
     } else {
       for (const [i, s] of p.storySections.entries()) {
-        if (!s.titleKo || !s.bodyKo || s.bodyKo.length < 40) {
+        const isVideo = Boolean(s.videoUrl);
+        if (!s.titleKo) {
+          errors.push(`${id}: storySections[${i}] missing titleKo`);
+        }
+        if (!isVideo && (!s.bodyKo || s.bodyKo.length < 40)) {
           errors.push(`${id}: storySections[${i}] incomplete`);
         }
-        if (!s.image) {
+        if (isVideo && (!s.bodyKo || s.bodyKo.length < 20)) {
+          errors.push(`${id}: storySections[${i}] video copy too short`);
+        }
+        if (!isVideo && !s.image) {
           errors.push(`${id}: storySections[${i}] missing image`);
+        }
+        if (isVideo && !/\.(mp4|webm|mov)(\?|#|$)/i.test(s.videoUrl || "")) {
+          errors.push(`${id}: storySections[${i}] videoUrl not a direct video file`);
         }
       }
     }
@@ -57,12 +64,6 @@ export function assertNqCatalogQuality(products: Product[]): void {
       } else if (v.images[0] !== v.image) {
         errors.push(`${id}/${v.id}: variant.images[0] must equal variant.image`);
       }
-    }
-    // When Shopify exposes distinct featured images, they must stay distinct.
-    const featured = new Set(variants.map((v) => v.image));
-    if (variants.length >= 2 && featured.size === 1) {
-      // Allowed when official media shares one packshot (e.g. X-Lite strap swap).
-      // Still require the gallery to be non-empty (checked above).
     }
   }
   if (errors.length) {

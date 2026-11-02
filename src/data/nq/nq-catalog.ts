@@ -33,7 +33,7 @@ const _nqCatalogProducts: Product[] = [
     storySections: [
       {
         titleKo: "제품 영상",
-        bodyKo: "공홈과 동일한 제품 영상입니다. 자동 재생되며 소리가 없습니다.",
+        bodyKo: "NORQAIN 공홈과 동일한 제품 영상입니다. 자동 재생되며 소리는 없고, 손목 위 무브먼트와 디테일을 영상으로 확인할 수 있습니다.",
         videoUrl: "https://norqain.com/cdn/shop/videos/c/vp/c8280319e6514c6781ac6a53c0618352/c8280319e6514c6781ac6a53c0618352.HD-1080p-7.2Mbps-98382960.mp4?v=0",
         image: "https://norqain.com/cdn/shop/files/preview_images/c8280319e6514c6781ac6a53c0618352.thumbnail.0000000000_small.jpg?v=1792593786",
         layout: "wide",
@@ -452,7 +452,7 @@ const _nqCatalogProducts: Product[] = [
     storySections: [
       {
         titleKo: "제품 영상",
-        bodyKo: "공홈과 동일한 제품 영상입니다. 자동 재생되며 소리가 없습니다.",
+        bodyKo: "NORQAIN 공홈과 동일한 제품 영상입니다. 자동 재생되며 소리는 없고, 손목 위 무브먼트와 디테일을 영상으로 확인할 수 있습니다.",
         videoUrl: "https://norqain.com/cdn/shop/videos/c/vp/f59df8a88b09483e9f07a58990266858/f59df8a88b09483e9f07a58990266858.HD-1080p-7.2Mbps-87845551.mp4?v=0",
         image: "https://norqain.com/cdn/shop/files/preview_images/f59df8a88b09483e9f07a58990266858.thumbnail.0000000000_small.jpg?v=1782898598",
         layout: "wide",
@@ -775,7 +775,7 @@ const _nqCatalogProducts: Product[] = [
     storySections: [
       {
         titleKo: "제품 영상",
-        bodyKo: "공홈과 동일한 제품 영상입니다. 자동 재생되며 소리가 없습니다.",
+        bodyKo: "NORQAIN 공홈과 동일한 제품 영상입니다. 자동 재생되며 소리는 없고, 손목 위 무브먼트와 디테일을 영상으로 확인할 수 있습니다.",
         videoUrl: "https://norqain.com/cdn/shop/videos/c/vp/a877c5b895fd44829c8229bf78184371/a877c5b895fd44829c8229bf78184371.HD-1080p-7.2Mbps-80385693.mp4?v=0",
         image: "https://norqain.com/cdn/shop/files/preview_images/a877c5b895fd44829c8229bf78184371.thumbnail.0000000000_small.jpg?v=1775459416",
         layout: "wide",
@@ -850,7 +850,7 @@ const _nqCatalogProducts: Product[] = [
     storySections: [
       {
         titleKo: "제품 영상",
-        bodyKo: "공홈과 동일한 제품 영상입니다. 자동 재생되며 소리가 없습니다.",
+        bodyKo: "NORQAIN 공홈과 동일한 제품 영상입니다. 자동 재생되며 소리는 없고, 손목 위 무브먼트와 디테일을 영상으로 확인할 수 있습니다.",
         videoUrl: "https://norqain.com/cdn/shop/videos/c/vp/a877c5b895fd44829c8229bf78184371/a877c5b895fd44829c8229bf78184371.HD-1080p-7.2Mbps-80385693.mp4?v=0",
         image: "https://norqain.com/cdn/shop/files/preview_images/a877c5b895fd44829c8229bf78184371.thumbnail.0000000000_small.jpg?v=1775459416",
         layout: "wide",
@@ -1233,7 +1233,7 @@ const _nqCatalogProducts: Product[] = [
     storySections: [
       {
         titleKo: "제품 영상",
-        bodyKo: "공홈과 동일한 제품 영상입니다. 자동 재생되며 소리가 없습니다.",
+        bodyKo: "NORQAIN 공홈과 동일한 제품 영상입니다. 자동 재생되며 소리는 없고, 손목 위 무브먼트와 디테일을 영상으로 확인할 수 있습니다.",
         videoUrl: "https://norqain.com/cdn/shop/videos/c/vp/ec12795586cf49c188f7224fa88aa81c/ec12795586cf49c188f7224fa88aa81c.HD-1080p-7.2Mbps-68912032.mp4?v=0",
         image: "https://norqain.com/cdn/shop/files/preview_images/ec12795586cf49c188f7224fa88aa81c.thumbnail.0000000000_small.jpg?v=1769755080",
         layout: "wide",
@@ -1304,11 +1304,11 @@ const _nqCatalogProducts: Product[] = [
     registeredAt: "2025-11-14T10:57:53Z",
     editTier: "signature",
     featuresKo: ["매뉴팩처 칼리버", "Pin Buckle", "Revolutionary shock-absorbing case construction", "Ultra-robust & ultra-light NORTEQ® Material", "Grey NORTEQ® cage (top and bottom parts)", "Sandblasted titanium container and case back", "양면 반사 방지·스크래치 방지 평면 사파이어 글라스 with white NORQAIN logo", "스크래치 방지 평면 사파이어 글라스의 오픈 케이스백, featuring “리미티드 에디션, Spengler Cup logo, ONE of 97” printed in light blue", "Screw-down crown, overmolded with black rubber and NORQAIN logo", "Engraved grey NORTEQ® NORQAIN plate on the left side of the case", "Openworked black dial with white and light blue printing", "Diamond-cut flat 스켈레톤 indexes, rhodium plated, with white Super-LumiNova® spots"],
-    techSpecs: [{"labelKo": "컬렉션", "valueKo": "Wild ONE"}, {"labelKo": "Even lighter due to skeletonised movement", "valueKo": "78 grams"}, {"labelKo": "직경", "valueKo": "42.00mm"}, {"labelKo": "두께", "valueKo": "12.30mm"}, {"labelKo": "러그 폭", "valueKo": "22.00mm"}, {"labelKo": "러그 투 러그", "valueKo": "49.40mm"}, {"labelKo": "방수", "valueKo": "200m"}, {"labelKo": "원산지", "valueKo": "스위스 메이드"}],
+    techSpecs: [{"labelKo": "컬렉션", "valueKo": "Wild ONE"}, {"labelKo": "스켈레톤 무브먼트로 더 가벼워진 구조", "valueKo": "78 grams"}, {"labelKo": "직경", "valueKo": "42.00mm"}, {"labelKo": "두께", "valueKo": "12.30mm"}, {"labelKo": "러그 폭", "valueKo": "22.00mm"}, {"labelKo": "러그 투 러그", "valueKo": "49.40mm"}, {"labelKo": "방수", "valueKo": "200m"}, {"labelKo": "원산지", "valueKo": "스위스 메이드"}],
     storySections: [
       {
         titleKo: "제품 영상",
-        bodyKo: "공홈과 동일한 제품 영상입니다. 자동 재생되며 소리가 없습니다.",
+        bodyKo: "NORQAIN 공홈과 동일한 제품 영상입니다. 자동 재생되며 소리는 없고, 손목 위 무브먼트와 디테일을 영상으로 확인할 수 있습니다.",
         videoUrl: "https://norqain.com/cdn/shop/videos/c/vp/918577013f644f1e8a4f2493c306daf5/918577013f644f1e8a4f2493c306daf5.HD-1080p-7.2Mbps-65198914.mp4?v=0",
         image: "https://norqain.com/cdn/shop/files/preview_images/918577013f644f1e8a4f2493c306daf5.thumbnail.0000000000_small.jpg?v=1765800995",
         layout: "wide",
@@ -1591,7 +1591,7 @@ const _nqCatalogProducts: Product[] = [
     storySections: [
       {
         titleKo: "제품 영상",
-        bodyKo: "공홈과 동일한 제품 영상입니다. 자동 재생되며 소리가 없습니다.",
+        bodyKo: "NORQAIN 공홈과 동일한 제품 영상입니다. 자동 재생되며 소리는 없고, 손목 위 무브먼트와 디테일을 영상으로 확인할 수 있습니다.",
         videoUrl: "https://norqain.com/cdn/shop/videos/c/vp/c253f3648bd74fff9bb92016e79b8280/c253f3648bd74fff9bb92016e79b8280.HD-1080p-7.2Mbps-63041407.mp4?v=0",
         image: "https://norqain.com/cdn/shop/files/preview_images/c253f3648bd74fff9bb92016e79b8280.thumbnail.0000000000_small.jpg?v=1763381952",
         layout: "wide",
@@ -1882,7 +1882,7 @@ const _nqCatalogProducts: Product[] = [
     storySections: [
       {
         titleKo: "제품 영상",
-        bodyKo: "공홈과 동일한 제품 영상입니다. 자동 재생되며 소리가 없습니다.",
+        bodyKo: "NORQAIN 공홈과 동일한 제품 영상입니다. 자동 재생되며 소리는 없고, 손목 위 무브먼트와 디테일을 영상으로 확인할 수 있습니다.",
         videoUrl: "https://norqain.com/cdn/shop/videos/c/vp/21f0a4abc2f046bfa988472c77cba504/21f0a4abc2f046bfa988472c77cba504.HD-1080p-7.2Mbps-48717809.mp4?v=0",
         image: "https://norqain.com/cdn/shop/files/preview_images/21f0a4abc2f046bfa988472c77cba504.thumbnail.0000000000_small.jpg?v=1748940355",
         layout: "wide",
@@ -1993,7 +1993,7 @@ const _nqCatalogProducts: Product[] = [
     storySections: [
       {
         titleKo: "제품 영상",
-        bodyKo: "공홈과 동일한 제품 영상입니다. 자동 재생되며 소리가 없습니다.",
+        bodyKo: "NORQAIN 공홈과 동일한 제품 영상입니다. 자동 재생되며 소리는 없고, 손목 위 무브먼트와 디테일을 영상으로 확인할 수 있습니다.",
         videoUrl: "https://norqain.com/cdn/shop/videos/c/vp/977e96bf4c8f490da85a6a6ade808e84/977e96bf4c8f490da85a6a6ade808e84.HD-1080p-7.2Mbps-44808107.mp4?v=0",
         image: "https://norqain.com/cdn/shop/files/preview_images/977e96bf4c8f490da85a6a6ade808e84.thumbnail.0000000000_small.jpg?v=1742917749",
         layout: "wide",
@@ -2068,7 +2068,7 @@ const _nqCatalogProducts: Product[] = [
     storySections: [
       {
         titleKo: "제품 영상",
-        bodyKo: "공홈과 동일한 제품 영상입니다. 자동 재생되며 소리가 없습니다.",
+        bodyKo: "NORQAIN 공홈과 동일한 제품 영상입니다. 자동 재생되며 소리는 없고, 손목 위 무브먼트와 디테일을 영상으로 확인할 수 있습니다.",
         videoUrl: "https://norqain.com/cdn/shop/videos/c/vp/977e96bf4c8f490da85a6a6ade808e84/977e96bf4c8f490da85a6a6ade808e84.HD-1080p-7.2Mbps-44808107.mp4?v=0",
         image: "https://norqain.com/cdn/shop/files/preview_images/977e96bf4c8f490da85a6a6ade808e84.thumbnail.0000000000_small.jpg?v=1742917749",
         layout: "wide",
@@ -2127,11 +2127,11 @@ const _nqCatalogProducts: Product[] = [
     registeredAt: "2025-02-18T11:27:39Z",
     editTier: "signature",
     featuresKo: ["매뉴팩처 칼리버", "Pin buckle", "Revolutionary shock-absorbing case construction", "Ultra-robust & ultra-light NORTEQ® Material", "Black NORTEQ® cage (top and bottom parts)", "Sandblasted titanium container and case back", "양면 반사 방지·스크래치 방지 평면 사파이어 글라스 with white NORQAIN logo", "스크래치 방지 평면 사파이어 글라스의 오픈 케이스백", "Screw-down crown, overmolded with black rubber and NORQAIN logo", "케이스 좌측의 블랙 NORTEQ NORQAIN 플레이트 각인", "Openworked black dial with hyper pink printings", "Diamond-cut flat 스켈레톤 rhodium plated indexes, with hyper pink X1 Super-LumiNova® spots"],
-    techSpecs: [{"labelKo": "컬렉션", "valueKo": "Wild ONE"}, {"labelKo": "Even lighter due to skeletonised movement", "valueKo": "64g"}, {"labelKo": "직경", "valueKo": "39.00mm"}, {"labelKo": "두께", "valueKo": "11.75mm"}, {"labelKo": "러그 폭", "valueKo": "20.00mm"}, {"labelKo": "러그 투 러그", "valueKo": "45.75mm"}, {"labelKo": "방수", "valueKo": "200m"}, {"labelKo": "원산지", "valueKo": "스위스 메이드"}],
+    techSpecs: [{"labelKo": "컬렉션", "valueKo": "Wild ONE"}, {"labelKo": "스켈레톤 무브먼트로 더 가벼워진 구조", "valueKo": "64g"}, {"labelKo": "직경", "valueKo": "39.00mm"}, {"labelKo": "두께", "valueKo": "11.75mm"}, {"labelKo": "러그 폭", "valueKo": "20.00mm"}, {"labelKo": "러그 투 러그", "valueKo": "45.75mm"}, {"labelKo": "방수", "valueKo": "200m"}, {"labelKo": "원산지", "valueKo": "스위스 메이드"}],
     storySections: [
       {
         titleKo: "제품 영상",
-        bodyKo: "공홈과 동일한 제품 영상입니다. 자동 재생되며 소리가 없습니다.",
+        bodyKo: "NORQAIN 공홈과 동일한 제품 영상입니다. 자동 재생되며 소리는 없고, 손목 위 무브먼트와 디테일을 영상으로 확인할 수 있습니다.",
         videoUrl: "https://norqain.com/cdn/shop/videos/c/vp/45fb278728f849508c9a6b3457df1c8d/45fb278728f849508c9a6b3457df1c8d.HD-1080p-7.2Mbps-44884490.mp4?v=0",
         image: "https://norqain.com/cdn/shop/files/preview_images/45fb278728f849508c9a6b3457df1c8d.thumbnail.0000000000_small.jpg?v=1743017136",
         layout: "wide",
@@ -2226,11 +2226,11 @@ const _nqCatalogProducts: Product[] = [
     registeredAt: "2025-02-18T15:32:51Z",
     editTier: "signature",
     featuresKo: ["매뉴팩처 칼리버", "Pin buckle", "Revolutionary shock-absorbing case construction", "Ultra-robust & ultra-light NORTEQ® Material", "Black NORTEQ® cage (top and bottom parts)", "Sandblasted titanium container and case back", "양면 반사 방지·스크래치 방지 평면 사파이어 글라스 with white NORQAIN logo", "스크래치 방지 평면 사파이어 글라스의 오픈 케이스백", "Screw-down crown, overmolded with black rubber and NORQAIN logo", "케이스 좌측의 블랙 NORTEQ NORQAIN 플레이트 각인", "Openworked black dial with sky blue printings", "Diamond-cut flat 스켈레톤 rhodium plated indexes, with sky blue X1 Super-LumiNova® spots"],
-    techSpecs: [{"labelKo": "컬렉션", "valueKo": "Wild ONE"}, {"labelKo": "Even lighter due to skeletonised movement", "valueKo": "64g"}, {"labelKo": "직경", "valueKo": "39.00mm"}, {"labelKo": "두께", "valueKo": "11.75mm"}, {"labelKo": "러그 폭", "valueKo": "20.00mm"}, {"labelKo": "러그 투 러그", "valueKo": "45.75mm"}, {"labelKo": "방수", "valueKo": "200m"}, {"labelKo": "원산지", "valueKo": "스위스 메이드"}],
+    techSpecs: [{"labelKo": "컬렉션", "valueKo": "Wild ONE"}, {"labelKo": "스켈레톤 무브먼트로 더 가벼워진 구조", "valueKo": "64g"}, {"labelKo": "직경", "valueKo": "39.00mm"}, {"labelKo": "두께", "valueKo": "11.75mm"}, {"labelKo": "러그 폭", "valueKo": "20.00mm"}, {"labelKo": "러그 투 러그", "valueKo": "45.75mm"}, {"labelKo": "방수", "valueKo": "200m"}, {"labelKo": "원산지", "valueKo": "스위스 메이드"}],
     storySections: [
       {
         titleKo: "제품 영상",
-        bodyKo: "공홈과 동일한 제품 영상입니다. 자동 재생되며 소리가 없습니다.",
+        bodyKo: "NORQAIN 공홈과 동일한 제품 영상입니다. 자동 재생되며 소리는 없고, 손목 위 무브먼트와 디테일을 영상으로 확인할 수 있습니다.",
         videoUrl: "https://norqain.com/cdn/shop/videos/c/vp/45fb278728f849508c9a6b3457df1c8d/45fb278728f849508c9a6b3457df1c8d.HD-1080p-7.2Mbps-44884490.mp4?v=0",
         image: "https://norqain.com/cdn/shop/files/preview_images/45fb278728f849508c9a6b3457df1c8d.thumbnail.0000000000_small.jpg?v=1743017136",
         layout: "wide",
@@ -2325,11 +2325,11 @@ const _nqCatalogProducts: Product[] = [
     registeredAt: "2025-02-18T15:42:32Z",
     editTier: "signature",
     featuresKo: ["매뉴팩처 칼리버", "Pin buckle", "Revolutionary shock-absorbing case construction", "Ultra-robust & ultra-light NORTEQ® Material", "Purple NORTEQ® cage (top and bottom parts)", "Sandblasted titanium container and case back", "양면 반사 방지·스크래치 방지 평면 사파이어 글라스 with white NORQAIN logo", "스크래치 방지 평면 사파이어 글라스의 오픈 케이스백", "Screw-down crown, overmolded with ice blue rubber and NORQAIN logo", "Engraved purple NORTEQ® NORQAIN plate on the left side of the case", "Openworked dark purple dial with ice blue printings", "Diamond-cut flat 스켈레톤 rhodium plated indexes, with ice blue X1 Super-LumiNova® spots"],
-    techSpecs: [{"labelKo": "컬렉션", "valueKo": "Wild ONE"}, {"labelKo": "Even lighter due to skeletonised movement", "valueKo": "64g"}, {"labelKo": "직경", "valueKo": "39.00mm"}, {"labelKo": "두께", "valueKo": "11.75mm"}, {"labelKo": "러그 폭", "valueKo": "20.00mm"}, {"labelKo": "러그 투 러그", "valueKo": "45.75mm"}, {"labelKo": "방수", "valueKo": "200m"}, {"labelKo": "원산지", "valueKo": "스위스 메이드"}],
+    techSpecs: [{"labelKo": "컬렉션", "valueKo": "Wild ONE"}, {"labelKo": "스켈레톤 무브먼트로 더 가벼워진 구조", "valueKo": "64g"}, {"labelKo": "직경", "valueKo": "39.00mm"}, {"labelKo": "두께", "valueKo": "11.75mm"}, {"labelKo": "러그 폭", "valueKo": "20.00mm"}, {"labelKo": "러그 투 러그", "valueKo": "45.75mm"}, {"labelKo": "방수", "valueKo": "200m"}, {"labelKo": "원산지", "valueKo": "스위스 메이드"}],
     storySections: [
       {
         titleKo: "제품 영상",
-        bodyKo: "공홈과 동일한 제품 영상입니다. 자동 재생되며 소리가 없습니다.",
+        bodyKo: "NORQAIN 공홈과 동일한 제품 영상입니다. 자동 재생되며 소리는 없고, 손목 위 무브먼트와 디테일을 영상으로 확인할 수 있습니다.",
         videoUrl: "https://norqain.com/cdn/shop/videos/c/vp/45fb278728f849508c9a6b3457df1c8d/45fb278728f849508c9a6b3457df1c8d.HD-1080p-7.2Mbps-44884490.mp4?v=0",
         image: "https://norqain.com/cdn/shop/files/preview_images/45fb278728f849508c9a6b3457df1c8d.thumbnail.0000000000_small.jpg?v=1743017136",
         layout: "wide",
@@ -2524,11 +2524,11 @@ const _nqCatalogProducts: Product[] = [
     registeredAt: "2024-11-05T08:11:48Z",
     editTier: "signature",
     featuresKo: ["매뉴팩처 칼리버", "Pin buckle", "Revolutionary shock-absorbing case construction", "Ultra-robust & ultra-light NORTEQ® Material", "Grey NORTEQ® cage (top and bottom parts)", "Sandblasted titanium container and case back", "양면 반사 방지·스크래치 방지 평면 사파이어 글라스 with white NORQAIN logo", "스크래치 방지 평면 사파이어 글라스의 오픈 케이스백", "Screw-down crown, overmolded with black rubber and NORQAIN logo", "Engraved grey NORTEQ® NORQAIN Plate on the left side of the case", "Openworked black dial with white printings", "Diamond-cut flat 스켈레톤 black plated indexes, with white X1 Super-LumiNova® spots"],
-    techSpecs: [{"labelKo": "컬렉션", "valueKo": "Wild ONE"}, {"labelKo": "Even lighter due to skeletonised movement", "valueKo": "78 grams"}, {"labelKo": "직경", "valueKo": "42.00mm"}, {"labelKo": "두께", "valueKo": "12.30mm"}, {"labelKo": "러그 폭", "valueKo": "22.00mm"}, {"labelKo": "러그 투 러그", "valueKo": "49.40mm"}, {"labelKo": "방수", "valueKo": "200m"}, {"labelKo": "원산지", "valueKo": "스위스 메이드"}],
+    techSpecs: [{"labelKo": "컬렉션", "valueKo": "Wild ONE"}, {"labelKo": "스켈레톤 무브먼트로 더 가벼워진 구조", "valueKo": "78 grams"}, {"labelKo": "직경", "valueKo": "42.00mm"}, {"labelKo": "두께", "valueKo": "12.30mm"}, {"labelKo": "러그 폭", "valueKo": "22.00mm"}, {"labelKo": "러그 투 러그", "valueKo": "49.40mm"}, {"labelKo": "방수", "valueKo": "200m"}, {"labelKo": "원산지", "valueKo": "스위스 메이드"}],
     storySections: [
       {
         titleKo: "제품 영상",
-        bodyKo: "공홈과 동일한 제품 영상입니다. 자동 재생되며 소리가 없습니다.",
+        bodyKo: "NORQAIN 공홈과 동일한 제품 영상입니다. 자동 재생되며 소리는 없고, 손목 위 무브먼트와 디테일을 영상으로 확인할 수 있습니다.",
         videoUrl: "https://norqain.com/cdn/shop/videos/c/vp/70b31fd11296417fbc2cc1239cbfbcf5/70b31fd11296417fbc2cc1239cbfbcf5.HD-1080p-7.2Mbps-37632104.mp4?v=0",
         image: "https://norqain.com/cdn/shop/files/preview_images/70b31fd11296417fbc2cc1239cbfbcf5.thumbnail.0000000000_small.jpg?v=1730817058",
         layout: "wide",
@@ -2671,7 +2671,7 @@ const _nqCatalogProducts: Product[] = [
     storySections: [
       {
         titleKo: "제품 영상",
-        bodyKo: "공홈과 동일한 제품 영상입니다. 자동 재생되며 소리가 없습니다.",
+        bodyKo: "NORQAIN 공홈과 동일한 제품 영상입니다. 자동 재생되며 소리는 없고, 손목 위 무브먼트와 디테일을 영상으로 확인할 수 있습니다.",
         videoUrl: "https://norqain.com/cdn/shop/videos/c/vp/da7c3f6cf4654e54a22286e8b7806211/da7c3f6cf4654e54a22286e8b7806211.HD-1080p-7.2Mbps-34517987.mp4?v=0",
         image: "https://norqain.com/cdn/shop/files/preview_images/da7c3f6cf4654e54a22286e8b7806211.thumbnail.0000000000_small.jpg?v=1725973819",
         layout: "wide",
@@ -2878,7 +2878,7 @@ const _nqCatalogProducts: Product[] = [
     registeredAt: "2024-03-22T14:00:34Z",
     editTier: "signature",
     featuresKo: ["매뉴팩처 칼리버", "Pin buckle", "Revolutionary shock-absorbing case construction", "Ultra-robust & ultra-light NORTEQ® Material", "Black NORTEQ® cage (top and bottom parts)", "Sandblasted titanium container and case back", "양면 반사 방지·스크래치 방지 평면 사파이어 글라스 with white NORQAIN logo", "스크래치 방지 평면 사파이어 글라스의 오픈 케이스백", "Screw-down crown, overmolded with black rubber and NORQAIN logo", "케이스 좌측의 블랙 NORTEQ NORQAIN 플레이트 각인", "Openworked black dial with gecko green printings", "Diamond-cut flat 스켈레톤 rhodium plated indexes, with gecko green X1 Super-LumiNova® spots"],
-    techSpecs: [{"labelKo": "컬렉션", "valueKo": "Wild ONE"}, {"labelKo": "Even lighter due to skeletonised movement", "valueKo": "78 grams"}, {"labelKo": "직경", "valueKo": "42.00mm"}, {"labelKo": "두께", "valueKo": "12.30mm"}, {"labelKo": "러그 폭", "valueKo": "22.00mm"}, {"labelKo": "러그 투 러그", "valueKo": "49.40mm"}, {"labelKo": "방수", "valueKo": "200m"}, {"labelKo": "원산지", "valueKo": "스위스 메이드"}],
+    techSpecs: [{"labelKo": "컬렉션", "valueKo": "Wild ONE"}, {"labelKo": "스켈레톤 무브먼트로 더 가벼워진 구조", "valueKo": "78 grams"}, {"labelKo": "직경", "valueKo": "42.00mm"}, {"labelKo": "두께", "valueKo": "12.30mm"}, {"labelKo": "러그 폭", "valueKo": "22.00mm"}, {"labelKo": "러그 투 러그", "valueKo": "49.40mm"}, {"labelKo": "방수", "valueKo": "200m"}, {"labelKo": "원산지", "valueKo": "스위스 메이드"}],
     storySections: [
       {
         titleKo: "78 Grams & Proven Robustness",
@@ -2946,7 +2946,7 @@ const _nqCatalogProducts: Product[] = [
     registeredAt: "2024-03-01T12:40:27Z",
     editTier: "signature",
     featuresKo: ["매뉴팩처 칼리버", "Pin buckle", "Revolutionary shock-absorbing case construction", "Ultra-robust & ultra-light NORTEQ® Material", "Black NORTEQ® cage (top and bottom parts)", "Sandblasted titanium container and case back", "양면 반사 방지·스크래치 방지 평면 사파이어 글라스 with white NORQAIN logo", "스크래치 방지 평면 사파이어 글라스의 오픈 케이스백", "Screw-down crown, overmolded with black rubber and NORQAIN logo", "케이스 좌측의 블랙 NORTEQ NORQAIN 플레이트 각인", "Openworked black dial with coral red printings", "Diamond-cut flat 스켈레톤 rhodium plated indexes, with coral red X1 Super-LumiNova® spots"],
-    techSpecs: [{"labelKo": "컬렉션", "valueKo": "Wild ONE"}, {"labelKo": "Even lighter due to skeletonised movement", "valueKo": "78 grams"}, {"labelKo": "직경", "valueKo": "42.00mm"}, {"labelKo": "두께", "valueKo": "12.30mm"}, {"labelKo": "러그 폭", "valueKo": "22.00mm"}, {"labelKo": "러그 투 러그", "valueKo": "49.40mm"}, {"labelKo": "방수", "valueKo": "200m"}, {"labelKo": "원산지", "valueKo": "스위스 메이드"}],
+    techSpecs: [{"labelKo": "컬렉션", "valueKo": "Wild ONE"}, {"labelKo": "스켈레톤 무브먼트로 더 가벼워진 구조", "valueKo": "78 grams"}, {"labelKo": "직경", "valueKo": "42.00mm"}, {"labelKo": "두께", "valueKo": "12.30mm"}, {"labelKo": "러그 폭", "valueKo": "22.00mm"}, {"labelKo": "러그 투 러그", "valueKo": "49.40mm"}, {"labelKo": "방수", "valueKo": "200m"}, {"labelKo": "원산지", "valueKo": "스위스 메이드"}],
     storySections: [
       {
         titleKo: "78 Grams & Proven Robustness",
@@ -3163,7 +3163,7 @@ const _nqCatalogProducts: Product[] = [
     registeredAt: "2023-08-02T01:07:00Z",
     editTier: "signature",
     featuresKo: ["매뉴팩처 칼리버", "Pin buckle", "Revolutionary shock-absorbing case construction", "Ultra-robust & ultra-light NORTEQ® Material", "Black NORTEQ® cage (top and bottom parts)", "Sandblasted titanium container and case back", "양면 반사 방지·스크래치 방지 평면 사파이어 글라스 with white NORQAIN logo", "스크래치 방지 평면 사파이어 글라스의 오픈 케이스백", "Screw-down crown, overmolded with black rubber and NORQAIN logo", "Engraved black NORTEQ NORQAIN Plate on the left side of the case", "Openworked black dial with 터콰이즈 printings", "Diamond-cut flat 스켈레톤 indexes, with 터콰이즈 X1 Super-LumiNova® spots"],
-    techSpecs: [{"labelKo": "컬렉션", "valueKo": "Wild ONE"}, {"labelKo": "Even lighter due to skeletonised movement", "valueKo": "78 grams"}, {"labelKo": "직경", "valueKo": "42.00mm"}, {"labelKo": "두께", "valueKo": "12.30mm"}, {"labelKo": "러그 폭", "valueKo": "22.00mm"}, {"labelKo": "러그 투 러그", "valueKo": "49.40mm"}, {"labelKo": "방수", "valueKo": "200m"}, {"labelKo": "원산지", "valueKo": "스위스 메이드"}],
+    techSpecs: [{"labelKo": "컬렉션", "valueKo": "Wild ONE"}, {"labelKo": "스켈레톤 무브먼트로 더 가벼워진 구조", "valueKo": "78 grams"}, {"labelKo": "직경", "valueKo": "42.00mm"}, {"labelKo": "두께", "valueKo": "12.30mm"}, {"labelKo": "러그 폭", "valueKo": "22.00mm"}, {"labelKo": "러그 투 러그", "valueKo": "49.40mm"}, {"labelKo": "방수", "valueKo": "200m"}, {"labelKo": "원산지", "valueKo": "스위스 메이드"}],
     storySections: [
       {
         titleKo: "78 Grams & Proven Robustness",
@@ -3395,7 +3395,7 @@ const _nqCatalogProducts: Product[] = [
     storySections: [
       {
         titleKo: "제품 영상",
-        bodyKo: "공홈과 동일한 제품 영상입니다. 자동 재생되며 소리가 없습니다.",
+        bodyKo: "NORQAIN 공홈과 동일한 제품 영상입니다. 자동 재생되며 소리는 없고, 손목 위 무브먼트와 디테일을 영상으로 확인할 수 있습니다.",
         videoUrl: "https://norqain.com/cdn/shop/videos/c/vp/4d28a763477d4cfe9a2b7302ab3c66d8/4d28a763477d4cfe9a2b7302ab3c66d8.HD-1080p-7.2Mbps-18864694.mp4?v=0",
         image: "https://norqain.com/cdn/shop/files/preview_images/4d28a763477d4cfe9a2b7302ab3c66d8.thumbnail.0000000000_small.jpg?v=1695842631",
         layout: "wide",
