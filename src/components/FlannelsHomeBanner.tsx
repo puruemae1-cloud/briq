@@ -44,10 +44,7 @@ export function FlannelsHomeBanner() {
         <div className="look-banner__content">
           <p className="look-banner__eyebrow">FLANNELS EXCLUSIVE</p>
           <h2 className="look-banner__title">
-            <span className="look-banner__title-en look-banner__title-en--stack">
-              <span className="look-banner__title-line">Heritage of</span>
-              <span className="look-banner__title-em">Britain</span>
-            </span>
+            <span className="look-banner__title-en">Heritage of Britain</span>
             <span className="look-banner__title-ko">영국 소비자 유통 정품</span>
           </h2>
           <p className="look-banner__support">
