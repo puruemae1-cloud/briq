@@ -146,7 +146,7 @@ export function resolveProductImage(
 }
 
 /** Skip Finder duplicate copies like `1 2.jpg` / `3 3.webp`. */
-function isUsableCatalogImage(src: string): boolean {
+export function isUsableCatalogImage(src: string): boolean {
   const name = src.split("/").pop() || "";
   if (!name) return false;
   if (/\s/.test(name)) return false;

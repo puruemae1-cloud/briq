@@ -8,7 +8,7 @@ import {
   type TouchEvent,
 } from "react";
 import { ProductImage } from "@/components/ProductImage";
-import { mediaUrl, mediaUrlFallback } from "@/lib/product-image";
+import { mediaUrl, mediaUrlFallback, isUsableCatalogImage } from "@/lib/product-image";
 
 const SWIPE_THRESHOLD = 40;
 
@@ -28,7 +28,7 @@ export function ProductGallery({
   /** Optional frame modifier (e.g. Chanel packshot mobile zoom). */
   frameModifier?: string;
 }) {
-  const list = images.length > 0 ? images : [];
+  const list = (images.length > 0 ? images : []).filter(isUsableCatalogImage);
   const [active, setActive] = useState(0);
   const [zoomOpen, setZoomOpen] = useState(false);
   const touchStart = useRef<{ x: number; y: number } | null>(null);
