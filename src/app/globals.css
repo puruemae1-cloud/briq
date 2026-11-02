@@ -2146,7 +2146,7 @@ body:has(.nav-drawer-toggle:checked) {
   }
 
   .collection-100 .product-grid > * {
-    content-visibility: auto;
+    content-visibility: visible;
     contain-intrinsic-size: auto 18rem;
   }
 
@@ -2757,32 +2757,21 @@ body:has(.nav-drawer-toggle:checked) {
   border-color: #f7f4ec;
 }
 
+.look-banner--flannels .look-banner__eyebrow {
+  font-size: 1.44rem;
+  letter-spacing: 0.22em;
+}
+
 /* Flannels interstitial — Option 3 concise chic under 시그니처 의류 rail */
 .look-banner--flannels {
   margin-top: 0.35rem;
 }
 
-.look-banner--flannels .look-banner__title-en--stack {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.05em;
-}
-
-.look-banner--flannels .look-banner__title-line {
-  font-size: clamp(1.55rem, 3.6vw, 2.55rem);
+.look-banner--flannels .look-banner__title-en {
+  font-style: normal;
+  font-size: clamp(1.85rem, 4.2vw, 3rem);
   font-weight: 500;
   letter-spacing: 0.01em;
-  color: #f7f4ec;
-}
-
-.look-banner--flannels .look-banner__title-em {
-  font-family: var(--font-display), serif;
-  font-style: italic;
-  font-weight: 500;
-  font-size: clamp(2.35rem, 6vw, 4.1rem);
-  line-height: 0.95;
-  letter-spacing: 0.005em;
   color: #f7f4ec;
 }
 
@@ -2793,21 +2782,29 @@ body:has(.nav-drawer-toggle:checked) {
 }
 
 .look-banner--flannels .look-banner__support {
-  max-width: 22rem;
+  max-width: 38rem;
+  white-space: nowrap;
+}
+
+@media (max-width: 899px) {
+  .look-banner--flannels .look-banner__support {
+    max-width: min(38rem, 92vw);
+    white-space: normal;
+  }
 }
 
 .look-banner--flannels .look-banner__shade {
   background: linear-gradient(
     90deg,
-    rgba(12, 10, 8, 0.72) 0%,
-    rgba(12, 10, 8, 0.42) 38%,
-    rgba(12, 10, 8, 0.12) 62%,
-    transparent 78%
+    rgba(12, 10, 8, 0.78) 0%,
+    rgba(12, 10, 8, 0.52) 36%,
+    rgba(12, 10, 8, 0.22) 58%,
+    rgba(12, 10, 8, 0.08) 78%
   );
 }
 
 @media (max-width: 899px) {
-  /* Official Amplience mobile hero is 1:1 — don’t force 4/3 crop */
+  /* Liberty store interior — square crop on mobile asset, stage 1:1 */
   .look-banner--flannels.look-banner--fullframe {
     aspect-ratio: 1 / 1;
   }
@@ -2815,16 +2812,15 @@ body:has(.nav-drawer-toggle:checked) {
   .look-banner--flannels .look-banner__shade {
     background: linear-gradient(
       180deg,
-      transparent 28%,
-      rgba(12, 10, 8, 0.35) 52%,
-      rgba(12, 10, 8, 0.78) 100%
+      rgba(12, 10, 8, 0.28) 0%,
+      rgba(12, 10, 8, 0.45) 45%,
+      rgba(12, 10, 8, 0.82) 100%
     );
   }
 
-  .look-banner--flannels .look-banner__support {
-    max-width: 20rem;
-  }
+  /* support width handled above */
 }
+
 
 .btn {
   display: inline-flex;
@@ -4048,8 +4044,13 @@ html[data-shop-navigating] {
   z-index: 1;
 }
 .product-frame__img.is-loading,
-.product-card-media__img.is-loading {
+.product-card-media__img.is-loading:not(.is-current) {
   opacity: 0 !important;
+}
+
+/* Current PLP thumb: stay invisible only while loading; never !important over .is-current ready */
+.product-card-media__img.is-current.is-loading {
+  opacity: 0;
 }
 
 .product-frame--has-hover {
@@ -4209,6 +4210,17 @@ html[data-shop-navigating] {
   background: #111;
   box-shadow: none;
 }
+
+@media (max-width: 899px) {
+  .product-card-media--multi .product-card-media__bars {
+    opacity: 1;
+  }
+  .product-card-media--multi .product-card-media__arrow {
+    opacity: 0.85;
+    pointer-events: auto;
+  }
+}
+
 
 .product-card-media .product-card__badge,
 .product-card-media .product-sold-out {
@@ -8026,6 +8038,20 @@ body:has(.pdp-dock) .back-to-top {
   border: 0;
 }
 
+.product-story__video--direct {
+  aspect-ratio: 4 / 5;
+  background: #0b1210;
+}
+
+.product-story__video--direct video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 0;
+}
+
 .product-story__block--wide {
   grid-template-columns: 1fr !important;
 }
@@ -8335,6 +8361,7 @@ body:has(.pdp-dock) .back-to-top {
 }
 
 /* Entry notice — centered maison split: campaign still + ivory type panel. */
+/* Flannels arrival promo — full-bleed 4:3 desk / 4:5 mobile */
 .welcome-popup {
   position: fixed;
   inset: 0;
@@ -8538,3 +8565,67 @@ body:has(.pdp-dock) .back-to-top {
     animation: none;
   }
 }
+
+/* Flannels promo — same cream shell as Welcome; taller mobile photo */
+.welcome-popup__panel--flannels .welcome-popup__visual img {
+  object-position: 52% 32%;
+}
+
+.welcome-popup__panel--flannels .welcome-popup__eyebrow {
+  padding-bottom: 0.45rem;
+  border-bottom: 1.5px solid rgba(212, 175, 110, 0.9);
+  width: fit-content;
+  letter-spacing: 0.22em;
+}
+
+.welcome-popup__support {
+  margin: 0 0 1.1rem;
+  font-family: var(--font-pretendard), "Apple SD Gothic Neo", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.55;
+  color: rgba(11, 18, 16, 0.72);
+}
+
+a.welcome-popup__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.welcome-popup__later {
+  margin-top: auto;
+}
+
+@media (max-width: 720px) {
+  /* More store photo, less empty cream — matches approved mobile preview */
+  .welcome-popup__panel--flannels .welcome-popup__visual {
+    height: min(58vw, 22.5rem);
+  }
+
+  .welcome-popup__panel--flannels .welcome-popup__body {
+    padding: 1.05rem 1.15rem 1rem;
+  }
+
+  .welcome-popup__panel--flannels .welcome-popup__title {
+    margin-right: 1.25rem;
+    font-size: 1.32rem;
+  }
+
+  .welcome-popup__panel--flannels .welcome-popup__support {
+    margin-bottom: 0.95rem;
+    font-size: 0.86rem;
+  }
+
+  .welcome-popup__panel--flannels .welcome-popup__cta {
+    min-height: 2.75rem;
+  }
+
+  .welcome-popup__panel--flannels .welcome-popup__later {
+    margin-top: 0.65rem;
+  }
+}
+
+
+
