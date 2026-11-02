@@ -26,9 +26,10 @@ const RAIL_MIN_BRANDS: Record<string, number> = {
   sports: 4,
 };
 
-/** Homepage watches rail is locked to Christopher Ward New Releases (all devices). */
+/** Homepage watches rail: Christopher Ward New Releases + NORQAIN. */
 export const HOMEPAGE_WATCHES_COLLECTION = "cw-new-releases";
 export const HOMEPAGE_WATCHES_BRAND = "christopher-ward";
+export const HOMEPAGE_WATCHES_BRANDS = ["christopher-ward", "norqain"] as const;
 
 /**
  * `featuredAt` ms for products in `HOME_FEATURED` that are still within
@@ -58,7 +59,9 @@ function sortWithFeaturedFirst(list: Product[]): Product[] {
 
 /** True when a product belongs on the homepage watches lookbook rail. */
 export function isHomepageWatchesRailProduct(product: Product): boolean {
-  if (homepageBrandKey(product) !== HOMEPAGE_WATCHES_BRAND) return false;
+  const brand = homepageBrandKey(product);
+  if (brand === "norqain") return true;
+  if (brand !== HOMEPAGE_WATCHES_BRAND) return false;
   if (homepageFeaturedAt(product) != null) return true;
   if (product.subcategory === HOMEPAGE_WATCHES_COLLECTION) return true;
   if (product.cwCollections?.some((c) => c === HOMEPAGE_WATCHES_COLLECTION)) {
@@ -87,6 +90,7 @@ const ID_PREFIX_BRAND: Array<{ prefix: string; brand: string }> = [
   { prefix: "bs-", brand: "belstaff" },
   { prefix: "ps-", brand: "paul-smith" },
   { prefix: "cw-", brand: "christopher-ward" },
+  { prefix: "nq-", brand: "norqain" },
   { prefix: "lu-", brand: "london-undercover" },
   { prefix: "mc-", brand: "moncler" },
   { prefix: "fl-", brand: "flannels" },
@@ -109,6 +113,7 @@ const BRAND_ALIASES: Array<{ re: RegExp; brand: string }> = [
   { re: /belstaff|벨스타프/i, brand: "belstaff" },
   { re: /paul\s*smith|폴\s*스미스/i, brand: "paul-smith" },
   { re: /christopher\s*ward|크리스토퍼/i, brand: "christopher-ward" },
+  { re: /norqain|노르케인/i, brand: "norqain" },
   { re: /london\s*undercover|런던언더커버/i, brand: "london-undercover" },
   { re: /moncler|몽클레/i, brand: "moncler" },
   { re: /flannels|플란넬/i, brand: "flannels" },
@@ -176,7 +181,7 @@ export function getHomepageRailProductsExclusive(
  * Assign products to every category rail in order. Brands claimed by an
  * earlier rail are excluded from later rails.
  *
- * Watches is special-cased: always Christopher Ward New Releases (newest
+ * Watches is special-cased: Christopher Ward New Releases + NORQAIN (newest
  * in-stock), independent of other brands' `registeredAt` stamps. On every
  * rail, `HOME_FEATURED` entries lead.
  */
@@ -197,17 +202,20 @@ export function assignHomepageCategoryRails(
       rail.railId === "watches"
         ? rail.products.filter(isHomepageWatchesRailProduct)
         : rail.products;
-    // Watches is CW-only — do not let exclusivity empty the rail if CW somehow
-    // appeared earlier (it shouldn't; CW is watches-category only).
+    // Watches is CW + NORQAIN — keep both eligible even if exclusivity claimed them.
     const railExclude =
       rail.railId === "watches"
-        ? new Set([...exclude].filter((b) => b !== HOMEPAGE_WATCHES_BRAND))
+        ? new Set(
+            [...exclude].filter(
+              (b) => !(HOMEPAGE_WATCHES_BRANDS as readonly string[]).includes(b),
+            ),
+          )
         : exclude;
     const picked = getHomepageRailProductsExclusive(
       pool,
       limit,
       railExclude,
-      RAIL_MIN_BRANDS[rail.railId] ?? 1,
+      rail.railId === "watches" ? 2 : (RAIL_MIN_BRANDS[rail.railId] ?? 1),
     );
     result[rail.railId] = picked;
     for (const product of picked) {

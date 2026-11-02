@@ -9,6 +9,7 @@ import { navBrandFamily } from "@/lib/brand-nav-order";
 /** Uniform English wordmark shown on brand chips (same typeface via CSS). */
 const FAMILY_DISPLAY: Record<string, string> = {
   "christopher-ward": "Christopher Ward",
+  norqain: "NORQAIN",
   chanel: "Chanel",
   gucci: "Gucci",
   "louis-vuitton": "Louis Vuitton",

@@ -2,7 +2,7 @@
  * Global brand chip / nav display order across homepage rails, shop filters,
  * and header menus.
  *
- *   크리스토퍼와드 → 샤넬 → 구찌 → (앞으로 추가되는 브랜드) → 버버리
+ *   크리스토퍼와드 → 노르케인 → 샤넬 → 구찌 → (앞으로 추가되는 브랜드) → 버버리
  *   → 폴 스미스 → 아크테릭스 → 벨스타프
  *
  * Gender / sport / type leaves stay ahead of brand chips.
@@ -20,6 +20,8 @@ const FAMILY_RANK: Record<string, number> = {
   flannels: 10,
   /** Watches: Christopher Ward before Chanel. */
   "christopher-ward": 50,
+  /** Watches: NORQAIN between CW and Chanel. */
+  norqain: 55,
   chanel: 100,
   gucci: 200,
   /** Louis Vuitton — after Chanel, before other _new brands. */
@@ -53,6 +55,9 @@ function brandFamily(id: string): string | null {
     x.startsWith("cw-")
   ) {
     return "christopher-ward";
+  }
+  if (x === "norqain" || x.startsWith("norqain") || x.startsWith("nq-")) {
+    return "norqain";
   }
   if (
     x === "chanel" ||
@@ -184,6 +189,7 @@ export function sortNavChildrenByBrandOrder<T extends { id: string }>(
 export const SEO_BRAND_SLUG_ORDER = [
   "flannels",
   "christopher-ward",
+  "norqain",
   "chanel",
   "gucci",
   "celine",
