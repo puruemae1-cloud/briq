@@ -9,6 +9,11 @@ function vimeoEmbed(url: string) {
   return url;
 }
 
+/** NORQAIN / Shopify (and similar) ship autoplay loop MP4s — not Vimeo embeds. */
+function isDirectVideo(url: string) {
+  return /\.(mp4|webm|mov)(\?|#|$)/i.test(url);
+}
+
 export function ProductStorySections({
   sections,
 }: {
@@ -37,14 +42,33 @@ export function ProductStorySections({
           >
             {section.videoUrl ? (
               <div className="product-story__media product-story__media--video">
-                <div className="product-story__video">
-                  <iframe
-                    src={vimeoEmbed(section.videoUrl)}
-                    title={section.titleKo}
-                    allow="autoplay; fullscreen; picture-in-picture"
-                    allowFullScreen
-                    loading="lazy"
-                  />
+                <div
+                  className={
+                    isDirectVideo(section.videoUrl)
+                      ? "product-story__video product-story__video--direct"
+                      : "product-story__video"
+                  }
+                >
+                  {isDirectVideo(section.videoUrl) ? (
+                    <video
+                      src={section.videoUrl}
+                      poster={section.image || undefined}
+                      title={section.titleKo}
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                      preload="metadata"
+                    />
+                  ) : (
+                    <iframe
+                      src={vimeoEmbed(section.videoUrl)}
+                      title={section.titleKo}
+                      allow="autoplay; fullscreen; picture-in-picture"
+                      allowFullScreen
+                      loading="lazy"
+                    />
+                  )}
                 </div>
               </div>
             ) : section.image ? (

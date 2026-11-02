@@ -32,6 +32,13 @@ const _nqCatalogProducts: Product[] = [
     techSpecs: [{"labelKo": "컬렉션", "valueKo": "Wild ONE"}, {"labelKo": "4K 매뉴팩처 칼리버", "valueKo": "COSC 인증"}, {"labelKo": "직경", "valueKo": "41.00mm"}, {"labelKo": "두께", "valueKo": "11.95mm"}, {"labelKo": "러그 폭", "valueKo": "20.00mm"}, {"labelKo": "러그 투 러그", "valueKo": "48.70mm"}, {"labelKo": "방수", "valueKo": "100m"}, {"labelKo": "원산지", "valueKo": "스위스 메이드"}],
     storySections: [
       {
+        titleKo: "제품 영상",
+        bodyKo: "공홈과 동일한 제품 영상입니다. 자동 재생되며 소리가 없습니다.",
+        videoUrl: "https://norqain.com/cdn/shop/videos/c/vp/c8280319e6514c6781ac6a53c0618352/c8280319e6514c6781ac6a53c0618352.HD-1080p-7.2Mbps-98382960.mp4?v=0",
+        image: "https://norqain.com/cdn/shop/files/preview_images/c8280319e6514c6781ac6a53c0618352.thumbnail.0000000000_small.jpg?v=1792593786",
+        layout: "wide",
+      },
+      {
         titleKo: "초경량이면서 매우 견고한 케이스 구조",
         bodyKo: "와일드 원 스켈레톤 X-Lite의 혁신적인 초경량 케이스 구조는 가벼움과 견고함의 경계를 밀어붙입니다. 겹겹이 쌓인 복합 구조는 30개 이상의 개별 부품으로 구성됩니다. 케이지는 블랙 NORTEQ로 제작되며, 효율적인 충격 흡수 시스템을 갖추고 있습니다. 핵심에는 NORTEQ·티타늄·알루미늄 케이스 안에 독자적인 X-Lite 케이싱 링이 자리합니다. 케이스 곳곳에 충격 흡수 장치가 전략적으로 배치되어, 슬림하고 착용하기 좋은 프로필을 유지하면서도 5,000G 이상의 충격을 견딜 수 있습니다.",
         image: "/products/nq-pdp/wild-one-skeleton-x-lite-turquoise/story-1.jpg",
@@ -444,6 +451,13 @@ const _nqCatalogProducts: Product[] = [
     techSpecs: [{"labelKo": "컬렉션", "valueKo": "Freedom"}, {"labelKo": "직경", "valueKo": "40.00mm"}, {"labelKo": "두께", "valueKo": "14.50mm"}, {"labelKo": "러그 폭", "valueKo": "20.00mm"}, {"labelKo": "러그 투 러그", "valueKo": "49.30mm"}, {"labelKo": "방수", "valueKo": "100m"}, {"labelKo": "원산지", "valueKo": "스위스 메이드"}],
     storySections: [
       {
+        titleKo: "제품 영상",
+        bodyKo: "공홈과 동일한 제품 영상입니다. 자동 재생되며 소리가 없습니다.",
+        videoUrl: "https://norqain.com/cdn/shop/videos/c/vp/f59df8a88b09483e9f07a58990266858/f59df8a88b09483e9f07a58990266858.HD-1080p-7.2Mbps-87845551.mp4?v=0",
+        image: "https://norqain.com/cdn/shop/files/preview_images/f59df8a88b09483e9f07a58990266858.thumbnail.0000000000_small.jpg?v=1782898598",
+        layout: "wide",
+      },
+      {
         titleKo: "Exclusive \"Enjoy Life\" case back – ONE of 500",
         bodyKo: "A closer look at the open case back reveals the \"Enjoy Life\" logo alongside the exclusive \"ONE of 500\" 리미티드 에디션 printing. More than a signature, the \"Enjoy Life\" emblem embodies NORQAIN's philosophy, a reminder to embrace the moment, worry less, and make time for life's adventures and holidays.",
         image: "/products/nq-pdp/freedom-gmt-enjoy-life-holiday-limited-edition/story-1.jpg",
@@ -760,6 +774,13 @@ const _nqCatalogProducts: Product[] = [
     techSpecs: [{"labelKo": "컬렉션", "valueKo": "Wild ONE"}, {"labelKo": "8K 매뉴팩처 칼리버", "valueKo": "COSC 인증"}, {"labelKo": "직경", "valueKo": "42.00mm"}, {"labelKo": "두께", "valueKo": "13.60mm"}, {"labelKo": "러그 폭", "valueKo": "22.00mm"}, {"labelKo": "러그 투 러그", "valueKo": "49.40mm"}, {"labelKo": "원산지", "valueKo": "스위스 메이드"}],
     storySections: [
       {
+        titleKo: "제품 영상",
+        bodyKo: "공홈과 동일한 제품 영상입니다. 자동 재생되며 소리가 없습니다.",
+        videoUrl: "https://norqain.com/cdn/shop/videos/c/vp/a877c5b895fd44829c8229bf78184371/a877c5b895fd44829c8229bf78184371.HD-1080p-7.2Mbps-80385693.mp4?v=0",
+        image: "https://norqain.com/cdn/shop/files/preview_images/a877c5b895fd44829c8229bf78184371.thumbnail.0000000000_small.jpg?v=1775459416",
+        layout: "wide",
+      },
+      {
         titleKo: "FLOATING TRANSPARENT DISCS",
         bodyKo: "This timepiece features a newly developed design with floating transparent discs replacing the small seconds and 크로노 minutes hands, enhancing the watch’s lightness while further opening up the view of its exceptional 스위스 메이드 mechanical movement.",
         image: "/products/nq-pdp/wild-one-skeleton-chrono-42mm-burgundy-limited-edition/story-1.jpg",
@@ -827,6 +848,13 @@ const _nqCatalogProducts: Product[] = [
     featuresKo: ["매뉴팩처 칼리버", "Pin buckle", "Flyback 크로노 movement", "Ultra-robust & ultra-light NORTEQ® Material", "Black NORTEQ® cage (top and bottom parts)", "Sandblasted titanium container and case back", "양면 반사 방지·스크래치 방지 평면 사파이어 글라스", "스크래치 방지 평면 사파이어 글라스의 오픈 케이스백", "Screw-down crown, overmolded with black rubber and NORQAIN logo", "Engraved black NORTEQ® NORQAIN plate on the left side of the case", "Skeletonised black dial with white and 터콰이즈 printings", "Diamond-cut, faceted, rhodium plated indexes filled with 터콰이즈 Super-LumiNova®"],
     techSpecs: [{"labelKo": "컬렉션", "valueKo": "Wild ONE"}, {"labelKo": "8K 매뉴팩처 칼리버", "valueKo": "COSC 인증"}, {"labelKo": "직경", "valueKo": "42.00mm"}, {"labelKo": "두께", "valueKo": "13.60mm"}, {"labelKo": "러그 폭", "valueKo": "22.00mm"}, {"labelKo": "러그 투 러그", "valueKo": "49.40mm"}, {"labelKo": "원산지", "valueKo": "스위스 메이드"}],
     storySections: [
+      {
+        titleKo: "제품 영상",
+        bodyKo: "공홈과 동일한 제품 영상입니다. 자동 재생되며 소리가 없습니다.",
+        videoUrl: "https://norqain.com/cdn/shop/videos/c/vp/a877c5b895fd44829c8229bf78184371/a877c5b895fd44829c8229bf78184371.HD-1080p-7.2Mbps-80385693.mp4?v=0",
+        image: "https://norqain.com/cdn/shop/files/preview_images/a877c5b895fd44829c8229bf78184371.thumbnail.0000000000_small.jpg?v=1775459416",
+        layout: "wide",
+      },
       {
         titleKo: "FLOATING TRANSPARENT DISCS",
         bodyKo: "This timepiece features a newly developed design with floating transparent discs replacing the small seconds and 크로노 minutes hands, enhancing the watch’s lightness while further opening up the view of its exceptional 스위스 메이드 mechanical movement.",
@@ -1204,6 +1232,13 @@ const _nqCatalogProducts: Product[] = [
     techSpecs: [{"labelKo": "컬렉션", "valueKo": "Adventure"}, {"labelKo": "직경", "valueKo": "41.00mm"}, {"labelKo": "두께", "valueKo": "15.00mm"}, {"labelKo": "러그 폭", "valueKo": "20.00mm"}, {"labelKo": "러그 투 러그", "valueKo": "48.90mm"}, {"labelKo": "방수", "valueKo": "100m"}, {"labelKo": "원산지", "valueKo": "스위스 메이드"}],
     storySections: [
       {
+        titleKo: "제품 영상",
+        bodyKo: "공홈과 동일한 제품 영상입니다. 자동 재생되며 소리가 없습니다.",
+        videoUrl: "https://norqain.com/cdn/shop/videos/c/vp/ec12795586cf49c188f7224fa88aa81c/ec12795586cf49c188f7224fa88aa81c.HD-1080p-7.2Mbps-68912032.mp4?v=0",
+        image: "https://norqain.com/cdn/shop/files/preview_images/ec12795586cf49c188f7224fa88aa81c.thumbnail.0000000000_small.jpg?v=1769755080",
+        layout: "wide",
+      },
+      {
         titleKo: "Scratched Ice dial with hockey inspired features",
         bodyKo: "Inspired by the raw surface of the ice hockey rink, the white “scratched ice” dial captures the intensity of the game from the first face-off to the final second. A white inner bezel with a pulsometer features a heartbeat indicator and a timeout symbol at the 200 mark, serving as a purely graphic and whimsical reference to the pace and intensity of the game, a symbolic reminder to catch your breath. At 9 o’clock, the white hockey face-off circle counter is paired with a small seconds disc adorned with crossed hockey sticks, a playful tribute to the sport’s identity. Black counters at 12 and 6 o’clock, the latter proudly displaying the NHL logo, create a bold contrast, while the day and date indication ensures everyday functionality. Together, these refined hockey-inspired details create a distinctive timepiece that celebrates precision, intensity, and performance.",
         image: "/products/nq-pdp/adventure-chrono-41mm-nhl-limited-edition/story-1.jpg",
@@ -1271,6 +1306,13 @@ const _nqCatalogProducts: Product[] = [
     featuresKo: ["매뉴팩처 칼리버", "Pin Buckle", "Revolutionary shock-absorbing case construction", "Ultra-robust & ultra-light NORTEQ® Material", "Grey NORTEQ® cage (top and bottom parts)", "Sandblasted titanium container and case back", "양면 반사 방지·스크래치 방지 평면 사파이어 글라스 with white NORQAIN logo", "스크래치 방지 평면 사파이어 글라스의 오픈 케이스백, featuring “리미티드 에디션, Spengler Cup logo, ONE of 97” printed in light blue", "Screw-down crown, overmolded with black rubber and NORQAIN logo", "Engraved grey NORTEQ® NORQAIN plate on the left side of the case", "Openworked black dial with white and light blue printing", "Diamond-cut flat 스켈레톤 indexes, rhodium plated, with white Super-LumiNova® spots"],
     techSpecs: [{"labelKo": "컬렉션", "valueKo": "Wild ONE"}, {"labelKo": "Even lighter due to skeletonised movement", "valueKo": "78 grams"}, {"labelKo": "직경", "valueKo": "42.00mm"}, {"labelKo": "두께", "valueKo": "12.30mm"}, {"labelKo": "러그 폭", "valueKo": "22.00mm"}, {"labelKo": "러그 투 러그", "valueKo": "49.40mm"}, {"labelKo": "방수", "valueKo": "200m"}, {"labelKo": "원산지", "valueKo": "스위스 메이드"}],
     storySections: [
+      {
+        titleKo: "제품 영상",
+        bodyKo: "공홈과 동일한 제품 영상입니다. 자동 재생되며 소리가 없습니다.",
+        videoUrl: "https://norqain.com/cdn/shop/videos/c/vp/918577013f644f1e8a4f2493c306daf5/918577013f644f1e8a4f2493c306daf5.HD-1080p-7.2Mbps-65198914.mp4?v=0",
+        image: "https://norqain.com/cdn/shop/files/preview_images/918577013f644f1e8a4f2493c306daf5.thumbnail.0000000000_small.jpg?v=1765800995",
+        layout: "wide",
+      },
       {
         titleKo: "The 와일드 원 스켈레톤 42mm Spengler Cup 리미티드 에디션",
         bodyKo: "This 리미티드 에디션 와일드 원 model celebrates our partnership with the iconic Spengler Cup in Davos. With its extremely robust construction, this ultra-light timepiece is a fitting match for a sport known for its dynamism, intensity and high-impact plays.",
@@ -1547,6 +1589,13 @@ const _nqCatalogProducts: Product[] = [
     featuresKo: ["매뉴팩처 칼리버", "Anthracite iron 메테오라이트 dial and distinctive Widmanstätten pattern", "Revolutionary shock-absorbing case construction", "Ultra-robust & ultra-light NORTEQ® Material", "Burgundy NORTEQ® cage (top and bottom parts)", "Sandblasted titanium container and case back", "양면 반사 방지·스크래치 방지 평면 사파이어 글라스", "스크래치 방지 평면 사파이어 글라스의 오픈 케이스백 with “스페셜 에디션, 메테오라이트” printed in black", "Screw-down crown, overmolded with black rubber and NORQAIN logo", "Engraved burgundy NORTEQ® NORQAIN plate on the left side of the case", "Anthracite iron 메테오라이트 dial", "Diamond-cut flat 스켈레톤 indexes, black plated with white X1 Super-LumiNova® spots"],
     techSpecs: [{"labelKo": "컬렉션", "valueKo": "Wild ONE"}, {"labelKo": "매뉴팩처 칼리버", "valueKo": "70h power reserve"}, {"labelKo": "직경", "valueKo": "42.00mm"}, {"labelKo": "두께", "valueKo": "12.30mm"}, {"labelKo": "러그 폭", "valueKo": "22.00mm"}, {"labelKo": "러그 투 러그", "valueKo": "49.40mm"}, {"labelKo": "방수", "valueKo": "200m"}, {"labelKo": "원산지", "valueKo": "스위스 메이드"}],
     storySections: [
+      {
+        titleKo: "제품 영상",
+        bodyKo: "공홈과 동일한 제품 영상입니다. 자동 재생되며 소리가 없습니다.",
+        videoUrl: "https://norqain.com/cdn/shop/videos/c/vp/c253f3648bd74fff9bb92016e79b8280/c253f3648bd74fff9bb92016e79b8280.HD-1080p-7.2Mbps-63041407.mp4?v=0",
+        image: "https://norqain.com/cdn/shop/files/preview_images/c253f3648bd74fff9bb92016e79b8280.thumbnail.0000000000_small.jpg?v=1763381952",
+        layout: "wide",
+      },
       {
         titleKo: "IRON 메테오라이트 DIAL",
         bodyKo: "For the very first time, the dial is crafted from genuine 메테오라이트 stone sourced from outer space, creating a captivating interplay of light, pattern, and texture. Each dial, which is unique to each watch, features the distinctive Widmanstätten pattern, which is naturally occurring crystalline structures that form through extremely slow cooling of metallic asteroids over millions of years, making every piece truly one of a kind. It is a testament to both rarity and craftsmanship that makes this timepiece truly one of a kind.",
@@ -1832,6 +1881,13 @@ const _nqCatalogProducts: Product[] = [
     techSpecs: [{"labelKo": "컬렉션", "valueKo": "Freedom"}, {"labelKo": "직경", "valueKo": "40.00mm"}, {"labelKo": "두께", "valueKo": "14.90mm"}, {"labelKo": "러그 폭", "valueKo": "20.00mm"}, {"labelKo": "러그 투 러그", "valueKo": "49.20mm"}, {"labelKo": "방수", "valueKo": "100m"}, {"labelKo": "원산지", "valueKo": "스위스 메이드"}],
     storySections: [
       {
+        titleKo: "제품 영상",
+        bodyKo: "공홈과 동일한 제품 영상입니다. 자동 재생되며 소리가 없습니다.",
+        videoUrl: "https://norqain.com/cdn/shop/videos/c/vp/21f0a4abc2f046bfa988472c77cba504/21f0a4abc2f046bfa988472c77cba504.HD-1080p-7.2Mbps-48717809.mp4?v=0",
+        image: "https://norqain.com/cdn/shop/files/preview_images/21f0a4abc2f046bfa988472c77cba504.thumbnail.0000000000_small.jpg?v=1748940355",
+        layout: "wide",
+      },
+      {
         titleKo: "Ice Cream Dial",
         bodyKo: "A sweet surprise is hidden in the date window between 4 and 5 o’clock – an ice cream motif that adds a playful twist to this bold 프리덤 60 크로노. The white dial is brought to life with colourful scoops of flavour: green, pink and blue sub-dials at 3, 6 and 9 o’clock serve up a refreshing look that is as cool as it is unique.",
         image: "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/story-1.jpg",
@@ -1936,6 +1992,13 @@ const _nqCatalogProducts: Product[] = [
     techSpecs: [{"labelKo": "컬렉션", "valueKo": "Independence"}, {"labelKo": "8K 매뉴팩처 칼리버", "valueKo": "COSC 인증"}, {"labelKo": "직경", "valueKo": "42.00mm"}, {"labelKo": "두께", "valueKo": "13.90mm"}, {"labelKo": "러그 폭", "valueKo": "22.00mm"}, {"labelKo": "러그 투 러그", "valueKo": "49.80mm"}, {"labelKo": "방수", "valueKo": "100m"}, {"labelKo": "원산지", "valueKo": "스위스 메이드"}],
     storySections: [
       {
+        titleKo: "제품 영상",
+        bodyKo: "공홈과 동일한 제품 영상입니다. 자동 재생되며 소리가 없습니다.",
+        videoUrl: "https://norqain.com/cdn/shop/videos/c/vp/977e96bf4c8f490da85a6a6ade808e84/977e96bf4c8f490da85a6a6ade808e84.HD-1080p-7.2Mbps-44808107.mp4?v=0",
+        image: "https://norqain.com/cdn/shop/files/preview_images/977e96bf4c8f490da85a6a6ade808e84.thumbnail.0000000000_small.jpg?v=1742917749",
+        layout: "wide",
+      },
+      {
         titleKo: "Skeletonised mountain dial",
         bodyKo: "The 인디펜던스 스켈레톤 크로노 showcases a remarkable three-dimensional skeletonised effect, accentuating the form of a mountain chain and meticulously coloured in jade green to complement the remnants of the dial after the skeletonisation process. The architecture of the skeletonised dial not only enhances the sense of depth but also highlights the technical sophistication of the movement.",
         image: "/products/nq-pdp/independence-skeleton-chrono-42mm-titanium-jade-green-limited-edition/story-1.jpg",
@@ -2004,6 +2067,13 @@ const _nqCatalogProducts: Product[] = [
     techSpecs: [{"labelKo": "컬렉션", "valueKo": "Independence"}, {"labelKo": "8K 매뉴팩처 칼리버", "valueKo": "COSC 인증"}, {"labelKo": "직경", "valueKo": "42.00mm"}, {"labelKo": "두께", "valueKo": "13.90mm"}, {"labelKo": "러그 폭", "valueKo": "22.00mm"}, {"labelKo": "러그 투 러그", "valueKo": "49.80mm"}, {"labelKo": "방수", "valueKo": "100m"}, {"labelKo": "원산지", "valueKo": "스위스 메이드"}],
     storySections: [
       {
+        titleKo: "제품 영상",
+        bodyKo: "공홈과 동일한 제품 영상입니다. 자동 재생되며 소리가 없습니다.",
+        videoUrl: "https://norqain.com/cdn/shop/videos/c/vp/977e96bf4c8f490da85a6a6ade808e84/977e96bf4c8f490da85a6a6ade808e84.HD-1080p-7.2Mbps-44808107.mp4?v=0",
+        image: "https://norqain.com/cdn/shop/files/preview_images/977e96bf4c8f490da85a6a6ade808e84.thumbnail.0000000000_small.jpg?v=1742917749",
+        layout: "wide",
+      },
+      {
         titleKo: "Skeletonised mountain dial",
         bodyKo: "The 인디펜던스 스켈레톤 크로노 showcases a remarkable three-dimensional skeletonised effect, accentuating the form of a mountain chain and meticulously coloured in purple to complement the remnants of the dial after the skeletonisation process. The architecture of the skeletonised dial not only enhances the sense of depth but also highlights the technical sophistication of the movement.",
         image: "/products/nq-pdp/independence-skeleton-chrono-42mm-titanium-purple/story-1.jpg",
@@ -2059,6 +2129,13 @@ const _nqCatalogProducts: Product[] = [
     featuresKo: ["매뉴팩처 칼리버", "Pin buckle", "Revolutionary shock-absorbing case construction", "Ultra-robust & ultra-light NORTEQ® Material", "Black NORTEQ® cage (top and bottom parts)", "Sandblasted titanium container and case back", "양면 반사 방지·스크래치 방지 평면 사파이어 글라스 with white NORQAIN logo", "스크래치 방지 평면 사파이어 글라스의 오픈 케이스백", "Screw-down crown, overmolded with black rubber and NORQAIN logo", "케이스 좌측의 블랙 NORTEQ NORQAIN 플레이트 각인", "Openworked black dial with hyper pink printings", "Diamond-cut flat 스켈레톤 rhodium plated indexes, with hyper pink X1 Super-LumiNova® spots"],
     techSpecs: [{"labelKo": "컬렉션", "valueKo": "Wild ONE"}, {"labelKo": "Even lighter due to skeletonised movement", "valueKo": "64g"}, {"labelKo": "직경", "valueKo": "39.00mm"}, {"labelKo": "두께", "valueKo": "11.75mm"}, {"labelKo": "러그 폭", "valueKo": "20.00mm"}, {"labelKo": "러그 투 러그", "valueKo": "45.75mm"}, {"labelKo": "방수", "valueKo": "200m"}, {"labelKo": "원산지", "valueKo": "스위스 메이드"}],
     storySections: [
+      {
+        titleKo: "제품 영상",
+        bodyKo: "공홈과 동일한 제품 영상입니다. 자동 재생되며 소리가 없습니다.",
+        videoUrl: "https://norqain.com/cdn/shop/videos/c/vp/45fb278728f849508c9a6b3457df1c8d/45fb278728f849508c9a6b3457df1c8d.HD-1080p-7.2Mbps-44884490.mp4?v=0",
+        image: "https://norqain.com/cdn/shop/files/preview_images/45fb278728f849508c9a6b3457df1c8d.thumbnail.0000000000_small.jpg?v=1743017136",
+        layout: "wide",
+      },
       {
         titleKo: "LIGHTWEIGHT PERFORMANCE",
         bodyKo: "Crafted from NORQAIN’s proprietary NORTEQ® material—renowned for its ultra-lightweight strength and durability—the new 와일드 원 39mm redefines performance. Weighing just 64 grams, it is the lightest NORQAIN timepiece ever made, making it 50% lighter than a stainless steel NORQAIN watch. Built for ultimate durability, this high-performance sports watch is designed to withstand the most extreme adventures. Whether you're mountain biking, skiing down thrilling slopes, or conquering rugged trails, the 와일드 원 39mm delivers the perfect balance of featherlight comfort, resilience, and cutting-edge technology—ready for any wild challenge.",
@@ -2152,6 +2229,13 @@ const _nqCatalogProducts: Product[] = [
     techSpecs: [{"labelKo": "컬렉션", "valueKo": "Wild ONE"}, {"labelKo": "Even lighter due to skeletonised movement", "valueKo": "64g"}, {"labelKo": "직경", "valueKo": "39.00mm"}, {"labelKo": "두께", "valueKo": "11.75mm"}, {"labelKo": "러그 폭", "valueKo": "20.00mm"}, {"labelKo": "러그 투 러그", "valueKo": "45.75mm"}, {"labelKo": "방수", "valueKo": "200m"}, {"labelKo": "원산지", "valueKo": "스위스 메이드"}],
     storySections: [
       {
+        titleKo: "제품 영상",
+        bodyKo: "공홈과 동일한 제품 영상입니다. 자동 재생되며 소리가 없습니다.",
+        videoUrl: "https://norqain.com/cdn/shop/videos/c/vp/45fb278728f849508c9a6b3457df1c8d/45fb278728f849508c9a6b3457df1c8d.HD-1080p-7.2Mbps-44884490.mp4?v=0",
+        image: "https://norqain.com/cdn/shop/files/preview_images/45fb278728f849508c9a6b3457df1c8d.thumbnail.0000000000_small.jpg?v=1743017136",
+        layout: "wide",
+      },
+      {
         titleKo: "LIGHTWEIGHT PERFORMANCE",
         bodyKo: "Crafted from NORQAIN’s proprietary NORTEQ® material—renowned for its ultra-lightweight strength and durability—the new 와일드 원 39mm redefines performance. Weighing just 64 grams, it is the lightest NORQAIN timepiece ever made, making it 50% lighter than a stainless steel NORQAIN watch. Built for ultimate durability, this high-performance sports watch is designed to withstand the most extreme adventures. Whether you're mountain biking, skiing down thrilling slopes, or conquering rugged trails, the 와일드 원 39mm delivers the perfect balance of featherlight comfort, resilience, and cutting-edge technology—ready for any wild challenge.",
         image: "/products/nq-pdp/wild-one-skeleton-39mm-sky-blue/story-1.jpg",
@@ -2243,6 +2327,13 @@ const _nqCatalogProducts: Product[] = [
     featuresKo: ["매뉴팩처 칼리버", "Pin buckle", "Revolutionary shock-absorbing case construction", "Ultra-robust & ultra-light NORTEQ® Material", "Purple NORTEQ® cage (top and bottom parts)", "Sandblasted titanium container and case back", "양면 반사 방지·스크래치 방지 평면 사파이어 글라스 with white NORQAIN logo", "스크래치 방지 평면 사파이어 글라스의 오픈 케이스백", "Screw-down crown, overmolded with ice blue rubber and NORQAIN logo", "Engraved purple NORTEQ® NORQAIN plate on the left side of the case", "Openworked dark purple dial with ice blue printings", "Diamond-cut flat 스켈레톤 rhodium plated indexes, with ice blue X1 Super-LumiNova® spots"],
     techSpecs: [{"labelKo": "컬렉션", "valueKo": "Wild ONE"}, {"labelKo": "Even lighter due to skeletonised movement", "valueKo": "64g"}, {"labelKo": "직경", "valueKo": "39.00mm"}, {"labelKo": "두께", "valueKo": "11.75mm"}, {"labelKo": "러그 폭", "valueKo": "20.00mm"}, {"labelKo": "러그 투 러그", "valueKo": "45.75mm"}, {"labelKo": "방수", "valueKo": "200m"}, {"labelKo": "원산지", "valueKo": "스위스 메이드"}],
     storySections: [
+      {
+        titleKo: "제품 영상",
+        bodyKo: "공홈과 동일한 제품 영상입니다. 자동 재생되며 소리가 없습니다.",
+        videoUrl: "https://norqain.com/cdn/shop/videos/c/vp/45fb278728f849508c9a6b3457df1c8d/45fb278728f849508c9a6b3457df1c8d.HD-1080p-7.2Mbps-44884490.mp4?v=0",
+        image: "https://norqain.com/cdn/shop/files/preview_images/45fb278728f849508c9a6b3457df1c8d.thumbnail.0000000000_small.jpg?v=1743017136",
+        layout: "wide",
+      },
       {
         titleKo: "LIGHTWEIGHT PERFORMANCE",
         bodyKo: "Crafted from NORQAIN’s proprietary purple NORTEQ® material—renowned for its ultra-lightweight strength and durability—the new 와일드 원 39mm redefines performance. Weighing just 64 grams, it is the lightest NORQAIN timepiece ever made, making it 50% lighter than a stainless steel NORQAIN watch. Built for ultimate durability, this high-performance sports watch is designed to withstand the most extreme adventures. Whether you're mountain biking, skiing down thrilling slopes, or conquering rugged trails, the 와일드 원 39mm delivers the perfect balance of featherlight comfort, resilience, and cutting-edge technology—ready for any wild challenge.",
@@ -2436,6 +2527,13 @@ const _nqCatalogProducts: Product[] = [
     techSpecs: [{"labelKo": "컬렉션", "valueKo": "Wild ONE"}, {"labelKo": "Even lighter due to skeletonised movement", "valueKo": "78 grams"}, {"labelKo": "직경", "valueKo": "42.00mm"}, {"labelKo": "두께", "valueKo": "12.30mm"}, {"labelKo": "러그 폭", "valueKo": "22.00mm"}, {"labelKo": "러그 투 러그", "valueKo": "49.40mm"}, {"labelKo": "방수", "valueKo": "200m"}, {"labelKo": "원산지", "valueKo": "스위스 메이드"}],
     storySections: [
       {
+        titleKo: "제품 영상",
+        bodyKo: "공홈과 동일한 제품 영상입니다. 자동 재생되며 소리가 없습니다.",
+        videoUrl: "https://norqain.com/cdn/shop/videos/c/vp/70b31fd11296417fbc2cc1239cbfbcf5/70b31fd11296417fbc2cc1239cbfbcf5.HD-1080p-7.2Mbps-37632104.mp4?v=0",
+        image: "https://norqain.com/cdn/shop/files/preview_images/70b31fd11296417fbc2cc1239cbfbcf5.thumbnail.0000000000_small.jpg?v=1730817058",
+        layout: "wide",
+      },
+      {
         titleKo: "78 GRAMS & PROVEN ROBUSTNESS",
         bodyKo: "The watches are made with NORQAIN’s proprietary NORTEQ® material which is known for being ultra-robust and ultra-lightweight. Thanks to the skeletonised movement, each watch weighs just 78 grams, which is more than 50% lighter than a stainless steel NORQAIN watch and six grams lighter than the current 84-gram 와일드 원 models. The watches’ robustness and shock-resistance are proven by withstanding tests at 5’000 g . It can handle extreme shocks and bumps like when the wearer rides a mountain bike, skis an exhilarating downhill slope or runs an ambitious trail. This robust timepiece is the ultimate high-performance sports watch ready for any wild 어드벤처.",
         image: "/products/nq-pdp/wild-one-skeleton-42mm-grey/story-1.jpg",
@@ -2571,6 +2669,13 @@ const _nqCatalogProducts: Product[] = [
     featuresKo: ["매뉴팩처 칼리버", "Flyback 크로노 movement", "316L stainless steel case", "양면 반사 방지·스크래치 방지 평면 사파이어 글라스", "스크래치 방지 평면 사파이어 글라스의 오픈 케이스백", "Screw-down crown with NORQAIN logo", "Engraved 316L stainless steel NORQAIN Plate on the left side of the case", "Satin-finished skeletonised black dial", "Diamond-cut flat indexes, gold plated, filled with white Super-LumiNova®", "Diamond-cut faceted hour and minute hands, gold plated, filled with white Super-LumiNova®", "Diamond-cut flat central 크로노 hand, black plated, filled with white Super-LumiNova®", "NORQAIN 8K 매뉴팩처 칼리버 (NK24/1)"],
     techSpecs: [{"labelKo": "컬렉션", "valueKo": "Independence"}, {"labelKo": "8K 매뉴팩처 칼리버", "valueKo": "COSC 인증"}, {"labelKo": "직경", "valueKo": "42.00mm"}, {"labelKo": "두께", "valueKo": "13.90mm"}, {"labelKo": "러그 폭", "valueKo": "22.00mm"}, {"labelKo": "러그 투 러그", "valueKo": "49.80mm"}, {"labelKo": "방수", "valueKo": "100m"}, {"labelKo": "원산지", "valueKo": "스위스 메이드"}],
     storySections: [
+      {
+        titleKo: "제품 영상",
+        bodyKo: "공홈과 동일한 제품 영상입니다. 자동 재생되며 소리가 없습니다.",
+        videoUrl: "https://norqain.com/cdn/shop/videos/c/vp/da7c3f6cf4654e54a22286e8b7806211/da7c3f6cf4654e54a22286e8b7806211.HD-1080p-7.2Mbps-34517987.mp4?v=0",
+        image: "https://norqain.com/cdn/shop/files/preview_images/da7c3f6cf4654e54a22286e8b7806211.thumbnail.0000000000_small.jpg?v=1725973819",
+        layout: "wide",
+      },
       {
         titleKo: "Flyback 크로노 movement",
         bodyKo: "The flyback function enables the 크로노 to be reset and restarted with a single push of a button push. This powerful feature is perfect for your training sessions, making it effortless to time each interval as you build speed, strength, and stamina.",
@@ -3288,6 +3393,13 @@ const _nqCatalogProducts: Product[] = [
     featuresKo: ["매뉴팩처 칼리버", "Robust 스켈레톤 movement construction", "Brushed, polished and sandblasted case finishings", "316L stainless steel case", "양면 반사 방지·스크래치 방지 평면 사파이어 글라스", "스크래치 방지 평면 사파이어 글라스의 오픈 케이스백", "Screw-down crown with NORQAIN logo", "Engraved 316L stainless steel NORQAIN Plate on the left side of the case", "Openworked 스켈레톤 dial", "Faceted indexes, rhodium-plated, filled with white X1 Super-LumiNova®", "Diamond-cut faceted hour and minute hands, filled with white X1 Super-LumiNova®", "Diamond-cut flat second hand, red tip filled with white X1 Super-LumiNova®"],
     techSpecs: [{"labelKo": "컬렉션", "valueKo": "Independence"}, {"labelKo": "직경", "valueKo": "42.00mm"}, {"labelKo": "두께", "valueKo": "11.80mm"}, {"labelKo": "러그 폭", "valueKo": "22mm"}, {"labelKo": "러그 투 러그", "valueKo": "48.75mm"}, {"labelKo": "방수", "valueKo": "100m"}, {"labelKo": "원산지", "valueKo": "스위스 메이드"}],
     storySections: [
+      {
+        titleKo: "제품 영상",
+        bodyKo: "공홈과 동일한 제품 영상입니다. 자동 재생되며 소리가 없습니다.",
+        videoUrl: "https://norqain.com/cdn/shop/videos/c/vp/4d28a763477d4cfe9a2b7302ab3c66d8/4d28a763477d4cfe9a2b7302ab3c66d8.HD-1080p-7.2Mbps-18864694.mp4?v=0",
+        image: "https://norqain.com/cdn/shop/files/preview_images/4d28a763477d4cfe9a2b7302ab3c66d8.thumbnail.0000000000_small.jpg?v=1695842631",
+        layout: "wide",
+      },
       {
         titleKo: "스켈레톤 Dial",
         bodyKo: "Wearers and admirers can enjoy a stunning view of the robust and shock-resistant movement through the sapphire glass on both sides of the stainless steel case.",

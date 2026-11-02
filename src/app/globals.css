@@ -8030,6 +8030,20 @@ body:has(.pdp-dock) .back-to-top {
   border: 0;
 }
 
+.product-story__video--direct {
+  aspect-ratio: 4 / 5;
+  background: #0b1210;
+}
+
+.product-story__video--direct video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 0;
+}
+
 .product-story__block--wide {
   grid-template-columns: 1fr !important;
 }
