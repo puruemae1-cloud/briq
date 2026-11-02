@@ -40,6 +40,13 @@ export function assertNqCatalogQuality(products: Product[]): void {
         if (isVideo && (!s.bodyKo || s.bodyKo.length < 20)) {
           errors.push(`${id}: storySections[${i}] video copy too short`);
         }
+        if (!isVideo && s.bodyKo) {
+          const latin = (s.bodyKo.match(/[A-Za-z]/g) || []).length;
+          const hangul = (s.bodyKo.match(/[\uac00-\ud7a3]/g) || []).length;
+          if (latin > 40 && latin > hangul) {
+            errors.push(`${id}: storySections[${i}] body still mostly English`);
+          }
+        }
         if (!isVideo && !s.image) {
           errors.push(`${id}: storySections[${i}] missing image`);
         }

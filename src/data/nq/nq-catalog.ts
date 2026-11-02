@@ -2751,7 +2751,7 @@ const _nqCatalogProducts: Product[] = [
       },
       {
         titleKo: "다이아몬드 베젤",
-        bodyKo: "스테인리스 스틸 베젤은 60개의 다이아몬드로 완성되었습니다.",
+        bodyKo: "스테인리스 스틸 베젤에는 60개의 다이아몬드가 세팅되어, 퍼플 그라데이션 다이얼과 어울리는 반짝임을 더합니다.",
         image: "/products/nq-pdp/adventure-sport-37mm-purple-gradient-diamond-bezel/story-2.jpg",
         reverse: true,
       },
