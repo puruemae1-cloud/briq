@@ -131,9 +131,6 @@ export function WelcomeDialog({ onClose }: { onClose: () => void }) {
               </li>
             ))}
           </ul>
-          <button type="button" className="welcome-popup__cta" onClick={close}>
-            쇼핑 계속하기
-          </button>
           <button
             type="button"
             className="welcome-popup__later"

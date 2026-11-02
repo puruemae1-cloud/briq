@@ -49,6 +49,7 @@ function rememberFlannelsSeen() {
   }
 }
 
+/** Cream two-column shell shared with Welcome — original Flannels copy. */
 export function FlannelsPromoDialog({ onClose }: { onClose: () => void }) {
   const [mobile, setMobile] = useState(false);
 
@@ -100,9 +101,7 @@ export function FlannelsPromoDialog({ onClose }: { onClose: () => void }) {
       >
         <div className="welcome-popup__visual" aria-hidden>
           <PromoPhoto mobile={mobile} />
-          <div className="welcome-popup__shade" />
         </div>
-
         <div className="welcome-popup__body">
           <button
             type="button"
@@ -114,19 +113,16 @@ export function FlannelsPromoDialog({ onClose }: { onClose: () => void }) {
               <path d="M3 3l10 10M13 3L3 13" />
             </svg>
           </button>
-
           <p className="welcome-popup__eyebrow">FLANNELS</p>
           <h2 id="flannels-promo-title" className="welcome-popup__title">
-            플라날스 영국 하이엔드 컬렉션
+            <span>플라날스 영국 하이엔드 컬렉션</span>
           </h2>
           <p className="welcome-popup__support">
             희소성 높은 명품 아이템을 오직 선택받은 혜택가로 만나보세요.
           </p>
-
           <Link href={HREF} className="welcome-popup__cta" onClick={close}>
-            FLANNELS SHOP →
+            FLANNELS SHOP
           </Link>
-
           <button
             type="button"
             className="welcome-popup__later"
