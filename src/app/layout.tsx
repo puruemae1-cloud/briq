@@ -7,7 +7,7 @@ import { NaverWcsScript } from "@/components/NaverWcsScript";
 import { PretendardStylesheet } from "@/components/PretendardStylesheet";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
-import { WelcomePopupGate } from "@/components/WelcomePopup";
+import { WelcomePopupGate } from "@/components/ArrivalPopups";
 import { KEEP_SCROLL_RESTORE_SCRIPT } from "@/lib/keep-scroll";
 import { rootMetadata } from "@/lib/seo-metadata";
 import { DEFAULT_DESCRIPTION, SITE_NAME, getSiteUrl } from "@/lib/site";
