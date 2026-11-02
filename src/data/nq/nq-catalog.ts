@@ -131,7 +131,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3000.26T01.B01.R01",
         gbpPrice: 5430.0,
         price: 9770000,
-        image: "/products/nq-pdp/wild-one-skeleton-mint-titanium/1.jpg"
+        image: "/products/nq-pdp/wild-one-skeleton-mint-titanium/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-norteq.jpg",
         images: ["/products/nq-pdp/wild-one-skeleton-mint-titanium/1.jpg", "/products/nq-pdp/wild-one-skeleton-mint-titanium/2.jpg", "/products/nq-pdp/wild-one-skeleton-mint-titanium/3.jpg", "/products/nq-pdp/wild-one-skeleton-mint-titanium/4.jpg", "/products/nq-pdp/wild-one-skeleton-mint-titanium/5.jpg", "/products/nq-pdp/wild-one-skeleton-mint-titanium/6.jpg"],
         sourceUrl: "https://norqain.com/products/wild-one-skeleton-mint-titanium",
@@ -144,7 +144,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3000.26T01.B01.R02",
         gbpPrice: 5430.0,
         price: 9770000,
-        image: "/products/nq-pdp/wild-one-skeleton-mint-titanium/1.jpg"
+        image: "/products/nq-pdp/wild-one-skeleton-mint-titanium/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-titanium.jpg",
         images: ["/products/nq-pdp/wild-one-skeleton-mint-titanium/1.jpg", "/products/nq-pdp/wild-one-skeleton-mint-titanium/2.jpg", "/products/nq-pdp/wild-one-skeleton-mint-titanium/3.jpg", "/products/nq-pdp/wild-one-skeleton-mint-titanium/4.jpg", "/products/nq-pdp/wild-one-skeleton-mint-titanium/5.jpg", "/products/nq-pdp/wild-one-skeleton-mint-titanium/6.jpg"],
         sourceUrl: "https://norqain.com/products/wild-one-skeleton-mint-titanium",
@@ -157,7 +157,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3000.26T01.B01.R03",
         gbpPrice: 5775.0,
         price: 10400000,
-        image: "/products/nq-pdp/wild-one-skeleton-mint-titanium/1.jpg"
+        image: "/products/nq-pdp/wild-one-skeleton-mint-titanium/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-folding.jpg",
         images: ["/products/nq-pdp/wild-one-skeleton-mint-titanium/1.jpg", "/products/nq-pdp/wild-one-skeleton-mint-titanium/2.jpg", "/products/nq-pdp/wild-one-skeleton-mint-titanium/3.jpg", "/products/nq-pdp/wild-one-skeleton-mint-titanium/4.jpg", "/products/nq-pdp/wild-one-skeleton-mint-titanium/5.jpg", "/products/nq-pdp/wild-one-skeleton-mint-titanium/6.jpg"],
         sourceUrl: "https://norqain.com/products/wild-one-skeleton-mint-titanium",
@@ -214,7 +214,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3001.26T01.B01.R01",
         gbpPrice: 5430.0,
         price: 9770000,
-        image: "/products/nq-pdp/wild-one-skeleton-titanium-limited-edition/1.jpg"
+        image: "/products/nq-pdp/wild-one-skeleton-titanium-limited-edition/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-norteq.jpg",
         images: ["/products/nq-pdp/wild-one-skeleton-titanium-limited-edition/1.jpg", "/products/nq-pdp/wild-one-skeleton-titanium-limited-edition/2.jpg", "/products/nq-pdp/wild-one-skeleton-titanium-limited-edition/3.jpg", "/products/nq-pdp/wild-one-skeleton-titanium-limited-edition/4.jpg", "/products/nq-pdp/wild-one-skeleton-titanium-limited-edition/5.jpg", "/products/nq-pdp/wild-one-skeleton-titanium-limited-edition/6.jpg"],
         sourceUrl: "https://norqain.com/products/wild-one-skeleton-titanium-limited-edition",
@@ -227,7 +227,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3001.26T01.B01.R02",
         gbpPrice: 5430.0,
         price: 9770000,
-        image: "/products/nq-pdp/wild-one-skeleton-titanium-limited-edition/1.jpg"
+        image: "/products/nq-pdp/wild-one-skeleton-titanium-limited-edition/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-titanium.jpg",
         images: ["/products/nq-pdp/wild-one-skeleton-titanium-limited-edition/1.jpg", "/products/nq-pdp/wild-one-skeleton-titanium-limited-edition/2.jpg", "/products/nq-pdp/wild-one-skeleton-titanium-limited-edition/3.jpg", "/products/nq-pdp/wild-one-skeleton-titanium-limited-edition/4.jpg", "/products/nq-pdp/wild-one-skeleton-titanium-limited-edition/5.jpg", "/products/nq-pdp/wild-one-skeleton-titanium-limited-edition/6.jpg"],
         sourceUrl: "https://norqain.com/products/wild-one-skeleton-titanium-limited-edition",
@@ -240,7 +240,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3001.26T01.B01.R03",
         gbpPrice: 5775.0,
         price: 10400000,
-        image: "/products/nq-pdp/wild-one-skeleton-titanium-limited-edition/1.jpg"
+        image: "/products/nq-pdp/wild-one-skeleton-titanium-limited-edition/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-folding.jpg",
         images: ["/products/nq-pdp/wild-one-skeleton-titanium-limited-edition/1.jpg", "/products/nq-pdp/wild-one-skeleton-titanium-limited-edition/2.jpg", "/products/nq-pdp/wild-one-skeleton-titanium-limited-edition/3.jpg", "/products/nq-pdp/wild-one-skeleton-titanium-limited-edition/4.jpg", "/products/nq-pdp/wild-one-skeleton-titanium-limited-edition/5.jpg", "/products/nq-pdp/wild-one-skeleton-titanium-limited-edition/6.jpg"],
         sourceUrl: "https://norqain.com/products/wild-one-skeleton-titanium-limited-edition",
@@ -253,7 +253,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3001.26T01.B01.R04",
         gbpPrice: 5430.0,
         price: 9770000,
-        image: "/products/nq-pdp/wild-one-skeleton-titanium-limited-edition/1.jpg"
+        image: "/products/nq-pdp/wild-one-skeleton-titanium-limited-edition/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-norteq.jpg",
         images: ["/products/nq-pdp/wild-one-skeleton-titanium-limited-edition/1.jpg", "/products/nq-pdp/wild-one-skeleton-titanium-limited-edition/2.jpg", "/products/nq-pdp/wild-one-skeleton-titanium-limited-edition/3.jpg", "/products/nq-pdp/wild-one-skeleton-titanium-limited-edition/4.jpg", "/products/nq-pdp/wild-one-skeleton-titanium-limited-edition/5.jpg", "/products/nq-pdp/wild-one-skeleton-titanium-limited-edition/6.jpg"],
         sourceUrl: "https://norqain.com/products/wild-one-skeleton-titanium-limited-edition",
@@ -266,7 +266,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3001.26T01.B01.R05",
         gbpPrice: 5430.0,
         price: 9770000,
-        image: "/products/nq-pdp/wild-one-skeleton-titanium-limited-edition/1.jpg"
+        image: "/products/nq-pdp/wild-one-skeleton-titanium-limited-edition/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-titanium.jpg",
         images: ["/products/nq-pdp/wild-one-skeleton-titanium-limited-edition/1.jpg", "/products/nq-pdp/wild-one-skeleton-titanium-limited-edition/2.jpg", "/products/nq-pdp/wild-one-skeleton-titanium-limited-edition/3.jpg", "/products/nq-pdp/wild-one-skeleton-titanium-limited-edition/4.jpg", "/products/nq-pdp/wild-one-skeleton-titanium-limited-edition/5.jpg", "/products/nq-pdp/wild-one-skeleton-titanium-limited-edition/6.jpg"],
         sourceUrl: "https://norqain.com/products/wild-one-skeleton-titanium-limited-edition",
@@ -279,7 +279,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3001.26T01.B01.R06",
         gbpPrice: 5775.0,
         price: 10400000,
-        image: "/products/nq-pdp/wild-one-skeleton-titanium-limited-edition/1.jpg"
+        image: "/products/nq-pdp/wild-one-skeleton-titanium-limited-edition/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-folding.jpg",
         images: ["/products/nq-pdp/wild-one-skeleton-titanium-limited-edition/1.jpg", "/products/nq-pdp/wild-one-skeleton-titanium-limited-edition/2.jpg", "/products/nq-pdp/wild-one-skeleton-titanium-limited-edition/3.jpg", "/products/nq-pdp/wild-one-skeleton-titanium-limited-edition/4.jpg", "/products/nq-pdp/wild-one-skeleton-titanium-limited-edition/5.jpg", "/products/nq-pdp/wild-one-skeleton-titanium-limited-edition/6.jpg"],
         sourceUrl: "https://norqain.com/products/wild-one-skeleton-titanium-limited-edition",
@@ -336,7 +336,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3000.21T01.M01.R01",
         gbpPrice: 5825.0,
         price: 10480000,
-        image: "/products/nq-pdp/wild-one-meteorite-titanium/1.jpg"
+        image: "/products/nq-pdp/wild-one-meteorite-titanium/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-norteq.jpg",
         images: ["/products/nq-pdp/wild-one-meteorite-titanium/1.jpg", "/products/nq-pdp/wild-one-meteorite-titanium/2.jpg", "/products/nq-pdp/wild-one-meteorite-titanium/3.jpg", "/products/nq-pdp/wild-one-meteorite-titanium/4.jpg", "/products/nq-pdp/wild-one-meteorite-titanium/5.jpg", "/products/nq-pdp/wild-one-meteorite-titanium/6.jpg", "/products/nq-pdp/wild-one-meteorite-titanium/7.jpg"],
         sourceUrl: "https://norqain.com/products/wild-one-meteorite-titanium",
@@ -349,7 +349,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3000.21T01.M01.R02",
         gbpPrice: 5825.0,
         price: 10480000,
-        image: "/products/nq-pdp/wild-one-meteorite-titanium/1.jpg"
+        image: "/products/nq-pdp/wild-one-meteorite-titanium/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-titanium.jpg",
         images: ["/products/nq-pdp/wild-one-meteorite-titanium/1.jpg", "/products/nq-pdp/wild-one-meteorite-titanium/2.jpg", "/products/nq-pdp/wild-one-meteorite-titanium/3.jpg", "/products/nq-pdp/wild-one-meteorite-titanium/4.jpg", "/products/nq-pdp/wild-one-meteorite-titanium/5.jpg", "/products/nq-pdp/wild-one-meteorite-titanium/6.jpg", "/products/nq-pdp/wild-one-meteorite-titanium/7.jpg"],
         sourceUrl: "https://norqain.com/products/wild-one-meteorite-titanium",
@@ -362,7 +362,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3000.21T01.M01.R03",
         gbpPrice: 6175.0,
         price: 11120000,
-        image: "/products/nq-pdp/wild-one-meteorite-titanium/1.jpg"
+        image: "/products/nq-pdp/wild-one-meteorite-titanium/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-folding.jpg",
         images: ["/products/nq-pdp/wild-one-meteorite-titanium/1.jpg", "/products/nq-pdp/wild-one-meteorite-titanium/2.jpg", "/products/nq-pdp/wild-one-meteorite-titanium/3.jpg", "/products/nq-pdp/wild-one-meteorite-titanium/4.jpg", "/products/nq-pdp/wild-one-meteorite-titanium/5.jpg", "/products/nq-pdp/wild-one-meteorite-titanium/6.jpg", "/products/nq-pdp/wild-one-meteorite-titanium/7.jpg"],
         sourceUrl: "https://norqain.com/products/wild-one-meteorite-titanium",
@@ -419,7 +419,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3000.07T01.B03.R01",
         gbpPrice: 4400.0,
         price: 7920000,
-        image: "/products/nq-pdp/independence-skeleton-titanium-dlc/1.jpg"
+        image: "/products/nq-pdp/independence-skeleton-titanium-dlc/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-pin.jpg",
         images: ["/products/nq-pdp/independence-skeleton-titanium-dlc/1.jpg", "/products/nq-pdp/independence-skeleton-titanium-dlc/2.jpg", "/products/nq-pdp/independence-skeleton-titanium-dlc/3.jpg", "/products/nq-pdp/independence-skeleton-titanium-dlc/4.jpg", "/products/nq-pdp/independence-skeleton-titanium-dlc/5.jpg", "/products/nq-pdp/independence-skeleton-titanium-dlc/6.jpg", "/products/nq-pdp/independence-skeleton-titanium-dlc/7.jpg"],
         sourceUrl: "https://norqain.com/products/independence-skeleton-titanium-dlc",
@@ -432,7 +432,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3000.07T01.B03.R02",
         gbpPrice: 4710.0,
         price: 8480000,
-        image: "/products/nq-pdp/independence-skeleton-titanium-dlc/1.jpg"
+        image: "/products/nq-pdp/independence-skeleton-titanium-dlc/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-folding.jpg",
         images: ["/products/nq-pdp/independence-skeleton-titanium-dlc/1.jpg", "/products/nq-pdp/independence-skeleton-titanium-dlc/2.jpg", "/products/nq-pdp/independence-skeleton-titanium-dlc/3.jpg", "/products/nq-pdp/independence-skeleton-titanium-dlc/4.jpg", "/products/nq-pdp/independence-skeleton-titanium-dlc/5.jpg", "/products/nq-pdp/independence-skeleton-titanium-dlc/6.jpg", "/products/nq-pdp/independence-skeleton-titanium-dlc/7.jpg"],
         sourceUrl: "https://norqain.com/products/independence-skeleton-titanium-dlc",
@@ -732,7 +732,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3002.40G01.B01.R01",
         gbpPrice: 18550.0,
         price: 33390000,
-        image: "/products/nq-pdp/wild-one-skeleton-chrono-42mm-red-gold-limited-edition/1.jpg"
+        image: "/products/nq-pdp/wild-one-skeleton-chrono-42mm-red-gold-limited-edition/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-norteq.jpg",
         images: ["/products/nq-pdp/wild-one-skeleton-chrono-42mm-red-gold-limited-edition/1.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-red-gold-limited-edition/2.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-red-gold-limited-edition/3.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-red-gold-limited-edition/4.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-red-gold-limited-edition/5.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-red-gold-limited-edition/6.jpg"],
         sourceUrl: "https://norqain.com/products/wild-one-skeleton-chrono-42mm-red-gold-limited-edition",
@@ -745,7 +745,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3002.40G01.B01.R02",
         gbpPrice: 20950.0,
         price: 37710000,
-        image: "/products/nq-pdp/wild-one-skeleton-chrono-42mm-red-gold-limited-edition/1.jpg"
+        image: "/products/nq-pdp/wild-one-skeleton-chrono-42mm-red-gold-limited-edition/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-red-gold.jpg",
         images: ["/products/nq-pdp/wild-one-skeleton-chrono-42mm-red-gold-limited-edition/1.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-red-gold-limited-edition/2.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-red-gold-limited-edition/3.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-red-gold-limited-edition/4.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-red-gold-limited-edition/5.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-red-gold-limited-edition/6.jpg"],
         sourceUrl: "https://norqain.com/products/wild-one-skeleton-chrono-42mm-red-gold-limited-edition",
@@ -758,7 +758,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3002.40G01.B01.R03",
         gbpPrice: 18900.0,
         price: 34020000,
-        image: "/products/nq-pdp/wild-one-skeleton-chrono-42mm-red-gold-limited-edition/1.jpg"
+        image: "/products/nq-pdp/wild-one-skeleton-chrono-42mm-red-gold-limited-edition/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-folding.jpg",
         images: ["/products/nq-pdp/wild-one-skeleton-chrono-42mm-red-gold-limited-edition/1.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-red-gold-limited-edition/2.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-red-gold-limited-edition/3.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-red-gold-limited-edition/4.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-red-gold-limited-edition/5.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-red-gold-limited-edition/6.jpg"],
         sourceUrl: "https://norqain.com/products/wild-one-skeleton-chrono-42mm-red-gold-limited-edition",
@@ -822,7 +822,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3002.40Q02.B01.R01",
         gbpPrice: 7150.0,
         price: 12870000,
-        image: "/products/nq-pdp/wild-one-skeleton-chrono-42mm-burgundy-limited-edition/1.jpg"
+        image: "/products/nq-pdp/wild-one-skeleton-chrono-42mm-burgundy-limited-edition/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-pin.jpg",
         images: ["/products/nq-pdp/wild-one-skeleton-chrono-42mm-burgundy-limited-edition/1.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-burgundy-limited-edition/2.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-burgundy-limited-edition/3.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-burgundy-limited-edition/4.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-burgundy-limited-edition/5.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-burgundy-limited-edition/6.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-burgundy-limited-edition/7.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-burgundy-limited-edition/8.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-burgundy-limited-edition/9.jpg"],
         sourceUrl: "https://norqain.com/products/wild-one-skeleton-chrono-42mm-burgundy-limited-edition",
@@ -835,7 +835,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3002.40Q02.B01.R02",
         gbpPrice: 7500.0,
         price: 13500000,
-        image: "/products/nq-pdp/wild-one-skeleton-chrono-42mm-burgundy-limited-edition/1.jpg"
+        image: "/products/nq-pdp/wild-one-skeleton-chrono-42mm-burgundy-limited-edition/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-folding.jpg",
         images: ["/products/nq-pdp/wild-one-skeleton-chrono-42mm-burgundy-limited-edition/1.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-burgundy-limited-edition/2.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-burgundy-limited-edition/3.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-burgundy-limited-edition/4.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-burgundy-limited-edition/5.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-burgundy-limited-edition/6.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-burgundy-limited-edition/7.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-burgundy-limited-edition/8.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-burgundy-limited-edition/9.jpg"],
         sourceUrl: "https://norqain.com/products/wild-one-skeleton-chrono-42mm-burgundy-limited-edition",
@@ -899,7 +899,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3002.40Q01.B07.R03",
         gbpPrice: 7050.0,
         price: 12690000,
-        image: "/products/nq-pdp/wild-one-skeleton-chrono-42mm-black/1.jpg"
+        image: "/products/nq-pdp/wild-one-skeleton-chrono-42mm-black/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-pin.jpg",
         images: ["/products/nq-pdp/wild-one-skeleton-chrono-42mm-black/1.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-black/10.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-black/2.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-black/3.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-black/4.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-black/5.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-black/6.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-black/7.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-black/8.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-black/9.jpg"],
         sourceUrl: "https://norqain.com/products/wild-one-skeleton-chrono-42mm-black",
@@ -912,7 +912,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3002.40Q01.B07.R04",
         gbpPrice: 7390.0,
         price: 13300000,
-        image: "/products/nq-pdp/wild-one-skeleton-chrono-42mm-black/1.jpg"
+        image: "/products/nq-pdp/wild-one-skeleton-chrono-42mm-black/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-folding.jpg",
         images: ["/products/nq-pdp/wild-one-skeleton-chrono-42mm-black/1.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-black/10.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-black/2.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-black/3.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-black/4.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-black/5.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-black/6.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-black/7.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-black/8.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-black/9.jpg"],
         sourceUrl: "https://norqain.com/products/wild-one-skeleton-chrono-42mm-black",
@@ -925,7 +925,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3002.40Q01.B07.R01",
         gbpPrice: 7050.0,
         price: 12690000,
-        image: "/products/nq-pdp/wild-one-skeleton-chrono-42mm-black/10.jpg"
+        image: "/products/nq-pdp/wild-one-skeleton-chrono-42mm-black/10.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-pin.jpg",
         images: ["/products/nq-pdp/wild-one-skeleton-chrono-42mm-black/10.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-black/1.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-black/2.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-black/3.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-black/4.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-black/5.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-black/6.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-black/7.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-black/8.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-black/9.jpg"],
         sourceUrl: "https://norqain.com/products/wild-one-skeleton-chrono-42mm-black",
@@ -938,7 +938,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3002.40Q01.B07.R02",
         gbpPrice: 7390.0,
         price: 13300000,
-        image: "/products/nq-pdp/wild-one-skeleton-chrono-42mm-black/10.jpg"
+        image: "/products/nq-pdp/wild-one-skeleton-chrono-42mm-black/10.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-folding.jpg",
         images: ["/products/nq-pdp/wild-one-skeleton-chrono-42mm-black/10.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-black/1.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-black/2.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-black/3.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-black/4.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-black/5.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-black/6.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-black/7.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-black/8.jpg", "/products/nq-pdp/wild-one-skeleton-chrono-42mm-black/9.jpg"],
         sourceUrl: "https://norqain.com/products/wild-one-skeleton-chrono-42mm-black",
@@ -995,7 +995,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N2200.19S02.C01.R01",
         gbpPrice: 3960.0,
         price: 7130000,
-        image: "/products/nq-pdp/freedom-60-chrono-43mm-limited-edition/1.jpg"
+        image: "/products/nq-pdp/freedom-60-chrono-43mm-limited-edition/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-pin.jpg",
         images: ["/products/nq-pdp/freedom-60-chrono-43mm-limited-edition/1.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-limited-edition/2.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-limited-edition/3.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-limited-edition/4.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-limited-edition/5.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-limited-edition/6.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-limited-edition/7.jpg"],
         sourceUrl: "https://norqain.com/products/freedom-60-chrono-43mm-limited-edition",
@@ -1008,7 +1008,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N2200.19S02.C01.S01",
         gbpPrice: 4060.0,
         price: 7310000,
-        image: "/products/nq-pdp/freedom-60-chrono-43mm-limited-edition/6.jpg"
+        image: "/products/nq-pdp/freedom-60-chrono-43mm-limited-edition/6.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-folding.jpg",
         images: ["/products/nq-pdp/freedom-60-chrono-43mm-limited-edition/6.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-limited-edition/1.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-limited-edition/2.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-limited-edition/3.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-limited-edition/4.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-limited-edition/5.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-limited-edition/7.jpg"],
         sourceUrl: "https://norqain.com/products/freedom-60-chrono-43mm-limited-edition",
@@ -1021,7 +1021,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N2200.19S02.C01.L01",
         gbpPrice: 3800.0,
         price: 6840000,
-        image: "/products/nq-pdp/freedom-60-chrono-43mm-limited-edition/7.jpg"
+        image: "/products/nq-pdp/freedom-60-chrono-43mm-limited-edition/7.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-pin.jpg",
         images: ["/products/nq-pdp/freedom-60-chrono-43mm-limited-edition/7.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-limited-edition/1.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-limited-edition/2.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-limited-edition/3.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-limited-edition/4.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-limited-edition/5.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-limited-edition/6.jpg"],
         sourceUrl: "https://norqain.com/products/freedom-60-chrono-43mm-limited-edition",
@@ -1146,7 +1146,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N1300.08S02.E01.R01",
         gbpPrice: 2875.0,
         price: 5180000,
-        image: "/products/nq-pdp/adventure-40mm-green/1.jpg"
+        image: "/products/nq-pdp/adventure-40mm-green/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-pin.jpg",
         images: ["/products/nq-pdp/adventure-40mm-green/1.jpg", "/products/nq-pdp/adventure-40mm-green/2.jpg", "/products/nq-pdp/adventure-40mm-green/3.jpg", "/products/nq-pdp/adventure-40mm-green/4.jpg"],
         sourceUrl: "https://norqain.com/products/adventure-40mm-green",
@@ -1159,7 +1159,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N1300.08S02.E01.S01",
         gbpPrice: 3115.0,
         price: 5610000,
-        image: "/products/nq-pdp/adventure-40mm-green/4.jpg"
+        image: "/products/nq-pdp/adventure-40mm-green/4.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-folding.jpg",
         images: ["/products/nq-pdp/adventure-40mm-green/4.jpg", "/products/nq-pdp/adventure-40mm-green/1.jpg", "/products/nq-pdp/adventure-40mm-green/2.jpg", "/products/nq-pdp/adventure-40mm-green/3.jpg"],
         sourceUrl: "https://norqain.com/products/adventure-40mm-green",
@@ -1216,7 +1216,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N1300.08S01.G01.S01",
         gbpPrice: 3115.0,
         price: 5610000,
-        image: "/products/nq-pdp/adventure-40mm-grey/1.jpg"
+        image: "/products/nq-pdp/adventure-40mm-grey/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-folding.jpg",
         images: ["/products/nq-pdp/adventure-40mm-grey/1.jpg", "/products/nq-pdp/adventure-40mm-grey/2.jpg", "/products/nq-pdp/adventure-40mm-grey/3.jpg", "/products/nq-pdp/adventure-40mm-grey/4.jpg"],
         sourceUrl: "https://norqain.com/products/adventure-40mm-grey",
@@ -1229,7 +1229,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N1300.08S01.G01.R01",
         gbpPrice: 2875.0,
         price: 5180000,
-        image: "/products/nq-pdp/adventure-40mm-grey/4.jpg"
+        image: "/products/nq-pdp/adventure-40mm-grey/4.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-pin.jpg",
         images: ["/products/nq-pdp/adventure-40mm-grey/4.jpg", "/products/nq-pdp/adventure-40mm-grey/2.jpg", "/products/nq-pdp/adventure-40mm-grey/3.jpg", "/products/nq-pdp/adventure-40mm-grey/1.jpg"],
         sourceUrl: "https://norqain.com/products/adventure-40mm-grey",
@@ -1293,7 +1293,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N1500.17S05.W01.R01",
         gbpPrice: 4375.0,
         price: 7880000,
-        image: "/products/nq-pdp/adventure-chrono-41mm-nhl-limited-edition/1.jpg"
+        image: "/products/nq-pdp/adventure-chrono-41mm-nhl-limited-edition/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-pin.jpg",
         images: ["/products/nq-pdp/adventure-chrono-41mm-nhl-limited-edition/1.jpg", "/products/nq-pdp/adventure-chrono-41mm-nhl-limited-edition/2.jpg", "/products/nq-pdp/adventure-chrono-41mm-nhl-limited-edition/3.jpg", "/products/nq-pdp/adventure-chrono-41mm-nhl-limited-edition/4.jpg", "/products/nq-pdp/adventure-chrono-41mm-nhl-limited-edition/5.jpg"],
         sourceUrl: "https://norqain.com/products/adventure-chrono-41mm-nhl-limited-edition",
@@ -1306,7 +1306,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N1500.17S05.W01.S01",
         gbpPrice: 4575.0,
         price: 8240000,
-        image: "/products/nq-pdp/adventure-chrono-41mm-nhl-limited-edition/5.jpg"
+        image: "/products/nq-pdp/adventure-chrono-41mm-nhl-limited-edition/5.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-folding.jpg",
         images: ["/products/nq-pdp/adventure-chrono-41mm-nhl-limited-edition/5.jpg", "/products/nq-pdp/adventure-chrono-41mm-nhl-limited-edition/1.jpg", "/products/nq-pdp/adventure-chrono-41mm-nhl-limited-edition/2.jpg", "/products/nq-pdp/adventure-chrono-41mm-nhl-limited-edition/3.jpg", "/products/nq-pdp/adventure-chrono-41mm-nhl-limited-edition/4.jpg"],
         sourceUrl: "https://norqain.com/products/adventure-chrono-41mm-nhl-limited-edition",
@@ -1370,7 +1370,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3000.07Q07.B01.R01",
         gbpPrice: 4950.0,
         price: 8910000,
-        image: "/products/nq-pdp/wild-one-skeleton-spengler-cup-limited-edition/1.jpg"
+        image: "/products/nq-pdp/wild-one-skeleton-spengler-cup-limited-edition/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-pin.jpg",
         images: ["/products/nq-pdp/wild-one-skeleton-spengler-cup-limited-edition/1.jpg", "/products/nq-pdp/wild-one-skeleton-spengler-cup-limited-edition/2.jpg", "/products/nq-pdp/wild-one-skeleton-spengler-cup-limited-edition/3.jpg", "/products/nq-pdp/wild-one-skeleton-spengler-cup-limited-edition/4.jpg"],
         sourceUrl: "https://norqain.com/products/wild-one-skeleton-spengler-cup-limited-edition",
@@ -1383,7 +1383,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3000.07Q07.B01.R02",
         gbpPrice: 5250.0,
         price: 9450000,
-        image: "/products/nq-pdp/wild-one-skeleton-spengler-cup-limited-edition/1.jpg"
+        image: "/products/nq-pdp/wild-one-skeleton-spengler-cup-limited-edition/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-folding.jpg",
         images: ["/products/nq-pdp/wild-one-skeleton-spengler-cup-limited-edition/1.jpg", "/products/nq-pdp/wild-one-skeleton-spengler-cup-limited-edition/2.jpg", "/products/nq-pdp/wild-one-skeleton-spengler-cup-limited-edition/3.jpg", "/products/nq-pdp/wild-one-skeleton-spengler-cup-limited-edition/4.jpg"],
         sourceUrl: "https://norqain.com/products/wild-one-skeleton-spengler-cup-limited-edition",
@@ -1440,7 +1440,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3001.07G01.W01.R01",
         gbpPrice: 13390.0,
         price: 24100000,
-        image: "/products/nq-pdp/wild-one-skeleton-39mm-redgold/1.jpg"
+        image: "/products/nq-pdp/wild-one-skeleton-39mm-redgold/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-norteq.jpg",
         images: ["/products/nq-pdp/wild-one-skeleton-39mm-redgold/1.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-redgold/2.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-redgold/3.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-redgold/4.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-redgold/5.jpg"],
         sourceUrl: "https://norqain.com/products/wild-one-skeleton-39mm-redgold",
@@ -1453,7 +1453,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3001.07G01.W01.R02",
         gbpPrice: 15530.0,
         price: 27950000,
-        image: "/products/nq-pdp/wild-one-skeleton-39mm-redgold/1.jpg"
+        image: "/products/nq-pdp/wild-one-skeleton-39mm-redgold/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-red-gold.jpg",
         images: ["/products/nq-pdp/wild-one-skeleton-39mm-redgold/1.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-redgold/2.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-redgold/3.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-redgold/4.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-redgold/5.jpg"],
         sourceUrl: "https://norqain.com/products/wild-one-skeleton-39mm-redgold",
@@ -1466,7 +1466,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3001.07G01.W01.R04",
         gbpPrice: 13390.0,
         price: 24100000,
-        image: "/products/nq-pdp/wild-one-skeleton-39mm-redgold/1.jpg"
+        image: "/products/nq-pdp/wild-one-skeleton-39mm-redgold/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-norteq.jpg",
         images: ["/products/nq-pdp/wild-one-skeleton-39mm-redgold/1.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-redgold/2.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-redgold/3.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-redgold/4.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-redgold/5.jpg"],
         sourceUrl: "https://norqain.com/products/wild-one-skeleton-39mm-redgold",
@@ -1479,7 +1479,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3001.07G01.W01.R05",
         gbpPrice: 13690.0,
         price: 24640000,
-        image: "/products/nq-pdp/wild-one-skeleton-39mm-redgold/1.jpg"
+        image: "/products/nq-pdp/wild-one-skeleton-39mm-redgold/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-red-gold.jpg",
         images: ["/products/nq-pdp/wild-one-skeleton-39mm-redgold/1.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-redgold/2.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-redgold/3.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-redgold/4.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-redgold/5.jpg"],
         sourceUrl: "https://norqain.com/products/wild-one-skeleton-39mm-redgold",
@@ -1536,7 +1536,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3001.07G06.B01.R01",
         gbpPrice: 13390.0,
         price: 24100000,
-        image: "/products/nq-pdp/wild-one-skeleton-39mm-limited-edition-yellowgold/1.jpg"
+        image: "/products/nq-pdp/wild-one-skeleton-39mm-limited-edition-yellowgold/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-norteq.jpg",
         images: ["/products/nq-pdp/wild-one-skeleton-39mm-limited-edition-yellowgold/1.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-limited-edition-yellowgold/2.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-limited-edition-yellowgold/3.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-limited-edition-yellowgold/4.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-limited-edition-yellowgold/5.jpg"],
         sourceUrl: "https://norqain.com/products/wild-one-skeleton-39mm-limited-edition-yellowgold",
@@ -1549,7 +1549,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3001.07G06.B01.R02",
         gbpPrice: 15530.0,
         price: 27950000,
-        image: "/products/nq-pdp/wild-one-skeleton-39mm-limited-edition-yellowgold/1.jpg"
+        image: "/products/nq-pdp/wild-one-skeleton-39mm-limited-edition-yellowgold/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-yellow-gold.jpg",
         images: ["/products/nq-pdp/wild-one-skeleton-39mm-limited-edition-yellowgold/1.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-limited-edition-yellowgold/2.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-limited-edition-yellowgold/3.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-limited-edition-yellowgold/4.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-limited-edition-yellowgold/5.jpg"],
         sourceUrl: "https://norqain.com/products/wild-one-skeleton-39mm-limited-edition-yellowgold",
@@ -1562,7 +1562,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3001.07G06.B01.R05",
         gbpPrice: 13690.0,
         price: 24640000,
-        image: "/products/nq-pdp/wild-one-skeleton-39mm-limited-edition-yellowgold/1.jpg"
+        image: "/products/nq-pdp/wild-one-skeleton-39mm-limited-edition-yellowgold/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-folding.jpg",
         images: ["/products/nq-pdp/wild-one-skeleton-39mm-limited-edition-yellowgold/1.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-limited-edition-yellowgold/2.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-limited-edition-yellowgold/3.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-limited-edition-yellowgold/4.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-limited-edition-yellowgold/5.jpg"],
         sourceUrl: "https://norqain.com/products/wild-one-skeleton-39mm-limited-edition-yellowgold",
@@ -1575,7 +1575,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3001.07G06.B01.R03",
         gbpPrice: 13390.0,
         price: 24100000,
-        image: "/products/nq-pdp/wild-one-skeleton-39mm-limited-edition-yellowgold/1.jpg"
+        image: "/products/nq-pdp/wild-one-skeleton-39mm-limited-edition-yellowgold/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-norteq.jpg",
         images: ["/products/nq-pdp/wild-one-skeleton-39mm-limited-edition-yellowgold/1.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-limited-edition-yellowgold/2.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-limited-edition-yellowgold/3.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-limited-edition-yellowgold/4.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-limited-edition-yellowgold/5.jpg"],
         sourceUrl: "https://norqain.com/products/wild-one-skeleton-39mm-limited-edition-yellowgold",
@@ -1588,7 +1588,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3001.07G06.B01.R04",
         gbpPrice: 15530.0,
         price: 27950000,
-        image: "/products/nq-pdp/wild-one-skeleton-39mm-limited-edition-yellowgold/1.jpg"
+        image: "/products/nq-pdp/wild-one-skeleton-39mm-limited-edition-yellowgold/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-yellow-gold.jpg",
         images: ["/products/nq-pdp/wild-one-skeleton-39mm-limited-edition-yellowgold/1.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-limited-edition-yellowgold/2.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-limited-edition-yellowgold/3.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-limited-edition-yellowgold/4.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-limited-edition-yellowgold/5.jpg"],
         sourceUrl: "https://norqain.com/products/wild-one-skeleton-39mm-limited-edition-yellowgold",
@@ -1601,7 +1601,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3001.07G06.B01.R06",
         gbpPrice: 13690.0,
         price: 24640000,
-        image: "/products/nq-pdp/wild-one-skeleton-39mm-limited-edition-yellowgold/1.jpg"
+        image: "/products/nq-pdp/wild-one-skeleton-39mm-limited-edition-yellowgold/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-folding.jpg",
         images: ["/products/nq-pdp/wild-one-skeleton-39mm-limited-edition-yellowgold/1.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-limited-edition-yellowgold/2.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-limited-edition-yellowgold/3.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-limited-edition-yellowgold/4.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-limited-edition-yellowgold/5.jpg"],
         sourceUrl: "https://norqain.com/products/wild-one-skeleton-39mm-limited-edition-yellowgold",
@@ -1857,7 +1857,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3008.07B01.G01.R02",
         gbpPrice: 3850.0,
         price: 6930000,
-        image: "/products/nq-pdp/independence-skeleton-40mm-dlc-anthracite-orange/1.jpg"
+        image: "/products/nq-pdp/independence-skeleton-40mm-dlc-anthracite-orange/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-pin.jpg",
         images: ["/products/nq-pdp/independence-skeleton-40mm-dlc-anthracite-orange/1.jpg", "/products/nq-pdp/independence-skeleton-40mm-dlc-anthracite-orange/4.jpg", "/products/nq-pdp/independence-skeleton-40mm-dlc-anthracite-orange/2.jpg", "/products/nq-pdp/independence-skeleton-40mm-dlc-anthracite-orange/3.jpg"],
         sourceUrl: "https://norqain.com/products/independence-skeleton-40mm-dlc-anthracite-orange",
@@ -1870,7 +1870,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3008.07B01.G01.R04",
         gbpPrice: 4150.0,
         price: 7470000,
-        image: "/products/nq-pdp/independence-skeleton-40mm-dlc-anthracite-orange/1.jpg"
+        image: "/products/nq-pdp/independence-skeleton-40mm-dlc-anthracite-orange/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-folding.jpg",
         images: ["/products/nq-pdp/independence-skeleton-40mm-dlc-anthracite-orange/1.jpg", "/products/nq-pdp/independence-skeleton-40mm-dlc-anthracite-orange/4.jpg", "/products/nq-pdp/independence-skeleton-40mm-dlc-anthracite-orange/2.jpg", "/products/nq-pdp/independence-skeleton-40mm-dlc-anthracite-orange/3.jpg"],
         sourceUrl: "https://norqain.com/products/independence-skeleton-40mm-dlc-anthracite-orange",
@@ -1883,7 +1883,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3008.07B01.G01.R01",
         gbpPrice: 3850.0,
         price: 6930000,
-        image: "/products/nq-pdp/independence-skeleton-40mm-dlc-anthracite-orange/4.jpg"
+        image: "/products/nq-pdp/independence-skeleton-40mm-dlc-anthracite-orange/4.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-pin.jpg",
         images: ["/products/nq-pdp/independence-skeleton-40mm-dlc-anthracite-orange/4.jpg", "/products/nq-pdp/independence-skeleton-40mm-dlc-anthracite-orange/1.jpg", "/products/nq-pdp/independence-skeleton-40mm-dlc-anthracite-orange/2.jpg", "/products/nq-pdp/independence-skeleton-40mm-dlc-anthracite-orange/3.jpg"],
         sourceUrl: "https://norqain.com/products/independence-skeleton-40mm-dlc-anthracite-orange",
@@ -1896,7 +1896,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3008.07B01.G01.R03",
         gbpPrice: 4150.0,
         price: 7470000,
-        image: "/products/nq-pdp/independence-skeleton-40mm-dlc-anthracite-orange/4.jpg"
+        image: "/products/nq-pdp/independence-skeleton-40mm-dlc-anthracite-orange/4.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-folding.jpg",
         images: ["/products/nq-pdp/independence-skeleton-40mm-dlc-anthracite-orange/4.jpg", "/products/nq-pdp/independence-skeleton-40mm-dlc-anthracite-orange/1.jpg", "/products/nq-pdp/independence-skeleton-40mm-dlc-anthracite-orange/2.jpg", "/products/nq-pdp/independence-skeleton-40mm-dlc-anthracite-orange/3.jpg"],
         sourceUrl: "https://norqain.com/products/independence-skeleton-40mm-dlc-anthracite-orange",
@@ -1960,7 +1960,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N2201.19S01.C01.S01",
         gbpPrice: 4350.0,
         price: 7830000,
-        image: "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/1.jpg"
+        image: "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-folding.jpg",
         images: ["/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/1.jpg", "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/2.jpg", "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/3.jpg", "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/4.jpg", "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/5.jpg", "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/6.jpg", "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/7.jpg", "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/8.jpg", "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/9.jpg", "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/10.jpg"],
         sourceUrl: "https://norqain.com/products/freedom-60-chrono-40mm-enjoy-life-special-edition",
@@ -1973,7 +1973,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N2201.19S01.C01.R01",
         gbpPrice: 4200.0,
         price: 7560000,
-        image: "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/9.jpg"
+        image: "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/9.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-pin.jpg",
         images: ["/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/9.jpg", "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/1.jpg", "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/2.jpg", "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/3.jpg", "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/4.jpg", "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/5.jpg", "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/6.jpg", "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/7.jpg", "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/8.jpg", "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/10.jpg"],
         sourceUrl: "https://norqain.com/products/freedom-60-chrono-40mm-enjoy-life-special-edition",
@@ -1986,7 +1986,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N2201.19S01.C01.R02",
         gbpPrice: 4360.0,
         price: 7850000,
-        image: "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/9.jpg"
+        image: "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/9.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-folding.jpg",
         images: ["/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/9.jpg", "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/1.jpg", "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/2.jpg", "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/3.jpg", "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/4.jpg", "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/5.jpg", "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/6.jpg", "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/7.jpg", "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/8.jpg", "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/10.jpg"],
         sourceUrl: "https://norqain.com/products/freedom-60-chrono-40mm-enjoy-life-special-edition",
@@ -1999,7 +1999,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N2201.19S01.C01.L01",
         gbpPrice: 4200.0,
         price: 7560000,
-        image: "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/10.jpg"
+        image: "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/10.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-pin.jpg",
         images: ["/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/10.jpg", "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/1.jpg", "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/2.jpg", "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/3.jpg", "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/4.jpg", "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/5.jpg", "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/6.jpg", "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/7.jpg", "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/8.jpg", "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/9.jpg"],
         sourceUrl: "https://norqain.com/products/freedom-60-chrono-40mm-enjoy-life-special-edition",
@@ -2012,7 +2012,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N2201.19S01.C01.L02",
         gbpPrice: 4360.0,
         price: 7850000,
-        image: "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/10.jpg"
+        image: "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/10.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-folding.jpg",
         images: ["/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/10.jpg", "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/1.jpg", "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/2.jpg", "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/3.jpg", "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/4.jpg", "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/5.jpg", "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/6.jpg", "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/7.jpg", "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/8.jpg", "/products/nq-pdp/freedom-60-chrono-40mm-enjoy-life-special-edition/9.jpg"],
         sourceUrl: "https://norqain.com/products/freedom-60-chrono-40mm-enjoy-life-special-edition",
@@ -2076,7 +2076,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3200.40T02.J01.R01",
         gbpPrice: 6250.0,
         price: 11250000,
-        image: "/products/nq-pdp/independence-skeleton-chrono-42mm-titanium-jade-green-limited-edition/1.jpg"
+        image: "/products/nq-pdp/independence-skeleton-chrono-42mm-titanium-jade-green-limited-edition/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-pin.jpg",
         images: ["/products/nq-pdp/independence-skeleton-chrono-42mm-titanium-jade-green-limited-edition/1.jpg", "/products/nq-pdp/independence-skeleton-chrono-42mm-titanium-jade-green-limited-edition/2.jpg", "/products/nq-pdp/independence-skeleton-chrono-42mm-titanium-jade-green-limited-edition/3.jpg", "/products/nq-pdp/independence-skeleton-chrono-42mm-titanium-jade-green-limited-edition/4.jpg", "/products/nq-pdp/independence-skeleton-chrono-42mm-titanium-jade-green-limited-edition/5.jpg", "/products/nq-pdp/independence-skeleton-chrono-42mm-titanium-jade-green-limited-edition/6.jpg"],
         sourceUrl: "https://norqain.com/products/independence-skeleton-chrono-42mm-titanium-jade-green-limited-edition",
@@ -2089,7 +2089,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3200.40T02.J01.R02",
         gbpPrice: 6550.0,
         price: 11790000,
-        image: "/products/nq-pdp/independence-skeleton-chrono-42mm-titanium-jade-green-limited-edition/1.jpg"
+        image: "/products/nq-pdp/independence-skeleton-chrono-42mm-titanium-jade-green-limited-edition/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-folding.jpg",
         images: ["/products/nq-pdp/independence-skeleton-chrono-42mm-titanium-jade-green-limited-edition/1.jpg", "/products/nq-pdp/independence-skeleton-chrono-42mm-titanium-jade-green-limited-edition/2.jpg", "/products/nq-pdp/independence-skeleton-chrono-42mm-titanium-jade-green-limited-edition/3.jpg", "/products/nq-pdp/independence-skeleton-chrono-42mm-titanium-jade-green-limited-edition/4.jpg", "/products/nq-pdp/independence-skeleton-chrono-42mm-titanium-jade-green-limited-edition/5.jpg", "/products/nq-pdp/independence-skeleton-chrono-42mm-titanium-jade-green-limited-edition/6.jpg"],
         sourceUrl: "https://norqain.com/products/independence-skeleton-chrono-42mm-titanium-jade-green-limited-edition",
@@ -2216,7 +2216,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3001.07Q04.B03.R01",
         gbpPrice: 4850.0,
         price: 8730000,
-        image: "/products/nq-pdp/wild-one-skeleton-39mm-hyper-pink/1.jpg"
+        image: "/products/nq-pdp/wild-one-skeleton-39mm-hyper-pink/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-pin.jpg",
         images: ["/products/nq-pdp/wild-one-skeleton-39mm-hyper-pink/1.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-hyper-pink/2.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-hyper-pink/3.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-hyper-pink/4.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-hyper-pink/5.jpg"],
         sourceUrl: "https://norqain.com/products/wild-one-skeleton-39mm-hyper-pink",
@@ -2229,7 +2229,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3001.07Q04.B03.R03",
         gbpPrice: 5150.0,
         price: 9270000,
-        image: "/products/nq-pdp/wild-one-skeleton-39mm-hyper-pink/1.jpg"
+        image: "/products/nq-pdp/wild-one-skeleton-39mm-hyper-pink/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-folding.jpg",
         images: ["/products/nq-pdp/wild-one-skeleton-39mm-hyper-pink/1.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-hyper-pink/2.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-hyper-pink/3.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-hyper-pink/4.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-hyper-pink/5.jpg"],
         sourceUrl: "https://norqain.com/products/wild-one-skeleton-39mm-hyper-pink",
@@ -2242,7 +2242,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3001.07Q04.B03.R02",
         gbpPrice: 4850.0,
         price: 8730000,
-        image: "/products/nq-pdp/wild-one-skeleton-39mm-hyper-pink/1.jpg"
+        image: "/products/nq-pdp/wild-one-skeleton-39mm-hyper-pink/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-pin.jpg",
         images: ["/products/nq-pdp/wild-one-skeleton-39mm-hyper-pink/1.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-hyper-pink/2.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-hyper-pink/3.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-hyper-pink/4.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-hyper-pink/5.jpg"],
         sourceUrl: "https://norqain.com/products/wild-one-skeleton-39mm-hyper-pink",
@@ -2255,7 +2255,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3001.07Q04.B03.R04",
         gbpPrice: 5150.0,
         price: 9270000,
-        image: "/products/nq-pdp/wild-one-skeleton-39mm-hyper-pink/1.jpg"
+        image: "/products/nq-pdp/wild-one-skeleton-39mm-hyper-pink/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-folding.jpg",
         images: ["/products/nq-pdp/wild-one-skeleton-39mm-hyper-pink/1.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-hyper-pink/2.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-hyper-pink/3.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-hyper-pink/4.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-hyper-pink/5.jpg"],
         sourceUrl: "https://norqain.com/products/wild-one-skeleton-39mm-hyper-pink",
@@ -2319,7 +2319,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3001.07Q02.B02.R01",
         gbpPrice: 4850.0,
         price: 8730000,
-        image: "/products/nq-pdp/wild-one-skeleton-39mm-sky-blue/1.jpg"
+        image: "/products/nq-pdp/wild-one-skeleton-39mm-sky-blue/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-pin.jpg",
         images: ["/products/nq-pdp/wild-one-skeleton-39mm-sky-blue/1.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-sky-blue/2.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-sky-blue/3.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-sky-blue/4.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-sky-blue/5.jpg"],
         sourceUrl: "https://norqain.com/products/wild-one-skeleton-39mm-sky-blue",
@@ -2332,7 +2332,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3001.07Q02.B02.R03",
         gbpPrice: 5150.0,
         price: 9270000,
-        image: "/products/nq-pdp/wild-one-skeleton-39mm-sky-blue/1.jpg"
+        image: "/products/nq-pdp/wild-one-skeleton-39mm-sky-blue/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-folding.jpg",
         images: ["/products/nq-pdp/wild-one-skeleton-39mm-sky-blue/1.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-sky-blue/2.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-sky-blue/3.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-sky-blue/4.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-sky-blue/5.jpg"],
         sourceUrl: "https://norqain.com/products/wild-one-skeleton-39mm-sky-blue",
@@ -2345,7 +2345,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3001.07Q02.B02.R02",
         gbpPrice: 4850.0,
         price: 8730000,
-        image: "/products/nq-pdp/wild-one-skeleton-39mm-sky-blue/1.jpg"
+        image: "/products/nq-pdp/wild-one-skeleton-39mm-sky-blue/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-pin.jpg",
         images: ["/products/nq-pdp/wild-one-skeleton-39mm-sky-blue/1.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-sky-blue/2.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-sky-blue/3.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-sky-blue/4.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-sky-blue/5.jpg"],
         sourceUrl: "https://norqain.com/products/wild-one-skeleton-39mm-sky-blue",
@@ -2358,7 +2358,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3001.07Q02.B02.R04",
         gbpPrice: 5150.0,
         price: 9270000,
-        image: "/products/nq-pdp/wild-one-skeleton-39mm-sky-blue/1.jpg"
+        image: "/products/nq-pdp/wild-one-skeleton-39mm-sky-blue/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-folding.jpg",
         images: ["/products/nq-pdp/wild-one-skeleton-39mm-sky-blue/1.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-sky-blue/2.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-sky-blue/3.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-sky-blue/4.jpg", "/products/nq-pdp/wild-one-skeleton-39mm-sky-blue/5.jpg"],
         sourceUrl: "https://norqain.com/products/wild-one-skeleton-39mm-sky-blue",
@@ -2546,7 +2546,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3000.07G04.N01.R01",
         gbpPrice: 13580.0,
         price: 24440000,
-        image: "/products/nq-pdp/wild-one-skeleton-42mm-gold/1.jpg"
+        image: "/products/nq-pdp/wild-one-skeleton-42mm-gold/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-norteq.jpg",
         images: ["/products/nq-pdp/wild-one-skeleton-42mm-gold/1.jpg", "/products/nq-pdp/wild-one-skeleton-42mm-gold/2.jpg", "/products/nq-pdp/wild-one-skeleton-42mm-gold/3.jpg", "/products/nq-pdp/wild-one-skeleton-42mm-gold/4.jpg"],
         sourceUrl: "https://norqain.com/products/wild-one-skeleton-42mm-gold",
@@ -2559,7 +2559,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3000.07G04.N01.R02",
         gbpPrice: 15725.0,
         price: 28300000,
-        image: "/products/nq-pdp/wild-one-skeleton-42mm-gold/1.jpg"
+        image: "/products/nq-pdp/wild-one-skeleton-42mm-gold/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-red-gold.jpg",
         images: ["/products/nq-pdp/wild-one-skeleton-42mm-gold/1.jpg", "/products/nq-pdp/wild-one-skeleton-42mm-gold/2.jpg", "/products/nq-pdp/wild-one-skeleton-42mm-gold/3.jpg", "/products/nq-pdp/wild-one-skeleton-42mm-gold/4.jpg"],
         sourceUrl: "https://norqain.com/products/wild-one-skeleton-42mm-gold",
@@ -2623,7 +2623,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3000.07Q42.B18.R01",
         gbpPrice: 4950.0,
         price: 8910000,
-        image: "/products/nq-pdp/wild-one-skeleton-42mm-grey/1.jpg"
+        image: "/products/nq-pdp/wild-one-skeleton-42mm-grey/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-pin.jpg",
         images: ["/products/nq-pdp/wild-one-skeleton-42mm-grey/1.jpg", "/products/nq-pdp/wild-one-skeleton-42mm-grey/2.jpg", "/products/nq-pdp/wild-one-skeleton-42mm-grey/3.jpg", "/products/nq-pdp/wild-one-skeleton-42mm-grey/4.jpg", "/products/nq-pdp/wild-one-skeleton-42mm-grey/5.jpg", "/products/nq-pdp/wild-one-skeleton-42mm-grey/6.jpg"],
         sourceUrl: "https://norqain.com/products/wild-one-skeleton-42mm-grey",
@@ -2636,7 +2636,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3000.07Q42.B18.R02",
         gbpPrice: 5250.0,
         price: 9450000,
-        image: "/products/nq-pdp/wild-one-skeleton-42mm-grey/1.jpg"
+        image: "/products/nq-pdp/wild-one-skeleton-42mm-grey/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-folding.jpg",
         images: ["/products/nq-pdp/wild-one-skeleton-42mm-grey/1.jpg", "/products/nq-pdp/wild-one-skeleton-42mm-grey/2.jpg", "/products/nq-pdp/wild-one-skeleton-42mm-grey/3.jpg", "/products/nq-pdp/wild-one-skeleton-42mm-grey/4.jpg", "/products/nq-pdp/wild-one-skeleton-42mm-grey/5.jpg", "/products/nq-pdp/wild-one-skeleton-42mm-grey/6.jpg"],
         sourceUrl: "https://norqain.com/products/wild-one-skeleton-42mm-grey",
@@ -2972,7 +2972,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3000.07Q20.B14.R01",
         gbpPrice: 4950.0,
         price: 8910000,
-        image: "/products/nq-pdp/wild-one-skeleton-42mm-gecko/1.jpg"
+        image: "/products/nq-pdp/wild-one-skeleton-42mm-gecko/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-pin.jpg",
         images: ["/products/nq-pdp/wild-one-skeleton-42mm-gecko/1.jpg", "/products/nq-pdp/wild-one-skeleton-42mm-gecko/2.jpg", "/products/nq-pdp/wild-one-skeleton-42mm-gecko/3.jpg", "/products/nq-pdp/wild-one-skeleton-42mm-gecko/4.jpg"],
         sourceUrl: "https://norqain.com/products/wild-one-skeleton-42mm-gecko",
@@ -2985,7 +2985,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3000.07Q20.B14.R02",
         gbpPrice: 5250.0,
         price: 9450000,
-        image: "/products/nq-pdp/wild-one-skeleton-42mm-gecko/1.jpg"
+        image: "/products/nq-pdp/wild-one-skeleton-42mm-gecko/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-folding.jpg",
         images: ["/products/nq-pdp/wild-one-skeleton-42mm-gecko/1.jpg", "/products/nq-pdp/wild-one-skeleton-42mm-gecko/2.jpg", "/products/nq-pdp/wild-one-skeleton-42mm-gecko/3.jpg", "/products/nq-pdp/wild-one-skeleton-42mm-gecko/4.jpg"],
         sourceUrl: "https://norqain.com/products/wild-one-skeleton-42mm-gecko",
@@ -3042,7 +3042,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3000.07Q31.B13.R01",
         gbpPrice: 4950.0,
         price: 8910000,
-        image: "/products/nq-pdp/wild-one-skeleton-42mm-coral/1.jpg"
+        image: "/products/nq-pdp/wild-one-skeleton-42mm-coral/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-pin.jpg",
         images: ["/products/nq-pdp/wild-one-skeleton-42mm-coral/1.jpg", "/products/nq-pdp/wild-one-skeleton-42mm-coral/2.jpg", "/products/nq-pdp/wild-one-skeleton-42mm-coral/3.jpg", "/products/nq-pdp/wild-one-skeleton-42mm-coral/4.jpg"],
         sourceUrl: "https://norqain.com/products/wild-one-skeleton-42mm-coral",
@@ -3055,7 +3055,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3000.07Q31.B13.R02",
         gbpPrice: 5250.0,
         price: 9450000,
-        image: "/products/nq-pdp/wild-one-skeleton-42mm-coral/1.jpg"
+        image: "/products/nq-pdp/wild-one-skeleton-42mm-coral/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-folding.jpg",
         images: ["/products/nq-pdp/wild-one-skeleton-42mm-coral/1.jpg", "/products/nq-pdp/wild-one-skeleton-42mm-coral/2.jpg", "/products/nq-pdp/wild-one-skeleton-42mm-coral/3.jpg", "/products/nq-pdp/wild-one-skeleton-42mm-coral/4.jpg"],
         sourceUrl: "https://norqain.com/products/wild-one-skeleton-42mm-coral",
@@ -3261,7 +3261,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3000.07Q27.B07.R01",
         gbpPrice: 4950.0,
         price: 8910000,
-        image: "/products/nq-pdp/wild-one-skeleton-42mm-turquoise/1.jpg"
+        image: "/products/nq-pdp/wild-one-skeleton-42mm-turquoise/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-pin.jpg",
         images: ["/products/nq-pdp/wild-one-skeleton-42mm-turquoise/1.jpg", "/products/nq-pdp/wild-one-skeleton-42mm-turquoise/2.jpg", "/products/nq-pdp/wild-one-skeleton-42mm-turquoise/3.jpg", "/products/nq-pdp/wild-one-skeleton-42mm-turquoise/8.jpg", "/products/nq-pdp/wild-one-skeleton-42mm-turquoise/4.jpg", "/products/nq-pdp/wild-one-skeleton-42mm-turquoise/5.jpg", "/products/nq-pdp/wild-one-skeleton-42mm-turquoise/6.jpg", "/products/nq-pdp/wild-one-skeleton-42mm-turquoise/7.jpg"],
         sourceUrl: "https://norqain.com/products/wild-one-skeleton-42mm-turquoise",
@@ -3274,7 +3274,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3000.07Q27.B07.R02",
         gbpPrice: 5250.0,
         price: 9450000,
-        image: "/products/nq-pdp/wild-one-skeleton-42mm-turquoise/1.jpg"
+        image: "/products/nq-pdp/wild-one-skeleton-42mm-turquoise/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-folding.jpg",
         images: ["/products/nq-pdp/wild-one-skeleton-42mm-turquoise/1.jpg", "/products/nq-pdp/wild-one-skeleton-42mm-turquoise/2.jpg", "/products/nq-pdp/wild-one-skeleton-42mm-turquoise/3.jpg", "/products/nq-pdp/wild-one-skeleton-42mm-turquoise/8.jpg", "/products/nq-pdp/wild-one-skeleton-42mm-turquoise/4.jpg", "/products/nq-pdp/wild-one-skeleton-42mm-turquoise/5.jpg", "/products/nq-pdp/wild-one-skeleton-42mm-turquoise/6.jpg", "/products/nq-pdp/wild-one-skeleton-42mm-turquoise/7.jpg"],
         sourceUrl: "https://norqain.com/products/wild-one-skeleton-42mm-turquoise",
@@ -3331,7 +3331,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3000.21Q24.B02.R02",
         gbpPrice: 4950.0,
         price: 8910000,
-        image: "/products/nq-pdp/wild-one-42mm-khaki/1.jpg"
+        image: "/products/nq-pdp/wild-one-42mm-khaki/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-pin.jpg",
         images: ["/products/nq-pdp/wild-one-42mm-khaki/1.jpg", "/products/nq-pdp/wild-one-42mm-khaki/6.jpg", "/products/nq-pdp/wild-one-42mm-khaki/4.jpg", "/products/nq-pdp/wild-one-42mm-khaki/2.jpg", "/products/nq-pdp/wild-one-42mm-khaki/3.jpg", "/products/nq-pdp/wild-one-42mm-khaki/5.jpg"],
         sourceUrl: "https://norqain.com/products/wild-one-42mm-khaki",
@@ -3344,7 +3344,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3000.21Q24.B02.R03",
         gbpPrice: 5250.0,
         price: 9450000,
-        image: "/products/nq-pdp/wild-one-42mm-khaki/1.jpg"
+        image: "/products/nq-pdp/wild-one-42mm-khaki/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-folding.jpg",
         images: ["/products/nq-pdp/wild-one-42mm-khaki/1.jpg", "/products/nq-pdp/wild-one-42mm-khaki/6.jpg", "/products/nq-pdp/wild-one-42mm-khaki/4.jpg", "/products/nq-pdp/wild-one-42mm-khaki/2.jpg", "/products/nq-pdp/wild-one-42mm-khaki/3.jpg", "/products/nq-pdp/wild-one-42mm-khaki/5.jpg"],
         sourceUrl: "https://norqain.com/products/wild-one-42mm-khaki",
@@ -3357,7 +3357,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3000.21Q24.B02.R01",
         gbpPrice: 4950.0,
         price: 8910000,
-        image: "/products/nq-pdp/wild-one-42mm-khaki/6.jpg"
+        image: "/products/nq-pdp/wild-one-42mm-khaki/6.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-pin.jpg",
         images: ["/products/nq-pdp/wild-one-42mm-khaki/6.jpg", "/products/nq-pdp/wild-one-42mm-khaki/1.jpg", "/products/nq-pdp/wild-one-42mm-khaki/2.jpg", "/products/nq-pdp/wild-one-42mm-khaki/3.jpg", "/products/nq-pdp/wild-one-42mm-khaki/4.jpg", "/products/nq-pdp/wild-one-42mm-khaki/5.jpg"],
         sourceUrl: "https://norqain.com/products/wild-one-42mm-khaki",
@@ -3370,7 +3370,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N3000.21Q24.B02.R04",
         gbpPrice: 5250.0,
         price: 9450000,
-        image: "/products/nq-pdp/wild-one-42mm-khaki/6.jpg"
+        image: "/products/nq-pdp/wild-one-42mm-khaki/6.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-folding.jpg",
         images: ["/products/nq-pdp/wild-one-42mm-khaki/6.jpg", "/products/nq-pdp/wild-one-42mm-khaki/1.jpg", "/products/nq-pdp/wild-one-42mm-khaki/2.jpg", "/products/nq-pdp/wild-one-42mm-khaki/3.jpg", "/products/nq-pdp/wild-one-42mm-khaki/4.jpg", "/products/nq-pdp/wild-one-42mm-khaki/5.jpg"],
         sourceUrl: "https://norqain.com/products/wild-one-42mm-khaki",
@@ -3570,7 +3570,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N2200.18S01.B01.T01",
         gbpPrice: 3800.0,
         price: 6840000,
-        image: "/products/nq-pdp/freedom-60-chrono-43mm-black/1.jpg"
+        image: "/products/nq-pdp/freedom-60-chrono-43mm-black/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-pin.jpg",
         images: ["/products/nq-pdp/freedom-60-chrono-43mm-black/1.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-black/2.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-black/3.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-black/4.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-black/5.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-black/6.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-black/7.jpg"],
         sourceUrl: "https://norqain.com/products/freedom-60-chrono-43mm-black",
@@ -3583,7 +3583,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N2200.18S01.B01.R03",
         gbpPrice: 3950.0,
         price: 7110000,
-        image: "/products/nq-pdp/freedom-60-chrono-43mm-black/4.jpg"
+        image: "/products/nq-pdp/freedom-60-chrono-43mm-black/4.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-pin.jpg",
         images: ["/products/nq-pdp/freedom-60-chrono-43mm-black/4.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-black/3.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-black/1.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-black/2.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-black/5.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-black/6.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-black/7.jpg"],
         sourceUrl: "https://norqain.com/products/freedom-60-chrono-43mm-black",
@@ -3596,7 +3596,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N2200.18S01.B01.R01",
         gbpPrice: 3950.0,
         price: 7110000,
-        image: "/products/nq-pdp/freedom-60-chrono-43mm-black/3.jpg"
+        image: "/products/nq-pdp/freedom-60-chrono-43mm-black/3.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-pin.jpg",
         images: ["/products/nq-pdp/freedom-60-chrono-43mm-black/3.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-black/4.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-black/1.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-black/2.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-black/5.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-black/6.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-black/7.jpg"],
         sourceUrl: "https://norqain.com/products/freedom-60-chrono-43mm-black",
@@ -3609,7 +3609,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N2200.18S01.B01.L10",
         gbpPrice: 3800.0,
         price: 6840000,
-        image: "/products/nq-pdp/freedom-60-chrono-43mm-black/6.jpg"
+        image: "/products/nq-pdp/freedom-60-chrono-43mm-black/6.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-pin.jpg",
         images: ["/products/nq-pdp/freedom-60-chrono-43mm-black/6.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-black/1.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-black/2.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-black/3.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-black/4.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-black/5.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-black/7.jpg"],
         sourceUrl: "https://norqain.com/products/freedom-60-chrono-43mm-black",
@@ -3622,7 +3622,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N2200.18S01.B01.T02",
         gbpPrice: 3800.0,
         price: 6840000,
-        image: "/products/nq-pdp/freedom-60-chrono-43mm-black/5.jpg"
+        image: "/products/nq-pdp/freedom-60-chrono-43mm-black/5.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-pin.jpg",
         images: ["/products/nq-pdp/freedom-60-chrono-43mm-black/5.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-black/1.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-black/2.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-black/3.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-black/4.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-black/6.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-black/7.jpg"],
         sourceUrl: "https://norqain.com/products/freedom-60-chrono-43mm-black",
@@ -3635,7 +3635,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N2200.18S01.B01.S01",
         gbpPrice: 4030.0,
         price: 7250000,
-        image: "/products/nq-pdp/freedom-60-chrono-43mm-black/7.jpg"
+        image: "/products/nq-pdp/freedom-60-chrono-43mm-black/7.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-folding.jpg",
         images: ["/products/nq-pdp/freedom-60-chrono-43mm-black/7.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-black/1.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-black/2.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-black/3.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-black/4.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-black/5.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-black/6.jpg"],
         sourceUrl: "https://norqain.com/products/freedom-60-chrono-43mm-black",
@@ -3681,7 +3681,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N2200.18S01.C01.V01",
         gbpPrice: 3800.0,
         price: 6840000,
-        image: "/products/nq-pdp/freedom-60-chrono-43mm-cream/1.jpg"
+        image: "/products/nq-pdp/freedom-60-chrono-43mm-cream/1.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-pin.jpg",
         images: ["/products/nq-pdp/freedom-60-chrono-43mm-cream/1.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-cream/2.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-cream/3.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-cream/4.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-cream/5.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-cream/6.jpg"],
         sourceUrl: "https://norqain.com/products/freedom-60-chrono-43mm-cream",
@@ -3694,7 +3694,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N2200.18S01.C01.R03",
         gbpPrice: 3950.0,
         price: 7110000,
-        image: "/products/nq-pdp/freedom-60-chrono-43mm-cream/6.jpg"
+        image: "/products/nq-pdp/freedom-60-chrono-43mm-cream/6.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-pin.jpg",
         images: ["/products/nq-pdp/freedom-60-chrono-43mm-cream/6.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-cream/1.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-cream/2.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-cream/3.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-cream/4.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-cream/5.jpg"],
         sourceUrl: "https://norqain.com/products/freedom-60-chrono-43mm-cream",
@@ -3707,7 +3707,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N2200.18S01.C01.T02",
         gbpPrice: 3800.0,
         price: 6840000,
-        image: "/products/nq-pdp/freedom-60-chrono-43mm-cream/4.jpg"
+        image: "/products/nq-pdp/freedom-60-chrono-43mm-cream/4.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-pin.jpg",
         images: ["/products/nq-pdp/freedom-60-chrono-43mm-cream/4.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-cream/1.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-cream/2.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-cream/3.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-cream/5.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-cream/6.jpg"],
         sourceUrl: "https://norqain.com/products/freedom-60-chrono-43mm-cream",
@@ -3720,7 +3720,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N2200.18S01.C01.T01",
         gbpPrice: 3800.0,
         price: 6840000,
-        image: "/products/nq-pdp/freedom-60-chrono-43mm-cream/3.jpg"
+        image: "/products/nq-pdp/freedom-60-chrono-43mm-cream/3.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-pin.jpg",
         images: ["/products/nq-pdp/freedom-60-chrono-43mm-cream/3.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-cream/1.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-cream/2.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-cream/4.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-cream/5.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-cream/6.jpg"],
         sourceUrl: "https://norqain.com/products/freedom-60-chrono-43mm-cream",
@@ -3733,7 +3733,7 @@ const _nqCatalogProducts: Product[] = [
         sku: "N2200.18S01.C01.S01",
         gbpPrice: 4030.0,
         price: 7250000,
-        image: "/products/nq-pdp/freedom-60-chrono-43mm-cream/5.jpg"
+        image: "/products/nq-pdp/freedom-60-chrono-43mm-cream/5.jpg",
         swatchImage: "/products/nq-pdp/_hardware/buckle-folding.jpg",
         images: ["/products/nq-pdp/freedom-60-chrono-43mm-cream/5.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-cream/1.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-cream/2.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-cream/3.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-cream/4.jpg", "/products/nq-pdp/freedom-60-chrono-43mm-cream/6.jpg"],
         sourceUrl: "https://norqain.com/products/freedom-60-chrono-43mm-cream",
