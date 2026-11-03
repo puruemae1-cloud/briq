@@ -33,7 +33,12 @@ export type BrandCatalogKey =
   | "mc"
   | "fl"
   | "nq"
-  | "om";
+  | "om"
+  | "th"
+  | "td"
+  | "iw"
+  | "rx"
+  | "pp";
 
 const ALL_KEYS: BrandCatalogKey[] = [
   "cw",
@@ -58,6 +63,11 @@ const ALL_KEYS: BrandCatalogKey[] = [
   "fl",
   "nq",
   "om",
+  "th",
+  "td",
+  "iw",
+  "rx",
+  "pp",
 ];
 
 type Loader = () => Product[];
@@ -214,7 +224,31 @@ const LOADERS: Record<BrandCatalogKey, Loader> = {
     const mod = require("./om/om-products") as typeof import("./om/om-products");
     return dropMissingImages(mod.omProducts);
   },
-
+  th: () => {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const mod = require("./th/th-products") as typeof import("./th/th-products");
+    return dropMissingImages(mod.thProducts);
+  },
+  td: () => {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const mod = require("./td/td-products") as typeof import("./td/td-products");
+    return dropMissingImages(mod.tdProducts);
+  },
+  iw: () => {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const mod = require("./iw/iw-products") as typeof import("./iw/iw-products");
+    return dropMissingImages(mod.iwProducts);
+  },
+  rx: () => {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const mod = require("./rx/rx-products") as typeof import("./rx/rx-products");
+    return dropMissingImages(mod.rxProducts);
+  },
+  pp: () => {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const mod = require("./pp/pp-products") as typeof import("./pp/pp-products");
+    return dropMissingImages(mod.ppProducts);
+  },
 };
 
 export function loadBrandCatalog(key: BrandCatalogKey): Product[] {
@@ -404,6 +438,11 @@ export function brandCatalogKeyFromNavId(
   if (x === "flannels" || x.startsWith("fl-") || x.includes("flannels")) return "fl";
   if (x === "norqain" || x.startsWith("nq-") || x.includes("norqain")) return "nq";
   if (x === "omega" || x.startsWith("om-") || x.includes("omega")) return "om";
+  if (x === "tag-heuer" || x.startsWith("th-") || x.includes("tag-heuer")) return "th";
+  if (x === "tudor" || x.startsWith("td-") || x.includes("tudor")) return "td";
+  if (x === "iwc" || x.startsWith("iw-") || x.includes("iwc")) return "iw";
+  if (x === "rolex" || x.startsWith("rx-") || x.includes("rolex")) return "rx";
+  if (x === "patek-philippe" || x.startsWith("pp-") || x.includes("patek")) return "pp";
   return null;
 }
 
@@ -441,6 +480,11 @@ export function brandCatalogKeyFromProductId(
   if (x.startsWith("fl-")) return "fl";
   if (x.startsWith("nq-")) return "nq";
   if (x.startsWith("om-") || x === "omega") return "om";
+  if (x.startsWith("th-")) return "th";
+  if (x.startsWith("td-")) return "td";
+  if (x.startsWith("iw-")) return "iw";
+  if (x.startsWith("rx-")) return "rx";
+  if (x.startsWith("pp-")) return "pp";
   return null;
 }
 
@@ -456,7 +500,7 @@ export function resolveBrandCatalogKeys(
 ): BrandCatalogKey[] | "all" {
   if (!sub) {
     // Watches category is Christopher Ward only — do not parse luxury JSON.
-    if (category === "watches") return ["cw", "nq", "om"];
+    if (category === "watches") return ["cw", "nq", "om", "th", "td", "iw", "rx", "pp"];
     // Bags hub — only brands with bag SKUs (bags slices), not every RTW catalogue.
     if (category === "bags") return [...BAGS_BRAND_KEYS];
     // Shoes hub — only brands with shoe SKUs (shoes slices), not every RTW catalogue.

@@ -20,9 +20,14 @@ const FAMILY_RANK: Record<string, number> = {
   flannels: 10,
   /** Watches: Christopher Ward before Chanel. */
   "christopher-ward": 50,
-  /** Watches: OMEGA (DMR) between CW and NORQAIN. */
+  /** Watches: DMR houses between CW and NORQAIN. */
+  rolex: 50.5,
+  "patek-philippe": 50.7,
   omega: 52,
-  /** Watches: NORQAIN between CW/OMEGA and Chanel. */
+  "tag-heuer": 52.5,
+  tudor: 53,
+  iwc: 53.5,
+  /** Watches: NORQAIN between DMR houses and Chanel. */
   norqain: 55,
   chanel: 100,
   gucci: 200,
@@ -58,8 +63,27 @@ function brandFamily(id: string): string | null {
   ) {
     return "christopher-ward";
   }
+  if (x === "rolex" || x.startsWith("rolex") || x.startsWith("rx-")) {
+    return "rolex";
+  }
+  if (
+    x === "patek-philippe" ||
+    x.startsWith("patek-philippe") ||
+    x.startsWith("pp-")
+  ) {
+    return "patek-philippe";
+  }
   if (x === "omega" || x.startsWith("omega") || x.startsWith("om-")) {
     return "omega";
+  }
+  if (x === "tag-heuer" || x.startsWith("tag-heuer") || x.startsWith("th-")) {
+    return "tag-heuer";
+  }
+  if (x === "tudor" || x.startsWith("tudor") || x.startsWith("td-")) {
+    return "tudor";
+  }
+  if (x === "iwc" || x.startsWith("iwc") || x.startsWith("iw-")) {
+    return "iwc";
   }
   if (x === "norqain" || x.startsWith("norqain") || x.startsWith("nq-")) {
     return "norqain";
@@ -194,7 +218,12 @@ export function sortNavChildrenByBrandOrder<T extends { id: string }>(
 export const SEO_BRAND_SLUG_ORDER = [
   "flannels",
   "christopher-ward",
+  "rolex",
+  "patek-philippe",
   "omega",
+  "tag-heuer",
+  "tudor",
+  "iwc",
   "norqain",
   "chanel",
   "gucci",

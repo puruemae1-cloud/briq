@@ -28,6 +28,58 @@ export type SubcategoryId =
   | "om-speedmaster"
   | "om-de-ville"
   | "om-constellation"
+  | "om-other"
+  | "tag-heuer"
+  | "th-carrera"
+  | "th-aquaracer"
+  | "th-formula-1"
+  | "th-monaco"
+  | "th-connected"
+  | "th-link"
+  | "th-other"
+  | "tudor"
+  | "td-black-bay"
+  | "td-royal"
+  | "td-1926"
+  | "td-pelagos"
+  | "td-clair-de-rose"
+  | "td-ranger"
+  | "td-other"
+  | "iwc"
+  | "iw-pilots"
+  | "iw-portugieser"
+  | "iw-portofino"
+  | "iw-ingenieur"
+  | "iw-aquatimer"
+  | "iw-other"
+  | "rolex"
+  | "rx-datejust"
+  | "rx-daytona"
+  | "rx-day-date"
+  | "rx-oyster-perpetual"
+  | "rx-sky-dweller"
+  | "rx-lady-datejust"
+  | "rx-gmt-master-ii"
+  | "rx-yacht-master"
+  | "rx-land-dweller"
+  | "rx-submariner"
+  | "rx-explorer"
+  | "rx-sea-dweller"
+  | "rx-air-king"
+  | "rx-1908"
+  | "rx-deepsea"
+  | "rx-other"
+  | "patek-philippe"
+  | "pp-nautilus"
+  | "pp-aquanaut"
+  | "pp-calatrava"
+  | "pp-complications"
+  | "pp-grand-complications"
+  | "pp-twenty-4"
+  | "pp-gondolo"
+  | "pp-cubitus"
+  | "pp-golden-ellipse"
+  | "pp-other"
   | "cw-new-releases"
   | "cw-bestsellers"
   | "cw-hidden-gems"
@@ -5598,11 +5650,91 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "nq-limited": ["nq-limited"],
   "nq-gents": ["nq-gents"],
   "nq-ladies": ["nq-ladies"],
-  omega: ["om-seamaster", "om-speedmaster", "om-de-ville", "om-constellation"],
+  omega: ["om-seamaster", "om-speedmaster", "om-de-ville", "om-constellation", "om-other"],
   "om-seamaster": ["om-seamaster"],
   "om-speedmaster": ["om-speedmaster"],
   "om-de-ville": ["om-de-ville"],
   "om-constellation": ["om-constellation"],
+  "om-other": ["om-other"],
+  "tag-heuer": ["th-carrera", "th-aquaracer", "th-formula-1", "th-monaco", "th-connected", "th-link", "th-other"],
+  "th-carrera": ["th-carrera"],
+  "th-aquaracer": ["th-aquaracer"],
+  "th-formula-1": ["th-formula-1"],
+  "th-monaco": ["th-monaco"],
+  "th-connected": ["th-connected"],
+  "th-link": ["th-link"],
+  "th-other": ["th-other"],
+  tudor: ["td-black-bay", "td-royal", "td-1926", "td-pelagos", "td-clair-de-rose", "td-ranger", "td-other"],
+  "td-black-bay": ["td-black-bay"],
+  "td-royal": ["td-royal"],
+  "td-1926": ["td-1926"],
+  "td-pelagos": ["td-pelagos"],
+  "td-clair-de-rose": ["td-clair-de-rose"],
+  "td-ranger": ["td-ranger"],
+  "td-other": ["td-other"],
+  iwc: ["iw-pilots", "iw-portugieser", "iw-portofino", "iw-ingenieur", "iw-aquatimer", "iw-other"],
+  "iw-pilots": ["iw-pilots"],
+  "iw-portugieser": ["iw-portugieser"],
+  "iw-portofino": ["iw-portofino"],
+  "iw-ingenieur": ["iw-ingenieur"],
+  "iw-aquatimer": ["iw-aquatimer"],
+  "iw-other": ["iw-other"],
+  rolex: [
+    "rx-datejust",
+    "rx-daytona",
+    "rx-day-date",
+    "rx-oyster-perpetual",
+    "rx-sky-dweller",
+    "rx-lady-datejust",
+    "rx-gmt-master-ii",
+    "rx-yacht-master",
+    "rx-land-dweller",
+    "rx-submariner",
+    "rx-explorer",
+    "rx-sea-dweller",
+    "rx-air-king",
+    "rx-1908",
+    "rx-deepsea",
+    "rx-other",
+  ],
+  "rx-datejust": ["rx-datejust"],
+  "rx-daytona": ["rx-daytona"],
+  "rx-day-date": ["rx-day-date"],
+  "rx-oyster-perpetual": ["rx-oyster-perpetual"],
+  "rx-sky-dweller": ["rx-sky-dweller"],
+  "rx-lady-datejust": ["rx-lady-datejust"],
+  "rx-gmt-master-ii": ["rx-gmt-master-ii"],
+  "rx-yacht-master": ["rx-yacht-master"],
+  "rx-land-dweller": ["rx-land-dweller"],
+  "rx-submariner": ["rx-submariner"],
+  "rx-explorer": ["rx-explorer"],
+  "rx-sea-dweller": ["rx-sea-dweller"],
+  "rx-air-king": ["rx-air-king"],
+  "rx-1908": ["rx-1908"],
+  "rx-deepsea": ["rx-deepsea"],
+  "rx-other": ["rx-other"],
+  "patek-philippe": [
+    "pp-nautilus",
+    "pp-aquanaut",
+    "pp-calatrava",
+    "pp-complications",
+    "pp-grand-complications",
+    "pp-twenty-4",
+    "pp-gondolo",
+    "pp-cubitus",
+    "pp-golden-ellipse",
+    "pp-other",
+  ],
+  "pp-nautilus": ["pp-nautilus"],
+  "pp-aquanaut": ["pp-aquanaut"],
+  "pp-calatrava": ["pp-calatrava"],
+  "pp-complications": ["pp-complications"],
+  "pp-grand-complications": ["pp-grand-complications"],
+  "pp-twenty-4": ["pp-twenty-4"],
+  "pp-gondolo": ["pp-gondolo"],
+  "pp-cubitus": ["pp-cubitus"],
+  "pp-golden-ellipse": ["pp-golden-ellipse"],
+  "pp-other": ["pp-other"],
   "fl-women": ["fl-women"],
   "fl-men": ["fl-men"],
   moncler: [
@@ -7138,6 +7270,46 @@ export const navCategories: NavCategory[] = [
         ],
       },
       {
+        id: "rolex",
+        labelKo: "롤렉스",
+        href: "/shop?category=watches&sub=rolex",
+        children: [
+          { id: "rx-datejust", labelKo: "데이트저스트", href: "/shop?category=watches&sub=rx-datejust" },
+          { id: "rx-daytona", labelKo: "데이토나", href: "/shop?category=watches&sub=rx-daytona" },
+          { id: "rx-day-date", labelKo: "데이데이트", href: "/shop?category=watches&sub=rx-day-date" },
+          { id: "rx-submariner", labelKo: "서브마리너", href: "/shop?category=watches&sub=rx-submariner" },
+          { id: "rx-gmt-master-ii", labelKo: "GMT-마스터 II", href: "/shop?category=watches&sub=rx-gmt-master-ii" },
+          { id: "rx-oyster-perpetual", labelKo: "오이스터 퍼페츄얼", href: "/shop?category=watches&sub=rx-oyster-perpetual" },
+          { id: "rx-sky-dweller", labelKo: "스카이-듀엘러", href: "/shop?category=watches&sub=rx-sky-dweller" },
+          { id: "rx-yacht-master", labelKo: "요트-마스터", href: "/shop?category=watches&sub=rx-yacht-master" },
+          { id: "rx-explorer", labelKo: "익스플로러", href: "/shop?category=watches&sub=rx-explorer" },
+          { id: "rx-sea-dweller", labelKo: "시-듀엘러", href: "/shop?category=watches&sub=rx-sea-dweller" },
+          { id: "rx-lady-datejust", labelKo: "레이디 데이트저스트", href: "/shop?category=watches&sub=rx-lady-datejust" },
+          { id: "rx-land-dweller", labelKo: "랜드-듀엘러", href: "/shop?category=watches&sub=rx-land-dweller" },
+          { id: "rx-air-king", labelKo: "에어-킹", href: "/shop?category=watches&sub=rx-air-king" },
+          { id: "rx-1908", labelKo: "1908", href: "/shop?category=watches&sub=rx-1908" },
+          { id: "rx-deepsea", labelKo: "딥씨", href: "/shop?category=watches&sub=rx-deepsea" },
+          { id: "rx-other", labelKo: "기타", href: "/shop?category=watches&sub=rx-other" },
+        ],
+      },
+      {
+        id: "patek-philippe",
+        labelKo: "파텍 필립",
+        href: "/shop?category=watches&sub=patek-philippe",
+        children: [
+          { id: "pp-nautilus", labelKo: "노틸러스", href: "/shop?category=watches&sub=pp-nautilus" },
+          { id: "pp-aquanaut", labelKo: "아쿠아넛", href: "/shop?category=watches&sub=pp-aquanaut" },
+          { id: "pp-calatrava", labelKo: "칼라트라바", href: "/shop?category=watches&sub=pp-calatrava" },
+          { id: "pp-complications", labelKo: "컴플리케이션", href: "/shop?category=watches&sub=pp-complications" },
+          { id: "pp-grand-complications", labelKo: "그랜드 컴플리케이션", href: "/shop?category=watches&sub=pp-grand-complications" },
+          { id: "pp-twenty-4", labelKo: "트웬티-4", href: "/shop?category=watches&sub=pp-twenty-4" },
+          { id: "pp-gondolo", labelKo: "곤돌로", href: "/shop?category=watches&sub=pp-gondolo" },
+          { id: "pp-cubitus", labelKo: "큐비투스", href: "/shop?category=watches&sub=pp-cubitus" },
+          { id: "pp-golden-ellipse", labelKo: "골든 엘립스", href: "/shop?category=watches&sub=pp-golden-ellipse" },
+          { id: "pp-other", labelKo: "기타", href: "/shop?category=watches&sub=pp-other" },
+        ],
+      },
+      {
         id: "omega",
         labelKo: "오메가",
         href: "/shop?category=watches&sub=omega",
@@ -7162,6 +7334,52 @@ export const navCategories: NavCategory[] = [
             labelKo: "컨스텔레이션",
             href: "/shop?category=watches&sub=om-constellation",
           },
+          {
+            id: "om-other",
+            labelKo: "기타",
+            href: "/shop?category=watches&sub=om-other",
+          },
+        ],
+      },
+      {
+        id: "tag-heuer",
+        labelKo: "태그호이어",
+        href: "/shop?category=watches&sub=tag-heuer",
+        children: [
+          { id: "th-carrera", labelKo: "카레라", href: "/shop?category=watches&sub=th-carrera" },
+          { id: "th-aquaracer", labelKo: "아쿠아레이서", href: "/shop?category=watches&sub=th-aquaracer" },
+          { id: "th-formula-1", labelKo: "포뮬러 1", href: "/shop?category=watches&sub=th-formula-1" },
+          { id: "th-monaco", labelKo: "모나코", href: "/shop?category=watches&sub=th-monaco" },
+          { id: "th-connected", labelKo: "커넥티드", href: "/shop?category=watches&sub=th-connected" },
+          { id: "th-link", labelKo: "링크", href: "/shop?category=watches&sub=th-link" },
+          { id: "th-other", labelKo: "기타", href: "/shop?category=watches&sub=th-other" },
+        ],
+      },
+      {
+        id: "tudor",
+        labelKo: "튜더",
+        href: "/shop?category=watches&sub=tudor",
+        children: [
+          { id: "td-black-bay", labelKo: "블랙 베이", href: "/shop?category=watches&sub=td-black-bay" },
+          { id: "td-royal", labelKo: "로열", href: "/shop?category=watches&sub=td-royal" },
+          { id: "td-1926", labelKo: "1926", href: "/shop?category=watches&sub=td-1926" },
+          { id: "td-pelagos", labelKo: "펠라고스", href: "/shop?category=watches&sub=td-pelagos" },
+          { id: "td-clair-de-rose", labelKo: "클레르 드 로즈", href: "/shop?category=watches&sub=td-clair-de-rose" },
+          { id: "td-ranger", labelKo: "레인저", href: "/shop?category=watches&sub=td-ranger" },
+          { id: "td-other", labelKo: "기타", href: "/shop?category=watches&sub=td-other" },
+        ],
+      },
+      {
+        id: "iwc",
+        labelKo: "IWC",
+        href: "/shop?category=watches&sub=iwc",
+        children: [
+          { id: "iw-pilots", labelKo: "파일럿", href: "/shop?category=watches&sub=iw-pilots" },
+          { id: "iw-portugieser", labelKo: "포르투기저", href: "/shop?category=watches&sub=iw-portugieser" },
+          { id: "iw-portofino", labelKo: "포르토피노", href: "/shop?category=watches&sub=iw-portofino" },
+          { id: "iw-ingenieur", labelKo: "인제니어", href: "/shop?category=watches&sub=iw-ingenieur" },
+          { id: "iw-aquatimer", labelKo: "아쿠아타이머", href: "/shop?category=watches&sub=iw-aquatimer" },
+          { id: "iw-other", labelKo: "기타", href: "/shop?category=watches&sub=iw-other" },
         ],
       },
       {
