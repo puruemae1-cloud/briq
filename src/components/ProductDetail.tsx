@@ -317,28 +317,17 @@ export function ProductDetail({
   const officialEnglishName = productOfficialEnglishName(product);
   const primaryImage = resolveProductImage(product.image, selected?.image);
   const galleryImages = (() => {
+    // Keep the watch packshot gallery on option change. Buckle/hardware
+    // distinction lives in the option chips via `swatchImage`, not the hero.
     const variantGallery = selected?.images?.filter(Boolean) ?? [];
-    let base: string[];
-    if (variantGallery.length > 0) {
-      base = variantGallery;
-    } else {
-      const productGallery = product.images?.filter(Boolean) ?? [];
-      if (selected?.image) {
-        const rest = productGallery.filter((src) => src !== selected.image);
-        base = [selected.image, ...rest];
-      } else if (productGallery.length > 0) {
-        base = productGallery;
-      } else {
-        base = [primaryImage];
-      }
+    if (variantGallery.length > 0) return variantGallery;
+    const productGallery = product.images?.filter(Boolean) ?? [];
+    if (selected?.image) {
+      const rest = productGallery.filter((src) => src !== selected.image);
+      return [selected.image, ...rest];
     }
-    // Buckle / hardware: lead the gallery with the option photo so clicking a
-    // clasp/buckle chip visibly changes the hero (packshots follow).
-    const swatch = selected?.swatchImage;
-    if (swatch) {
-      return [swatch, ...base.filter((src) => src !== swatch)];
-    }
-    return base;
+    if (productGallery.length > 0) return productGallery;
+    return [primaryImage];
   })();
   const soldOut = !selectedAvailable;
   const salePct = productSalePercent(product, selected);
@@ -394,7 +383,7 @@ export function ProductDetail({
         </p>
         {buckleOnlyOptions ? (
           <p className="variant-block__hint">
-            시계 본체·스트랩은 같고, 아래 사진은 버클(잠금장치) 옵션입니다.
+            시계 사진은 동일합니다. 아래 칩 사진으로 버클(잠금장치) 옵션을 구분하세요.
           </p>
         ) : null}
         <ColorSwatches
