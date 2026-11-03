@@ -20,7 +20,9 @@ const FAMILY_RANK: Record<string, number> = {
   flannels: 10,
   /** Watches: Christopher Ward before Chanel. */
   "christopher-ward": 50,
-  /** Watches: NORQAIN between CW and Chanel. */
+  /** Watches: OMEGA (DMR) between CW and NORQAIN. */
+  omega: 52,
+  /** Watches: NORQAIN between CW/OMEGA and Chanel. */
   norqain: 55,
   chanel: 100,
   gucci: 200,
@@ -55,6 +57,9 @@ function brandFamily(id: string): string | null {
     x.startsWith("cw-")
   ) {
     return "christopher-ward";
+  }
+  if (x === "omega" || x.startsWith("omega") || x.startsWith("om-")) {
+    return "omega";
   }
   if (x === "norqain" || x.startsWith("norqain") || x.startsWith("nq-")) {
     return "norqain";
@@ -189,6 +194,7 @@ export function sortNavChildrenByBrandOrder<T extends { id: string }>(
 export const SEO_BRAND_SLUG_ORDER = [
   "flannels",
   "christopher-ward",
+  "omega",
   "norqain",
   "chanel",
   "gucci",

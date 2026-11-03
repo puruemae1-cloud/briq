@@ -23,6 +23,11 @@ export type SubcategoryId =
   | "nq-adventure"
   | "nq-independence"
   | "nq-wild-one"
+  | "omega"
+  | "om-seamaster"
+  | "om-speedmaster"
+  | "om-de-ville"
+  | "om-constellation"
   | "cw-new-releases"
   | "cw-bestsellers"
   | "cw-hidden-gems"
@@ -5593,6 +5598,11 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "nq-limited": ["nq-limited"],
   "nq-gents": ["nq-gents"],
   "nq-ladies": ["nq-ladies"],
+  omega: ["om-seamaster", "om-speedmaster", "om-de-ville", "om-constellation"],
+  "om-seamaster": ["om-seamaster"],
+  "om-speedmaster": ["om-speedmaster"],
+  "om-de-ville": ["om-de-ville"],
+  "om-constellation": ["om-constellation"],
   "fl-women": ["fl-women"],
   "fl-men": ["fl-men"],
   moncler: [
@@ -7124,6 +7134,33 @@ export const navCategories: NavCategory[] = [
             id: "cw-straps",
             labelKo: "스트랩",
             href: "/shop?category=watches&sub=cw-straps",
+          },
+        ],
+      },
+      {
+        id: "omega",
+        labelKo: "오메가",
+        href: "/shop?category=watches&sub=omega",
+        children: [
+          {
+            id: "om-seamaster",
+            labelKo: "씨마스터",
+            href: "/shop?category=watches&sub=om-seamaster",
+          },
+          {
+            id: "om-speedmaster",
+            labelKo: "스피드마스터",
+            href: "/shop?category=watches&sub=om-speedmaster",
+          },
+          {
+            id: "om-de-ville",
+            labelKo: "드 빌",
+            href: "/shop?category=watches&sub=om-de-ville",
+          },
+          {
+            id: "om-constellation",
+            labelKo: "컨스텔레이션",
+            href: "/shop?category=watches&sub=om-constellation",
           },
         ],
       },

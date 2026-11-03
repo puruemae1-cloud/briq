@@ -650,6 +650,8 @@ export function getProductsByCategory(
       if (p.alCollections?.some((c) => expanded.includes(c))) return true;
       if ((p.tags || []).some((tag) => tag.startsWith("nq-") && expanded.includes(tag)))
         return true;
+      if ((p.tags || []).some((tag) => tag.startsWith("om-") && expanded.includes(tag)))
+        return true;
       if (p.variants?.some((v) => v.ggCollections?.some((c) => expanded.includes(c))))
         return true;
       if (p.variants?.some((v) => v.bbCollections?.some((c) => expanded.includes(c))))
