@@ -676,28 +676,6 @@ def build_product(r: dict, cache: dict[str, str]) -> dict | None:
     }
 
 
-def emit_catalog_ts(brand_key: str, products: list[dict]) -> str:
-    meta = BRANDS[brand_key]
-    lines = [
-        'import type { Product } from "@/data/product-types";',
-        "",
-        f"/** DMR {meta['brand']} watches — GBP×1900×1.16. */",
-        "const _products: Product[] = [",
-    ]
-    for p in products:
-        lines.append("  {")
-        for k, v in p.items():
-            lines.append(f"    {k}: {json.dumps(v, ensure_ascii=False)},")
-        lines.append("  },")
-    lines += [
-        "];",
-        "",
-        f"export const {brand_key}CatalogProducts: Product[] = _products;",
-        "",
-    ]
-    return "\n".join(lines)
-
-
 def cmd_catalog() -> None:
     rows = json.loads(PRODUCTS_JSON.read_text())
     cache = load_ko_cache()
@@ -713,21 +691,17 @@ def cmd_catalog() -> None:
     for bkey, products in by_brand.items():
         out_dir = ROOT / "src" / "data" / bkey
         out_dir.mkdir(parents=True, exist_ok=True)
-        (out_dir / f"{bkey}-catalog.ts").write_text(emit_catalog_ts(bkey, products))
-        (out_dir / f"{bkey}-products.ts").write_text(
-            "\n".join(
-                [
-                    'import type { Product } from "@/data/product-types";',
-                    f'import {{ {bkey}CatalogProducts }} from "@/data/{bkey}/{bkey}-catalog";',
-                    "",
-                    f"export const {bkey}Products: Product[] = {bkey}CatalogProducts;",
-                    "",
-                ]
-            )
+        # JSON catalogues — same path as other large brands; avoids bundling
+        # multi-MB TS literals into the Vercel serverless heap.
+        (out_dir / f"{bkey}-catalog.json").write_text(
+            json.dumps(products, ensure_ascii=False, separators=(",", ":")) + "\n"
         )
+        for stale in (f"{bkey}-catalog.ts", f"{bkey}-products.ts"):
+            old = out_dir / stale
+            if old.exists():
+                old.unlink()
         print(f"catalog {bkey}: {len(products)} products", flush=True)
     print(f"skipped (no images): {skipped}", flush=True)
-    # summary json
     (CACHE / "catalog-summary.json").write_text(
         json.dumps({k: len(v) for k, v in by_brand.items()}, indent=2)
     )

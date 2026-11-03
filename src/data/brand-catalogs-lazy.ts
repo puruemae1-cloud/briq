@@ -220,34 +220,22 @@ const LOADERS: Record<BrandCatalogKey, Loader> = {
     return dropMissingImages(mod.nqProducts);
   },
   om: () => {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const mod = require("./om/om-products") as typeof import("./om/om-products");
-    return dropMissingImages(mod.omProducts);
+    return readCatalogJson("om/om-catalog.json");
   },
   th: () => {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const mod = require("./th/th-products") as typeof import("./th/th-products");
-    return dropMissingImages(mod.thProducts);
+    return readCatalogJson("th/th-catalog.json");
   },
   td: () => {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const mod = require("./td/td-products") as typeof import("./td/td-products");
-    return dropMissingImages(mod.tdProducts);
+    return readCatalogJson("td/td-catalog.json");
   },
   iw: () => {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const mod = require("./iw/iw-products") as typeof import("./iw/iw-products");
-    return dropMissingImages(mod.iwProducts);
+    return readCatalogJson("iw/iw-catalog.json");
   },
   rx: () => {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const mod = require("./rx/rx-products") as typeof import("./rx/rx-products");
-    return dropMissingImages(mod.rxProducts);
+    return readCatalogJson("rx/rx-catalog.json");
   },
   pp: () => {
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const mod = require("./pp/pp-products") as typeof import("./pp/pp-products");
-    return dropMissingImages(mod.ppProducts);
+    return readCatalogJson("pp/pp-catalog.json");
   },
 };
 
