@@ -46,6 +46,41 @@ export const DEFAULT_TITLE =
 export const DEFAULT_DESCRIPTION =
   "Briq(브릭) — 영국 현지 기준 명품의류·가방·시계·악세서리 직구/구매대행. 샤넬·구찌·버버리·아크테릭스 등 큐레이션, 항공배송·관부가세 포함 가격으로 국내 직배송.";
 
+/**
+ * Absolute document title with a single " | Briq" suffix.
+ * Use for product/shop/brand pages that already include brand keywords.
+ */
+export function seoTitle(page: string): { absolute: string } {
+  const bare = (page || "")
+    .replace(/\s*[|·—-]\s*(명품직구\s*)?Briq\s*$/i, "")
+    .replace(/\s*Briq\s*$/i, "")
+    .trim();
+  return { absolute: bare ? `${bare} | Briq` : DEFAULT_TITLE };
+}
+
+/** Prefer nameKo alone when it already carries the brand (avoid "IWC IWC …"). */
+export function productSeoHeadline(brand: string | undefined, name: string): string {
+  const n = (name || "").trim();
+  const b = (brand || "").trim();
+  if (!b || b === "Briq") return n;
+  const core = b.replace(/\s*Schaffhausen\s*/i, "").trim();
+  const tokens = [...new Set([b, core, ...core.split(/\s+/)])].filter(
+    (t) => t.length >= 2,
+  );
+  const lower = n.toLowerCase();
+  if (
+    tokens.some(
+      (t) =>
+        lower.startsWith(t.toLowerCase()) ||
+        lower.includes(` ${t.toLowerCase()}`) ||
+        lower.includes(t.toLowerCase()),
+    )
+  ) {
+    return n;
+  }
+  return `${b} ${n}`;
+}
+
 export type SeoBrand = {
   slug: string;
   nameEn: string;
@@ -205,6 +240,68 @@ const SEO_BRANDS_BY_SLUG: Record<string, SeoBrand> = {
     shopHref: "/shop?category=watches&sub=christopher-ward",
     keywords: ["크리스토퍼와드", "Christopher Ward"],
     blurb: "크리스토퍼와드 시계를 Briq 영국 셀렉션으로 살펴보세요.",
+  },
+  rolex: {
+    slug: "rolex",
+    nameEn: "Rolex",
+    nameKo: "롤렉스",
+    shopHref: "/shop?category=watches&sub=rolex",
+    keywords: ["롤렉스", "Rolex", "롤렉스 직구", "서브마리너", "데이토나"],
+    blurb:
+      "롤렉스 서브마리너·데이토나·데이트저스트 등 영국 DMR 취급 셀렉션을 Briq에서 확인하세요.",
+  },
+  "patek-philippe": {
+    slug: "patek-philippe",
+    nameEn: "Patek Philippe",
+    nameKo: "파텍 필립",
+    shopHref: "/shop?category=watches&sub=patek-philippe",
+    keywords: ["파텍필립", "파텍 필립", "Patek Philippe", "노틸러스", "아쿠아넛"],
+    blurb:
+      "파텍 필립 노틸러스·아쿠아넛·칼라트라바를 Briq 영국 정품 시계 셀렉션으로 만나보세요.",
+  },
+  omega: {
+    slug: "omega",
+    nameEn: "OMEGA",
+    nameKo: "오메가",
+    shopHref: "/shop?category=watches&sub=omega",
+    keywords: ["오메가", "OMEGA", "스피드마스터", "씨마스터", "오메가 직구"],
+    blurb:
+      "오메가 스피드마스터·씨마스터·컨스텔레이션을 Briq 영국 셀렉션으로 살펴보세요.",
+  },
+  "tag-heuer": {
+    slug: "tag-heuer",
+    nameEn: "TAG Heuer",
+    nameKo: "태그호이어",
+    shopHref: "/shop?category=watches&sub=tag-heuer",
+    keywords: ["태그호이어", "TAG Heuer", "카레라", "모나코", "아쿠아레이서"],
+    blurb:
+      "태그호이어 카레라·모나코·아쿠아레이서를 Briq 영국 정품 시계로 쇼핑하세요.",
+  },
+  tudor: {
+    slug: "tudor",
+    nameEn: "TUDOR",
+    nameKo: "튜더",
+    shopHref: "/shop?category=watches&sub=tudor",
+    keywords: ["튜더", "TUDOR", "블랙베이", "펠라고스", "튜더 직구"],
+    blurb:
+      "튜더 블랙 베이·펠라고스 등 툴 워치 라인업을 Briq 영국 셀렉션으로 만나보세요.",
+  },
+  iwc: {
+    slug: "iwc",
+    nameEn: "IWC",
+    nameKo: "IWC",
+    shopHref: "/shop?category=watches&sub=iwc",
+    keywords: ["IWC", "아이더블유씨", "파일럿 워치", "포르투기저", "탑건"],
+    blurb:
+      "IWC 파일럿·포르투기저·인제니어 컬렉션을 Briq 영국 DMR 취급 기준으로 확인하세요.",
+  },
+  norqain: {
+    slug: "norqain",
+    nameEn: "NORQAIN",
+    nameKo: "노르ケイン",
+    shopHref: "/shop?category=watches&sub=norqain",
+    keywords: ["노르케인", "NORQAIN", "노르케인 시계"],
+    blurb: "스위스 노르케인 시계를 Briq 영국 셀렉션으로 살펴보세요.",
   },
   "galvin-green": {
     slug: "galvin-green",

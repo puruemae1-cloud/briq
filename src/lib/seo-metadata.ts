@@ -13,7 +13,9 @@ export const rootMetadata: Metadata = {
   metadataBase: new URL(site),
   title: {
     default: DEFAULT_TITLE,
-    template: `%s · ${SITE_NAME}`,
+    // Short page titles (이용약관 등) get " | Briq". Pages that already end with
+    // Briq must pass `{ absolute: "…" }` via `seoTitle()` — avoid "Briq · Briq".
+    template: `%s | ${SITE_NAME}`,
   },
   description: DEFAULT_DESCRIPTION,
   applicationName: SITE_NAME,

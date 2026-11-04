@@ -307,6 +307,8 @@ export function buildShopHref(params: {
   q?: string;
   sort?: ProductSort;
   offset?: number;
+  /** Omit default sort=new so canonicals stay clean for Naver/Google. */
+  forCanonical?: boolean;
 }) {
   const sp = new URLSearchParams();
   if (params.category && params.category !== "all") {
@@ -315,8 +317,14 @@ export function buildShopHref(params: {
   if (params.sub) sp.set("sub", params.sub);
   if (params.q?.trim()) sp.set("q", params.q.trim());
   if (params.offset && params.offset > 0) sp.set("offset", String(params.offset));
-  // Always persist sort explicitly so shares / filters keep 최신등록순 visible.
-  sp.set("sort", params.sort ?? DEFAULT_PRODUCT_SORT);
+  const sort = params.sort ?? DEFAULT_PRODUCT_SORT;
+  if (params.forCanonical) {
+    // Default 최신등록순 is implied — keep canonical free of ?sort=new noise.
+    if (sort !== DEFAULT_PRODUCT_SORT) sp.set("sort", sort);
+  } else {
+    // UI links always persist sort so shares / filters keep 최신등록순 visible.
+    sp.set("sort", sort);
+  }
   const qs = sp.toString();
   return qs ? `/shop?${qs}` : "/shop";
 }

@@ -42,15 +42,15 @@ export default async function HomePage() {
           />
           <div className="hero__shade" aria-hidden />
           <div className="hero__content">
-            {/* The word space must stay an explicit {" "}: JSX drops whitespace next to line breaks. */}
+            {/* Korean H1 for Naver indexing; English line kept as brand atmosphere. */}
             <h1 className="hero__brand">
-              London to{" "}
-              <span className="hero__brand-line">Your&nbsp;Door</span>
+              Briq{" "}
+              <span className="hero__brand-line">브릭</span>
             </h1>
-            <p className="hero__headline">British Boutique. Unique edit.</p>
+            <p className="hero__headline">London to Your Door · British Boutique</p>
             <p className="hero__support">
-              영국 현지 기준의 까다로운 셀렉션,
-              <br className="br-mobile" /> 오직 당신만을 위한 직배송.
+              영국 현지 기준 명품직구·구매대행,
+              <br className="br-mobile" /> 관부가세 포함 국내 직배송.
             </p>
           </div>
         </div>

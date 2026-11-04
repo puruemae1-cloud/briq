@@ -6,7 +6,7 @@ import { formatKrw, getProduct, isProductInStock, productDisplayPrice } from "@/
 import { listQa } from "@/lib/qa-inbox";
 import { maskInquiryEmail } from "@/lib/qa-privacy";
 import { mediaUrl } from "@/lib/product-image";
-import { getSiteUrl } from "@/lib/site";
+import { getSiteUrl, productSeoHeadline, seoTitle } from "@/lib/site";
 
 type Props = {
   params: Promise<{ id: string }>;
@@ -20,17 +20,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const name = product.nameKo || product.name;
   const brand = product.brand || "Briq";
-  const title = `${brand} ${name} | 명품직구 Briq`;
+  const headline = productSeoHeadline(brand, name);
+  const titleText = `${headline} 명품직구`;
+  const title = seoTitle(titleText);
   const listPrice = productDisplayPrice(product);
+  const stockHint = isProductInStock(product) ? "재고 확인 후 바로 주문" : "입고 문의 가능";
   const description = [
-    `${brand} ${name}.`,
+    `${headline}.`,
     product.compareAtPrice
       ? `판매가 ${formatKrw(listPrice)}.`
-      : `가격 ${formatKrw(listPrice)}.`,
-    "Briq 영국 명품직구·구매대행, 항공배송·관부가세 포함.",
+      : `${formatKrw(listPrice)} (관부가세·항공배송 포함).`,
+    `${stockHint}. 영국 정품 명품직구 Briq.`,
   ].join(" ");
   const image = mediaUrl(product.image || product.images?.[0] || "");
   const url = `${getSiteUrl()}/product/${encodeURIComponent(product.id)}`;
+  const ogTitle = title.absolute;
 
   return {
     title,
@@ -40,18 +44,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       name,
       "명품직구",
       "명품구매대행",
+      "명품시계",
       "명품의류",
       product.category,
     ].filter(Boolean) as string[],
     alternates: { canonical: url },
     openGraph: {
-      title,
+      title: ogTitle,
       description,
       url,
       type: "website",
       locale: "ko_KR",
       images: image
-        ? [{ url: image, alt: `${brand} ${name}` }]
+        ? [{ url: image, alt: headline }]
         : undefined,
     },
   };

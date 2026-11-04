@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { JsonLd } from "@/components/JsonLd";
-import { SEO_BRANDS, getSeoBrand, getSiteUrl } from "@/lib/site";
+import { SEO_BRANDS, getSeoBrand, getSiteUrl, seoTitle } from "@/lib/site";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -16,15 +16,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const brand = getSeoBrand(slug);
   if (!brand) return {};
-  const title = `${brand.nameKo} ${brand.nameEn} | 명품직구·구매대행 Briq`;
-  const description = `${brand.blurb} 명품의류·명품직구·명품구매대행은 Briq 브릭.`;
+  const title = seoTitle(`${brand.nameKo} ${brand.nameEn} 명품직구·구매대행`);
+  const description = `${brand.blurb} 관부가세·항공배송 포함 명품직구는 Briq 브릭.`;
   return {
     title,
     description,
     keywords: brand.keywords,
     alternates: { canonical: `${getSiteUrl()}/brands/${brand.slug}` },
     openGraph: {
-      title,
+      title: title.absolute,
       description,
       url: `${getSiteUrl()}/brands/${brand.slug}`,
       locale: "ko_KR",
