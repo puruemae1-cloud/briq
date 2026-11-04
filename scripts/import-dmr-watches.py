@@ -191,6 +191,7 @@ GLOSSARY = [
     (r"\bautomatic\b", "오토매틱"),
     (r"\bchronograph\b", "크로노그래프"),
     (r"\bchronometer\b", "크로노미터"),
+    (r"\bWatch\b", "워치"),
 ]
 
 
@@ -439,8 +440,8 @@ def polish_ko(text: str) -> str:
     return t
 
 
-def truncate_body(text: str, limit: int = 900) -> str:
-    """Keep PDP copy short enough for one gtx call (~2–3 paragraphs)."""
+def truncate_body(text: str, limit: int = 1400) -> str:
+    """Keep PDP copy short enough for one gtx call (~3–5 paragraphs)."""
     text = (text or "").strip()
     if len(text) <= limit:
         return text
@@ -576,6 +577,13 @@ def build_product(r: dict, cache: dict[str, str]) -> dict | None:
     body_en = r.get("body_en") or ""
     body_ko = ko_get(cache, "body", body_en)
     hangul = len(re.findall(r"[가-힣]", body_ko or ""))
+    latin = len(re.findall(r"[A-Za-z]", body_ko or ""))
+    # Reject glossary-only EN leftovers that slipped into the KO cache.
+    if hangul >= 40 and latin > hangul * 2.5 and re.search(
+        r"\b(the|and|with|from|this|that|has|have|for)\b", body_ko or "", re.I
+    ):
+        hangul = 0
+        body_ko = ""
     if hangul < 40:
         # Prefer a clean KO blurb over leftover EN catalogue copy.
         coll = next((ko for sid, (_h, ko) in meta["subs"].items() if sid == r["subcategory"]), meta["brandKo"])

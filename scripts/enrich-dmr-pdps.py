@@ -151,7 +151,7 @@ def cmd_translate_bodies() -> None:
             ).strip()
             parts = [meta, e.get("lede") or "", e.get("body") or ""]
             body = "\n\n".join(p.strip() for p in parts if p and p.strip())
-        # Must match import-dmr-watches.ko_get truncate (default 900).
+        # Must match import-dmr-watches.ko_get truncate (default 1400).
         body = dmr.truncate_body(body) if body else ""
         if not body:
             continue
@@ -192,9 +192,93 @@ def fix_title_ko(title_en: str, title_ko: str) -> str:
     bad = ["잠수함", "주니어", "사례"]
     if any(b in (title_ko or "") for b in bad):
         return polished
-    if len(re.findall(r"[가-힣]", title_ko or "")) < 1:
+    # Glossary-polish leftover Latin tokens (Watch, Chronograph, etc.).
+    mixed = dmr.polish_ko(title_ko or "")
+    if len(re.findall(r"[가-힣]", mixed)) < 1:
         return polished or title_en
-    return title_ko
+    return mixed
+
+
+BRAND_INTRO_KO = {
+    "iw": (
+        "IWC 샤프하우젠은 1868년 스위스 샤프하우젠에 설립된 매뉴팩처입니다. "
+        "파일럿 워치 컬렉션은 항공 계측에서 비롯된 높은 가독성과 견고한 케이스 구조로 잘 알려져 있으며, "
+        "TOP GUN 스페셜 에디션은 세라믹·티타늄 소재와 자체 제작 칼리버로 그 전통을 이습니다."
+    ),
+    "om": (
+        "오메가는 스위스를 대표하는 매뉴팩처로, 스피드마스터·씨마스터 등 컬렉션에서 "
+        "마스터 크로노미터 인증과 다이버·크로노그래프 기술력을 보여 줍니다. "
+        "영국 DMR 공식 매장 기준으로 취급하는 정품입니다."
+    ),
+    "th": (
+        "태그호이어는 크로노그래프와 모터스포츠 헤리티지로 잘 알려진 스위스 브랜드입니다. "
+        "카레라·모나코 등 아이코닉 라인업을 영국 DMR 공식 매장 기준으로 취급합니다."
+    ),
+    "td": (
+        "튜더는 롤렉스 그룹의 스위스 브랜드로, 블랙 베이·펠라고스 등 "
+        "다이버·툴 워치 라인에서 견고한 마감과 자체 칼리버를 선보입니다."
+    ),
+    "pp": (
+        "파텍 필립은 1839년 제네바에서 시작된 하이 컴플리케이션 매뉴팩처입니다. "
+        "칼라트라바·노틸러스 등 컬렉션을 영국 DMR 공식 매장 기준으로 취급합니다."
+    ),
+    "rx": (
+        "롤렉스는 스위스 제네바의 오이스터 퍼페츄얼 매뉴팩처로, "
+        "서브마리너·데이토나·데이트저스트 등 컬렉션을 공식 유통 기준으로 소개합니다."
+    ),
+}
+
+
+def polish_desc(text: str) -> str:
+    t = dmr.polish_ko(text or "")
+    t = re.sub(r"[가-힣A-Za-z0-9\- ]{0,40}심판을 만나보세요\.?\s*", "", t)
+    t = re.sub(r"롤렉스\.com의\s*m[\w-]+\.\s*", "", t)
+    t = t.replace("잠수함", "서브마리너")
+    # Drop DMR showroom CTAs only — never wipe a whole product paragraph.
+    t = re.sub(
+        r"(?i)(?:Click to view|book an appointment)[^.。\n]*[.。]?",
+        "",
+        t,
+    )
+    t = re.sub(
+        r"(?m)^[^\n]{0,120}(?:쇼룸|리버풀|맨체스터|클릭하세요)[^\n]*$",
+        "",
+        t,
+    )
+    # Trailing CTA sentences mixed into a paragraph
+    t = re.sub(
+        r"[^.。\n]{0,80}(?:리버풀|맨체스터).{0,40}(?:쇼룸|예약)[^.。\n]*[.。]?",
+        "",
+        t,
+    )
+    t = re.sub(r"\n{3,}", "\n\n", t).strip()
+    return t
+
+
+def story_chunks(body_ko: str) -> list[str]:
+    """Split KO body into up to 3 story paragraphs (prefer blank lines, else sentences)."""
+    paras = [p.strip() for p in re.split(r"\n\n+", body_ko or "") if p.strip() and len(p.strip()) >= 24]
+    paras = [p for p in paras if not re.search(r"쇼룸|리버풀|맨체스터|클릭하세요", p)]
+    if len(paras) >= 2:
+        return paras[:3]
+    # Sentence-pack into ~2–3 chunks
+    sents = [s.strip() for s in re.split(r"(?<=[.。!?])\s+", body_ko or "") if len(s.strip()) >= 20]
+    sents = [s for s in sents if not re.search(r"쇼룸|리버풀|맨체스터|클릭하세요", s)]
+    if not sents:
+        return [body_ko[:420]] if body_ko else []
+    chunks: list[str] = []
+    buf = ""
+    target = max(1, (len(sents) + 2) // 3)
+    for i, s in enumerate(sents):
+        buf = (buf + " " + s).strip() if buf else s
+        if (i + 1) % target == 0 and buf:
+            chunks.append(buf)
+            buf = ""
+        if len(chunks) >= 3:
+            break
+    if buf and len(chunks) < 3:
+        chunks.append(buf)
+    return chunks[:3] or [body_ko[:420]]
 
 
 def build_product_rich(r: dict, cache: dict[str, str], enrich: dict) -> dict | None:
@@ -217,55 +301,88 @@ def build_product_rich(r: dict, cache: dict[str, str], enrich: dict) -> dict | N
         return None
     prod["nameKo"] = fix_title_ko(prod["name"], prod.get("nameKo") or "")
 
-    def polish_desc(text: str) -> str:
-        t = dmr.polish_ko(text or "")
-        t = re.sub(r"[가-힣A-Za-z0-9\- ]{0,40}심판을 만나보세요\.?\s*", "", t)
-        t = re.sub(r"롤렉스\.com의\s*m[\w-]+\.\s*", "", t)
-        t = t.replace("잠수함", "서브마리너")
-        return t.strip()
-
     body_ko = dmr.ko_get(cache, "body", body_src) if body_src else ""
     if not body_ko and body_src:
         legacy = dmr.truncate_body(body_en, limit=1800)
         body_ko = cache.get(hashlib.sha1(f"body:{legacy}".encode()).hexdigest()) or ""
     body_ko = polish_desc(body_ko)
-    prod["descriptionKo"] = polish_desc(prod.get("descriptionKo") or "")
-    thin = (
-        "상세 스펙은 상품 정보" in (prod.get("descriptionKo") or "")
-        or len(re.findall(r"[가-힣]", prod.get("descriptionKo") or "")) < 80
-    )
-    if thin and len(re.findall(r"[가-힣]", body_ko)) >= 40:
-        prod["descriptionKo"] = body_ko
-        paras = [p.strip() for p in re.split(r"\n\n+", body_ko) if p.strip()]
-        titles = ["디자인", "다이얼 & 마감", "무브먼트 & 착용감"]
+    hangul = len(re.findall(r"[가-힣]", body_ko))
+    # Always rebuild copy/stories from the translated body when we have real KO.
+    if hangul >= 40:
+        intro = BRAND_INTRO_KO.get(r["brand_key"], "")
+        # Prepend brand intro when DMR copy is short so PDP feels fuller.
+        if intro and hangul < 320 and intro not in body_ko:
+            desc = intro + "\n\n" + body_ko
+        else:
+            desc = body_ko
+        prod["descriptionKo"] = desc
+        chunks = story_chunks(body_ko)
+        # Ensure 3 distinct story beats: brand intro + design + wear.
+        if intro and (not chunks or chunks[0][:40] != intro[:40]):
+            chunks = [intro] + [c for c in chunks if c[:40] != intro[:40]]
+        # Dedupe near-identical chunks
+        deduped: list[str] = []
+        for c in chunks:
+            if not any(c[:60] == d[:60] for d in deduped):
+                deduped.append(c)
+        chunks = deduped[:3]
+        titles = ["브랜드 & 컬렉션", "디자인 & 다이얼", "무브먼트 & 착용감"]
         stories = []
-        for i in range(min(3, max(1, len(paras)))):
+        for i, chunk in enumerate(chunks[:3]):
             stories.append(
                 {
-                    "titleKo": titles[i] if i < len(titles) else f"디테일 {i+1}",
-                    "bodyKo": polish_desc((paras[i] if i < len(paras) else body_ko)[:500]),
+                    "titleKo": titles[i] if i < len(titles) else f"디테일 {i + 1}",
+                    "bodyKo": polish_desc(chunk[:500]),
                     "image": prod["images"][min(i, len(prod["images"]) - 1)],
                     **({"reverse": True} if i == 1 else {}),
                 }
             )
-        prod["storySections"] = stories
+        if stories:
+            prod["storySections"] = stories
         feats = []
         for line in re.split(r"[\n•.]+", body_en):
             line = line.strip()
-            if 25 <= len(line) <= 110:
+            if 25 <= len(line) <= 110 and not re.search(
+                r"Click to view|appointment|Liverpool|Manchester", line, re.I
+            ):
                 feat = dmr.ko_get(cache, "body", line) or dmr.polish_ko(line)
                 feat = polish_desc(feat)
                 if len(re.findall(r"[가-힣]", feat)) >= 4:
                     feats.append(feat[:90])
             if len(feats) >= 8:
                 break
+        # KO sentence features as backup
+        if len(feats) < 4:
+            for s in re.split(r"(?<=[.。])\s+", body_ko):
+                s = s.strip()
+                if 20 <= len(s) <= 90 and len(re.findall(r"[가-힣]", s)) >= 8:
+                    feats.append(s[:90])
+                if len(feats) >= 6:
+                    break
         if feats:
             prod["featuresKo"] = feats
     else:
-        # Still polish story bodies already built by build_product
-        for s in prod.get("storySections") or []:
-            if s.get("bodyKo"):
-                s["bodyKo"] = polish_desc(s["bodyKo"])
+        intro = BRAND_INTRO_KO.get(r["brand_key"], "")
+        base = polish_desc(prod.get("descriptionKo") or "")
+        if intro and ("상세 스펙은" in base or len(re.findall(r"[가-힣]", base)) < 80):
+            prod["descriptionKo"] = intro
+            prod["storySections"] = [
+                {
+                    "titleKo": "브랜드 & 컬렉션",
+                    "bodyKo": intro,
+                    "image": prod["images"][0],
+                }
+            ]
+            prod["featuresKo"] = [
+                f"{dmr.BRANDS[r['brand_key']]['brandKo']} 정품",
+                "스위스 메이드",
+                "DMR 영국 공식 취급",
+            ]
+        else:
+            prod["descriptionKo"] = base
+            for s in prod.get("storySections") or []:
+                if s.get("bodyKo"):
+                    s["bodyKo"] = polish_desc(s["bodyKo"])
     # Re-scan local gallery (Rolex extras may have been added)
     meta = dmr.BRANDS[r["brand_key"]]
     dest_rel = f"/products/{meta['pdp']}/{dmr.slugify(r['handle'])}"
