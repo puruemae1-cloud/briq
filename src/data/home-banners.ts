@@ -57,6 +57,21 @@ export type LookBanner = {
  */
 const HOMEPAGE_RAIL_NON_BRAND_IDS = new Set<string>();
 
+/** Homepage watches rail shows brand names in English (nav stays Korean). */
+const WATCHES_RAIL_LABEL_EN: Record<string, string> = {
+  "christopher-ward": "Christopher Ward",
+  rolex: "Rolex",
+  "patek-philippe": "Patek Philippe",
+  omega: "OMEGA",
+  "tag-heuer": "TAG Heuer",
+  tudor: "TUDOR",
+  iwc: "IWC",
+  norqain: "NORQAIN",
+  "chanel-watches": "Chanel",
+  "dior-watches": "Dior",
+  "vivienne-westwood-watches": "Vivienne Westwood",
+};
+
 /** Homepage rail brand chips — mirrors top-level children under each shop category. */
 export function homeRailLinksForCategory(
   categoryId: CategoryId,
@@ -74,7 +89,10 @@ export function homeRailLinksForCategory(
         );
   return children.map((child) => ({
     id: child.id,
-    label: child.labelKo,
+    label:
+      categoryId === "watches"
+        ? WATCHES_RAIL_LABEL_EN[child.id] || child.labelKo
+        : child.labelKo,
     href: child.href,
   }));
 }
