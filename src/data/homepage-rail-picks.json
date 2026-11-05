@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-10-31T21:58:58Z",
+  "generatedAt": "2026-11-05T20:49:17Z",
   "limit": 4,
   "rails": {
     "luxury": {
       "productIds": [
-        "bv-a003brv6zf02201",
-        "bv-874364v6n602112",
-        "bv-871198v6or01010",
-        "bv-875219v6oe01010"
+        "fl-womens-sport-hoodie-660987",
+        "fl-barbour-international-womens-olivios-lightweight-hooded-long-puffer-jacket-322764",
+        "fl-cp-company-mens-crew-neck-jumper-323921",
+        "fl-weekend-max-mara-womens-tunica-crew-neck-jumper-331860"
       ],
       "brands": [
-        "보테가-베네타",
-        "보테가-베네타",
-        "보테가-베네타",
-        "보테가-베네타"
+        "flannels-(영국현지명품몰)",
+        "flannels-(영국현지명품몰)",
+        "flannels-(영국현지명품몰)",
+        "flannels-(영국현지명품몰)"
       ]
     },
     "watches": {
@@ -46,30 +46,30 @@
     },
     "shoes": {
       "productIds": [
-        "ps-brown-butler-loafers",
-        "ps-navy-suede-haskell-trainers",
-        "ps-navy-zebra-zed-slides",
-        "ps-men-s-white-leather-rex-trainers"
+        "bv-a009yhv5u221003",
+        "bv-a007byv6vc09063",
+        "bv-a009ygv7bb12782",
+        "bv-a007byv6vc09263"
+      ],
+      "brands": [
+        "보테가-베네타",
+        "보테가-베네타",
+        "보테가-베네타",
+        "보테가-베네타"
+      ]
+    },
+    "accessories": {
+      "productIds": [
+        "ps-gather-for-paul-smith-foundation-small-water-jug",
+        "ps-jaques-of-london-giant-tumble-tower",
+        "ps-organic-cotton-patterned-mixed-boxer-briefs-seven-pack",
+        "ps-paul-smith-sunseeker-scented-candle-240g"
       ],
       "brands": [
         "paul-smith",
         "paul-smith",
         "paul-smith",
         "paul-smith"
-      ]
-    },
-    "accessories": {
-      "productIds": [
-        "ce-4s226cplb-19rh",
-        "ce-4s342cplb-38no",
-        "ce-4s342cplb-19sp",
-        "ce-4s342cplb-01av"
-      ],
-      "brands": [
-        "celine",
-        "celine",
-        "celine",
-        "celine"
       ]
     },
     "sports": {
@@ -88,17 +88,17 @@
     }
   },
   "brands": {
-    "celine": [
-      "accessories",
-      "accessories",
-      "accessories",
-      "accessories"
-    ],
     "christopher-ward": [
       "watches",
       "watches",
       "watches",
       "watches"
+    ],
+    "flannels-(영국현지명품몰)": [
+      "luxury",
+      "luxury",
+      "luxury",
+      "luxury"
     ],
     "galvin-green": [
       "sports",
@@ -113,16 +113,16 @@
       "bags"
     ],
     "paul-smith": [
+      "accessories",
+      "accessories",
+      "accessories",
+      "accessories"
+    ],
+    "보테가-베네타": [
       "shoes",
       "shoes",
       "shoes",
       "shoes"
-    ],
-    "보테가-베네타": [
-      "luxury",
-      "luxury",
-      "luxury",
-      "luxury"
     ]
   },
   "overlaps": {},
