@@ -15040,15 +15040,31 @@
     "new": false,
     "collections": [
       "ch-skincare",
+      "ch-skincare-body",
       "ch-skincare-cleansers",
+      "ch-skincare-eyes-lips",
+      "ch-skincare-masks",
+      "ch-skincare-mists",
+      "ch-skincare-moisturisers",
+      "ch-skincare-oils",
+      "ch-skincare-protection",
       "ch-skincare-serums",
+      "ch-skincare-toners",
       "chanel",
       "chanel-accessories"
     ],
     "leaf": "ch-skincare-cleansers",
     "leaves": [
+      "ch-skincare-body",
       "ch-skincare-cleansers",
-      "ch-skincare-serums"
+      "ch-skincare-eyes-lips",
+      "ch-skincare-masks",
+      "ch-skincare-mists",
+      "ch-skincare-moisturisers",
+      "ch-skincare-oils",
+      "ch-skincare-protection",
+      "ch-skincare-serums",
+      "ch-skincare-toners"
     ],
     "kind": "skincare",
     "localImages": [
