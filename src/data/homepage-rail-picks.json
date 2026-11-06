@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-11-06T13:53:36Z",
+  "generatedAt": "2026-11-06T20:00:23Z",
   "limit": 4,
   "rails": {
     "luxury": {
       "productIds": [
-        "ps-mixed-multicolour-organic-cotton-logo-lounge-t-shirts-five-pack",
-        "ps-black-wool-mohair-evening-blazer",
-        "ps-signature-stripe-towelling-lounge-shirt",
-        "ps-a-suit-to-travel-in-womens-soft-purple-tapered-fit-wool-trousers"
+        "gc-850295xuany1043",
+        "gc-860509zhs191000",
+        "gc-860769zaus46058",
+        "gc-862614zaupb1000"
       ],
       "brands": [
-        "paul-smith",
-        "paul-smith",
-        "paul-smith",
-        "paul-smith"
+        "gucci",
+        "gucci",
+        "gucci",
+        "gucci"
       ]
     },
     "watches": {
@@ -46,30 +46,30 @@
     },
     "shoes": {
       "productIds": [
-        "bv-a009yhv5u221003",
-        "bv-a007byv6vc09063",
-        "bv-a009ygv7bb12782",
-        "bv-a007byv6vc09263"
+        "ax-x000010504",
+        "ax-x000010502",
+        "bb-suede-fawn-loafers",
+        "bb-suede-knight-runner-sneakers"
       ],
       "brands": [
-        "보테가-베네타",
-        "보테가-베네타",
-        "보테가-베네타",
-        "보테가-베네타"
+        "arcteryx",
+        "arcteryx",
+        "burberry",
+        "burberry"
       ]
     },
     "accessories": {
       "productIds": [
-        "ce-4s226cplb-19rh",
-        "ce-4s342cplb-38no",
-        "ce-4s342cplb-19sp",
-        "ce-4s342cplb-01av"
+        "lu-london-undercover-e-gift-card",
+        "lu-city-gent-umbrella",
+        "lu-toyo-steel-t190-toolbox-japanese-indigo",
+        "lu-city-lux-umbrella"
       ],
       "brands": [
-        "celine",
-        "celine",
-        "celine",
-        "celine"
+        "london-undercover",
+        "london-undercover",
+        "london-undercover",
+        "london-undercover"
       ]
     },
     "sports": {
@@ -88,11 +88,13 @@
     }
   },
   "brands": {
-    "celine": [
-      "accessories",
-      "accessories",
-      "accessories",
-      "accessories"
+    "arcteryx": [
+      "shoes",
+      "shoes"
+    ],
+    "burberry": [
+      "shoes",
+      "shoes"
     ],
     "christopher-ward": [
       "watches",
@@ -106,23 +108,23 @@
       "sports",
       "sports"
     ],
-    "mulberry": [
-      "bags",
-      "bags",
-      "bags",
-      "bags"
-    ],
-    "paul-smith": [
+    "gucci": [
       "luxury",
       "luxury",
       "luxury",
       "luxury"
     ],
-    "보테가-베네타": [
-      "shoes",
-      "shoes",
-      "shoes",
-      "shoes"
+    "london-undercover": [
+      "accessories",
+      "accessories",
+      "accessories",
+      "accessories"
+    ],
+    "mulberry": [
+      "bags",
+      "bags",
+      "bags",
+      "bags"
     ]
   },
   "overlaps": {},
