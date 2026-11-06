@@ -1,7 +1,7 @@
 {
   "hub": "women-clothing",
   "category": "luxury",
-  "scrapedAt": "2026-10-31T23:33:55.100605+00:00",
+  "scrapedAt": "2026-11-06T21:33:22.413472+00:00",
   "leaves": [
     "bv-women-clothing-outerwear",
     "bv-women-clothing-jackets",
@@ -1829,7 +1829,7 @@
           "id": "40",
           "value": "40",
           "displayValue": "40",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 3990.0,
           "listGbpPrice": null
         },
@@ -2874,7 +2874,7 @@
           "id": "42",
           "value": "42",
           "displayValue": "42",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 2040.0,
           "listGbpPrice": null
         },
@@ -3647,7 +3647,7 @@
           "id": "40",
           "value": "40",
           "displayValue": "40",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 8910.0,
           "listGbpPrice": null
         },
@@ -12425,7 +12425,7 @@
           "id": "L",
           "value": "L",
           "displayValue": "L",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 850.0,
           "listGbpPrice": null
         }
@@ -17802,7 +17802,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/fluffy-intrecciato--leather-trousers-pumice-A005L7V72F01191.html",
       "gbpPrice": 11580.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Color: Pumice"
       ],
@@ -17919,7 +17919,7 @@
           "id": "42",
           "value": "42",
           "displayValue": "42",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 11580.0,
           "listGbpPrice": null
         },
@@ -19977,7 +19977,7 @@
           "id": "42",
           "value": "42",
           "displayValue": "42",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 8860.0,
           "listGbpPrice": null
         },
@@ -21484,7 +21484,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/cotton-and-silk-toile-dress-sea-salt-A0009NV6ON09028.html",
       "gbpPrice": 1960.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Color: Sea Salt"
       ],
@@ -21589,7 +21589,7 @@
           "id": "38",
           "value": "38",
           "displayValue": "38",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1960.0,
           "listGbpPrice": null
         },
@@ -22024,7 +22024,7 @@
           "id": "38",
           "value": "38",
           "displayValue": "38",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 2230.0,
           "listGbpPrice": null
         },
@@ -36957,7 +36957,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/printed-silk-shirt-parchment-peach-blue-A003WBV73Q09061.html",
       "gbpPrice": 1430.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Color: Parchment/Peach/Blue"
       ],
@@ -37053,7 +37053,7 @@
           "id": "38",
           "value": "38",
           "displayValue": "38",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1430.0,
           "listGbpPrice": null
         },
@@ -47494,7 +47494,7 @@
           "id": "36",
           "value": "36",
           "displayValue": "36",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 2410.0,
           "listGbpPrice": null
         },
@@ -47774,7 +47774,6 @@
       },
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/6113d4f9-7439-43e6-a1f8-c0feefe3d6ff/eCom/A002ZYV6ZL01379_A.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/d2224e43-5fc9-4396-93eb-e766818104e8/eCom/A002ZYV6ZL01379_B.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/9f0629b6-e94c-477a-a2e7-5f6a8217f6b6/eCom/A002ZYV6ZL01379_C.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/ab6737e3-6098-47a1-abf2-4a514ac623fd/eCom/A002ZYV6ZL01379_D.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/6113d4f9-7439-43e6-a1f8-c0feefe3d6ff/Small/A002ZYV6ZL01379_A.jpg?v=1"
@@ -47783,15 +47782,14 @@
         "/products/bv-pdp/a002zyv6zl01379/1.jpg",
         "/products/bv-pdp/a002zyv6zl01379/2.jpg",
         "/products/bv-pdp/a002zyv6zl01379/3.jpg",
-        "/products/bv-pdp/a002zyv6zl01379/4.jpg",
-        "/products/bv-pdp/a002zyv6zl01379/5.jpg"
+        "/products/bv-pdp/a002zyv6zl01379/4.jpg"
       ],
       "sizes": [
         {
           "id": "36",
           "value": "36",
           "displayValue": "36",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1520.0,
           "listGbpPrice": null
         },

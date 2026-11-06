@@ -1,7 +1,7 @@
 {
   "hub": "women-eyewear",
   "category": "accessories",
-  "scrapedAt": "2026-10-31T23:41:51.253414+00:00",
+  "scrapedAt": "2026-11-06T21:41:04.272609+00:00",
   "leaves": [
     "bv-women-eyewear-sunglasses",
     "bv-women-eyewear-opticals",
@@ -14,8 +14,8 @@
   ],
   "leafCounts": {
     "bv-women-eyewear-sunglasses": {
-      "official": 139,
-      "scraped": 139
+      "official": 138,
+      "scraped": 138
     },
     "bv-women-eyewear-opticals": {
       "official": 14,
@@ -34,8 +34,8 @@
       "scraped": 13
     },
     "bv-women-eyewear-squared": {
-      "official": 21,
-      "scraped": 21
+      "official": 20,
+      "scraped": 20
     },
     "bv-women-eyewear-cat-eye": {
       "official": 29,
@@ -3660,7 +3660,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-rectangular-sunglasses-havana-brown-861360V2Q302819.html",
       "gbpPrice": 395.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Colour: Havana/Brown"
       ],
@@ -3699,7 +3699,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 395.0,
           "listGbpPrice": null
         }
@@ -6274,7 +6274,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/knot-shield-sunglasses-gold-smoke-A002J4V44501418.html",
       "gbpPrice": 610.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Colour: Gold/Smoke"
       ],
@@ -6311,7 +6311,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 610.0,
           "listGbpPrice": null
         }
@@ -9785,7 +9785,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/dizzy-cat-eye-eyeglasses-havana-transparent-832950V2Q301511.html",
       "gbpPrice": 385.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Colour: Havana/Transparent"
       ],
@@ -9823,7 +9823,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 385.0,
           "listGbpPrice": null
         }

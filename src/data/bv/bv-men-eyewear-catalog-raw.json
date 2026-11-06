@@ -1,7 +1,7 @@
 {
   "hub": "men-eyewear",
   "category": "accessories",
-  "scrapedAt": "2026-10-31T22:44:26.880792+00:00",
+  "scrapedAt": "2026-11-06T20:41:33.572180+00:00",
   "leaves": [
     "bv-men-eyewear-sunglasses",
     "bv-men-eyewear-opticals",
@@ -12,8 +12,8 @@
   ],
   "leafCounts": {
     "bv-men-eyewear-sunglasses": {
-      "official": 97,
-      "scraped": 97
+      "official": 96,
+      "scraped": 96
     },
     "bv-men-eyewear-opticals": {
       "official": 8,
@@ -32,8 +32,8 @@
       "scraped": 13
     },
     "bv-men-eyewear-squared": {
-      "official": 19,
-      "scraped": 19
+      "official": 18,
+      "scraped": 18
     }
   },
   "products": [
@@ -2521,7 +2521,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/knot-shield-sunglasses-gold-smoke-A002J4V44501418.html",
       "gbpPrice": 610.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Colour: Gold/Smoke"
       ],
@@ -2558,7 +2558,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 610.0,
           "listGbpPrice": null
         }
@@ -3909,7 +3909,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-rectangular-sunglasses-havana-brown-861360V2Q302819.html",
       "gbpPrice": 395.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Colour: Havana/Brown"
       ],
@@ -3948,7 +3948,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 395.0,
           "listGbpPrice": null
         }

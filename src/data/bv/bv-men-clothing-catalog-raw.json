@@ -1,7 +1,7 @@
 {
   "hub": "men-clothing",
   "category": "luxury",
-  "scrapedAt": "2026-10-31T22:36:40.244315+00:00",
+  "scrapedAt": "2026-11-06T20:33:48.644972+00:00",
   "leaves": [
     "bv-men-clothing-coats",
     "bv-men-clothing-jackets",
@@ -5627,7 +5627,7 @@
           "id": "50",
           "value": "50",
           "displayValue": "50",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 4010.0,
           "listGbpPrice": null
         },
@@ -6107,7 +6107,7 @@
           "id": "50",
           "value": "50",
           "displayValue": "50",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 2320.0,
           "listGbpPrice": null
         },
@@ -10575,7 +10575,7 @@
           "id": "52",
           "value": "52",
           "displayValue": "52",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 1950.0,
           "listGbpPrice": null
         },
@@ -12214,7 +12214,7 @@
           "id": "48",
           "value": "48",
           "displayValue": "48",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 3720.0,
           "listGbpPrice": null
         },
@@ -14479,7 +14479,7 @@
           "id": "44",
           "value": "44",
           "displayValue": "44",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 2220.0,
           "listGbpPrice": null
         },
@@ -20823,7 +20823,7 @@
           "id": "48",
           "value": "48",
           "displayValue": "48",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 1070.0,
           "listGbpPrice": null
         },
@@ -24837,7 +24837,7 @@
           "id": "50",
           "value": "50",
           "displayValue": "50",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1070.0,
           "listGbpPrice": null
         },
@@ -26173,7 +26173,7 @@
           "id": "50",
           "value": "50",
           "displayValue": "50",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 710.0,
           "listGbpPrice": null
         },
@@ -28820,7 +28820,7 @@
           "id": "48",
           "value": "48",
           "displayValue": "48",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 800.0,
           "listGbpPrice": null
         },
@@ -28989,7 +28989,7 @@
           "id": "48",
           "value": "48",
           "displayValue": "48",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 800.0,
           "listGbpPrice": null
         },
@@ -38827,7 +38827,7 @@
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/adee4e8f-552a-4a41-84cd-51c10a242760/eCom/A004SMV6YC01010_A.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/dee65869-f20c-4e45-a293-fcc41cc4b036/eCom/A004SMV6YC01010_B.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/49b562fa-f2f4-42f1-a99e-7bec5ac402d7/eCom/A004SMV6YC01010_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/49b562fa-f2f4-42f1-a99e-7bec5ac402d7/eCom/A004SMV6YC01010_C.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/asset/2d48dc72-ab8f-436e-98ad-349636a919c1/eCom/A004SMV6YC01010_D.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/adee4e8f-552a-4a41-84cd-51c10a242760/Small/A004SMV6YC01010_A.jpg?v=1"
       ],
@@ -39037,7 +39037,7 @@
           "id": "XL",
           "value": "XL",
           "displayValue": "XL",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1960.0,
           "listGbpPrice": null
         },
@@ -39467,6 +39467,7 @@
         "https://bottega-veneta.dam.kering.com/asset/30b31375-bd5f-4f29-857a-f49538def4c9/eCom/A00795V70E04071_B.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/c26435b4-d14f-4d54-835f-b72b637da745/eCom/A00795V70E04071_C.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/df9d959e-89e7-40b0-9840-26fe27299c20/eCom/A00795V70E04071_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/1fa66c63-7862-4ed5-a802-6f9eebf2e355/eCom/A00795V70E04071_H.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/2836cea5-aa91-466a-a995-dd248dae336e/Small/A00795V70E04071_A.jpg?v=1"
       ],
       "localImages": [
@@ -39474,7 +39475,8 @@
         "/products/bv-pdp/a00795v70e04071/2.jpg",
         "/products/bv-pdp/a00795v70e04071/3.jpg",
         "/products/bv-pdp/a00795v70e04071/4.jpg",
-        "/products/bv-pdp/a00795v70e04071/5.jpg"
+        "/products/bv-pdp/a00795v70e04071/5.jpg",
+        "/products/bv-pdp/a00795v70e04071/6.jpg"
       ],
       "sizes": [
         {
@@ -39652,7 +39654,7 @@
           "id": "48",
           "value": "48",
           "displayValue": "48",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1520.0,
           "listGbpPrice": null
         },

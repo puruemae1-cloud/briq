@@ -1,7 +1,7 @@
 {
   "hub": "fragrances",
   "category": "accessories",
-  "scrapedAt": "2026-10-31T23:47:16.828970+00:00",
+  "scrapedAt": "2026-11-06T21:46:05.958140+00:00",
   "leaves": [
     "bv-fragrances-edp",
     "bv-fragrances-parfum",
@@ -15,16 +15,16 @@
       "scraped": 25
     },
     "bv-fragrances-parfum": {
-      "official": 3,
-      "scraped": 3
+      "official": 2,
+      "scraped": 2
     },
     "bv-fragrances-candles": {
       "official": 3,
       "scraped": 3
     },
     "bv-fragrances-refill": {
-      "official": 18,
-      "scraped": 18
+      "official": 17,
+      "scraped": 17
     },
     "bv-fragrances-travel-set": {
       "official": 4,
@@ -1787,7 +1787,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/hinoki---parfum-100-ml-deep-blue-863880VV5709980.html",
       "gbpPrice": 380.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Contact: Kering Beauté, 40 Rue de Sèvres, 75007 Paris, France"
       ],
@@ -1827,7 +1827,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 380.0,
           "listGbpPrice": null
         }
@@ -3095,7 +3095,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/hinoki-refill-deep-blue-863883VV5709980.html",
       "gbpPrice": 270.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Contact: Kering Beauté, 40 Rue de Sèvres, 75007 Paris, France"
       ],
@@ -3133,7 +3133,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 270.0,
           "listGbpPrice": null
         }

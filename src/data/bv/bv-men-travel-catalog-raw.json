@@ -1,7 +1,7 @@
 {
   "hub": "men-travel",
   "category": "accessories",
-  "scrapedAt": "2026-10-31T22:39:58.822390+00:00",
+  "scrapedAt": "2026-11-06T20:37:06.669207+00:00",
   "leaves": [
     "bv-men-travel"
   ],
@@ -3185,7 +3185,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato--passport-case-black-749441VCPQ48803.html",
       "gbpPrice": 410.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Calf leather",
         "Colour: Black"
@@ -3216,7 +3216,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 410.0,
           "listGbpPrice": null
         }
@@ -3888,7 +3888,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-travel-pouch-black-729295V5I508803.html",
       "gbpPrice": 1430.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Nylon",
         "Colour: Black",
@@ -3925,7 +3925,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1430.0,
           "listGbpPrice": null
         }
@@ -4394,7 +4394,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-duffle-black-781053V2HL18803.html",
       "gbpPrice": 4370.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Canvas",
         "Colour: Black",
@@ -4436,7 +4436,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 4370.0,
           "listGbpPrice": null
         }
@@ -5317,7 +5317,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-cabin-duffle-obsidian-grey-radar-A006VTV3AF01701.html",
       "gbpPrice": 5080.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Canvas",
         "Colour: Obsidian Grey/Radar",
@@ -5358,7 +5358,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 5080.0,
           "listGbpPrice": null
         }

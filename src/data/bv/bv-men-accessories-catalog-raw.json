@@ -1,7 +1,7 @@
 {
   "hub": "men-accessories",
   "category": "accessories",
-  "scrapedAt": "2026-10-31T22:43:02.388391+00:00",
+  "scrapedAt": "2026-11-06T20:40:13.329468+00:00",
   "leaves": [
     "bv-men-acc-key-rings",
     "bv-men-acc-belts",
@@ -13,8 +13,8 @@
   ],
   "leafCounts": {
     "bv-men-acc-key-rings": {
-      "official": 72,
-      "scraped": 72
+      "official": 73,
+      "scraped": 73
     },
     "bv-men-acc-belts": {
       "official": 24,
@@ -6396,7 +6396,7 @@
           "id": "115",
           "value": "115",
           "displayValue": "115",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 710.0,
           "listGbpPrice": null
         },
@@ -7777,7 +7777,7 @@
           "id": "105",
           "value": "105",
           "displayValue": "105",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 560.0,
           "listGbpPrice": null
         },
@@ -9483,7 +9483,7 @@
           "id": "80",
           "value": "80",
           "displayValue": "80",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 500.0,
           "listGbpPrice": null
         },
@@ -9890,7 +9890,7 @@
           "id": "110",
           "value": "110",
           "displayValue": "110",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 500.0,
           "listGbpPrice": null
         },
@@ -10544,7 +10544,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/small-intrecciato-leather-tie-barolo-875276V6AR02240.html",
       "gbpPrice": 760.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Colour: Barolo"
       ],
@@ -10575,7 +10575,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 760.0,
           "listGbpPrice": null
         }
@@ -10603,7 +10603,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/small-intrecciato-leather-tie-double-black-875276V6AR01010.html",
       "gbpPrice": 760.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Colour: Double Black"
       ],
@@ -10634,7 +10634,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 760.0,
           "listGbpPrice": null
         }
@@ -12688,27 +12688,27 @@
       "id": "872028V6KY09071",
       "sku": "872028V6KY09071",
       "internalId": "814254543",
-      "name": "Big Twillie Scarf",
+      "name": "Silk Twill Scarf",
       "brand": "bottega veneta",
       "color": "Chalk",
       "gender": "Women",
-      "link": "https://www.bottegaveneta.com/en-gb/big-twillie-scarf-chalk-872028V6KY09071.html",
-      "url": "https://www.bottegaveneta.com/en-gb/big-twillie-scarf-chalk-872028V6KY09071.html",
+      "link": "https://www.bottegaveneta.com/en-gb/silk-twill-scarf-chalk-872028V6KY09071.html",
+      "url": "https://www.bottegaveneta.com/en-gb/silk-twill-scarf-chalk-872028V6KY09071.html",
       "gbpPrice": 360.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
-        "Colour: Chalk"
+        "Color: Chalk"
       ],
       "longDescription": [
         "Silk twill scarf",
-        "Small logo print"
+        "Bottega Veneta print"
       ],
-      "compactedLongDesc": "Scarf in classic silk twill, featuring a small Bottega Veneta print.",
+      "compactedLongDesc": "Scarf in silk twill with Bottega Veneta print.",
       "composition": "• Material: 100% silk",
       "material": "",
       "productCare": "Do Not Wash.\nDo Not Bleach.\nDo Not Tumble Dry.\nIron At Maximum Temperature 120°C - Without Steam.\nDry Cleaning With Tetrachloroethene Or Hydrocarbons - Mild Process.",
-      "sizeModel": "• 180 x 27cm | 70.9 × 10.6\"",
+      "sizeModel": "• 180 x 27 cm",
       "sizeChartId": "",
       "sizeGuide": null,
       "imageUrls": [
@@ -13302,7 +13302,7 @@
           "id": "9",
           "value": "9",
           "displayValue": "9",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 670.0,
           "listGbpPrice": null
         },
@@ -13404,7 +13404,7 @@
           "id": "7_5",
           "value": "7_5",
           "displayValue": "7.5",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 700.0,
           "listGbpPrice": null
         },
@@ -14498,7 +14498,7 @@
           "id": "90",
           "value": "90",
           "displayValue": "90",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 580.0,
           "listGbpPrice": null
         },
@@ -14668,6 +14668,65 @@
           "displayValue": "U",
           "inStock": true,
           "gbpPrice": 620.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-men",
+        "bv-men-accessories",
+        "bv-men-acc-key-rings"
+      ],
+      "leafId": "bv-men-acc-key-rings",
+      "cgid": "men-keyrings",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "A006A7V3D842453",
+      "sku": "A006A7V3D842453",
+      "internalId": "814493073",
+      "name": "Dog Charm",
+      "brand": "bottega veneta",
+      "color": "Espresso/gingerbread",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/dog-charm-espresso-gingerbread-A006A7V3D842453.html",
+      "url": "https://www.bottegaveneta.com/en-gb/dog-charm-espresso-gingerbread-A006A7V3D842453.html",
+      "gbpPrice": 580.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Espresso/Gingerbread"
+      ],
+      "longDescription": [
+        "Intreccio nappa leather and shearling dog charm",
+        "Bottega Veneta leather tag",
+        "Leather lanyard designed to be attached to any handle"
+      ],
+      "compactedLongDesc": "Charm realised in Intreccio nappa leather and soft shearling with dog shape, featuring a leather lanyard.",
+      "composition": "• Material: Lambskin leather",
+      "material": "",
+      "productCare": "USE AND CARE\n\nThis is the product of artisanal craftsmanship made with our finest materials.\nAny variations, marks, veining, or irregularities are unique characteristics we embrace.\nStore and treat with particular care, avoiding excessive handling.\nThis item is not suitable for children, it may contain small parts. Avoid contact with any liquids, moisture, direct sunlight, heat, creams, oils, make-up, perfumes and abrasive surfaces.",
+      "sizeModel": "• Height: 7 cm\n\n• Width: 7,5 cm\n\n• Depth: 3 cm",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/3f5c0ed3-1f25-4be3-8d79-8729ff47607b/eCom/A006A7V3D842453_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/69bf4a74-f583-4116-9afd-f13d6c9cbf3d/eCom/A006A7V3D842453_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/3f5c0ed3-1f25-4be3-8d79-8729ff47607b/Small/A006A7V3D842453_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a006a7v3d842453/1.jpg",
+        "/products/bv-pdp/a006a7v3d842453/2.jpg",
+        "/products/bv-pdp/a006a7v3d842453/3.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 580.0,
           "listGbpPrice": null
         }
       ],

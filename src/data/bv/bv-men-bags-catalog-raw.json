@@ -1,7 +1,7 @@
 {
   "hub": "men-bags",
   "category": "bags",
-  "scrapedAt": "2026-10-31T22:03:51.175939+00:00",
+  "scrapedAt": "2026-11-06T20:00:54.107922+00:00",
   "leaves": [
     "bv-men-bags-intrecciato",
     "bv-men-bags-diago",
@@ -30,8 +30,8 @@
       "scraped": 27
     },
     "bv-men-bags-andiamo": {
-      "official": 13,
-      "scraped": 13
+      "official": 12,
+      "scraped": 12
     },
     "bv-men-bags-cabat": {
       "official": 7,
@@ -1258,7 +1258,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/small-intrecciato-zipped-tote-black-795628V2HL18803.html",
       "gbpPrice": 3300.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Canvas",
         "Colour: Black",
@@ -1298,7 +1298,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 3300.0,
           "listGbpPrice": null
         }
@@ -1536,7 +1536,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/small-intrecciato-document-case-with-wristlet-black-693675V2E418803.html",
       "gbpPrice": 1650.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Suede",
         "Colour: Black",
@@ -1576,7 +1576,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 1650.0,
           "listGbpPrice": null
         }
@@ -1875,7 +1875,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-duffle-black-781053V2HL18803.html",
       "gbpPrice": 4370.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Canvas",
         "Colour: Black",
@@ -1917,7 +1917,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 4370.0,
           "listGbpPrice": null
         }
@@ -4349,7 +4349,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/diago-zipped-messenger-old-wood-837112V4FV12116.html",
       "gbpPrice": 1960.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Canvas",
         "Colour: Old wood",
@@ -4386,7 +4386,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1960.0,
           "listGbpPrice": null
         }
@@ -6205,7 +6205,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/veneto-belt-bag-bark-green-876334V6SE03815.html",
       "gbpPrice": 2140.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Suede",
         "Colour: Bark Green",
@@ -6242,7 +6242,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 2140.0,
           "listGbpPrice": null
         }
@@ -7794,7 +7794,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/large-andiamo-black-766019VCPP11249.html",
       "gbpPrice": 6680.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Lambskin bonded Intrecciato",
         "Colour: Black",
@@ -7839,7 +7839,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 6680.0,
           "listGbpPrice": null
         }
@@ -7868,7 +7868,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/andiamo-messenger-fondant-807715V2HLD2364.html",
       "gbpPrice": 4640.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Canvas",
         "Colour: Fondant",
@@ -7911,7 +7911,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 4640.0,
           "listGbpPrice": null
         }
@@ -8296,7 +8296,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/large-cabat-mare-natural-black-867149V3BO99809.html",
       "gbpPrice": 5230.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Canvas",
         "Colour: Natural/Black",
@@ -8339,7 +8339,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 5230.0,
           "listGbpPrice": null
         }
@@ -11300,7 +11300,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/large-corso-deep-mahogany-A00A4PV60G06149.html",
       "gbpPrice": 4010.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Suede",
         "Colour: Deep Mahogany",
@@ -11337,7 +11337,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 4010.0,
           "listGbpPrice": null
         }
