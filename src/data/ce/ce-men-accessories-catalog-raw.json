@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-23T18:37:30.356398+00:00",
+  "scrapedAt": "2026-11-06T20:57:04.266368+00:00",
   "brand": "Celine",
   "hub": "https://www.celine.com/en-gb/men/accessories/?nav=E007-VIEW-ALL",
   "family": "ce-men-accessories",
@@ -722,7 +722,7 @@
         "https://image.celine.com/asset/e5791ae2-4cdd-432b-b1d1-b4a142f4f152/B10A73APD-GHI4-B10A96ATZ-36SI_4_FALL26_W_V1.jpg?V2",
         "https://image.celine.com/asset/07ab9391-5d7c-4947-8905-b46e587bd189/B10A73APD-GHI4-B10A96ATZ-36SI_5_WI26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -731,7 +731,7 @@
         "CELINE DISC BUCKLE 18MM IN METAL & Reversible Strap 18MM IN TAURILLON"
       ],
       "categoryLabel": "LA BOUCLE CELINE",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "B10CX3A01.38SI",
@@ -987,7 +987,7 @@
         },
         {
           "size": "85",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "90",
@@ -3158,7 +3158,7 @@
         "https://image.celine.com/asset/e742fd05-3157-4469-9497-4f5d9bfe19e9/B10A33R00-GKX5-B10A56ATZ-GKY5_5_FW26_M_V1.jpg?V2",
         "https://image.celine.com/asset/c663406d-4c88-492c-bd90-bb54bc19d4f4/B10A33R00-GKX5-B10A56ATZ-GKY5_6_FW26_M_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -3167,7 +3167,7 @@
         "TRIOMPHE HELIUM BUCKLE & Reversible Strap 30MM"
       ],
       "categoryLabel": "BELTS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "45BLZ3APD.GHI4.45BND6ATZ.35OR",
@@ -3442,7 +3442,7 @@
         },
         {
           "size": "85",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "90",
@@ -3580,7 +3580,7 @@
         "https://image.celine.com/asset/4956c1a3-922e-45cd-9f3a-0b60c45a411d/B10A33R00-GKX5-B10A56ATZ-GKY5_2_FW26_M_V1.jpg?V2",
         "https://image.celine.com/asset/fe181a8c-231c-463f-8cf7-6d35ac68f615/B10A33R00-GKX5-B10A56ATZ-GKY5_3_FW26_M_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -3589,7 +3589,7 @@
         "Reversible Strap 30 IN Smooth and Grained Calfskin"
       ],
       "categoryLabel": "BELTS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "80",
@@ -3609,7 +3609,7 @@
         },
         {
           "size": "100",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "105",
@@ -3746,7 +3746,7 @@
         },
         {
           "size": "85",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "90",
@@ -3754,11 +3754,11 @@
         },
         {
           "size": "95",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "100",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "105",
@@ -3895,11 +3895,11 @@
         },
         {
           "size": "85",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "90",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "95",
@@ -4077,11 +4077,11 @@
         },
         {
           "size": "105",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "110",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "115",
@@ -4404,7 +4404,7 @@
         },
         {
           "size": "105",
-          "inStock": false
+          "inStock": true
         }
       ]
     },
@@ -5913,7 +5913,7 @@
         "https://image.celine.com/asset/8591334a-08f7-4cfd-9de6-8c1e6db38aa8/AA0FP2K77-27LK_2_SPR26_W_V1.jpg?V2",
         "https://image.celine.com/asset/e2ab0803-3238-4c1b-b31e-2704c204d0b4/AA0FP2K77-27LK_3_SPR26_W_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -5922,7 +5922,7 @@
         "scarf IN cashmere"
       ],
       "categoryLabel": "SCARVES AND GLOVES",
-      "availabilityConfidence": "sfcc_oos",
+      "availabilityConfidence": "sfcc",
       "sizeStock": [
         {
           "size": "ONE SIZE",
@@ -5979,7 +5979,7 @@
         "https://image.celine.com/asset/fe3da1ba-3f05-4408-a29b-deed94b1b171/AA0FP2K77-FZL8_2_SPR26_M_V1.jpg?V2",
         "https://image.celine.com/asset/9e97ad58-a918-48d0-9371-ef11624374ad/AA0FP2K77-FZL8_3_SPR26_W_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -5988,7 +5988,7 @@
         "scarf IN cashmere"
       ],
       "categoryLabel": "SCARVES AND GLOVES",
-      "availabilityConfidence": "sfcc_oos",
+      "availabilityConfidence": "sfcc",
       "sizeStock": [
         {
           "size": "ONE SIZE",
@@ -6045,7 +6045,7 @@
         "https://image.celine.com/asset/e6271909-12e0-450c-a8da-e6d261fc81ec/AA0FP2K77-07MR_2_SPR26_W_V1.jpg?V2",
         "https://image.celine.com/asset/e8357fd4-53d9-486c-b223-ccfed633812f/AA0FP2K77-07MR_3_SPR26_W_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -6054,7 +6054,7 @@
         "scarf IN cashmere"
       ],
       "categoryLabel": "SCARVES AND GLOVES",
-      "availabilityConfidence": "sfcc_oos",
+      "availabilityConfidence": "sfcc",
       "sizeStock": [
         {
           "size": "ONE SIZE",
@@ -6111,7 +6111,7 @@
         "https://image.celine.com/asset/00250e10-3e70-4899-bf6e-11f48605dfef/AA0FP2K77-38NO_2_SPR26_M_V1.jpg?V2",
         "https://image.celine.com/asset/96219f05-c7d6-4676-94e6-e28537e410b7/AA0FP2K77-38NO_3_SPR26_M_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -6120,7 +6120,7 @@
         "scarf IN cashmere"
       ],
       "categoryLabel": "SCARVES AND GLOVES",
-      "availabilityConfidence": "sfcc_oos",
+      "availabilityConfidence": "sfcc",
       "sizeStock": [
         {
           "size": "ONE SIZE",
@@ -6177,7 +6177,7 @@
         "https://image.celine.com/asset/19661950-285d-441d-a724-4932f7f335da/AA0FP2K77-09GM_2_SPR26_W_V1.jpg?V2",
         "https://image.celine.com/asset/12d37255-31e9-4e9b-99b1-e6876b306417/AA0FP2K77-09GM_3_SPR26_W_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -6186,7 +6186,7 @@
         "scarf IN cashmere"
       ],
       "categoryLabel": "SCARVES AND GLOVES",
-      "availabilityConfidence": "sfcc_oos",
+      "availabilityConfidence": "sfcc",
       "sizeStock": [
         {
           "size": "ONE SIZE",
@@ -6243,7 +6243,7 @@
         "https://image.celine.com/asset/081a2499-a824-4a4f-9d96-e021e4898d23/AA0FP2K77-02CM_2_SPR26_W_V1.jpg?V2",
         "https://image.celine.com/asset/a2f7de63-233d-4825-b89d-ac66033d7f9d/AA0FP2K77-02CM_3_SPR26_W_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -6252,7 +6252,7 @@
         "scarf IN cashmere"
       ],
       "categoryLabel": "SCARVES AND GLOVES",
-      "availabilityConfidence": "sfcc_oos",
+      "availabilityConfidence": "sfcc",
       "sizeStock": [
         {
           "size": "ONE SIZE",
@@ -6309,7 +6309,7 @@
         "https://image.celine.com/asset/e72d7946-33e7-4141-b92b-3622a9ac1255/AA0FP2K77-03NE_2_SPR26_W_V1.jpg?V2",
         "https://image.celine.com/asset/0788881e-4d22-4bd8-832b-50035575bfd5/AA0FP2K77-03NE_3_SPR26_W_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -6318,7 +6318,7 @@
         "scarf IN cashmere"
       ],
       "categoryLabel": "SCARVES AND GLOVES",
-      "availabilityConfidence": "sfcc_oos",
+      "availabilityConfidence": "sfcc",
       "sizeStock": [
         {
           "size": "ONE SIZE",
@@ -6375,7 +6375,7 @@
         "https://image.celine.com/asset/4230cea9-1fce-4b1d-8eb3-978677762856/AA0FP2K77-11JA_2_SPR26_W_V1.jpg?V2",
         "https://image.celine.com/asset/19d5a601-2518-4886-8384-4a2709a9942b/AA0FP2K77-11JA_3_SPR26_W_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -6384,7 +6384,7 @@
         "scarf IN cashmere"
       ],
       "categoryLabel": "SCARVES AND GLOVES",
-      "availabilityConfidence": "sfcc_oos",
+      "availabilityConfidence": "sfcc",
       "sizeStock": [
         {
           "size": "ONE SIZE",
@@ -6441,7 +6441,7 @@
         "https://image.celine.com/asset/5f7d14c4-4d1f-42a4-b350-16e9d5738e15/AA0FP2K77-01BC_2_SPR26_W_V1.jpg?V2",
         "https://image.celine.com/asset/d177a72b-1912-4537-a2cb-ee1e1e3b91b3/AA0FP2K77-01BC_3_SPR26_W_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -6450,7 +6450,7 @@
         "scarf IN cashmere"
       ],
       "categoryLabel": "SCARVES AND GLOVES",
-      "availabilityConfidence": "sfcc_oos",
+      "availabilityConfidence": "sfcc",
       "sizeStock": [
         {
           "size": "ONE SIZE",
@@ -7414,7 +7414,7 @@
         },
         {
           "size": "L",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "XL",

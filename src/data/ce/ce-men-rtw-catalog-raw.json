@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-23T18:33:57.967161+00:00",
+  "scrapedAt": "2026-11-06T20:53:36.837387+00:00",
   "brand": "Celine",
   "hub": "https://www.celine.com/en-gb/men/ready-to-wear/?nav=E001-VIEW-ALL",
   "family": "ce-men-rtw",
@@ -295,11 +295,11 @@
         },
         {
           "size": "40",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "41",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "42",
@@ -465,19 +465,19 @@
         },
         {
           "size": "37",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "38",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "39",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "40",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "41",
@@ -1016,7 +1016,7 @@
         },
         {
           "size": "41",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "42",
@@ -5085,7 +5085,7 @@
       "sizeStock": [
         {
           "size": "XS",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "S",
@@ -5105,7 +5105,7 @@
         },
         {
           "size": "XXL",
-          "inStock": false
+          "inStock": true
         }
       ]
     },
@@ -7275,7 +7275,7 @@
         },
         {
           "size": "XL",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "XXL",
@@ -7403,7 +7403,7 @@
       "sizeStock": [
         {
           "size": "XS",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "S",
@@ -7419,7 +7419,7 @@
         },
         {
           "size": "XL",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "XXL",
@@ -8868,11 +8868,11 @@
         },
         {
           "size": "M",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "L",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "XL",
@@ -12105,7 +12105,7 @@
         },
         {
           "size": "XXL",
-          "inStock": true
+          "inStock": false
         }
       ]
     },
@@ -13429,7 +13429,7 @@
         },
         {
           "size": "S",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "M",
@@ -14167,11 +14167,11 @@
         },
         {
           "size": "L",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "XL",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "XXL",
@@ -17036,7 +17036,7 @@
         },
         {
           "size": "M",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "L",
@@ -17299,7 +17299,7 @@
       "remoteImages": [
         "https://image.celine.com/asset/08dddef6-266b-4512-9077-2d658bd6b8a1/RY12L510Z-GNC6_1_FW26_M_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -17308,7 +17308,7 @@
         "HARRY’S BAR PARIS sweatshirt IN cotton fleece"
       ],
       "categoryLabel": "SWEATSHIRTS",
-      "availabilityConfidence": "sfcc_oos",
+      "availabilityConfidence": "sfcc",
       "sizeStock": [
         {
           "size": "XS",
@@ -17320,15 +17320,15 @@
         },
         {
           "size": "M",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "L",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "XL",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "XXL",
@@ -18148,7 +18148,7 @@
         },
         {
           "size": "L",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "XL",
@@ -18696,7 +18696,7 @@
       "sizeStock": [
         {
           "size": "XS",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "S",
@@ -19276,7 +19276,7 @@
         },
         {
           "size": "M",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "L",
@@ -19447,7 +19447,7 @@
         },
         {
           "size": "XL",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "XXL",
@@ -19510,7 +19510,7 @@
       "sizeStock": [
         {
           "size": "XS",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "S",
@@ -19723,7 +19723,7 @@
         "https://image.celine.com/asset/fbc3e380-72fe-42bc-a5a3-6094ef40e852/RY0QT0Y09-07NG_3_SPR26_M_V1.jpg?V2",
         "https://image.celine.com/asset/84729cfd-5aae-4a21-81bd-cde27432d3bb/RY0QT0Y09-07NG_4_SPR26_M_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -19732,7 +19732,7 @@
         "polo sweater IN striped wool"
       ],
       "categoryLabel": "KNITWEAR",
-      "availabilityConfidence": "sfcc_oos",
+      "availabilityConfidence": "sfcc",
       "sizeStock": [
         {
           "size": "XS",
@@ -19740,11 +19740,11 @@
         },
         {
           "size": "S",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "M",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "L",
@@ -20312,7 +20312,7 @@
       "sizeStock": [
         {
           "size": "44",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "46",
@@ -20422,7 +20422,7 @@
         },
         {
           "size": "54",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "56",
@@ -20522,7 +20522,7 @@
         },
         {
           "size": "54",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "56",
@@ -21227,10 +21227,10 @@
         "https://image.celine.com/asset/750a3062-e711-4601-9959-3f6d925be83c/RM0FP3A87-18TB_2_FW26_M_V1.jpg?V2",
         "https://image.celine.com/asset/2007456c-cf5b-41cc-83de-bfba9f66c11f/RM0FP3A87-18TB_3_FW26_M_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc_oos",
+      "availabilityConfidence": "sfcc",
       "sizeStock": [
         {
           "size": "44",
@@ -21246,7 +21246,7 @@
         },
         {
           "size": "50",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "52",

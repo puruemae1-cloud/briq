@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-23T18:43:01.778962+00:00",
+  "scrapedAt": "2026-11-06T21:03:02.885097+00:00",
   "brand": "Celine",
   "hub": "https://www.celine.com/en-gb/women/ready-to-wear/?nav=A001-VIEW-ALL",
   "family": "ce-women-rtw",
@@ -406,7 +406,7 @@
       "sizeStock": [
         {
           "size": "34",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "36",
@@ -995,7 +995,7 @@
       "sizeStock": [
         {
           "size": "34",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "36",
@@ -1003,7 +1003,7 @@
         },
         {
           "size": "38",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "40",
@@ -1577,7 +1577,7 @@
         },
         {
           "size": "40",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "42",
@@ -1712,7 +1712,7 @@
         },
         {
           "size": "36",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "38",
@@ -1720,7 +1720,7 @@
         },
         {
           "size": "40",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "42",
@@ -2383,7 +2383,7 @@
         "https://image.celine.com/asset/dedb942e-06bc-4067-9718-42bdfe46d67f/RV0ZW881T-GBQ4_3_SPR26_W_V1.jpg?V2",
         "https://image.celine.com/asset/2af685ed-c97d-472f-b49b-34bfa84df1d5/RV0ZW881T-GBQ4_4_SPR26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -2392,7 +2392,7 @@
         "trucker jacket IN corduroy"
       ],
       "categoryLabel": "JACKETS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "XS",
@@ -2408,7 +2408,7 @@
         },
         {
           "size": "L",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "XL",
@@ -2557,7 +2557,7 @@
         },
         {
           "size": "44",
-          "inStock": true
+          "inStock": false
         }
       ]
     },
@@ -3516,7 +3516,7 @@
       "sizeStock": [
         {
           "size": "34",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "36",
@@ -3524,7 +3524,7 @@
         },
         {
           "size": "38",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "40",
@@ -4088,11 +4088,11 @@
         },
         {
           "size": "42",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "44",
-          "inStock": true
+          "inStock": false
         }
       ]
     },
@@ -4779,7 +4779,7 @@
         "https://image.celine.com/asset/04fd42bb-6523-4a17-b351-33f90153edaa/RV15A650D-38NO_3_SUM26_W_V1_OM.jpg?V2",
         "https://image.celine.com/asset/e5a70788-19db-439d-9f14-d0f578bf883f/RV15A650D-38NO_4_SUM26_W_V1_OM.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -4788,7 +4788,7 @@
         "spencer tux jacket IN wool gabardine"
       ],
       "categoryLabel": "JACKETS",
-      "availabilityConfidence": "sfcc_oos",
+      "availabilityConfidence": "sfcc",
       "sizeStock": [
         {
           "size": "34",
@@ -4796,7 +4796,7 @@
         },
         {
           "size": "36",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "38",
@@ -5934,7 +5934,7 @@
         },
         {
           "size": "36",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "38",
@@ -7220,7 +7220,7 @@
       "sizeStock": [
         {
           "size": "34",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "36",
@@ -7236,7 +7236,7 @@
         },
         {
           "size": "42",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "44",
@@ -8664,7 +8664,7 @@
       "sizeStock": [
         {
           "size": "34",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "36",
@@ -8805,7 +8805,7 @@
       "sizeStock": [
         {
           "size": "34",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "36",
@@ -8813,7 +8813,7 @@
         },
         {
           "size": "38",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "40",
@@ -9548,7 +9548,7 @@
       "sizeStock": [
         {
           "size": "34",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "36",
@@ -9556,7 +9556,7 @@
         },
         {
           "size": "38",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "40",
@@ -10670,7 +10670,7 @@
       "sizeStock": [
         {
           "size": "34",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "36",
@@ -11245,7 +11245,7 @@
       "sizeStock": [
         {
           "size": "34",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "36",
@@ -11831,7 +11831,7 @@
         },
         {
           "size": "36",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "38",
@@ -11843,7 +11843,7 @@
         },
         {
           "size": "42",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "44",
@@ -12535,7 +12535,7 @@
         },
         {
           "size": "XL",
-          "inStock": true
+          "inStock": false
         }
       ]
     },
@@ -13777,7 +13777,7 @@
         },
         {
           "size": "42",
-          "inStock": true
+          "inStock": false
         }
       ]
     },
@@ -14880,7 +14880,7 @@
       "sizeStock": [
         {
           "size": "34",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "36",
@@ -15031,11 +15031,11 @@
         },
         {
           "size": "40",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "42",
-          "inStock": true
+          "inStock": false
         }
       ]
     },
@@ -15427,7 +15427,7 @@
         "https://image.celine.com/asset/e6611b21-3540-4c08-9cfc-6f91ec1ec0ac/RM09T984C-02CM_4_SUM26_W_V1_OM.jpg?V2",
         "https://image.celine.com/asset/e30f645c-e430-42ac-a129-8bf0d1298d1a/RM09T984C-02CM_5_SUM26_W_V1_OM.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -15436,11 +15436,11 @@
         "trench coat IN COTTON AND WOOL GABARDINE"
       ],
       "categoryLabel": "COATS",
-      "availabilityConfidence": "sfcc_oos",
+      "availabilityConfidence": "sfcc",
       "sizeStock": [
         {
           "size": "34",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "36",
@@ -16398,7 +16398,7 @@
         },
         {
           "size": "XL",
-          "inStock": true
+          "inStock": false
         }
       ]
     },
@@ -17188,11 +17188,11 @@
         },
         {
           "size": "M",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "L",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "XL",
@@ -17592,11 +17592,11 @@
         },
         {
           "size": "L",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "XL",
-          "inStock": true
+          "inStock": false
         }
       ]
     },
@@ -17993,7 +17993,7 @@
         },
         {
           "size": "M",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "L",
@@ -18130,7 +18130,7 @@
         },
         {
           "size": "L",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "XL",
@@ -18261,7 +18261,7 @@
         },
         {
           "size": "36",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "38",
@@ -18966,7 +18966,7 @@
       "sizeStock": [
         {
           "size": "34",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "36",
@@ -18978,7 +18978,7 @@
         },
         {
           "size": "40",
-          "inStock": true
+          "inStock": false
         }
       ]
     },
@@ -20586,7 +20586,7 @@
         },
         {
           "size": "40",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "42",
@@ -20857,7 +20857,7 @@
         },
         {
           "size": "36",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "38",
@@ -21443,7 +21443,7 @@
         },
         {
           "size": "42",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "44",
@@ -21587,7 +21587,7 @@
         },
         {
           "size": "42",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "44",
@@ -22301,7 +22301,7 @@
         },
         {
           "size": "36",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "38",
@@ -22444,7 +22444,7 @@
       "sizeStock": [
         {
           "size": "34",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "36",
@@ -22736,7 +22736,7 @@
         },
         {
           "size": "25",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "26",
@@ -22744,7 +22744,7 @@
         },
         {
           "size": "27",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "28",
@@ -22898,7 +22898,7 @@
         },
         {
           "size": "38",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "40",
@@ -23042,7 +23042,7 @@
         },
         {
           "size": "38",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "40",
@@ -23733,11 +23733,11 @@
         },
         {
           "size": "38",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "40",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "42",
@@ -24533,7 +24533,7 @@
         },
         {
           "size": "27",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "28",
@@ -24673,7 +24673,7 @@
         },
         {
           "size": "S",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "M",
@@ -24803,7 +24803,7 @@
       "sizeStock": [
         {
           "size": "XS",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "S",
@@ -25501,7 +25501,7 @@
         "https://image.celine.com/asset/501dbaa9-240e-4586-a3f4-28290b9af5ba/RP0FP984C-02BG_2_SPR26_W_V1.jpg?V2",
         "https://image.celine.com/asset/3144b7e5-d0ca-4872-84eb-5f3af85ee1e8/RP0FP984C-02BG_3_SPR26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -25510,7 +25510,7 @@
         "montauk cropped trousers IN COTTON AND WOOL GABARDINE"
       ],
       "categoryLabel": "PANTS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "34",
@@ -25526,7 +25526,7 @@
         },
         {
           "size": "40",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "42",
@@ -25670,7 +25670,7 @@
         },
         {
           "size": "42",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "44",
@@ -25807,7 +25807,7 @@
         },
         {
           "size": "40",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "42",
@@ -26229,11 +26229,11 @@
       "sizeStock": [
         {
           "size": "34",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "36",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "38",
@@ -27184,7 +27184,7 @@
       "sizeStock": [
         {
           "size": "34",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "36",
@@ -27473,7 +27473,7 @@
         },
         {
           "size": "40",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "42",
@@ -28043,7 +28043,7 @@
         },
         {
           "size": "25",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "26",
@@ -28886,7 +28886,7 @@
         "https://image.celine.com/asset/d3f13507-dd4d-44de-9f92-fc73496a86ce/RP0VR4V82-14ML_1_FALL26_W_V1.jpg?V2",
         "https://image.celine.com/asset/1302dae1-7958-46d7-8efd-8246948d11d2/RP0VR4V82-14ML_2_FALL26_W_V1_OM.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -28895,11 +28895,11 @@
         "patchwork trousers IN silk"
       ],
       "categoryLabel": "PANTS",
-      "availabilityConfidence": "sfcc_oos",
+      "availabilityConfidence": "sfcc",
       "sizeStock": [
         {
           "size": "34",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "36",
@@ -29194,7 +29194,7 @@
         },
         {
           "size": "28",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "29",
@@ -29876,7 +29876,7 @@
         },
         {
           "size": "29",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "30",
@@ -30226,7 +30226,7 @@
         },
         {
           "size": "31",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "32",
@@ -30716,7 +30716,7 @@
         },
         {
           "size": "27",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "28",
@@ -30724,7 +30724,7 @@
         },
         {
           "size": "29",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "30",
@@ -30859,7 +30859,7 @@
         "https://image.celine.com/asset/4e272af8-e3d8-4566-ba38-504a71783bcd/RP0XJ617R-GQF1_1_WI26_W_V1.jpg?V2",
         "https://image.celine.com/asset/d0052ae0-a91f-4d51-91ee-0b1e050f96e5/RP0XJ617R-GQF1_2_WI26_W_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -30868,7 +30868,7 @@
         "FLARE JEANS 006"
       ],
       "categoryLabel": "JEANS",
-      "availabilityConfidence": "sfcc_oos",
+      "availabilityConfidence": "sfcc",
       "sizeStock": [
         {
           "size": "24",
@@ -30876,7 +30876,7 @@
         },
         {
           "size": "25",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "26",
@@ -31415,7 +31415,7 @@
         },
         {
           "size": "32",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "33",
@@ -31575,7 +31575,7 @@
         },
         {
           "size": "28",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "29",
@@ -33319,7 +33319,7 @@
         },
         {
           "size": "31",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "32",
@@ -33450,7 +33450,7 @@
         "https://image.celine.com/asset/f92c5d79-63de-4504-88e4-2c168c9aa222/RP055932F-GME1_3_SUM26_M_V2.jpg?V2",
         "https://image.celine.com/asset/0a65a5e6-851a-41b6-b1d5-d18c61b91018/RP055932F-GME1_4_SUM26_M_V2.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -33459,43 +33459,43 @@
         "jolene jeans IN cotton Denim"
       ],
       "categoryLabel": "JEANS",
-      "availabilityConfidence": "sfcc_oos",
+      "availabilityConfidence": "sfcc",
       "sizeStock": [
         {
           "size": "24",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "25",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "26",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "27",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "28",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "29",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "30",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "31",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "32",
-          "inStock": false
+          "inStock": true
         }
       ]
     },
@@ -33647,11 +33647,11 @@
         },
         {
           "size": "27",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "28",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "29",
@@ -33663,7 +33663,7 @@
         },
         {
           "size": "31",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "32",
@@ -33794,7 +33794,7 @@
         "https://image.celine.com/asset/d3b051fc-60da-4c18-9fa6-b6f80d658f81/RP09W932F-GHX3_3_SPR26_W_V1.jpg?V2",
         "https://image.celine.com/asset/9518c1a9-f068-4397-825e-7054b377dd92/RP09W932F-GHX3_4_SPR26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -33803,7 +33803,7 @@
         "max jeans in denim"
       ],
       "categoryLabel": "DENIM",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "24",
@@ -33815,23 +33815,23 @@
         },
         {
           "size": "26",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "27",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "28",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "29",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "30",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "31",
@@ -34297,7 +34297,7 @@
         },
         {
           "size": "S",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "M",
@@ -34567,7 +34567,7 @@
         },
         {
           "size": "M",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "L",
@@ -35449,7 +35449,7 @@
       "sizeStock": [
         {
           "size": "24",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "25",
@@ -35625,7 +35625,7 @@
         },
         {
           "size": "25",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "26",
@@ -35948,7 +35948,7 @@
       "sizeStock": [
         {
           "size": "34",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "36",
@@ -35956,7 +35956,7 @@
         },
         {
           "size": "38",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "40",
@@ -36238,11 +36238,11 @@
         },
         {
           "size": "36",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "38",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "40",
@@ -36460,14 +36460,14 @@
         "https://image.celine.com/asset/a1e305ca-806c-4db6-b578-0a7b8d2a6585/RY0KY0T74-27BR_2_SPR26_W_V1.jpg?V2",
         "https://image.celine.com/asset/d79be1b7-ddcd-4f4d-a9a1-f32fd615abc2/RY0KY0T74-27BR_3_SPR26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "XS",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "S",
@@ -36540,10 +36540,10 @@
         "https://image.celine.com/asset/6ef8c1c3-d241-4c45-82e3-2d23fbc34f5c/RY0RP0X73-27BK_2_SPR26_W_V1.jpg?V2",
         "https://image.celine.com/asset/b7eaf06b-b41b-41a3-8b36-0c5997d74bff/RY0RP0X73-27BK_3_SPR26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "XS",
@@ -36555,7 +36555,7 @@
         },
         {
           "size": "M",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "L",
@@ -36784,10 +36784,10 @@
         "https://image.celine.com/asset/fd3620e1-74dc-4c11-a288-c44b920e9b91/RY11Q4G47-GGH2_2_WI26_W_V1.jpg?V2",
         "https://image.celine.com/asset/d86c7183-285d-4f98-899b-823613de5e91/RY11Q4G47-GGH2_3_WI26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "XS",
@@ -36803,7 +36803,7 @@
         },
         {
           "size": "L",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "XL",
@@ -37609,15 +37609,15 @@
         },
         {
           "size": "S",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "M",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "L",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "XL",
@@ -37833,10 +37833,10 @@
         "https://image.celine.com/asset/41cbae2f-84bd-4cdb-8c15-1220c143e4d2/RY0XI4I02-14ML_2_FALL26_W_V1.jpg?V2",
         "https://image.celine.com/asset/87e61a73-3752-419f-b54d-99876a73c1f5/RY0XI4I02-14ML_3_FALL26_W_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc_oos",
+      "availabilityConfidence": "sfcc",
       "sizeStock": [
         {
           "size": "XS",
@@ -37848,7 +37848,7 @@
         },
         {
           "size": "M",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "L",
@@ -39668,7 +39668,7 @@
       "sizeStock": [
         {
           "size": "XS",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "S",
@@ -39762,7 +39762,7 @@
         },
         {
           "size": "L",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "XL",
@@ -39919,7 +39919,7 @@
         },
         {
           "size": "S",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "M",
@@ -40058,7 +40058,7 @@
         },
         {
           "size": "S",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "M",
@@ -40190,11 +40190,11 @@
       "sizeStock": [
         {
           "size": "XS",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "S",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "M",
@@ -40844,10 +40844,10 @@
         "https://image.celine.com/asset/d3f35415-7068-4084-94e6-4bf0c5206f39/RY0Q90V65-19BD_2_SPR26_W_V1.jpg?V2",
         "https://image.celine.com/asset/7f4b5393-e70c-43f4-8385-37a818605a86/RY0Q90V65-19BD_3_SPR26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "XS",
@@ -40859,7 +40859,7 @@
         },
         {
           "size": "M",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "L",
@@ -41865,11 +41865,11 @@
         },
         {
           "size": "36",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "38",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "40",
@@ -42008,7 +42008,7 @@
         },
         {
           "size": "36",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "38",
@@ -42278,7 +42278,7 @@
         "https://image.celine.com/asset/9323dc6f-5db9-4993-a777-ac5e7cc5ecf5/RC0950H25-38NO_2_SPR26_W_V1.jpg?V2",
         "https://image.celine.com/asset/78590de5-2a00-4636-b498-77ac4fe4b927/RC0950H25-38NO_3_SPR26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "scrapeBlocked": false,
       "breadcrumb": [
         "CELINE",
@@ -42288,7 +42288,7 @@
         "cropped lavalliere shirt IN silk twill"
       ],
       "categoryLabel": "SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "34",
@@ -42300,7 +42300,7 @@
         },
         {
           "size": "38",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "40",
@@ -42308,7 +42308,7 @@
         },
         {
           "size": "42",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "44",
@@ -44321,7 +44321,7 @@
         },
         {
           "size": "40",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "42",
@@ -44458,7 +44458,7 @@
         },
         {
           "size": "36",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "38",
@@ -44466,7 +44466,7 @@
         },
         {
           "size": "40",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "42",
@@ -45029,7 +45029,7 @@
         },
         {
           "size": "36",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "38",
@@ -46882,11 +46882,11 @@
         },
         {
           "size": "40",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "42",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "44",
@@ -47021,7 +47021,7 @@
         },
         {
           "size": "38",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "40",
@@ -47154,7 +47154,7 @@
       "sizeStock": [
         {
           "size": "34",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "36",
@@ -49568,7 +49568,7 @@
         },
         {
           "size": "38",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "40",
@@ -49576,7 +49576,7 @@
         },
         {
           "size": "42",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "44",
@@ -49834,7 +49834,7 @@
         "https://image.celine.com/asset/6d06a768-5bc8-4bbe-8806-05e59690be56/RC0BF1194-GDJ1_3_SPR26_W_V1.jpg?V2",
         "https://image.celine.com/asset/1cd72608-3267-40a2-8de9-3ee74ca3973a/RC0BF1194-GDJ1_4_SPR26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "scrapeBlocked": false,
       "breadcrumb": [
         "CELINE",
@@ -49844,7 +49844,7 @@
         "shirt IN tartan cashmere"
       ],
       "categoryLabel": "SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "34",
@@ -49852,7 +49852,7 @@
         },
         {
           "size": "36",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "38",
@@ -49993,15 +49993,15 @@
         },
         {
           "size": "36",
-          "inStock": true
-        },
-        {
-          "size": "38",
           "inStock": false
         },
         {
-          "size": "40",
+          "size": "38",
           "inStock": true
+        },
+        {
+          "size": "40",
+          "inStock": false
         },
         {
           "size": "42",
@@ -50152,7 +50152,7 @@
         },
         {
           "size": "42",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "44",
@@ -50658,7 +50658,7 @@
         "https://image.celine.com/asset/ef8a42fc-6e49-474e-9234-9fb9630696dd/RX0DL1242-GFU0_3_SPR26_W_V1.jpg?V2",
         "https://image.celine.com/asset/29cd4127-76cf-4257-a8e0-1e191ad53bb6/RX0DL1242-GFU0_4_SPR26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "scrapeBlocked": false,
       "breadcrumb": [
         "CELINE",
@@ -50668,11 +50668,11 @@
         "mock neck t-shirt IN cotton jersey"
       ],
       "categoryLabel": "T-SHIRTS AND SWEATSHIRTS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "XS",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "S",
@@ -51200,7 +51200,7 @@
       "sizeStock": [
         {
           "size": "XS",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "S",
@@ -51881,7 +51881,7 @@
         },
         {
           "size": "L",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "XL",
@@ -53332,7 +53332,7 @@
         "https://image.celine.com/asset/b16aeefd-5bac-484b-8506-3c295115b6be/RY0OD510Z-38AW_3_SPR26_W_V1.jpg?V2",
         "https://image.celine.com/asset/4c30033b-234a-422f-90b6-21471962a0b9/RY0OD510Z-38AW_4_SPR26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "scrapeBlocked": false,
       "breadcrumb": [
         "CELINE",
@@ -53342,19 +53342,19 @@
         "loose sweatshirt IN cotton fleece"
       ],
       "categoryLabel": "T-SHIRTS AND SWEATSHIRTS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "XS",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "S",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "M",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "L",
@@ -53467,7 +53467,7 @@
         "https://image.celine.com/asset/3b6111c9-caa2-42c9-8589-4df742ee93ee/RY0SD1233-38AW_3_SPR26_W_V1.jpg?V2",
         "https://image.celine.com/asset/727b0cd1-5d96-48a1-8529-5fe1d8efc5d4/RY0SD1233-38AW_4_SPR26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "scrapeBlocked": false,
       "breadcrumb": [
         "CELINE",
@@ -53477,23 +53477,23 @@
         "teddy jacket IN cotton fleece"
       ],
       "categoryLabel": "T-SHIRTS AND SWEATSHIRTS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "XS",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "S",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "M",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "L",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "XL",
@@ -53890,7 +53890,7 @@
         },
         {
           "size": "M",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "L",
@@ -53999,7 +53999,7 @@
         "https://image.celine.com/asset/89ec1aa9-e104-421e-a218-dfc1684bde88/RX0X61242-GMR8_1_WI26_W_V1.jpg?V2",
         "https://image.celine.com/asset/64c36f10-7f7f-46ad-a6df-7ab90a7d2bfe/RX0X61242-GMR8_2_WI26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "scrapeBlocked": false,
       "breadcrumb": [
         "CELINE",
@@ -54009,7 +54009,7 @@
         "LONG-SLEEVED T-SHIRT IN cotton jersey"
       ],
       "categoryLabel": "T-SHIRTS AND SWEATSHIRTS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "XS",
@@ -54025,7 +54025,7 @@
         },
         {
           "size": "L",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "XL",
@@ -55234,11 +55234,11 @@
         },
         {
           "size": "L",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "XL",
-          "inStock": true
+          "inStock": false
         }
       ]
     },
@@ -55478,7 +55478,7 @@
         "https://image.celine.com/asset/26cd9370-88b5-46bb-8d3a-6fc4996c0cff/RX0CN1012-GFP9_3_SPR26_W_V2.jpg?V2",
         "https://image.celine.com/asset/d2019630-babc-43d0-9cb6-8792a1d753ac/RX0CN1012-GFP9_4_SPR26_W_V2.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "scrapeBlocked": false,
       "breadcrumb": [
         "CELINE",
@@ -55488,7 +55488,7 @@
         "high neck top IN athletic cotton jersey"
       ],
       "categoryLabel": "T-SHIRTS AND SWEATSHIRTS",
-      "availabilityConfidence": "sfcc_oos",
+      "availabilityConfidence": "sfcc",
       "sizeStock": [
         {
           "size": "XS",
@@ -55496,7 +55496,7 @@
         },
         {
           "size": "S",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "M",
@@ -55613,7 +55613,7 @@
         "https://image.celine.com/asset/936c99d8-a204-4535-b395-f9fdb5fe6d66/RX0DL1242-GGN2_3_SPR26_W_V1.jpg?V2",
         "https://image.celine.com/asset/02c8b4fc-a742-41f5-9f95-4bbecd0977c7/RX0DL1242-GGN2_4_SPR26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "scrapeBlocked": false,
       "breadcrumb": [
         "CELINE",
@@ -55623,11 +55623,11 @@
         "mock neck t-shirt IN cotton jersey"
       ],
       "categoryLabel": "T-SHIRTS AND SWEATSHIRTS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "XS",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "S",
@@ -55639,7 +55639,7 @@
         },
         {
           "size": "L",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "XL",
@@ -55765,7 +55765,7 @@
         },
         {
           "size": "M",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "L",
@@ -55892,7 +55892,7 @@
       "sizeStock": [
         {
           "size": "XS",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "S",
@@ -55904,7 +55904,7 @@
         },
         {
           "size": "L",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "XL",
@@ -57504,15 +57504,15 @@
       "sizeStock": [
         {
           "size": "XS",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "S",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "M",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "L",
@@ -58474,7 +58474,7 @@
         },
         {
           "size": "38",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "40",
@@ -59144,7 +59144,7 @@
       "sizeStock": [
         {
           "size": "34",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "36",
@@ -59413,7 +59413,7 @@
         "https://image.celine.com/asset/1f71a84e-31ed-4a7c-a305-b1b39958c5cc/RR0IL6963-01OW_6_SPR26_W_V1.jpg?V2",
         "https://image.celine.com/asset/0bd3e654-2884-4d87-a1ad-bcf861e39fec/RR0IL6963-01OW_7_SPR26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "scrapeBlocked": false,
       "breadcrumb": [
         "CELINE",
@@ -59423,11 +59423,11 @@
         "dress IN silk organza"
       ],
       "categoryLabel": "DRESSES",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "34",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "36",
@@ -61795,7 +61795,7 @@
         },
         {
           "size": "38",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "40",
@@ -62883,7 +62883,7 @@
         },
         {
           "size": "36",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "38",
@@ -62891,7 +62891,7 @@
         },
         {
           "size": "40",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "42",
@@ -63444,7 +63444,7 @@
         },
         {
           "size": "42",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "44",
@@ -69618,6 +69618,249 @@
         },
         {
           "size": "XL",
+          "inStock": false
+        }
+      ]
+    },
+    {
+      "id": "RX0WQ4Z28.96MN",
+      "sku": "RX0WQ4Z28.96MN",
+      "title": "PREVIOUS IMAGES NEXT IMAGES sleeveless top IN wool natte ; NOIR/MARRON/CRAIE",
+      "gbpPrice": 1250.0,
+      "url": "https://www.celine.com/en-gb/women/ready-to-wear/shirts-and-tops/sleeveless-top-in-wool-natte-RX0WQ4Z28.96MN.html",
+      "leafId": "ce-women-shirts-blouses",
+      "leafLabel": "Shirts and Blouses",
+      "leafLabelKo": "셔츠 & 블라우스",
+      "collections": [
+        "celine",
+        "ce-women",
+        "ce-women-shirts-blouses"
+      ],
+      "color": {
+        "label": ""
+      },
+      "details": [
+        {
+          "label": "DETAILS",
+          "body": "97% virgin wool 3% polyamide\nLOOSE FIT\ntailored with shoulder pads\ncrew neck\ncentral back zip and hook-and-eye closure\nMade in Italy",
+          "html": "97% virgin wool 3% polyamide<br>LOOSE FIT<br>tailored with shoulder pads<br>crew neck<br>central back zip and hook-and-eye closure<br>Made in Italy"
+        },
+        {
+          "label": "CARE AND MAINTENANCE",
+          "body": "DO NOT WASH WITH WATER.\nOnly use bleach-free laundry products.\nDo not tumble dry.\nMaximum ironing temperature: 110°C / 230°F\nDo not use steam.\nTHE ITEM CAN BE DELICATELY DRY CLEANED WITH HYDROCARBONS.\nDo not professionally clean with water.",
+          "html": "DO NOT WASH WITH WATER.<br>Only use bleach-free laundry products.<br>Do not tumble dry.<br>Maximum ironing temperature: 110°C / 230°F<br>Do not use steam.<br>THE ITEM CAN BE DELICATELY DRY CLEANED WITH HYDROCARBONS.<br>Do not professionally clean with water."
+        },
+        {
+          "label": "Size and fit",
+          "body": "WOOL NATTE\nTOP",
+          "html": "WOOL NATTE<br>TOP"
+        }
+      ],
+      "sizes": [
+        "34",
+        "36",
+        "38",
+        "40",
+        "42"
+      ],
+      "sizeGuideUrl": "",
+      "sizeGuide": {},
+      "images": [
+        "/products/ce-pdp/rx0wq4z28-96mn/1.jpg",
+        "/products/ce-pdp/rx0wq4z28-96mn/2.jpg",
+        "/products/ce-pdp/rx0wq4z28-96mn/3.jpg"
+      ],
+      "remoteImages": [
+        "https://image.celine.com/asset/22240160-81d8-47ce-b2ab-b9a071e4c424/RX0WQ4Z28-96MN_1_WI26_W_V1.jpg?V2",
+        "https://image.celine.com/asset/62c956c2-9c8a-42ab-ba43-a2da0581f30d/RX0WQ4Z28-96MN_2_WI26_W_V1.jpg?V2",
+        "https://image.celine.com/asset/1935f1d8-0688-4429-afae-c6aa43d3f00c/RX0WQ4Z28-96MN_3_WI26_W_V1.jpg?V2"
+      ],
+      "availability": true,
+      "availabilityConfidence": "sfcc",
+      "scrapeBlocked": true,
+      "breadcrumb": [],
+      "categoryLabel": "",
+      "sizeStock": [
+        {
+          "size": "34",
+          "inStock": true
+        },
+        {
+          "size": "36",
+          "inStock": false
+        },
+        {
+          "size": "38",
+          "inStock": true
+        },
+        {
+          "size": "40",
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": false
+        }
+      ]
+    },
+    {
+      "id": "RC0AD2N67.GGG3",
+      "sku": "RC0AD2N67.GGG3",
+      "title": "PREVIOUS IMAGES NEXT IMAGES SHIRT IN DENIM ; DARK RINSED",
+      "gbpPrice": 850.0,
+      "url": "https://www.celine.com/en-gb/women/ready-to-wear/denim/shirt-in-denim-RC0AD2N67.GGG3.html",
+      "leafId": "ce-women-shirts-blouses",
+      "leafLabel": "Shirts and Blouses",
+      "leafLabelKo": "셔츠 & 블라우스",
+      "collections": [
+        "celine",
+        "ce-women",
+        "ce-women-shirts-blouses"
+      ],
+      "color": {
+        "label": ""
+      },
+      "details": [
+        {
+          "label": "DETAILS",
+          "body": "100% COTTON\nCLASSIC FIT\nshirt collar\n2 patch pockets with flap on the chest\nrounded hem\n6 triomphe snap buttons\n1 celine paris-engraved button on the collar\n1 triomphe snap button on the pockets\n3 triomphe snap buttons on the cuffs\nMade in Japan",
+          "html": "100% COTTON<br>CLASSIC FIT<br>shirt collar<br>2 patch pockets with flap on the chest<br>rounded hem<br>6 triomphe snap buttons<br>1 celine paris-engraved button on the collar<br>1 triomphe snap button on the pockets<br>3 triomphe snap buttons on the cuffs<br>Made in Japan"
+        },
+        {
+          "label": "CARE AND MAINTENANCE",
+          "body": "THE ITEM CAN BE WASHED ON A DELICATE CYCLE AT A MAXIMUM TEMPERATURE OF 30°C / 85°F.\nOnly use bleach-free laundry products.\nDo not tumble dry.\nMaximum ironing temperature: 110°C / 230°F\nDo not use steam.\nTHE ITEM CAN BE DELICATELY DRY CLEANED WITH HYDROCARBONS",
+          "html": "THE ITEM CAN BE WASHED ON A DELICATE CYCLE AT A MAXIMUM TEMPERATURE OF 30°C / 85°F.<br>Only use bleach-free laundry products.<br>Do not tumble dry.<br>Maximum ironing temperature: 110°C / 230°F<br>Do not use steam.<br>THE ITEM CAN BE DELICATELY DRY CLEANED WITH HYDROCARBONS"
+        },
+        {
+          "label": "Size and fit",
+          "body": "DENIM SHIRTING\nSHIRT",
+          "html": "DENIM SHIRTING<br>SHIRT"
+        }
+      ],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "sizeGuideUrl": "",
+      "sizeGuide": {},
+      "images": [
+        "/products/ce-pdp/rc0ad2n67-ggg3/1.jpg",
+        "/products/ce-pdp/rc0ad2n67-ggg3/2.jpg",
+        "/products/ce-pdp/rc0ad2n67-ggg3/3.jpg"
+      ],
+      "remoteImages": [
+        "https://image.celine.com/asset/9c18aea7-97e0-4ee7-8d2b-c47318bafc04/RC0AD2N67-GGG3_1_SPR26_W_V1.jpg?V2",
+        "https://image.celine.com/asset/e4175c50-e473-446c-839d-a97c4c6ce38c/RC0AD2N67-GGG3_2_SPR26_W_V1.jpg?V2",
+        "https://image.celine.com/asset/ff3327c0-2a61-492b-a92d-b8bcb13817f2/RC0AD2N67-GGG3_3_SPR26_W_V1.jpg?V2"
+      ],
+      "availability": true,
+      "availabilityConfidence": "sfcc",
+      "scrapeBlocked": true,
+      "breadcrumb": [],
+      "categoryLabel": "",
+      "sizeStock": [
+        {
+          "size": "XS",
+          "inStock": true
+        },
+        {
+          "size": "S",
+          "inStock": true
+        },
+        {
+          "size": "M",
+          "inStock": true
+        },
+        {
+          "size": "L",
+          "inStock": true
+        },
+        {
+          "size": "XL",
+          "inStock": true
+        }
+      ]
+    },
+    {
+      "id": "RC0NF4T19.14BM",
+      "sku": "RC0NF4T19.14BM",
+      "title": "PREVIOUS IMAGES NEXT IMAGES lavalliere shirt IN printed silk twill ; WHITE/MULTICOLOR",
+      "gbpPrice": 1450.0,
+      "url": "https://www.celine.com/en-gb/women/ready-to-wear/shirts-and-tops/lavalliere-shirt-in-printed-silk-twill-RC0NF4T19.14BM.html",
+      "leafId": "ce-women-shirts-blouses",
+      "leafLabel": "Shirts and Blouses",
+      "leafLabelKo": "셔츠 & 블라우스",
+      "collections": [
+        "celine",
+        "ce-women",
+        "ce-women-shirts-blouses"
+      ],
+      "color": {
+        "label": ""
+      },
+      "details": [
+        {
+          "label": "DETAILS",
+          "body": "100% silk\ntriomphe embroidery on the cuff\nCLASSIC FIT\nlavalliere collar\npleated at the back\nrounded hem\n7 fabric-covered snap buttons\n1 fabric-covered snap button on the cuffs\nMade in Italy",
+          "html": "100% silk<br>triomphe embroidery on the cuff<br>CLASSIC FIT<br>lavalliere collar<br>pleated at the back<br>rounded hem<br>7 fabric-covered snap buttons<br>1 fabric-covered snap button on the cuffs<br>Made in Italy"
+        },
+        {
+          "label": "Size and fit",
+          "body": "PRINTED SILK TWILL\nSHIRT",
+          "html": "PRINTED SILK TWILL<br>SHIRT"
+        }
+      ],
+      "sizes": [
+        "34",
+        "36",
+        "38",
+        "40",
+        "42",
+        "44"
+      ],
+      "sizeGuideUrl": "",
+      "sizeGuide": {},
+      "images": [
+        "/products/ce-pdp/rc0nf4t19-14bm/1.jpg",
+        "/products/ce-pdp/rc0nf4t19-14bm/2.jpg",
+        "/products/ce-pdp/rc0nf4t19-14bm/3.jpg"
+      ],
+      "remoteImages": [
+        "https://image.celine.com/asset/6ccd97c9-d56e-476e-949e-3d8d4315067d/RC0PU4T19-14BM_1_WI26_W_V1.jpg?V2",
+        "https://image.celine.com/asset/d35fc9de-10da-4c69-951c-632bbb087d81/RC0PU4T19-14BM_2_WI26_W_V1.jpg?V2",
+        "https://image.celine.com/asset/96d825c6-40d4-48d4-b5e9-e6b216c26fb4/RC0PU4T19-14BM_3_WI26_W_V1.jpg?V2"
+      ],
+      "availability": false,
+      "availabilityConfidence": "sfcc_oos",
+      "scrapeBlocked": true,
+      "breadcrumb": [],
+      "categoryLabel": "",
+      "sizeStock": [
+        {
+          "size": "34",
+          "inStock": false
+        },
+        {
+          "size": "36",
+          "inStock": false
+        },
+        {
+          "size": "38",
+          "inStock": false
+        },
+        {
+          "size": "40",
+          "inStock": false
+        },
+        {
+          "size": "42",
+          "inStock": false
+        },
+        {
+          "size": "44",
           "inStock": false
         }
       ]

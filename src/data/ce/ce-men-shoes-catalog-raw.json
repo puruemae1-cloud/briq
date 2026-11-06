@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-23T18:36:42.321982+00:00",
+  "scrapedAt": "2026-11-06T20:56:18.101042+00:00",
   "brand": "Celine",
   "hub": "https://www.celine.com/en-gb/men/shoes/?nav=E002-VIEW-ALL",
   "family": "ce-men-shoes",
@@ -1187,7 +1187,7 @@
         "https://image.celine.com/asset/a5e24a77-dc32-4897-a008-201f6c10fb98/367225479C-07OZ_3_SUM26_M_V1.jpg?V2",
         "https://image.celine.com/asset/7150da18-f93f-4460-8537-d4d51ac2b61a/367225479C-07OZ_4_SUM26_M_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -1196,7 +1196,7 @@
         "AURA LOAFER IN COLLEGE EMBROIDERED VELVET"
       ],
       "categoryLabel": "LOAFERS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "39",
@@ -1212,7 +1212,7 @@
         },
         {
           "size": "42",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "43",
@@ -1433,7 +1433,7 @@
         },
         {
           "size": "42",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "43",
@@ -1655,7 +1655,7 @@
         },
         {
           "size": "41",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "42",
@@ -1889,7 +1889,7 @@
         },
         {
           "size": "41",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "42",
@@ -2128,7 +2128,7 @@
         },
         {
           "size": "40",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "40,5",
@@ -2655,7 +2655,7 @@
         },
         {
           "size": "40",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "41",
@@ -3840,7 +3840,7 @@
         },
         {
           "size": "44",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "45",
@@ -9337,7 +9337,7 @@
         },
         {
           "size": "43",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "44",
@@ -9345,7 +9345,7 @@
         },
         {
           "size": "45",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "46",
@@ -10235,7 +10235,7 @@
         "https://image.celine.com/asset/48e3a8a0-86f5-4e8b-8a55-fdb4d92ad4c7/364577032C-33VI_4_SPR26_M_V1.jpg?V2",
         "https://image.celine.com/asset/ca4e3018-314c-4aae-b720-955c37cb66eb/364577032C-33VI_5_SPR26_M_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -10244,7 +10244,7 @@
         "THE FLAT SNEAKER IN GROS GRAIN, VELVET, SUEDE CALFSKIN AND LAMBSKIN"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc_oos",
+      "availabilityConfidence": "sfcc",
       "sizeStock": [
         {
           "size": "39",
@@ -10256,11 +10256,11 @@
         },
         {
           "size": "41",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "42",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "43",
@@ -17306,7 +17306,7 @@
         },
         {
           "size": "40",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "41",
@@ -17322,7 +17322,7 @@
         },
         {
           "size": "44",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "45",

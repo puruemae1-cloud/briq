@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-23T18:35:31.802161+00:00",
+  "scrapedAt": "2026-11-06T20:55:08.903558+00:00",
   "brand": "Celine",
   "hub": "https://www.celine.com/en-gb/men/bags/?nav=E003-VIEW-ALL",
   "family": "ce-men-bags",
@@ -309,7 +309,7 @@
         "https://image.celine.com/asset/63faf2c0-8996-4937-a016-990a83490022/L105A3M62-GHN0_4_FW26_M_V1.jpg?V2",
         "https://image.celine.com/asset/baa8ee8c-ebe0-4a0a-a98c-495ef81345fd/L105A3M62-GHN0_5_FW26_M_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -318,7 +318,7 @@
         "VERTICAL POUCH SOFT TRIOMPHE IN SMOOTH LAMBSKIN"
       ],
       "categoryLabel": "CROSS-BODY BAGS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "L10033C58.04LI",
@@ -3095,7 +3095,7 @@
         "https://image.celine.com/asset/d65f11c2-7028-4fb2-87e0-8f78ae4455b7/116273FGA-38SI_4_SS24_P1_M.jpg?V2",
         "https://image.celine.com/asset/92df1091-6790-4169-80ef-bd0b588b6208/116273FGA-38SI_5_SS24_P1_M.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -3104,7 +3104,7 @@
         "Medium Cabas Malaquais IN Supple calfskin"
       ],
       "categoryLabel": "TOTE BAGS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "114443FSS.38NO",

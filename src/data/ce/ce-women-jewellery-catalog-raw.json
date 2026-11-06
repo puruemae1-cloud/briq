@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-10-23T18:49:44.279561+00:00",
+  "scrapedAt": "2026-11-06T21:09:34.164207+00:00",
   "brand": "Celine",
   "hub": "https://www.celine.com/en-gb/women/jewellery/?nav=A005-VIEW-ALL",
   "family": "ce-women-jewellery",
@@ -1529,7 +1529,7 @@
         "https://image.celine.com/asset/64502830-b55a-405a-b9b3-90e0f2792354/460RD6BRA-35OR_2_FW23_W.jpg?V2",
         "https://image.celine.com/asset/3d6527c0-f311-4b54-90be-e9ab7d039bd4/460RD6BRA-35OR_3_FW23_W.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -1538,7 +1538,7 @@
         "Triomphe Asymmetric Hoops in Brass with Gold Finish"
       ],
       "categoryLabel": "EARRINGS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "461EZ6BZI.36SI",
@@ -3011,7 +3011,7 @@
         "https://image.celine.com/asset/5058d9b8-3bc4-420a-a878-2d054d9b7512/461NJ6BRE-GAY7_2_SUM26_W_V1.jpg?V2",
         "https://image.celine.com/asset/55b4f29a-ecf9-4a55-a7f6-982a0cd2d96e/461NJ6BRE-GAY7_3_SUM26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -3020,11 +3020,11 @@
         "Triomphe Articulated Bracelet in Enamel and Brass with Gold Finish"
       ],
       "categoryLabel": "BRACELETS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "ONE SIZE",
-          "inStock": true
+          "inStock": false
         }
       ]
     },
@@ -3959,7 +3959,7 @@
         },
         {
           "size": "C2",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "C3",
@@ -5235,7 +5235,7 @@
         "https://image.celine.com/asset/63a357e4-cc13-4df7-bcdc-1fb6add659ae/460MS6BRA-35OR_2_SUM23.jpg?V2",
         "https://image.celine.com/asset/198531c9-6d73-44dd-bd6b-38d97550b232/460MS6BRA-35OR_3_SUM23.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -5244,7 +5244,7 @@
         "Triomphe Mini Triomphe Necklace in Brass with Gold Finish"
       ],
       "categoryLabel": "NECKLACES",
-      "availabilityConfidence": "sfcc_oos"
+      "availabilityConfidence": "sfcc"
     },
     {
       "id": "461GZ6PRB.01GI",
@@ -5719,7 +5719,7 @@
         "https://image.celine.com/asset/ee74bfb4-3370-446e-803f-4143068c697c/461HH6BRA-35OR_2_SPR25_P1_W.tif?V2",
         "https://image.celine.com/asset/287ff502-b181-40cf-a372-6e8bfe8eaaa1/461HH6BRA-35OR_3_SPR25_P1_W.tif?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -5728,11 +5728,11 @@
         "Triomphe Lock Necklace in Brass with Gold Finish"
       ],
       "categoryLabel": "NECKLACES",
-      "availabilityConfidence": "sfcc_oos",
+      "availabilityConfidence": "sfcc",
       "sizeStock": [
         {
           "size": "ONE SIZE",
-          "inStock": false
+          "inStock": true
         }
       ]
     },
@@ -9197,7 +9197,7 @@
         },
         {
           "size": "56",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "57",
@@ -9622,10 +9622,10 @@
         "https://image.celine.com/asset/90b1df2d-4273-446e-9bde-1b54c7a77692/46Q756GYD-37YW_2_SPR20_882037.jpg?V2",
         "https://image.celine.com/asset/8896d983-1411-411c-8095-4d783774e2f5/46Q756GYD-37YW_7_SPR20_882004.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "46Q746GYD.37YW",
@@ -9674,10 +9674,10 @@
         "https://image.celine.com/asset/2a155d81-fa49-4d5f-8d4e-e8d2d4e78d77/46Q746GYD-37YW_2_SPR20_431157.jpg?V2",
         "https://image.celine.com/asset/50fe7936-4c46-4884-bb7f-381f5bef07cb/46Q746GYD-37YW_3_SPR20_431183.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "46R806GYD.37YW",
@@ -11023,10 +11023,10 @@
         "https://image.celine.com/asset/63dd7a93-a4ff-41f1-877c-b9c0e81217bf/460EE6GYD-37YW_2_SPR23.jpg?V2",
         "https://image.celine.com/asset/61f94b9f-8bd7-469c-a03b-4f349226dc59/460EE6GYD-37YW_3_SPR23.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "460EJ6GYD.37YW",
