@@ -6,8 +6,6 @@
     "gbpPrice": 55,
     "gbpListPrice": 55,
     "colours": [
-      "Forage",
-      "Arctic Silk",
       "24K Black",
       "Sea Salt / Bracken",
       "Blk Sapphire / Aqua"
@@ -17,22 +15,6 @@
       "LXL"
     ],
     "colourImages": {
-      "Forage": [
-        "https://images.arcteryx.com/details/1350x1710/S26-X000010185-Silex-Cap-Forage-Front.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000010185-Silex-Cap-Forage-Front-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000010185-Silex-Cap-Forage-Hover.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000010185-Silex-Cap-Forage-Side-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000010185-Silex-Cap-Forage-Back-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000010185-Silex-Cap-Forage-Back.jpg"
-      ],
-      "Arctic Silk": [
-        "https://images.arcteryx.com/details/1350x1710/S26-X000010185-Silex-Cap-Arctic-Silk-Front.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000010185-Silex-Cap-Arctic-Silk-Hover.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000010185-Silex-Cap-Arctic-Silk-Front-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000010185-Silex-Cap-Arctic-Silk-Side-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000010185-Silex-Cap-Arctic-Silk-Back-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000010185-Silex-Cap-Arctic-Silk-Back.jpg"
-      ],
       "24K Black": [
         "https://images.arcteryx.com/details/1350x1710/F26-X000010185-Silex-Cap-24K-Black-Front.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000010185-Silex-Cap-24K-Black-Front-View.jpg",
@@ -59,33 +41,6 @@
       ]
     },
     "variants": [
-      {
-        "variantSku": "X000010185006",
-        "color": "Forage",
-        "size": "SM",
-        "stockStatus": "InStock",
-        "inStock": true,
-        "gbpPrice": 55,
-        "gbpListPrice": 55
-      },
-      {
-        "variantSku": "X000010185007",
-        "color": "Forage",
-        "size": "LXL",
-        "stockStatus": "InStock",
-        "inStock": true,
-        "gbpPrice": 55,
-        "gbpListPrice": 55
-      },
-      {
-        "variantSku": "X000010185009",
-        "color": "Arctic Silk",
-        "size": "LXL",
-        "stockStatus": "InStock",
-        "inStock": true,
-        "gbpPrice": 55,
-        "gbpListPrice": 55
-      },
       {
         "variantSku": "X000010185011",
         "color": "24K Black",
@@ -117,15 +72,6 @@
         "variantSku": "X000010185013",
         "color": "Blk Sapphire / Aqua",
         "size": "LXL",
-        "stockStatus": "InStock",
-        "inStock": true,
-        "gbpPrice": 55,
-        "gbpListPrice": 55
-      },
-      {
-        "variantSku": "X000010185008",
-        "color": "Arctic Silk",
-        "size": "SM",
         "stockStatus": "InStock",
         "inStock": true,
         "gbpPrice": 55,
@@ -202,21 +148,13 @@
     "gbpPrice": 36,
     "gbpListPrice": 36,
     "colours": [
-      "Lt Renegade / Renegade",
-      "Sea Salt"
+      "Sea Salt",
+      "Lt Renegade / Renegade"
     ],
     "sizes": [
       "NA"
     ],
     "colourImages": {
-      "Lt Renegade / Renegade": [
-        "https://images.arcteryx.com/details/1350x1710/F26-X000010184-Sinsolo-Bandana-Lt-Renegade-Renegade-Front.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F26-X000010184-Sinsolo-Bandana-Lt-Renegade-Renegade-Front-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F26-X000010184-Sinsolo-Bandana-Lt-Renegade-Renegade-Hover.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F26-X000010184-Sinsolo-Bandana-Lt-Renegade-Renegade-Side-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F26-X000010184-Sinsolo-Bandana-Lt-Renegade-Renegade-Back-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F26-X000010184-Sinsolo-Bandana-Lt-Renegade-Renegade-Back.jpg"
-      ],
       "Sea Salt": [
         "https://images.arcteryx.com/details/1350x1710/F26-X000010184-Sinsolo-Bandana-Sea-Salt-Front.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000010184-Sinsolo-Bandana-Sea-Salt-Front-View.jpg",
@@ -224,12 +162,20 @@
         "https://images.arcteryx.com/details/1350x1710/F26-X000010184-Sinsolo-Bandana-Sea-Salt-Side-View.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000010184-Sinsolo-Bandana-Sea-Salt-Back-View.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000010184-Sinsolo-Bandana-Sea-Salt-Back.jpg"
+      ],
+      "Lt Renegade / Renegade": [
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010184-Sinsolo-Bandana-Lt-Renegade-Renegade-Front.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010184-Sinsolo-Bandana-Lt-Renegade-Renegade-Front-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010184-Sinsolo-Bandana-Lt-Renegade-Renegade-Hover.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010184-Sinsolo-Bandana-Lt-Renegade-Renegade-Side-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010184-Sinsolo-Bandana-Lt-Renegade-Renegade-Back-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010184-Sinsolo-Bandana-Lt-Renegade-Renegade-Back.jpg"
       ]
     },
     "variants": [
       {
-        "variantSku": "X000010184006",
-        "color": "Lt Renegade / Renegade",
+        "variantSku": "X000010184004",
+        "color": "Sea Salt",
         "size": "NA",
         "stockStatus": "InStock",
         "inStock": true,
@@ -237,8 +183,8 @@
         "gbpListPrice": 36
       },
       {
-        "variantSku": "X000010184004",
-        "color": "Sea Salt",
+        "variantSku": "X000010184006",
+        "color": "Lt Renegade / Renegade",
         "size": "NA",
         "stockStatus": "InStock",
         "inStock": true,
@@ -600,20 +546,12 @@
     "gbpPrice": 55,
     "gbpListPrice": 55,
     "colours": [
-      "Moondrop / Mallow",
       "Cosmic Bloom"
     ],
     "sizes": [
       "NA"
     ],
     "colourImages": {
-      "Moondrop / Mallow": [
-        "https://images.arcteryx.com/details/1350x1710/S26-X000010067-Grotto-Toque-Moondrop-Mallow-Front.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000010067-Grotto-Toque-Moondrop-Mallow-Front-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000010067-Grotto-Toque-Moondrop-Mallow-Hover.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000010067-Grotto-Toque-Moondrop-Mallow-Back-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000010067-Grotto-Toque-Moondrop-Mallow-Side-View.jpg"
-      ],
       "Cosmic Bloom": [
         "https://images.arcteryx.com/details/1350x1710/S26-X000010067-Grotto-Toque-Cosmic-Bloom-Front.jpg",
         "https://images.arcteryx.com/details/1350x1710/S26-X000010067-Grotto-Toque-Cosmic-Bloom-Front-View.jpg",
@@ -624,20 +562,11 @@
     },
     "variants": [
       {
-        "variantSku": "X000010067013",
-        "color": "Moondrop / Mallow",
-        "size": "NA",
-        "stockStatus": "OutOfStock",
-        "inStock": false,
-        "gbpPrice": 55,
-        "gbpListPrice": 55
-      },
-      {
         "variantSku": "X000010067011",
         "color": "Cosmic Bloom",
         "size": "NA",
-        "stockStatus": "InStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 55,
         "gbpListPrice": 55
       }
@@ -796,12 +725,13 @@
       "label": "Weight",
       "value": "23g / 0.8 oz"
     },
-    "has3d": false
+    "has3d": false,
+    "error": "no product"
   },
   "X000010468": {
     "url": "https://arcteryx.com/gb/en/shop/synthetic-ultralightweight-mid-sock-0468",
     "title": "Synthetic Ultralightweight Mid Sock",
-    "tagline": "Our lightest, thinnest sock minimizes friction on hikes and trail runs.",
+    "tagline": "A lightweight sock to minimize friction on hikes and trail runs.",
     "gbpPrice": 23,
     "gbpListPrice": 23,
     "colours": [
@@ -898,8 +828,8 @@
         "variantSku": "X000010468005",
         "color": "White",
         "size": "S",
-        "stockStatus": "LowStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 23,
         "gbpListPrice": 23
       }
@@ -907,7 +837,7 @@
     "sections": [
       {
         "heading": "Synthetic Ultralightweight Mid Sock",
-        "body": "<p>Built to hug the foot, our lightest sock minimizes cushioning and aligns with the fit of our shoes to create a system that helps mitigate friction on long trail runs and hikes. Made with wicking fibres, the performance polyester yarns help manage temperature and moisture. The minimalist design eliminates the toe seam, has a gridded construction at the arch for support and airflow, and a collar height that helps seal out trail debris.</p>"
+        "body": "<p>Built to hug the foot, this lightweight sock has minimal cushioning and aligns with the fit of our shoes to create a system that helps mitigate friction on long trail runs and hikes. Made with wicking fibres, the performance polyester yarns help manage temperature and moisture. The minimalist design eliminates the toe seam, has a gridded construction at the arch for support and airflow, and a collar height that helps seal out trail debris.</p>"
       }
     ],
     "features": [
@@ -956,9 +886,9 @@
       "Blurple / Kasumi",
       "Lt Renegade / Rose",
       "Ultima / Aquaculture",
+      "24K Black",
       "Orca",
-      "Solitude / Arctic Silk",
-      "24K Black"
+      "Solitude / Arctic Silk"
     ],
     "sizes": [
       "NA"
@@ -992,6 +922,13 @@
         "https://images.arcteryx.com/details/1350x1710/F26-X000006756-Bird-Head-Toque-Ultima-Aquaculture-Side-View.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000006756-Bird-Head-Toque-Ultima-Aquaculture-Back-View.jpg"
       ],
+      "24K Black": [
+        "https://images.arcteryx.com/details/1350x1710/F26-X000006756-Bird-Head-Toque-24K-Black-Front.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000006756-Bird-Head-Toque-24K-Black-Front-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000006756-Bird-Head-Toque-24K-Black-Hover.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000006756-Bird-Head-Toque-24K-Black-Side-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000006756-Bird-Head-Toque-24K-Black-Back-View.jpg"
+      ],
       "Orca": [
         "https://images.arcteryx.com/details/1350x1710/F26-X000006756-Bird-Head-Toque-Orca-Front.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000006756-Bird-Head-Toque-Orca-Front-View.jpg",
@@ -1005,13 +942,6 @@
         "https://images.arcteryx.com/details/1350x1710/F26-X000006756-Bird-Head-Toque-Solitude-Arctic-Silk-Hover.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000006756-Bird-Head-Toque-Solitude-Arctic-Silk-Back-View.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000006756-Bird-Head-Toque-Solitude-Arctic-Silk-Side-View.jpg"
-      ],
-      "24K Black": [
-        "https://images.arcteryx.com/details/1350x1710/F25-X000006756-Bird-Head-Toque-24K-Black-Front.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F25-X000006756-Bird-Head-Toque-24K-Black-Front-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F25-X000006756-Bird-Head-Toque-24K-Black-Side-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F25-X000006756-Bird-Head-Toque-24K-Black-Back-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F25-X000006756-Bird-Head-Toque-24K-Black-Hover.jpg"
       ]
     },
     "variants": [
@@ -1019,8 +949,8 @@
         "variantSku": "X000006756042",
         "color": "Nucleus / Mongoose",
         "size": "NA",
-        "stockStatus": "InStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 55,
         "gbpListPrice": 55
       },
@@ -1052,6 +982,15 @@
         "gbpListPrice": 55
       },
       {
+        "variantSku": "X000006756029",
+        "color": "24K Black",
+        "size": "NA",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 55,
+        "gbpListPrice": 55
+      },
+      {
         "variantSku": "X000006756004",
         "color": "Orca",
         "size": "NA",
@@ -1063,15 +1002,6 @@
       {
         "variantSku": "X000006756024",
         "color": "Solitude / Arctic Silk",
-        "size": "NA",
-        "stockStatus": "InStock",
-        "inStock": true,
-        "gbpPrice": 55,
-        "gbpListPrice": 55
-      },
-      {
-        "variantSku": "X000006756029",
-        "color": "24K Black",
         "size": "NA",
         "stockStatus": "InStock",
         "inStock": true,
@@ -1210,7 +1140,8 @@
       "label": "Weight",
       "value": "59g / 2.1 oz"
     },
-    "has3d": false
+    "has3d": false,
+    "error": "no product"
   },
   "X000010338": {
     "url": "https://arcteryx.com/gb/en/shop/sinsolo-bucket-hat-0338",
@@ -1400,8 +1331,8 @@
         "variantSku": "X000010465004",
         "color": "Black",
         "size": "XL",
-        "stockStatus": "LowStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 20,
         "gbpListPrice": 20
       },
@@ -1728,7 +1659,8 @@
       "label": "Weight",
       "value": "57g / 2 oz"
     },
-    "has3d": false
+    "has3d": false,
+    "error": "no product"
   },
   "X000010466": {
     "url": "https://arcteryx.com/gb/en/shop/synthetic-mid-grotto-sock-0466",
@@ -2007,8 +1939,7 @@
     "colours": [
       "Blurple / Violectric",
       "Mongoose / Black",
-      "Black / Arctic Silk",
-      "Moondrop"
+      "Black / Arctic Silk"
     ],
     "sizes": [
       "NA"
@@ -2037,14 +1968,6 @@
         "https://images.arcteryx.com/details/1350x1710/F26-X000009936-Satoro-Merino-Toque-Black-Arctic-Silk-Side-View.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000009936-Satoro-Merino-Toque-Black-Arctic-Silk-Back-View.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000009936-Satoro-Merino-Toque-Black-Arctic-Silk-Reversible.jpg"
-      ],
-      "Moondrop": [
-        "https://images.arcteryx.com/details/1350x1710/S26-X000009936-Satoro-Merino-Toque-Moondrop-Front.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000009936-Satoro-Merino-Toque-Moondrop-Front-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000009936-Satoro-Merino-Toque-Moondrop-Hover.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000009936-Satoro-Merino-Toque-Moondrop-Side-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000009936-Satoro-Merino-Toque-Moondrop-Back-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000009936-Satoro-Merino-Toque-Moondrop-Reversible.jpg"
       ]
     },
     "variants": [
@@ -2069,15 +1992,6 @@
       {
         "variantSku": "X000009936002",
         "color": "Black / Arctic Silk",
-        "size": "NA",
-        "stockStatus": "OutOfStock",
-        "inStock": false,
-        "gbpPrice": 45,
-        "gbpListPrice": 45
-      },
-      {
-        "variantSku": "X000009936009",
-        "color": "Moondrop",
         "size": "NA",
         "stockStatus": "InStock",
         "inStock": true,
@@ -2224,7 +2138,8 @@
       "label": "Weight",
       "value": "45g / 1.6 oz"
     },
-    "has3d": false
+    "has3d": false,
+    "error": "no product"
   },
   "X000009463": {
     "url": "https://arcteryx.com/gb/en/shop/bird-word-cap-9463",
@@ -2234,8 +2149,8 @@
     "gbpListPrice": 45,
     "colours": [
       "Mongoose",
-      "Lt Renegade",
-      "24K Black"
+      "24K Black",
+      "Lt Renegade"
     ],
     "sizes": [
       "SM",
@@ -2250,14 +2165,6 @@
         "https://images.arcteryx.com/details/1350x1710/F26-X000009463-Bird-Word-Cap-Mongoose-Back-View.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000009463-Bird-Word-Cap-Mongoose-Back.jpg"
       ],
-      "Lt Renegade": [
-        "https://images.arcteryx.com/details/1350x1710/F26-X000009463-Bird-Word-Cap-Lt-Renegade-Front.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F26-X000009463-Bird-Word-Cap-Lt-Renegade-Front-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F26-X000009463-Bird-Word-Cap-Lt-Renegade-Hover.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F26-X000009463-Bird-Word-Cap-Lt-Renegade-Side-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F26-X000009463-Bird-Word-Cap-Lt-Renegade-Back-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F26-X000009463-Bird-Word-Cap-Lt-Renegade-Back.jpg"
-      ],
       "24K Black": [
         "https://images.arcteryx.com/details/1350x1710/F26-X000009463-Bird-Word-Cap-24K-Black-Front.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000009463-Bird-Word-Cap-24K-Black-Front-View.jpg",
@@ -2265,6 +2172,14 @@
         "https://images.arcteryx.com/details/1350x1710/F26-X000009463-Bird-Word-Cap-24K-Black-Side-View.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000009463-Bird-Word-Cap-24K-Black-Back-View.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000009463-Bird-Word-Cap-24K-Black-Back.jpg"
+      ],
+      "Lt Renegade": [
+        "https://images.arcteryx.com/details/1350x1710/F26-X000009463-Bird-Word-Cap-Lt-Renegade-Front.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000009463-Bird-Word-Cap-Lt-Renegade-Front-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000009463-Bird-Word-Cap-Lt-Renegade-Hover.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000009463-Bird-Word-Cap-Lt-Renegade-Side-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000009463-Bird-Word-Cap-Lt-Renegade-Back-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000009463-Bird-Word-Cap-Lt-Renegade-Back.jpg"
       ]
     },
     "variants": [
@@ -2272,17 +2187,8 @@
         "variantSku": "X000009463035",
         "color": "Mongoose",
         "size": "LXL",
-        "stockStatus": "LowStock",
-        "inStock": true,
-        "gbpPrice": 45,
-        "gbpListPrice": 45
-      },
-      {
-        "variantSku": "X000009463033",
-        "color": "Lt Renegade",
-        "size": "LXL",
-        "stockStatus": "InStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 45,
         "gbpListPrice": 45
       },
@@ -2290,8 +2196,8 @@
         "variantSku": "X000009463034",
         "color": "Mongoose",
         "size": "SM",
-        "stockStatus": "LowStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 45,
         "gbpListPrice": 45
       },
@@ -2305,18 +2211,27 @@
         "gbpListPrice": 45
       },
       {
-        "variantSku": "X000009463032",
+        "variantSku": "X000009463007",
+        "color": "24K Black",
+        "size": "LXL",
+        "stockStatus": "OutOfStock",
+        "inStock": false,
+        "gbpPrice": 45,
+        "gbpListPrice": 45
+      },
+      {
+        "variantSku": "X000009463033",
         "color": "Lt Renegade",
-        "size": "SM",
+        "size": "LXL",
         "stockStatus": "InStock",
         "inStock": true,
         "gbpPrice": 45,
         "gbpListPrice": 45
       },
       {
-        "variantSku": "X000009463007",
-        "color": "24K Black",
-        "size": "LXL",
+        "variantSku": "X000009463032",
+        "color": "Lt Renegade",
+        "size": "SM",
         "stockStatus": "InStock",
         "inStock": true,
         "gbpPrice": 45,
@@ -2533,7 +2448,7 @@
         "variantSku": "X000010464022",
         "color": "Mongoose",
         "size": "M",
-        "stockStatus": "InStock",
+        "stockStatus": "LowStock",
         "inStock": true,
         "gbpPrice": 25,
         "gbpListPrice": 25
@@ -2614,9 +2529,9 @@
     "gbpPrice": 70,
     "gbpListPrice": 70,
     "colours": [
-      "Bracken",
       "Dk Stratus",
-      "Black"
+      "Black",
+      "Bracken"
     ],
     "sizes": [
       "XXS",
@@ -2628,11 +2543,6 @@
       "XXL"
     ],
     "colourImages": {
-      "Bracken": [
-        "https://images.arcteryx.com/details/1350x1710/F26-X000009934-Venta-Glove-Bracken-Front.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F26-X000009934-Venta-Glove-Bracken-Hover.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F26-X000009934-Venta-Glove-Bracken-Back.jpg"
-      ],
       "Dk Stratus": [
         "https://images.arcteryx.com/details/1350x1710/F26-X000009934-Venta-Glove-Dk-Stratus-Front.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000009934-Venta-Glove-Dk-Stratus-Hover.jpg",
@@ -2642,49 +2552,18 @@
         "https://images.arcteryx.com/details/1350x1710/F26-X000009934-Venta-Glove-Black-Front.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000009934-Venta-Glove-Black-Hover.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000009934-Venta-Glove-Black-Back.jpg"
+      ],
+      "Bracken": [
+        "https://images.arcteryx.com/details/1350x1710/F26-X000009934-Venta-Glove-Bracken-Front.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000009934-Venta-Glove-Bracken-Hover.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000009934-Venta-Glove-Bracken-Back.jpg"
       ]
     },
     "variants": [
       {
-        "variantSku": "X000009934039",
-        "color": "Bracken",
-        "size": "S",
-        "stockStatus": "InStock",
-        "inStock": true,
-        "gbpPrice": 70,
-        "gbpListPrice": 70
-      },
-      {
-        "variantSku": "X000009934040",
-        "color": "Bracken",
-        "size": "M",
-        "stockStatus": "InStock",
-        "inStock": true,
-        "gbpPrice": 70,
-        "gbpListPrice": 70
-      },
-      {
-        "variantSku": "X000009934043",
-        "color": "Bracken",
-        "size": "XXL",
-        "stockStatus": "InStock",
-        "inStock": true,
-        "gbpPrice": 70,
-        "gbpListPrice": 70
-      },
-      {
         "variantSku": "X000009934026",
         "color": "Dk Stratus",
         "size": "M",
-        "stockStatus": "InStock",
-        "inStock": true,
-        "gbpPrice": 70,
-        "gbpListPrice": 70
-      },
-      {
-        "variantSku": "X000009934037",
-        "color": "Bracken",
-        "size": "XXS",
         "stockStatus": "InStock",
         "inStock": true,
         "gbpPrice": 70,
@@ -2709,15 +2588,6 @@
         "gbpListPrice": 70
       },
       {
-        "variantSku": "X000009934041",
-        "color": "Bracken",
-        "size": "L",
-        "stockStatus": "InStock",
-        "inStock": true,
-        "gbpPrice": 70,
-        "gbpListPrice": 70
-      },
-      {
         "variantSku": "X000009934029",
         "color": "Dk Stratus",
         "size": "XXL",
@@ -2730,24 +2600,6 @@
         "variantSku": "X000009934019",
         "color": "Black",
         "size": "M",
-        "stockStatus": "InStock",
-        "inStock": true,
-        "gbpPrice": 70,
-        "gbpListPrice": 70
-      },
-      {
-        "variantSku": "X000009934042",
-        "color": "Bracken",
-        "size": "XL",
-        "stockStatus": "InStock",
-        "inStock": true,
-        "gbpPrice": 70,
-        "gbpListPrice": 70
-      },
-      {
-        "variantSku": "X000009934038",
-        "color": "Bracken",
-        "size": "XS",
         "stockStatus": "InStock",
         "inStock": true,
         "gbpPrice": 70,
@@ -2820,8 +2672,8 @@
         "variantSku": "X000009934022",
         "color": "Black",
         "size": "XXL",
-        "stockStatus": "LowStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 70,
         "gbpListPrice": 70
       },
@@ -2829,6 +2681,69 @@
         "variantSku": "X000009934028",
         "color": "Dk Stratus",
         "size": "XL",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 70,
+        "gbpListPrice": 70
+      },
+      {
+        "variantSku": "X000009934039",
+        "color": "Bracken",
+        "size": "S",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 70,
+        "gbpListPrice": 70
+      },
+      {
+        "variantSku": "X000009934040",
+        "color": "Bracken",
+        "size": "M",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 70,
+        "gbpListPrice": 70
+      },
+      {
+        "variantSku": "X000009934043",
+        "color": "Bracken",
+        "size": "XXL",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 70,
+        "gbpListPrice": 70
+      },
+      {
+        "variantSku": "X000009934037",
+        "color": "Bracken",
+        "size": "XXS",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 70,
+        "gbpListPrice": 70
+      },
+      {
+        "variantSku": "X000009934041",
+        "color": "Bracken",
+        "size": "L",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 70,
+        "gbpListPrice": 70
+      },
+      {
+        "variantSku": "X000009934042",
+        "color": "Bracken",
+        "size": "XL",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 70,
+        "gbpListPrice": 70
+      },
+      {
+        "variantSku": "X000009934038",
+        "color": "Bracken",
+        "size": "XS",
         "stockStatus": "InStock",
         "inStock": true,
         "gbpPrice": 70,
@@ -3011,8 +2926,8 @@
         "variantSku": "X000009491004",
         "color": "Black / Arctic Silk",
         "size": "SM",
-        "stockStatus": "OutOfStock",
-        "inStock": false,
+        "stockStatus": "InStock",
+        "inStock": true,
         "gbpPrice": 36,
         "gbpListPrice": 36
       },
@@ -3645,8 +3560,8 @@
         "variantSku": "X000010463005",
         "color": "White/Pearl Gray",
         "size": "S",
-        "stockStatus": "OutOfStock",
-        "inStock": false,
+        "stockStatus": "InStock",
+        "inStock": true,
         "gbpPrice": 27,
         "gbpListPrice": 27
       },
@@ -3919,8 +3834,8 @@
         "variantSku": "X000009935031",
         "color": "Dk Stratus / Black",
         "size": "XS",
-        "stockStatus": "LowStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 140,
         "gbpListPrice": 140
       },
@@ -4198,7 +4113,7 @@
         "variantSku": "X000007397025",
         "color": "Lt Renegade",
         "size": "LXL",
-        "stockStatus": "InStock",
+        "stockStatus": "LowStock",
         "inStock": true,
         "gbpPrice": 32,
         "gbpListPrice": 32
@@ -4324,7 +4239,8 @@
       "label": "Weight",
       "value": "90g / 3.2 oz"
     },
-    "has3d": false
+    "has3d": false,
+    "error": "no product"
   },
   "X000010181": {
     "url": "https://arcteryx.com/gb/en/shop/norvan-mesh-5-panel-cap-0181",
@@ -4589,6 +4505,7 @@
         "https://images.arcteryx.com/details/1350x1710/F26-X000009937-Satoro-Merino-Neck-Gaiter-Black-Arctic-Silk-Front.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000009937-Satoro-Merino-Neck-Gaiter-Black-Arctic-Silk-Front-View.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000009937-Satoro-Merino-Neck-Gaiter-Black-Arctic-Silk-Hover.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000009937-Satoro-Merino-Neck-Gaiter-Black-Arctic-Silk-Side-View.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000009937-Satoro-Merino-Neck-Gaiter-Black-Arctic-Silk-Back-View.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000009937-Satoro-Merino-Neck-Gaiter-Black-Arctic-Silk-Detail-1.jpg"
       ],
@@ -4630,8 +4547,8 @@
         "variantSku": "X000009937011",
         "color": "Mongoose / Black",
         "size": "NA",
-        "stockStatus": "InStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 45,
         "gbpListPrice": 45
       }
@@ -5167,7 +5084,6 @@
       "Black",
       "Stratus / Blk Sapphire",
       "Renegade",
-      "Nucleus",
       "Dark Jade / Mongoose"
     ],
     "sizes": [
@@ -5210,18 +5126,6 @@
         "https://images.arcteryx.com/details/1350x1710/F26-X000010643-Mantis-26-Backpack-Renegade-Detail-1.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000010643-Mantis-26-Backpack-Renegade-Side.jpg"
       ],
-      "Nucleus": [
-        "https://images.arcteryx.com/details/1350x1710/F26-X000010643-Mantis-26-Backpack-Nucleus-Front.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F26-X000010643-Mantis-26-Backpack-Nucleus-Back.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F26-X000010643-Mantis-26-Backpack-Nucleus-Front-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F26-X000010643-Mantis-26-Backpack-Nucleus-Hover.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F26-X000010643-Mantis-26-Backpack-Nucleus-Back-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F26-X000010643-Mantis-26-Backpack-Nucleus-Fabric-Detail.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F26-X000010643-Mantis-26-Backpack-Nucleus-Side-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F26-X000010643-Mantis-26-Backpack-Nucleus-Full-Body.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F26-X000010643-Mantis-26-Backpack-Nucleus-Detail-1.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F26-X000010643-Mantis-26-Backpack-Nucleus-Side.jpg"
-      ],
       "Dark Jade / Mongoose": [
         "https://images.arcteryx.com/details/1350x1710/F26-X000010643-Mantis-26-Backpack-Dark-Jade-Mongoose-Front.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000010643-Mantis-26-Backpack-Dark-Jade-Mongoose-Back.jpg",
@@ -5257,15 +5161,6 @@
       {
         "variantSku": "X000010643013",
         "color": "Renegade",
-        "size": "NA",
-        "stockStatus": "InStock",
-        "inStock": true,
-        "gbpPrice": 140,
-        "gbpListPrice": 140
-      },
-      {
-        "variantSku": "X000010643012",
-        "color": "Nucleus",
         "size": "NA",
         "stockStatus": "InStock",
         "inStock": true,
@@ -5855,7 +5750,6 @@
       "Renegade / Rocket",
       "Rune / Sea Salt",
       "Nucleus / Mongoose",
-      "Headwaters",
       "Mantis",
       "Kasumi / Blurple"
     ],
@@ -5929,17 +5823,6 @@
         "https://images.arcteryx.com/details/1350x1710/F26-X000009234-Mantis-1-Waist-Pack-Nucleus-Mongoose-Detail-1.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000009234-Mantis-1-Waist-Pack-Nucleus-Mongoose-Detail-2.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000009234-Mantis-1-Waist-Pack-Nucleus-Mongoose-Internal-View.jpg"
-      ],
-      "Headwaters": [
-        "https://images.arcteryx.com/details/1350x1710/S26-X000009234-Mantis-1-Waist-Pack-Headwaters-Front.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000009234-Mantis-1-Waist-Pack-Headwaters-Back.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000009234-Mantis-1-Waist-Pack-Headwaters-Front-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000009234-Mantis-1-Waist-Pack-Headwaters-Hover.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000009234-Mantis-1-Waist-Pack-Headwaters-Back-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000009234-Mantis-1-Waist-Pack-Headwaters-Detail-2.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000009234-Mantis-1-Waist-Pack-Headwaters-Side-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000009234-Mantis-1-Waist-Pack-Headwaters-Full-Body.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000009234-Mantis-1-Waist-Pack-Headwaters-Detail-1.jpg"
       ],
       "Mantis": [
         "https://images.arcteryx.com/details/1350x1710/F26-X000009234-Mantis-1-Waist-Pack-Mantis-Front.jpg",
@@ -6015,15 +5898,6 @@
       {
         "variantSku": "X000009234036",
         "color": "Nucleus / Mongoose",
-        "size": "NA",
-        "stockStatus": "InStock",
-        "inStock": true,
-        "gbpPrice": 36,
-        "gbpListPrice": 36
-      },
-      {
-        "variantSku": "X000009234027",
-        "color": "Headwaters",
         "size": "NA",
         "stockStatus": "InStock",
         "inStock": true,
@@ -6362,45 +6236,76 @@
     "has3d": false
   },
   "X000009832": {
-    "url": "https://arcteryx.com/gb/en/shop/konseal-15-backpack-9832",
+    "url": "https://arcteryx.com/gb/en/shop/konseal-15-backpack-0718",
     "title": "Konseal 15 Backpack",
     "tagline": "Compact, light, incredibly durable 15L pack for multi-pitch climbing essentials.",
     "gbpPrice": 90,
     "gbpListPrice": 90,
     "colours": [
-      "Shincha",
+      "Nucleus",
+      "Dark Jade",
+      "Ultima",
       "Black"
     ],
     "sizes": [
       "NA"
     ],
     "colourImages": {
-      "Shincha": [
-        "https://images.arcteryx.com/details/1350x1710/S26-X000009832-Konseal-15-Backpack-Shincha-Front.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000009832-Konseal-15-Backpack-Shincha-Back.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000009832-Konseal-15-Backpack-Shincha-Front-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000009832-Konseal-15-Backpack-Shincha-Hover.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000009832-Konseal-15-Backpack-Shincha-Back-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000009832-Konseal-15-Backpack-Shincha-Side-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000009832-Konseal-15-Backpack-Shincha-Full-Body.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000009832-Konseal-15-Backpack-Shincha-Side.jpg"
+      "Nucleus": [
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010718-Konseal-15-Backpack-Nucleus-Front.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010718-Konseal-15-Backpack-Nucleus-Back.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010718-Konseal-15-Backpack-Nucleus-Front-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010718-Konseal-15-Backpack-Nucleus-Hover.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010718-Konseal-15-Backpack-Nucleus-Back-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010718-Konseal-15-Backpack-Nucleus-Fabric-Detail.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010718-Konseal-15-Backpack-Nucleus-Side-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010718-Konseal-15-Backpack-Nucleus-Full-Body.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010718-Konseal-15-Backpack-Nucleus-Detail-1.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010718-Konseal-15-Backpack-Nucleus-Side.jpg"
+      ],
+      "Dark Jade": [
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010718-Konseal-15-Backpack-Dark-Jade-Front.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010718-Konseal-15-Backpack-Dark-Jade-Back.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010718-Konseal-15-Backpack-Dark-Jade-Front-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010718-Konseal-15-Backpack-Dark-Jade-Hover.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010718-Konseal-15-Backpack-Dark-Jade-Back-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010718-Konseal-15-Backpack-Dark-Jade-Fabric-Detail.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010718-Konseal-15-Backpack-Dark-Jade-Side-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010718-Konseal-15-Backpack-Dark-Jade-Full-Body.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010718-Konseal-15-Backpack-Dark-Jade-Detail-1.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010718-Konseal-15-Backpack-Dark-Jade-Detail-2.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010718-Konseal-15-Backpack-Dark-Jade-Side.jpg"
+      ],
+      "Ultima": [
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010718-Konseal-15-Backpack-Ultima-Front.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010718-Konseal-15-Backpack-Ultima-Back.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010718-Konseal-15-Backpack-Ultima-Front-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010718-Konseal-15-Backpack-Ultima-Hover.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010718-Konseal-15-Backpack-Ultima-Back-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010718-Konseal-15-Backpack-Ultima-Fabric-Detail.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010718-Konseal-15-Backpack-Ultima-Side-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010718-Konseal-15-Backpack-Ultima-Full-Body.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010718-Konseal-15-Backpack-Ultima-Detail-1.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010718-Konseal-15-Backpack-Ultima-Side.jpg"
       ],
       "Black": [
-        "https://images.arcteryx.com/details/1350x1710/F25-X000009832-Konseal-15-Backpack-Black-Front.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F25-X000009832-Konseal-15-Backpack-Black-Back.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000009832-Konseal-15-Backpack-Black-Front-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000009832-Konseal-15-Backpack-Black-Hover.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000009832-Konseal-15-Backpack-Black-Back-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000009832-Konseal-15-Backpack-Black-Side-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000009832-Konseal-15-Backpack-Black-Internal-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000009832-Konseal-15-Backpack-Black-Full-Body.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000009832-Konseal-15-Backpack-Black-Side.jpg"
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010718-Konseal-15-Backpack-Black-Front.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010718-Konseal-15-Backpack-Black-Back.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010718-Konseal-15-Backpack-Black-Front-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010718-Konseal-15-Backpack-Black-Hover.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010718-Konseal-15-Backpack-Black-Fabric-Detail.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010718-Konseal-15-Backpack-Black-Internal-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010718-Konseal-15-Backpack-Black-Back-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010718-Konseal-15-Backpack-Black-Side-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010718-Konseal-15-Backpack-Black-Full-Body.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010718-Konseal-15-Backpack-Black-Detail-1.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010718-Konseal-15-Backpack-Black-Side.jpg"
       ]
     },
     "variants": [
       {
-        "variantSku": "X000009832012",
-        "color": "Shincha",
+        "variantSku": "X000010718004",
+        "color": "Nucleus",
         "size": "NA",
         "stockStatus": "InStock",
         "inStock": true,
@@ -6408,7 +6313,25 @@
         "gbpListPrice": 90
       },
       {
-        "variantSku": "X000009832001",
+        "variantSku": "X000010718003",
+        "color": "Dark Jade",
+        "size": "NA",
+        "stockStatus": "OutOfStock",
+        "inStock": false,
+        "gbpPrice": 90,
+        "gbpListPrice": 90
+      },
+      {
+        "variantSku": "X000010718005",
+        "color": "Ultima",
+        "size": "NA",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 90,
+        "gbpListPrice": 90
+      },
+      {
+        "variantSku": "X000010718001",
         "color": "Black",
         "size": "NA",
         "stockStatus": "InStock",
@@ -6454,11 +6377,11 @@
       },
       {
         "title": "Sustainability",
-        "body": "Contains materials produced through processes that meet bluesign® criteria · Shell - bluepass Material · PFAS (Per- and polyfluoroalkyl substances) Compliant"
+        "body": "Contains materials produced through processes that meet bluesign® criteria · PFAS (Per- and polyfluoroalkyl substances) Compliant · Lining  - bluepass Material, FC0 DWR, recycled content · Shell - FC0 DWR, bluepass Material"
       },
       {
         "title": "Materials",
-        "body": "Body: Cordura nylon 6,6 w/4mm 400d untwisted Vectran grid, back: 80gr white pigmented non-cold PU w/ C0 WR - 88% Nylon, 12% Polyarylate · Origin of fabric: KOREA · Origin of dyeing: KOREA · Origin of Manufacture: VIETNAM · May release plastic microfibres into the environment when washing · Hadron® - N315r HT nylon 6,6 LCP - bluesign Approved Material, FC0 DWR"
+        "body": "Body: 315d Hadron™, 215gsm, FC0 DWR - 86% Nylon, 14% Polyarylate · Lining: 210D Recycled Polyester, FC0 DWR, 110gsm - 100% Polyester · Contrast: 500D HT Cordura Balanced Plain Weave - 100% Nylon · Origin of fabric: KOREA · Origin of dyeing: KOREA · Origin of Manufacture: VIETNAM · May release plastic microfibres into the environment when washing · Hadron® - N315r HT nylon 6,6 LCP - bluesign Approved Material, FC0 DWR"
       },
       {
         "title": "Care",
@@ -6467,7 +6390,7 @@
     ],
     "gender": "unisex",
     "category": "Climbing Gear",
-    "subCategory": "Daypacks, Fair Trade Certified, bluesign® Approved Materials, Climbing Packs",
+    "subCategory": "Daypacks, Fair Trade Certified, bluesign® Approved Materials",
     "sizingChart": {
       "label": "",
       "url": ""
@@ -6476,8 +6399,7 @@
       "label": "Weight",
       "value": "310g / 10.9 oz / 15L"
     },
-    "has3d": false,
-    "error": "no product"
+    "has3d": false
   },
   "X000007449": {
     "url": "https://arcteryx.com/gb/en/shop/carrier-45-gear-tote-7449",
@@ -6656,6 +6578,7 @@
         "https://images.arcteryx.com/details/1350x1710/F26-X000010358-Heliad-15-Backpack-Dark-Jade-Side-View.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000010358-Heliad-15-Backpack-Dark-Jade-Full-Body.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000010358-Heliad-15-Backpack-Dark-Jade-Detail-1.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010358-Heliad-15-Backpack-Dark-Jade-Packed.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000010358-Heliad-15-Backpack-Dark-Jade-Side.jpg"
       ],
       "Black": [
@@ -6711,6 +6634,7 @@
     },
     "variants": [
       {
+        "variantSku": "X000010358011",
         "color": "Kasumi",
         "size": "NA",
         "stockStatus": "OutOfStock",
@@ -6719,6 +6643,7 @@
         "gbpListPrice": 70
       },
       {
+        "variantSku": "X000010358008",
         "color": "Aquaculture",
         "size": "NA",
         "stockStatus": "InStock",
@@ -6727,6 +6652,7 @@
         "gbpListPrice": 70
       },
       {
+        "variantSku": "X000010358013",
         "color": "Lt Renegade",
         "size": "NA",
         "stockStatus": "OutOfStock",
@@ -6735,6 +6661,7 @@
         "gbpListPrice": 70
       },
       {
+        "variantSku": "X000010358010",
         "color": "Dark Jade",
         "size": "NA",
         "stockStatus": "OutOfStock",
@@ -6743,6 +6670,7 @@
         "gbpListPrice": 70
       },
       {
+        "variantSku": "X000010358006",
         "color": "Black",
         "size": "NA",
         "stockStatus": "InStock",
@@ -6751,6 +6679,7 @@
         "gbpListPrice": 70
       },
       {
+        "variantSku": "X000010358005",
         "color": "Sea Salt",
         "size": "NA",
         "stockStatus": "OutOfStock",
@@ -6759,6 +6688,7 @@
         "gbpListPrice": 70
       },
       {
+        "variantSku": "X000010358004",
         "color": "Reef",
         "size": "NA",
         "stockStatus": "InStock",
@@ -6767,10 +6697,11 @@
         "gbpListPrice": 70
       },
       {
+        "variantSku": "X000010358014",
         "color": "Ultima",
         "size": "NA",
-        "stockStatus": "LowStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 70,
         "gbpListPrice": 70
       }
@@ -7322,8 +7253,6 @@
     "gbpListPrice": 240,
     "colours": [
       "Black",
-      "Moondrop",
-      "Canvas",
       "Dark Jade / Mantis"
     ],
     "sizes": [
@@ -7343,29 +7272,6 @@
         "https://images.arcteryx.com/details/1350x1710/F26-X000007469-Carrier-40-Duffle-Black-Internal-View.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000007469-Carrier-40-Duffle-Black-Side.jpg"
       ],
-      "Moondrop": [
-        "https://images.arcteryx.com/details/1350x1710/S26-X000007469-Carrier-40-Duffle-Moondrop-Front.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000007469-Carrier-40-Duffle-Moondrop-Back.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000007469-Carrier-40-Duffle-Moondrop-Front-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000007469-Carrier-40-Duffle-Moondrop-Hover.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000007469-Carrier-40-Duffle-Moondrop-Back-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000007469-Carrier-40-Duffle-Moondrop-Side-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000007469-Carrier-40-Duffle-Moondrop-Full-Body.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000007469-Carrier-40-Duffle-Moondrop-Detail-1.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000007469-Carrier-40-Duffle-Moondrop-Side.jpg"
-      ],
-      "Canvas": [
-        "https://images.arcteryx.com/details/1350x1710/S25-X000007469-Carrier-40-Duffle-Canvas-Front.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S25-X000007469-Carrier-40-Duffle-Canvas-Back.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000007469-Carrier-40-Duffle-Canvas-Front-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000007469-Carrier-40-Duffle-Canvas-Hover.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000007469-Carrier-40-Duffle-Canvas-Back-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000007469-Carrier-40-Duffle-Canvas-Side-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000007469-Carrier-40-Duffle-Canvas-Full-Body.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000007469-Carrier-40-Duffle-Canvas-Internal-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000007469-Carrier-40-Duffle-Canvas-Packed.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000007469-Carrier-40-Duffle-Canvas-Back.jpg"
-      ],
       "Dark Jade / Mantis": [
         "https://images.arcteryx.com/details/1350x1710/F26-X000007469-Carrier-40-Duffle-Dark-Jade-Mantis-Front.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000007469-Carrier-40-Duffle-Dark-Jade-Mantis-Back.jpg",
@@ -7383,24 +7289,6 @@
       {
         "variantSku": "X000007469001",
         "color": "Black",
-        "size": "NA",
-        "stockStatus": "InStock",
-        "inStock": true,
-        "gbpPrice": 240,
-        "gbpListPrice": 240
-      },
-      {
-        "variantSku": "X000007469009",
-        "color": "Moondrop",
-        "size": "NA",
-        "stockStatus": "InStock",
-        "inStock": true,
-        "gbpPrice": 240,
-        "gbpListPrice": 240
-      },
-      {
-        "variantSku": "X000007469004",
-        "color": "Canvas",
         "size": "NA",
         "stockStatus": "InStock",
         "inStock": true,
@@ -7475,7 +7363,7 @@
     "has3d": false
   },
   "X000009588": {
-    "url": "https://arcteryx.com/gb/en/shop/aerios-35-backpack-9588",
+    "url": "https://arcteryx.com/gb/en/shop/aerios-35-backpack-0705",
     "title": "Aerios 35 Backpack",
     "tagline": "Light, durable 35L pack with a customizable fit for day hikes and overnights.",
     "gbpPrice": 220,
@@ -7490,19 +7378,19 @@
     ],
     "colourImages": {
       "Black": [
-        "https://images.arcteryx.com/details/1350x1710/S25-X000009588-Aerios-35-Backpack-Black-Front.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S25-X000009588-Aerios-35-Backpack-Black-Back.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000009588-Aerios-35-Backpack-Black-Front-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000009588-Aerios-35-Backpack-Black-Hover.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000009588-Aerios-35-Backpack-Black-Back-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000009588-Aerios-35-Backpack-Black-Side-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000009588-Aerios-35-Backpack-Black-Full-Body.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000009588-Aerios-35-Backpack-Black-Side.jpg"
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010705-Aerios-35-Backpack-Black-Front.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010705-Aerios-35-Backpack-Black-Back.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010705-Aerios-35-Backpack-Black-Front-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010705-Aerios-35-Backpack-Black-Hover.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010705-Aerios-35-Backpack-Black-Back-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010705-Aerios-35-Backpack-Black-Side-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010705-Aerios-35-Backpack-Black-Full-Body.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010705-Aerios-35-Backpack-Black-Side.jpg"
       ]
     },
     "variants": [
       {
-        "variantSku": "X000009588001",
+        "variantSku": "X000010705001",
         "color": "Black",
         "size": "SRT",
         "stockStatus": "OutOfStock",
@@ -7511,7 +7399,7 @@
         "gbpListPrice": 220
       },
       {
-        "variantSku": "X000009588003",
+        "variantSku": "X000010705003",
         "color": "Black",
         "size": "TALL",
         "stockStatus": "OutOfStock",
@@ -7520,7 +7408,7 @@
         "gbpListPrice": 220
       },
       {
-        "variantSku": "X000009588002",
+        "variantSku": "X000010705002",
         "color": "Black",
         "size": "REG",
         "stockStatus": "OutOfStock",
@@ -7532,7 +7420,7 @@
     "sections": [
       {
         "heading": "Aerios 35 Backpack",
-        "body": "<p>Customize how your hike feels with the Aerios 35 Backpack. Its patent-pending interchangeable harness system — with three sizes of hipbelts and shoulder strap options — allows you to personalize your fit, so weight is evenly distributed through your hips and shoulders. Plus, the lightweight, durable grid pack fabric sheds light rain and stands up to all the drops, drags, and snags a pack encounters on the trail. </p>\n\n<p>Need a different size? Try the smaller <a href=\"https://arcteryx.com/shop/aerios-18-backpack-9581\" target=\"_blank\">Aerios 18 Backpack</a>.</p>"
+        "body": "<p>Customize how your hike feels with the Aerios 35 Backpack. Its patent-pending interchangeable harness system — with three sizes of hipbelts and shoulder strap options — allows you to personalize your fit, so weight is evenly distributed through your hips and shoulders. Plus, the lightweight, durable grid pack fabric sheds light rain and stands up to all the drops, drags, and snags a pack encounters on the trail. </p>\n\n<p>Need a different size? Try the smaller <a href=\"https://arcteryx.com/shop/aerios-18-backpack-0704\" target=\"_blank\">Aerios 18 Backpack</a>.</p>"
       }
     ],
     "features": [
@@ -7566,7 +7454,7 @@
       },
       {
         "title": "Pack hydration",
-        "body": "Reservoir bladder compatible inside of main compartment"
+        "body": "Reservoir bladder compatible inside of main compartment · Hydration reservoir sold separately"
       },
       {
         "title": "Pack loading & Closure configuration",
@@ -7582,11 +7470,11 @@
       },
       {
         "title": "Sustainability",
-        "body": "Contains materials produced through processes that meet bluesign® criteria · Primary fabric - bluepass Material · Secondary fabric - bluepass Material · Lining - bluepass Material · PFAS (Per- and polyfluoroalkyl substances) Compliant"
+        "body": "Contains materials produced through processes that meet bluesign® criteria · PFAS (Per- and polyfluoroalkyl substances) Compliant · Lining  - bluepass Material, FC0 DWR, recycled content · Primary Fabric - bluepass Material, FC0 DWR · Secondary Fabric - bluepass Material, FC0 DWR"
       },
       {
         "title": "Materials",
-        "body": "Body: 210d Cordura nylon 6,6 w/ 6.5 twisted 200d Vectran grid, 165gsm w/DWR - 93% Nylon, 7% Polyarylate · Contrast: 100d SD Cordura nylon 6,6 Dobby, DWR FC0, 120gsm - 100% Nylon · Lining: 200d polyester lining, FC0 DWR, 108 gsm - 100% Polyester · Origin of fabric: KOREA · Origin of dyeing: KOREA · Origin of Manufacture: VIETNAM · May release plastic microfibres into the environment when washing"
+        "body": "Contrast: Powernet 240g, 200gsm - 72% Nylon, 28% Elastane · Contrast: 100D SD Cordura nylon 6,6 Dobby face, FC0 DWR, 131gsm - 100% Nylon · Lining: 210D Recycled Polyester, FC0 DWR, 110gsm - 100% Polyester · Body: 210d Hadron™, 161 gsm, FC0 DWR - 94% Nylon, 6% Polyarylate · Origin of fabric: KOREA · Origin of dyeing: KOREA · Origin of Manufacture: VIETNAM · May release plastic microfibres into the environment when washing"
       },
       {
         "title": "Care",
@@ -7595,7 +7483,7 @@
     ],
     "gender": "unisex",
     "category": "Packs",
-    "subCategory": "Daypacks, Multi-Day, Fair Trade Certified, bluesign® Approved Materials",
+    "subCategory": "Daypacks, Multi-Day, Hydration Compatible, Fair Trade Certified, bluesign® Approved Materials",
     "sizingChart": {
       "label": "Aerios pack sizing chart",
       "url": "/gb/en/help/sizing/aerios-backpacks"
@@ -7604,8 +7492,7 @@
       "label": "Weight",
       "value": "1.16kg / 2 lb 8.9 oz"
     },
-    "has3d": false,
-    "error": "no product"
+    "has3d": false
   },
   "X000009825": {
     "url": "https://arcteryx.com/gb/en/shop/mantis-26-backpack-9825",
@@ -7799,7 +7686,8 @@
       "label": "Weight",
       "value": "920g / 2 lb 0.5 oz / 75L"
     },
-    "has3d": false
+    "has3d": false,
+    "error": "no product"
   },
   "X000010385": {
     "url": "https://arcteryx.com/gb/en/shop/granville-25-backpack-0385",
@@ -8038,7 +7926,8 @@
       "label": "Weight",
       "value": "1.17kg / 2 lb 9.3 oz"
     },
-    "has3d": false
+    "has3d": false,
+    "error": "no product"
   },
   "X000010349": {
     "url": "https://arcteryx.com/gb/en/shop/alpha-fl-30-backpack-0349",
@@ -8149,6 +8038,7 @@
     "gbpPrice": 140,
     "gbpListPrice": 140,
     "colours": [
+      "Blurple",
       "Black"
     ],
     "sizes": [
@@ -8157,6 +8047,17 @@
       "L"
     ],
     "colourImages": {
+      "Blurple": [
+        "https://images.arcteryx.com/details/1350x1710/F26-X000006747-Norvan-7-Vest-Blurple.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000006747-Norvan-7-Vest-Blurple-Back.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000006747-Norvan-7-Vest-Blurple-Front-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000006747-Norvan-7-Vest-Blurple-Hover.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000006747-Norvan-7-Vest-Blurple-Side-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000006747-Norvan-7-Vest-Blurple-Back-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000006747-Norvan-7-Vest-Blurple-Fabric-Detail.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000006747-Norvan-7-Vest-Blurple-Full-Body.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000006747-Norvan-7-Vest-Blurple-Detail-1.jpg"
+      ],
       "Black": [
         "https://images.arcteryx.com/details/1350x1710/F26-X000006747-Norvan-7-Vest-Black.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000006747-Norvan-7-Vest-Black-Back.jpg",
@@ -8171,6 +8072,24 @@
     },
     "variants": [
       {
+        "variantSku": "X000006747025",
+        "color": "Blurple",
+        "size": "S",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000006747026",
+        "color": "Blurple",
+        "size": "M",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
         "variantSku": "X000006747007",
         "color": "Black",
         "size": "S",
@@ -8180,10 +8099,19 @@
         "gbpListPrice": 140
       },
       {
+        "variantSku": "X000006747027",
+        "color": "Blurple",
+        "size": "L",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
         "variantSku": "X000006747008",
         "color": "Black",
         "size": "L",
-        "stockStatus": "InStock",
+        "stockStatus": "LowStock",
         "inStock": true,
         "gbpPrice": 140,
         "gbpListPrice": 140
@@ -8351,7 +8279,8 @@
     "gbpPrice": 140,
     "gbpListPrice": 140,
     "colours": [
-      "Black"
+      "Black",
+      "Blurple"
     ],
     "sizes": [
       "S",
@@ -8369,6 +8298,17 @@
         "https://images.arcteryx.com/details/1350x1710/F26-X000006803-Norvan-7-Vest-Black-Women-s-Side-View.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000006803-Norvan-7-Vest-Black-Women-s-Detail-1.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000006803-Norvan-7-Vest-Black-Women-s-Hover.jpg"
+      ],
+      "Blurple": [
+        "https://images.arcteryx.com/details/1350x1710/F26-X000006803-Norvan-7-Vest-Blurple-Women-s.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000006803-Norvan-7-Vest-Blurple-Women-s-Back.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000006803-Norvan-7-Vest-Blurple-Women-s-Front-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000006803-Norvan-7-Vest-Blurple-Women-s-Hover.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000006803-Norvan-7-Vest-Blurple-Women-s-Back-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000006803-Norvan-7-Vest-Blurple-Women-s-Fabric-Detail.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000006803-Norvan-7-Vest-Blurple-Women-s-Side-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000006803-Norvan-7-Vest-Blurple-Women-s-Full-Body.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000006803-Norvan-7-Vest-Blurple-Women-s-Detail-1.jpg"
       ]
     },
     "variants": [
@@ -8376,8 +8316,26 @@
         "variantSku": "X000006803009",
         "color": "Black",
         "size": "L",
-        "stockStatus": "OutOfStock",
-        "inStock": false,
+        "stockStatus": "LowStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000006803022",
+        "color": "Blurple",
+        "size": "S",
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000006803023",
+        "color": "Blurple",
+        "size": "M",
+        "stockStatus": "InStock",
+        "inStock": true,
         "gbpPrice": 140,
         "gbpListPrice": 140
       },
@@ -8394,7 +8352,16 @@
         "variantSku": "X000006803008",
         "color": "Black",
         "size": "S",
-        "stockStatus": "InStock",
+        "stockStatus": "LowStock",
+        "inStock": true,
+        "gbpPrice": 140,
+        "gbpListPrice": 140
+      },
+      {
+        "variantSku": "X000006803024",
+        "color": "Blurple",
+        "size": "L",
+        "stockStatus": "LowStock",
         "inStock": true,
         "gbpPrice": 140,
         "gbpListPrice": 140
@@ -8748,36 +8715,60 @@
     "has3d": false
   },
   "X000010363": {
-    "url": "https://arcteryx.com/gb/en/shop/ion-chalk-bucket-0363",
+    "url": "https://arcteryx.com/gb/en/shop/ion-chalk-bucket-0716",
     "title": "Ion Chalk Bucket",
     "tagline": "Large, weather resistant, leakproof, easy-access chalk bucket.",
     "gbpPrice": 70,
     "gbpListPrice": 70,
     "colours": [
-      "Black"
+      "Black",
+      "Aquaculture"
     ],
     "sizes": [
       "NA"
     ],
     "colourImages": {
       "Black": [
-        "https://images.arcteryx.com/details/1350x1710/S26-X000010363-Ion-Chalk-Bucket-Black-Front.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000010363-Ion-Chalk-Bucket-Black-Back.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000010363-Ion-Chalk-Bucket-Black-Front-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000010363-Ion-Chalk-Bucket-Black-Hover.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000010363-Ion-Chalk-Bucket-Black-Back-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000010363-Ion-Chalk-Bucket-Black-Full-Body.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000010363-Ion-Chalk-Bucket-Black-Side.jpg",
-        "https://images.arcteryx.com/details/1350x1710/S26-X000010363-Ion-Chalk-Bucket-Black-Open-View.jpg"
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010716-Ion-Chalk-Bucket-Black-Front.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010716-Ion-Chalk-Bucket-Black-Back.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010716-Ion-Chalk-Bucket-Black-Front-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010716-Ion-Chalk-Bucket-Black-Hover.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010716-Ion-Chalk-Bucket-Black-Back-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010716-Ion-Chalk-Bucket-Black-Fabric-Detail.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010716-Ion-Chalk-Bucket-Black-Side-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010716-Ion-Chalk-Bucket-Black-Full-Body.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010716-Ion-Chalk-Bucket-Black-Side.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010716-Ion-Chalk-Bucket-Black-Open-View.jpg"
+      ],
+      "Aquaculture": [
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010716-Ion-Chalk-Bucket-Aquaculture-Front.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010716-Ion-Chalk-Bucket-Aquaculture-Back.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010716-Ion-Chalk-Bucket-Aquaculture-Front-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010716-Ion-Chalk-Bucket-Aquaculture-Hover.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010716-Ion-Chalk-Bucket-Aquaculture-Back-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010716-Ion-Chalk-Bucket-Aquaculture-Fabric-Detail.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010716-Ion-Chalk-Bucket-Aquaculture-Side-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010716-Ion-Chalk-Bucket-Aquaculture-Full-Body.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010716-Ion-Chalk-Bucket-Aquaculture-Open-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010716-Ion-Chalk-Bucket-Aquaculture-Side.jpg"
       ]
     },
     "variants": [
       {
-        "variantSku": "X000010363003",
+        "variantSku": "X000010716002",
         "color": "Black",
         "size": "NA",
-        "stockStatus": "OutOfStock",
-        "inStock": false,
+        "stockStatus": "InStock",
+        "inStock": true,
+        "gbpPrice": 70,
+        "gbpListPrice": 70
+      },
+      {
+        "variantSku": "X000010716001",
+        "color": "Aquaculture",
+        "size": "NA",
+        "stockStatus": "InStock",
+        "inStock": true,
         "gbpPrice": 70,
         "gbpListPrice": 70
       }
@@ -8819,11 +8810,11 @@
       },
       {
         "title": "Sustainability",
-        "body": "Contains materials produced through processes that meet bluesign® criteria · Primary fabric - bluepass Material, recycled content · Secondary fabric - bluepass Material, recycled content · Lining 2 - bluepass Material · PFAS (Per- and polyfluoroalkyl substances) Compliant"
+        "body": "Contains materials produced through processes that meet bluesign® criteria · Lining 2 - bluepass Material · PFAS (Per- and polyfluoroalkyl substances) Compliant · Lining 1 - FC0 DWR · Primary Fabric - bluepass Material, FC0 DWR, recycled content · Secondary Fabric - bluepass Material, FC0 DWR, recycled content"
       },
       {
         "title": "Materials",
-        "body": "Lining: Brushed tricot - 100% Polyester · Body: 400d ripstop recycled nylon, FC0 DWR, 324gsm - 83% Nylon, 17% Thermoplastic Polyurethane · Contrast: 210d Recycled Nylon SD HD, FC0 DWR, 140gsm - 100% Nylon · Origin of fabric: KOREA · Origin of dyeing: KOREA · Origin of Manufacture: VIETNAM · May release plastic microfibres into the environment when washing"
+        "body": "Lining: Brushed tricot - 100% Polyester · Lining:  10D x 20D Ripstop - 100% Nylon · Body: 400d ripstop recycled nylon, FC0 DWR, 324gsm - 83% Nylon, 17% Thermoplastic Polyurethane · Contrast: 210d Recycled Nylon SD HD, FC0 DWR, 140gsm - 100% Nylon · Origin of fabric: TAIWAN, CHINA · Origin of dyeing: TAIWAN, CHINA · Origin of Manufacture: VIETNAM · May release plastic microfibres into the environment when washing"
       },
       {
         "title": "Care",
@@ -8841,8 +8832,7 @@
       "label": "Weight",
       "value": "205g / 7.2 oz"
     },
-    "has3d": false,
-    "error": "no product"
+    "has3d": false
   },
   "X000010364": {
     "url": "https://arcteryx.com/gb/en/shop/ion-sl-chalkbag-0364",
@@ -9050,7 +9040,7 @@
         "variantSku": "X000010388015",
         "color": "Forage / Mantis",
         "size": "XL",
-        "stockStatus": "InStock",
+        "stockStatus": "LowStock",
         "inStock": true,
         "gbpPrice": 140,
         "gbpListPrice": 140
@@ -9238,7 +9228,8 @@
       "label": "Weight",
       "value": "298g / 10.5 oz"
     },
-    "has3d": false
+    "has3d": false,
+    "error": "no product"
   },
   "X000010386": {
     "url": "https://arcteryx.com/gb/en/shop/womens/ar-385a-harness-0386",
@@ -9485,7 +9476,8 @@
       "label": "Weight",
       "value": "283g / 10 oz"
     },
-    "has3d": false
+    "has3d": false,
+    "error": "no product"
   },
   "X000007590": {
     "url": "https://arcteryx.com/gb/en/shop/word-head-toque",
@@ -9537,8 +9529,8 @@
         "variantSku": "X000007590010",
         "color": "Blk Sapphire / Aqua",
         "size": "NA",
-        "stockStatus": "InStock",
-        "inStock": true,
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 45,
         "gbpListPrice": 45
       },
@@ -9595,7 +9587,7 @@
       },
       {
         "title": "Care",
-        "body": "Hand wash cold · Machine wash low · Dry flat · Do not bleach · Wash dark colours separately · Do not dry clean · Do not iron · Do not use fabric softener · Use wool detergent · Do not wring"
+        "body": "Machine wash low · Dry flat · Do not bleach · Wash dark colours separately · Do not dry clean · Do not iron · Do not use fabric softener · Use wool detergent · Do not wring"
       }
     ],
     "gender": "unisex",
@@ -9622,8 +9614,8 @@
       "Aquaculture / Black Sapphire",
       "Orca",
       "Dark Jade / Mantis",
-      "Lt Renegade / Renegade",
-      "24K Black"
+      "24K Black",
+      "Lt Renegade / Renegade"
     ],
     "sizes": [
       "NA"
@@ -9657,19 +9649,19 @@
         "https://images.arcteryx.com/details/1350x1710/F26-X000010979-Bird-Word-Toque-Dark-Jade-Mantis-Side-View.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000010979-Bird-Word-Toque-Dark-Jade-Mantis-Back-View.jpg"
       ],
-      "Lt Renegade / Renegade": [
-        "https://images.arcteryx.com/details/1350x1710/F26-X000010979-Bird-Word-Toque-Lt-Renegade-Renegade-Front.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F26-X000010979-Bird-Word-Toque-Lt-Renegade-Renegade-Front-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F26-X000010979-Bird-Word-Toque-Lt-Renegade-Renegade-Hover.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F26-X000010979-Bird-Word-Toque-Lt-Renegade-Renegade-Side-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F26-X000010979-Bird-Word-Toque-Lt-Renegade-Renegade-Back-View.jpg"
-      ],
       "24K Black": [
         "https://images.arcteryx.com/details/1350x1710/F26-X000010979-Bird-Word-Toque-24K-Black-Front.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000010979-Bird-Word-Toque-24K-Black-Hover.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000010979-Bird-Word-Toque-24K-Black-Front-View.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000010979-Bird-Word-Toque-24K-Black-Side-View.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000010979-Bird-Word-Toque-24K-Black-Back-View.jpg"
+      ],
+      "Lt Renegade / Renegade": [
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010979-Bird-Word-Toque-Lt-Renegade-Renegade-Front.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010979-Bird-Word-Toque-Lt-Renegade-Renegade-Front-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010979-Bird-Word-Toque-Lt-Renegade-Renegade-Hover.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010979-Bird-Word-Toque-Lt-Renegade-Renegade-Side-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010979-Bird-Word-Toque-Lt-Renegade-Renegade-Back-View.jpg"
       ]
     },
     "variants": [
@@ -9710,8 +9702,8 @@
         "gbpListPrice": 55
       },
       {
-        "variantSku": "X000010979004",
-        "color": "Lt Renegade / Renegade",
+        "variantSku": "X000010979001",
+        "color": "24K Black",
         "size": "NA",
         "stockStatus": "InStock",
         "inStock": true,
@@ -9719,8 +9711,8 @@
         "gbpListPrice": 55
       },
       {
-        "variantSku": "X000010979001",
-        "color": "24K Black",
+        "variantSku": "X000010979004",
+        "color": "Lt Renegade / Renegade",
         "size": "NA",
         "stockStatus": "InStock",
         "inStock": true,
@@ -9857,7 +9849,7 @@
         "variantSku": "X000010980003",
         "color": "Bracken / Sea Salt",
         "size": "NA",
-        "stockStatus": "InStock",
+        "stockStatus": "LowStock",
         "inStock": true,
         "gbpPrice": 55,
         "gbpListPrice": 55
@@ -9968,20 +9960,20 @@
         "gbpListPrice": 40
       },
       {
-        "variantSku": "X000007254002",
-        "color": "Black",
-        "size": "SM",
-        "stockStatus": "OutOfStock",
-        "inStock": false,
-        "gbpPrice": 40,
-        "gbpListPrice": 40
-      },
-      {
         "variantSku": "X000007254014",
         "color": "Dark Jade",
         "size": "SM",
         "stockStatus": "InStock",
         "inStock": true,
+        "gbpPrice": 40,
+        "gbpListPrice": 40
+      },
+      {
+        "variantSku": "X000007254002",
+        "color": "Black",
+        "size": "SM",
+        "stockStatus": "OutOfStock",
+        "inStock": false,
         "gbpPrice": 40,
         "gbpListPrice": 40
       },
@@ -10338,8 +10330,8 @@
     "gbpListPrice": 120,
     "colours": [
       "Kasumi / Blurple",
-      "Black",
-      "Mongoose"
+      "Mongoose",
+      "Black"
     ],
     "sizes": [
       "REG"
@@ -10356,18 +10348,6 @@
         "https://images.arcteryx.com/details/1350x1710/F26-X000010707-Axios-10-Backpack-Kasumi-Blurple-Full-Body.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000010707-Axios-10-Backpack-Kasumi-Blurple-Side.jpg"
       ],
-      "Black": [
-        "https://images.arcteryx.com/details/1350x1710/F26-X000010707-Axios-10-Backpack-Black-Front.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F26-X000010707-Axios-10-Backpack-Black-Back.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F26-X000010707-Axios-10-Backpack-Black-Front-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F26-X000010707-Axios-10-Backpack-Black-Hover.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F26-X000010707-Axios-10-Backpack-Black-Back-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F26-X000010707-Axios-10-Backpack-Black-Fabric-Detail.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F26-X000010707-Axios-10-Backpack-Black-Side-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F26-X000010707-Axios-10-Backpack-Black-Full-Body.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F26-X000010707-Axios-10-Backpack-Black-Detail-1.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F26-X000010707-Axios-10-Backpack-Black-Side.jpg"
-      ],
       "Mongoose": [
         "https://images.arcteryx.com/details/1350x1710/F26-X000010707-Axios-10-Backpack-Mongoose-Front.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000010707-Axios-10-Backpack-Mongoose-Back.jpg",
@@ -10379,6 +10359,19 @@
         "https://images.arcteryx.com/details/1350x1710/F26-X000010707-Axios-10-Backpack-Mongoose-Full-Body.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000010707-Axios-10-Backpack-Mongoose-Detail-1.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000010707-Axios-10-Backpack-Mongoose-Side.jpg"
+      ],
+      "Black": [
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010707-Axios-10-Backpack-Black-Front.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010707-Axios-10-Backpack-Black-Back.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010707-Axios-10-Backpack-Black-Front-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010707-Axios-10-Backpack-Black-Hover.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010707-Axios-10-Backpack-Black-Back-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010707-Axios-10-Backpack-Black-Fabric-Detail.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010707-Axios-10-Backpack-Black-Side-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010707-Axios-10-Backpack-Black-Full-Body.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010707-Axios-10-Backpack-Black-Detail-1.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010707-Axios-10-Backpack-Black-Internal-View.jpg",
+        "https://images.arcteryx.com/details/1350x1710/F26-X000010707-Axios-10-Backpack-Black-Side.jpg"
       ]
     },
     "variants": [
@@ -10392,8 +10385,8 @@
         "gbpListPrice": 120
       },
       {
-        "variantSku": "X000010707002",
-        "color": "Black",
+        "variantSku": "X000010707004",
+        "color": "Mongoose",
         "size": "REG",
         "stockStatus": "InStock",
         "inStock": true,
@@ -10401,8 +10394,8 @@
         "gbpListPrice": 120
       },
       {
-        "variantSku": "X000010707004",
-        "color": "Mongoose",
+        "variantSku": "X000010707002",
+        "color": "Black",
         "size": "REG",
         "stockStatus": "InStock",
         "inStock": true,
@@ -11414,8 +11407,7 @@
     "gbpPrice": 220,
     "gbpListPrice": 220,
     "colours": [
-      "Black",
-      "Nucleus"
+      "Black"
     ],
     "sizes": [
       "SRT",
@@ -11432,18 +11424,6 @@
         "https://images.arcteryx.com/details/1350x1710/F26-X000010705-Aerios-35-Backpack-Black-Side-View.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000010705-Aerios-35-Backpack-Black-Full-Body.jpg",
         "https://images.arcteryx.com/details/1350x1710/F26-X000010705-Aerios-35-Backpack-Black-Side.jpg"
-      ],
-      "Nucleus": [
-        "https://images.arcteryx.com/details/1350x1710/F26-X000010705-Aerios-35-Backpack-Nucleus-Front.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F26-X000010705-Aerios-35-Backpack-Nucleus-Back.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F26-X000010705-Aerios-35-Backpack-Nucleus-Front-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F26-X000010705-Aerios-35-Backpack-Nucleus-Hover.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F26-X000010705-Aerios-35-Backpack-Nucleus-Back-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F26-X000010705-Aerios-35-Backpack-Nucleus-Detail-1.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F26-X000010705-Aerios-35-Backpack-Nucleus-Side-View.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F26-X000010705-Aerios-35-Backpack-Nucleus-Full-Body.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F26-X000010705-Aerios-35-Backpack-Nucleus-Detail-2.jpg",
-        "https://images.arcteryx.com/details/1350x1710/F26-X000010705-Aerios-35-Backpack-Nucleus-Side.jpg"
       ]
     },
     "variants": [
@@ -11471,33 +11451,6 @@
         "size": "REG",
         "stockStatus": "OutOfStock",
         "inStock": false,
-        "gbpPrice": 220,
-        "gbpListPrice": 220
-      },
-      {
-        "variantSku": "X000010705006",
-        "color": "Nucleus",
-        "size": "TALL",
-        "stockStatus": "OutOfStock",
-        "inStock": false,
-        "gbpPrice": 220,
-        "gbpListPrice": 220
-      },
-      {
-        "variantSku": "X000010705004",
-        "color": "Nucleus",
-        "size": "SRT",
-        "stockStatus": "OutOfStock",
-        "inStock": false,
-        "gbpPrice": 220,
-        "gbpListPrice": 220
-      },
-      {
-        "variantSku": "X000010705005",
-        "color": "Nucleus",
-        "size": "REG",
-        "stockStatus": "LowStock",
-        "inStock": true,
         "gbpPrice": 220,
         "gbpListPrice": 220
       }

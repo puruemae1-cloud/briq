@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-11-05T20:49:17Z",
+  "generatedAt": "2026-11-06T13:53:36Z",
   "limit": 4,
   "rails": {
     "luxury": {
       "productIds": [
-        "fl-womens-sport-hoodie-660987",
-        "fl-barbour-international-womens-olivios-lightweight-hooded-long-puffer-jacket-322764",
-        "fl-cp-company-mens-crew-neck-jumper-323921",
-        "fl-weekend-max-mara-womens-tunica-crew-neck-jumper-331860"
+        "ps-mixed-multicolour-organic-cotton-logo-lounge-t-shirts-five-pack",
+        "ps-black-wool-mohair-evening-blazer",
+        "ps-signature-stripe-towelling-lounge-shirt",
+        "ps-a-suit-to-travel-in-womens-soft-purple-tapered-fit-wool-trousers"
       ],
       "brands": [
-        "flannels-(영국현지명품몰)",
-        "flannels-(영국현지명품몰)",
-        "flannels-(영국현지명품몰)",
-        "flannels-(영국현지명품몰)"
+        "paul-smith",
+        "paul-smith",
+        "paul-smith",
+        "paul-smith"
       ]
     },
     "watches": {
@@ -60,16 +60,16 @@
     },
     "accessories": {
       "productIds": [
-        "ps-gather-for-paul-smith-foundation-small-water-jug",
-        "ps-jaques-of-london-giant-tumble-tower",
-        "ps-organic-cotton-patterned-mixed-boxer-briefs-seven-pack",
-        "ps-paul-smith-sunseeker-scented-candle-240g"
+        "ce-4s226cplb-19rh",
+        "ce-4s342cplb-38no",
+        "ce-4s342cplb-19sp",
+        "ce-4s342cplb-01av"
       ],
       "brands": [
-        "paul-smith",
-        "paul-smith",
-        "paul-smith",
-        "paul-smith"
+        "celine",
+        "celine",
+        "celine",
+        "celine"
       ]
     },
     "sports": {
@@ -88,17 +88,17 @@
     }
   },
   "brands": {
+    "celine": [
+      "accessories",
+      "accessories",
+      "accessories",
+      "accessories"
+    ],
     "christopher-ward": [
       "watches",
       "watches",
       "watches",
       "watches"
-    ],
-    "flannels-(영국현지명품몰)": [
-      "luxury",
-      "luxury",
-      "luxury",
-      "luxury"
     ],
     "galvin-green": [
       "sports",
@@ -113,10 +113,10 @@
       "bags"
     ],
     "paul-smith": [
-      "accessories",
-      "accessories",
-      "accessories",
-      "accessories"
+      "luxury",
+      "luxury",
+      "luxury",
+      "luxury"
     ],
     "보테가-베네타": [
       "shoes",
