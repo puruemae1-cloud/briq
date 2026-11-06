@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T20:00:23Z",
+  "generatedAt": "2026-11-06T21:46:53Z",
   "limit": 4,
   "rails": {
     "luxury": {
@@ -60,16 +60,16 @@
     },
     "accessories": {
       "productIds": [
-        "lu-london-undercover-e-gift-card",
-        "lu-city-gent-umbrella",
-        "lu-toyo-steel-t190-toolbox-japanese-indigo",
-        "lu-city-lux-umbrella"
+        "ps-navy-tonal-floral-silk-tie",
+        "ps-signature-stripe-calf-leather-dog-collar-small-medium",
+        "ps-anglepoise-and-paul-smith-type75-table-lamp-edition-four-uk-plug",
+        "ps-jaques-of-london-tonbridge-croquet-set"
       ],
       "brands": [
-        "london-undercover",
-        "london-undercover",
-        "london-undercover",
-        "london-undercover"
+        "paul-smith",
+        "paul-smith",
+        "paul-smith",
+        "paul-smith"
       ]
     },
     "sports": {
@@ -114,17 +114,17 @@
       "luxury",
       "luxury"
     ],
-    "london-undercover": [
-      "accessories",
-      "accessories",
-      "accessories",
-      "accessories"
-    ],
     "mulberry": [
       "bags",
       "bags",
       "bags",
       "bags"
+    ],
+    "paul-smith": [
+      "accessories",
+      "accessories",
+      "accessories",
+      "accessories"
     ]
   },
   "overlaps": {},
