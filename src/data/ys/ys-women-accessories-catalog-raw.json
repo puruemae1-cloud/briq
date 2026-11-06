@@ -1,11 +1,11 @@
 {
-  "scrapedAt": "2026-10-23T18:33:30.062479+00:00",
+  "scrapedAt": "2026-11-06T20:41:51.328557+00:00",
   "brand": "Saint Laurent",
   "hub": "women-acc",
   "category": "accessories",
   "family": "ys-women-accessories",
   "officialNbAlgoliaHits": 202,
-  "officialUnionCount": 213,
+  "officialUnionCount": 217,
   "leaves": [
     {
       "id": "ys-women-acc-all",
@@ -8552,7 +8552,7 @@
         "ys-women-acc-all",
         "ys-women-sunglasses"
       ],
-      "leafId": "ys-women-sunglasses",
+      "leafId": "ys-women-acc-all",
       "gbpPrice": 340.0,
       "inStock": true,
       "compositions": null,
@@ -13375,7 +13375,7 @@
         "ys-women-acc-all",
         "ys-women-scarves-silk"
       ],
-      "leafId": "ys-women-scarves-silk",
+      "leafId": "ys-women-acc-all",
       "gbpPrice": 545.0,
       "inStock": true,
       "compositions": "T 100% WOOL",
@@ -17004,9 +17004,10 @@
       "collections": [
         "saint-laurent-accessories",
         "ys-women-accessories",
-        "ys-women-acc-all"
+        "ys-women-acc-all",
+        "ys-women-scarves-silk"
       ],
-      "leafId": "ys-women-acc-all",
+      "leafId": "ys-women-scarves-silk",
       "gbpPrice": 535.0,
       "inStock": true,
       "compositions": "T 100% WOOL",
@@ -17221,6 +17222,255 @@
         "/products/ys-pdp/7961083y7532500/1.jpg",
         "/products/ys-pdp/7961083y7532500/2.jpg",
         "/products/ys-pdp/7961083y7532500/3.jpg"
+      ]
+    },
+    {
+      "id": "8472203Y0353388",
+      "sku": "8472203Y0353388",
+      "masterId": "8472203Y035",
+      "name": "large square scarf in leopard silk muslin",
+      "color": "Green",
+      "microColor": "OLIVE AND MULTICOLOR",
+      "colorCode": "3388",
+      "url": "https://www.ysl.com/en-gb/pr/large-square-scarf-in-leopard-silk-muslin-8472203Y0353388.html",
+      "path": "pr/large-square-scarf-in-leopard-silk-muslin-8472203Y0353388.html",
+      "collections": [
+        "saint-laurent-accessories",
+        "ys-women-accessories",
+        "ys-women-scarves-silk"
+      ],
+      "leafId": "ys-women-scarves-silk",
+      "gbpPrice": 475.0,
+      "inStock": true,
+      "compositions": "T 100% SILK",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/86bbd319-ca23-404a-881a-ca38eca85cdc/eCom/8472203Y0353388_A.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/10671d97-5f9e-4dea-91a0-065c58b0f246/eCom/8472203Y0353388_B.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/m/4a02aba023c379f7/eCom-8472203Y0353388_H.jpg?v=1"
+      ],
+      "description": "large square scarf decorated with a leopard motif, made with certified silk.",
+      "shortDescription": [
+        "<a href=\"https://www.ysl.com/marketing?cid=6kFUb1D2Ubs9UAhuuzjohS\" target=\"_blank\"><u>CERTIFIED SILK</u></a>",
+        "CASSANDRE at the corner",
+        "smooth trim"
+      ],
+      "productCare": "",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_women_silk_hats",
+        "microCategory": "ysl_micro_women_squared_scarf",
+        "superMicroCategory": "ysl_super_micro_women_square_scarves"
+      },
+      "sizes": [
+        {
+          "id": "814027113",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "8472203Y0353388",
+          "name": "Green",
+          "url": "https://www.ysl.com/en-gb/pr/large-square-scarf-in-leopard-silk-muslin-8472203Y0353388.html",
+          "hex": "1b5c1d"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/8472203y0353388/1.jpg",
+        "/products/ys-pdp/8472203y0353388/2.jpg",
+        "/products/ys-pdp/8472203y0353388/3.jpg"
+      ]
+    },
+    {
+      "id": "7471583Y6681088",
+      "sku": "7471583Y6681088",
+      "masterId": "7471583Y668",
+      "name": "Square scarf in modal and cashmere",
+      "color": "Black",
+      "microColor": "MULTICOLOR",
+      "colorCode": "1088",
+      "url": "https://www.ysl.com/en-gb/pr/square-scarf-in-modal-and-cashmere-7471583Y6681088.html",
+      "path": "pr/square-scarf-in-modal-and-cashmere-7471583Y6681088.html",
+      "collections": [
+        "saint-laurent-accessories",
+        "ys-women-accessories",
+        "ys-women-scarves-silk"
+      ],
+      "leafId": "ys-women-scarves-silk",
+      "gbpPrice": 545.0,
+      "inStock": true,
+      "compositions": "T  90% MODAL T  10% CASHMERE",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/5762df82-3634-4046-9ce3-e54da5597655/eCom/7471583Y6681088_A.jpg?v=4",
+        "https://saint-laurent.dam.kering.com/asset/6e23ac21-4be0-4c39-bd4c-34938a9ccfea/eCom/7471583Y6681088_B.jpg?v=4",
+        "https://saint-laurent.dam.kering.com/m/77b13da0a31d65de/eCom-7471583Y6681088_H.jpg?v=2"
+      ],
+      "description": "Square scarf decorated with a leopard print and the cassandre, made with responsible modal.",
+      "shortDescription": [
+        "<a href=\"$url('search-showcontent','fdid','products')$\" target=\"_blank\"><u>Modal from certified sutainably managed forests </u></a>",
+        "Dimensions: 135 x 135 cm / 53.1 x 53.1\""
+      ],
+      "productCare": "",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_women_accessories",
+        "microCategory": "ysl_micro_women_squared_scarf",
+        "superMicroCategory": "ysl_super_micro_women_scarves"
+      },
+      "sizes": [
+        {
+          "id": "812970792",
+          "value": "U",
+          "displayValue": "YSL U / GB U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "7471583Y6681088",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/square-scarf-in-modal-and-cashmere-7471583Y6681088.html",
+          "hex": "5e0610"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/7471583y6681088/1.jpg",
+        "/products/ys-pdp/7471583y6681088/2.jpg",
+        "/products/ys-pdp/7471583y6681088/3.jpg"
+      ]
+    },
+    {
+      "id": "8733763YU531160",
+      "sku": "8733763YU531160",
+      "masterId": "8733763YU53",
+      "name": "CASSANDRE square scarf in silk and cashmere",
+      "color": "Grey",
+      "microColor": "BLACK AND GREY",
+      "colorCode": "1160",
+      "url": "https://www.ysl.com/en-gb/pr/cassandre-square-scarf-in-silk-and-cashmere-8733763YU531160.html",
+      "path": "pr/cassandre-square-scarf-in-silk-and-cashmere-8733763YU531160.html",
+      "collections": [
+        "saint-laurent-accessories",
+        "ys-women-accessories",
+        "ys-women-scarves-silk"
+      ],
+      "leafId": "ys-women-scarves-silk",
+      "gbpPrice": 865.0,
+      "inStock": true,
+      "compositions": "T  42% SILK T  36% CASHMERE T  22% WOOL",
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/e8ed8dac-8ec2-4ff2-be31-2fab757a36bc/eCom/8733763YU531160_A.jpg?v=3",
+        "https://saint-laurent.dam.kering.com/asset/fcaa8140-bf78-4060-968f-f0fdbf10936a/Original-Ecom/8733763YU531160_Y.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/fd0b8c24-69c3-43c3-90f1-8f40b7e7ca41/eCom/8733763YU531160_B.jpg?v=2"
+      ],
+      "description": "large square scarf with frayed edges and the CASSANDRE at the center.",
+      "shortDescription": [
+        "CASSANDRE signature at the center",
+        "frayed edges",
+        "DIMENSIONS: 135 x 135 cm / 53.1\" x 53.1\""
+      ],
+      "productCare": "",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_men_accessories",
+        "microCategory": "ysl_micro_men_ties_and_silk",
+        "superMicroCategory": "ysl_super_micro_men_ties_and_silk"
+      },
+      "sizes": [
+        {
+          "id": "814397642",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "8733763YU531160",
+          "name": "Grey",
+          "url": "https://www.ysl.com/en-gb/pr/cassandre-square-scarf-in-silk-and-cashmere-8733763YU531160.html",
+          "hex": "807d7a"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/8733763yu531160/1.jpg",
+        "/products/ys-pdp/8733763yu531160/2.jpg",
+        "/products/ys-pdp/8733763yu531160/3.jpg"
+      ]
+    },
+    {
+      "id": "736443Y99561000",
+      "sku": "736443Y99561000",
+      "masterId": "736443Y9956",
+      "name": "SL 596 DUNE",
+      "color": "Black",
+      "microColor": "BLACK",
+      "colorCode": "1000",
+      "url": "https://www.ysl.com/en-gb/pr/sl-596-dune-736443Y99561000.html",
+      "path": "pr/sl-596-dune-736443Y99561000.html",
+      "collections": [
+        "saint-laurent-accessories",
+        "ys-women-accessories",
+        "ys-women-sunglasses"
+      ],
+      "leafId": "ys-women-sunglasses",
+      "gbpPrice": 340.0,
+      "inStock": true,
+      "compositions": null,
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/m/59671904a46f352b/eCom-736443Y99561000_A.jpg?v=4",
+        "https://saint-laurent.dam.kering.com/m/262fc0190e071383/eCom-736443Y99561000_B.jpg?v=3"
+      ],
+      "description": "SUNGLASSES MASK WITH ACETATE AVIATOR FRAMES AND NYLON LENSES, FEATURING A DOUBLE BRIDGE.",
+      "shortDescription": [
+        "SAINT LAURENT ENGRAVED TEMPLES<BR>100% UVA/UVB protection<BR>Frames compatible with corrective lenses<BR>Dimensions: lens 58 mm, bridge 14 mm, temple 145 mm"
+      ],
+      "productCare": "Field of use These sunglasses protect against the risk of eye injuries due to exposure to sunlight (other than during direct observation of the sun). These sunglasses comply with the requirements of EN ISO 12312-1:2022 and its provisions and meet the essential health and safety requirements defined by Regulation (EU) 2016/425. These sunglasses are: not suitable for the direct observation of the sun or viewing of solar eclipses; not designed to protect against artificial radiation sources (e.g. solaria); not suitable for eye protection against mechanical impact hazards; not suitable for driving in twilight or at night. The parts of these sunglasses in direct contact with the skin do not cause irritation or other conditions in people who do not suffer from allergies or skin diseases. Adverse contact reactions to materials and treatments used in particularly sensitive or allergic subjects cannot be ruled out. Cleaning For cleaning, use a damp cloth and a mild neutral detergent, dry with a soft clean cloth. Avoid using solvents (e.g., alcohol and acetone) and aggressive chemical cleaners that can affect the functionality of the eyewear. In case of contact with agents such as salt water (seawater), swimming pool water, chemical products such as make-up, hairspray, sun lotions, and insect repellents, we recommend that you immediately remove such agents using a soft clean cloth. Maintenance and Storage The durability of these sunglasses depends on proper care and frequency of use. These sunglasses should be stored at a temperature between -10°C and +35°C, in the case provided. Avoid exposure to direct sunlight in unconditioned indoor environments (e.g. car dashboard), as the temperatures reached under these conditions may damage the functionality of the eyewear. Use only original accessories and spare parts. Marking The model identifier is marked on the frame. The filter category is marked on the frame, and it is indicated in the form of a number preceded by the wording ‘Cat.’, as defined by EN ISO 12312-1:2022 and shown in the table below. The presence of the letter 'P' in the filter category indicates that the lens is polarized. The presence of two numbers indicates that the lens is photochromic; these numbers identify the filter category of the lens in its faded and darkened state respectively. If the purchased sunglasses come with a clip-on, the filter category indicated on it refers to the result of the light transmission of the sunglass filter mounted on the sunglasses combined with that of the sunglass filter mounted on the clip-on.",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_men_accessories",
+        "microCategory": "ysl_micro_men_sunglasses",
+        "superMicroCategory": "ysl_super_micro_men_sunglasses"
+      },
+      "sizes": [
+        {
+          "id": "812858094",
+          "value": "U",
+          "displayValue": "YSL U / GB U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "736443Y99562345",
+          "name": "Brown",
+          "url": "https://www.ysl.com/en-gb/pr/sl-596-dune-736443Y99562345.html",
+          "hex": "693818"
+        },
+        {
+          "id": "736443Y99563305",
+          "name": "Green",
+          "url": "https://www.ysl.com/en-gb/pr/sl-596-dune-736443Y99563305.html",
+          "hex": "1b5c1d"
+        },
+        {
+          "id": "736443Y99562336",
+          "name": "Brown",
+          "url": "https://www.ysl.com/en-gb/pr/sl-596-dune-736443Y99562336.html",
+          "hex": "4F1701"
+        },
+        {
+          "id": "736443Y99561000",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/sl-596-dune-736443Y99561000.html",
+          "hex": "000000"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/736443y99561000/1.jpg",
+        "/products/ys-pdp/736443y99561000/2.jpg"
       ]
     }
   ]

@@ -1,11 +1,11 @@
 {
-  "scrapedAt": "2026-10-23T18:28:14.398632+00:00",
+  "scrapedAt": "2026-11-06T20:38:43.139855+00:00",
   "brand": "Saint Laurent",
   "hub": "men-acc",
   "category": "accessories",
   "family": "ys-men-accessories",
-  "officialNbAlgoliaHits": 149,
-  "officialUnionCount": 153,
+  "officialNbAlgoliaHits": 147,
+  "officialUnionCount": 159,
   "leaves": [
     {
       "id": "ys-men-acc-all",
@@ -7516,85 +7516,6 @@
       ]
     },
     {
-      "id": "855807Y10008143",
-      "sku": "855807Y10008143",
-      "masterId": "855807Y1000",
-      "name": "SAINT LAURENT thin cuff in sterling silver",
-      "color": "Silver",
-      "microColor": "AGED SILVER",
-      "colorCode": "8143",
-      "url": "https://www.ysl.com/en-gb/pr/saint-laurent-thin-cuff-in-sterling-silver-855807Y10008143.html",
-      "path": "pr/saint-laurent-thin-cuff-in-sterling-silver-855807Y10008143.html",
-      "collections": [
-        "saint-laurent-accessories",
-        "ys-men-accessories",
-        "ys-men-acc-all",
-        "ys-men-jewelry"
-      ],
-      "leafId": "ys-men-jewelry",
-      "gbpPrice": 400.0,
-      "inStock": true,
-      "compositions": null,
-      "imageUrls": [
-        "https://saint-laurent.dam.kering.com/asset/0cc4d60c-3819-4811-8dd3-491807f6b511/eCom/855807Y10008143_A.jpg?v=2",
-        "https://saint-laurent.dam.kering.com/asset/72c2b858-a05d-4d42-933e-52c93676e04b/eCom/855807Y10008143_B.jpg?v=2",
-        "https://saint-laurent.dam.kering.com/asset/0f35ef78-ad55-4cb4-921c-4f0e9b36a117/eCom/855807Y10008143_C.jpg?v=2",
-        "https://saint-laurent.dam.kering.com/asset/56df6e65-ec47-4f14-be11-dbeeec46e76f/eCom/855807Y10008143_D.jpg?v=2",
-        "https://saint-laurent.dam.kering.com/asset/e19e0d2a-b580-4010-83eb-5bbf2bad91ad/eCom/855807Y10008143_E.jpg?v=2"
-      ],
-      "description": "thin open cuff bracelet with SAINT LAURENT engraving at the center, featuring nub terminals.",
-      "shortDescription": [
-        "open cuff bracelet",
-        "SAINT LAURENT engraving",
-        "width: 0.3 cm / 0.1\"",
-        "S: 5.5 x 4.6 x 2.8 cm / 2.2\" x 1.8\" x 1.1\"",
-        "M: 5.8 x 4.6 x 3 cm / 2.3\" x 1.8\" x 1.2\"",
-        "L: 6.5 x 5.5 x 3.2 cm / 2.6\" x 2.2\" x 1.3\""
-      ],
-      "productCare": "",
-      "madeIn": "ITALY",
-      "categories": {
-        "macroCategory": "ysl_macro_men_accessories",
-        "microCategory": "ysl_micro_men_jewlery",
-        "superMicroCategory": "ysl_super_micro_men_jewlery"
-      },
-      "sizes": [
-        {
-          "id": "814172837",
-          "value": "S",
-          "displayValue": "YSL S / GB S",
-          "inStock": true
-        },
-        {
-          "id": "814150697",
-          "value": "M",
-          "displayValue": "YSL M / GB M",
-          "inStock": true
-        },
-        {
-          "id": "814156101",
-          "value": "L",
-          "displayValue": "YSL L / GB L",
-          "inStock": true
-        }
-      ],
-      "colors": [
-        {
-          "id": "855807Y10008143",
-          "name": "Silver",
-          "url": "https://www.ysl.com/en-gb/pr/saint-laurent-thin-cuff-in-sterling-silver-855807Y10008143.html",
-          "hex": "CDD0D1"
-        }
-      ],
-      "localImages": [
-        "/products/ys-pdp/855807y10008143/1.jpg",
-        "/products/ys-pdp/855807y10008143/2.jpg",
-        "/products/ys-pdp/855807y10008143/3.jpg",
-        "/products/ys-pdp/855807y10008143/4.jpg",
-        "/products/ys-pdp/855807y10008143/5.jpg"
-      ]
-    },
-    {
       "id": "861459AAEKF1000",
       "sku": "861459AAEKF1000",
       "masterId": "861459AAEKF",
@@ -11446,6 +11367,503 @@
       "localImages": [
         "/products/ys-pdp/a006cuy99567405/1.jpg",
         "/products/ys-pdp/a006cuy99567405/2.jpg"
+      ]
+    },
+    {
+      "id": "856976Y15007005",
+      "sku": "856976Y15007005",
+      "masterId": "856976Y1500",
+      "name": "ridge cuff in metal",
+      "color": "Gold",
+      "microColor": "PATINATED GOLD",
+      "colorCode": "7005",
+      "url": "https://www.ysl.com/en-gb/pr/ridge-cuff-in-metal-856976Y15007005.html",
+      "path": "pr/ridge-cuff-in-metal-856976Y15007005.html",
+      "collections": [
+        "saint-laurent-accessories",
+        "ys-men-accessories",
+        "ys-men-acc-all",
+        "ys-men-jewelry"
+      ],
+      "leafId": "ys-men-jewelry",
+      "gbpPrice": 490.0,
+      "inStock": true,
+      "compositions": null,
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/892c0a98-25d4-448b-baba-efe41365b4cc/eCom/856976Y15007005_A.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/b7928e6e-1701-4758-992c-75e23f00cb62/eCom/856976Y15007005_B.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/227bb000-8069-4f4b-abc8-a2c6853a499b/eCom/856976Y15007005_C.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/f8ee5538-23bc-43ca-bb01-2d2403495579/eCom/856976Y15007005_D.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/21ad61b7-b4ae-4ec4-9b72-839e38936eef/eCom/856976Y15007005_E.jpg?v=1"
+      ],
+      "description": "open cuff bracelet with a sharp central ridge.",
+      "shortDescription": [
+        "open cuff bracelet",
+        "SAINT LAURENT engraving",
+        "width: 1.7 cm / 0.7\"",
+        "S: 5.5 x 4.6 x 2.8 cm / 2.2\" x 1.8\" x 1.1\"",
+        "M: 5.8 x 4.6 x 3 cm / 2.3\" x 1.8\" x 1.2\"",
+        "L: 6.5 x 5.5 x 3.2 cm / 2.6\" x 2.2\" x 1.3\""
+      ],
+      "productCare": "",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_men_accessories",
+        "microCategory": "ysl_micro_men_jewlery",
+        "superMicroCategory": "ysl_super_micro_men_jewlery"
+      },
+      "sizes": [
+        {
+          "id": "814172782",
+          "value": "S",
+          "displayValue": "YSL S / GB S",
+          "inStock": true
+        },
+        {
+          "id": "814150699",
+          "value": "M",
+          "displayValue": "YSL M / GB M",
+          "inStock": true
+        },
+        {
+          "id": "814172783",
+          "value": "L",
+          "displayValue": "YSL L / GB L",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "856976Y15008142",
+          "name": "Silver",
+          "url": "https://www.ysl.com/en-gb/pr/ridge-cuff-in-metal-856976Y15008142.html",
+          "hex": "CDD0D1"
+        },
+        {
+          "id": "856976Y15007005",
+          "name": "Gold",
+          "url": "https://www.ysl.com/en-gb/pr/ridge-cuff-in-metal-856976Y15007005.html",
+          "hex": "edda0c"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/856976y15007005/1.jpg",
+        "/products/ys-pdp/856976y15007005/2.jpg",
+        "/products/ys-pdp/856976y15007005/3.jpg",
+        "/products/ys-pdp/856976y15007005/4.jpg",
+        "/products/ys-pdp/856976y15007005/5.jpg"
+      ]
+    },
+    {
+      "id": "A008QPY99651000",
+      "sku": "A008QPY99651000",
+      "masterId": "A008QPY9965",
+      "name": "SL 972",
+      "color": "Black",
+      "microColor": "BLACK",
+      "colorCode": "1000",
+      "url": "https://www.ysl.com/en-gb/pr/sl-972-A008QPY99651000.html",
+      "path": "pr/sl-972-A008QPY99651000.html",
+      "collections": [
+        "saint-laurent-accessories",
+        "ys-men-accessories",
+        "ys-men-sunglasses"
+      ],
+      "leafId": "ys-men-sunglasses",
+      "gbpPrice": 340.0,
+      "inStock": true,
+      "compositions": null,
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/b371163b-a31c-4897-886b-3148a21f56c3/eCom/A008QPY99651000_A.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/84144b29-b044-4420-858e-cc56d46407c0/eCom/A008QPY99651000_B.jpg?v=1"
+      ],
+      "description": "Aviator sunglasses with metal injection frames and nylon lenses, featuring a double bridge.",
+      "shortDescription": [
+        "100% UVA/UVB PROTECTION",
+        "FRAMES NOT COMPATIBLE WITH PRESCRIPTION LENSES",
+        "metal nose pads",
+        "lens: 59 mm / 2.3\"",
+        "bridge: 14 mm / 0.6\"",
+        "temple: 145 mm / 5.7\""
+      ],
+      "productCare": "",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_women_accessories",
+        "microCategory": "ysl_micro_women_sunglasses",
+        "superMicroCategory": "ysl_super_micro_women_sunglasses"
+      },
+      "sizes": [
+        {
+          "id": "814442992",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "A008QPY99658000",
+          "name": "Gold",
+          "url": "https://www.ysl.com/en-gb/pr/sl-972-A008QPY99658000.html",
+          "hex": "edda0c"
+        },
+        {
+          "id": "A008QPY99658103",
+          "name": "Silver",
+          "url": "https://www.ysl.com/en-gb/pr/sl-972-A008QPY99658103.html",
+          "hex": "CDD0D1"
+        },
+        {
+          "id": "A008QPY99651000",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/sl-972-A008QPY99651000.html",
+          "hex": "000000"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/a008qpy99651000/1.jpg",
+        "/products/ys-pdp/a008qpy99651000/2.jpg"
+      ]
+    },
+    {
+      "id": "A008QPY99658000",
+      "sku": "A008QPY99658000",
+      "masterId": "A008QPY9965",
+      "name": "SL 972",
+      "color": "Gold",
+      "microColor": "GOLD AND GREY",
+      "colorCode": "8000",
+      "url": "https://www.ysl.com/en-gb/pr/sl-972-A008QPY99658000.html",
+      "path": "pr/sl-972-A008QPY99658000.html",
+      "collections": [
+        "saint-laurent-accessories",
+        "ys-men-accessories",
+        "ys-men-sunglasses"
+      ],
+      "leafId": "ys-men-sunglasses",
+      "gbpPrice": 340.0,
+      "inStock": true,
+      "compositions": null,
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/4f086487-168c-4f6a-8ee8-f4f049037bb1/eCom/A008QPY99658000_A.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/eed2e46e-19f9-461f-bfd5-d917fdb739f5/Original-Ecom/A008QPY99658000_Y.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/89f14323-6aa0-4abe-8973-77ce7cad1347/eCom/A008QPY99658000_B.jpg?v=1"
+      ],
+      "description": "Aviator sunglasses with metal injection frames and nylon lenses, featuring a double bridge.",
+      "shortDescription": [
+        "100% UVA/UVB PROTECTION",
+        "FRAMES NOT COMPATIBLE WITH PRESCRIPTION LENSES",
+        "metal nose pads",
+        "lens: 59 mm / 2.3\"",
+        "bridge: 14 mm / 0.6\"",
+        "temple: 145 mm / 5.7\""
+      ],
+      "productCare": "",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_women_accessories",
+        "microCategory": "ysl_micro_women_sunglasses",
+        "superMicroCategory": "ysl_super_micro_women_sunglasses"
+      },
+      "sizes": [
+        {
+          "id": "814442994",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "A008QPY99658000",
+          "name": "Gold",
+          "url": "https://www.ysl.com/en-gb/pr/sl-972-A008QPY99658000.html",
+          "hex": "edda0c"
+        },
+        {
+          "id": "A008QPY99658103",
+          "name": "Silver",
+          "url": "https://www.ysl.com/en-gb/pr/sl-972-A008QPY99658103.html",
+          "hex": "CDD0D1"
+        },
+        {
+          "id": "A008QPY99651000",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/sl-972-A008QPY99651000.html",
+          "hex": "000000"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/a008qpy99658000/1.jpg",
+        "/products/ys-pdp/a008qpy99658000/2.jpg",
+        "/products/ys-pdp/a008qpy99658000/3.jpg"
+      ]
+    },
+    {
+      "id": "A008QPY99658103",
+      "sku": "A008QPY99658103",
+      "masterId": "A008QPY9965",
+      "name": "SL 972",
+      "color": "Silver",
+      "microColor": "SILVER AND BLACK",
+      "colorCode": "8103",
+      "url": "https://www.ysl.com/en-gb/pr/sl-972-A008QPY99658103.html",
+      "path": "pr/sl-972-A008QPY99658103.html",
+      "collections": [
+        "saint-laurent-accessories",
+        "ys-men-accessories",
+        "ys-men-sunglasses"
+      ],
+      "leafId": "ys-men-sunglasses",
+      "gbpPrice": 340.0,
+      "inStock": true,
+      "compositions": null,
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/f4faf3be-3a32-4036-8445-13ec65cf65bf/eCom/A008QPY99658103_A.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/8d6856a3-b50b-4399-93f8-806111a036b6/eCom/A008QPY99658103_B.jpg?v=1"
+      ],
+      "description": "Aviator sunglasses with metal injection frames and nylon lenses, featuring a double bridge.",
+      "shortDescription": [
+        "100% UVA/UVB PROTECTION",
+        "FRAMES NOT COMPATIBLE WITH PRESCRIPTION LENSES",
+        "metal nose pads",
+        "lens: 59 mm / 2.3\"",
+        "bridge: 14 mm / 0.6\"",
+        "temple: 145 mm / 5.7\""
+      ],
+      "productCare": "",
+      "madeIn": "ITALY",
+      "categories": {
+        "macroCategory": "ysl_macro_women_accessories",
+        "microCategory": "ysl_micro_women_sunglasses",
+        "superMicroCategory": "ysl_super_micro_women_sunglasses"
+      },
+      "sizes": [
+        {
+          "id": "814442993",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "A008QPY99658000",
+          "name": "Gold",
+          "url": "https://www.ysl.com/en-gb/pr/sl-972-A008QPY99658000.html",
+          "hex": "edda0c"
+        },
+        {
+          "id": "A008QPY99658103",
+          "name": "Silver",
+          "url": "https://www.ysl.com/en-gb/pr/sl-972-A008QPY99658103.html",
+          "hex": "CDD0D1"
+        },
+        {
+          "id": "A008QPY99651000",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/sl-972-A008QPY99651000.html",
+          "hex": "000000"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/a008qpy99658103/1.jpg",
+        "/products/ys-pdp/a008qpy99658103/2.jpg"
+      ]
+    },
+    {
+      "id": "803743Y99691021",
+      "sku": "803743Y99691021",
+      "masterId": "803743Y9969",
+      "name": "SL 750",
+      "color": "Black",
+      "microColor": "BLACK",
+      "colorCode": "1021",
+      "url": "https://www.ysl.com/en-gb/pr/sl-750-803743Y99691021.html",
+      "path": "pr/sl-750-803743Y99691021.html",
+      "collections": [
+        "saint-laurent-accessories",
+        "ys-men-accessories",
+        "ys-men-sunglasses"
+      ],
+      "leafId": "ys-men-sunglasses",
+      "gbpPrice": 425.0,
+      "inStock": true,
+      "compositions": null,
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/d1429854-eded-4b6a-9646-0754740ea764/eCom/803743Y99691021_A.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/2c00e5d5-af6d-4706-b062-402b626d31bc/eCom/803743Y99691021_B.jpg?v=1"
+      ],
+      "description": "Shield sunglasses with metal aviator frames and wrap-around nylon lenses, featuring a double bridge.",
+      "shortDescription": [
+        "100% UVA/UVB PROTECTION",
+        "FRAMES NOT COMPATIBLE WITH PRESCRIPTION LENSES",
+        "metal nose pads",
+        "lens: 69 mm / 2.7\"",
+        "bridge: 13 mm / 0.5\"",
+        "temple: 130 mm / 5.1\""
+      ],
+      "productCare": "",
+      "madeIn": "JAPAN",
+      "categories": {
+        "macroCategory": "ysl_macro_women_accessories",
+        "microCategory": "ysl_micro_women_sunglasses",
+        "superMicroCategory": "ysl_super_micro_women_sunglasses"
+      },
+      "sizes": [
+        {
+          "id": "814442991",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "803743Y99691021",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/sl-750-803743Y99691021.html",
+          "hex": "000000"
+        },
+        {
+          "id": "803743Y99698100",
+          "name": "Silver",
+          "url": "https://www.ysl.com/en-gb/pr/sl-750-803743Y99698100.html",
+          "hex": "BDBCB9"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/803743y99691021/1.jpg",
+        "/products/ys-pdp/803743y99691021/2.jpg"
+      ]
+    },
+    {
+      "id": "803743Y99028166",
+      "sku": "803743Y99028166",
+      "masterId": "803743Y9902",
+      "name": "SL 750",
+      "color": "Silver",
+      "microColor": "SILVER AND BROWN",
+      "colorCode": "8166",
+      "url": "https://www.ysl.com/en-gb/pr/sl-750-803743Y99028166.html",
+      "path": "pr/sl-750-803743Y99028166.html",
+      "collections": [
+        "saint-laurent-accessories",
+        "ys-men-accessories",
+        "ys-men-sunglasses"
+      ],
+      "leafId": "ys-men-sunglasses",
+      "gbpPrice": 425.0,
+      "inStock": true,
+      "compositions": null,
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/4e1de74b-df36-4e75-ad86-d3ff311d9fa6/eCom/803743Y99028166_A.jpg?v=2",
+        "https://saint-laurent.dam.kering.com/asset/87f40b47-412f-4ad7-be45-91e7bb60876e/Original-Ecom/803743Y99028166_Y.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/f4e1a7c6-60fe-4863-9e1c-28615c0eca59/eCom/803743Y99028166_B.jpg?v=2"
+      ],
+      "description": "Shield sunglasses with metal aviator frames and wrap-around nylon lenses, featuring a double bridge.",
+      "shortDescription": [
+        "100% UVA/UVB PROTECTION",
+        "FRAMES NOT COMPATIBLE WITH PRESCRIPTION LENSES",
+        "metal nose pads",
+        "lens: 69 mm / 2.7\"",
+        "bridge: 13 mm / 0.5\"",
+        "temple: 130 mm / 5.1\""
+      ],
+      "productCare": "",
+      "madeIn": "JAPAN",
+      "categories": {
+        "macroCategory": "ysl_macro_women_accessories",
+        "microCategory": "ysl_micro_women_sunglasses",
+        "superMicroCategory": "ysl_super_micro_women_sunglasses"
+      },
+      "sizes": [
+        {
+          "id": "814442989",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "803743Y99028166",
+          "name": "Silver",
+          "url": "https://www.ysl.com/en-gb/pr/sl-750-803743Y99028166.html",
+          "hex": "CDD0D1"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/803743y99028166/1.jpg",
+        "/products/ys-pdp/803743y99028166/2.jpg",
+        "/products/ys-pdp/803743y99028166/3.jpg"
+      ]
+    },
+    {
+      "id": "803743Y99698100",
+      "sku": "803743Y99698100",
+      "masterId": "803743Y9969",
+      "name": "SL 750",
+      "color": "Silver",
+      "microColor": "SILVER AND GREY",
+      "colorCode": "8100",
+      "url": "https://www.ysl.com/en-gb/pr/sl-750-803743Y99698100.html",
+      "path": "pr/sl-750-803743Y99698100.html",
+      "collections": [
+        "saint-laurent-accessories",
+        "ys-men-accessories",
+        "ys-men-sunglasses"
+      ],
+      "leafId": "ys-men-sunglasses",
+      "gbpPrice": 425.0,
+      "inStock": true,
+      "compositions": null,
+      "imageUrls": [
+        "https://saint-laurent.dam.kering.com/asset/80f83060-e675-4926-af82-b902788aff02/eCom/803743Y99698100_A.jpg?v=3",
+        "https://saint-laurent.dam.kering.com/asset/f451eb1d-8937-445c-b803-9a90367ead40/Original-Ecom/803743Y99698100_Y.jpg?v=1",
+        "https://saint-laurent.dam.kering.com/asset/72f3cfad-276e-4453-868f-c5174c01b1b9/eCom/803743Y99698100_B.jpg?v=3"
+      ],
+      "description": "shield sunglasses with metal aviator frames and wrap-around nylon lenses, featuring a double bridge.",
+      "shortDescription": [
+        "100% UVA/UVB PROTECTION",
+        "FRAMES NOT COMPATIBLE WITH PRESCRIPTION LENSES",
+        "metal nose pads",
+        "Dimensions: lens 69 mm / 2,7\", bridge 13 mm / 0,5\", temple 130 mm / 5,1\""
+      ],
+      "productCare": "Field of use These sunglasses protect against the risk of eye injuries due to exposure to sunlight (other than during direct observation of the sun). These sunglasses comply with the requirements of EN ISO 12312-1:2022 and its provisions and meet the essential health and safety requirements defined by Regulation (EU) 2016/425. These sunglasses are: not suitable for the direct observation of the sun or viewing of solar eclipses; not designed to protect against artificial radiation sources (e.g. solaria); not suitable for eye protection against mechanical impact hazards; not suitable for driving in twilight or at night. The parts of these sunglasses in direct contact with the skin do not cause irritation or other conditions in people who do not suffer from allergies or skin diseases. Adverse contact reactions to materials and treatments used in particularly sensitive or allergic subjects cannot be ruled out. Cleaning For cleaning, use a damp cloth and a mild neutral detergent, dry with a soft clean cloth. Avoid using solvents (e.g., alcohol and acetone) and aggressive chemical cleaners that can affect the functionality of the eyewear. In case of contact with agents such as salt water (seawater), swimming pool water, chemical products such as make-up, hairspray, sun lotions, and insect repellents, we recommend that you immediately remove such agents using a soft clean cloth. Maintenance and Storage The durability of these sunglasses depends on proper care and frequency of use. These sunglasses should be stored at a temperature between -10°C and +35°C, in the case provided. Avoid exposure to direct sunlight in unconditioned indoor environments (e.g. car dashboard), as the temperatures reached under these conditions may damage the functionality of the eyewear. Use only original accessories and spare parts. Marking The model identifier is marked on the frame. The filter category is marked on the frame, and it is indicated in the form of a number preceded by the wording ‘Cat.’, as defined by EN ISO 12312-1:2022 and shown in the table below. The presence of the letter 'P' in the filter category indicates that the lens is polarized. The presence of two numbers indicates that the lens is photochromic; these numbers identify the filter category of the lens in its faded and darkened state respectively. If the purchased sunglasses come with a clip-on, the filter category indicated on it refers to the result of the light transmission of the sunglass filter mounted on the sunglasses combined with that of the sunglass filter mounted on the clip-on.",
+      "madeIn": "JAPAN",
+      "categories": {
+        "macroCategory": "ysl_macro_unisex_sunglasses",
+        "microCategory": "ysl_micro_men_classic_sunglasses",
+        "superMicroCategory": "ysl_super_micro_men_sunglasses"
+      },
+      "sizes": [
+        {
+          "id": "813587863",
+          "value": "U",
+          "displayValue": "YSL U / GB U",
+          "inStock": true
+        }
+      ],
+      "colors": [
+        {
+          "id": "803743Y99691021",
+          "name": "Black",
+          "url": "https://www.ysl.com/en-gb/pr/sl-750-803743Y99691021.html",
+          "hex": "000000"
+        },
+        {
+          "id": "803743Y99698100",
+          "name": "Silver",
+          "url": "https://www.ysl.com/en-gb/pr/sl-750-803743Y99698100.html",
+          "hex": "BDBCB9"
+        }
+      ],
+      "localImages": [
+        "/products/ys-pdp/803743y99698100/1.jpg",
+        "/products/ys-pdp/803743y99698100/2.jpg",
+        "/products/ys-pdp/803743y99698100/3.jpg"
       ]
     }
   ]
