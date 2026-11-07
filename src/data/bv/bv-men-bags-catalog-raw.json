@@ -1,7 +1,7 @@
 {
   "hub": "men-bags",
   "category": "bags",
-  "scrapedAt": "2026-11-06T23:12:35.280960+00:00",
+  "scrapedAt": "2026-11-07T16:52:31.172801+00:00",
   "leaves": [
     "bv-men-bags-intrecciato",
     "bv-men-bags-diago",
@@ -1875,7 +1875,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-duffle-black-781053V2HL18803.html",
       "gbpPrice": 4370.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Canvas",
         "Colour: Black",
@@ -1917,7 +1917,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 4370.0,
           "listGbpPrice": null
         }
@@ -2648,7 +2648,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-zipped-north-south-tote-fondant-815783V2HL12145.html",
       "gbpPrice": 3210.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Canvas",
         "Colour: Fondant",
@@ -2687,7 +2687,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 3210.0,
           "listGbpPrice": null
         }
@@ -5793,7 +5793,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/veneto-messenger-black-843836V5KD08803.html",
       "gbpPrice": 2770.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Suede",
         "Colour: Black",
@@ -5834,7 +5834,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 2770.0,
           "listGbpPrice": null
         }
@@ -11584,7 +11584,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/large-barbara-tote-espresso-868114V6G102094.html",
       "gbpPrice": 5970.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Calfskin",
         "Colour: Espresso",
@@ -11628,7 +11628,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 5970.0,
           "listGbpPrice": null
         }
