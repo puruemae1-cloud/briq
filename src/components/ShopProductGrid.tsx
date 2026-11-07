@@ -53,7 +53,7 @@ export function ShopProductGrid({
   startOffset = 0,
 }: {
   products: Product[];
-  /** SSR page-2 cards — first "더보기" is instant. */
+  /** Optional SSR page-2 cards. Prefer empty — keeps /shop HTML small for crawlers. */
   nextPageProducts?: Product[];
   totalCount: number;
   pageSize?: number;

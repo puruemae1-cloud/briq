@@ -44,21 +44,6 @@ function preferredMediaOrigin(origin: string): string {
   return clean;
 }
 
-
-/**
- * Encode each path segment so catalog paths with spaces or literal `%XX`
- * folder names (e.g. `lumi%C3%A8re`) resolve on jsDelivr / raw GitHub.
- * Do not decode first — those `%` characters are part of the folder name.
- */
-function encodeMediaPath(src: string): string {
-  if (!src.startsWith("/")) return src;
-  return src
-    .split("/")
-    .map((seg, i) => (i === 0 && seg === "" ? "" : encodeURIComponent(seg)))
-    .join("/");
-}
-
-
 /**
  * On Vercel, heavy `/products/*` and `/banners/*` assets are not shipped in the
  * deploy. Point the browser at the GitHub `product-images` tag so image bytes
@@ -73,7 +58,7 @@ export function mediaUrl(src: string | undefined | null): string {
   const origin = preferredMediaOrigin(process.env.NEXT_PUBLIC_MEDIA_ORIGIN || "");
   if (!origin) return src;
   if (src.startsWith("/products/") || src.startsWith("/banners/")) {
-    let url = `${origin}${encodeMediaPath(src)}`;
+    let url = `${origin}${src}`;
     if (src.startsWith("/banners/")) {
       const v = bannerMediaVersion();
       if (v) url += `?v=${encodeURIComponent(v)}`;
@@ -114,7 +99,7 @@ export function mediaUrlFallback(src: string | undefined | null): string {
   if (!origin) return "";
   const alt =
     origin.includes("jsdelivr") ? MEDIA_ORIGIN_FALLBACK : MEDIA_ORIGIN_PRIMARY;
-  let url = `${alt}${encodeMediaPath(src)}`;
+  let url = `${alt}${src}`;
   if (src.startsWith("/banners/")) {
     const v = bannerMediaVersion();
     if (v) url += `?v=${encodeURIComponent(v)}`;
@@ -145,20 +130,12 @@ export function resolveProductImage(
   return variantImage?.trim() || productImage;
 }
 
-/** Skip Finder duplicate copies like `1 2.jpg` / `3 3.webp`. */
-export function isUsableCatalogImage(src: string): boolean {
-  const name = src.split("/").pop() || "";
-  if (!name) return false;
-  if (/\s/.test(name)) return false;
-  return true;
-}
-
 function uniqueGallery(paths: Array<string | undefined | null>): string[] {
   const out: string[] = [];
   const seen = new Set<string>();
   for (const raw of paths) {
     const src = raw?.trim();
-    if (!src || !isUsableCatalogImage(src) || seen.has(src)) continue;
+    if (!src || seen.has(src)) continue;
     seen.add(src);
     out.push(src);
   }
@@ -198,7 +175,7 @@ function colourwayGallery(product: Product): string[] {
  * Gallery for shop cards — primary packshot first, then hover + remaining frames.
  * Caps length so PLP carousels stay light.
  */
-export function resolveCardGallery(product: Product, limit = 8): string[] {
+export function resolveCardGallery(product: Product, limit = 4): string[] {
   return colourwayGallery(product).slice(0, Math.max(1, limit));
 }
 

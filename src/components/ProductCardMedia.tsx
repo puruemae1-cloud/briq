@@ -130,7 +130,8 @@ export function ProductCardMedia({
   soldOut = false,
   children,
 }: ProductCardMediaProps) {
-  const gallery = resolveCardGallery(product, 8);
+  // Cap frames so PLP RSC/HTML stays small for crawlers (Naver download size).
+  const gallery = resolveCardGallery(product, 4);
   const slides = soldOut ? gallery.slice(0, 1) : gallery;
   const multi = slides.length > 1;
   const [index, setIndex] = useState(0);

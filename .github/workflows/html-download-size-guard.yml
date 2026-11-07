@@ -1,0 +1,35 @@
+name: HTML download size guard
+
+on:
+  schedule:
+    - cron: "20 */6 * * *"
+  workflow_dispatch:
+  deployment_status:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: html-download-size-guard
+  cancel-in-progress: true
+
+jobs:
+  check:
+    if: >-
+      github.event_name != 'deployment_status' ||
+      (github.event.deployment_status.state == 'success' &&
+       github.event.deployment.environment == 'Production')
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Wait for edge to pick up deploy
+        if: github.event_name == 'deployment_status'
+        run: sleep 45
+      - name: Check uncompressed HTML budgets
+        env:
+          SITE: https://www.briq.kr
+        run: python3 scripts/check-html-download-size.py

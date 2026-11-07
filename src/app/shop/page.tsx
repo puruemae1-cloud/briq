@@ -192,7 +192,8 @@ export default async function ShopPage({ searchParams }: Props) {
   );
 
   // Never ship the full filtered catalogue to the client — mobile soft-nav
-  // OOMs on category-wide PLPs. Page 1 + SSR page 2 for instant "더보기".
+  // OOMs on category-wide PLPs. SSR page 1 only; "더보기" loads via API
+  // (page-2 SSR doubled /shop HTML ~300KB and inflated Naver download size).
   const list = getShopProductList({
     category,
     sub,
@@ -200,11 +201,6 @@ export default async function ShopPage({ searchParams }: Props) {
     sort: params.sort,
   });
   const pageProducts = sliceShopPage(list, offset, SHOP_PAGE_SIZE).map(toCardProduct);
-  const nextPageProducts = sliceShopPage(
-    list,
-    offset + SHOP_PAGE_SIZE,
-    SHOP_PAGE_SIZE,
-  ).map(toCardProduct);
   const nextOffset = offset + SHOP_PAGE_SIZE;
   const nextHref =
     nextOffset < list.length
@@ -526,7 +522,6 @@ export default async function ShopPage({ searchParams }: Props) {
             <ShopProductGrid
               key={`${category}-${sub ?? ""}-${sort}-${params.q ?? ""}-${offset}`}
               products={pageProducts}
-              nextPageProducts={nextPageProducts}
               totalCount={list.length}
               pageSize={SHOP_PAGE_SIZE}
               query={{

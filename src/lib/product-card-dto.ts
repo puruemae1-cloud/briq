@@ -1,7 +1,14 @@
 import type { Product } from "@/data/product-types";
 
-/** Slim product for PLP/cards — omit heavy PDP-only fields. */
+/** Max gallery frames serialized into PLP/card HTML (RSC flight). */
+export const CARD_GALLERY_LIMIT = 2;
+
+/**
+ * Slim product for PLP/cards — omit heavy PDP-only fields.
+ * Serialized into every shop/home HTML response Yeti downloads, so keep tiny.
+ */
 export function toCardProduct(p: Product): Product {
+  const images = p.images?.slice(0, CARD_GALLERY_LIMIT);
   return {
     id: p.id,
     name: p.name,
@@ -11,37 +18,25 @@ export function toCardProduct(p: Product): Product {
     compareAtPrice: p.compareAtPrice,
     category: p.category,
     subcategory: p.subcategory,
-    tags: p.tags,
     image: p.image,
-    images: p.images?.slice(0, 8),
+    images,
     hoverImage: p.hoverImage,
-    accent: p.accent,
     badge: p.badge,
-    sku: p.sku,
     inStock: p.inStock,
     registeredAt: p.registeredAt,
     newBadgeAt: p.newBadgeAt,
-    updatedAt: p.updatedAt,
-    editTier: p.editTier,
     shopColorKey: p.shopColorKey,
     cwCollections: p.cwCollections,
     ggCollections: p.ggCollections,
+    // Price-range + colourway only — no per-variant image galleries in HTML.
     variants: p.variants?.map((v) => ({
       id: v.id,
-      name: v.name,
-      nameKo: v.nameKo,
-      sku: v.sku,
-      gbpPrice: v.gbpPrice,
       price: v.price,
       compareAtPrice: v.compareAtPrice,
       image: v.image,
-      images: v.images?.slice(0, 4),
       hoverImage: v.hoverImage,
-      sourceUrl: v.sourceUrl,
       inStock: v.inStock,
       colorKey: v.colorKey,
-      colorNameKo: v.colorNameKo,
-      size: v.size,
     })),
   };
 }

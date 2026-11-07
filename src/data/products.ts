@@ -714,7 +714,7 @@ export function getHomepageCategoryProducts(category?: string, sub?: string) {
   return getProductsByCategory(category, sub, { includeYs: false });
 }
 
-/** Strip PDP-only fields so homepage RSC / HTML stays small. */
+/** Strip PDP-only fields so homepage RSC / HTML stays small for Naver Yeti. */
 export function toProductCardProduct(product: Product): Product {
   return {
     id: product.id,
@@ -725,29 +725,22 @@ export function toProductCardProduct(product: Product): Product {
     compareAtPrice: product.compareAtPrice,
     category: product.category,
     subcategory: product.subcategory,
-    tags: product.tags,
-    descriptionKo: product.descriptionKo,
     image: product.image,
     images: product.images?.slice(0, 2),
     hoverImage: product.hoverImage,
-    accent: product.accent,
     badge: product.badge,
     inStock: product.inStock,
     registeredAt: product.registeredAt,
-    updatedAt: product.updatedAt,
+    newBadgeAt: product.newBadgeAt,
     shopColorKey: product.shopColorKey,
     cwCollections: product.cwCollections,
     ggCollections: product.ggCollections,
     variants: product.variants?.map((v) => ({
       id: v.id,
-      name: v.name,
-      nameKo: v.nameKo,
-      sku: v.sku,
-      gbpPrice: v.gbpPrice,
       price: v.price,
       compareAtPrice: v.compareAtPrice,
       image: v.image,
-      sourceUrl: v.sourceUrl,
+      hoverImage: v.hoverImage,
       inStock: v.inStock,
       colorKey: v.colorKey,
     })),
