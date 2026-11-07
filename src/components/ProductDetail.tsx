@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import { useMemo, useState } from "react";
 import { BraceletResizeControls } from "@/components/BraceletResizeControls";
 import { ProductEngagement } from "@/components/ProductEngagement";
@@ -135,8 +136,8 @@ function SizePicker({
  */
 export function ProductDetail({
   product,
-  colorId,
-  sizeId,
+  colorId: colorIdProp,
+  sizeId: sizeIdProp,
   initialInquiries = [],
 }: {
   product: Product;
@@ -144,6 +145,15 @@ export function ProductDetail({
   sizeId?: string;
   initialInquiries?: QaItem[];
 }) {
+  // Read colour/size from the URL on the client so the server page can stay
+  // cacheable (no searchParams) — critical for Naver download-time.
+  const searchParams = useSearchParams();
+  const colorId =
+    colorIdProp ||
+    searchParams.get("color") ||
+    undefined;
+  const sizeId = sizeIdProp || searchParams.get("size") || undefined;
+
   const allVariants = product.variants ?? [];
   const hasSizes = allVariants.some((v) => Boolean(v.size));
   const isCw = product.brand === "Christopher Ward";

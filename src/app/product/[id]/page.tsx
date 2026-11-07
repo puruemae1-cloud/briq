@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { Suspense } from "react";
 import { JsonLd } from "@/components/JsonLd";
 import { ProductDetail } from "@/components/ProductDetail";
 import { formatKrw, getProduct, isProductInStock, productDisplayPrice } from "@/data/products";
@@ -11,7 +12,6 @@ export const revalidate = 3600;
 
 type Props = {
   params: Promise<{ id: string }>;
-  searchParams: Promise<{ color?: string; size?: string }>;
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -58,30 +58,24 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default async function ProductPage({ params, searchParams }: Props) {
+export default async function ProductPage({ params }: Props) {
   const { id } = await params;
-  const { color, size } = await searchParams;
   const product = getProduct(id);
   if (!product) notFound();
 
-  let colorId = color;
-  let sizeId = size;
-  if (!colorId || !sizeId) {
-    const pathVariant = product.variants?.find(
-      (v) => v.id === id || `cw-${v.id}` === id || v.sku === id,
-    );
-    if (pathVariant) {
-      colorId = colorId || pathVariant.colorKey || pathVariant.id;
-      sizeId = sizeId || pathVariant.size;
-    }
-  }
+  // Path-variant deep links (id matches a variant sku) — resolve once for SSR.
+  const pathVariant = product.variants?.find(
+    (v) => v.id === id || `cw-${v.id}` === id || v.sku === id,
+  );
+  const colorId = pathVariant?.colorKey || pathVariant?.id;
+  const sizeId = pathVariant?.size;
 
   const site = getSiteUrl();
   const name = product.nameKo || product.name;
   const image = mediaUrl(product.image || product.images?.[0] || "");
-  // Do not await listQa()/Blob here — it forced every PDP to ~0.6–0.7s and
-  // private, uncacheable HTML (Naver "다운로드 소요시간"). ProductQA loads
-  // inquiries on the client via /api/qa.
+  // Do not await listQa()/Blob or searchParams here — both forced private,
+  // uncacheable HTML and ~0.6–0.7s waits (Naver "다운로드 소요시간").
+  // Colour/size query is read in ProductDetail via useSearchParams.
   const productLd = {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -111,7 +105,9 @@ export default async function ProductPage({ params, searchParams }: Props) {
   return (
     <>
       <JsonLd data={productLd} />
-      <ProductDetail product={product} colorId={colorId} sizeId={sizeId} />
+      <Suspense fallback={null}>
+        <ProductDetail product={product} colorId={colorId} sizeId={sizeId} />
+      </Suspense>
     </>
   );
 }
