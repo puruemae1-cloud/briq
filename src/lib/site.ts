@@ -43,8 +43,9 @@ export const SITE_NAME_KO = "브릭";
 export const DEFAULT_TITLE =
   "Briq 브릭 | 명품의류·명품직구·명품구매대행 영국 셀렉트숍";
 
+/** Keep ≤80 chars for Naver site description / OG description checks. */
 export const DEFAULT_DESCRIPTION =
-  "Briq(브릭) — 영국 현지 기준 명품의류·가방·시계·악세서리 직구/구매대행. 샤넬·구찌·버버리·아크테릭스 등 큐레이션, 항공배송·관부가세 포함 가격으로 국내 직배송.";
+  "Briq(브릭) 영국 명품의류·가방·시계 직구·구매대행. 관부가세·항공 포함 국내배송.";
 
 /**
  * Absolute document title with a single " | Briq" suffix.
