@@ -6,8 +6,8 @@ import { bannerFocalForSrc } from "@/lib/banner-focal";
 /** Locked Christmas 2026 Burberry dual-gender hero — Flannels Amplience. */
 const IMAGE = "/banners/flannels-heritage-britain.jpg";
 const HREF = "/shop?category=luxury&sub=flannels";
-/** Store interior — keep FLANNELS sign + counter in frame. */
-const FOCAL = "50% 42%";
+/** Left third is log wall / skis — keep models toward the right. */
+const FOCAL = "62% 48%";
 
 /**
  * Interstitial under 시그니처 의류 컬렉션 (luxury rail).
@@ -21,7 +21,7 @@ export function FlannelsHomeBanner() {
       className="look-banner look-banner--flannels look-banner--left look-banner--fullframe"
       style={
         {
-          "--look-banner-aspect": "4 / 3",
+          "--look-banner-aspect": "3000 / 1000",
         } as CSSProperties
       }
       aria-label="FLANNELS Heritage of Britain"
@@ -31,20 +31,23 @@ export function FlannelsHomeBanner() {
         className="look-banner__hit"
         aria-label="플란넬스 쇼핑하러 가기"
       >
-        <div className="look-banner__media" aria-hidden>
+        <div className="look-banner__media">
           <BannerImage
             className="look-banner__img"
             src={IMAGE}
-            alt=""
+            alt="FLANNELS Heritage of Britain"
             style={focal ? { objectPosition: focal } : undefined}
             loading="lazy"
           />
-          <div className="look-banner__shade" />
+          <div className="look-banner__shade" aria-hidden />
         </div>
         <div className="look-banner__content">
           <p className="look-banner__eyebrow">FLANNELS EXCLUSIVE</p>
           <h2 className="look-banner__title">
-            <span className="look-banner__title-en">Heritage of Britain</span>
+            <span className="look-banner__title-en look-banner__title-en--stack">
+              <span className="look-banner__title-line">Heritage of</span>
+              <span className="look-banner__title-em">Britain</span>
+            </span>
             <span className="look-banner__title-ko">영국 소비자 유통 정품</span>
           </h2>
           <p className="look-banner__support">

@@ -1,0 +1,31 @@
+name: Img alt guard
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "src/**"
+      - "scripts/check-img-alt.py"
+      - ".github/workflows/img-alt-guard.yml"
+  pull_request:
+    paths:
+      - "src/**"
+      - "scripts/check-img-alt.py"
+      - ".github/workflows/img-alt-guard.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: img-alt-guard
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reject empty img alt text
+        run: python3 scripts/check-img-alt.py

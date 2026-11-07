@@ -7,7 +7,8 @@ import { mediaUrl, mediaUrlFallback } from "@/lib/product-image";
 type BannerImageProps = {
   src: string;
   className?: string;
-  alt?: string;
+  /** Required non-empty copy — Naver flags missing/empty alt as SEO errors. */
+  alt: string;
   loading?: "lazy" | "eager";
   fetchPriority?: "high" | "low" | "auto";
   style?: React.CSSProperties;
@@ -43,12 +44,13 @@ function absoluteBannerUrl(
 export function BannerImage({
   src,
   className,
-  alt = "",
+  alt,
   loading = "lazy",
   fetchPriority,
   style,
   "aria-hidden": ariaHidden,
 }: BannerImageProps) {
+  const resolvedAlt = (alt || "").trim() || "Briq";
   const [cdn, setCdn] = useState<CdnPick>("primary");
   /** After both CDNs fail for a tier, drop to the next larger tier. */
   const [tierFloor, setTierFloor] = useState<BannerTier>("mobile");
@@ -98,7 +100,7 @@ export function BannerImage({
       <img
         className={className}
         src={urls.desktop}
-        alt={alt}
+        alt={resolvedAlt}
         loading={loading}
         decoding="async"
         fetchPriority={fetchPriority}

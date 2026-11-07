@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState, type ReactNode } from "react";
+import { imageAlt } from "@/lib/image-alt";
 import {
   mediaUrl,
   mediaUrlFallback,
@@ -13,9 +14,6 @@ const toneClass: Record<ProductImageTone, string> = {
   cart: "product-frame product-frame--cart",
   swatch: "product-frame product-frame--swatch",
 };
-
-/** If jsDelivr stalls (common with some KR networks / blockers), flip CDN. */
-const CDN_LOAD_TIMEOUT_MS = 4500;
 
 type ProductImageProps = {
   src: string;
@@ -52,39 +50,12 @@ function CdnImg({
     setStatus("loading");
   }, [resolved]);
 
-  useEffect(() => {
-    if (status !== "loading" || !src) return;
-    const t = window.setTimeout(() => {
-      const altUrl = mediaUrlFallback(resolved);
-      if (altUrl && altUrl !== src) {
-        setSrc(altUrl);
-        setStatus("loading");
-        return;
-      }
-      // No alternate host — stop hiding behind opacity:0 forever.
-      setStatus("failed");
-    }, CDN_LOAD_TIMEOUT_MS);
-    return () => window.clearTimeout(t);
-  }, [status, src, resolved]);
-
   if (!resolved) return null;
 
   const markReady = (el: HTMLImageElement | null) => {
     // Cached images often skip onLoad after hydration — check complete.
-    if (!el) return;
-    if (el.complete && el.naturalWidth > 0) {
+    if (el && el.complete && el.naturalWidth > 0) {
       setStatus("ready");
-      return;
-    }
-    // Blockers sometimes return a 0×0 "success" — treat as hard fail.
-    if (el.complete && el.naturalWidth === 0) {
-      const altUrl = mediaUrlFallback(resolved);
-      if (altUrl && altUrl !== src) {
-        setSrc(altUrl);
-        setStatus("loading");
-        return;
-      }
-      setStatus("failed");
     }
   };
 
@@ -95,7 +66,7 @@ function CdnImg({
         <img
           className={`product-frame__placeholder ${className}`}
           src="/briq-mark.svg"
-          alt=""
+          alt="Briq"
           aria-hidden
           decoding="async"
         />
@@ -111,20 +82,7 @@ function CdnImg({
           loading={loading}
           decoding="async"
           referrerPolicy="no-referrer"
-          onLoad={(e) => {
-            const el = e.currentTarget;
-            if (el.naturalWidth > 0) {
-              setStatus("ready");
-              return;
-            }
-            const altUrl = mediaUrlFallback(resolved);
-            if (altUrl && altUrl !== src) {
-              setSrc(altUrl);
-              setStatus("loading");
-              return;
-            }
-            setStatus("failed");
-          }}
+          onLoad={() => setStatus("ready")}
           onError={() => {
             const altUrl = mediaUrlFallback(resolved);
             if (altUrl && altUrl !== src) {
@@ -158,6 +116,7 @@ export function ProductImage({
   const primary = mediaUrl(src);
   const hover = hoverSrc ? mediaUrl(hoverSrc) : undefined;
   const hasHover = Boolean(hover && hover !== primary);
+  const resolvedAlt = imageAlt(alt);
   const frameClass = [
     toneClass[tone],
     hasHover ? "product-frame--has-hover" : "",
@@ -173,14 +132,14 @@ export function ProductImage({
     <div className={frameClass}>
       <CdnImg
         resolved={primary}
-        alt={alt}
+        alt={resolvedAlt}
         className={`${imageClass} product-frame__img--primary`}
         loading={loading}
       />
       {hasHover ? (
         <CdnImg
           resolved={hover!}
-          alt=""
+          alt={resolvedAlt}
           className={`${imageClass} product-frame__img--hover`}
           loading="lazy"
           ariaHidden

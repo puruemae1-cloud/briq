@@ -25,7 +25,7 @@ import {
   sliceShopPage,
 } from "@/lib/shop-list";
 import { toCardProduct } from "@/lib/product-card-dto";
-import { getSiteUrl, seoTitle } from "@/lib/site";
+import { getSiteUrl } from "@/lib/site";
 import { sortNavChildrenByBrandOrder } from "@/lib/brand-nav-order";
 import { BrandChipContent, isBrandChipNavId } from "@/components/BrandChip";
 import { BrandChipRail } from "@/components/BrandChipRail";
@@ -99,43 +99,37 @@ export async function generateMetadata({
   const isNew =
     params.sort === "new" && !params.q?.trim() && category === "all" && !sub;
 
-  let titleBare: string;
+  let title: string;
   let description: string;
   if (params.q?.trim()) {
-    titleBare = `‘${params.q.trim()}’ 검색 · 명품직구`;
+    title = `‘${params.q.trim()}’ 검색 | 명품직구 Briq`;
     description = `${params.q.trim()} 검색 결과 — Briq 영국 명품의류·명품직구·명품구매대행.`;
   } else if (isNew) {
-    titleBare = "신상품 New Arrivals · 명품직구";
+    title = "New Arrivals 신상품 | 명품직구 Briq";
     description =
-      "Briq 신상품 — 브랜드 주간 업데이트로 새로 등록된 최신 100개. 영국 명품직구·구매대행, 관부가세 포함.";
+      "Briq 신상품 — 브랜드 주간 업데이트로 새로 등록된 최신 100개. 영국 명품직구·구매대행.";
   } else if (brand) {
-    titleBare = `${brand.nameKo} ${brand.nameEn} 명품직구`;
-    description = `${brand.nameKo}(${brand.nameEn}) 영국 정품 셀렉션 — 관부가세·항공배송 포함 명품직구 Briq.`;
+    title = `${brand.nameKo} ${brand.nameEn} | 명품직구 Briq`;
+    description = `${brand.nameKo}(${brand.nameEn}) 셀렉션 — 명품의류·명품직구·명품구매대행 Briq.`;
   } else if (subNode && current) {
-    titleBare = `${current.labelKo} · ${subNode.labelKo} 명품직구`;
-    description = `${current.labelKo} ${subNode.labelKo} — 영국 셀렉트숍 Briq, 관부가세 포함 명품직구.`;
+    title = `${current.labelKo} · ${subNode.labelKo} | Briq`;
+    description = `${current.labelKo} ${subNode.labelKo} — 영국 명품 셀렉트숍 Briq 명품직구.`;
   } else if (current) {
-    titleBare = `${current.labelKo} 명품직구`;
-    description =
-      current.id === "watches"
-        ? "롤렉스·오메가·IWC·태그호이어 등 영국 정품 시계 명품직구 — 관부가세·항공배송 포함 Briq."
-        : `${current.labelKo} 명품 쇼핑 — 샤넬·구찌·버버리 등 Briq 영국 직구.`;
+    title = `${current.labelKo} | 명품직구 Briq`;
+    description = `${current.labelKo} 명품 쇼핑 — 샤넬·구찌·버버리 등 Briq 영국 직구.`;
   } else {
-    titleBare = "전체상품 · 명품의류·명품직구";
+    title = "Shop 전체상품 | 명품의류·명품직구 Briq";
     description =
-      "Briq 전체 카탈로그 — 명품의류·가방·시계·악세서리 명품직구·구매대행, 관부가세 포함.";
+      "Briq 전체 카탈로그 — 명품의류·가방·시계·악세서리 명품직구·구매대행.";
   }
 
-  const sort = parseProductSort(params.sort);
   const canonicalPath = buildShopHref({
     category: category === "all" ? undefined : category,
     sub,
     q: params.q,
-    sort,
-    offset: 0, // paginated pages noindex; canonical always points at first page
-    forCanonical: true,
+    sort: params.sort === "new" ? "new" : undefined,
+    offset,
   });
-  const title = seoTitle(titleBare);
 
   return {
     title,
@@ -143,7 +137,7 @@ export async function generateMetadata({
     robots: offset > 0 ? { index: false, follow: true } : undefined,
     alternates: { canonical: `${getSiteUrl()}${canonicalPath}` },
     openGraph: {
-      title: title.absolute,
+      title,
       description,
       url: `${getSiteUrl()}${canonicalPath}`,
       locale: "ko_KR",
@@ -332,8 +326,7 @@ export default async function ShopPage({ searchParams }: Props) {
           <BannerImage
             className="shop-hero__img"
             src={heroImage}
-            alt=""
-            aria-hidden
+            alt={`${heroTitle} 배너`}
             loading="eager"
             fetchPriority="high"
             style={{

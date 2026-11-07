@@ -374,7 +374,7 @@ export function ProductReviews({
                       <img
                         key={m.id}
                         src={m.dataUrl}
-                        alt=""
+                        alt={m.name || "리뷰 사진"}
                         className="review-media__img"
                       />
                     ) : (

@@ -18,8 +18,7 @@ export async function Collection100() {
         <BannerImage
           className="collection-100__banner-img"
           src={COLLECTION_100_BANNER}
-          alt=""
-          aria-hidden
+          alt="Briq 100 컬렉션 배너"
           loading="lazy"
           style={{
             objectPosition: bannerFocalForSrc(COLLECTION_100_BANNER, "center 40%"),

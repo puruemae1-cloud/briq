@@ -62,15 +62,15 @@ export function LookBannerBlock({ banner }: { banner: LookBanner }) {
           className="look-banner__hit"
           aria-label={banner.cta}
         >
-          <div className="look-banner__media" aria-hidden>
+          <div className="look-banner__media">
             <BannerImage
               className="look-banner__img"
               src={image}
-              alt=""
+              alt={`${banner.titleKo} ${banner.eyebrow}`.trim()}
               style={focal ? { objectPosition: focal } : undefined}
               loading="lazy"
             />
-            <div className="look-banner__shade" />
+            <div className="look-banner__shade" aria-hidden />
           </div>
           <div className="look-banner__content">
             {titleBlock}

@@ -66,7 +66,7 @@ function ColorSwatches({
             className={`variant-swatch${active ? " is-active" : ""}${soldOut ? " is-sold-out" : ""}`}
             title={soldOut ? `${c.nameKo} · Sold Out` : c.nameKo}
           >
-            <ProductImage src={c.image} alt="" tone="swatch" />
+            <ProductImage src={c.image} alt={c.nameKo} tone="swatch" />
             <span>{c.nameKo}</span>
             {soldOut ? (
               <span className="variant-swatch__sold">Sold Out</span>
