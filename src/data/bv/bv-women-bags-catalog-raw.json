@@ -1,7 +1,7 @@
 {
   "hub": "women-bags",
   "category": "bags",
-  "scrapedAt": "2026-11-06T20:55:12.524856+00:00",
+  "scrapedAt": "2026-11-07T00:09:50.229773+00:00",
   "leaves": [
     "bv-women-bags-mini",
     "bv-women-bags-crossbody",
@@ -10683,7 +10683,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/jodie-obsidian-grey-600261V5ZZ01689.html",
       "gbpPrice": 3740.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Suede",
         "Colour: Obsidian Grey",
@@ -10720,7 +10720,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 3740.0,
           "listGbpPrice": null
         }
@@ -28423,6 +28423,71 @@
       "hubCategory": "bags"
     },
     {
+      "id": "651876V5XF08101",
+      "sku": "651876V5XF08101",
+      "internalId": "813975895",
+      "name": "Mini Jodie",
+      "brand": "bottega veneta",
+      "color": "Silver",
+      "gender": "Women",
+      "link": "https://www.bottegaveneta.com/en-gb/mini-jodie-silver-651876V5XF08101.html",
+      "url": "https://www.bottegaveneta.com/en-gb/mini-jodie-silver-651876V5XF08101.html",
+      "gbpPrice": 2500.0,
+      "listGbpPrice": null,
+      "inStock": false,
+      "shortDescription": [
+        "Lining: Lambskin",
+        "Colour: Silver",
+        "Hardware: Silver finish"
+      ],
+      "longDescription": [
+        "Mini Intrecciato lamina satin leather top handle bag",
+        "Single compartment",
+        "Zip closure"
+      ],
+      "compactedLongDesc": "Top handle bag with rounded shape and signature knot, crafted in Intrecciato laminated leather featuring a satin finish.",
+      "composition": "• Material: Lambskin",
+      "material": "",
+      "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
+      "sizeModel": "• Height: 13 cm | 1.2” \n\n• Width: 26 cm | 1.2” \n\n• Depth: 8.5 cm | 1.2” \n\n• Handle drop: 10 cm | 1.2” \n\n• Fits iPhone 17 Pro Max, a credit card case, airpods and keys.",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/6d98144c-840b-4dad-9c12-04dae4f59c7e/eCom/651876V5XF08101_A.jpg?v=3",
+        "https://bottega-veneta.dam.kering.com/asset/f361ee6d-c3ed-4de2-94ba-f4bdbdeaa007/eCom/651876V5XF08101_B.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/307f0cfd-f7d0-4b9b-995a-a21f1cc964da/eCom/651876V5XF08101_C.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/71f809f4-e3a6-433a-b325-310240cae660/eCom/651876V5XF08101_D.jpg?v=3",
+        "https://bottega-veneta.dam.kering.com/asset/6d98144c-840b-4dad-9c12-04dae4f59c7e/Small/651876V5XF08101_A.jpg?v=3"
+      ],
+      "localImages": [
+        "/products/bv-pdp/651876v5xf08101/1.jpg",
+        "/products/bv-pdp/651876v5xf08101/2.jpg",
+        "/products/bv-pdp/651876v5xf08101/3.jpg",
+        "/products/bv-pdp/651876v5xf08101/4.jpg",
+        "/products/bv-pdp/651876v5xf08101/5.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": false,
+          "gbpPrice": 2500.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-women",
+        "bv-women-bags",
+        "bv-women-bags-mini"
+      ],
+      "leafId": "bv-women-bags-mini",
+      "cgid": "women-mini-bags",
+      "hubCategory": "bags"
+    },
+    {
       "id": "789109V5XF18101",
       "sku": "789109V5XF18101",
       "internalId": "813972513",
@@ -28561,71 +28626,6 @@
       ],
       "leafId": "bv-women-bags-bang-bang",
       "cgid": "women-bang-bang",
-      "hubCategory": "bags"
-    },
-    {
-      "id": "651876V5XF08101",
-      "sku": "651876V5XF08101",
-      "internalId": "813975895",
-      "name": "Mini Jodie",
-      "brand": "bottega veneta",
-      "color": "Silver",
-      "gender": "Women",
-      "link": "https://www.bottegaveneta.com/en-gb/mini-jodie-silver-651876V5XF08101.html",
-      "url": "https://www.bottegaveneta.com/en-gb/mini-jodie-silver-651876V5XF08101.html",
-      "gbpPrice": 2500.0,
-      "listGbpPrice": null,
-      "inStock": false,
-      "shortDescription": [
-        "Lining: Lambskin",
-        "Colour: Silver",
-        "Hardware: Silver finish"
-      ],
-      "longDescription": [
-        "Mini Intrecciato lamina satin leather top handle bag",
-        "Single compartment",
-        "Zip closure"
-      ],
-      "compactedLongDesc": "Top handle bag with rounded shape and signature knot, crafted in Intrecciato laminated leather featuring a satin finish.",
-      "composition": "• Material: Lambskin",
-      "material": "",
-      "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
-      "sizeModel": "• Height: 13 cm | 1.2” \n\n• Width: 26 cm | 1.2” \n\n• Depth: 8.5 cm | 1.2” \n\n• Handle drop: 10 cm | 1.2” \n\n• Fits iPhone 17 Pro Max, a credit card case, airpods and keys.",
-      "sizeChartId": "",
-      "sizeGuide": null,
-      "imageUrls": [
-        "https://bottega-veneta.dam.kering.com/asset/6d98144c-840b-4dad-9c12-04dae4f59c7e/eCom/651876V5XF08101_A.jpg?v=3",
-        "https://bottega-veneta.dam.kering.com/asset/f361ee6d-c3ed-4de2-94ba-f4bdbdeaa007/eCom/651876V5XF08101_B.jpg?v=2",
-        "https://bottega-veneta.dam.kering.com/asset/307f0cfd-f7d0-4b9b-995a-a21f1cc964da/eCom/651876V5XF08101_C.jpg?v=2",
-        "https://bottega-veneta.dam.kering.com/asset/71f809f4-e3a6-433a-b325-310240cae660/eCom/651876V5XF08101_D.jpg?v=3",
-        "https://bottega-veneta.dam.kering.com/asset/6d98144c-840b-4dad-9c12-04dae4f59c7e/Small/651876V5XF08101_A.jpg?v=3"
-      ],
-      "localImages": [
-        "/products/bv-pdp/651876v5xf08101/1.jpg",
-        "/products/bv-pdp/651876v5xf08101/2.jpg",
-        "/products/bv-pdp/651876v5xf08101/3.jpg",
-        "/products/bv-pdp/651876v5xf08101/4.jpg",
-        "/products/bv-pdp/651876v5xf08101/5.jpg"
-      ],
-      "sizes": [
-        {
-          "id": "U",
-          "value": "U",
-          "displayValue": "U",
-          "inStock": false,
-          "gbpPrice": 2500.0,
-          "listGbpPrice": null
-        }
-      ],
-      "collections": [
-        "bottega-veneta",
-        "bottega-veneta-bags",
-        "bv-women",
-        "bv-women-bags",
-        "bv-women-bags-mini"
-      ],
-      "leafId": "bv-women-bags-mini",
-      "cgid": "women-mini-bags",
       "hubCategory": "bags"
     },
     {

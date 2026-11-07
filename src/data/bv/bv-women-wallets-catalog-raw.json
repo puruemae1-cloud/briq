@@ -1,7 +1,7 @@
 {
   "hub": "women-wallets",
   "category": "accessories",
-  "scrapedAt": "2026-11-06T21:35:26.628496+00:00",
+  "scrapedAt": "2026-11-07T00:50:11.309619+00:00",
   "leaves": [
     "bv-women-wallets-small",
     "bv-women-wallets-long",
@@ -3611,7 +3611,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/andiamo-zipped-card-case-basil-838846VCPP23780.html",
       "gbpPrice": 670.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Colour: Basil",
         "Hardware: Brass finish",
@@ -3645,7 +3645,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 670.0,
           "listGbpPrice": null
         }
@@ -11059,6 +11059,66 @@
       "hubCategory": "accessories"
     },
     {
+      "id": "796324VCPP34398",
+      "sku": "796324VCPP34398",
+      "internalId": "814514393",
+      "name": "Intrecciato Credit Card Case",
+      "brand": "bottega veneta",
+      "color": "Deep sea",
+      "gender": "Women",
+      "link": "https://www.bottegaveneta.com/en-gb/intrecciato-credit-card-case-deep-sea-796324VCPP34398.html",
+      "url": "https://www.bottegaveneta.com/en-gb/intrecciato-credit-card-case-deep-sea-796324VCPP34398.html",
+      "gbpPrice": 320.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Calfskin",
+        "Colour: Deep Sea",
+        "Hardware: Gold finish"
+      ],
+      "longDescription": [
+        "Intrecciato nappa leather card case",
+        "Six card slots, one central pocket"
+      ],
+      "compactedLongDesc": "Credit card case in Intrecciato nappa leather.",
+      "composition": "• Material: lambskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 8 cm | 3.1\" \n\n• Width: 10.5 cm | 4.1\" \n\n• Depth: 0.5 cm | 0.2\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/04fe61aa-1b72-4fd9-aae9-b49d3d2e492d/eCom/796324VCPP34398_A.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/eff5916a-c74c-460a-8bc4-b2d812730477/eCom/796324VCPP34398_B.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/04fe61aa-1b72-4fd9-aae9-b49d3d2e492d/Small/796324VCPP34398_A.jpg?v=2"
+      ],
+      "localImages": [
+        "/products/bv-pdp/796324vcpp34398/1.jpg",
+        "/products/bv-pdp/796324vcpp34398/2.jpg",
+        "/products/bv-pdp/796324vcpp34398/3.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 320.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-women",
+        "bv-women-wallets",
+        "bv-women-wallets-card-cases"
+      ],
+      "leafId": "bv-women-wallets-card-cases",
+      "cgid": "women-card-cases",
+      "hubCategory": "accessories"
+    },
+    {
       "id": "796324VCPP36146",
       "sku": "796324VCPP36146",
       "internalId": "814574544",
@@ -11097,66 +11157,6 @@
         "/products/bv-pdp/796324vcpp36146/1.jpg",
         "/products/bv-pdp/796324vcpp36146/2.jpg",
         "/products/bv-pdp/796324vcpp36146/3.jpg"
-      ],
-      "sizes": [
-        {
-          "id": "U",
-          "value": "U",
-          "displayValue": "U",
-          "inStock": true,
-          "gbpPrice": 320.0,
-          "listGbpPrice": null
-        }
-      ],
-      "collections": [
-        "bottega-veneta",
-        "bottega-veneta-accessories",
-        "bv-women",
-        "bv-women-wallets",
-        "bv-women-wallets-card-cases"
-      ],
-      "leafId": "bv-women-wallets-card-cases",
-      "cgid": "women-card-cases",
-      "hubCategory": "accessories"
-    },
-    {
-      "id": "796324VCPP34398",
-      "sku": "796324VCPP34398",
-      "internalId": "814514393",
-      "name": "Intrecciato Credit Card Case",
-      "brand": "bottega veneta",
-      "color": "Deep sea",
-      "gender": "Women",
-      "link": "https://www.bottegaveneta.com/en-gb/intrecciato-credit-card-case-deep-sea-796324VCPP34398.html",
-      "url": "https://www.bottegaveneta.com/en-gb/intrecciato-credit-card-case-deep-sea-796324VCPP34398.html",
-      "gbpPrice": 320.0,
-      "listGbpPrice": null,
-      "inStock": true,
-      "shortDescription": [
-        "Lining: Calfskin",
-        "Colour: Deep Sea",
-        "Hardware: Gold finish"
-      ],
-      "longDescription": [
-        "Intrecciato nappa leather card case",
-        "Six card slots, one central pocket"
-      ],
-      "compactedLongDesc": "Credit card case in Intrecciato nappa leather.",
-      "composition": "• Material: lambskin",
-      "material": "",
-      "productCare": "",
-      "sizeModel": "• Height: 8 cm | 3.1\" \n\n• Width: 10.5 cm | 4.1\" \n\n• Depth: 0.5 cm | 0.2\"",
-      "sizeChartId": "",
-      "sizeGuide": null,
-      "imageUrls": [
-        "https://bottega-veneta.dam.kering.com/asset/04fe61aa-1b72-4fd9-aae9-b49d3d2e492d/eCom/796324VCPP34398_A.jpg?v=2",
-        "https://bottega-veneta.dam.kering.com/asset/eff5916a-c74c-460a-8bc4-b2d812730477/eCom/796324VCPP34398_B.jpg?v=2",
-        "https://bottega-veneta.dam.kering.com/asset/04fe61aa-1b72-4fd9-aae9-b49d3d2e492d/Small/796324VCPP34398_A.jpg?v=2"
-      ],
-      "localImages": [
-        "/products/bv-pdp/796324vcpp34398/1.jpg",
-        "/products/bv-pdp/796324vcpp34398/2.jpg",
-        "/products/bv-pdp/796324vcpp34398/3.jpg"
       ],
       "sizes": [
         {
