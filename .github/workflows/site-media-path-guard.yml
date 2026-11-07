@@ -1,0 +1,35 @@
+name: Site media path guard
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "src/lib/seo-metadata.ts"
+      - "src/app/layout.tsx"
+      - "next.config.ts"
+      - "scripts/check-site-media-paths.py"
+      - ".github/workflows/site-media-path-guard.yml"
+  pull_request:
+    paths:
+      - "src/lib/seo-metadata.ts"
+      - "src/app/layout.tsx"
+      - "next.config.ts"
+      - "scripts/check-site-media-paths.py"
+      - ".github/workflows/site-media-path-guard.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: site-media-path-guard
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reject bare /banners|/products SEO URLs
+        run: python3 scripts/check-site-media-paths.py

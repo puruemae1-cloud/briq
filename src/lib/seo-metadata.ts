@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { mediaUrl } from "@/lib/product-image";
 import {
   DEFAULT_DESCRIPTION,
   DEFAULT_TITLE,
@@ -9,13 +10,15 @@ import {
 
 const site = getSiteUrl();
 
+/** Prefer absolute CDN URL — relative /banners/* 404s on Vercel (media is on product-images). */
+const OG_IMAGE_PATH = "/banners/rot-luxury-1.jpg";
+const OG_IMAGE_URL = mediaUrl(OG_IMAGE_PATH) || OG_IMAGE_PATH;
+
 export const rootMetadata: Metadata = {
   metadataBase: new URL(site),
   title: {
     default: DEFAULT_TITLE,
-    // Short page titles (이용약관 등) get " | Briq". Pages that already end with
-    // Briq must pass `{ absolute: "…" }` via `seoTitle()` — avoid "Briq · Briq".
-    template: `%s | ${SITE_NAME}`,
+    template: `%s · ${SITE_NAME}`,
   },
   description: DEFAULT_DESCRIPTION,
   applicationName: SITE_NAME,
@@ -39,7 +42,7 @@ export const rootMetadata: Metadata = {
     description: DEFAULT_DESCRIPTION,
     images: [
       {
-        url: "/banners/rot-luxury-1.jpg",
+        url: OG_IMAGE_URL,
         width: 2400,
         height: 1600,
         alt: "Briq 명품의류 · 명품직구 셀렉션",
@@ -50,7 +53,7 @@ export const rootMetadata: Metadata = {
     card: "summary_large_image",
     title: DEFAULT_TITLE,
     description: DEFAULT_DESCRIPTION,
-    images: ["/banners/rot-luxury-1.jpg"],
+    images: [OG_IMAGE_URL],
   },
   robots: {
     index: true,
