@@ -11,6 +11,7 @@ import {
   type TouchEvent,
 } from "react";
 import type { Product } from "@/data/product-types";
+import { CARD_GALLERY_LIMIT } from "@/lib/product-card-dto";
 import { mediaUrl, mediaUrlFallback, resolveCardGallery } from "@/lib/product-image";
 
 type ProductCardMediaProps = {
@@ -131,7 +132,7 @@ export function ProductCardMedia({
   children,
 }: ProductCardMediaProps) {
   // Cap frames so PLP RSC/HTML stays small for crawlers (Naver download size).
-  const gallery = resolveCardGallery(product, 4);
+  const gallery = resolveCardGallery(product, CARD_GALLERY_LIMIT);
   const slides = soldOut ? gallery.slice(0, 1) : gallery;
   const multi = slides.length > 1;
   const [index, setIndex] = useState(0);

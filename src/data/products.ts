@@ -715,42 +715,7 @@ export function getHomepageCategoryProducts(category?: string, sub?: string) {
 }
 
 /** Strip PDP-only fields so homepage RSC / HTML stays small for Naver Yeti. */
-export function toProductCardProduct(product: Product): Product {
-  return {
-    id: product.id,
-    name: product.name,
-    nameKo: product.nameKo,
-    brand: product.brand,
-    price: product.price,
-    compareAtPrice: product.compareAtPrice,
-    category: product.category,
-    subcategory: product.subcategory,
-    image: product.image,
-    images: product.images?.slice(0, 2),
-    hoverImage: product.hoverImage,
-    badge: product.badge,
-    inStock: product.inStock,
-    registeredAt: product.registeredAt,
-    newBadgeAt: product.newBadgeAt,
-    shopColorKey: product.shopColorKey,
-    cwCollections: product.cwCollections,
-    ggCollections: product.ggCollections,
-    variants: product.variants?.map((v) => ({
-      id: v.id,
-      name: v.name,
-      nameKo: v.nameKo,
-      sku: "",
-      gbpPrice: 0,
-      price: v.price,
-      compareAtPrice: v.compareAtPrice,
-      image: v.image,
-      hoverImage: v.hoverImage,
-      sourceUrl: "",
-      inStock: v.inStock,
-      colorKey: v.colorKey,
-    })),
-  };
-}
+export { toCardProduct as toProductCardProduct } from "@/lib/product-card-dto";
 
 /** @deprecated use navCategories from categories.ts */
 export const categories = [
