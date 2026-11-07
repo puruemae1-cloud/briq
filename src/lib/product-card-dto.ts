@@ -1,14 +1,31 @@
-import type { Product } from "@/data/product-types";
+import type { Product, ProductVariant } from "@/data/product-types";
 
 /** Max gallery frames serialized into PLP/card HTML (RSC flight). */
 export const CARD_GALLERY_LIMIT = 2;
+
+/** Slim variant fields needed for card price range + colourway gallery. */
+function toCardVariant(v: ProductVariant): ProductVariant {
+  return {
+    id: v.id,
+    name: v.name,
+    nameKo: v.nameKo,
+    sku: "",
+    gbpPrice: 0,
+    price: v.price,
+    compareAtPrice: v.compareAtPrice,
+    image: v.image,
+    hoverImage: v.hoverImage,
+    sourceUrl: "",
+    inStock: v.inStock,
+    colorKey: v.colorKey,
+  };
+}
 
 /**
  * Slim product for PLP/cards — omit heavy PDP-only fields.
  * Serialized into every shop/home HTML response Yeti downloads, so keep tiny.
  */
 export function toCardProduct(p: Product): Product {
-  const images = p.images?.slice(0, CARD_GALLERY_LIMIT);
   return {
     id: p.id,
     name: p.name,
@@ -19,7 +36,7 @@ export function toCardProduct(p: Product): Product {
     category: p.category,
     subcategory: p.subcategory,
     image: p.image,
-    images,
+    images: p.images?.slice(0, CARD_GALLERY_LIMIT),
     hoverImage: p.hoverImage,
     badge: p.badge,
     inStock: p.inStock,
@@ -28,15 +45,6 @@ export function toCardProduct(p: Product): Product {
     shopColorKey: p.shopColorKey,
     cwCollections: p.cwCollections,
     ggCollections: p.ggCollections,
-    // Price-range + colourway only — no per-variant image galleries in HTML.
-    variants: p.variants?.map((v) => ({
-      id: v.id,
-      price: v.price,
-      compareAtPrice: v.compareAtPrice,
-      image: v.image,
-      hoverImage: v.hoverImage,
-      inStock: v.inStock,
-      colorKey: v.colorKey,
-    })),
+    variants: p.variants?.map(toCardVariant),
   };
 }
