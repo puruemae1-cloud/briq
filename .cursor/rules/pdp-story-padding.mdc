@@ -1,0 +1,13 @@
+---
+description: PDP story sections must match product-detail horizontal padding
+alwaysApply: true
+---
+
+# PDP story / long-form layout padding
+
+On product detail pages, long-form story blocks (`.product-story`) must use the **same horizontal inset** as the top gallery/info block (`.product-detail`):
+
+- Mobile: `1.25rem`
+- Desktop (≥900px): `2rem`
+
+Do not let story copy or media sit edge-to-edge while the upper PDP has padding. Apply the same rule to any future below-the-fold PDP sections that sit outside `.product-detail`.

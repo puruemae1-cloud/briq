@@ -1,0 +1,10 @@
+---
+description: After any Burberry (버버리) catalogue/sync/update work finishes, proactively tell the user — do not wait for them to ask.
+alwaysApply: true
+---
+
+# Burberry update notification
+
+Whenever Burberry / 버버리 work completes in a Briq session — scrape, translate, catalog rebuild, weekly sync setup, stock sync, category changes, or PDP copy — **proactively tell the user** in the final response that the Burberry update is done and what changed.
+
+Do this even if the user did not ask for a status update. Keep it short: what finished + anything they should check on the live site.
