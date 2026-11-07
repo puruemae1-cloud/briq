@@ -1,39 +1,18 @@
 import { products } from "@/data/products";
 import {
   HUB_SITEMAP_LASTMOD,
+  NAVER_PRODUCT_CAP,
   registeredAtMs,
 } from "@/lib/sitemap-chunks";
 import { SEO_BRANDS, getSiteUrl } from "@/lib/site";
 
 export const dynamic = "force-static";
 
-/** Cap for Yeti's tiny daily fetch — hubs first, then newest products only. */
-const NAVER_PRODUCT_CAP = 120;
-/** Reserve slots so DMR watch PDPs are not crowded out by Flannels clearance. */
-const NAVER_WATCH_CAP = 48;
-
-const WATCH_ID_PREFIX =
-  /^(rx-|om-|th-|td-|iw-|pp-|cw-|nq-|christopher-ward)/i;
-
-type Ranked = { product: (typeof products)[number]; at: number };
-
-function newestOf(
-  pool: (typeof products)[number][],
-  cap: number,
-): Ranked[] {
-  return pool
-    .map((product) => ({ product, at: registeredAtMs(product.registeredAt) }))
-    .filter((row): row is Ranked => row.at != null)
-    .sort((a, b) => b.at - a.at)
-    .slice(0, cap);
-}
-
 /**
- * Tiny priority sitemap for Naver Search Advisor.
+ * Priority sitemap for Naver Search Advisor.
  *
- * `sitemap-recent.xml` (~500 URLs) is still useful, but Yeti often finishes
- * only 1–2 pages/day. This file stays small so one visit yields hub pages
- * plus the newest product URLs without burning budget on the full catalogue.
+ * Sized to recent Yeti "완료" volume (~150–200/day): hubs + newest products,
+ * without dumping the full ~30k catalogue into one file.
  */
 export async function GET() {
   const site = getSiteUrl();
@@ -41,50 +20,35 @@ export async function GET() {
   const pages = [
     site,
     `${site}/shop`,
-    `${site}/shop?category=watches`,
     `${site}/brands`,
     `${site}/guide/luxury-direct`,
     `${site}/guide/buying-agency`,
     `${site}/guide/luxury-apparel`,
     ...SEO_BRANDS.map((brand) => `${site}/brands/${brand.slug}`),
   ];
-
-  const watches = products.filter((p) => WATCH_ID_PREFIX.test(p.id));
-  const nonWatches = products.filter((p) => !WATCH_ID_PREFIX.test(p.id));
-  const newestWatches = newestOf(watches, NAVER_WATCH_CAP);
-  const newestOther = newestOf(
-    nonWatches,
-    Math.max(0, NAVER_PRODUCT_CAP - newestWatches.length),
-  );
-  // Watches first after hubs so Yeti's early fetches land on high-intent PDPs.
-  const newest = [...newestWatches, ...newestOther];
-  const seen = new Set<string>();
-  const deduped = newest.filter(({ product }) => {
-    if (seen.has(product.id)) return false;
-    seen.add(product.id);
-    return true;
-  });
+  const newest = products
+    .map((product) => ({ product, at: registeredAtMs(product.registeredAt) }))
+    .filter((row): row is { product: (typeof products)[number]; at: number } =>
+      row.at != null,
+    )
+    .sort((a, b) => b.at - a.at)
+    .slice(0, NAVER_PRODUCT_CAP);
 
   const urls = [
     ...pages.map(
       (url) =>
-        `  <url>\n    <loc>${escapeXml(url)}</loc>\n    <lastmod>${hubUpdated}</lastmod>\n  </url>`,
+        `  <url>\n    <loc>${url}</loc>\n    <lastmod>${hubUpdated}</lastmod>\n  </url>`,
     ),
-    ...deduped.map(
+    ...newest.map(
       ({ product, at }) =>
-        `  <url>\n    <loc>${escapeXml(`${site}/product/${encodeURIComponent(product.id)}`)}</loc>\n    <lastmod>${new Date(at).toISOString()}</lastmod>\n  </url>`,
+        `  <url>\n    <loc>${site}/product/${encodeURIComponent(product.id)}</loc>\n    <lastmod>${new Date(at).toISOString()}</lastmod>\n  </url>`,
     ),
   ];
   const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.join("\n")}\n</urlset>\n`;
   return new Response(xml, {
-    headers: { "Content-Type": "application/xml; charset=utf-8" },
+    headers: {
+      "Content-Type": "application/xml; charset=utf-8",
+      "Cache-Control": "public, s-maxage=3600, stale-while-revalidate=86400",
+    },
   });
-}
-
-function escapeXml(value: string): string {
-  return value
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;");
 }

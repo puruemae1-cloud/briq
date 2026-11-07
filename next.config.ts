@@ -48,9 +48,13 @@ const nextConfig: NextConfig = {
       { source: "/product/:id", headers: edgeCache },
     ];
   },
+  // Serve the index at /sitemap.xml with no redirect. Naver/Google drop
+  // sitemap URLs that 3xx (see getSiteUrl comment in site.ts).
+  async rewrites() {
+    return [{ source: "/sitemap.xml", destination: "/sitemap-index.xml" }];
+  },
   async redirects() {
     return [
-      { source: "/sitemap.xml", destination: "/sitemap-index.xml", permanent: true },
       // Banners/products are not in the Vercel deploy (product-images tag).
       // Redirect so crawlers hitting https://www.briq.kr/banners/... get 308→CDN
       // instead of 404/400 (Naver "접근 불가한 페이지").

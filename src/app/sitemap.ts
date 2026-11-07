@@ -38,12 +38,6 @@ export default async function sitemap(props: {
         priority: 0.95,
       },
       {
-        url: `${site}/shop?sort=new`,
-        lastModified: catalogUpdated,
-        changeFrequency: "weekly",
-        priority: 0.9,
-      },
-      {
         url: `${site}/brands`,
         lastModified: catalogUpdated,
         changeFrequency: "weekly",

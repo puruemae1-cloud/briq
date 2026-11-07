@@ -18,7 +18,14 @@ export const HUB_SITEMAP_LASTMOD = "2026-10-01T00:00:00.000Z";
 
 /** Newest real registrations listed ahead of the full catalogue. */
 export const RECENT_SITEMAP_DAYS = 14;
-export const RECENT_SITEMAP_CAP = 500;
+/** Sized for Yeti's ~150–200 completed fetches/day (was 500 when crawl was 1–2/day). */
+export const RECENT_SITEMAP_CAP = 800;
+
+/**
+ * Cap for sitemap-naver.xml — hubs first, then newest products.
+ * Match recent daily "완료" volume so one Yeti visit isn't undersized.
+ */
+export const NAVER_PRODUCT_CAP = 250;
 
 /** Number of sitemap files: id 0 = static pages, 1..N = product chunks. */
 export function sitemapCount(): number {

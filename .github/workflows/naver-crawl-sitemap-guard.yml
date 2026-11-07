@@ -1,0 +1,35 @@
+name: Naver crawl sitemap guard
+
+on:
+  pull_request:
+    paths:
+      - "next.config.ts"
+      - "src/app/sitemap.ts"
+      - "src/app/sitemap-naver.xml/**"
+      - "src/app/sitemap-recent.xml/**"
+      - "src/app/sitemap-index.xml/**"
+      - "src/lib/sitemap-chunks.ts"
+      - "scripts/check-naver-crawl-sitemaps.py"
+      - ".github/workflows/naver-crawl-sitemap-guard.yml"
+  push:
+    branches: [main]
+    paths:
+      - "next.config.ts"
+      - "src/app/sitemap.ts"
+      - "src/app/sitemap-naver.xml/**"
+      - "src/app/sitemap-recent.xml/**"
+      - "src/app/sitemap-index.xml/**"
+      - "src/lib/sitemap-chunks.ts"
+      - "scripts/check-naver-crawl-sitemaps.py"
+      - ".github/workflows/naver-crawl-sitemap-guard.yml"
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check Naver crawl sitemaps
+        run: python3 scripts/check-naver-crawl-sitemaps.py
