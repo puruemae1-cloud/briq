@@ -15,6 +15,9 @@ const toneClass: Record<ProductImageTone, string> = {
   swatch: "product-frame product-frame--swatch",
 };
 
+/** If jsDelivr stalls (common with some KR networks / blockers), flip CDN. */
+const CDN_LOAD_TIMEOUT_MS = 4500;
+
 type ProductImageProps = {
   src: string;
   alt: string;
@@ -50,12 +53,39 @@ function CdnImg({
     setStatus("loading");
   }, [resolved]);
 
+  useEffect(() => {
+    if (status !== "loading" || !src) return;
+    const t = window.setTimeout(() => {
+      const altUrl = mediaUrlFallback(resolved);
+      if (altUrl && altUrl !== src) {
+        setSrc(altUrl);
+        setStatus("loading");
+        return;
+      }
+      // No alternate host — stop hiding behind opacity:0 forever.
+      setStatus("failed");
+    }, CDN_LOAD_TIMEOUT_MS);
+    return () => window.clearTimeout(t);
+  }, [status, src, resolved]);
+
   if (!resolved) return null;
 
   const markReady = (el: HTMLImageElement | null) => {
     // Cached images often skip onLoad after hydration — check complete.
-    if (el && el.complete && el.naturalWidth > 0) {
+    if (!el) return;
+    if (el.complete && el.naturalWidth > 0) {
       setStatus("ready");
+      return;
+    }
+    // Blockers sometimes return a 0×0 "success" — treat as hard fail.
+    if (el.complete && el.naturalWidth === 0) {
+      const altUrl = mediaUrlFallback(resolved);
+      if (altUrl && altUrl !== src) {
+        setSrc(altUrl);
+        setStatus("loading");
+        return;
+      }
+      setStatus("failed");
     }
   };
 
@@ -82,7 +112,20 @@ function CdnImg({
           loading={loading}
           decoding="async"
           referrerPolicy="no-referrer"
-          onLoad={() => setStatus("ready")}
+          onLoad={(e) => {
+            const el = e.currentTarget;
+            if (el.naturalWidth > 0) {
+              setStatus("ready");
+              return;
+            }
+            const altUrl = mediaUrlFallback(resolved);
+            if (altUrl && altUrl !== src) {
+              setSrc(altUrl);
+              setStatus("loading");
+              return;
+            }
+            setStatus("failed");
+          }}
           onError={() => {
             const altUrl = mediaUrlFallback(resolved);
             if (altUrl && altUrl !== src) {

@@ -4,8 +4,8 @@ import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import { mediaUrl, mediaUrlFallback } from "@/lib/product-image";
 
-const HIDE_KEY = "briq-welcome-hide-until";
-const SEEN_KEY = "briq-welcome-seen";
+export const WELCOME_HIDE_KEY = "briq-welcome-hide-until";
+export const WELCOME_SEEN_KEY = "briq-welcome-seen";
 
 const POINTS = [
   {
@@ -22,17 +22,17 @@ const POINTS = [
   },
 ] as const;
 
-function hiddenForNow(): boolean {
+export function welcomeHiddenForNow(): boolean {
   try {
-    const until = Number(localStorage.getItem(HIDE_KEY) || 0);
+    const until = Number(localStorage.getItem(WELCOME_HIDE_KEY) || 0);
     if (until > Date.now()) return true;
-    return sessionStorage.getItem(SEEN_KEY) === "1";
+    return sessionStorage.getItem(WELCOME_SEEN_KEY) === "1";
   } catch {
     return false;
   }
 }
 
-function seoulMidnightStamp(): number {
+export function seoulMidnightStamp(): number {
   const now = new Date();
   const seoulNow = new Date(now.toLocaleString("en-US", { timeZone: "Asia/Seoul" }));
   const end = new Date(seoulNow);
@@ -57,17 +57,17 @@ function PopupPhoto() {
   );
 }
 
-function rememberSeen() {
+function rememberWelcomeSeen() {
   try {
-    sessionStorage.setItem(SEEN_KEY, "1");
+    sessionStorage.setItem(WELCOME_SEEN_KEY, "1");
   } catch {
     /* private mode */
   }
 }
 
-function WelcomeDialog({ onClose }: { onClose: () => void }) {
+export function WelcomeDialog({ onClose }: { onClose: () => void }) {
   const close = () => {
-    rememberSeen();
+    rememberWelcomeSeen();
     onClose();
   };
 
@@ -76,7 +76,7 @@ function WelcomeDialog({ onClose }: { onClose: () => void }) {
     document.body.style.overflow = "hidden";
     const onKey = (event: KeyboardEvent) => {
       if (event.key !== "Escape") return;
-      rememberSeen();
+      rememberWelcomeSeen();
       onClose();
     };
     window.addEventListener("keydown", onKey);
@@ -88,7 +88,7 @@ function WelcomeDialog({ onClose }: { onClose: () => void }) {
 
   const dismissForToday = () => {
     try {
-      localStorage.setItem(HIDE_KEY, String(seoulMidnightStamp()));
+      localStorage.setItem(WELCOME_HIDE_KEY, String(seoulMidnightStamp()));
     } catch {
       /* private mode */
     }
@@ -131,9 +131,6 @@ function WelcomeDialog({ onClose }: { onClose: () => void }) {
               </li>
             ))}
           </ul>
-          <button type="button" className="welcome-popup__cta" onClick={close}>
-            쇼핑 계속하기
-          </button>
           <button
             type="button"
             className="welcome-popup__later"
@@ -146,17 +143,4 @@ function WelcomeDialog({ onClose }: { onClose: () => void }) {
     </div>,
     document.body,
   );
-}
-
-/** Opens on arrival. Hidden until Seoul midnight after “오늘 하루 보지 않기”, and for the rest of the tab after a close. `?welcome=preview` always opens it. */
-export function WelcomePopupGate() {
-  const [open, setOpen] = useState(false);
-
-  useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
-    if (params.get("welcome") === "preview" || !hiddenForNow()) setOpen(true);
-  }, []);
-
-  if (!open) return null;
-  return <WelcomeDialog onClose={() => setOpen(false)} />;
 }
