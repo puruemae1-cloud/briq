@@ -10,7 +10,7 @@ export const CARD_GALLERY_LIMIT = 2;
  */
 export const CARD_VARIANT_LIMIT = 6;
 
-/** Marker so live /api checks can confirm the slim DTO is deployed. */
+/** Marker so live /api checks can confirm the slim DTO is deployed (v3). */
 export const CARD_DTO_VERSION = 3;
 
 type CardVariant = Pick<
