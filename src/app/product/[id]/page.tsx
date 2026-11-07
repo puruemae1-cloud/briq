@@ -3,10 +3,11 @@ import { notFound } from "next/navigation";
 import { JsonLd } from "@/components/JsonLd";
 import { ProductDetail } from "@/components/ProductDetail";
 import { formatKrw, getProduct, isProductInStock, productDisplayPrice } from "@/data/products";
-import { listQa } from "@/lib/qa-inbox";
-import { maskInquiryEmail } from "@/lib/qa-privacy";
 import { mediaUrl } from "@/lib/product-image";
-import { getSiteUrl, productSeoHeadline, seoTitle } from "@/lib/site";
+import { getSiteUrl } from "@/lib/site";
+
+/** Catalogue HTML is deploy-stable; edge-cache for Naver Yeti download time. */
+export const revalidate = 3600;
 
 type Props = {
   params: Promise<{ id: string }>;
@@ -20,21 +21,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const name = product.nameKo || product.name;
   const brand = product.brand || "Briq";
-  const headline = productSeoHeadline(brand, name);
-  const titleText = `${headline} 명품직구`;
-  const title = seoTitle(titleText);
+  const title = `${brand} ${name} | 명품직구 Briq`;
   const listPrice = productDisplayPrice(product);
-  const stockHint = isProductInStock(product) ? "재고 확인 후 바로 주문" : "입고 문의 가능";
   const description = [
-    `${headline}.`,
+    `${brand} ${name}.`,
     product.compareAtPrice
       ? `판매가 ${formatKrw(listPrice)}.`
-      : `${formatKrw(listPrice)} (관부가세·항공배송 포함).`,
-    `${stockHint}. 영국 정품 명품직구 Briq.`,
+      : `가격 ${formatKrw(listPrice)}.`,
+    "Briq 영국 명품직구·구매대행, 항공배송·관부가세 포함.",
   ].join(" ");
   const image = mediaUrl(product.image || product.images?.[0] || "");
   const url = `${getSiteUrl()}/product/${encodeURIComponent(product.id)}`;
-  const ogTitle = title.absolute;
 
   return {
     title,
@@ -44,19 +41,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       name,
       "명품직구",
       "명품구매대행",
-      "명품시계",
       "명품의류",
       product.category,
     ].filter(Boolean) as string[],
     alternates: { canonical: url },
     openGraph: {
-      title: ogTitle,
+      title,
       description,
       url,
       type: "website",
       locale: "ko_KR",
       images: image
-        ? [{ url: image, alt: headline }]
+        ? [{ url: image, alt: `${brand} ${name}` }]
         : undefined,
     },
   };
@@ -83,21 +79,9 @@ export default async function ProductPage({ params, searchParams }: Props) {
   const site = getSiteUrl();
   const name = product.nameKo || product.name;
   const image = mediaUrl(product.image || product.images?.[0] || "");
-  const initialInquiries = (await listQa())
-    .filter((item) => item.productId === product.id && item.visibility !== "private")
-    .map((item) => ({
-      id: item.id,
-      productId: item.productId,
-      productName: item.productName,
-      authorName: item.authorName,
-      authorEmail: item.authorEmail ? maskInquiryEmail(item.authorEmail) : undefined,
-      question: item.question,
-      visibility: "public" as const,
-      createdAt: item.createdAt,
-      answer: item.answer,
-      answeredAt: item.answeredAt,
-      answeredBy: item.answeredBy,
-    }));
+  // Do not await listQa()/Blob here — it forced every PDP to ~0.6–0.7s and
+  // private, uncacheable HTML (Naver "다운로드 소요시간"). ProductQA loads
+  // inquiries on the client via /api/qa.
   const productLd = {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -127,12 +111,7 @@ export default async function ProductPage({ params, searchParams }: Props) {
   return (
     <>
       <JsonLd data={productLd} />
-      <ProductDetail
-        product={product}
-        colorId={colorId}
-        sizeId={sizeId}
-        initialInquiries={initialInquiries}
-      />
+      <ProductDetail product={product} colorId={colorId} sizeId={sizeId} />
     </>
   );
 }

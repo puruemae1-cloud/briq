@@ -65,7 +65,9 @@ async function writeFileItems(items: QaItem[]) {
 }
 
 async function readBlobItems(): Promise<QaItem[]> {
-  const result = await get(BLOB_PATH, { access: "private", useCache: false });
+  // Cache blob reads — useCache:false made every PDP SSR wait on Blob (~0.6s)
+  // and blocked edge caching (Naver download-time).
+  const result = await get(BLOB_PATH, { access: "private", useCache: true });
   if (!result || result.statusCode !== 200 || !result.stream) return [];
   return parseItems(await new Response(result.stream).text());
 }

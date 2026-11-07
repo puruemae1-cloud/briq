@@ -1,0 +1,44 @@
+name: HTML download time guard
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "src/app/product/**"
+      - "src/app/shop/**"
+      - "src/lib/qa-inbox.ts"
+      - "next.config.ts"
+      - "scripts/check-html-download-time.py"
+      - ".github/workflows/html-download-time-guard.yml"
+  pull_request:
+    paths:
+      - "src/app/product/**"
+      - "src/app/shop/**"
+      - "src/lib/qa-inbox.ts"
+      - "next.config.ts"
+      - "scripts/check-html-download-time.py"
+      - ".github/workflows/html-download-time-guard.yml"
+  workflow_dispatch:
+  schedule:
+    - cron: "20 */6 * * *"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: html-download-time-guard
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check Naver download-time budgets
+        run: python3 scripts/check-html-download-time.py
+        env:
+          SITE: https://www.briq.kr

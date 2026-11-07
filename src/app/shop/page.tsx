@@ -30,6 +30,9 @@ import { sortNavChildrenByBrandOrder } from "@/lib/brand-nav-order";
 import { BrandChipContent, isBrandChipNavId } from "@/components/BrandChip";
 import { BrandChipRail } from "@/components/BrandChipRail";
 
+/** Shop HTML is deploy-stable; edge-cache for Naver Yeti download time. */
+export const revalidate = 3600;
+
 /** Official mismo.dk homepage slider, in the same order. */
 const MISMO_HERO_SLIDES: Omit<CarouselSlide, "image">[] = [
   {

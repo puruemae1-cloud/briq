@@ -98,6 +98,19 @@ jobs:
           for p in $products; do get "$p" || failed=1; done
           exit $failed
 
+      - name: Warm Naver priority product URLs after deploy
+        if: github.event_name == 'deployment_status'
+        run: |
+          # Prefill edge cache for sitemap-naver.xml products so Yeti download
+          # time stays low on first crawl after a deploy.
+          curl -sL -m 90 "$SITE/sitemap-naver.xml" -o /tmp/naver-sm.xml || true
+          grep -o 'https://www.briq.kr/product/[^<"]*' /tmp/naver-sm.xml \
+            | sed 's#https://www.briq.kr##' | sort -u | head -40 > /tmp/naver-products.txt
+          echo "warming $(wc -l < /tmp/naver-products.txt) naver product URLs"
+          xargs -P 8 -I{} curl -s -o /dev/null -m 90 \
+            -w "%{http_code} %{time_starttransfer}s {}\n" \
+            -H "User-Agent: briq-speed-guard" "$SITE{}" < /tmp/naver-products.txt || true
+
       - name: Hero headline word spacing
         if: github.event_name != 'schedule'
         run: |

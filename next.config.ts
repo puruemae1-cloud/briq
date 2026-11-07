@@ -36,8 +36,18 @@ const nextConfig: NextConfig = {
   // Shop/product HTML only changes with a deploy (catalogue is bundled, cart badge
   // is client-side) and Vercel purges the CDN on deploy, so serve it from the edge
   // instead of waking a cold function that has to load every catalogue.
+  // Sets Cache-Control + CDN variants — Vercel-CDN alone was ignored when the
+  // route was dynamic (Naver "다운로드 소요시간" from cold PDP Blob/QA waits).
   async headers() {
     const edgeCache = [
+      {
+        key: "Cache-Control",
+        value: "public, s-maxage=3600, stale-while-revalidate=86400",
+      },
+      {
+        key: "CDN-Cache-Control",
+        value: "public, s-maxage=3600, stale-while-revalidate=86400",
+      },
       {
         key: "Vercel-CDN-Cache-Control",
         value: "public, s-maxage=3600, stale-while-revalidate=86400",
@@ -45,7 +55,11 @@ const nextConfig: NextConfig = {
     ];
     return [
       { source: "/shop", headers: edgeCache },
+      { source: "/shop/:path*", headers: edgeCache },
       { source: "/product/:id", headers: edgeCache },
+      { source: "/brands", headers: edgeCache },
+      { source: "/brands/:path*", headers: edgeCache },
+      { source: "/guide/:path*", headers: edgeCache },
     ];
   },
   // Serve the index at /sitemap.xml with no redirect.
