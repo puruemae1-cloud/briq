@@ -18,7 +18,12 @@ export const HOMEPAGE_DEPLOY_KEY =
   "local";
 export const HOMEPAGE_DATA_TAG = "home-data";
 const TTL_SECONDS = 3600;
-const EMPTY: HomepageData = { rails: {}, flannels: [], signature: [], newItems: [] };
+const EMPTY: HomepageData = {
+  rails: {},
+  flannels: [],
+  signature: [],
+  newItems: [],
+};
 
 function feedUrl(): string | null {
   const host = process.env.VERCEL_PROJECT_PRODUCTION_URL;

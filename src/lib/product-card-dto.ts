@@ -67,7 +67,9 @@ export function toCardProduct(p: Product): Product {
   const images = p.images?.slice(0, CARD_GALLERY_LIMIT);
   const variants = slimVariantsForCard(p.variants);
 
-  const out: Product = {
+  // Cast: Product requires tags/accent for catalogue rows, but card HTML must
+  // omit them (and empty strings still cost Yeti download bytes).
+  const out = {
     id: p.id,
     name: p.name,
     nameKo: p.nameKo,
@@ -77,18 +79,17 @@ export function toCardProduct(p: Product): Product {
     subcategory: p.subcategory,
     image: p.image,
     inStock: p.inStock,
-  };
-
-  if (p.compareAtPrice) out.compareAtPrice = p.compareAtPrice;
-  if (images?.length) out.images = images;
-  if (p.hoverImage) out.hoverImage = p.hoverImage;
-  if (p.badge) out.badge = p.badge;
-  if (p.registeredAt) out.registeredAt = p.registeredAt;
-  if (p.newBadgeAt) out.newBadgeAt = p.newBadgeAt;
-  if (p.shopColorKey) out.shopColorKey = p.shopColorKey;
-  if (p.cwCollections?.length) out.cwCollections = p.cwCollections;
-  if (p.ggCollections?.length) out.ggCollections = p.ggCollections;
-  if (variants?.length) out.variants = variants as ProductVariant[];
+    ...(p.compareAtPrice ? { compareAtPrice: p.compareAtPrice } : {}),
+    ...(images?.length ? { images } : {}),
+    ...(p.hoverImage ? { hoverImage: p.hoverImage } : {}),
+    ...(p.badge ? { badge: p.badge } : {}),
+    ...(p.registeredAt ? { registeredAt: p.registeredAt } : {}),
+    ...(p.newBadgeAt ? { newBadgeAt: p.newBadgeAt } : {}),
+    ...(p.shopColorKey ? { shopColorKey: p.shopColorKey } : {}),
+    ...(p.cwCollections?.length ? { cwCollections: p.cwCollections } : {}),
+    ...(p.ggCollections?.length ? { ggCollections: p.ggCollections } : {}),
+    ...(variants?.length ? { variants: variants as ProductVariant[] } : {}),
+  } as Product;
 
   return out;
 }
