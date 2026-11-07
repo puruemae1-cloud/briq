@@ -48,7 +48,8 @@ const nextConfig: NextConfig = {
       { source: "/product/:id", headers: edgeCache },
     ];
   },
-  // Serve the index at /sitemap.xml with no redirect. Naver/Google drop
+  // Serve the index at /sitemap.xml with no redirect.
+  // (Naver download-size: keep sitemap 200, no 3xx.) Naver/Google drop
   // sitemap URLs that 3xx (see getSiteUrl comment in site.ts).
   async rewrites() {
     return [{ source: "/sitemap.xml", destination: "/sitemap-index.xml" }];
