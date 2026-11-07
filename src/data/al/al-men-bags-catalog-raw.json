@@ -2,11 +2,11 @@
   "family": "al-men-bags",
   "category": "bags",
   "hub": "men-bags",
-  "scrapedAt": "2026-10-04T08:29:20.412374+00:00",
+  "scrapedAt": "2026-11-06T21:07:19.471346+00:00",
   "leaves": [
     "al-men-bags"
   ],
-  "officialUnion": 11,
+  "officialUnion": 9,
   "products": [
     {
       "id": "M116XF-4195",
@@ -72,74 +72,6 @@
         "/products/al-pdp/m116xf-4195/3.jpg",
         "/products/al-pdp/m116xf-4195/4.jpg",
         "/products/al-pdp/m116xf-4195/5.jpg"
-      ]
-    },
-    {
-      "id": "M110XF-5",
-      "sku": "M110XF-5",
-      "collections": [
-        "al-men-bags",
-        "all-saints-bags",
-        "al-men-bags-group"
-      ],
-      "leafId": "al-men-bags",
-      "cgid": "316",
-      "url": "https://www.allsaints.com/on/demandware.store/Sites-allsaints-uk-Site/en_GB/Product-Show?pid=M110XF-5",
-      "name": "Leather Crossbody Messenger Bag",
-      "brand": "AllSaints",
-      "link": "/menswear/leather-crossbody-messenger-bag/5063320997943.html",
-      "gbpPrice": 299.0,
-      "listGbpPrice": null,
-      "inStock": true,
-      "shortDescription": [
-        "Buckle fastenings at front flap",
-        "Interior pocket",
-        "Depth: 8cm",
-        "Width: 27cm",
-        "Height: 22cm"
-      ],
-      "longDescription": [
-        "Body: 100% cow leather",
-        "Lining: 100% cow suede",
-        "Wipe clean only"
-      ],
-      "description": "Messenger bag made from grained-leather with an expandable interior, polished silver hardware and an adjustable strap.",
-      "modelCopy": "",
-      "stylistsTips": "",
-      "notesFromAtelier": "",
-      "sizeChartId": "",
-      "sizeAndFit": "",
-      "sizeGuide": null,
-      "fabricAndCare": {
-        "fabricAndCareTitle": "Fabric & care",
-        "fabricAndCareCopy": "",
-        "fabricAndCareURL": ""
-      },
-      "originCountry": "India",
-      "color": "Black",
-      "imageUrls": [
-        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%201%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M110XF-5.json?_i=AG",
-        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%202%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M110XF-5.json?_i=AG",
-        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%203%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M110XF-5.json?_i=AG",
-        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%204%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M110XF-5.json?_i=AG",
-        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%205%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M110XF-5.json?_i=AG"
-      ],
-      "sizes": [
-        {
-          "id": "5063320997943",
-          "value": "One Size",
-          "displayValue": "One Size",
-          "inStock": true,
-          "gbpPrice": 299.0,
-          "listGbpPrice": null
-        }
-      ],
-      "localImages": [
-        "/products/al-pdp/m110xf-5/1.jpg",
-        "/products/al-pdp/m110xf-5/2.jpg",
-        "/products/al-pdp/m110xf-5/3.jpg",
-        "/products/al-pdp/m110xf-5/4.jpg",
-        "/products/al-pdp/m110xf-5/5.jpg"
       ]
     },
     {
@@ -693,78 +625,6 @@
         "/products/al-pdp/m114xf-5/4.jpg",
         "/products/al-pdp/m114xf-5/5.jpg",
         "/products/al-pdp/m114xf-5/6.jpg"
-      ]
-    },
-    {
-      "id": "M164XB-5",
-      "sku": "M164XB-5",
-      "collections": [
-        "all-saints-bags",
-        "al-men-bags-group",
-        "al-men-bags"
-      ],
-      "leafId": "al-men-bags",
-      "cgid": "316",
-      "url": "https://www.allsaints.com/on/demandware.store/Sites-allsaints-uk-Site/en_GB/Product-Show?pid=M164XB-5",
-      "name": "Carabiner Leather Backpack",
-      "brand": "AllSaints",
-      "link": "/menswear/carabiner-leather-backpack/5063320238473.html",
-      "gbpPrice": 249.0,
-      "listGbpPrice": null,
-      "inStock": true,
-      "shortDescription": [
-        "Depth: 15cm",
-        "Height: 48cm"
-      ],
-      "longDescription": [
-        "Body: 100% sheep leather",
-        "Trim: 100% cow leather",
-        "Lining: 100% organic cotton",
-        "Wipe clean only"
-      ],
-      "description": "Leather backpack with interior pockets and complete with zip closure. Lined.",
-      "modelCopy": "",
-      "stylistsTips": "",
-      "notesFromAtelier": "",
-      "sizeChartId": "",
-      "sizeAndFit": "",
-      "sizeGuide": null,
-      "fabricAndCare": {
-        "fabricAndCareTitle": "Fabric & care",
-        "fabricAndCareCopy": "",
-        "fabricAndCareURL": ""
-      },
-      "originCountry": "India",
-      "color": "Black",
-      "imageUrls": [
-        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%201%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M164XB-5.json?_i=AG",
-        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%202%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M164XB-5.json?_i=AG",
-        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%203%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M164XB-5.json?_i=AG",
-        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%204%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M164XB-5.json?_i=AG",
-        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%205%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M164XB-5.json?_i=AG",
-        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%206%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M164XB-5.json?_i=AG",
-        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%207%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M164XB-5.json?_i=AG",
-        "https://media.i.allsaints.com/image/list/fn_select:jq:first%28.%5B%5D%7Cif%20has%28%22metadata%22%29%20then%20select%28any%28.metadata%5B%5D%3B%20.external_id%20%3D%3D%20%22sfcc_pdp_gallery_position_prod%22%20and%20.value%20%3D%3D%208%29%29%20else%20empty%20end%29/f_jpg,q_auto,dpr_auto/M164XB-5.json?_i=AG"
-      ],
-      "sizes": [
-        {
-          "id": "5063320238473",
-          "value": "One Size",
-          "displayValue": "One Size",
-          "inStock": true,
-          "gbpPrice": 249.0,
-          "listGbpPrice": null
-        }
-      ],
-      "localImages": [
-        "/products/al-pdp/m164xb-5/1.jpg",
-        "/products/al-pdp/m164xb-5/2.jpg",
-        "/products/al-pdp/m164xb-5/3.jpg",
-        "/products/al-pdp/m164xb-5/4.jpg",
-        "/products/al-pdp/m164xb-5/5.jpg",
-        "/products/al-pdp/m164xb-5/6.jpg",
-        "/products/al-pdp/m164xb-5/7.jpg",
-        "/products/al-pdp/m164xb-5/8.jpg"
       ]
     }
   ]
