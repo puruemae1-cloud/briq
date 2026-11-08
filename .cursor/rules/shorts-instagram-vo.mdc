@@ -1,0 +1,76 @@
+---
+description: Locked Briq YouTube Shorts vs Instagram Reels VO/caption format
+alwaysApply: true
+---
+
+# Shorts / Instagram VO · 최종 포맷
+
+Build with `youtube-drafts/build_multi_brand_shorts_10.py` only. Do not invent a one-off subtitle layout.
+
+## Platforms
+
+- **YouTube Shorts**: `--platform shorts` (default). Closing CTA = site search (`브릭 점 케이알에서 ○○을 검색해 보세요`). Shorts comment/description URLs are non-clickable — do **not** use pinned-link CTA.
+- **Instagram**: `--platform instagram`. Same search CTA. Never put `https://` in IG captions. Skip Galvin Green (`gg`).
+
+## Locked beat order (VO index = card index)
+
+1. Intro  
+2. Product  
+3. Price  
+4. Feature / purchase-desire (`FEATURE_BEAT`)  
+5. Lifestyle — **subtitle must match this VO** (hooks[1]/[2] track the brand lifestyle line; never leave aging/feature copy here)  
+6. Select / UK line  
+7. Naver Pay (3-line card; VO = short payment line only — never speak 적립)  
+8. Platform CTA / endcard  
+
+### PDP detail facts (default for every future batch)
+
+- Always pass the catalog product into `build_vo_and_hooks(..., product=chosen)`.
+- When `descriptionKo` / `featuresKo` / `techSpecs` / `storySections` exist, **prefer those real PDP facts** for:
+  - product intro VO (line 2) from `descriptionKo`
+  - feature VO + on-screen card (beat 4)
+  - lifestyle VO + on-screen card (beat 5)
+- Rank distinctive design facts (밑창, 실루엣, 가죽, 위빙, 방수…) over noise (제품 코드, 제조국, 사이즈 추천, 케어).
+- Brand `FEATURE_BEAT` / lifestyle filler is fallback only when PDP facts are missing.
+- Kind must match the SKU (`신발`/`가방`/`의류`…) — never ship clothing VO on shoe photos. Ban VO `붙는`/`붙음`/`붙습니다` (use `어울립니다`).
+
+Feature VO is always inserted after the price line. Brand scripts must **not** repeat that same sentence in the lifestyle slot — duplicate audio will play. Builder raises if feature and lifestyle VO normalize equal. TAG Heuer: never use `도구처럼` / tool-watch filler; prefer wrist comfort (`착 감기는 착용감`). Never use lifestyle filler `붙습니다` — say `어울립니다`.  
+
+## Naver Pay (both platforms)
+
+- VO only: `네이버페이로 안전하게 결제하세요.` (no 적립 / 원클릭 spoken)
+- Card (exactly):  
+  - `네이버페이로 간편하게 결제!`  
+  - `안심하고 편리한 원클릭 네이버페이`  
+  - `네이버포인트도 적립하세요.` — draw tucked directly under line 2, slightly larger type
+
+## TTS spelling (VO only; on-screen keeps normal Hangul)
+
+- `영국 현지까는` (not 현지가)  
+- `판매까` (not 판매가) — always tensed 까; `prepare_vo_line` rewrites slips  
+- Price range always as tensed **때**: script may say `원때` then `prepare_vo_line` → phonetic `원떼` so Edge TTS never says `원대` / `가격대`. Builder refuses TTS if `원대`/`가격대`/`원때`(unlocked) remain.  
+- Bag noun `백` → `빽` in VO (`tts_bag_pronunciation`)  
+- Ban VO `붙습니다` (use `어울립니다`)
+
+## On-screen copy
+
+- Mid brand card: `○ · {mid_card_tail}` via `MID_CARD_TAILS` — rotate; ~half a 10-batch use “손이 가는” variants, rest like `언제든 가지고 다니고 싶은` / `내 삶의 일부가 되어줄`. Never hard-lock one phrase.  
+- Product shots only — drop ultra-wide landscape stills (`filter_landscape=True` when rendering)  
+- Mismo feature: aging leather, not “표정이 바뀐다”
+
+## Background music
+
+- Use `youtube-drafts/bgm/rotate/` (~10 Mixkit rhythm/tension beds). `pick_bgm(product_id)` rotates stably per SKU — do **not** use sine-drone pads (`soft-ambient-bed` / `luxury-cinematic-bed`).
+- Mix under VO at audible `BGM_VOLUME` with drums/pulse intact (light highpass only). Both Shorts and Instagram. Do not omit unless the user asks for VO-only.
+
+## Instagram cover / thumbnail
+
+- Every build writes a clean `poster.jpg` (1080×1920 product still, **no VO text/shade**) via `pick_cover_photo` + `write_clean_poster` in `build_multi_brand_shorts_10.py`.
+- Graph API `cover_url` must be that `poster.jpg`. Never use `frames/01.jpg` or any texted slide as the feed thumbnail — text and shade hide the product.
+- Package with `youtube-drafts/package_ig_from_shorts.py` (refuses missing/identical-to-frames posters). Slide reels: `make_reels.py` rebuilds `poster.jpg` from the stamped catalog source on `01.jpg`.
+
+## Instagram publish
+
+- Run `publish_guard.py check` before creating a media container  
+- Host video via public HTTPS URL; record with `publish_guard.py record` after success  
+- Do not republish a product/keyword already on the live @briq.kr feed unless the user deletes it and asks to replace  

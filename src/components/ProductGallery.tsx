@@ -7,6 +7,7 @@ import {
   useState,
   type TouchEvent,
 } from "react";
+import { LiveViewersBadge } from "@/components/LiveViewersBadge";
 import { ProductImage } from "@/components/ProductImage";
 import { mediaUrl, mediaUrlFallback, isUsableCatalogImage } from "@/lib/product-image";
 
@@ -19,6 +20,7 @@ export function ProductGallery({
   badge,
   resetKey,
   frameModifier,
+  productId,
 }: {
   images: string[];
   alt: string;
@@ -27,6 +29,8 @@ export function ProductGallery({
   resetKey?: string;
   /** Optional frame modifier (e.g. Chanel packshot mobile zoom). */
   frameModifier?: string;
+  /** Catalog product id — enables live “N명이 보고 있어요” on the main still. */
+  productId?: string;
 }) {
   const list = (images.length > 0 ? images : []).filter(isUsableCatalogImage);
   const [active, setActive] = useState(0);
@@ -141,6 +145,9 @@ export function ProductGallery({
               <span className="product-gallery-count" aria-hidden>
                 {safeIndex + 1} / {list.length}
               </span>
+            ) : null}
+            {!soldOut && productId ? (
+              <LiveViewersBadge productId={productId} />
             ) : null}
           </ProductImage>
         </button>

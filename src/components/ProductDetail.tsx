@@ -454,6 +454,7 @@ export function ProductDetail({
           soldOut={soldOut}
           badge={optionLabel || selected?.nameKo}
           resetKey={selected?.id ?? product.id}
+          productId={product.id}
           frameModifier={
             [
               chPackshotZoom ? "product-frame--ch-packshot-zoom" : "",
