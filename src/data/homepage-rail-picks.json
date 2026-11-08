@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-11-07T16:58:01Z",
+  "generatedAt": "2026-11-08T14:01:05Z",
   "limit": 4,
   "rails": {
     "luxury": {
       "productIds": [
         "bv-a003brv6zf02201",
-        "bv-874364v6n602112",
         "bv-871198v6or01010",
-        "bv-875219v6oe01010"
+        "bv-875219v6oe01010",
+        "bv-871316v6ko02549"
       ],
       "brands": [
         "보테가-베네타",
@@ -60,16 +60,16 @@
     },
     "accessories": {
       "productIds": [
-        "ch-101248",
-        "ch-101249",
-        "ch-101251",
-        "ch-101280"
+        "ps-hand-painted-dogs-glass-bauble",
+        "ps-hand-painted-snow-street-scene-glass-bauble",
+        "ps-jaques-of-london-giant-tumble-tower",
+        "ps-jaques-of-london-skittles-set"
       ],
       "brands": [
-        "chanel",
-        "chanel",
-        "chanel",
-        "chanel"
+        "paul-smith",
+        "paul-smith",
+        "paul-smith",
+        "paul-smith"
       ]
     },
     "sports": {
@@ -94,12 +94,6 @@
       "shoes",
       "shoes"
     ],
-    "chanel": [
-      "accessories",
-      "accessories",
-      "accessories",
-      "accessories"
-    ],
     "christopher-ward": [
       "watches",
       "watches",
@@ -117,6 +111,12 @@
       "bags",
       "bags",
       "bags"
+    ],
+    "paul-smith": [
+      "accessories",
+      "accessories",
+      "accessories",
+      "accessories"
     ],
     "보테가-베네타": [
       "luxury",
