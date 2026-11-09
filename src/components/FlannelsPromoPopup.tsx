@@ -30,7 +30,7 @@ function PromoPhoto({ mobile }: { mobile: boolean }) {
   return (
     <img
       src={src}
-      alt=""
+      alt="FLANNELS 프로모션"
       draggable={false}
       referrerPolicy="no-referrer"
       onError={() => {
