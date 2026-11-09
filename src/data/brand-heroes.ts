@@ -56,6 +56,7 @@ export type BrandKey =
   | "belstaff-shoes"
   | "galvin-green"
   | "christopher-ward"
+  | "bremont"
   | "norqain"
   | "louis-vuitton"
   | "dior"
@@ -443,6 +444,15 @@ export const brandHeroes: Record<BrandKey, BrandHeroDef> = {
     logoSrc: "/brands/christopher-ward.svg",
     // Locked C1 Moonphase creative — not rotated weekly.
     images: ["/banners/brand-christopher-ward-moonphase.jpg"],
+  },
+  bremont: {
+    key: "bremont",
+    nameEn: "Bremont",
+    nameKo: "브레몽",
+    logoSrc: "/brands/bremont.svg",
+    images: [
+      "/products/bm-pdp/supermarine-43mm-full-ceramic-deep-blue-leather-strap-watch/1.jpg",
+    ],
   },
   "norqain": {
     key: "norqain",
@@ -931,6 +941,14 @@ export const brandRootToKey: Record<string, BrandKey> = {
   "galvin-green": "galvin-green",
   golf: "galvin-green",
   "christopher-ward": "christopher-ward",
+  bremont: "bremont",
+  "bm-supermarine": "bremont",
+  "bm-pilot": "bremont",
+  "bm-field": "bremont",
+  "bm-space": "bremont",
+  "bm-limited": "bremont",
+  "bm-ladies": "bremont",
+  "bm-other": "bremont",
   norqain: "norqain",
   "nq-wild-one": "norqain",
   "louis-vuitton": "louis-vuitton",

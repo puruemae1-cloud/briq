@@ -296,6 +296,15 @@ const SEO_BRANDS_BY_SLUG: Record<string, SeoBrand> = {
     blurb:
       "IWC 파일럿·포르투기저·인제니어 컬렉션을 Briq 영국 DMR 취급 기준으로 확인하세요.",
   },
+  bremont: {
+    slug: "bremont",
+    nameEn: "Bremont",
+    nameKo: "브레몽",
+    shopHref: "/shop?category=watches&sub=bremont",
+    keywords: ["브레몽", "Bremont", "슈퍼마린", "브레몽 시계"],
+    blurb:
+      "영국 헨리온템스에서 핸드빌드되는 브레몽 슈퍼마린·파일럿 시계를 Briq에서 만나보세요.",
+  },
   norqain: {
     slug: "norqain",
     nameEn: "NORQAIN",

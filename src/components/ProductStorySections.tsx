@@ -54,9 +54,10 @@ export function ProductStorySections({
                       src={section.videoUrl}
                       poster={section.image || undefined}
                       title={section.titleKo}
-                      autoPlay
-                      muted
-                      loop
+                      controls={Boolean(section.videoAudio)}
+                      autoPlay={!section.videoAudio}
+                      muted={!section.videoAudio}
+                      loop={!section.videoAudio}
                       playsInline
                       preload="metadata"
                     />

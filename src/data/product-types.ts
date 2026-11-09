@@ -6,8 +6,10 @@ export type ProductStorySection = {
   image?: string;
   imageAlt?: string;
   reverse?: boolean;
-  /** Optional embedded video (e.g. Vimeo). */
+  /** Optional embedded video (e.g. Vimeo or direct mp4). */
   videoUrl?: string;
+  /** When true, render controls and keep audio (do not force muted autoplay). */
+  videoAudio?: boolean;
   /** Full-bleed / caption-card presentation. */
   layout?: "default" | "wide" | "caption";
 };

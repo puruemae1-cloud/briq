@@ -27,6 +27,7 @@ const FAMILY_RANK: Record<string, number> = {
   "tag-heuer": 52.5,
   tudor: 53,
   iwc: 53.5,
+  bremont: 54,
   /** Watches: NORQAIN between DMR houses and Chanel. */
   norqain: 55,
   chanel: 100,
@@ -84,6 +85,9 @@ function brandFamily(id: string): string | null {
   }
   if (x === "iwc" || x.startsWith("iwc") || x.startsWith("iw-")) {
     return "iwc";
+  }
+  if (x === "bremont" || x.startsWith("bremont") || x.startsWith("bm-")) {
+    return "bremont";
   }
   if (x === "norqain" || x.startsWith("norqain") || x.startsWith("nq-")) {
     return "norqain";
@@ -224,6 +228,7 @@ export const SEO_BRAND_SLUG_ORDER = [
   "tag-heuer",
   "tudor",
   "iwc",
+  "bremont",
   "norqain",
   "chanel",
   "gucci",

@@ -52,6 +52,14 @@ export type SubcategoryId =
   | "iw-ingenieur"
   | "iw-aquatimer"
   | "iw-other"
+  | "bremont"
+  | "bm-supermarine"
+  | "bm-pilot"
+  | "bm-field"
+  | "bm-space"
+  | "bm-limited"
+  | "bm-ladies"
+  | "bm-other"
   | "rolex"
   | "rx-datejust"
   | "rx-daytona"
@@ -5679,6 +5687,22 @@ export const subcategoryGroups: Partial<Record<SubcategoryId, SubcategoryId[]>> 
   "iw-ingenieur": ["iw-ingenieur"],
   "iw-aquatimer": ["iw-aquatimer"],
   "iw-other": ["iw-other"],
+  bremont: [
+    "bm-supermarine",
+    "bm-pilot",
+    "bm-field",
+    "bm-space",
+    "bm-limited",
+    "bm-ladies",
+    "bm-other",
+  ],
+  "bm-supermarine": ["bm-supermarine"],
+  "bm-pilot": ["bm-pilot"],
+  "bm-field": ["bm-field"],
+  "bm-space": ["bm-space"],
+  "bm-limited": ["bm-limited"],
+  "bm-ladies": ["bm-ladies"],
+  "bm-other": ["bm-other"],
   rolex: [
     "rx-datejust",
     "rx-daytona",
@@ -7380,6 +7404,20 @@ export const navCategories: NavCategory[] = [
           { id: "iw-ingenieur", labelKo: "Ingenieur", href: "/shop?category=watches&sub=iw-ingenieur" },
           { id: "iw-aquatimer", labelKo: "Aquatimer", href: "/shop?category=watches&sub=iw-aquatimer" },
           { id: "iw-other", labelKo: "Other", href: "/shop?category=watches&sub=iw-other" },
+        ],
+      },
+      {
+        id: "bremont",
+        labelKo: "브레몽",
+        href: "/shop?category=watches&sub=bremont",
+        children: [
+          { id: "bm-supermarine", labelKo: "슈퍼마린", href: "/shop?category=watches&sub=bm-supermarine" },
+          { id: "bm-pilot", labelKo: "파일럿", href: "/shop?category=watches&sub=bm-pilot" },
+          { id: "bm-field", labelKo: "필드", href: "/shop?category=watches&sub=bm-field" },
+          { id: "bm-space", labelKo: "스페이스", href: "/shop?category=watches&sub=bm-space" },
+          { id: "bm-limited", labelKo: "리미티드 에디션", href: "/shop?category=watches&sub=bm-limited" },
+          { id: "bm-ladies", labelKo: "레이디스", href: "/shop?category=watches&sub=bm-ladies" },
+          { id: "bm-other", labelKo: "기타", href: "/shop?category=watches&sub=bm-other" },
         ],
       },
       {

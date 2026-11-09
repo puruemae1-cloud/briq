@@ -38,7 +38,8 @@ export type BrandCatalogKey =
   | "td"
   | "iw"
   | "rx"
-  | "pp";
+  | "pp"
+  | "bm";
 
 const ALL_KEYS: BrandCatalogKey[] = [
   "cw",
@@ -68,6 +69,7 @@ const ALL_KEYS: BrandCatalogKey[] = [
   "iw",
   "rx",
   "pp",
+  "bm",
 ];
 
 type Loader = () => Product[];
@@ -236,6 +238,11 @@ const LOADERS: Record<BrandCatalogKey, Loader> = {
   },
   pp: () => {
     return readCatalogJson("pp/pp-catalog.json");
+  },
+  bm: () => {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const mod = require("./bm/bm-products") as typeof import("./bm/bm-products");
+    return dropMissingImages(mod.bmProducts);
   },
 };
 
@@ -429,6 +436,7 @@ export function brandCatalogKeyFromNavId(
   if (x === "tag-heuer" || x.startsWith("th-") || x.includes("tag-heuer")) return "th";
   if (x === "tudor" || x.startsWith("td-") || x.includes("tudor")) return "td";
   if (x === "iwc" || x.startsWith("iw-") || x.includes("iwc")) return "iw";
+  if (x === "bremont" || x.startsWith("bm-") || x.includes("bremont")) return "bm";
   if (x === "rolex" || x.startsWith("rx-") || x.includes("rolex")) return "rx";
   if (x === "patek-philippe" || x.startsWith("pp-") || x.includes("patek")) return "pp";
   return null;
@@ -471,6 +479,7 @@ export function brandCatalogKeyFromProductId(
   if (x.startsWith("th-")) return "th";
   if (x.startsWith("td-")) return "td";
   if (x.startsWith("iw-")) return "iw";
+  if (x.startsWith("bm-")) return "bm";
   if (x.startsWith("rx-")) return "rx";
   if (x.startsWith("pp-")) return "pp";
   return null;
@@ -488,7 +497,7 @@ export function resolveBrandCatalogKeys(
 ): BrandCatalogKey[] | "all" {
   if (!sub) {
     // Watches category is Christopher Ward only — do not parse luxury JSON.
-    if (category === "watches") return ["cw", "nq", "om", "th", "td", "iw", "rx", "pp"];
+    if (category === "watches") return ["cw", "nq", "om", "th", "td", "iw", "rx", "pp", "bm"];
     // Bags hub — only brands with bag SKUs (bags slices), not every RTW catalogue.
     if (category === "bags") return [...BAGS_BRAND_KEYS];
     // Shoes hub — only brands with shoe SKUs (shoes slices), not every RTW catalogue.

@@ -9,6 +9,7 @@ import { navBrandFamily } from "@/lib/brand-nav-order";
 /** Uniform English wordmark shown on brand chips (same typeface via CSS). */
 const FAMILY_DISPLAY: Record<string, string> = {
   "christopher-ward": "Christopher Ward",
+  bremont: "Bremont",
   rolex: "Rolex",
   "patek-philippe": "Patek Philippe",
   omega: "OMEGA",
@@ -50,6 +51,7 @@ export function brandDisplayNameForNavId(id: string): string | null {
 
 const FAMILY_LOGO: Record<string, string> = {
   "christopher-ward": "/brands/christopher-ward.svg",
+  bremont: "/brands/bremont.svg",
   chanel: "/brands/chanel.svg",
   gucci: "/brands/gucci.svg",
   "louis-vuitton": "/brands/louis-vuitton.svg",
