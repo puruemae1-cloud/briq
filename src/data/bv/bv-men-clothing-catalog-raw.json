@@ -1,7 +1,7 @@
 {
   "hub": "men-clothing",
   "category": "luxury",
-  "scrapedAt": "2026-11-08T14:34:29.598395+00:00",
+  "scrapedAt": "2026-11-09T17:34:30.517890+00:00",
   "leaves": [
     "bv-men-clothing-coats",
     "bv-men-clothing-jackets",
@@ -657,7 +657,7 @@
           "id": "52",
           "value": "52",
           "displayValue": "52",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 4640.0,
           "listGbpPrice": null
         }
@@ -3959,7 +3959,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/check-wool-jacket-ardoise-sterling-mel-A004I0V6Y201983.html",
       "gbpPrice": 3390.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Color: Ardoise/Sterling Mel"
       ],
@@ -4080,7 +4080,7 @@
           "id": "50",
           "value": "50",
           "displayValue": "50",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 3390.0,
           "listGbpPrice": null
         },
@@ -4435,7 +4435,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-leather-hooded-blouson-dark-navy-873908V6Q404030.html",
       "gbpPrice": 8460.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Color: Dark Navy"
       ],
@@ -4538,7 +4538,7 @@
           "id": "48",
           "value": "48",
           "displayValue": "48",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 8460.0,
           "listGbpPrice": null
         },
@@ -10575,7 +10575,7 @@
           "id": "52",
           "value": "52",
           "displayValue": "52",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 1950.0,
           "listGbpPrice": null
         },
@@ -10814,7 +10814,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/soft-wool-blouson-dark-jute-melange-842683V3F709039.html",
       "gbpPrice": 1860.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Colour: Dark Jute Melange"
       ],
@@ -10935,7 +10935,7 @@
           "id": "50",
           "value": "50",
           "displayValue": "50",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1860.0,
           "listGbpPrice": null
         },

@@ -1,7 +1,7 @@
 {
   "hub": "men-wallets",
   "category": "accessories",
-  "scrapedAt": "2026-11-08T14:36:50.013115+00:00",
+  "scrapedAt": "2026-11-09T17:36:48.878784+00:00",
   "leaves": [
     "bv-men-wallets-small",
     "bv-men-wallets-long",
@@ -1351,7 +1351,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/cassette-bi-fold-wallet-dark-green-743004VBWD23009.html",
       "gbpPrice": 490.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Calfskin",
         "Colour: Dark Green"
@@ -1384,7 +1384,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 490.0,
           "listGbpPrice": null
         }
@@ -12002,7 +12002,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-piccolo-passport-case-with-zip-black-854453V4J138803.html",
       "gbpPrice": 670.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Calfskin",
         "Colour: Black",
@@ -12037,7 +12037,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 670.0,
           "listGbpPrice": null
         }
