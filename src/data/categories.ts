@@ -7408,7 +7408,7 @@ export const navCategories: NavCategory[] = [
       },
       {
         id: "bremont",
-        labelKo: "브레몽",
+        labelKo: "Bremont",
         href: "/shop?category=watches&sub=bremont",
         children: [
           { id: "bm-supermarine", labelKo: "슈퍼마린", href: "/shop?category=watches&sub=bm-supermarine" },
