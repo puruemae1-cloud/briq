@@ -23,6 +23,7 @@ const _products: Product[] = [
     brand: "Bremont",
     price: sampleKrw,
     gbpPrice: sampleGbp,
+    accent: "#0B1C3A",
     category: "watches",
     subcategory: "bm-supermarine",
     tags: ["bremont", "bm-supermarine", "bm-limited"],
