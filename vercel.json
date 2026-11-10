@@ -11,12 +11,19 @@
     },
     "src/app/api/qa/auto-reply/route.ts": {
       "maxDuration": 60
+    },
+    "src/app/api/home-rotate/route.ts": {
+      "maxDuration": 60
     }
   },
   "crons": [
     {
       "path": "/api/qa/auto-reply",
       "schedule": "* * * * *"
+    },
+    {
+      "path": "/api/home-rotate",
+      "schedule": "0 13 * * *"
     }
   ]
 }

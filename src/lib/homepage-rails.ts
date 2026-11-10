@@ -17,19 +17,85 @@ const RAIL_BLOCKED_BRANDS: Record<string, ReadonlySet<string>> = {
   luxury: new Set(["arcteryx", "belstaff"]),
 };
 
-/** @deprecated Picker always unique-brands first; kept for call-site compat. */
+/** Minimum distinct brands on a rail, so one new launch cannot fill every slot. */
 const RAIL_MIN_BRANDS: Record<string, number> = {
-  luxury: 4,
-  bags: 4,
-  shoes: 4,
-  accessories: 4,
-  sports: 4,
+  luxury: 3,
 };
 
-/** Homepage watches rail: Christopher Ward New Releases + NORQAIN. */
+/** Homepage watches rail is locked to Christopher Ward New Releases (all devices). */
 export const HOMEPAGE_WATCHES_COLLECTION = "cw-new-releases";
 export const HOMEPAGE_WATCHES_BRAND = "christopher-ward";
-export const HOMEPAGE_WATCHES_BRANDS = ["christopher-ward", "norqain"] as const;
+
+/**
+ * Rails that reshuffle their non-featured slots once per Seoul rotation day.
+ * Watches stays CW New Releases (newest), not a daily shuffle.
+ */
+const DAILY_ROTATE_RAILS = new Set([
+  "luxury",
+  "bags",
+  "shoes",
+  "accessories",
+  "sports",
+]);
+
+/**
+ * Seoul calendar day that flips at 22:00 KST (UTC 13:00).
+ * Used as the stable seed for homepage 4-product rails.
+ */
+export function seoulRotationDay(now = Date.now()): string {
+  const shifted = new Date(now - 22 * 60 * 60 * 1000);
+  return new Intl.DateTimeFormat("en-CA", {
+    timeZone: "Asia/Seoul",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).format(shifted);
+}
+
+/** Seconds until the next 22:00 KST boundary (minimum 30s). */
+export function secondsUntilNextSeoulRotation(now = Date.now()): number {
+  const day = seoulRotationDay(now);
+  const [y, m, d] = day.split("-").map(Number);
+  // rotationDay D covers [D 22:00 KST, D+1 22:00 KST). Next flip = D+1 13:00 UTC.
+  const nextFlipUtc = Date.UTC(y, m - 1, d + 1, 13, 0, 0);
+  return Math.max(30, Math.ceil((nextFlipUtc - now) / 1000));
+}
+
+function previousRotationDay(day: string): string {
+  const [y, m, d] = day.split("-").map(Number);
+  if (!y || !m || !d) return day;
+  const dt = new Date(Date.UTC(y, m - 1, d));
+  dt.setUTCDate(dt.getUTCDate() - 1);
+  return dt.toISOString().slice(0, 10);
+}
+
+function hashSeed(s: string): number {
+  let h = 2166136261;
+  for (let i = 0; i < s.length; i++) {
+    h ^= s.charCodeAt(i);
+    h = Math.imul(h, 16777619);
+  }
+  return h >>> 0;
+}
+
+function seededShuffle<T>(arr: T[], seed: string): T[] {
+  const out = [...arr];
+  let a = hashSeed(seed);
+  const rand = () => {
+    a |= 0;
+    a = (a + 0x6d2b79f5) | 0;
+    let t = Math.imul(a ^ (a >>> 15), 1 | a);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+  for (let i = out.length - 1; i > 0; i--) {
+    const j = Math.floor(rand() * (i + 1));
+    const tmp = out[i];
+    out[i] = out[j];
+    out[j] = tmp;
+  }
+  return out;
+}
 
 /**
  * `featuredAt` ms for products in `HOME_FEATURED` that are still within
@@ -59,9 +125,7 @@ function sortWithFeaturedFirst(list: Product[]): Product[] {
 
 /** True when a product belongs on the homepage watches lookbook rail. */
 export function isHomepageWatchesRailProduct(product: Product): boolean {
-  const brand = homepageBrandKey(product);
-  if (brand === "norqain") return true;
-  if (brand !== HOMEPAGE_WATCHES_BRAND) return false;
+  if (homepageBrandKey(product) !== HOMEPAGE_WATCHES_BRAND) return false;
   if (homepageFeaturedAt(product) != null) return true;
   if (product.subcategory === HOMEPAGE_WATCHES_COLLECTION) return true;
   if (product.cwCollections?.some((c) => c === HOMEPAGE_WATCHES_COLLECTION)) {
@@ -90,10 +154,8 @@ const ID_PREFIX_BRAND: Array<{ prefix: string; brand: string }> = [
   { prefix: "bs-", brand: "belstaff" },
   { prefix: "ps-", brand: "paul-smith" },
   { prefix: "cw-", brand: "christopher-ward" },
-  { prefix: "nq-", brand: "norqain" },
   { prefix: "lu-", brand: "london-undercover" },
   { prefix: "mc-", brand: "moncler" },
-  { prefix: "fl-", brand: "flannels" },
 ];
 
 const BRAND_ALIASES: Array<{ re: RegExp; brand: string }> = [
@@ -113,10 +175,8 @@ const BRAND_ALIASES: Array<{ re: RegExp; brand: string }> = [
   { re: /belstaff|벨스타프/i, brand: "belstaff" },
   { re: /paul\s*smith|폴\s*스미스/i, brand: "paul-smith" },
   { re: /christopher\s*ward|크리스토퍼/i, brand: "christopher-ward" },
-  { re: /norqain|노르케인/i, brand: "norqain" },
   { re: /london\s*undercover|런던언더커버/i, brand: "london-undercover" },
   { re: /moncler|몽클레/i, brand: "moncler" },
-  { re: /flannels|플란넬/i, brand: "flannels" },
 ];
 
 /** Stable brand key for homepage cross-rail exclusivity. */
@@ -140,21 +200,19 @@ export function homepageBrandKey(product: Product): string {
 
 /**
  * Pick up to `limit` newest in-stock products, skipping brands in `excludeBrands`.
- * Always prefers one product per brand first so lookbook rails stay mixed
- * (bags/shoes/luxury/…). Same-brand extras only soft-fill when the pool has
- * fewer distinct brands than slots (e.g. watches = Christopher Ward only).
+ * Does not soft-fill with excluded brands — empty slots stay empty so another
+ * brand can surface rather than repeating a brand already on an earlier rail.
+ *
+ * With `minBrands`, a repeat of an already-picked brand is skipped while the
+ * remaining slots are needed to reach that many brands; skipped products only
+ * back-fill when the pool has too few brands.
  */
-export function getHomepageRailProductsExclusive(
-  list: Product[],
-  limit = 4,
-  excludeBrands: ReadonlySet<string> = new Set(),
-  _minBrands = 1,
+function pickExclusiveFromPool(
+  pool: Product[],
+  limit: number,
+  excludeBrands: ReadonlySet<string>,
+  minBrands: number,
 ): Product[] {
-  const inStock = list.filter((p) => isProductInStock(p));
-  const eligible = (inStock.length >= limit ? inStock : list).filter(
-    (p) => !isHomepageSwimwearProduct(p),
-  );
-  const pool = sortWithFeaturedFirst(eligible);
   const out: Product[] = [];
   const brands = new Set<string>();
   const skipped: Product[] = [];
@@ -162,26 +220,96 @@ export function getHomepageRailProductsExclusive(
     const key = homepageBrandKey(product);
     if (excludeBrands.has(key) && homepageFeaturedAt(product) == null) continue;
     if (brands.has(key)) {
-      skipped.push(product);
-      continue;
+      const slotsAfter = limit - out.length - 1;
+      if (minBrands - brands.size > slotsAfter) {
+        skipped.push(product);
+        continue;
+      }
     }
     out.push(product);
     brands.add(key);
     if (out.length >= limit) break;
   }
-  // Soft-fill only after unique brands are exhausted.
   for (const product of skipped) {
     if (out.length >= limit) break;
     out.push(product);
   }
-  return sortWithFeaturedFirst(out);
+  return out;
+}
+
+export function getHomepageRailProductsExclusive(
+  list: Product[],
+  limit = 4,
+  excludeBrands: ReadonlySet<string> = new Set(),
+  minBrands = 1,
+): Product[] {
+  const inStock = list.filter((p) => isProductInStock(p));
+  const eligible = (inStock.length >= limit ? inStock : list).filter(
+    (p) => !isHomepageSwimwearProduct(p),
+  );
+  const pool = sortWithFeaturedFirst(eligible);
+  return sortWithFeaturedFirst(
+    pickExclusiveFromPool(pool, limit, excludeBrands, minBrands),
+  );
+}
+
+/**
+ * Daily rails: HOME_FEATURED still leads; remaining slots are a stable seeded
+ * shuffle that changes at Seoul 22:00. Prefers products that were not in
+ * yesterday's 4 so the set visibly changes each night.
+ */
+export function getHomepageRailProductsDailyRotated(
+  list: Product[],
+  limit = 4,
+  excludeBrands: ReadonlySet<string> = new Set(),
+  minBrands = 1,
+  rotationDay = seoulRotationDay(),
+  railId = "rail",
+): Product[] {
+  const inStock = list.filter((p) => isProductInStock(p));
+  const eligible = (inStock.length >= limit ? inStock : list).filter(
+    (p) => !isHomepageSwimwearProduct(p),
+  );
+
+  const featured: Array<{ product: Product; at: number }> = [];
+  const rest: Product[] = [];
+  for (const product of eligible) {
+    const at = homepageFeaturedAt(product);
+    if (at == null) rest.push(product);
+    else featured.push({ product, at });
+  }
+  featured.sort((a, b) => b.at - a.at);
+
+  const yesterdayIds = new Set(
+    pickExclusiveFromPool(
+      [
+        ...featured.map((f) => f.product),
+        ...seededShuffle(rest, `${railId}:${previousRotationDay(rotationDay)}`),
+      ],
+      limit,
+      excludeBrands,
+      minBrands,
+    ).map((p) => p.id),
+  );
+
+  const fresh = rest.filter((p) => !yesterdayIds.has(p.id));
+  const overlap = rest.filter((p) => yesterdayIds.has(p.id));
+  const shuffled = [
+    ...seededShuffle(fresh, `${railId}:${rotationDay}:fresh`),
+    ...seededShuffle(overlap, `${railId}:${rotationDay}:overlap`),
+  ];
+
+  const pool = [...featured.map((f) => f.product), ...shuffled];
+  return sortWithFeaturedFirst(
+    pickExclusiveFromPool(pool, limit, excludeBrands, minBrands),
+  );
 }
 
 /**
  * Assign products to every category rail in order. Brands claimed by an
  * earlier rail are excluded from later rails.
  *
- * Watches is special-cased: Christopher Ward New Releases + NORQAIN (newest
+ * Watches is special-cased: always Christopher Ward New Releases (newest
  * in-stock), independent of other brands' `registeredAt` stamps. On every
  * rail, `HOME_FEATURED` entries lead.
  */
@@ -202,21 +330,23 @@ export function assignHomepageCategoryRails(
       rail.railId === "watches"
         ? rail.products.filter(isHomepageWatchesRailProduct)
         : rail.products;
-    // Watches is CW + NORQAIN — keep both eligible even if exclusivity claimed them.
+    // Watches is CW-only — do not let exclusivity empty the rail if CW somehow
+    // appeared earlier (it shouldn't; CW is watches-category only).
     const railExclude =
       rail.railId === "watches"
-        ? new Set(
-            [...exclude].filter(
-              (b) => !(HOMEPAGE_WATCHES_BRANDS as readonly string[]).includes(b),
-            ),
-          )
+        ? new Set([...exclude].filter((b) => b !== HOMEPAGE_WATCHES_BRAND))
         : exclude;
-    const picked = getHomepageRailProductsExclusive(
-      pool,
-      limit,
-      railExclude,
-      rail.railId === "watches" ? 2 : (RAIL_MIN_BRANDS[rail.railId] ?? 1),
-    );
+    const minBrands = RAIL_MIN_BRANDS[rail.railId] ?? 1;
+    const picked = DAILY_ROTATE_RAILS.has(rail.railId)
+      ? getHomepageRailProductsDailyRotated(
+          pool,
+          limit,
+          railExclude,
+          minBrands,
+          seoulRotationDay(),
+          rail.railId,
+        )
+      : getHomepageRailProductsExclusive(pool, limit, railExclude, minBrands);
     result[rail.railId] = picked;
     for (const product of picked) {
       used.add(homepageBrandKey(product));

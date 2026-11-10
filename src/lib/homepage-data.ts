@@ -6,7 +6,10 @@ import {
   toProductCardProduct,
 } from "@/data/products";
 import { curateCollectionEdit } from "@/lib/collection-edit";
-import { assignHomepageCategoryRails } from "@/lib/homepage-rails";
+import {
+  assignHomepageCategoryRails,
+  seoulRotationDay,
+} from "@/lib/homepage-rails";
 
 /**
  * Builds the homepage product cards from the full brand catalogues.
@@ -146,10 +149,11 @@ function getFlannelsHomepageProducts(limit = 4): Product[] {
   return picked.map(toProductCardProduct);
 }
 
-let memo: HomepageData | null = null;
+let memo: { rotationDay: string; data: HomepageData } | null = null;
 
 export function buildHomepageData(): HomepageData {
-  if (memo) return memo;
+  const rotationDay = seoulRotationDay();
+  if (memo?.rotationDay === rotationDay) return memo.data;
 
   // Skip YS merge here — homepage soft-nav was waiting on the 14MB catalogue.
   const categoryRails = homeLookBanners
@@ -161,7 +165,7 @@ export function buildHomepageData(): HomepageData {
   const rails = assignHomepageCategoryRails(categoryRails, 4);
   const curated = curateCollectionEdit(getCollection100());
 
-  memo = {
+  const data: HomepageData = {
     rails: Object.fromEntries(
       Object.entries(rails).map(([id, list]) => [id, list.map(toProductCardProduct)]),
     ),
@@ -169,5 +173,6 @@ export function buildHomepageData(): HomepageData {
     signature: curated.signature.map(toProductCardProduct),
     newItems: curated.newItems.map(toProductCardProduct),
   };
-  return memo;
+  memo = { rotationDay, data };
+  return data;
 }
