@@ -5,7 +5,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { ProductDetail } from "@/components/ProductDetail";
 import { formatKrw, getProduct, isProductInStock, productDisplayPrice } from "@/data/products";
 import { mediaUrl } from "@/lib/product-image";
-import { getSiteUrl } from "@/lib/site";
+import { getSiteUrl, productSeoHeadline, seoTitle } from "@/lib/site";
 
 /** Catalogue HTML is deploy-stable; edge-cache for Naver Yeti download time. */
 export const revalidate = 3600;
@@ -21,10 +21,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const name = product.nameKo || product.name;
   const brand = product.brand || "Briq";
-  const title = `${brand} ${name} | 명품직구 Briq`;
+  const headline = productSeoHeadline(brand, name);
+  const title = seoTitle(headline);
   const listPrice = productDisplayPrice(product);
   const description = [
-    `${brand} ${name}.`,
+    `${headline}.`,
     product.compareAtPrice
       ? `판매가 ${formatKrw(listPrice)}.`
       : `가격 ${formatKrw(listPrice)}.`,
@@ -46,13 +47,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ].filter(Boolean) as string[],
     alternates: { canonical: url },
     openGraph: {
-      title,
+      title: title.absolute,
       description,
       url,
       type: "website",
       locale: "ko_KR",
       images: image
-        ? [{ url: image, alt: `${brand} ${name}` }]
+        ? [{ url: image, alt: headline }]
         : undefined,
     },
   };

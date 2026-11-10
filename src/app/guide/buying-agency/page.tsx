@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getSiteUrl } from "@/lib/site";
+import { getSiteUrl, seoTitle } from "@/lib/site";
 
-const title = "명품구매대행 안내 | Briq 브릭 영국 셀렉트숍";
+const title = seoTitle("명품구매대행 안내 | 영국 셀렉트숍");
 const description =
   "명품구매대행이 필요할 때. Briq는 영국 현지 기준으로 명품의류·가방을 선별하고, 결제부터 통관·직배송까지 한 번에 처리하는 명품구매대행형 쇼핑을 제공합니다.";
 
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: `${getSiteUrl()}/guide/buying-agency` },
   openGraph: {
-    title,
+    title: title.absolute,
     description,
     url: `${getSiteUrl()}/guide/buying-agency`,
     locale: "ko_KR",

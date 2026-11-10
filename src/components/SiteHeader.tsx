@@ -137,7 +137,7 @@ export function SiteHeader() {
             >
               <Menu className="nav-drawer-open__icon" size={22} aria-hidden />
             </label>
-            <HomeLogoLink className="brand-mark" aria-label="Briq home">
+            <HomeLogoLink className="brand-mark" aria-label="브릭 홈">
               <span className="brand-mark__word">Briq</span>
               <span className="brand-mark__sub">British Boutique</span>
             </HomeLogoLink>

@@ -21,6 +21,7 @@ export async function GET() {
     site,
     `${site}/shop`,
     `${site}/brands`,
+    `${site}/guide`,
     `${site}/guide/luxury-direct`,
     `${site}/guide/buying-agency`,
     `${site}/guide/luxury-apparel`,

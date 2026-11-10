@@ -16,8 +16,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const brand = getSeoBrand(slug);
   if (!brand) return {};
-  const title = seoTitle(`${brand.nameKo} ${brand.nameEn} 명품직구·구매대행`);
-  const description = `${brand.blurb} 관부가세·항공배송 포함 명품직구는 Briq 브릭.`;
+  const title = seoTitle(`${brand.nameKo} ${brand.nameEn} | 명품직구·구매대행`);
+  const description = `${brand.blurb} 명품의류·명품직구·명품구매대행은 Briq 브릭.`;
   return {
     title,
     description,

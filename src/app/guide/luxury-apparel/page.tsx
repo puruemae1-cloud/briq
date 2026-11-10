@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getSiteUrl } from "@/lib/site";
+import { getSiteUrl, seoTitle } from "@/lib/site";
 
-const title = "명품의류 쇼핑 | Briq 브릭 하이엔드 의류";
+const title = seoTitle("명품의류 쇼핑 | 하이엔드 의류");
 const description =
   "명품의류를 영국 셀렉트로. 샤넬·구찌·버버리·아크테릭스 등 하이엔드 의류를 Briq에서 명품직구·구매대행형으로 만나보세요.";
 
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: `${getSiteUrl()}/guide/luxury-apparel` },
   openGraph: {
-    title,
+    title: title.absolute,
     description,
     url: `${getSiteUrl()}/guide/luxury-apparel`,
     locale: "ko_KR",

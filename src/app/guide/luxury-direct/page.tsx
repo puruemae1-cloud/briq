@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { SEO_BRANDS, getSiteUrl } from "@/lib/site";
+import { SEO_BRANDS, getSiteUrl, seoTitle } from "@/lib/site";
 
-const title = "명품직구 가이드 | 영국 명품 직배송 Briq";
+const title = seoTitle("명품직구 가이드 | 영국 명품 직배송");
 const description =
   "명품직구가 처음이어도 안심. Briq(브릭)은 영국 현지 셀렉션 기준의 샤넬·구찌·버버리 등 명품의류·가방을 관부가세·항공배송 포함 가격으로 국내 직배송합니다.";
 
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: `${getSiteUrl()}/guide/luxury-direct` },
   openGraph: {
-    title,
+    title: title.absolute,
     description,
     url: `${getSiteUrl()}/guide/luxury-direct`,
     locale: "ko_KR",

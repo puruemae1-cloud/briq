@@ -31,6 +31,7 @@ export default function robots(): MetadataRoute.Robots {
       },
     ],
     // Naver (Yeti) first: tiny priority list, then recent, then full index.
+    // RSS is linked from HTML <head> (seo-metadata) and submitted in Search Advisor.
     sitemap: [
       `${site}/sitemap-naver.xml`,
       `${site}/sitemap-recent.xml`,

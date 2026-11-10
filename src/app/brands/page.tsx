@@ -3,7 +3,7 @@ import Link from "next/link";
 import { BrandChipRail } from "@/components/BrandChipRail";
 import { SEO_BRANDS, getSiteUrl, seoTitle } from "@/lib/site";
 
-const title = seoTitle("명품 브랜드 · 샤넬·롤렉스·구찌·오메가·버버리");
+const title = seoTitle("명품 브랜드 | 샤넬·롤렉스·구찌·오메가·버버리");
 const description =
   "샤넬·구찌·롤렉스·오메가·IWC·버버리·프라다까지. Briq 브릭에서 영국 명품브랜드·시계 셀렉션을 살펴보세요.";
 
@@ -16,7 +16,6 @@ export const metadata: Metadata = {
     "구찌",
     "롤렉스",
     "오메가",
-    "IWC",
     "버버리",
     "프라다",
     "에르메스",
@@ -37,9 +36,9 @@ export default function BrandsIndexPage() {
     <article className="seo-guide">
       <header className="seo-guide__hero">
         <p className="seo-guide__eyebrow">Luxury Brands</p>
-        <h1 className="seo-guide__title">브랜드별 쇼핑</h1>
+        <h1 className="seo-guide__title">Shop by Brand</h1>
         <p className="seo-guide__lead">
-          명품브랜드·시계 검색으로 찾아오신 분을 위해 브랜드별 소개와 쇼핑
+          유명 명품브랜드 검색으로 찾아오신 분을 위해, 브랜드별 소개와 쇼핑
           링크를 모았습니다. 명품의류·명품직구·명품구매대행을 Briq에서 이어가세요.
         </p>
       </header>

@@ -18,7 +18,9 @@ export const rootMetadata: Metadata = {
   metadataBase: new URL(site),
   title: {
     default: DEFAULT_TITLE,
-    template: `%s · ${SITE_NAME}`,
+    // Bare child titles get one brand suffix. Pages that already name Briq
+    // must use seoTitle() → { absolute } so Naver never sees "Briq · Briq".
+    template: `%s | ${SITE_NAME}`,
   },
   description: DEFAULT_DESCRIPTION,
   applicationName: SITE_NAME,

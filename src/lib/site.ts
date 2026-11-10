@@ -49,12 +49,15 @@ export const DEFAULT_DESCRIPTION =
 
 /**
  * Absolute document title with a single " | Briq" suffix.
- * Use for product/shop/brand pages that already include brand keywords.
+ * Use for product/shop/brand/guide pages so the root `%s | Briq` template
+ * never doubles the brand (Naver: unique, non-repetitive titles).
  */
 export function seoTitle(page: string): { absolute: string } {
   const bare = (page || "")
-    .replace(/\s*[|·—-]\s*(명품직구\s*)?Briq\s*$/i, "")
-    .replace(/\s*Briq\s*$/i, "")
+    .replace(/\s*[|·—\-]\s*(명품직구\s*)?Briq(\s*브릭)?\s*$/i, "")
+    .replace(/\s*[|·—\-]\s*Briq\s*브릭\s*$/i, "")
+    .replace(/\s*Briq(\s*브릭)?\s*$/i, "")
+    .replace(/\s*브릭\s*$/i, "")
     .trim();
   return { absolute: bare ? `${bare} | Briq` : DEFAULT_TITLE };
 }
