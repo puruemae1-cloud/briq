@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Suspense } from "react";
 import { BestItems } from "@/components/BestItems";
@@ -13,6 +14,18 @@ import { bannerFocalForSrc } from "@/lib/banner-focal";
 import { BrandChipLink, isBrandChipNavId } from "@/components/BrandChip";
 import { BrandChipRail } from "@/components/BrandChipRail";
 import { getHomepageData } from "@/lib/homepage-feed";
+import { DEFAULT_DESCRIPTION, DEFAULT_TITLE, getSiteUrl } from "@/lib/site";
+import { DEFAULT_OG_IMAGE } from "@/lib/seo-metadata";
+
+export const metadata: Metadata = {
+  alternates: { canonical: getSiteUrl() },
+  openGraph: {
+    title: DEFAULT_TITLE,
+    description: DEFAULT_DESCRIPTION,
+    url: getSiteUrl(),
+    images: [DEFAULT_OG_IMAGE],
+  },
+};
 
 /** Stream below-the-fold 100 Collection after hero + lookbook rails. */
 async function DeferredCollection100() {

@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { BrandChipRail } from "@/components/BrandChipRail";
+import { DEFAULT_OG_IMAGE } from "@/lib/seo-metadata";
 import { SEO_BRANDS, getSiteUrl, seoTitle } from "@/lib/site";
 
 const title = seoTitle("명품 브랜드 | 샤넬·롤렉스·구찌·오메가·버버리");
 const description =
   "샤넬·구찌·롤렉스·오메가·IWC·버버리·프라다까지. Briq 브릭에서 영국 명품브랜드·시계 셀렉션을 살펴보세요.";
+const url = `${getSiteUrl()}/brands`;
 
 export const metadata: Metadata = {
   title,
@@ -21,13 +23,14 @@ export const metadata: Metadata = {
     "에르메스",
     "아크테릭스",
   ],
-  alternates: { canonical: `${getSiteUrl()}/brands` },
+  alternates: { canonical: url },
   openGraph: {
     title: title.absolute,
     description,
-    url: `${getSiteUrl()}/brands`,
+    url,
     locale: "ko_KR",
     type: "website",
+    images: [DEFAULT_OG_IMAGE],
   },
 };
 

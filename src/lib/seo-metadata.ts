@@ -12,7 +12,14 @@ const site = getSiteUrl();
 
 /** Prefer absolute CDN URL — relative /banners/* 404s on Vercel (media is on product-images). */
 const OG_IMAGE_PATH = "/banners/rot-luxury-1.jpg";
-const OG_IMAGE_URL = mediaUrl(OG_IMAGE_PATH) || OG_IMAGE_PATH;
+export const OG_IMAGE_URL = mediaUrl(OG_IMAGE_PATH) || OG_IMAGE_PATH;
+
+export const DEFAULT_OG_IMAGE = {
+  url: OG_IMAGE_URL,
+  width: 2400,
+  height: 1600,
+  alt: "Briq 명품의류 · 명품직구 셀렉션",
+} as const;
 
 export const rootMetadata: Metadata = {
   metadataBase: new URL(site),
@@ -30,7 +37,8 @@ export const rootMetadata: Metadata = {
   publisher: "(주)리치몬드인터내셔널 / HJ STORY LIMITED",
   category: "shopping",
   alternates: {
-    canonical: site,
+    // Do not set a site-wide canonical here — private/legal pages were
+    // inheriting https://www.briq.kr and looking like soft duplicates.
     types: {
       "application/rss+xml": `${site}/feed.xml`,
     },
@@ -42,14 +50,7 @@ export const rootMetadata: Metadata = {
     siteName: `${SITE_NAME} 브릭`,
     title: DEFAULT_TITLE,
     description: DEFAULT_DESCRIPTION,
-    images: [
-      {
-        url: OG_IMAGE_URL,
-        width: 2400,
-        height: 1600,
-        alt: "Briq 명품의류 · 명품직구 셀렉션",
-      },
-    ],
+    images: [DEFAULT_OG_IMAGE],
   },
   twitter: {
     card: "summary_large_image",

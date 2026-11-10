@@ -1,35 +1,42 @@
 import { NextResponse } from "next/server";
-import { products } from "@/data/products";
+import { formatKrw, products, productDisplayPrice } from "@/data/products";
+import { mediaUrl } from "@/lib/product-image";
 import { newestProductLastmod, SITEMAP_FALLBACK_LASTMOD } from "@/lib/sitemap-chunks";
 import { getSiteUrl } from "@/lib/site";
 import { sortProducts } from "@/lib/product-sort";
 
-/** RSS for Naver Search Advisor feed submission. */
+/** RSS for Naver Search Advisor feed submission (fuller item bodies). */
 export async function GET() {
   const site = getSiteUrl();
   const newest = sortProducts([...products], "new").slice(0, 40);
   const items = newest
     .map((p) => {
-      const title = `${p.brand ? `${p.brand} ` : ""}${p.nameKo || p.name}`;
+      const name = p.nameKo || p.name;
+      const brand = p.brand || "";
+      const title = `${brand ? `${brand} ` : ""}${name}`.trim();
       const link = `${site}/product/${encodeURIComponent(p.id)}`;
+      const price = formatKrw(productDisplayPrice(p));
       const desc = [
-        p.brand,
-        p.nameKo || p.name,
-        "명품직구",
-        "Briq",
-        p.category,
+        `${title}.`,
+        `가격 ${price}.`,
+        "Briq 영국 명품직구·구매대행, 항공배송·관부가세 포함.",
+        p.compareAtPrice ? "세일 상품입니다." : "",
       ]
         .filter(Boolean)
-        .join(" · ");
+        .join(" ");
       const date = p.registeredAt
         ? new Date(p.registeredAt).toUTCString()
         : new Date(SITEMAP_FALLBACK_LASTMOD).toUTCString();
+      const image = mediaUrl(p.image || p.images?.[0] || "");
+      const enclosure = image
+        ? `\n  <enclosure url="${image}" type="image/jpeg" length="0"/>`
+        : "";
       return `<item>
   <title><![CDATA[${title}]]></title>
   <link>${link}</link>
   <guid isPermaLink="true">${link}</guid>
   <pubDate>${date}</pubDate>
-  <description><![CDATA[${desc}]]></description>
+  <description><![CDATA[${desc}]]></description>${enclosure}
 </item>`;
     })
     .join("\n");

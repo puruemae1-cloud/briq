@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SEO_BRANDS, getSiteUrl, seoTitle } from "@/lib/site";
+import { DEFAULT_OG_IMAGE } from "@/lib/seo-metadata";
 
 const title = seoTitle("명품직구 가이드 | 영국 명품 직배송");
 const description =
@@ -25,6 +26,7 @@ export const metadata: Metadata = {
     url: `${getSiteUrl()}/guide/luxury-direct`,
     locale: "ko_KR",
     type: "article",
+    images: [DEFAULT_OG_IMAGE],
   },
 };
 

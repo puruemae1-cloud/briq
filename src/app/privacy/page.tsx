@@ -1,8 +1,21 @@
 import type { Metadata } from "next";
+import { DEFAULT_OG_IMAGE } from "@/lib/seo-metadata";
+import { getSiteUrl, seoTitle } from "@/lib/site";
+
+const title = seoTitle("개인정보처리방침");
+const description = "Briq 개인정보처리방침 — 수집·이용·보관 및 이용자 권리 안내.";
+const url = `${getSiteUrl()}/privacy`;
 
 export const metadata: Metadata = {
-  title: "개인정보처리방침",
-  description: "Briq 개인정보처리방침",
+  title,
+  description,
+  alternates: { canonical: url },
+  openGraph: {
+    title: title.absolute,
+    description,
+    url,
+    images: [DEFAULT_OG_IMAGE],
+  },
 };
 
 export default function PrivacyPage() {

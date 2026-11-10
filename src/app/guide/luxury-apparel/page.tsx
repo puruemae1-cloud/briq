@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getSiteUrl, seoTitle } from "@/lib/site";
+import { DEFAULT_OG_IMAGE } from "@/lib/seo-metadata";
 
 const title = seoTitle("명품의류 쇼핑 | 하이엔드 의류");
 const description =
@@ -24,6 +25,7 @@ export const metadata: Metadata = {
     url: `${getSiteUrl()}/guide/luxury-apparel`,
     locale: "ko_KR",
     type: "article",
+    images: [DEFAULT_OG_IMAGE],
   },
 };
 

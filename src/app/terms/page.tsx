@@ -1,9 +1,22 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { DEFAULT_OG_IMAGE } from "@/lib/seo-metadata";
+import { getSiteUrl, seoTitle } from "@/lib/site";
+
+const title = seoTitle("이용약관");
+const description = "Briq 서비스 이용약관 — 영국 명품직구·구매대행 이용 조건.";
+const url = `${getSiteUrl()}/terms`;
 
 export const metadata: Metadata = {
-  title: "이용약관",
-  description: "Briq 서비스 이용약관",
+  title,
+  description,
+  alternates: { canonical: url },
+  openGraph: {
+    title: title.absolute,
+    description,
+    url,
+    images: [DEFAULT_OG_IMAGE],
+  },
 };
 
 export default function TermsPage() {

@@ -44,6 +44,12 @@ export default async function sitemap(props: {
         priority: 0.9,
       },
       {
+        url: `${site}/guide`,
+        lastModified: catalogUpdated,
+        changeFrequency: "monthly",
+        priority: 0.88,
+      },
+      {
         url: `${site}/guide/luxury-direct`,
         lastModified: catalogUpdated,
         changeFrequency: "monthly",

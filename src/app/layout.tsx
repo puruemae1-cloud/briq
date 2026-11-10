@@ -68,7 +68,7 @@ export default async function RootLayout({
       streetAddress: "경기도 김포시 고촌읍 은행영사정로23번길 46",
       addressCountry: "KR",
     },
-    sameAs: [site],
+    sameAs: [site, "https://www.instagram.com/briq.kr/"],
   };
 
   const websiteLd = {

@@ -26,6 +26,7 @@ import {
 } from "@/lib/shop-list";
 import { toCardProduct } from "@/lib/product-card-dto";
 import { getSiteUrl, seoTitle } from "@/lib/site";
+import { DEFAULT_OG_IMAGE } from "@/lib/seo-metadata";
 import { sortNavChildrenByBrandOrder } from "@/lib/brand-nav-order";
 import { BrandChipContent, isBrandChipNavId } from "@/components/BrandChip";
 import { BrandChipRail } from "@/components/BrandChipRail";
@@ -130,27 +131,32 @@ export async function generateMetadata({
   }
 
   const sort = parseProductSort(params.sort);
+  const hasQuery = Boolean(params.q?.trim());
   const canonicalPath = buildShopHref({
     category: category === "all" ? undefined : category,
     sub,
-    q: params.q,
+    // Search result URLs stay noindex; canonical points at the filtered PLP.
+    q: undefined,
     sort,
     offset: 0, // paginated pages noindex; canonical always points at first page
     forCanonical: true,
   });
   const title = seoTitle(titleBare);
+  const pageUrl = `${getSiteUrl()}${canonicalPath}`;
 
   return {
     title,
     description,
-    robots: offset > 0 ? { index: false, follow: true } : undefined,
-    alternates: { canonical: `${getSiteUrl()}${canonicalPath}` },
+    robots:
+      offset > 0 || hasQuery ? { index: false, follow: true } : undefined,
+    alternates: { canonical: pageUrl },
     openGraph: {
       title: title.absolute,
       description,
-      url: `${getSiteUrl()}${canonicalPath}`,
+      url: pageUrl,
       locale: "ko_KR",
       type: "website",
+      images: [DEFAULT_OG_IMAGE],
     },
   };
 }

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getSiteUrl, seoTitle } from "@/lib/site";
+import { DEFAULT_OG_IMAGE } from "@/lib/seo-metadata";
 
 const title = seoTitle("명품구매대행 안내 | 영국 셀렉트숍");
 const description =
@@ -23,6 +24,7 @@ export const metadata: Metadata = {
     url: `${getSiteUrl()}/guide/buying-agency`,
     locale: "ko_KR",
     type: "article",
+    images: [DEFAULT_OG_IMAGE],
   },
 };
 

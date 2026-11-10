@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { JsonLd } from "@/components/JsonLd";
+import { DEFAULT_OG_IMAGE } from "@/lib/seo-metadata";
 import { SEO_BRANDS, getSeoBrand, getSiteUrl, seoTitle } from "@/lib/site";
 
 type Props = {
@@ -29,6 +30,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: `${getSiteUrl()}/brands/${brand.slug}`,
       locale: "ko_KR",
       type: "website",
+      images: [DEFAULT_OG_IMAGE],
     },
   };
 }

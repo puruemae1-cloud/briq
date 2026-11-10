@@ -1,21 +1,24 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { DEFAULT_OG_IMAGE } from "@/lib/seo-metadata";
 import { getSiteUrl, seoTitle } from "@/lib/site";
 
 const title = seoTitle("가이드 | 명품직구·구매대행·명품의류");
 const description =
   "Briq 가이드 모음 — 명품직구, 명품구매대행, 명품의류 하이엔드 셀렉션 안내.";
+const url = `${getSiteUrl()}/guide`;
 
 export const metadata: Metadata = {
   title,
   description,
-  alternates: { canonical: `${getSiteUrl()}/guide` },
+  alternates: { canonical: url },
   openGraph: {
     title: title.absolute,
     description,
-    url: `${getSiteUrl()}/guide`,
+    url,
     locale: "ko_KR",
     type: "website",
+    images: [DEFAULT_OG_IMAGE],
   },
 };
 
