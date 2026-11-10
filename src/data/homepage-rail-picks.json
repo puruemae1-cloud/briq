@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T17:14:22Z",
+  "generatedAt": "2026-11-10T20:20:53Z",
   "limit": 4,
   "rails": {
     "luxury": {
@@ -46,13 +46,13 @@
     },
     "shoes": {
       "productIds": [
+        "ps-paul-smith-the-lab-co-leather-nourisher",
         "al-w173ff-7074",
         "al-w156ff-4193",
-        "al-w173ff-584",
-        "al-w154ff-4660"
+        "al-w173ff-584"
       ],
       "brands": [
-        "all-saints",
+        "paul-smith",
         "all-saints",
         "all-saints",
         "all-saints"
@@ -60,16 +60,16 @@
     },
     "accessories": {
       "productIds": [
-        "ps-signature-stripe-calf-leather-dog-collar-medium-large",
-        "ps-signature-stripe-calf-leather-dog-collar-small-medium",
-        "ps-anglepoise-and-paul-smith-type75-table-lamp-edition-four-uk-plug",
-        "ps-black-merino-wool-signature-stripe-trim-scarf"
+        "ch-101248",
+        "ch-101249",
+        "ch-101251",
+        "ch-101280"
       ],
       "brands": [
-        "paul-smith",
-        "paul-smith",
-        "paul-smith",
-        "paul-smith"
+        "chanel",
+        "chanel",
+        "chanel",
+        "chanel"
       ]
     },
     "sports": {
@@ -91,8 +91,13 @@
     "all-saints": [
       "shoes",
       "shoes",
-      "shoes",
       "shoes"
+    ],
+    "chanel": [
+      "accessories",
+      "accessories",
+      "accessories",
+      "accessories"
     ],
     "christopher-ward": [
       "watches",
@@ -113,10 +118,7 @@
       "bags"
     ],
     "paul-smith": [
-      "accessories",
-      "accessories",
-      "accessories",
-      "accessories"
+      "shoes"
     ],
     "보테가-베네타": [
       "luxury",
