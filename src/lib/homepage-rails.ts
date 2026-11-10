@@ -19,7 +19,11 @@ const RAIL_BLOCKED_BRANDS: Record<string, ReadonlySet<string>> = {
 
 /** Minimum distinct brands on a rail, so one new launch cannot fill every slot. */
 const RAIL_MIN_BRANDS: Record<string, number> = {
-  luxury: 3,
+  luxury: 4,
+  bags: 4,
+  shoes: 4,
+  accessories: 4,
+  sports: 4,
 };
 
 /** Homepage watches rail is locked to Christopher Ward New Releases (all devices). */
@@ -336,7 +340,7 @@ export function assignHomepageCategoryRails(
       rail.railId === "watches"
         ? new Set([...exclude].filter((b) => b !== HOMEPAGE_WATCHES_BRAND))
         : exclude;
-    const minBrands = RAIL_MIN_BRANDS[rail.railId] ?? 1;
+    const minBrands = RAIL_MIN_BRANDS[rail.railId] ?? 4;
     const picked = DAILY_ROTATE_RAILS.has(rail.railId)
       ? getHomepageRailProductsDailyRotated(
           pool,
