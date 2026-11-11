@@ -1,7 +1,7 @@
 {
   "hub": "men-bags",
   "category": "bags",
-  "scrapedAt": "2026-11-10T20:16:59.257891+00:00",
+  "scrapedAt": "2026-11-11T20:13:51.523258+00:00",
   "leaves": [
     "bv-men-bags-intrecciato",
     "bv-men-bags-diago",
@@ -22,8 +22,8 @@
       "scraped": 50
     },
     "bv-men-bags-diago": {
-      "official": 32,
-      "scraped": 32
+      "official": 33,
+      "scraped": 33
     },
     "bv-men-bags-veneto": {
       "official": 27,
@@ -46,8 +46,8 @@
       "scraped": 70
     },
     "bv-men-bags-tote": {
-      "official": 60,
-      "scraped": 60
+      "official": 62,
+      "scraped": 62
     },
     "bv-men-bags-backpack": {
       "official": 13,
@@ -1875,7 +1875,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-duffle-black-781053V2HL18803.html",
       "gbpPrice": 4370.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Canvas",
         "Colour: Black",
@@ -1917,7 +1917,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 4370.0,
           "listGbpPrice": null
         }
@@ -2512,7 +2512,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-mini-bag-with-flap-midnight-857931V2HL04330.html",
       "gbpPrice": 1730.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Midnight",
         "Hardware: Silver finish",
@@ -2554,7 +2554,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 1730.0,
           "listGbpPrice": null
         }
@@ -2648,7 +2648,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-zipped-north-south-tote-fondant-815783V2HL12145.html",
       "gbpPrice": 3210.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Canvas",
         "Colour: Fondant",
@@ -2687,7 +2687,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 3210.0,
           "listGbpPrice": null
         }
@@ -4808,10 +4808,11 @@
         "bottega-veneta-bags",
         "bv-men",
         "bv-men-bags",
-        "bv-men-bags-diago"
+        "bv-men-bags-diago",
+        "bv-men-bags-tote"
       ],
-      "leafId": "bv-men-bags-diago",
-      "cgid": "men-diago",
+      "leafId": "bv-men-bags-tote",
+      "cgid": "men-tote-bags",
       "hubCategory": "bags"
     },
     {
@@ -9467,7 +9468,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/getaway-document-case-black-786664V2HL18803.html",
       "gbpPrice": 1650.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Canvas",
         "Colour: Black",
@@ -9503,7 +9504,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 1650.0,
           "listGbpPrice": null
         }
@@ -13707,6 +13708,76 @@
       ],
       "leafId": "bv-men-bags-backpack",
       "cgid": "men-backpacks",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "843840V4FW08803",
+      "sku": "843840V4FW08803",
+      "internalId": "813974202",
+      "name": "Diago Tote",
+      "brand": "bottega veneta",
+      "color": "Black",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/diago-tote-black-843840V4FW08803.html",
+      "url": "https://www.bottegaveneta.com/en-gb/diago-tote-black-843840V4FW08803.html",
+      "gbpPrice": 3210.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Suede",
+        "Colour: Black",
+        "Hardware: Silver finish"
+      ],
+      "longDescription": [
+        "Grained leather tote bag with two handles and an adjustable and detachable strap",
+        "Intreccio leather details",
+        "Single interior zipped pocket, two flat open pockets and a key hook on strap"
+      ],
+      "compactedLongDesc": "Tote bag in grained leather with Intreccio details, featuring an adjustable and detachable cross-body strap.",
+      "composition": "• Material: Calfskin leather",
+      "material": "",
+      "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
+      "sizeModel": "• Height: 31.5 cm | 12.4\" \n\n• Width: 36 cm | 14.2\" \n\n• Depth: 16 cm | 6.3\" \n\n• Handle drop: 23 cm | 9.1\" \n\n• Strap drop: 56 cm | 22\"\n• Fits a 16\" laptop",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/768ce64a-1143-40f1-806f-823dd3076f06/eCom/843840V4FW08803_A.jpg?v=4",
+        "https://bottega-veneta.dam.kering.com/asset/98931831-cdcd-4239-8268-b5d3eed8407d/eCom/843840V4FW08803_B.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/e4f996c1-f992-437b-95af-c26a3fbbaa68/eCom/843840V4FW08803_C.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/3ce4b362-d76a-4228-ab05-3fe5d361934c/eCom/843840V4FW08803_D.jpg?v=3",
+        "https://bottega-veneta.dam.kering.com/asset/3ee0587a-a5b0-4acb-bc56-fcc57ffd9380/eCom/843840V4FW08803_E.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/45a95884-168c-4a04-aa72-86ee5eba05bc/eCom/843840V4FW08803_F.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/768ce64a-1143-40f1-806f-823dd3076f06/Small/843840V4FW08803_A.jpg?v=4"
+      ],
+      "localImages": [
+        "/products/bv-pdp/843840v4fw08803/1.jpg",
+        "/products/bv-pdp/843840v4fw08803/2.jpg",
+        "/products/bv-pdp/843840v4fw08803/3.jpg",
+        "/products/bv-pdp/843840v4fw08803/4.jpg",
+        "/products/bv-pdp/843840v4fw08803/5.jpg",
+        "/products/bv-pdp/843840v4fw08803/6.jpg",
+        "/products/bv-pdp/843840v4fw08803/7.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 3210.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-men",
+        "bv-men-bags",
+        "bv-men-bags-diago",
+        "bv-men-bags-tote"
+      ],
+      "leafId": "bv-men-bags-tote",
+      "cgid": "men-tote-bags",
       "hubCategory": "bags"
     }
   ]

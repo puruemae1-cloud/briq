@@ -1,7 +1,7 @@
 {
   "hub": "men-wallets",
   "category": "accessories",
-  "scrapedAt": "2026-11-10T20:55:44.119953+00:00",
+  "scrapedAt": "2026-11-11T20:49:41.814423+00:00",
   "leaves": [
     "bv-men-wallets-small",
     "bv-men-wallets-long",
@@ -13,16 +13,16 @@
   ],
   "leafCounts": {
     "bv-men-wallets-small": {
-      "official": 56,
-      "scraped": 56
+      "official": 57,
+      "scraped": 57
     },
     "bv-men-wallets-long": {
       "official": 26,
       "scraped": 26
     },
     "bv-men-wallets-card-cases": {
-      "official": 42,
-      "scraped": 42
+      "official": 44,
+      "scraped": 44
     },
     "bv-men-wallets-pouches": {
       "official": 35,
@@ -5021,7 +5021,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/long-cassette-wallet-black-749463VBWD28803.html",
       "gbpPrice": 670.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Calfskin",
         "Colour: Black"
@@ -5052,7 +5052,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 670.0,
           "listGbpPrice": null
         }
@@ -6610,7 +6610,7 @@
         "Press stud closure"
       ],
       "compactedLongDesc": "Business card case in Intrecciato nappa leather.",
-      "composition": "• Material: Lambskin leather",
+      "composition": "• Material: lambskin",
       "material": "",
       "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
       "sizeModel": "• Height: 7.8 cm | 3.1\" \n\n• Width: 11 cm | 4.3\" \n\n• Depth: 2.5 cm | 1\"",
@@ -7901,7 +7901,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-large-organizer-black-765804V2HL08803.html",
       "gbpPrice": 990.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Canvas",
         "Colour: Black",
@@ -7938,7 +7938,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 990.0,
           "listGbpPrice": null
         }
@@ -8576,7 +8576,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-mini-bag-with-flap-midnight-857931V2HL04330.html",
       "gbpPrice": 1730.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Midnight",
         "Hardware: Silver finish",
@@ -8618,7 +8618,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 1730.0,
           "listGbpPrice": null
         }
@@ -9926,7 +9926,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/pouch-black-684509VCPQ38803.html",
       "gbpPrice": 1070.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Calfskin",
         "Colour: Black",
@@ -9967,7 +9967,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 1070.0,
           "listGbpPrice": null
         }
@@ -13243,6 +13243,193 @@
       ],
       "leafId": "bv-men-wallets-intrecciato",
       "cgid": "men-wallets-intrecciato",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "817741VCPQ38803",
+      "sku": "817741VCPQ38803",
+      "internalId": "813727743",
+      "name": "Intrecciato Square Zip Around Wallet",
+      "brand": "bottega veneta",
+      "color": "Black",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/intrecciato-square-zip-around-wallet-black-817741VCPQ38803.html",
+      "url": "https://www.bottegaveneta.com/en-gb/intrecciato-square-zip-around-wallet-black-817741VCPQ38803.html",
+      "gbpPrice": 440.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Calfskin",
+        "Colour: Black",
+        "Hardware: Silver finish"
+      ],
+      "longDescription": [
+        "Six interior card slots, one central coin purse, one divider to fold and organize bills",
+        "Zip closure"
+      ],
+      "compactedLongDesc": "Intrecciato calfskin leather wallet.",
+      "composition": "• Material: calfskin",
+      "material": "",
+      "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
+      "sizeModel": "• Height: 10 cm | 3.9” \n\n• Width: 10 cm | 3.9” \n\n• Depth: 1.5 cm | 0.6”",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/m/5f27927dbdb0a63d/eCom-817741VCPQ38803_A.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/m/740012d9d517cef1/eCom-817741VCPQ38803_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/m/32b6a79cbc3c3362/eCom-817741VCPQ38803_C.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/m/5f27927dbdb0a63d/Small-817741VCPQ38803_A.jpg?v=2"
+      ],
+      "localImages": [
+        "/products/bv-pdp/817741vcpq38803/1.jpg",
+        "/products/bv-pdp/817741vcpq38803/2.jpg",
+        "/products/bv-pdp/817741vcpq38803/3.jpg",
+        "/products/bv-pdp/817741vcpq38803/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 440.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-men",
+        "bv-men-wallets",
+        "bv-men-wallets-small"
+      ],
+      "leafId": "bv-men-wallets-small",
+      "cgid": "men-small-wallets",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "875457V0HW78425",
+      "sku": "875457V0HW78425",
+      "internalId": "814304711",
+      "name": "Intrecciato Piccolo Zipped Card Case With Flap",
+      "brand": "bottega veneta",
+      "color": "Black",
+      "gender": "Women",
+      "link": "https://www.bottegaveneta.com/en-gb/intrecciato-piccolo-zipped-card-case-with-flap-black-875457V0HW78425.html",
+      "url": "https://www.bottegaveneta.com/en-gb/intrecciato-piccolo-zipped-card-case-with-flap-black-875457V0HW78425.html",
+      "gbpPrice": 580.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Black",
+        "Hardware: Brass finish",
+        "Lining: Calfskin"
+      ],
+      "longDescription": [
+        "Intrecciato piccolo nappa leather card case",
+        "Three card slots, one horizontal pocket, one zipped coin compartment",
+        "One external pocket with snap button closure"
+      ],
+      "compactedLongDesc": "Zipped card case in Intrecciato piccolo nappa leather.",
+      "composition": "• Material: Lambskin",
+      "material": "",
+      "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
+      "sizeModel": "• Height: 9 cm | 3.5\"\n\n• Width: 16 cm | 6.3\"\n\n• Depth: 2 cm | 0.8\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/2e4adc00-b130-4451-9cb1-24197e0e531c/eCom/875457V0HW78425_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/d871738c-a559-45f3-85b2-0b413477d2c2/eCom/875457V0HW78425_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/5bfda714-c34e-4c18-8337-040238b2d545/eCom/875457V0HW78425_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/2e4adc00-b130-4451-9cb1-24197e0e531c/Small/875457V0HW78425_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/875457v0hw78425/1.jpg",
+        "/products/bv-pdp/875457v0hw78425/2.jpg",
+        "/products/bv-pdp/875457v0hw78425/3.jpg",
+        "/products/bv-pdp/875457v0hw78425/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 580.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-men",
+        "bv-men-wallets",
+        "bv-men-wallets-card-cases"
+      ],
+      "leafId": "bv-men-wallets-card-cases",
+      "cgid": "men-card-cases",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "853518VCPQ38803",
+      "sku": "853518VCPQ38803",
+      "internalId": "814085673",
+      "name": "Intrecciato Zipped Card Case",
+      "brand": "bottega veneta",
+      "color": "Black",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/intrecciato-zipped-card-case-black-853518VCPQ38803.html",
+      "url": "https://www.bottegaveneta.com/en-gb/intrecciato-zipped-card-case-black-853518VCPQ38803.html",
+      "gbpPrice": 440.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Calfskin",
+        "Colour: Black",
+        "Hardware: Silver finish"
+      ],
+      "longDescription": [
+        "Intrecciato calfskin leather card case",
+        "Three card slots, one additional pocket, one zipped coin purse with gusset"
+      ],
+      "compactedLongDesc": "Zipped card case in Intrecciato calf leather.",
+      "composition": "• Material: Calfskin",
+      "material": "",
+      "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
+      "sizeModel": "• Height: 8.2 cm | 3.2 in\n\n• Width: 12 cm | 4.75 in\n\n• Depth: 0.5 cm | 0.2 in",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/b124ff6c-7efe-45b2-8900-9cabb57d879b/eCom/853518VCPQ38803_A.jpg?v=3",
+        "https://bottega-veneta.dam.kering.com/asset/4a034c13-9ea7-4784-89e0-eface00f69cf/eCom/853518VCPQ38803_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/04b5d3d8-2d30-435b-9984-34284cbb0ac2/eCom/853518VCPQ38803_C.jpg?v=3",
+        "https://bottega-veneta.dam.kering.com/asset/b124ff6c-7efe-45b2-8900-9cabb57d879b/Small/853518VCPQ38803_A.jpg?v=3"
+      ],
+      "localImages": [
+        "/products/bv-pdp/853518vcpq38803/1.jpg",
+        "/products/bv-pdp/853518vcpq38803/2.jpg",
+        "/products/bv-pdp/853518vcpq38803/3.jpg",
+        "/products/bv-pdp/853518vcpq38803/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 440.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-men",
+        "bv-men-wallets",
+        "bv-men-wallets-card-cases"
+      ],
+      "leafId": "bv-men-wallets-card-cases",
+      "cgid": "men-card-cases",
       "hubCategory": "accessories"
     }
   ]
