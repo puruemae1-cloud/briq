@@ -68,6 +68,20 @@ const FLANNELS_GENERIC_TAGS = new Set([
   "sandals",
   "accessories",
   "bags",
+  // PLP leaf tags — not maison brands (were collapsing diversity to "hoodies").
+  "hoodies",
+  "jackets",
+  "knitwear",
+  "jeans",
+  "coats",
+  "trousers",
+  "joggers",
+  "boots",
+  "trainers",
+  "gilets",
+  "sweatshirts",
+  "jumpers",
+  "cardigans",
 ]);
 
 function flannelsText(p: Product): string {
@@ -86,12 +100,19 @@ function flannelsGender(p: Product): "w" | "m" | "?" {
 }
 
 function flannelsBrandKey(p: Product): string {
+  // Prefer SKU slug brand (`fl-off-white-womens-…`) over leaf tags.
+  const fromId = /^(?:fl)-(.+?)-(?:womens?|mens?)-/i.exec(p.id || "");
+  if (fromId?.[1]) return fromId[1].toLowerCase();
   const tags = Array.isArray(p.tags)
-    ? p.tags.filter((t) => !FLANNELS_GENERIC_TAGS.has(t) && !t.startsWith("fl-"))
+    ? p.tags.filter(
+        (t) =>
+          !FLANNELS_GENERIC_TAGS.has(t) &&
+          !FLANNELS_GENERIC_TAGS.has(t.toLowerCase()) &&
+          !t.startsWith("fl-"),
+      )
     : [];
-  if (tags[0]) return tags[0];
-  const m = /^(?:fl)-(.+?)-(?:womens?|mens?)-/i.exec(p.id || "");
-  return m?.[1] || (p.id || "").split("-")[1] || p.id || "";
+  if (tags[0]) return tags[0].toLowerCase();
+  return ((p.id || "").split("-")[1] || p.id || "").toLowerCase();
 }
 
 function flannelsBaseId(id: string): string {
@@ -117,8 +138,8 @@ function pickFlannelsDiverse(pool: Product[], limit: number): Product[] {
   const seenBase = new Set<string>();
   const brandCount = new Map<string, number>();
   const genderCount: Record<string, number> = { w: 0, m: 0, "?": 0 };
-  // 20 → 2/brand; 40 → 3/brand so the rail can fill without one label dominating.
-  const brandCap = Math.max(2, Math.ceil(limit / 15));
+  // 20 → 2/brand; 40 → 4/brand so the extra slots can fill across maisons.
+  const brandCap = Math.max(2, Math.ceil(limit / 10));
   const genderCap = Math.max(2, Math.ceil(limit / 2));
 
   const tryPick = (requireLayer: boolean) => {
