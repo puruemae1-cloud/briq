@@ -83,3 +83,18 @@ pr-mens-rtw-stages.log
 /public/products/mc-pdp/
 /public/products/ys-pdp/
 src/data/bv/bv-pdp-cache.json
+
+# YouTube OAuth secrets (never commit)
+youtube-drafts/client_secret.json
+youtube-drafts/client_secret*.json
+youtube-drafts/token.json
+
+# Draft media / batch folders — keep tooling scripts + fonts in git
+instagram-drafts/*
+!instagram-drafts/*.py
+!instagram-drafts/*.swift
+!instagram-drafts/fonts/
+!instagram-drafts/fonts/**
+youtube-drafts/*
+!youtube-drafts/*.py
+!youtube-drafts/.gitkeep
