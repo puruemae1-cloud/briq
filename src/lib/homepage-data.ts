@@ -31,7 +31,7 @@ export type HomepageData = {
 };
 
 /** Homepage Flannels rail size — highest-discount winter layers. */
-export const FLANNELS_HOME_LIMIT = 20;
+export const FLANNELS_HOME_LIMIT = 40;
 
 
 function discountRatio(p: Product): number {
@@ -117,7 +117,8 @@ function pickFlannelsDiverse(pool: Product[], limit: number): Product[] {
   const seenBase = new Set<string>();
   const brandCount = new Map<string, number>();
   const genderCount: Record<string, number> = { w: 0, m: 0, "?": 0 };
-  const brandCap = 2;
+  // 20 → 2/brand; 40 → 3/brand so the rail can fill without one label dominating.
+  const brandCap = Math.max(2, Math.ceil(limit / 15));
   const genderCap = Math.max(2, Math.ceil(limit / 2));
 
   const tryPick = (requireLayer: boolean) => {
