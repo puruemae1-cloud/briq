@@ -9,8 +9,6 @@ import {
 import { curateCollectionEdit } from "@/lib/collection-edit";
 import {
   assignHomepageCategoryRails,
-  previousSeoulRotationDay,
-  seededShuffle,
   seoulRotationDay,
 } from "@/lib/homepage-rails";
 
@@ -24,13 +22,16 @@ import {
  */
 export type HomepageData = {
   rails: Record<string, Product[]>;
-  /** Four Flannels picks under the Flannels interstitial. */
+  /** Top winter Flannels clearance picks under the Flannels interstitial. */
   flannels: Product[];
   signature: Product[];
   newItems: Product[];
   /** Deployment that built these cards (set by `/api/home-data`). */
   deployKey?: string;
 };
+
+/** Homepage Flannels rail size — highest-discount winter layers. */
+export const FLANNELS_HOME_LIMIT = 20;
 
 
 function discountRatio(p: Product): number {
@@ -98,22 +99,26 @@ function flannelsBaseId(id: string): string {
 }
 
 function flannelsHomeScore(p: Product): number {
+  // Discount leads; winter layer / heavy outerwear only as a light tie-break
+  // so 95% jeans do not outrank a 90% parka when both are winter-eligible.
   const t = flannelsText(p);
   let s = discountRatio(p);
-  if (FLANNELS_HOME_LAYER.test(t)) s += 0.12;
-  if (FLANNELS_HOME_HEAVY.test(t)) s += 0.1;
+  if (FLANNELS_HOME_LAYER.test(t)) s += 0.02;
+  if (FLANNELS_HOME_HEAVY.test(t)) s += 0.02;
   return s;
 }
 
 /**
- * Diversified Flannels pick from an ordered pool (brand / gender / base-id).
- * Order matters — callers seed-shuffle so the set flips each Seoul rotation day.
+ * Diversified Flannels pick from a discount-sorted pool.
+ * Brand cap 2, gender soft-cap ~half the rail, layers preferred first.
  */
 function pickFlannelsDiverse(pool: Product[], limit: number): Product[] {
   const picked: Product[] = [];
   const seenBase = new Set<string>();
-  const seenBrand = new Set<string>();
+  const brandCount = new Map<string, number>();
   const genderCount: Record<string, number> = { w: 0, m: 0, "?": 0 };
+  const brandCap = 2;
+  const genderCap = Math.max(2, Math.ceil(limit / 2));
 
   const tryPick = (requireLayer: boolean) => {
     for (const p of pool) {
@@ -123,12 +128,12 @@ function pickFlannelsDiverse(pool: Product[], limit: number): Product[] {
       const base = flannelsBaseId(p.id);
       if (seenBase.has(base)) continue;
       const brand = flannelsBrandKey(p);
-      if (seenBrand.has(brand)) continue;
+      if ((brandCount.get(brand) || 0) >= brandCap) continue;
       const g = flannelsGender(p);
-      if ((g === "w" || g === "m") && (genderCount[g] || 0) >= 2) continue;
+      if ((g === "w" || g === "m") && (genderCount[g] || 0) >= genderCap) continue;
       picked.push(p);
       seenBase.add(base);
-      seenBrand.add(brand);
+      brandCount.set(brand, (brandCount.get(brand) || 0) + 1);
       genderCount[g] = (genderCount[g] || 0) + 1;
     }
   };
@@ -139,15 +144,11 @@ function pickFlannelsDiverse(pool: Product[], limit: number): Product[] {
 }
 
 /**
- * In-stock Flannels for the homepage rail: casual winter layers
- * (parkas, puffers, jackets, knits) — not party dresses / formalwear.
- *
- * Same 22:00 KST daily rotation as lookbook rails: seed changes with
- * `seoulRotationDay`, and prefer SKUs that were not in yesterday's four.
+ * In-stock Flannels homepage rail: winter layers sorted by discount (high→low).
+ * Party / formal / swimwear stay excluded. Default size is 20.
  */
 function getFlannelsHomepageProducts(
-  limit = 4,
-  rotationDay = seoulRotationDay(),
+  limit = FLANNELS_HOME_LIMIT,
 ): Product[] {
   const scored = getHomepageCategoryProducts("luxury", "flannels").filter(
     (p) => {
@@ -160,25 +161,16 @@ function getFlannelsHomepageProducts(
   scored.sort((a, b) => {
     const d = flannelsHomeScore(b) - flannelsHomeScore(a);
     if (d !== 0) return d;
+    const layer =
+      Number(FLANNELS_HOME_LAYER.test(flannelsText(b))) -
+      Number(FLANNELS_HOME_LAYER.test(flannelsText(a)));
+    if (layer !== 0) return layer;
     const tb = Date.parse(b.registeredAt || b.updatedAt || "") || 0;
     const ta = Date.parse(a.registeredAt || a.updatedAt || "") || 0;
     return tb - ta;
   });
 
-  const yesterdayIds = new Set(
-    pickFlannelsDiverse(
-      seededShuffle(scored, `flannels:${previousSeoulRotationDay(rotationDay)}`),
-      limit,
-    ).map((p) => p.id),
-  );
-  const fresh = scored.filter((p) => !yesterdayIds.has(p.id));
-  const overlap = scored.filter((p) => yesterdayIds.has(p.id));
-  const ordered = [
-    ...seededShuffle(fresh, `flannels:${rotationDay}:fresh`),
-    ...seededShuffle(overlap, `flannels:${rotationDay}:overlap`),
-  ];
-
-  return pickFlannelsDiverse(ordered, limit).map(toProductCardProduct);
+  return pickFlannelsDiverse(scored, limit).map(toProductCardProduct);
 }
 
 let memo: { rotationDay: string; data: HomepageData } | null = null;
@@ -201,7 +193,7 @@ export function buildHomepageData(): HomepageData {
     rails: Object.fromEntries(
       Object.entries(rails).map(([id, list]) => [id, list.map(toProductCardProduct)]),
     ),
-    flannels: getFlannelsHomepageProducts(4, rotationDay),
+    flannels: getFlannelsHomepageProducts(FLANNELS_HOME_LIMIT),
     signature: curated.signature.map(toProductCardProduct),
     newItems: curated.newItems.map(toProductCardProduct),
   };

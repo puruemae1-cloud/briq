@@ -13,9 +13,9 @@ function cronAuthorized(req: Request): boolean {
 }
 
 /**
- * Daily homepage rail rotation (lookbook rails + Flannels four).
- * Vercel Cron at 13:00 UTC (= 22:00 KST) clears the home-data cache so the
- * Seoul-seeded product sets refresh.
+ * Daily homepage lookbook-rail rotation. Vercel Cron at 13:00 UTC (= 22:00 KST)
+ * clears the home-data cache so Seoul-seeded rails (and Flannels top-discount
+ * winter picks) refresh from live stock.
  */
 export async function GET(req: Request) {
   if (!cronAuthorized(req)) {
