@@ -112,12 +112,25 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--brand", choices=sorted(BRAND_CATALOGS), required=True)
     ap.add_argument("--check-cdn", action="store_true")
-    ap.add_argument("--allow-placeholder", action="store_true", default=True)
+    ap.add_argument(
+        "--allow-placeholder",
+        action="store_true",
+        default=False,
+        help="Do not fail when primary image is still the brand placeholder",
+    )
+    ap.add_argument(
+        "--max-placeholder-pct",
+        type=float,
+        default=5.0,
+        help="Fail when this %% of products still use placeholder / empty galleries",
+    )
     args = ap.parse_args()
 
     missing_local: list[str] = []
     missing_cdn: list[str] = []
-    placeholder = 0
+    placeholder_paths = 0
+    placeholder_products = 0
+    product_count = 0
     checked = 0
     cdn_cache: dict[str, set[str]] = {}
     cdn_files: dict[str, set[str]] = {}
@@ -128,15 +141,32 @@ def main() -> int:
         if not path.exists():
             continue
         for p in load_products(path):
+            product_count += 1
+            primary = str(p.get("image") or "")
+            gallery = [x for x in (p.get("images") or []) if isinstance(x, str) and x]
+            if "placeholder" in primary or not gallery:
+                placeholder_products += 1
             for rel in image_paths(p):
                 checked += 1
                 if "placeholder" in rel:
-                    placeholder += 1
-                    if args.allow_placeholder:
-                        continue
+                    placeholder_paths += 1
+                    continue
                 local = ROOT / "public" / rel.lstrip("/")
-                if not local.is_file() or local.stat().st_size < 800:
-                    missing_local.append(f"{p.get('id')}: {rel}")
+                on_disk = local.is_file() and local.stat().st_size >= 800
+                if not on_disk:
+                    if args.check_cdn:
+                        parsed = folder_of(rel)
+                        if not parsed:
+                            missing_local.append(f"{p.get('id')}: {rel}")
+                            continue
+                        brand, folder = parsed
+                        if brand in nested_brands:
+                            if not tag_has_file(rel, cdn_files):
+                                missing_cdn.append(f"{p.get('id')}: {rel}")
+                        elif not tag_has_folder(brand, folder, cdn_cache):
+                            missing_cdn.append(f"{p.get('id')}: {rel}")
+                    else:
+                        missing_local.append(f"{p.get('id')}: {rel}")
                     continue
                 if args.check_cdn:
                     parsed = folder_of(rel)
@@ -149,8 +179,11 @@ def main() -> int:
                     elif not tag_has_folder(brand, folder, cdn_cache):
                         missing_cdn.append(f"{p.get('id')}: {rel}")
 
+    pct = (100.0 * placeholder_products / product_count) if product_count else 0.0
     print(
-        f"{args.brand}: checked={checked} placeholder={placeholder} "
+        f"{args.brand}: products={product_count} checked={checked} "
+        f"placeholder_products={placeholder_products} ({pct:.1f}%) "
+        f"placeholder_paths={placeholder_paths} "
         f"missing_local={len(missing_local)} missing_cdn={len(missing_cdn)}"
     )
     for row in missing_local[:15]:
@@ -161,7 +194,14 @@ def main() -> int:
         print(f"  … +{len(missing_local) - 15} more local")
     if len(missing_cdn) > 15:
         print(f"  … +{len(missing_cdn) - 15} more cdn")
-    return 1 if missing_local or missing_cdn else 0
+
+    bad_placeholder = (not args.allow_placeholder) and pct > args.max_placeholder_pct
+    if bad_placeholder:
+        print(
+            f"FAIL: placeholder rate {pct:.1f}% exceeds {args.max_placeholder_pct}% "
+            "(catalogue likely rebuilt without product-images tag visibility)"
+        )
+    return 1 if missing_local or missing_cdn or bad_placeholder else 0
 
 
 if __name__ == "__main__":

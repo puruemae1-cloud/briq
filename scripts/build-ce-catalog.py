@@ -859,23 +859,30 @@ def build_story(
 
 
 def local_ce_images(sku_or_id: str) -> list[str]:
+    """Prefer local ce-pdp frames; fall back to the product-images CDN tag."""
+    from catalog_image_guard import gallery_on_tag  # local import keeps module light
+
     folder = slugify(str(sku_or_id or "").replace(".", "-"))
     if not folder:
         return []
-    paths = sorted((IMG_ROOT / folder).glob("*.jpg"))
-    return [f"/products/ce-pdp/{folder}/{p.name}" for p in paths if p.stat().st_size >= 800]
+    if IMG_ROOT.is_dir():
+        paths = sorted((IMG_ROOT / folder).glob("*.jpg"))
+        local = [
+            f"/products/ce-pdp/{folder}/{p.name}"
+            for p in paths
+            if p.stat().st_size >= 800
+        ]
+        if local:
+            return local
+    return gallery_on_tag("ce-pdp", folder)
 
 
 def existing_ce_images(images: list[str] | None) -> list[str]:
-    """Keep only gallery paths that exist on disk (avoids broken PDP thumbs)."""
-    out: list[str] = []
-    for rel in images or []:
-        if not rel or "placeholder" in rel:
-            continue
-        local = ROOT / "public" / str(rel).lstrip("/")
-        if local.is_file() and local.stat().st_size >= 800:
-            out.append(rel)
-    return out
+    """Keep gallery paths that exist on disk or the product-images CDN tag."""
+    from catalog_image_guard import existing_images
+
+    cleaned = [x for x in (images or []) if x and "placeholder" not in x]
+    return existing_images(cleaned)
 
 
 def heal_raw_row(row: dict) -> dict:

@@ -36,6 +36,10 @@ python3 scripts/enrich-ce-pdp-copy-sfcc.py || true
 
 python3 scripts/build-ce-catalog.py
 
+# If the build host has no local ce-pdp tree, re-attach galleries from the
+# product-images tag / raw scrapes so weekly sync cannot ship placeholders.
+python3 scripts/restore-ce-images-from-cdn.py --fetch-tag
+
 # Align nav leaf IDs + backfill belts/silk/hair/SLG/jewellery from titles when
 # leaf PLP scrapes missed membership (prevents empty shop chips).
 python3 scripts/patch-ce-accessory-membership.py
@@ -56,7 +60,8 @@ if [[ -s tmp/ce-missing-on-cdn.txt ]]; then
     --dirs ce-pdp --skip-whiten --merge --skip-purge \
     --only-file tmp/ce-missing-on-cdn.txt
 fi
-python3 scripts/verify-catalog-images.py --brand ce --check-cdn || true
+# Hard fail when galleries are still mostly placeholders / missing on CDN.
+python3 scripts/verify-catalog-images.py --brand ce --check-cdn
 
 # Homepage rails: keep brands exclusive across category sections.
 python3 scripts/refresh-homepage-rail-picks.py --fail || true
