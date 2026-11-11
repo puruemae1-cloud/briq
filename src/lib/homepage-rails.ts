@@ -65,12 +65,16 @@ export function secondsUntilNextSeoulRotation(now = Date.now()): number {
   return Math.max(30, Math.ceil((nextFlipUtc - now) / 1000));
 }
 
-function previousRotationDay(day: string): string {
+export function previousSeoulRotationDay(day: string): string {
   const [y, m, d] = day.split("-").map(Number);
   if (!y || !m || !d) return day;
   const dt = new Date(Date.UTC(y, m - 1, d));
   dt.setUTCDate(dt.getUTCDate() - 1);
   return dt.toISOString().slice(0, 10);
+}
+
+function previousRotationDay(day: string): string {
+  return previousSeoulRotationDay(day);
 }
 
 function hashSeed(s: string): number {
@@ -82,7 +86,8 @@ function hashSeed(s: string): number {
   return h >>> 0;
 }
 
-function seededShuffle<T>(arr: T[], seed: string): T[] {
+/** Deterministic shuffle — same seed ⇒ same order (homepage daily rails). */
+export function seededShuffle<T>(arr: T[], seed: string): T[] {
   const out = [...arr];
   let a = hashSeed(seed);
   const rand = () => {

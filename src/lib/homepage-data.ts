@@ -1,4 +1,5 @@
 import type { Product } from "@/data/product-types";
+import { isProductInStock } from "@/data/product-utils";
 import { homeLookBanners } from "@/data/home-banners";
 import {
   getCollection100,
@@ -8,6 +9,8 @@ import {
 import { curateCollectionEdit } from "@/lib/collection-edit";
 import {
   assignHomepageCategoryRails,
+  previousSeoulRotationDay,
+  seededShuffle,
   seoulRotationDay,
 } from "@/lib/homepage-rails";
 
@@ -103,24 +106,10 @@ function flannelsHomeScore(p: Product): number {
 }
 
 /**
- * In-stock Flannels for the homepage rail: casual winter layers
- * (parkas, puffers, jackets, knits) — not party dresses / formalwear.
+ * Diversified Flannels pick from an ordered pool (brand / gender / base-id).
+ * Order matters — callers seed-shuffle so the set flips each Seoul rotation day.
  */
-function getFlannelsHomepageProducts(limit = 4): Product[] {
-  const pool = getHomepageCategoryProducts("luxury", "flannels").filter((p) => {
-    if (p.inStock === false) return false;
-    const t = flannelsText(p);
-    if (FLANNELS_HOME_EXCLUDE.test(t)) return false;
-    return FLANNELS_HOME_CASUAL.test(t);
-  });
-  pool.sort((a, b) => {
-    const d = flannelsHomeScore(b) - flannelsHomeScore(a);
-    if (d !== 0) return d;
-    const tb = Date.parse(b.registeredAt || b.updatedAt || "") || 0;
-    const ta = Date.parse(a.registeredAt || a.updatedAt || "") || 0;
-    return tb - ta;
-  });
-
+function pickFlannelsDiverse(pool: Product[], limit: number): Product[] {
   const picked: Product[] = [];
   const seenBase = new Set<string>();
   const seenBrand = new Set<string>();
@@ -146,7 +135,50 @@ function getFlannelsHomepageProducts(limit = 4): Product[] {
 
   tryPick(true);
   tryPick(false);
-  return picked.map(toProductCardProduct);
+  return picked;
+}
+
+/**
+ * In-stock Flannels for the homepage rail: casual winter layers
+ * (parkas, puffers, jackets, knits) — not party dresses / formalwear.
+ *
+ * Same 22:00 KST daily rotation as lookbook rails: seed changes with
+ * `seoulRotationDay`, and prefer SKUs that were not in yesterday's four.
+ */
+function getFlannelsHomepageProducts(
+  limit = 4,
+  rotationDay = seoulRotationDay(),
+): Product[] {
+  const scored = getHomepageCategoryProducts("luxury", "flannels").filter(
+    (p) => {
+      if (!isProductInStock(p)) return false;
+      const t = flannelsText(p);
+      if (FLANNELS_HOME_EXCLUDE.test(t)) return false;
+      return FLANNELS_HOME_CASUAL.test(t);
+    },
+  );
+  scored.sort((a, b) => {
+    const d = flannelsHomeScore(b) - flannelsHomeScore(a);
+    if (d !== 0) return d;
+    const tb = Date.parse(b.registeredAt || b.updatedAt || "") || 0;
+    const ta = Date.parse(a.registeredAt || a.updatedAt || "") || 0;
+    return tb - ta;
+  });
+
+  const yesterdayIds = new Set(
+    pickFlannelsDiverse(
+      seededShuffle(scored, `flannels:${previousSeoulRotationDay(rotationDay)}`),
+      limit,
+    ).map((p) => p.id),
+  );
+  const fresh = scored.filter((p) => !yesterdayIds.has(p.id));
+  const overlap = scored.filter((p) => yesterdayIds.has(p.id));
+  const ordered = [
+    ...seededShuffle(fresh, `flannels:${rotationDay}:fresh`),
+    ...seededShuffle(overlap, `flannels:${rotationDay}:overlap`),
+  ];
+
+  return pickFlannelsDiverse(ordered, limit).map(toProductCardProduct);
 }
 
 let memo: { rotationDay: string; data: HomepageData } | null = null;
@@ -169,7 +201,7 @@ export function buildHomepageData(): HomepageData {
     rails: Object.fromEntries(
       Object.entries(rails).map(([id, list]) => [id, list.map(toProductCardProduct)]),
     ),
-    flannels: getFlannelsHomepageProducts(4),
+    flannels: getFlannelsHomepageProducts(4, rotationDay),
     signature: curated.signature.map(toProductCardProduct),
     newItems: curated.newItems.map(toProductCardProduct),
   };
