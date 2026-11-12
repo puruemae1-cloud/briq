@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-11-11T20:32:47Z",
+  "scrapedAt": "2026-11-12T10:44:03Z",
   "models": {
     "c1-bel-canto-lumi%C3%A8re": {
       "modelKey": "c1-bel-canto-lumi%C3%A8re",
@@ -2910,6 +2910,29 @@
         }
       ],
       "sectionCount": 4
+    },
+    "c1-bel-canto-lucia": {
+      "modelKey": "c1-bel-canto-lucia",
+      "sourceUrl": "https://www.christopherward.com/watches/c1-bel-canto-lucia/C01-41APT5-T00O0-MC.html",
+      "sections": [
+        {
+          "titleEn": "Calibre FS01-2",
+          "bodyEn": "For the Bel Canto, Andy Wilx draws on nature to create a world of fantasy. His decorative patterns, opulent colours and 24ct gold recall the lushness of William Morris and the lustre of medieval manuscripts.\n\n“I wanted to create a world you could peer into, and with so much space between the mechanism and crystal, I was able to create a design with real depth.\n\n“The original mechanical parts already suggest a bird, so the opportunity to build on that and create a unique character just flowed naturally. Then there’s the chime mechanism. That’s the cherry on the cake, as the bird now sings.\n\n“I’m delighted with how the watch turned out, and I hope people get as much joy out of wearing it as I did designing it.”",
+          "image": "/products/cw-editorial/c1-bel-canto-lucia/story-1.webp",
+          "videoUrl": null,
+          "layout": "default",
+          "reverse": false
+        },
+        {
+          "titleEn": "KEY DETAILS",
+          "bodyEn": "Turn sound on And the songbird sings… Lucia may be a Bel Canto like no other, but it’s still a Bel Canto. Which means on the hour, every hour, the bird’s beautifully designed tail strikes that signature D note to remind you of the passing of time.\n\nGolden vision The floating time-telling dial has a warm fumé sunburst effect that goes from the light centre to the darker edge. Its handset is polished and shaped for maximum legibility.\n\nGold standard The songbird is made up of different moving parts, the outlines of which have been gold-plated for added lustre. These plated surfaces glisten with the light, and also help to differentiate between elements like the beak, feathers and tail.\n\nPower in your hands The improved Calibre FS01-2 sounds a single chime every hour, but thanks to its pairing with Sellita’s new SW200-2 Power+ base movement, now delivers a power reserve of 65 hours. The chime is switched on or off via the songbird’s beak by pressing the pusher at 4 o’clock.\n\nNatural wonder The bird sits within a foliage display created by artist Andy Wilx and individually pad-printed by the Mr Jones team in London.",
+          "image": "/products/cw-editorial/c1-bel-canto-lucia/story-2.webp",
+          "videoUrl": null,
+          "layout": "default",
+          "reverse": true
+        }
+      ],
+      "sectionCount": 2
     }
   }
 }

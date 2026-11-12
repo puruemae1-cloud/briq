@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from briq_pricing import apply_site_price  # noqa: E402
+from catalog_image_guard import existing_images  # noqa: E402
 
 import json, re, html as H
 from pathlib import Path
@@ -320,21 +321,6 @@ def local_gallery(sku: str) -> list[str]:
         if f.stat().st_size < 2500:
             continue
         out.append(f"/products/cw-pdp/{slugify(sku)}/{f.name}")
-    return out
-
-
-def existing_images(paths: list[str] | None) -> list[str]:
-    out = []
-    for p in paths or []:
-        if not p:
-            continue
-        fp = ROOT / "public" / p.lstrip("/")
-        if fp.exists() and fp.stat().st_size >= 2500:
-            out.append(p)
-            continue
-        # Editorial assets live on the product-images CDN and are gitignored locally.
-        if p.startswith("/products/cw-editorial/"):
-            out.append(p)
     return out
 
 
@@ -911,7 +897,7 @@ for i, (gkey, g) in enumerate(sorted(grouped.items(), key=lambda x: x[0])):
         if label.upper().startswith("C60-") or label.upper().startswith("C63-") or label.upper().startswith("C12-"):
             label = option_label_from_sku(msku, men, multi_dial=multi_dial)
         vgbp = gbp_for_sku(msku, m.get("gbpPrice") or gbp)
-        vimgs = local_gallery(msku)
+        vimgs = local_gallery(msku) or existing_images(men.get("images"))
         if not vimgs:
             for sv in (men.get("strapVariants") or en.get("strapVariants") or []):
                 if resolve_variant_sku(sv, members, g.get("colour"), primary_sku) == msku:
@@ -919,7 +905,7 @@ for i, (gkey, g) in enumerate(sorted(grouped.items(), key=lambda x: x[0])):
                     break
         if not vimgs:
             plp = f"/products/cw/{slugify(msku)}.jpg"
-            if (ROOT / "public" / plp.lstrip("/")).exists():
+            if existing_images([plp]):
                 vimgs = [plp]
         if not vimgs:
             # Never borrow another strap/dial gallery — wrong hero + broken CDN
