@@ -10,6 +10,8 @@ import html as H
 import importlib.util
 import json
 import re
+import subprocess
+import sys
 import time
 import urllib.parse
 import urllib.request
@@ -173,6 +175,35 @@ def enrich_missing_editorial(*, only_keys: set[str] | None = None) -> list[str]:
         )
         + "\n"
     )
+    if updated:
+        # Story photos are gitignored locally; publish them with the PDP tag or
+        # the next deploy ships broken / blank editorial images on the PDP.
+        only = ROOT / "tmp" / "cw-editorial-cdn-only.txt"
+        only.parent.mkdir(parents=True, exist_ok=True)
+        only.write_text("\n".join(updated) + "\n")
+        print(
+            f"publishing {len(updated)} editorial folder(s) to product-images…",
+            flush=True,
+        )
+        rc = subprocess.call(
+            [
+                sys.executable,
+                str(ROOT / "scripts/push-product-images-tag.py"),
+                "--dirs",
+                "cw-editorial",
+                "--skip-whiten",
+                "--only-file",
+                str(only),
+                "--skip-purge",
+            ],
+            cwd=str(ROOT),
+        )
+        if rc != 0:
+            print(
+                f"WARN: editorial CDN push exited {rc} — "
+                "PDP story images may 404 until republished",
+                flush=True,
+            )
     return updated
 
 

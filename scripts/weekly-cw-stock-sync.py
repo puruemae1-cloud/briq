@@ -729,6 +729,45 @@ def main() -> int:
             [sys.executable, str(ROOT / "scripts/enrich-cw-missing-editorial-and-copy.py")],
             cwd=str(ROOT),
         )
+        # Enrich already pushes newly scraped editorial folders; also catch any
+        # local story assets that landed outside that path (manual rescrape).
+        print("5b) Ensuring CW editorial assets are on product-images…")
+        ed_root = ROOT / "public/products/cw-editorial"
+        if ed_root.is_dir():
+            missing = []
+            for d in sorted(ed_root.iterdir()):
+                if not d.is_dir():
+                    continue
+                probe = next(d.glob("story-*.webp"), None) or next(d.glob("*.webp"), None) or next(d.glob("*.jpg"), None)
+                if not probe:
+                    continue
+                rel = f"/products/cw-editorial/{d.name}/{probe.name}"
+                listed = subprocess.run(
+                    ["git", "cat-file", "-e", f"product-images:public{rel}"],
+                    cwd=str(ROOT),
+                    capture_output=True,
+                )
+                if listed.returncode != 0:
+                    missing.append(d.name)
+            if missing:
+                only = ROOT / "tmp" / "cw-editorial-cdn-missing.txt"
+                only.parent.mkdir(parents=True, exist_ok=True)
+                only.write_text("\n".join(missing) + "\n")
+                subprocess.check_call(
+                    [
+                        sys.executable,
+                        str(ROOT / "scripts/push-product-images-tag.py"),
+                        "--dirs",
+                        "cw-editorial",
+                        "--skip-whiten",
+                        "--only-file",
+                        str(only),
+                        "--skip-purge",
+                    ],
+                    cwd=str(ROOT),
+                )
+            else:
+                print("  editorial CDN already covers local story folders")
 
     print("6) Rebuilding cw-catalog.ts…")
     subprocess.check_call([sys.executable, str(ROOT / "scripts/rebuild-cw-catalog.py")], cwd=str(ROOT))

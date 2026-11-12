@@ -783,9 +783,15 @@ for raw in RAW["products"]:
                     colour = part
     size = normalize_case_size(size, sku)
     # Group strap sisters across case diameters (official WSize axis).
+    # Full SKUs must use dial_family_key so a PDP URL like
+    # /watches/.../C01-41APT5-T00O0-MC.html does not orphan one strap from
+    # siblings that still point at the short model page (/…/C143.html).
     line = "nn" if (sku.upper().startswith("N") or is_nearly_new(raw.get("name"))) else "new"
     model_key = cw_model_group_key(raw.get("url") or "")
-    group_key = f"{line}|model|{model_key}" if model_key else dial_family_key(sku, line)
+    if is_full_sku(sku):
+        group_key = dial_family_key(sku, line)
+    else:
+        group_key = f"{line}|model|{model_key}" if model_key else dial_family_key(sku, line)
     grouped.setdefault(
         group_key,
         {
@@ -814,7 +820,14 @@ for i, (gkey, g) in enumerate(sorted(grouped.items(), key=lambda x: x[0])):
         g.get("sizes") or set(),
         key=lambda s: int(re.sub(r"\D", "", s) or "0"),
     )
-    # Prefer primary from new-releases order, then richest gallery; fall back across sizes
+    # Prefer primary from new-releases order, then richest gallery; fall back across sizes.
+    # Galleries live on the product-images CDN tag and are often absent locally —
+    # treat enrich/CDN paths as equally valid so strap sisters are not dropped.
+    def _has_gallery(sku: str) -> bool:
+        if local_gallery(sku):
+            return True
+        return bool(existing_images((ENR.get(sku) or {}).get("images")))
+
     new_order = RAW["categories"].get("cw-new-releases", [])
     new_rank = {s: i for i, s in enumerate(new_order)}
     primary_sku = None
@@ -824,7 +837,7 @@ for i, (gkey, g) in enumerate(sorted(grouped.items(), key=lambda x: x[0])):
             for m in members
             if is_full_sku(m.get("sku") or "")
             and not m["sku"].upper().startswith("N")
-            and local_gallery(m["sku"])
+            and _has_gallery(m["sku"])
         ],
         key=lambda s: (new_rank.get(s, 10_000), 0 if "42" in (s.split("-")[1] if "-" in s else "") else 1, s),
     )
@@ -837,7 +850,7 @@ for i, (gkey, g) in enumerate(sorted(grouped.items(), key=lambda x: x[0])):
                 for m in members
                 if is_full_sku(m.get("sku") or "")
                 and not m["sku"].upper().startswith("N")
-                and local_gallery(m["sku"])
+                and _has_gallery(m["sku"])
             ),
             None,
         ) or next(

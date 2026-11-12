@@ -55,7 +55,11 @@ BRAND_CATALOGS: dict[str, list[Path]] = {
     ],
 }
 
-PATH_RE = re.compile(r"/products/[a-z0-9][\w.-]*-pdp/[^\"'\\s)]+")
+# Include CW story/editorial assets — they ship on the same product-images tag
+# and missing ones show as blank story photos on the PDP.
+PATH_RE = re.compile(
+    r"/products/(?:[a-z0-9][\w.-]*-pdp|cw-editorial)/[^\"'\\s)]+"
+)
 
 
 def _load_json_products(path: Path) -> list[dict]:
