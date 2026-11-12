@@ -147,12 +147,15 @@ export function ProductDetail({
 }) {
   // Read colour/size from the URL on the client so the server page can stay
   // cacheable (no searchParams) — critical for Naver download-time.
+  // Query string MUST win over SSR path props: CW parent ids are
+  // `cw-{primaryVariantId}`, so path props always looked like the default
+  // strap and ignored every `?color=` click (options appeared stuck).
   const searchParams = useSearchParams();
   const colorId =
-    colorIdProp ||
     searchParams.get("color") ||
+    colorIdProp ||
     undefined;
-  const sizeId = sizeIdProp || searchParams.get("size") || undefined;
+  const sizeId = searchParams.get("size") || sizeIdProp || undefined;
 
   const allVariants = product.variants ?? [];
   const hasSizes = allVariants.some((v) => Boolean(v.size));

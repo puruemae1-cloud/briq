@@ -79,10 +79,16 @@ export default async function ProductPage({ params }: Props) {
   const product = getProduct(id);
   if (!product) notFound();
 
-  // Path-variant deep links (id matches a variant sku) — resolve once for SSR.
-  const pathVariant = product.variants?.find(
-    (v) => v.id === id || `cw-${v.id}` === id || v.sku === id,
-  );
+  // Path-variant deep links only (e.g. /product/cw-…-b0 → parent PDP).
+  // Never treat the parent product id itself as a selected colour — CW ids are
+  // `cw-{primarySku}`, so that wrongly locked every visit onto the default strap
+  // and made `?color=` option clicks look broken.
+  const pathVariant =
+    id !== product.id
+      ? product.variants?.find(
+          (v) => v.id === id || `cw-${v.id}` === id || v.sku === id,
+        )
+      : undefined;
   const colorId = pathVariant?.colorKey || pathVariant?.id;
   const sizeId = pathVariant?.size;
 
