@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-11-12T20:34:00Z",
+  "generatedAt": "2026-11-13T20:14:51Z",
   "limit": 4,
   "rails": {
     "luxury": {
       "productIds": [
-        "bv-a003brv6zf02201",
-        "bv-871198v6or01010",
-        "bv-875219v6oe01010",
-        "bv-871316v6ko02549"
+        "ps-made-in-the-british-isles-cobalt-merino-wool-stripe-rugby",
+        "ps-made-in-the-british-isles-white-oxford-cotton-shirt",
+        "ps-made-in-the-british-isles-light-blue-oxford-cotton-shirt",
+        "ps-made-in-the-british-isles-navy-fisherman-sweater"
       ],
       "brands": [
-        "보테가-베네타",
-        "보테가-베네타",
-        "보테가-베네타",
-        "보테가-베네타"
+        "paul-smith",
+        "paul-smith",
+        "paul-smith",
+        "paul-smith"
       ]
     },
     "watches": {
@@ -46,16 +46,16 @@
     },
     "shoes": {
       "productIds": [
-        "ps-black-maximus-trainers",
-        "ps-dark-navy-george-shoes",
-        "ps-ecru-zed-zebra-sliders",
-        "ps-ecru-and-grey-amos-trainers"
+        "bv-a009yhv5u221003",
+        "bv-a007byv6vc09063",
+        "bv-a009ygv7bb12782",
+        "bv-a007byv6vc09263"
       ],
       "brands": [
-        "paul-smith",
-        "paul-smith",
-        "paul-smith",
-        "paul-smith"
+        "보테가-베네타",
+        "보테가-베네타",
+        "보테가-베네타",
+        "보테가-베네타"
       ]
     },
     "accessories": {
@@ -113,16 +113,16 @@
       "bags"
     ],
     "paul-smith": [
-      "shoes",
-      "shoes",
-      "shoes",
-      "shoes"
-    ],
-    "보테가-베네타": [
       "luxury",
       "luxury",
       "luxury",
       "luxury"
+    ],
+    "보테가-베네타": [
+      "shoes",
+      "shoes",
+      "shoes",
+      "shoes"
     ]
   },
   "overlaps": {},
