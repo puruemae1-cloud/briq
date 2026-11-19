@@ -73,6 +73,9 @@ def collect_jobs(products: list[dict]) -> list[tuple[str, int, str]]:
         add(p.get("hoverImage"))
         for u in p.get("images") or []:
             add(u if isinstance(u, str) else None)
+        for sec in p.get("storySections") or []:
+            if isinstance(sec, dict):
+                add(sec.get("image"))
         for v in p.get("variants") or []:
             if not isinstance(v, dict):
                 continue
@@ -145,6 +148,9 @@ def rewrite_catalog(products: list[dict], mapping: dict[tuple[str, str], str]) -
             p["hoverImage"] = map_one(pid, p.get("hoverImage"))
         if isinstance(p.get("images"), list):
             p["images"] = [map_one(pid, u) if isinstance(u, str) else u for u in p["images"]]
+        for sec in p.get("storySections") or []:
+            if isinstance(sec, dict) and is_amplience(sec.get("image")):
+                sec["image"] = map_one(pid, sec.get("image"))
         # Primary must stay first gallery frame when rewritten
         if isinstance(p.get("images"), list) and p["images"]:
             if not p.get("image") or is_amplience(p.get("image")):
