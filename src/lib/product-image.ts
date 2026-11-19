@@ -24,24 +24,50 @@ import type {  Product, ProductVariant  } from "@/data/product-types";
 import { bannerMediaVersion } from "@/lib/banner-media-version";
 import { productMediaVersion } from "@/lib/product-media-version";
 
-/** Primary CDN for Vercel (`product-images` tag mirrored by jsDelivr). */
+/**
+ * Pin CDN URLs to the published product-images tip (manifest tagRev).
+ * jsDelivr `@product-images` 403s once the tag tree grows ("Package size
+ * exceeded"); the same path works when addressed by commit sha.
+ */
+function mediaRev(): string {
+  return productMediaVersion() || "product-images";
+}
+
+/** Primary CDN — GitHub raw (stable in KR; matches next.config MEDIA_ORIGIN). */
+export function mediaOriginPrimary(): string {
+  return `https://raw.githubusercontent.com/puruemae1-cloud/briq/${mediaRev()}/public`;
+}
+
+/** Secondary CDN — jsDelivr commit pin (Asia PoPs when raw stalls). */
+export function mediaOriginFallback(): string {
+  return `https://cdn.jsdelivr.net/gh/puruemae1-cloud/briq@${mediaRev()}/public`;
+}
+
+/** @deprecated Prefer mediaOriginPrimary() — kept for older imports. */
 export const MEDIA_ORIGIN_PRIMARY =
-  "https://cdn.jsdelivr.net/gh/puruemae1-cloud/briq@product-images/public";
-/** Secondary CDN if primary fails (raw GitHub tag URL). */
-export const MEDIA_ORIGIN_FALLBACK =
   "https://raw.githubusercontent.com/puruemae1-cloud/briq/product-images/public";
+/** @deprecated Prefer mediaOriginFallback(). */
+export const MEDIA_ORIGIN_FALLBACK =
+  "https://cdn.jsdelivr.net/gh/puruemae1-cloud/briq@product-images/public";
 
 function preferredMediaOrigin(origin: string): string {
-  const clean = origin.replace(/\/$/, "");
-  if (!clean) return clean;
-  if (
-    clean.includes(
-      "raw.githubusercontent.com/puruemae1-cloud/briq/product-images/public",
-    )
-  ) {
-    return MEDIA_ORIGIN_PRIMARY;
+  // Honour next.config / env. Do NOT rewrite raw → jsDelivr: jsDelivr 403s
+  // under PLP load and on large tag trees (broken Flannels thumbs in KR).
+  return origin.replace(/\/$/, "");
+}
+
+function swapCdnHost(url: string): string {
+  const rawRe =
+    /raw\.githubusercontent\.com\/puruemae1-cloud\/briq\/[^/]+\/public/;
+  const jdRe =
+    /cdn\.jsdelivr\.net\/gh\/puruemae1-cloud\/briq@[^/]+\/public/;
+  if (rawRe.test(url)) {
+    return url.replace(rawRe, mediaOriginFallback().replace(/^https:\/\//, ""));
   }
-  return clean;
+  if (jdRe.test(url)) {
+    return url.replace(jdRe, mediaOriginPrimary().replace(/^https:\/\//, ""));
+  }
+  return "";
 }
 
 
@@ -90,30 +116,14 @@ export function mediaUrl(src: string | undefined | null): string {
 export function mediaUrlFallback(src: string | undefined | null): string {
   if (!src) return "";
   if (/^https?:\/\//i.test(src) || src.startsWith("data:") || src.startsWith("blob:")) {
-    const primary = MEDIA_ORIGIN_PRIMARY;
-    const fallback = MEDIA_ORIGIN_FALLBACK;
-    if (src.startsWith(primary)) return fallback + src.slice(primary.length);
-    if (src.startsWith(fallback)) return primary + src.slice(fallback.length);
-    // Absolute URL already — swap known hosts if present
-    if (src.includes("cdn.jsdelivr.net/gh/puruemae1-cloud/briq@product-images/public")) {
-      return src.replace(
-        "cdn.jsdelivr.net/gh/puruemae1-cloud/briq@product-images/public",
-        "raw.githubusercontent.com/puruemae1-cloud/briq/product-images/public",
-      );
-    }
-    if (src.includes("raw.githubusercontent.com/puruemae1-cloud/briq/product-images/public")) {
-      return src.replace(
-        "raw.githubusercontent.com/puruemae1-cloud/briq/product-images/public",
-        "cdn.jsdelivr.net/gh/puruemae1-cloud/briq@product-images/public",
-      );
-    }
-    return "";
+    return swapCdnHost(src);
   }
   if (!src.startsWith("/products/") && !src.startsWith("/banners/")) return "";
   const origin = preferredMediaOrigin(process.env.NEXT_PUBLIC_MEDIA_ORIGIN || "");
   if (!origin) return "";
-  const alt =
-    origin.includes("jsdelivr") ? MEDIA_ORIGIN_FALLBACK : MEDIA_ORIGIN_PRIMARY;
+  const alt = origin.includes("jsdelivr")
+    ? mediaOriginPrimary()
+    : mediaOriginFallback();
   let url = `${alt}${encodeMediaPath(src)}`;
   if (src.startsWith("/banners/")) {
     const v = bannerMediaVersion();

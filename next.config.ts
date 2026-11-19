@@ -1,14 +1,19 @@
 import type { NextConfig } from "next";
+import mediaManifest from "./src/data/product-images-manifest.json";
 
 /**
  * Product + banner media live on the `product-images` git tag.
  * On Vercel we do NOT proxy them (that burned Fast Origin Transfer / Hobby
- * fair-use). Point browsers at GitHub raw for the tag — jsDelivr intermittently
- * 403s under PLP load, which shows as broken product thumbnails.
+ * fair-use). Point browsers at GitHub raw — jsDelivr 403s under PLP load and
+ * once the tag tree exceeds its package limit (broken Flannels thumbs in KR).
+ * Pin to the published tip so force-pushes and jsDelivr stay in sync.
  */
+const MEDIA_REV =
+  (mediaManifest as { tagRev?: string }).tagRev?.replace(/[^a-zA-Z0-9]/g, "").slice(0, 12) ||
+  "product-images";
 const MEDIA_ORIGIN =
   process.env.MEDIA_ORIGIN ||
-  "https://raw.githubusercontent.com/puruemae1-cloud/briq/product-images/public";
+  `https://raw.githubusercontent.com/puruemae1-cloud/briq/${MEDIA_REV}/public`;
 
 const nextConfig: NextConfig = {
   // mobile/ is a separate Expo app

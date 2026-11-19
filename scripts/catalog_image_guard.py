@@ -67,12 +67,27 @@ def clear_tag_cache() -> None:
     _tag_listed = False
 
 
+# UK brand CDNs that stall for many KR visitors (ProductImage → Briq mark).
+# Catalogue photos must live on the product-images tag instead.
+_FORBIDDEN_HOTLINK = re.compile(
+    r"cdn\.media\.amplience\.net|frasersdev|/i/frasersdev/",
+    re.I,
+)
+
+
+def is_forbidden_hotlink(web: str | None) -> bool:
+    return bool(web and isinstance(web, str) and _FORBIDDEN_HOTLINK.search(web))
+
+
 def image_on_disk(web: str | None) -> bool:
     """True when a /products/… path exists and is a real image file.
 
-    Non-product paths (placeholders under /products/*.svg, remote URLs) pass.
+    Non-product paths (placeholders under /products/*.svg) pass. Forbidden
+    third-party hotlinks do not — mirror them onto product-images first.
     """
     if not web or not isinstance(web, str):
+        return False
+    if is_forbidden_hotlink(web):
         return False
     if web.startswith("http://") or web.startswith("https://"):
         return True
@@ -100,6 +115,8 @@ def image_available(web: str | None) -> bool:
     if not web or not isinstance(web, str):
         return False
     if "placeholder" in web:
+        return False
+    if is_forbidden_hotlink(web):
         return False
     if web.startswith("http://") or web.startswith("https://"):
         return True

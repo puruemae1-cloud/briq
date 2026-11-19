@@ -83,9 +83,18 @@ function tagImagePaths() {
  * Drop gallery frames that are not on the CDN and hide products left without a
  * primary photo, so a failed image upload shows fewer photos rather than broken ones.
  */
+/** Amplience / Frasers UK hotlinks stall for many KR visitors — not shippable. */
+function isForbiddenHotlink(src) {
+  return typeof src === "string" && /cdn\.media\.amplience\.net|frasersdev/i.test(src);
+}
+
 function guardImages(rel, products, onTag) {
-  const ok = (src) =>
-    typeof src !== "string" || !src.startsWith("/products/") || onTag.has(src.split("?")[0]);
+  const ok = (src) => {
+    if (typeof src !== "string") return true;
+    if (isForbiddenHotlink(src)) return false;
+    if (!src.startsWith("/products/")) return true;
+    return onTag.has(src.split("?")[0]);
+  };
   const fix = (item) => {
     if (Array.isArray(item.images)) item.images = item.images.filter(ok);
     if (item.hoverImage && !ok(item.hoverImage)) delete item.hoverImage;
