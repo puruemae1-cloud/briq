@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-11-20T21:02:44Z",
+  "generatedAt": "2026-11-20T22:29:01Z",
   "limit": 4,
   "rails": {
     "luxury": {
       "productIds": [
-        "ps-dark-grey-zebra-logo-polo-shirt",
-        "ps-brown-zebra-logo-polo-shirt",
-        "ps-multicolour-slim-fit-cotton-shirt",
-        "ps-blue-liberty-floral-cotton-shirt"
+        "ce-rc0ad2n67-ggg3",
+        "ce-rx0wq4z28-96mn",
+        "ce-ry14l5d33-19le",
+        "ce-ry13h5590-28bl"
       ],
       "brands": [
-        "paul-smith",
-        "paul-smith",
-        "paul-smith",
-        "paul-smith"
+        "celine",
+        "celine",
+        "celine",
+        "celine"
       ]
     },
     "watches": {
@@ -46,16 +46,16 @@
     },
     "shoes": {
       "productIds": [
+        "ps-chocolate-leather-falk-boots",
         "ax-x000010504",
         "ax-x000010502",
-        "bb-check-cashmere-baby-blanket",
-        "bv-a009yhv5u221003"
+        "bb-check-cashmere-baby-blanket"
       ],
       "brands": [
+        "paul-smith",
         "arcteryx",
         "arcteryx",
-        "burberry",
-        "보테가-베네타"
+        "burberry"
       ]
     },
     "accessories": {
@@ -95,6 +95,12 @@
     "burberry": [
       "shoes"
     ],
+    "celine": [
+      "luxury",
+      "luxury",
+      "luxury",
+      "luxury"
+    ],
     "christopher-ward": [
       "watches",
       "watches",
@@ -120,12 +126,6 @@
       "bags"
     ],
     "paul-smith": [
-      "luxury",
-      "luxury",
-      "luxury",
-      "luxury"
-    ],
-    "보테가-베네타": [
       "shoes"
     ]
   },
