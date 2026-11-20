@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-11-06T20:53:36.837387+00:00",
+  "scrapedAt": "2026-11-20T20:56:51.134980+00:00",
   "brand": "Celine",
   "hub": "https://www.celine.com/en-gb/men/ready-to-wear/?nav=E001-VIEW-ALL",
   "family": "ce-men-rtw",
@@ -1016,7 +1016,7 @@
         },
         {
           "size": "41",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "42",
@@ -1329,7 +1329,7 @@
         },
         {
           "size": "M",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "L",
@@ -3249,11 +3249,11 @@
         },
         {
           "size": "38",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "39",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "40",
@@ -5975,7 +5975,7 @@
         "https://image.celine.com/asset/ab9e6fc3-72b7-4b27-a674-ce91236e014e/RV1942N67-GGG3_2_SUM26_M_V1.jpg?V2",
         "https://image.celine.com/asset/96a90cbe-98bd-47a5-ae36-7a7bfc6e0f17/RV1942N67-GGG3_3_SUM26_M_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -5984,7 +5984,7 @@
         "shirt IN COTTON DENIM"
       ],
       "categoryLabel": "DENIM",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "XS",
@@ -7403,7 +7403,7 @@
       "sizeStock": [
         {
           "size": "XS",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "S",
@@ -9742,7 +9742,7 @@
         },
         {
           "size": "L",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "XL",
@@ -10346,7 +10346,7 @@
         },
         {
           "size": "XL",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "XXL",
@@ -11339,7 +11339,7 @@
         "https://image.celine.com/asset/1fa3a0ee-7fb1-41ae-864c-a5592e6ce5fb/RX0LF2L55-GKS4_3_SUM26_M_V1.jpg?V2",
         "https://image.celine.com/asset/ce6d4963-423b-412e-b64e-87fcb9bb70dc/RX0LF2L55-GKS4_4_SUM26_M_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -11348,7 +11348,7 @@
         "polo shirt IN PIQUE COTTON JERSEY"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "XS",
@@ -11485,7 +11485,7 @@
         "https://image.celine.com/asset/a506599f-a2e9-4c30-96e5-aa4412ba637b/2ADDT367Y-06BB_3_SUM26_M_V1.jpg?V2",
         "https://image.celine.com/asset/ae47f141-e003-429e-bbe4-426074e59549/2ADDT367Y-06BB_4_SUM26_M_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -11494,7 +11494,7 @@
         "POLO IN fine cotton"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "XS",
@@ -12093,7 +12093,7 @@
         },
         {
           "size": "M",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "L",
@@ -12218,7 +12218,7 @@
         "https://image.celine.com/asset/e2668fdf-05b3-41fa-b526-683137016c40/RX0LF2L55-FYZ2_3_SUM26_M_V1.jpg?V2",
         "https://image.celine.com/asset/65814b8e-de1f-4720-89c7-e4efc6371251/RX0LF2L55-FYZ2_4_SUM26_M_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -12227,7 +12227,7 @@
         "polo shirt IN PIQUE COTTON JERSEY"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "XS",
@@ -13429,7 +13429,7 @@
         },
         {
           "size": "S",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "M",
@@ -14142,7 +14142,7 @@
         "https://image.celine.com/asset/4228ee87-00d7-4fd5-94b4-81c0baf5463c/2X75H0ZWR-38AW_3_SS24_M.jpg?V2",
         "https://image.celine.com/asset/040a0fdd-0f04-4266-ad4f-97ffed5c167c/2X75H0ZWR-38AW_4_SS24_M.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -14151,7 +14151,7 @@
         "classic polo shirt in cotton piqué"
       ],
       "categoryLabel": "T-SHIRTS AND TOPS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "XS",
@@ -14579,7 +14579,7 @@
       "remoteImages": [
         "https://image.celine.com/asset/d3901d67-b553-45e9-a248-f244d26374b5/RY11A1233-GMS0_1_FW26_M_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -14588,7 +14588,7 @@
         "COLLEGE HOODIE"
       ],
       "categoryLabel": "SWEATSHIRTS",
-      "availabilityConfidence": "sfcc_oos",
+      "availabilityConfidence": "sfcc",
       "sizeStock": [
         {
           "size": "XS",
@@ -14596,7 +14596,7 @@
         },
         {
           "size": "S",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "M",
@@ -15012,7 +15012,7 @@
       "sizeStock": [
         {
           "size": "XS",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "S",
@@ -15721,7 +15721,7 @@
         "https://image.celine.com/asset/5b12f2b6-5c22-4376-9470-da0b061f29ea/RV1S6225S-01OK_3_FW26_M_V1.jpg?V2",
         "https://image.celine.com/asset/a883f208-a415-48ab-b6f4-40adaa6c39cc/RV1S6225S-01OK_4_FW26_M_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -15730,7 +15730,7 @@
         "TRACKSUIT JACKET IN double-face jersey"
       ],
       "categoryLabel": "SWEATSHIRTS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "XS",
@@ -15738,11 +15738,11 @@
         },
         {
           "size": "S",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "M",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "L",
@@ -15867,7 +15867,7 @@
         "https://image.celine.com/asset/81205fe4-af3b-47f2-82a8-2cfaaf3f4cb5/RY0U1510Z-GFP9_3_SUM26_M_V1.jpg?V2",
         "https://image.celine.com/asset/9d59dbe9-5aae-474d-bd1f-c471240da16b/RY0U1510Z-GFP9_4_SUM26_M_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -15876,7 +15876,7 @@
         "hoodie IN cotton fleece"
       ],
       "categoryLabel": "SWEATSHIRTS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "XS",
@@ -16750,7 +16750,7 @@
         },
         {
           "size": "M",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "L",
@@ -16875,7 +16875,7 @@
         "https://image.celine.com/asset/e2d8c30e-20d6-495d-b049-d47a28a0d0e7/RY0U1510Z-GKJ5_3_SUM26_M_V1.jpg?V2",
         "https://image.celine.com/asset/4544396a-35cf-4845-abf3-abd068359d7f/RY0U1510Z-GKJ5_4_SUM26_M_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -16884,7 +16884,7 @@
         "hoodie IN cotton fleece"
       ],
       "categoryLabel": "SWEATSHIRTS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "XS",
@@ -17474,7 +17474,7 @@
       "sizeStock": [
         {
           "size": "XS",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "S",
@@ -17630,10 +17630,10 @@
         "/products/ce-pdp/ry0s2670q-gjl2/3.jpg"
       ],
       "remoteImages": [],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "XS",
@@ -17876,10 +17876,10 @@
         "/products/ce-pdp/2y321670q-38aw/4.jpg"
       ],
       "remoteImages": [],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "XXS",
@@ -17977,7 +17977,7 @@
         },
         {
           "size": "M",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "L",
@@ -18125,10 +18125,10 @@
         "/products/ce-pdp/2y497670q-38aw/3.jpg"
       ],
       "remoteImages": [],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "XXS",
@@ -18855,10 +18855,10 @@
         "/products/ce-pdp/ry0sv1261-01w1/6.jpg"
       ],
       "remoteImages": [],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "XS",
@@ -18937,10 +18937,10 @@
         "/products/ce-pdp/2ah80322u-38no/4.jpg"
       ],
       "remoteImages": [],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "XS",
@@ -19034,11 +19034,11 @@
         },
         {
           "size": "M",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "L",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "XL",
@@ -19115,7 +19115,7 @@
         },
         {
           "size": "M",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "L",
@@ -19193,7 +19193,7 @@
         },
         {
           "size": "S",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "M",
@@ -19723,7 +19723,7 @@
         "https://image.celine.com/asset/fbc3e380-72fe-42bc-a5a3-6094ef40e852/RY0QT0Y09-07NG_3_SPR26_M_V1.jpg?V2",
         "https://image.celine.com/asset/84729cfd-5aae-4a21-81bd-cde27432d3bb/RY0QT0Y09-07NG_4_SPR26_M_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -19732,7 +19732,7 @@
         "polo sweater IN striped wool"
       ],
       "categoryLabel": "KNITWEAR",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "XS",
@@ -19740,11 +19740,11 @@
         },
         {
           "size": "S",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "M",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "L",
@@ -19812,10 +19812,10 @@
         "https://image.celine.com/asset/6159b446-2530-4c34-8d95-66b41b031748/RY05K3G77-07MR_3_SUM26_M_V1.jpg?V2",
         "https://image.celine.com/asset/fea73517-4319-45ff-b42e-1d00250aa5fb/RY05K3G77-07MR_4_SUM26_M_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "XS",
@@ -20857,7 +20857,7 @@
         },
         {
           "size": "50",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "52",
@@ -21242,11 +21242,11 @@
         },
         {
           "size": "48",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "50",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "52",
@@ -21326,7 +21326,7 @@
         },
         {
           "size": "50",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "52",
@@ -21481,10 +21481,10 @@
         "https://image.celine.com/asset/1ee7184a-2bdd-4de8-b27c-e85838b5bb75/RV14D599E-19CO_3_SPR26_M_V1.jpg?V2",
         "https://image.celine.com/asset/915352a7-70a7-407d-938c-424a7ca71484/RV14D599E-19CO_4_SPR26_M_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "44",
@@ -22424,10 +22424,10 @@
         "https://image.celine.com/asset/a4ab021a-35ec-46cf-8f91-830309726575/RP0IL670Q-10PB_3_SUM26_M_V1.jpg?V2",
         "https://image.celine.com/asset/2a9fa085-fa90-41ff-8c69-b4b62918ef62/RP0IL670Q-10PB_4_SUM26_M_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "XS",

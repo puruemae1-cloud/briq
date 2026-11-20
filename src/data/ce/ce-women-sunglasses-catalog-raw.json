@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-11-06T21:10:43.407461+00:00",
+  "scrapedAt": "2026-11-20T21:13:35.661467+00:00",
   "brand": "Celine",
   "hub": "https://www.celine.com/en-gb/women/sunglasses/?nav=A006-VIEW-ALL",
   "family": "ce-women-sunglasses",
@@ -1372,7 +1372,7 @@
         "https://image.celine.com/asset/77a185f3-4048-4d88-b77a-d814e2f3928a/4S194CPLB-02CM_3_FW23_W.jpg?V2",
         "https://image.celine.com/asset/093a7852-e7f6-4f1d-8d1f-8e54672f67a4/4S194CPLB-02CM_4_FW23_W.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -1381,11 +1381,11 @@
         "Triomphe 01 Sunglasses in Acetate"
       ],
       "categoryLabel": "OVAL",
-      "availabilityConfidence": "sfcc_oos",
+      "availabilityConfidence": "sfcc",
       "sizeStock": [
         {
           "size": "Universal fit",
-          "inStock": false
+          "inStock": true
         }
       ]
     },
@@ -1444,7 +1444,7 @@
         "https://image.celine.com/asset/955131dd-6a7c-467f-b3dd-13ddd765292f/4S194CPLB-24HP_3_SPR26_W_V1.jpg?V2",
         "https://image.celine.com/asset/5ebe1dc8-2f69-4419-880b-40c5f46e4f8d/4S194CPLB-24HP_4_SPR26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -1453,7 +1453,7 @@
         "Triomphe 01 sunglasses in Acetate"
       ],
       "categoryLabel": "OVAL",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "Universal fit",
@@ -1516,7 +1516,7 @@
         "https://image.celine.com/asset/d6b4a54b-85c2-47f6-a5ec-eeab9b9ff589/4S194CPLB-33PH_3_SPR26_W_V1.jpg?V2",
         "https://image.celine.com/asset/669d0fd2-5057-45d7-9ee6-810093b7b8cb/4S194CPLB-33PH_4_SPR26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -1525,7 +1525,7 @@
         "Triomphe 01 sunglasses in Acetate"
       ],
       "categoryLabel": "OVAL",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "Universal fit",
@@ -3882,7 +3882,7 @@
         "https://image.celine.com/asset/361ba798-8523-4c2c-b638-ef103ae0e65d/4S308CPLB-18MI_3_WIN25_W_V1.tif?V2",
         "https://image.celine.com/asset/303b0057-7492-44c0-a5f6-41632dc92487/4S308CPLB-18MI_4_WIN25_W_V1.tif?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -3891,7 +3891,7 @@
         "TRIOMPHE 15 sunglasses in Acetate"
       ],
       "categoryLabel": "CAT EYE",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "U",
@@ -4330,7 +4330,7 @@
         "https://image.celine.com/asset/e8a060f8-9ee8-4808-896c-211ca8f232ec/4S342CPLB-19SP_3_SUM26_W_V1.jpg?V2",
         "https://image.celine.com/asset/6ae32ccb-b9a6-45a9-a9a9-f503f57e5ac9/4S342CPLB-19SP_4_SUM26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -4339,7 +4339,7 @@
         "Cat Eye S342 sunglasses in Acetate"
       ],
       "categoryLabel": "CAT EYE",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "International fit",
@@ -4347,7 +4347,7 @@
         },
         {
           "size": "Universal fit",
-          "inStock": true
+          "inStock": false
         }
       ]
     },
@@ -4487,7 +4487,7 @@
         "https://image.celine.com/asset/6f373580-dd71-460b-864e-2b85e571d01a/4S226CPLB-19RH_3_FALL22.jpg?V2",
         "https://image.celine.com/asset/a9bdebfd-56ec-4e98-b6d9-97cd8be0bf71/4S226CPLB-19RH_4_FALL22.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -4496,7 +4496,7 @@
         "Triomphe 06 Sunglasses in Acetate"
       ],
       "categoryLabel": "CAT EYE",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "Universal fit",

@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-11-06T21:09:34.164207+00:00",
+  "scrapedAt": "2026-11-20T21:12:26.090856+00:00",
   "brand": "Celine",
   "hub": "https://www.celine.com/en-gb/women/jewellery/?nav=A005-VIEW-ALL",
   "family": "ce-women-jewellery",
@@ -605,7 +605,7 @@
         "https://image.celine.com/asset/a3b60e63-5809-47f2-b518-49d4d8b78963/B109E3O94-14ML_2_FALL26_W_V1.jpg?V2",
         "https://image.celine.com/asset/63e7c257-32fd-4796-9181-fa31a6951748/B109E3O94-14ML_3_FALL26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -614,7 +614,7 @@
         "ÉTÉ CELINE LONG EARRINGS IN GLASS BEADS, STONES, COTTON AND BRASS WITH GOLD FINISH"
       ],
       "categoryLabel": "EARRINGS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "B102W6PRB.01GI",
@@ -721,7 +721,7 @@
         "https://image.celine.com/asset/aae16711-1dcd-4a77-8867-48fedf20a41c/B109Z3Q19-38DK_2_SUM26_W_V1.jpg?V2",
         "https://image.celine.com/asset/affc5652-403f-4e8f-9d5e-2b002dee38b1/B109Z3Q19-38DK_3_SUM26_W_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -730,7 +730,7 @@
         "Celine Défilé Bold Hoops in Glass Beads and Brass with Gold Finish"
       ],
       "categoryLabel": "EARRINGS",
-      "availabilityConfidence": "sfcc_oos"
+      "availabilityConfidence": "sfcc"
     },
     {
       "id": "B10236BRA.35OR",
@@ -953,7 +953,7 @@
         "https://image.celine.com/asset/313566ef-f868-42f8-8ddb-87b6f0fcca66/46W356BPA-01GI_2_SPR21_970350.jpg?V2",
         "https://image.celine.com/asset/c7186d41-dfd7-4eab-af1a-0bf3a00e307d/46W356BPA-01GI_3_SPR21_970348.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -962,7 +962,7 @@
         "Les Perles Celine Baroque Earrings in Brass with Gold Finish and Cultured Pearls"
       ],
       "categoryLabel": "EARRINGS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "B104V6PRB.01GI",
@@ -1529,7 +1529,7 @@
         "https://image.celine.com/asset/64502830-b55a-405a-b9b3-90e0f2792354/460RD6BRA-35OR_2_FW23_W.jpg?V2",
         "https://image.celine.com/asset/3d6527c0-f311-4b54-90be-e9ab7d039bd4/460RD6BRA-35OR_3_FW23_W.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -1538,7 +1538,7 @@
         "Triomphe Asymmetric Hoops in Brass with Gold Finish"
       ],
       "categoryLabel": "EARRINGS",
-      "availabilityConfidence": "sfcc_oos"
+      "availabilityConfidence": "sfcc"
     },
     {
       "id": "461EZ6BZI.36SI",
@@ -3955,7 +3955,7 @@
       "sizeStock": [
         {
           "size": "C1",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "C2",
@@ -5592,7 +5592,7 @@
         "https://image.celine.com/asset/adca8c84-3a17-4614-ae10-dc3b26ec6bff/B10E84V02-35OR_1_FALL26_W_V1.jpg?V2",
         "https://image.celine.com/asset/5c1116a7-9fcf-4c0a-be7c-2d79ef640f30/B10E84V02-35OR_2_FALL26_W_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -5601,7 +5601,7 @@
         "CHUNKY TRIOMPHE NECKLACE IN BRASS WITH GOLD FINISH"
       ],
       "categoryLabel": "NECKLACES",
-      "availabilityConfidence": "sfcc_oos"
+      "availabilityConfidence": "sfcc"
     },
     {
       "id": "461VJ6BRS.35OR",
@@ -5652,7 +5652,7 @@
         "https://image.celine.com/asset/e7e7cb16-74ac-4974-8d85-b0436a4327dd/461VJ6BRS-35OR_2_WIN25_W_V1.tif?V2",
         "https://image.celine.com/asset/c26301dd-5e7a-4618-94e8-a314cb51b216/461VJ6BRS-35OR_3_WIN25_W_V1.tif?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -5661,11 +5661,11 @@
         "Triomphe Twinkle Necklace in Strass and Brass with Gold Finish"
       ],
       "categoryLabel": "NECKLACES",
-      "availabilityConfidence": "sfcc_oos",
+      "availabilityConfidence": "sfcc",
       "sizeStock": [
         {
           "size": "ONE SIZE",
-          "inStock": false
+          "inStock": true
         }
       ]
     },
@@ -6509,7 +6509,7 @@
         },
         {
           "size": "54",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "58",
@@ -6846,10 +6846,10 @@
         "https://image.celine.com/asset/663012ce-fa9b-42e0-b98e-09701514551c/B107N3F86-GGX5_3_SUM26_W_V1.jpg?V2",
         "https://image.celine.com/asset/ea89da79-3455-434d-bbcd-5cce955198b3/B107N3F86-GGX5_4_SUM26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "50",
@@ -7505,7 +7505,7 @@
         },
         {
           "size": "54",
-          "inStock": true
+          "inStock": false
         }
       ]
     },
@@ -8009,10 +8009,10 @@
         "https://image.celine.com/asset/bcdab125-2bd6-4b25-a106-cbfe3f9b9e38/46P146GYD-37YW_2_SUM19_144892.jpg?V2",
         "https://image.celine.com/asset/82bf9d99-6f8d-40df-ab21-23e9a61bb827/46P146GYD-37YW_3_SUM19_144892.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "46N986GYD.37YW",
@@ -8061,10 +8061,10 @@
         "https://image.celine.com/asset/8f23c91e-95eb-454a-97a5-27cd2d25cb05/46N986GYD-37YW_2_SUM19_117428.jpg?V2",
         "https://image.celine.com/asset/c901a7fa-7540-47e7-87dc-efd952a3e2d0/46N986GYD-37YW_3_SUM19_117428.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "46P106GYD.37YW",
@@ -8113,10 +8113,10 @@
         "https://image.celine.com/asset/51069d0c-49cf-4cfb-bb4b-5d3b467f74f0/46P106GYD-37YW_2_SUM19_117211.jpg?V2",
         "https://image.celine.com/asset/54bfb219-0ec1-44f7-bb05-d7d18637f3f4/46P106GYD-37YW_3_SUM19_117211.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "46Q856GYD.37YW",
@@ -9747,10 +9747,10 @@
         "https://image.celine.com/asset/f5b62c55-1f9c-47a7-907e-7a53644b079c/46R806GYD-37YW_3_SPR20_429839.jpg?V2",
         "https://image.celine.com/asset/5fc923b3-b4b5-43e1-acbb-ed476fa44aea/46R806GYD-37YW_7_SPR20_429901.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "47",
@@ -11023,10 +11023,10 @@
         "https://image.celine.com/asset/63dd7a93-a4ff-41f1-877c-b9c0e81217bf/460EE6GYD-37YW_2_SPR23.jpg?V2",
         "https://image.celine.com/asset/61f94b9f-8bd7-469c-a03b-4f349226dc59/460EE6GYD-37YW_3_SPR23.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc_oos"
+      "availabilityConfidence": "sfcc"
     },
     {
       "id": "460EJ6GYD.37YW",
@@ -11599,7 +11599,7 @@
         "https://image.celine.com/asset/ace7e518-e7c9-405c-8465-b38caa41343d/46P216GYD-37YW_2_SUM19_116148.jpg?V2",
         "https://image.celine.com/asset/7d1598a1-42dd-41de-b66e-f40297743ac0/46P216GYD-37YW_3_SUM19_119212.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -11608,7 +11608,7 @@
         "Celine Sentimental Brillant Bracelet in Yellow Gold and Diamond"
       ],
       "categoryLabel": "FINE JEWELLERY",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "C1",

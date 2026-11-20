@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-11-06T21:06:42.154406+00:00",
+  "scrapedAt": "2026-11-20T21:09:31.770000+00:00",
   "brand": "Celine",
   "hub": "https://www.celine.com/en-gb/women/shoes/?nav=A002-VIEW-ALL",
   "family": "ce-women-shoes",
@@ -386,7 +386,7 @@
         },
         {
           "size": "41",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "42",
@@ -652,7 +652,7 @@
         },
         {
           "size": "36",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "36,5",
@@ -684,7 +684,7 @@
         },
         {
           "size": "40",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "40,5",
@@ -692,7 +692,7 @@
         },
         {
           "size": "41",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "41,5",
@@ -1266,7 +1266,7 @@
       "sizeStock": [
         {
           "size": "35",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "35,5",
@@ -1593,7 +1593,7 @@
         },
         {
           "size": "36,5",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "37",
@@ -1633,7 +1633,7 @@
         },
         {
           "size": "41,5",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "42",
@@ -1912,11 +1912,11 @@
         },
         {
           "size": "36,5",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "37",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "37,5",
@@ -1924,15 +1924,15 @@
         },
         {
           "size": "38",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "38,5",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "39",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "39,5",
@@ -1948,7 +1948,7 @@
         },
         {
           "size": "41",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "41,5",
@@ -1956,7 +1956,7 @@
         },
         {
           "size": "42",
-          "inStock": false
+          "inStock": true
         }
       ]
     },
@@ -2200,7 +2200,7 @@
         "https://image.celine.com/asset/ea93f5c3-4a25-4cb1-a62c-6e18ec0565ea/365675278C-28BD_3_SPR26_W_V1.jpg?V2",
         "https://image.celine.com/asset/70f2aa9d-425b-4094-b7e1-f9affd2a866e/365675278C-28BD_4_SPR26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -2209,7 +2209,7 @@
         "AURA LOAFER IN GOATSKIN"
       ],
       "categoryLabel": "LOAFERS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "34",
@@ -2225,7 +2225,7 @@
         },
         {
           "size": "36",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "36,5",
@@ -2233,7 +2233,7 @@
         },
         {
           "size": "37",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "37,5",
@@ -2546,7 +2546,7 @@
         },
         {
           "size": "36",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "36,5",
@@ -3200,7 +3200,7 @@
         },
         {
           "size": "38",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "38,5",
@@ -4767,7 +4767,7 @@
         },
         {
           "size": "39",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "39,5",
@@ -5062,7 +5062,7 @@
         },
         {
           "size": "38,5",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "39",
@@ -5353,7 +5353,7 @@
         },
         {
           "size": "37,5",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "38",
@@ -5361,11 +5361,11 @@
         },
         {
           "size": "38,5",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "39",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "39,5",
@@ -5373,7 +5373,7 @@
         },
         {
           "size": "40",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "41",
@@ -5947,7 +5947,7 @@
         },
         {
           "size": "37",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "37,5",
@@ -5971,7 +5971,7 @@
         },
         {
           "size": "40",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "41",
@@ -6221,7 +6221,7 @@
         "https://image.celine.com/asset/b69f1621-f412-4a45-9031-840ccb5e370a/365167029C-11PY_4_SUM26_W_V1.jpg?V2",
         "https://image.celine.com/asset/86963c69-40cb-49ab-8ad1-28f762c32fc3/365167029C-11PY_5_SUM26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -6230,7 +6230,7 @@
         "ADAM LOAFER IN SUEDE CALFSKIN"
       ],
       "categoryLabel": "LOAFERS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "35",
@@ -6578,7 +6578,7 @@
         },
         {
           "size": "39,5",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "40",
@@ -6856,7 +6856,7 @@
       "sizeStock": [
         {
           "size": "34",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "34,5",
@@ -6900,11 +6900,11 @@
         },
         {
           "size": "39,5",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "40",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "40,5",
@@ -6912,7 +6912,7 @@
         },
         {
           "size": "41",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "41,5",
@@ -7198,7 +7198,7 @@
         },
         {
           "size": "36,5",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "37",
@@ -7210,7 +7210,7 @@
         },
         {
           "size": "38",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "38,5",
@@ -7860,7 +7860,7 @@
         },
         {
           "size": "40",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "40,5",
@@ -8778,7 +8778,7 @@
         },
         {
           "size": "37,5",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "38",
@@ -8786,7 +8786,7 @@
         },
         {
           "size": "38,5",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "39",
@@ -11029,7 +11029,7 @@
         },
         {
           "size": "41,5",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "42",
@@ -11985,7 +11985,7 @@
         },
         {
           "size": "42",
-          "inStock": false
+          "inStock": true
         }
       ]
     },
@@ -12611,7 +12611,7 @@
         },
         {
           "size": "40,5",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "41",
@@ -12869,7 +12869,7 @@
         "https://image.celine.com/asset/1bdefec8-a1a8-451d-a5c1-9e306c80b511/368285500C-03AA_4_FALL26_W_V1.jpg?V2",
         "https://image.celine.com/asset/6691fb23-f905-4337-ba45-7a2b3ee85926/368285500C-03AA_5_FALL26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -12878,7 +12878,7 @@
         "RUNNER SNEAKER IN CALFSKIN, SUEDE CALFSKIN AND MESH"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "34",
@@ -13175,7 +13175,7 @@
       "remoteImages": [
         "https://image.celine.com/asset/711bee46-24a8-4711-b036-7b584122637e/368285497C-11FF_1_FALL26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -13184,7 +13184,7 @@
         "RUNNER SNEAKER IN CALFSKIN AND MESH"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "35",
@@ -14762,7 +14762,7 @@
         },
         {
           "size": "41",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "41,5",
@@ -15693,7 +15693,7 @@
         },
         {
           "size": "35,5",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "36",
@@ -15745,7 +15745,7 @@
         },
         {
           "size": "42",
-          "inStock": false
+          "inStock": true
         }
       ]
     },
@@ -16609,7 +16609,7 @@
         "https://image.celine.com/asset/3ea00603-b4b7-4d2c-8498-4cdbb256225a/364365257C-01PW_5_SUM26_W_V1.jpg?V2",
         "https://image.celine.com/asset/b78fe3f0-0005-4771-9704-3640aa703a1e/364365257C-01PW_6_SUM26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -16618,7 +16618,7 @@
         "RACER SNEAKER IN NYLON, SUEDE CALFSKIN AND CALFSKIN"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "34",
@@ -18227,7 +18227,7 @@
         "https://image.celine.com/asset/3d06ea3e-f806-4f0b-a3a7-63feefd2eaec/368275484C-01BC_2_FALL26_W_V1.jpg?V2",
         "https://image.celine.com/asset/9664289c-5865-408c-bfec-e2a18f1c50d9/368275484C-01BC_3_FALL26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -18236,7 +18236,7 @@
         "ALAN SNEAKER IN CANVAS AND SUEDE CALFSKIN"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "34",
@@ -18547,7 +18547,7 @@
         "https://image.celine.com/asset/6d4370ef-2c74-4977-9ca6-3a01b19a7ce8/368275484C-02BG_4_FALL26_W_V1.jpg?V2",
         "https://image.celine.com/asset/46bcadae-e8b0-46e3-aad4-a9d05049d841/368275484C-02BG_5_FALL26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -18556,7 +18556,7 @@
         "ALAN SNEAKER IN CANVAS AND SUEDE CALFSKIN"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "34",
@@ -18867,7 +18867,7 @@
         "https://image.celine.com/asset/a47d833c-d2d2-46e6-a123-cab2912813d3/368275484C-07BJ_4_FALL26_W_V1.jpg?V2",
         "https://image.celine.com/asset/bc9dc613-53b1-44f3-9cd2-3a8ac06fb372/368275484C-07BJ_5_FALL26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -18876,7 +18876,7 @@
         "ALAN SNEAKER IN CANVAS AND SUEDE CALFSKIN"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "34",
@@ -20902,7 +20902,7 @@
         "https://image.celine.com/asset/4ca79b03-9ab5-40a0-bdd7-8496bfe11887/367595272C-38NO_3_SUM26_W_V2.jpg?V2",
         "https://image.celine.com/asset/ac47be21-9af5-4122-882e-c14e8c3fc66e/367595272C-38NO_4_SUM26_W_V2.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -20911,7 +20911,7 @@
         "BALLET BALLERINA IN LAMBSKIN"
       ],
       "categoryLabel": "FLATS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "35",
@@ -21204,7 +21204,7 @@
         "https://image.celine.com/asset/dfa5adaf-86f1-45bf-91c3-7679c09b1ee5/367595272C-27AG_3_SUM26_W_V2.jpg?V2",
         "https://image.celine.com/asset/ef0d019d-7657-4a2d-869b-00432bdadded/367595272C-27AG_4_SUM26_W_V2.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -21213,7 +21213,7 @@
         "BALLET BALLERINA IN LAMBSKIN"
       ],
       "categoryLabel": "FLATS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "35",
@@ -21506,7 +21506,7 @@
         "https://image.celine.com/asset/0486b45a-caa0-4438-baae-beb8d1b37b12/367595272C-OOIA_3_SUM26_W_V2.jpg?V2",
         "https://image.celine.com/asset/3c7e64a2-1056-47e1-bc0f-4562c8d04245/367595272C-OOIA_4_SUM26_W_V2.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -21515,7 +21515,7 @@
         "BALLET BALLERINA IN LAMBSKIN"
       ],
       "categoryLabel": "FLATS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "35",
@@ -21616,7 +21616,8 @@
         "39",
         "39,5",
         "40",
-        "41"
+        "41",
+        "42"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D04&sgContent=&sgImage=",
       "sizeGuide": {
@@ -21843,7 +21844,7 @@
         },
         {
           "size": "37,5",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "38",
@@ -21855,11 +21856,11 @@
         },
         {
           "size": "39",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "39,5",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "40",
@@ -21867,7 +21868,11 @@
         },
         {
           "size": "41",
-          "inStock": false
+          "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": true
         }
       ]
     },
@@ -22129,7 +22134,7 @@
         },
         {
           "size": "35",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "35,5",
@@ -22149,7 +22154,7 @@
         },
         {
           "size": "37,5",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "38",
@@ -22469,7 +22474,7 @@
         },
         {
           "size": "38,5",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "39",
@@ -22753,7 +22758,7 @@
         },
         {
           "size": "35",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "35,5",
@@ -22781,7 +22786,7 @@
         },
         {
           "size": "38,5",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "39",
@@ -22789,7 +22794,7 @@
         },
         {
           "size": "39,5",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "40",
@@ -22805,7 +22810,7 @@
         },
         {
           "size": "42",
-          "inStock": false
+          "inStock": true
         }
       ]
     },
@@ -23085,7 +23090,7 @@
         },
         {
           "size": "37,5",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "38",
@@ -23113,7 +23118,7 @@
         },
         {
           "size": "41",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "42",
@@ -23425,7 +23430,7 @@
         },
         {
           "size": "41",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "42",
@@ -23478,7 +23483,8 @@
         "39",
         "39,5",
         "40",
-        "41"
+        "41",
+        "42"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D04&sgContent=&sgImage=",
       "sizeGuide": {
@@ -23687,7 +23693,7 @@
       "sizeStock": [
         {
           "size": "35",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "36",
@@ -23728,6 +23734,10 @@
         {
           "size": "41",
           "inStock": true
+        },
+        {
+          "size": "42",
+          "inStock": false
         }
       ]
     },
@@ -23963,7 +23973,7 @@
         "https://image.celine.com/asset/37cf829c-2f11-4b44-b3f4-371733f22d72/368005278C-27AG_3_FALL26_W_V1.jpg?V2",
         "https://image.celine.com/asset/369f6c3f-9c74-43c7-9c17-e72737c7c7da/368005278C-27AG_4_FALL26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -23972,7 +23982,7 @@
         "JAZZ SHOE IN GOATSKIN"
       ],
       "categoryLabel": "FLATS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "36",
@@ -24053,7 +24063,8 @@
         "39",
         "39,5",
         "40",
-        "41"
+        "41",
+        "42"
       ],
       "sizeGuideUrl": "/on/demandware.store/Sites-CELINE_GB-Site/en_GB/Product-SizeGuide?sizeGrid=D04&sgContent=&sgImage=",
       "sizeGuide": {
@@ -24298,6 +24309,10 @@
         },
         {
           "size": "41",
+          "inStock": false
+        },
+        {
+          "size": "42",
           "inStock": false
         }
       ]
@@ -24851,7 +24866,7 @@
         },
         {
           "size": "39",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "39,5",
@@ -25447,7 +25462,7 @@
         },
         {
           "size": "38",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "38,5",
@@ -25455,7 +25470,7 @@
         },
         {
           "size": "39",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "39,5",
@@ -26344,7 +26359,7 @@
         "https://image.celine.com/asset/8002f31c-3b4f-4e7a-83c2-13e9e5234b12/366315267C-02BH_3_SUM26_W_V1.jpg?V2",
         "https://image.celine.com/asset/1f6de995-b6de-4705-a210-12151028bc7e/366315267C-02BH_4_SUM26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -26353,7 +26368,7 @@
         "CITY BALLERINA IN GLOSSY CALFSKIN"
       ],
       "categoryLabel": "FLATS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "34",
@@ -27491,7 +27506,7 @@
         },
         {
           "size": "35,5",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "36",
@@ -27499,7 +27514,7 @@
         },
         {
           "size": "36,5",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "37",
@@ -28090,7 +28105,7 @@
         },
         {
           "size": "35",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "35,5",
@@ -28138,7 +28153,7 @@
         },
         {
           "size": "41",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "42",
@@ -28687,10 +28702,10 @@
         "/products/ce-pdp/365625265c-27br/5.jpg"
       ],
       "remoteImages": [],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "34",
@@ -30139,7 +30154,7 @@
         },
         {
           "size": "39",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "40",
@@ -30963,10 +30978,10 @@
         "/products/ce-pdp/365445262c-ggf2/4.jpg"
       ],
       "remoteImages": [],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "35",
@@ -31260,7 +31275,7 @@
         "https://image.celine.com/asset/2b44786b-5d36-4b5c-874e-589e4ea43957/365445262C-38NO_6_SPR26_W_V1.jpg?V2",
         "https://image.celine.com/asset/ffbd1dd1-787a-48a5-9826-78bd2e161592/365445262C-38NO_7_SPR26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -31269,7 +31284,7 @@
         "SOFT OXFORD LACE-UP HEELED BALLERINA IN calfskin - vegetal tanning"
       ],
       "categoryLabel": "BOOTS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "35",
@@ -31547,10 +31562,10 @@
         "/products/ce-pdp/367744505c-38no/4.jpg"
       ],
       "remoteImages": [],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "35",
@@ -32748,7 +32763,7 @@
         },
         {
           "size": "39,5",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "40",
@@ -33297,10 +33312,10 @@
         "https://image.celine.com/asset/887391d4-7a8c-4fe2-a2d4-1ab4972f887f/366965340C-07SB_3_FALL26_W_V1.jpg?V2",
         "https://image.celine.com/asset/4f5a5abf-867b-42ca-b8db-fb1b9f241bb1/366965340C-07SB_4_FALL26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "35",
@@ -33914,7 +33929,7 @@
         },
         {
           "size": "38",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "38,5",
@@ -34516,7 +34531,7 @@
         },
         {
           "size": "37,5",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "38",
@@ -34528,7 +34543,7 @@
         },
         {
           "size": "39",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "39,5",
@@ -35146,7 +35161,7 @@
         },
         {
           "size": "41",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "42",
@@ -36046,7 +36061,7 @@
         },
         {
           "size": "38",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "38,5",
@@ -36054,7 +36069,7 @@
         },
         {
           "size": "39",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "39,5",
@@ -36070,7 +36085,7 @@
         },
         {
           "size": "41",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "42",
@@ -36646,7 +36661,7 @@
         },
         {
           "size": "39",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "40",
@@ -38000,10 +38015,10 @@
         "https://image.celine.com/asset/122755e4-e5f1-4d0f-94c8-f98a083f317c/367365188C-02BG_3_SUM26_W_V2.jpg?V2",
         "https://image.celine.com/asset/74622aba-eed2-416e-9269-626fa16b9587/367365188C-02BG_4_SUM26_W_V2.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "35",
@@ -38565,7 +38580,7 @@
         },
         {
           "size": "35",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "36",
@@ -38577,11 +38592,11 @@
         },
         {
           "size": "38",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "39",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "40",
@@ -38833,10 +38848,10 @@
         "https://image.celine.com/asset/baae83dd-65e7-4923-9cf2-7bf1809d07b2/367495276C-38NO_3_SUM26_W_V1.jpg?V2",
         "https://image.celine.com/asset/28562ade-b9ce-46cc-8a75-1a58706a116d/367495276C-38NO_4_SUM26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "35",
@@ -39128,10 +39143,10 @@
         "https://image.celine.com/asset/57e08254-7897-41cf-bae7-8eae97c22ff9/367495276C-18NC_5_SUM26_W_V1.jpg?V2",
         "https://image.celine.com/asset/8e29968e-6897-4375-840e-23f04d54f174/367495276C-18NC_6_SUM26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "35",
@@ -39419,10 +39434,10 @@
         "https://image.celine.com/asset/f0b6fe61-323a-423d-8341-13d54cab571e/367495276C-28PO_3_SUM26_W_V1.jpg?V2",
         "https://image.celine.com/asset/f8846a4a-35b1-45a6-93da-e3d31a38b6da/367495276C-28PO_4_SUM26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "35",
@@ -39710,10 +39725,10 @@
         "https://image.celine.com/asset/2086305d-02a8-4550-b2e5-cba232c18d20/367495340C-01CK_3_FALL26_W_V1.jpg?V2",
         "https://image.celine.com/asset/0a4dd042-2017-4e28-bdff-39c66de5c591/367495340C-01CK_4_FALL26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "35",
@@ -40935,10 +40950,10 @@
         "https://image.celine.com/asset/b20b8eca-0520-4e10-abe2-7dee4fc1252e/367905340C-38NO_3_FALL26_W_V1.jpg?V2",
         "https://image.celine.com/asset/f5e4428c-7554-4034-a203-4b818a8296c7/367905340C-38NO_4_FALL26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "35",
@@ -41211,10 +41226,10 @@
         "https://image.celine.com/asset/d34e2cd0-e47c-4c2e-85aa-2d82a564361f/367905340C-01BC_3_FALL26_W_V1.jpg?V2",
         "https://image.celine.com/asset/e6704967-2ef9-4724-9aa8-61cee9b3216d/367905340C-01BC_4_FALL26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "35",
@@ -41817,7 +41832,7 @@
         },
         {
           "size": "36",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "36,5",
@@ -42715,7 +42730,7 @@
         },
         {
           "size": "37",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "38",
@@ -43263,7 +43278,7 @@
         },
         {
           "size": "36",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "37",
@@ -43275,11 +43290,11 @@
         },
         {
           "size": "39",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "40",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "41",
@@ -43539,11 +43554,11 @@
         },
         {
           "size": "35",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "36",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "37",
@@ -43551,11 +43566,11 @@
         },
         {
           "size": "38",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "39",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "40",
@@ -43567,7 +43582,7 @@
         },
         {
           "size": "42",
-          "inStock": false
+          "inStock": true
         }
       ]
     },
@@ -43801,10 +43816,10 @@
         "https://image.celine.com/asset/b5c1a701-1e65-43b6-b30d-ecca6fc3b416/366935325C-38NO_2_FALL26_W_V1.jpg?V2",
         "https://image.celine.com/asset/a7c9f8b4-7c2c-44fb-b968-be5f1526f589/366935325C-38NO_4_FALL26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "35",
@@ -44343,10 +44358,10 @@
         "https://image.celine.com/asset/6835bbb5-c22e-41de-bfad-989197b79b5c/368305345C-GLI9_3_FALL26_W_V1.jpg?V2",
         "https://image.celine.com/asset/24dbfe00-a679-417e-83f5-777452cce29b/368305345C-GLI9_4_FALL26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "35",
@@ -44624,10 +44639,10 @@
         "https://image.celine.com/asset/af6ca88a-f69d-49b2-ad98-e1c35c9828af/366465483C-38NO_6_SUM26_W_V1_OM.jpg?V2",
         "https://image.celine.com/asset/2d318e80-4c05-49ac-b1df-464e88d50041/366465483C-38NO_7_SUM26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "35",
@@ -44724,7 +44739,6 @@
         "39",
         "39,5",
         "40",
-        "40,5",
         "41",
         "42"
       ],
@@ -44959,10 +44973,6 @@
         },
         {
           "size": "40",
-          "inStock": false
-        },
-        {
-          "size": "40,5",
           "inStock": false
         },
         {
@@ -45212,10 +45222,10 @@
         "https://image.celine.com/asset/b145ab7d-829b-4f0b-9fa3-5d37deefa929/367285266C-27AG_3_SUM26_W_V1.jpg?V2",
         "https://image.celine.com/asset/abeb142a-efc1-472e-bc44-03fefddfbebe/367285266C-27AG_4_SUM26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "35",
@@ -45508,10 +45518,10 @@
         "https://image.celine.com/asset/e21415ce-5451-4899-8b7b-85beeded2cc2/367285266C-OOIA_3_SUM26_W_V1.jpg?V2",
         "https://image.celine.com/asset/d1d60c30-3ab9-48cc-8f13-c60ddc5552cf/367285266C-OOIA_4_SUM26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "35",
@@ -45810,10 +45820,10 @@
         "https://image.celine.com/asset/9db70a5c-095c-4395-b7e9-e1cb0b175316/367615348C-19DK_4_SUM26_W_V1.jpg?V2",
         "https://image.celine.com/asset/aa8fa78d-e61f-4819-87d4-018af60b4bb3/367615348C-19DK_5_SUM26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "34",
@@ -47924,10 +47934,10 @@
         "https://image.celine.com/asset/f381e150-d47c-4418-8842-3d52d9438567/366635268C-GJJ8_4_SUM26_W_V1.jpg?V2",
         "https://image.celine.com/asset/662bf86a-5566-4027-9c05-89626040ae89/366635268C-GJJ8_5_SUM26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "35",
@@ -49149,10 +49159,10 @@
         "https://image.celine.com/asset/748ff3af-3d80-4f95-bcfa-6fa35661597b/364783767C-38NO_3_SUM26_W_V1.jpg?V2",
         "https://image.celine.com/asset/58672b14-01ac-4c5c-b3b9-8d47382546c4/364783767C-38NO_4_SUM26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "34",
@@ -51286,10 +51296,10 @@
         "https://image.celine.com/asset/97adefd9-dba0-48ce-b019-65141982762a/368925340C-38NO_3_FALL26_W_V1.jpg?V2",
         "https://image.celine.com/asset/aec4f66d-4ef9-4602-983a-bf1d9720c92d/368925340C-38NO_4_FALL26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "34",
@@ -51602,7 +51612,7 @@
         "https://image.celine.com/asset/62ca9459-e6e1-4eb3-bf86-9cb43e2213d0/368923915C-36AG_3_FALL26_W_V1.jpg?V2",
         "https://image.celine.com/asset/473c7c79-ddf4-46b9-b41f-a1f344d1131b/368923915C-36AG_4_FALL26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -51611,7 +51621,7 @@
         "UPTOWN HEELED MULE IN GOATSKIN IN LAMINATED LAMBSKIN"
       ],
       "categoryLabel": "SANDALS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "34",
@@ -51924,10 +51934,10 @@
         "https://image.celine.com/asset/079e293c-2328-4efa-8f69-524ed6e02e72/368925340C-01BC_3_FALL26_W_V1.jpg?V2",
         "https://image.celine.com/asset/df8b62c6-eee6-4490-bdc2-fa3c15ecfd37/368925340C-01BC_4_FALL26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "34",
@@ -52845,7 +52855,7 @@
         "https://image.celine.com/asset/e9d4ef66-da45-4a87-8281-742bb717ca44/366335340C-GKA6_3_SUM26_W_V1.jpg?V2",
         "https://image.celine.com/asset/22e34766-95b0-438a-acb9-19ffd078cb2d/366335340C-GKA6_4_SUM26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -52854,7 +52864,7 @@
         "CAGE HEELED SANDAL IN GOATSKIN"
       ],
       "categoryLabel": "SANDALS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "35",
@@ -53216,7 +53226,7 @@
         },
         {
           "size": "40",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "40,5",
@@ -53273,7 +53283,6 @@
       "sizes": [
         "35",
         "36",
-        "36,5",
         "37",
         "37,5",
         "38",
@@ -53486,10 +53495,6 @@
           "inStock": true
         },
         {
-          "size": "36,5",
-          "inStock": false
-        },
-        {
           "size": "37",
           "inStock": true
         },
@@ -53523,7 +53528,7 @@
         },
         {
           "size": "42",
-          "inStock": true
+          "inStock": false
         }
       ]
     },
@@ -54348,10 +54353,10 @@
         "https://image.celine.com/asset/9a156bc6-83fc-4dc2-a559-eef97490837c/366972080C-38NO_3_SUM26_W_V2.jpg?V2",
         "https://image.celine.com/asset/19436849-37c9-4da0-aec2-ebb1abb8cf7c/366972080C-38NO_4_SUM26_W_V2.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "36",
@@ -54626,10 +54631,10 @@
         "https://image.celine.com/asset/c22768ee-94d0-479d-9bf3-2e9318936dcb/366573915C-35OR_3_SPR26_W_V1.jpg?V2",
         "https://image.celine.com/asset/7ca04db2-216a-4352-9b4b-2387cfb5443b/366573915C-35OR_4_SPR26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "35",
@@ -55862,7 +55867,7 @@
         },
         {
           "size": "38,5",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "39",
@@ -56164,7 +56169,7 @@
         },
         {
           "size": "38,5",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "39",
@@ -56488,7 +56493,7 @@
         },
         {
           "size": "40",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "40,5",
@@ -56734,10 +56739,10 @@
         "https://image.celine.com/asset/0a407610-fe78-4adc-852e-263f0f18d5e3/368135328C-01BC_2_FALL26_W_V1.jpg?V2",
         "https://image.celine.com/asset/efd03157-b9da-4ebf-8619-4d9959554b5e/368135328C-01BC_3_FALL26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "35",
@@ -57008,10 +57013,10 @@
         "https://image.celine.com/asset/44007cc7-8c9b-4d3e-892c-587e0b074859/367165476C-38NO_4_FALL26_W_V2.jpg?V2",
         "https://image.celine.com/asset/312adef4-bcfe-4cc5-a3d6-af6225f93abc/367165476C-38NO_5_FALL26_W_V2.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "34",
@@ -57286,10 +57291,10 @@
         "https://image.celine.com/asset/353bd630-5823-4166-bf12-0cd1aae311c0/367165476C-01EC_4_FALL26_W_V1.jpg?V2",
         "https://image.celine.com/asset/32bbe853-6f1a-4678-b980-cb5ac83c1ac3/367165476C-01EC_5_FALL26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "34",
@@ -57597,11 +57602,11 @@
         },
         {
           "size": "36,5",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "37",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "37,5",
@@ -57609,7 +57614,7 @@
         },
         {
           "size": "38",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "38,5",
@@ -58522,7 +58527,7 @@
         },
         {
           "size": "36",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "36,5",
@@ -58530,11 +58535,11 @@
         },
         {
           "size": "37",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "37,5",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "38",
@@ -58546,7 +58551,7 @@
         },
         {
           "size": "39",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "39,5",
@@ -59174,11 +59179,11 @@
         },
         {
           "size": "38,5",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "39",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "39,5",
@@ -59190,7 +59195,7 @@
         },
         {
           "size": "40,5",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "41",

@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-11-06T20:56:18.101042+00:00",
+  "scrapedAt": "2026-11-20T20:59:35.230124+00:00",
   "brand": "Celine",
   "hub": "https://www.celine.com/en-gb/men/shoes/?nav=E002-VIEW-ALL",
   "family": "ce-men-shoes",
@@ -1412,7 +1412,7 @@
         "https://image.celine.com/asset/d1887625-aa8d-4930-9c72-bceec993ea3f/365555284C-33VI_3_SPR26_M_V1.jpg?V2",
         "https://image.celine.com/asset/c1f10d16-1fdc-4891-bfdd-b8340c2cb9d1/365555284C-33VI_4_SPR26_M_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -1421,7 +1421,7 @@
         "AURA LOAFER WITH TRIOMPHE IN Velvet"
       ],
       "categoryLabel": "LOAFERS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "40",
@@ -2663,11 +2663,11 @@
         },
         {
           "size": "42",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "43",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "44",
@@ -3106,7 +3106,7 @@
         "https://image.celine.com/asset/ce8d3972-e839-4992-ba89-2a4b929e5810/364707029C-29CN_4_SUM26_M_V1.jpg?V2",
         "https://image.celine.com/asset/f86b3055-849e-43b7-bfc9-2ce6e29839c4/364707029C-29CN_5_SUM26_M_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -3115,7 +3115,7 @@
         "ADAM LOAFER IN SUEDE CALFSKIN"
       ],
       "categoryLabel": "LOAFERS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "39",
@@ -3357,7 +3357,7 @@
         },
         {
           "size": "40",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "41",
@@ -3574,7 +3574,7 @@
         "https://image.celine.com/asset/02c741b7-d8c4-4216-8331-1f540b2a2ed3/364707029C-11PY_4_SUM26_M_V1.jpg?V2",
         "https://image.celine.com/asset/211122c8-540e-412e-be32-4aef0140fc3a/364707029C-11PY_5_SUM26_M_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -3583,7 +3583,7 @@
         "ADAM LOAFER IN SUEDE CALFSKIN"
       ],
       "categoryLabel": "LOAFERS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "39",
@@ -3832,7 +3832,7 @@
         },
         {
           "size": "42",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "43",
@@ -3840,7 +3840,7 @@
         },
         {
           "size": "44",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "45",
@@ -5223,7 +5223,7 @@
       "sizeStock": [
         {
           "size": "39",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "40",
@@ -5247,7 +5247,7 @@
         },
         {
           "size": "45",
-          "inStock": true
+          "inStock": false
         }
       ]
     },
@@ -5440,7 +5440,7 @@
         "https://image.celine.com/asset/43fbbfce-65b2-4e01-a703-7edf69437b8b/365777029C-02SV_4_FW26_M_V1.jpg?V2",
         "https://image.celine.com/asset/fa28c129-3fd1-4f70-bf76-0b60099aa08f/365777029C-02SV_5_FW26_M_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -5449,7 +5449,7 @@
         "JAZZ SHOE IN SUEDE"
       ],
       "categoryLabel": "LACE-UPS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "39",
@@ -5461,7 +5461,7 @@
         },
         {
           "size": "41",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "42",
@@ -5702,7 +5702,7 @@
         },
         {
           "size": "42",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "43",
@@ -8144,7 +8144,7 @@
         "https://image.celine.com/asset/0b9ce0ff-2e12-473c-9e05-815da3022036/368255497C-11FF_3_FW26_M_V1.jpg?V2",
         "https://image.celine.com/asset/1638e5ce-7209-4808-ae7a-e4ba2311c34c/368255497C-11FF_4_FW26_M_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -8153,7 +8153,7 @@
         "RUNNER SNEAKER IN CALFSKIN AND MESH"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "40",
@@ -8407,7 +8407,7 @@
         },
         {
           "size": "45",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "46",
@@ -8857,7 +8857,7 @@
         },
         {
           "size": "40",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "41",
@@ -8865,7 +8865,7 @@
         },
         {
           "size": "42",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "43",
@@ -9777,7 +9777,7 @@
         "https://image.celine.com/asset/bacdda7e-3c81-4f98-9d99-385c927dac16/364577037C-01ED_5_SUM26_M_V1.jpg?V2",
         "https://image.celine.com/asset/f92dac5a-8453-4687-b7a8-f85b1536dc73/364577037C-01ED_6_SUM26_M_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -9786,7 +9786,7 @@
         "THE FLAT SNEAKER IN GROS GRAIN, VELVET, SUEDE GOATSKIN AND LAMBSKIN"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "39",
@@ -10006,7 +10006,7 @@
         "https://image.celine.com/asset/c66a2574-97ba-4697-b6fc-28020f6e554c/364577032C-GKP3_4_SUM26_M_V1.jpg?V2",
         "https://image.celine.com/asset/3dbd74a1-236e-4048-9406-6dbc24efa236/364577032C-GKP3_5_SUM26_M_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -10015,7 +10015,7 @@
         "THE FLAT SNEAKER IN GROS GRAIN, VELVET, SUEDE GOATSKIN AND LAMBSKIN"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "39",
@@ -10235,7 +10235,7 @@
         "https://image.celine.com/asset/48e3a8a0-86f5-4e8b-8a55-fdb4d92ad4c7/364577032C-33VI_4_SPR26_M_V1.jpg?V2",
         "https://image.celine.com/asset/ca4e3018-314c-4aae-b720-955c37cb66eb/364577032C-33VI_5_SPR26_M_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -10244,7 +10244,7 @@
         "THE FLAT SNEAKER IN GROS GRAIN, VELVET, SUEDE CALFSKIN AND LAMBSKIN"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "39",
@@ -10466,7 +10466,7 @@
         "https://image.celine.com/asset/bf5fc333-1daf-40a8-8f8e-f601d8cff8b0/364577032C-38AO_5_SPR26_M_V1.jpg?V2",
         "https://image.celine.com/asset/280628f1-c26c-47a3-8691-5b43afb5a80b/364577032C-38AO_6_SPR26_M_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -10475,7 +10475,7 @@
         "THE FLAT SNEAKER IN GROS GRAIN, VELVET, SUEDE GOATSKIN AND LAMBSKIN"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "39",
@@ -11407,7 +11407,7 @@
         "https://image.celine.com/asset/6ceac948-5037-4033-9811-1c3547623346/364945257C-09GB_4_SUM26_M_V1.jpg?V2",
         "https://image.celine.com/asset/619c939c-8c8a-4278-8ff4-9b7acb1c0d68/364945257C-09GB_5_SUM26_M_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -11416,7 +11416,7 @@
         "RACER SNEAKER IN NYLON, SUEDE CALFSKIN AND CALFSKIN"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "39",
@@ -11912,7 +11912,7 @@
         },
         {
           "size": "43",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "44",
@@ -12823,7 +12823,7 @@
         "https://image.celine.com/asset/19253a9f-89b4-409d-96f3-bdce83cd7c3f/364945257C-GGF1_4_SPR26_M_V1.jpg?V2",
         "https://image.celine.com/asset/2b70d89d-3832-4646-80a3-b3ecaf9d6d01/364945257C-GGF1_5_SPR26_M_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -12832,7 +12832,7 @@
         "RACER SNEAKER IN NYLON, SUEDE CALFSKIN AND CALFSKIN"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "39",
@@ -13075,7 +13075,7 @@
         },
         {
           "size": "40",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "41",
@@ -13297,7 +13297,7 @@
         "https://image.celine.com/asset/512f1be9-94d8-4cee-85e2-1afa3e3587f1/361555469C-01EB_4_SUM26_M_V1.jpg?V2",
         "https://image.celine.com/asset/b277f6b4-5ad2-4894-aa0d-d5de924d5afe/361555469C-01EB_5_SUM26_M_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -13306,7 +13306,7 @@
         "CT-09 TRAINER SNEAKER IN CALFSKIN, SUEDE CALFSKIN AND MESH"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "39",
@@ -13775,7 +13775,7 @@
         "https://image.celine.com/asset/37568aac-74c9-47b9-ab93-0d0677106266/361554995C-GLA0_4_SUM26_M_V1.jpg?V2",
         "https://image.celine.com/asset/ba5aa3ed-9a5d-45bc-ba1b-54399b88ecd1/361554995C-GLA0_5_SUM26_M_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -13784,7 +13784,7 @@
         "CT-09 TRAINER SNEAKER IN CALFSKIN AND MESH"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "39",
@@ -14043,7 +14043,7 @@
         },
         {
           "size": "43",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "44",
@@ -14727,7 +14727,7 @@
         "https://image.celine.com/asset/5ea2c840-1edb-4ffe-bdbd-ca30b43e692c/353143840C-01OK_5_SUM23.jpg?V2",
         "https://image.celine.com/asset/c866443f-143e-4eec-9ddf-6b84d24dda73/353143840C-01OK_6_SUM23_M.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -14736,7 +14736,7 @@
         "CELINE TRAINER CT-07 LOW LACE-UP SNEAKER in CALFSKIN"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "39",
@@ -14966,7 +14966,7 @@
         "https://image.celine.com/asset/6d1f28a9-be3a-4488-8216-1ad84237aebc/361564995C-38NO_4_SPR26_M_V1.jpg?V2",
         "https://image.celine.com/asset/05fd6c44-9c15-4890-b6f9-65874369b5d0/361564995C-38NO_5_SPR26_M_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -14975,7 +14975,7 @@
         "SNEAKER TRAINER CT-09 IN CALFSKIN AND MESH"
       ],
       "categoryLabel": "SNEAKERS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "39",
@@ -15686,7 +15686,7 @@
       "sizeStock": [
         {
           "size": "39",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "40",
@@ -15698,7 +15698,7 @@
         },
         {
           "size": "42",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "43",
@@ -16602,7 +16602,7 @@
         "https://image.celine.com/asset/ef0a3899-e683-4bf9-8a58-cf8da9aba399/350933492C-38NO_3_SUM23.jpg?V2",
         "https://image.celine.com/asset/1f3d6e5f-18a3-44b0-b729-51779bbe1137/350933492C-38NO_4_SUM23.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -16611,7 +16611,7 @@
         "WESTERN BOOT IN CALFSKIN"
       ],
       "categoryLabel": "BOOTS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "39",
@@ -17302,7 +17302,7 @@
       "sizeStock": [
         {
           "size": "39",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "40",
@@ -17322,7 +17322,7 @@
         },
         {
           "size": "44",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "45",
@@ -17799,7 +17799,7 @@
         },
         {
           "size": "43",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "44",

@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-11-06T21:08:02.396655+00:00",
+  "scrapedAt": "2026-11-20T21:10:53.426503+00:00",
   "brand": "Celine",
   "hub": "https://www.celine.com/en-gb/women/accessories/?nav=A007-VIEW-ALL",
   "family": "ce-women-accessories",
@@ -118,6 +118,7 @@
         }
       ],
       "sizes": [
+        "65",
         "70",
         "75",
         "80",
@@ -205,24 +206,28 @@
       "availabilityConfidence": "sfcc",
       "sizeStock": [
         {
+          "size": "65",
+          "inStock": true
+        },
+        {
           "size": "70",
           "inStock": true
         },
         {
           "size": "75",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "80",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "85",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "90",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "95",
@@ -635,11 +640,11 @@
         },
         {
           "size": "95",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "100",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "105",
@@ -830,7 +835,7 @@
         "https://image.celine.com/asset/60b818f7-09e5-4787-a618-32078d97761b/B10A73APD-04NR-B10A96ATZ-36SI_5_FALL26_W_V1.jpg?V2",
         "https://image.celine.com/asset/eb29d3c9-5411-421b-938a-378f103c5e96/B10A73APD-04NR-B10A96ATZ-36SI_6_FALL26_W_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -839,7 +844,7 @@
         "CELINE DISC BUCKLE 18MM IN METAL & Reversible Strap 18MM IN TAURILLON"
       ],
       "categoryLabel": "LA BOUCLE CELINE",
-      "availabilityConfidence": "sfcc_oos"
+      "availabilityConfidence": "sfcc"
     },
     {
       "id": "B10A73APD.28YR.B10A96ATZ.36SI",
@@ -1006,6 +1011,7 @@
         }
       ],
       "sizes": [
+        "70",
         "75",
         "80",
         "85",
@@ -1089,6 +1095,10 @@
       "availabilityConfidence": "sfcc",
       "sizeStock": [
         {
+          "size": "70",
+          "inStock": false
+        },
+        {
           "size": "75",
           "inStock": true
         },
@@ -1141,6 +1151,7 @@
         }
       ],
       "sizes": [
+        "70",
         "75",
         "80",
         "85",
@@ -1224,6 +1235,10 @@
       "availabilityConfidence": "sfcc",
       "sizeStock": [
         {
+          "size": "70",
+          "inStock": false
+        },
+        {
           "size": "75",
           "inStock": true
         },
@@ -1276,6 +1291,7 @@
         }
       ],
       "sizes": [
+        "70",
         "75",
         "80",
         "85",
@@ -1360,6 +1376,10 @@
       "categoryLabel": "BELTS",
       "availabilityConfidence": "sfcc",
       "sizeStock": [
+        {
+          "size": "70",
+          "inStock": false
+        },
         {
           "size": "75",
           "inStock": true
@@ -1484,7 +1504,7 @@
         "https://image.celine.com/asset/704a9dcf-5d7d-40b6-9e25-82605d47a887/45BNN5245-GPI8_3_WI26_W_V1.jpg?V2",
         "https://image.celine.com/asset/7917cc78-fc8f-4e81-8470-0b052816dcb9/45BNN5245-GPI8_4_WI26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -1493,7 +1513,7 @@
         "VIVIENNE BELT 25 IN TAURILLON LEATHER WITH ENAMELLED TRIOMPHE"
       ],
       "categoryLabel": "BELTS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "75",
@@ -1878,7 +1898,7 @@
         "https://image.celine.com/asset/730d1f2d-1499-4e54-a37d-11784bb1085c/B10182N70-04LT_3_SPR26_W_V1.jpg?V2",
         "https://image.celine.com/asset/902ff836-b1a9-4efc-a884-26446447376d/B10182N70-04LT_4_SPR26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -1887,7 +1907,7 @@
         "CELINE DISC BELT 50 IN SUPPLE NATURAL CALFSKIN"
       ],
       "categoryLabel": "BELTS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "S",
@@ -2002,7 +2022,7 @@
         "https://image.celine.com/asset/f8fe99bd-a167-444b-9ca1-cf353be75c9b/B10182N70-38NO_3_SPR26_W_V1.jpg?V2",
         "https://image.celine.com/asset/3e200f3a-080b-4bb6-b59c-6cca99b53920/B10182N70-38NO_4_SPR26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -2011,7 +2031,7 @@
         "CELINE DISC BELT 50 IN SUPPLE NATURAL CALFSKIN"
       ],
       "categoryLabel": "BELTS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "S",
@@ -2283,15 +2303,15 @@
       "sizeStock": [
         {
           "size": "75",
-          "inStock": false
-        },
-        {
-          "size": "80",
           "inStock": true
         },
         {
-          "size": "85",
+          "size": "80",
           "inStock": false
+        },
+        {
+          "size": "85",
+          "inStock": true
         }
       ]
     },
@@ -2421,7 +2441,7 @@
         },
         {
           "size": "85",
-          "inStock": false
+          "inStock": true
         }
       ]
     },
@@ -2650,7 +2670,7 @@
         "https://image.celine.com/asset/94a9eb1d-962a-471f-a2f5-a24ebdd9ff9b/B10CZ3A01-38NO_1_FALL26_W_V1.jpg?V2",
         "https://image.celine.com/asset/cceb559b-7cf8-4a87-91fb-560e08d9e256/B10CZ3A01-38NO_3_FALL26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -2659,7 +2679,7 @@
         "SNAP BELT 28 IN Taurillon Leather"
       ],
       "categoryLabel": "BELTS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "S",
@@ -2796,7 +2816,7 @@
       "sizeStock": [
         {
           "size": "65",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "70",
@@ -2804,7 +2824,7 @@
         },
         {
           "size": "75",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "80",
@@ -2820,11 +2840,11 @@
         },
         {
           "size": "95",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "100",
-          "inStock": false
+          "inStock": true
         }
       ]
     },
@@ -2863,6 +2883,7 @@
         }
       ],
       "sizes": [
+        "70",
         "75",
         "80",
         "85",
@@ -2943,6 +2964,10 @@
       "categoryLabel": "BELTS",
       "availabilityConfidence": "sfcc",
       "sizeStock": [
+        {
+          "size": "70",
+          "inStock": true
+        },
         {
           "size": "75",
           "inStock": true
@@ -3086,7 +3111,7 @@
         },
         {
           "size": "70",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "75",
@@ -3375,7 +3400,7 @@
         "https://image.celine.com/asset/d0ae8211-d812-4c64-b224-960f1b233a35/45BNN3AUX-04FM_2_FALL26_W_V1.jpg?V2",
         "https://image.celine.com/asset/cc937a07-d82d-44ec-b3d4-0d5185259eb8/45BNN3AUX-04FM_3_FALL26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -3384,7 +3409,7 @@
         "VIVIENNE BELT 25 IN Suede Calfskin"
       ],
       "categoryLabel": "BELTS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "75",
@@ -3967,11 +3992,11 @@
         },
         {
           "size": "80",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "85",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "90",
@@ -4129,7 +4154,7 @@
         },
         {
           "size": "85",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "90",
@@ -4281,7 +4306,7 @@
         },
         {
           "size": "75",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "80",
@@ -5167,7 +5192,7 @@
         },
         {
           "size": "80",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "85",
@@ -5321,7 +5346,7 @@
         },
         {
           "size": "80",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "85",
@@ -5907,7 +5932,7 @@
         "https://image.celine.com/asset/e80900c4-7180-4bdc-8445-ab47396adb1b/B10A73APD-28YR_3_FALL26_W_V1.jpg?V2",
         "https://image.celine.com/asset/dbb409da-6757-4383-bc16-cb3b5dc4940e/B10A73APD-28YR_4_FALL26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -5916,15 +5941,15 @@
         "Reversible Strap 18 IN TAURILLON"
       ],
       "categoryLabel": "BELTS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "70",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "75",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "80",
@@ -6226,7 +6251,7 @@
         },
         {
           "size": "75",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "80",
@@ -6400,7 +6425,7 @@
         },
         {
           "size": "100",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "105",
@@ -6560,7 +6585,7 @@
         },
         {
           "size": "85",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "90",
@@ -6720,7 +6745,7 @@
         },
         {
           "size": "90",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "95",
@@ -6845,7 +6870,7 @@
         "https://image.celine.com/asset/373ee5fe-c9cb-465f-a7d8-2672c3e624ad/45BLZ3APD-GKX8_5_FALL26_W_V1.jpg?V2",
         "https://image.celine.com/asset/3881ddc8-a5fa-4ad8-83fa-e4d2fb5fa63c/45BLZ3APD-GKX8_6_FALL26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -6854,7 +6879,7 @@
         "Reversible Strap 25 IN TAURILLON"
       ],
       "categoryLabel": "BELTS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "70",
@@ -6999,7 +7024,7 @@
         "https://image.celine.com/asset/d399192d-990b-4f24-96a6-f4004328bd4d/45BLZ3APD-GKX7_5_FALL26_W_V1.jpg?V2",
         "https://image.celine.com/asset/2e6b7b76-47d5-4130-b94f-429617aa0f98/45BLZ3APD-GKX7_6_FALL26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -7008,7 +7033,7 @@
         "Reversible Strap 25 IN TAURILLON"
       ],
       "categoryLabel": "BELTS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "70",
@@ -7151,7 +7176,7 @@
         "https://image.celine.com/asset/9ea90180-e5df-452e-8e2f-a5b8cee00161/45BLZ3AS2-19RW_5_FALL26_W_V1.jpg?V2",
         "https://image.celine.com/asset/49f3f366-61f6-4696-bb3f-100c34c38e80/45BLZ3AS2-19RW_6_FALL26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -7160,7 +7185,7 @@
         "Reversible Strap 25 IN TAURILLON LEATHER AND CROCODILE EMBOSSED CALFSKIN"
       ],
       "categoryLabel": "BELTS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "70",
@@ -7321,7 +7346,7 @@
         },
         {
           "size": "80",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "85",
@@ -7466,7 +7491,7 @@
         "https://image.celine.com/asset/932d3602-db49-4aa2-8200-af939053838c/45BLZ3APD-GJR8_5_SUM26_W_V1.jpg?V2",
         "https://image.celine.com/asset/6119d4f1-a20e-4a36-8bd6-0be3d0814b56/45BLZ3APD-GJR8_6_SUM26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -7475,7 +7500,7 @@
         "Reversible Strap 25 IN TAURILLON"
       ],
       "categoryLabel": "BELTS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "70",
@@ -7641,7 +7666,7 @@
         },
         {
           "size": "80",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "85",
@@ -7773,7 +7798,7 @@
         "https://image.celine.com/asset/2e54eedf-6d5b-4d28-a15c-bd79fa56ef1c/45BLZ3AUZ-03MI_5_SPR26_W_V1.jpg?V2",
         "https://image.celine.com/asset/df68a4e3-24af-404b-9814-f3db03c1cf88/45BLZ3AUZ-03MI_6_SPR26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -7782,7 +7807,7 @@
         "Reversible Strap 25 IN Natural Calfskin and Triomphe Canvas"
       ],
       "categoryLabel": "BELTS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "70",
@@ -7923,7 +7948,7 @@
         "https://image.celine.com/asset/026ad9ed-2ada-4c42-8035-36d6d4647a99/45BLZ3APD-08KR_5_WIN25_W_V1.tif?V2",
         "https://image.celine.com/asset/0a0144c9-00e2-490b-a974-f15e7146fe30/45BLZ3APD-08KR_6_WIN25_W_V1.tif?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -7932,7 +7957,7 @@
         "Reversible Strap 25 IN TAURILLON"
       ],
       "categoryLabel": "BELTS",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "70",
@@ -9831,7 +9856,7 @@
         "https://image.celine.com/asset/a0536bdc-82cd-4688-a29f-320ab5cb9627/2AW904Y85-38NB_3_FALL26_W_V1.jpg?V2",
         "https://image.celine.com/asset/29969c6a-6b6a-44c3-b21c-132923136a02/2AW904Y85-38NB_4_FALL26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -9840,11 +9865,11 @@
         "PLAN PARIS FOULARD 90"
       ],
       "categoryLabel": "SILK SCARVES",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "ONE SIZE",
-          "inStock": true
+          "inStock": false
         }
       ]
     },
@@ -10880,7 +10905,7 @@
         },
         {
           "size": "7",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "7,5",
@@ -11117,10 +11142,10 @@
         "/products/ce-pdp/aa0fp2k77-27lk/3.jpg"
       ],
       "remoteImages": [],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "ONE SIZE",
@@ -11173,10 +11198,10 @@
         "/products/ce-pdp/aa0fp2k77-01bc/3.jpg"
       ],
       "remoteImages": [],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "ONE SIZE",
@@ -11812,10 +11837,10 @@
         "https://image.celine.com/asset/023b3fe7-213a-4296-bd16-141c11da13c3/AA0GR3A55-19BR_2_SPR26_W_V1.jpg?V2",
         "https://image.celine.com/asset/22aa16e5-d0a3-49ae-9395-949303417e61/AA0GR3A55-19BR_3_SPR26_W_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc_oos",
+      "availabilityConfidence": "sfcc",
       "sizeStock": [
         {
           "size": "6,5",
@@ -11823,11 +11848,11 @@
         },
         {
           "size": "7",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "7,5",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "8",
@@ -12237,10 +12262,10 @@
         "https://image.celine.com/asset/e400270b-f6cd-492b-ab6c-3d71faa2cbbd/AA09K0899-27BR_2_WIN25_W_V1.jpg?V2",
         "https://image.celine.com/asset/53d45eb8-d195-48b9-8d48-49b91c3703b5/AA09K0899-27BR_3_WIN25_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "ONE SIZE",
@@ -12297,7 +12322,7 @@
         "https://image.celine.com/asset/5d7f4ad1-8278-4064-aeee-e9b0ba118bfe/AA09K0899-07BR_2_WIN25_W_V1.jpg?V2",
         "https://image.celine.com/asset/ee37f41a-25df-46f7-9a5a-624d91451152/AA09K0899-07BR_3_WIN25_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -12306,7 +12331,7 @@
         "pouch IN cashmere and silk"
       ],
       "categoryLabel": "SCARVES AND GLOVES",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "ONE SIZE",
@@ -13506,11 +13531,11 @@
       "sizeStock": [
         {
           "size": "S",
-          "inStock": false
+          "inStock": true
         },
         {
           "size": "M",
-          "inStock": true
+          "inStock": false
         },
         {
           "size": "L",
@@ -13977,10 +14002,10 @@
         "https://image.celine.com/asset/b479a8c7-5252-4596-a609-f6a47c0da197/AA0GV2U74-37BW_4_SPR26_M_V1.jpg?V2",
         "https://image.celine.com/asset/3b04a5f5-0efa-4489-baee-fe37ee42f817/AA0GV2U74-37BW_5_SPR26_M_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "S",
@@ -14125,10 +14150,10 @@
         "https://image.celine.com/asset/99855dbe-0147-4506-a76c-2d26b166fcc7/AA0GV2U74-07MW_4_SPR26_W_V1.jpg?V2",
         "https://image.celine.com/asset/30625fcd-9844-4783-af35-72bf00f5e8e8/AA0GV2U74-07MW_5_SPR26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "S",
@@ -14273,10 +14298,10 @@
         "https://image.celine.com/asset/e1feac9f-b7cc-43e7-a2a8-dd1851a96348/AA0GT2M87-02BL_4_SPR26_W_V1.jpg?V2",
         "https://image.celine.com/asset/922bc24c-f654-4c6b-b883-825ddd4beac5/AA0GT2M87-02BL_5_SPR26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "S",
@@ -14999,10 +15024,10 @@
         "https://image.celine.com/asset/942989c8-29a4-473b-a0b9-a1b840ff763d/B108S3K81-GGM6_2_SUM26_W_V1.jpg?V2",
         "https://image.celine.com/asset/293b7e2c-6909-4d44-8ca1-1878d78e90d2/B108S3K81-GGM6_3_SUM26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "B108N3J04.GKJ1",
@@ -15051,10 +15076,10 @@
         "https://image.celine.com/asset/e9aad06a-dd20-4ed6-be81-c46b0f7a978f/B108N3J04-GKJ1_2_SUM26_W_V1.jpg?V2",
         "https://image.celine.com/asset/ce80c670-65cb-44ee-a00a-b56f20efc9e2/B108N3J04-GKJ1_3_SUM26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "B10803F99.GKC4",
@@ -15207,10 +15232,10 @@
         "https://image.celine.com/asset/ffd8e602-60d8-4e71-942c-b77e3789fd31/B103Y2SIB-38NG_2_SPR26_W_V1.jpg?V2",
         "https://image.celine.com/asset/e6205fbb-352c-46c5-8daf-f2cbc6f41530/B103Y2SIB-38NG_3_SPR26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "46Y352SIB.35OH",
@@ -15261,10 +15286,10 @@
         "https://image.celine.com/asset/e0dc9efb-3a1f-42d0-95af-dba1d6057851/46Y352SIB-35OH_2_WIN21.jpg?V2",
         "https://image.celine.com/asset/6c898df6-2e71-415f-bbec-e66fa0660da1/46Y352SIB-35OH_3_WIN21.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "ONE SIZE",
@@ -15321,10 +15346,10 @@
         "https://image.celine.com/asset/8466996c-a689-4a25-ba63-6f57db40f355/46Y352SIB-35OB_2_WIN21.jpg?V2",
         "https://image.celine.com/asset/6fbbfeb3-0d6e-46ca-82b1-d9828058d021/46Y352SIB-35OB_3_WIN21.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc",
+      "availabilityConfidence": "sfcc_oos",
       "sizeStock": [
         {
           "size": "ONE SIZE",
@@ -15374,7 +15399,7 @@
         "https://image.celine.com/asset/0ff6aba0-3182-40dd-9a8d-b4119bf026a4/B10GV4X49-07MW_2_FALL26_W_V1.jpg?V2",
         "https://image.celine.com/asset/a68e6dd2-4b75-41c1-af1f-2b3334ff26aa/B10GV4X49-07MW_3_FALL26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -15383,7 +15408,7 @@
         "CELINE VICHY SCRUNCHY IN STEEL, POLYAMIDE, POLYESTER AND ELASTANE"
       ],
       "categoryLabel": "HAIR ACCESSORIES",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "B10DY4U90.38NG",
@@ -15479,10 +15504,10 @@
         "https://image.celine.com/asset/2c783e58-b9b9-47e1-a8f1-7a666b027e4b/B107X3F96-GGM6_2_SUM26_W_V1.jpg?V2",
         "https://image.celine.com/asset/b1f39cea-4466-4cc5-8037-a6006c20ba86/B107X3F96-GGM6_3_SUM26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "B107X3F96.GKJ1",
@@ -15531,10 +15556,10 @@
         "https://image.celine.com/asset/18e73740-a2e6-47ea-863e-926543dcce87/B107X3F96-GKJ1_2_SUM26_W_V1.jpg?V2",
         "https://image.celine.com/asset/8ef9d1fc-4c99-48c3-a5e2-0830c15403c3/B107X3F96-GKJ1_3_SUM26_W_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [],
       "categoryLabel": "",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "B10E34U97.01AV",
@@ -16844,7 +16869,7 @@
         "https://image.celine.com/asset/3fa1c0d2-5ba7-4d05-a85d-5a162fa5d7a9/46Y846SLB-36SI_2_WIN22.jpg?V2",
         "https://image.celine.com/asset/dd3cb50e-8eef-429d-b319-a6b5b38c8300/46Y846SLB-36SI_3_WIN22.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -16853,7 +16878,7 @@
         "Celine Set of 3 Mini Hair Claws in Brass with Rhodium Finish and Steel"
       ],
       "categoryLabel": "HAIR ACCESSORIES",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "46Y846BSL.35OR",
@@ -16900,7 +16925,7 @@
         "https://image.celine.com/asset/b4b78546-3415-4169-a17f-b43326c9c287/46Y846BSL-35OR_1_SP22.jpg?V2",
         "https://image.celine.com/asset/535b0ab1-c711-4f90-891e-e3c6504572bd/46Y846BSL-35OR_2_SP22.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "WOMEN",
@@ -16909,7 +16934,7 @@
         "Celine Set of 3 Mini Hair Claws in Brass with Gold Finish and Steel"
       ],
       "categoryLabel": "HAIR ACCESSORIES",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "46Z656BSL.35OR",

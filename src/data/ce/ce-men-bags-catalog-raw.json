@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-11-06T20:55:08.903558+00:00",
+  "scrapedAt": "2026-11-20T20:58:24.995209+00:00",
   "brand": "Celine",
   "hub": "https://www.celine.com/en-gb/men/bags/?nav=E003-VIEW-ALL",
   "family": "ce-men-bags",
@@ -1385,7 +1385,7 @@
         "https://image.celine.com/asset/bd649e63-0202-4b17-92fd-4d7300e8ad99/122333GWX-02SW_4_SPR26_M_V1.jpg?V2",
         "https://image.celine.com/asset/c71a73bc-56be-4ef3-b162-614f52b30923/122333GWX-02SW_5_SPR26_M_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -1394,7 +1394,7 @@
         "CROSSBODY BAG HARRY IN Suede Calfskin"
       ],
       "categoryLabel": "CROSS-BODY BAGS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "122333GT7.06CT",
@@ -1447,7 +1447,7 @@
         "https://image.celine.com/asset/f27dfc1f-f448-4b86-8b76-77304545d73a/122333GT7-06CT_4_FALL25_M.tif?V2",
         "https://image.celine.com/asset/c3c593f9-c78f-47d2-8a25-2e4cc03337d8/122333GT7-06CT_5_FALL25_M.tif?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -1456,7 +1456,7 @@
         "CROSSBODY BAG HARRY IN GRAINED CALFSKIN"
       ],
       "categoryLabel": "CROSS-BODY BAGS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "L10844X58.GMH4",
@@ -2111,7 +2111,7 @@
         "https://image.celine.com/asset/9705362e-2c60-4269-8797-b418a80b6820/111773DPJ-10DC_4_SS24_P1_M.jpg?V2",
         "https://image.celine.com/asset/a008f2b1-2b69-48a8-9eff-d41b5f67c5d8/111773DPJ-10DC_5_SS24_P1_M.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -2120,7 +2120,7 @@
         "Large Romy IN SUPPLE GRAINED CALFSKIN"
       ],
       "categoryLabel": "CROSS-BODY BAGS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "111773DPJ.09SR",
@@ -2235,7 +2235,7 @@
         "https://image.celine.com/asset/4a133402-9348-4ca1-b421-36de61521281/111773GT6-18BW_4_FALL25_M.tif?V2",
         "https://image.celine.com/asset/3633b026-556e-41ec-a5e9-8c6a63889502/111773GT6-18BW_5_FALL25_M.tif?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -2244,7 +2244,7 @@
         "Large Romy IN NUBUCK CALFSKIN"
       ],
       "categoryLabel": "CROSS-BODY BAGS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "118553GST.19SI",
@@ -2967,7 +2967,7 @@
         "https://image.celine.com/asset/fbc7a018-646d-467f-b796-347673c6e8b5/L102A3300-GKW6_3_FW26_M_V1.jpg?V2",
         "https://image.celine.com/asset/1bd0ebbf-9d99-4cad-a585-0442d48ed0b1/L102A3300-GKW6_4_FW26_M_V1.jpg?V2"
       ],
-      "availability": true,
+      "availability": false,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -2976,7 +2976,7 @@
         "VERTICAL CABAS LUGGAGE IN SHINY CALFSKIN"
       ],
       "categoryLabel": "TOTE BAGS",
-      "availabilityConfidence": "sfcc"
+      "availabilityConfidence": "sfcc_oos"
     },
     {
       "id": "L102A3300.18CH",
@@ -3033,7 +3033,7 @@
         "https://image.celine.com/asset/66c71e2b-5cb4-40bd-aed8-32bb89a999d8/L102A3300-18CH_6_SUM26_M_V1.jpg?V2",
         "https://image.celine.com/asset/748f052b-6d23-4600-8042-e9181643c011/L102A3300-18CH_7_SUM26_M_V1.jpg?V2"
       ],
-      "availability": false,
+      "availability": true,
       "breadcrumb": [
         "CELINE",
         "MEN",
@@ -3042,7 +3042,7 @@
         "VERTICAL CABAS SMILE LUGGAGE IN SHINY CALFSKIN"
       ],
       "categoryLabel": "LUGGAGE",
-      "availabilityConfidence": "sfcc_oos"
+      "availabilityConfidence": "sfcc"
     },
     {
       "id": "116273FGA.38SI",
