@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-11-06T19:05:40.530696+00:00",
+  "scrapedAt": "2026-11-20T19:26:51.527106+00:00",
   "hub": "https://www.chanel.com/gb/skincare/",
   "note": "Chanel GB skincare hub — official product-type PLPs under Accessories→샤넬→스킨케어.",
   "leaves": [
@@ -75,16 +75,16 @@
     }
   ],
   "leafCounts": {
-    "ch-skincare-body": 12,
     "ch-skincare-cleansers": 10,
-    "ch-skincare-eyes-lips": 18,
-    "ch-skincare-masks": 10,
-    "ch-skincare-mists": 4,
-    "ch-skincare-moisturisers": 45,
-    "ch-skincare-oils": 7,
-    "ch-skincare-protection": 10,
     "ch-skincare-serums": 23,
-    "ch-skincare-toners": 10,
+    "ch-skincare-oils": 6,
+    "ch-skincare-body": 11,
+    "ch-skincare-toners": 9,
+    "ch-skincare-moisturisers": 44,
+    "ch-skincare-eyes-lips": 17,
+    "ch-skincare-masks": 9,
+    "ch-skincare-mists": 3,
+    "ch-skincare-protection": 9,
     "ch-skincare": 28
   },
   "skipped": [],
@@ -162,31 +162,15 @@
       "new": false,
       "collections": [
         "ch-skincare",
-        "ch-skincare-body",
         "ch-skincare-cleansers",
-        "ch-skincare-eyes-lips",
-        "ch-skincare-masks",
-        "ch-skincare-mists",
-        "ch-skincare-moisturisers",
-        "ch-skincare-oils",
-        "ch-skincare-protection",
         "ch-skincare-serums",
-        "ch-skincare-toners",
         "chanel",
         "chanel-accessories"
       ],
       "leaf": "ch-skincare-cleansers",
       "leaves": [
-        "ch-skincare-body",
         "ch-skincare-cleansers",
-        "ch-skincare-eyes-lips",
-        "ch-skincare-masks",
-        "ch-skincare-mists",
-        "ch-skincare-moisturisers",
-        "ch-skincare-oils",
-        "ch-skincare-protection",
-        "ch-skincare-serums",
-        "ch-skincare-toners"
+        "ch-skincare-serums"
       ],
       "kind": "skincare",
       "localImages": [

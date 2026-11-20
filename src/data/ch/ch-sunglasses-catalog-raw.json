@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-11-06T20:25:56.979369+00:00",
+  "scrapedAt": "2026-11-20T20:39:35.729002+00:00",
   "hub": "https://www.chanel.com/gb/eyewear/",
   "note": "Chanel GB eyewear hub — Sunglasses + Optical + Blue Light Glasses under Accessories→샤넬→선글라스; existing SKUs kept, new only scraped.",
   "leaves": [
@@ -11,7 +11,7 @@
     }
   ],
   "leafCounts": {
-    "ch-women-sunglasses": 229
+    "ch-women-sunglasses": 246
   },
   "skipped": [],
   "failed": [],
@@ -12498,6 +12498,73 @@
       "subtitle": "Acetate & Metal"
     },
     {
+      "id": "A71755X01060L360300PUNI",
+      "productCode": "A71755X01060L360300PUNI",
+      "sku": "A71755X01060L360300PUNI",
+      "title": "Shield Sunglasses",
+      "priceLabel": "£790",
+      "gbpPrice": 790.0,
+      "categoryLabel": "Sunglasses",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/eyewear/p/A71755X01060L360300PUNI/shield-sunglasses-ruthenium/",
+      "hierarchy": [
+        {
+          "label": "Eyewear",
+          "url": "/gb/eyewear/"
+        },
+        {
+          "label": "Sunglasses",
+          "url": ""
+        }
+      ],
+      "details": {
+        "color": "Ruthenium",
+        "description": "",
+        "fabrics": "Metal",
+        "reference": "A71755X01060L360300PUNI",
+        "dimensions": null,
+        "eyeLensColor": null,
+        "freeStat": null,
+        "treatment": null
+      },
+      "images": [
+        "https://www.chanel.com/images//t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/shield-sunglasses-ruthenium-metal-metal-packshot-default-a71755x01060l3603-9584110600222.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images//t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/shield-sunglasses-ruthenium-metal-metal-packshot-default-a71755x01060l3603-9584110600222.jpg"
+        }
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "A71755X01060L360300PUNI",
+          "inStock": true
+        }
+      ],
+      "availabilityStatus": "IN_STOCK",
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "chanel",
+        "chanel-accessories",
+        "ch-sunglasses",
+        "ch-women-sunglasses"
+      ],
+      "leaf": "ch-women-sunglasses",
+      "leaves": [
+        "ch-women-sunglasses"
+      ],
+      "kind": "sunglasses",
+      "localImages": [
+        "/products/ch-pdp/a71755x01060l360300puni/1.jpg"
+      ],
+      "localImage": "/products/ch-pdp/a71755x01060l360300puni/1.jpg"
+    },
+    {
       "id": "A71755X01060L395700PUNI",
       "productCode": "A71755X01060L395700PUNI",
       "sku": "A71755X01060L395700PUNI",
@@ -20322,6 +20389,274 @@
       "localImage": "/products/ch-pdp/a71827x06081s017300pocci/1.jpg"
     },
     {
+      "id": "A71828X08101S221453OOCCI",
+      "productCode": "A71828X08101S221453OOCCI",
+      "sku": "A71828X08101S221453OOCCI",
+      "title": "Square Sunglasses",
+      "priceLabel": "£395",
+      "gbpPrice": 395.0,
+      "categoryLabel": "Sunglasses",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/eyewear/p/A71828X08101S221453OOCCI/square-sunglasses-black/",
+      "hierarchy": [
+        {
+          "label": "Eyewear",
+          "url": "/gb/eyewear/"
+        },
+        {
+          "label": "Sunglasses",
+          "url": ""
+        }
+      ],
+      "details": {
+        "color": "Black",
+        "description": "Black. Lenses: Dark Grey",
+        "fabrics": "Acetate",
+        "reference": "A71828X08101S221453OOCCI",
+        "dimensions": null,
+        "eyeLensColor": null,
+        "freeStat": null,
+        "treatment": null
+      },
+      "images": [
+        "https://www.chanel.com/images//t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/square-sunglasses-black-acetate-acetate-packshot-default-a71828x08101s2214-9599267504158.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images//t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/square-sunglasses-black-acetate-acetate-packshot-default-a71828x08101s2214-9599267504158.jpg"
+        }
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "A71828X08101S221453OOCCI",
+          "inStock": true
+        }
+      ],
+      "availabilityStatus": "IN_STOCK",
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "chanel",
+        "chanel-accessories",
+        "ch-sunglasses",
+        "ch-women-sunglasses"
+      ],
+      "leaf": "ch-women-sunglasses",
+      "leaves": [
+        "ch-women-sunglasses"
+      ],
+      "kind": "sunglasses",
+      "localImages": [
+        "/products/ch-pdp/a71828x08101s221453oocci/1.jpg"
+      ],
+      "localImage": "/products/ch-pdp/a71828x08101s221453oocci/1.jpg"
+    },
+    {
+      "id": "A71829X08101S221452QOCCI",
+      "productCode": "A71829X08101S221452QOCCI",
+      "sku": "A71829X08101S221452QOCCI",
+      "title": "Cat-Eye Sunglasses",
+      "priceLabel": "£395",
+      "gbpPrice": 395.0,
+      "categoryLabel": "Sunglasses",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/eyewear/p/A71829X08101S221452QOCCI/cat-eye-sunglasses-black/",
+      "hierarchy": [
+        {
+          "label": "Eyewear",
+          "url": "/gb/eyewear/"
+        },
+        {
+          "label": "Sunglasses",
+          "url": ""
+        }
+      ],
+      "details": {
+        "color": "Black",
+        "description": "Black. Lenses: Dark Grey",
+        "fabrics": "Acetate",
+        "reference": "A71829X08101S221452QOCCI",
+        "dimensions": null,
+        "eyeLensColor": null,
+        "freeStat": null,
+        "treatment": null
+      },
+      "images": [
+        "https://www.chanel.com/images//t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/cat-eye-sunglasses-black-acetate-acetate-packshot-default-a71829x08101s2214-9599267110942.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images//t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/cat-eye-sunglasses-black-acetate-acetate-packshot-default-a71829x08101s2214-9599267110942.jpg"
+        }
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "A71829X08101S221452QOCCI",
+          "inStock": true
+        }
+      ],
+      "availabilityStatus": "IN_STOCK",
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "chanel",
+        "chanel-accessories",
+        "ch-sunglasses",
+        "ch-women-sunglasses"
+      ],
+      "leaf": "ch-women-sunglasses",
+      "leaves": [
+        "ch-women-sunglasses"
+      ],
+      "kind": "sunglasses",
+      "localImages": [
+        "/products/ch-pdp/a71829x08101s221452qocci/1.jpg"
+      ],
+      "localImage": "/products/ch-pdp/a71829x08101s221452qocci/1.jpg"
+    },
+    {
+      "id": "A71830X06081S507356LOCCI",
+      "productCode": "A71830X06081S507356LOCCI",
+      "sku": "A71830X06081S507356LOCCI",
+      "title": "Pilot Sunglasses",
+      "priceLabel": "£450",
+      "gbpPrice": 450.0,
+      "categoryLabel": "Sunglasses",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/eyewear/p/A71830X06081S507356LOCCI/pilot-sunglasses-black/",
+      "hierarchy": [
+        {
+          "label": "Eyewear",
+          "url": "/gb/eyewear/"
+        },
+        {
+          "label": "Sunglasses",
+          "url": ""
+        }
+      ],
+      "details": {
+        "color": "Black",
+        "description": "Black. Lenses: Brown",
+        "fabrics": "Acetate & Metal",
+        "reference": "A71830X06081S507356LOCCI",
+        "dimensions": null,
+        "eyeLensColor": null,
+        "freeStat": null,
+        "treatment": null
+      },
+      "images": [
+        "https://www.chanel.com/images//t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/pilot-sunglasses-black-acetate-metal-acetate-metal-packshot-default-a71830x06081s5073-9599267078174.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images//t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/pilot-sunglasses-black-acetate-metal-acetate-metal-packshot-default-a71830x06081s5073-9599267078174.jpg"
+        }
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "A71830X06081S507356LOCCI",
+          "inStock": true
+        }
+      ],
+      "availabilityStatus": "IN_STOCK",
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "chanel",
+        "chanel-accessories",
+        "ch-sunglasses",
+        "ch-women-sunglasses"
+      ],
+      "leaf": "ch-women-sunglasses",
+      "leaves": [
+        "ch-women-sunglasses"
+      ],
+      "kind": "sunglasses",
+      "localImages": [
+        "/products/ch-pdp/a71830x06081s507356locci/1.jpg"
+      ],
+      "localImage": "/products/ch-pdp/a71830x06081s507356locci/1.jpg"
+    },
+    {
+      "id": "A71831X06081S865350TUNI",
+      "productCode": "A71831X06081S865350TUNI",
+      "sku": "A71831X06081S865350TUNI",
+      "title": "Pantos Sunglasses",
+      "priceLabel": "£465",
+      "gbpPrice": 465.0,
+      "categoryLabel": "Sunglasses",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/eyewear/p/A71831X06081S865350TUNI/pantos-sunglasses-khaki/",
+      "hierarchy": [
+        {
+          "label": "Eyewear",
+          "url": "/gb/eyewear/"
+        },
+        {
+          "label": "Sunglasses",
+          "url": ""
+        }
+      ],
+      "details": {
+        "color": "Khaki",
+        "description": "Khaki. Lenses: Grey",
+        "fabrics": "Acetate & Metal",
+        "reference": "A71831X06081S865350TUNI",
+        "dimensions": null,
+        "eyeLensColor": null,
+        "freeStat": null,
+        "treatment": null
+      },
+      "images": [
+        "https://www.chanel.com/images//t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/pantos-sunglasses-khaki-acetate-metal-acetate-metal-packshot-default-a71831x06081s8653-9599199641630.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images//t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/pantos-sunglasses-khaki-acetate-metal-acetate-metal-packshot-default-a71831x06081s8653-9599199641630.jpg"
+        }
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "A71831X06081S865350TUNI",
+          "inStock": true
+        }
+      ],
+      "availabilityStatus": "IN_STOCK",
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "chanel",
+        "chanel-accessories",
+        "ch-sunglasses",
+        "ch-women-sunglasses"
+      ],
+      "leaf": "ch-women-sunglasses",
+      "leaves": [
+        "ch-women-sunglasses"
+      ],
+      "kind": "sunglasses",
+      "localImages": [
+        "/products/ch-pdp/a71831x06081s865350tuni/1.jpg"
+      ],
+      "localImage": "/products/ch-pdp/a71831x06081s865350tuni/1.jpg"
+    },
+    {
       "id": "A71832X08228S147357PUNI",
       "productCode": "A71832X08228S147357PUNI",
       "sku": "A71832X08228S147357PUNI",
@@ -20387,6 +20722,341 @@
         "/products/ch-pdp/a71832x08228s147357puni/1.jpg"
       ],
       "localImage": "/products/ch-pdp/a71832x08228s147357puni/1.jpg"
+    },
+    {
+      "id": "A71833X01060L152354OUNI",
+      "productCode": "A71833X01060L152354OUNI",
+      "sku": "A71833X01060L152354OUNI",
+      "title": "Oval Sunglasses",
+      "priceLabel": "£510",
+      "gbpPrice": 510.0,
+      "categoryLabel": "Sunglasses",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/eyewear/p/A71833X01060L152354OUNI/oval-sunglasses-gold/",
+      "hierarchy": [
+        {
+          "label": "Eyewear",
+          "url": "/gb/eyewear/"
+        },
+        {
+          "label": "Sunglasses",
+          "url": ""
+        }
+      ],
+      "details": {
+        "color": "Gold",
+        "description": "Gold. Lenses: Dark Brown",
+        "fabrics": "Metal",
+        "reference": "A71833X01060L152354OUNI",
+        "dimensions": null,
+        "eyeLensColor": null,
+        "freeStat": null,
+        "treatment": null
+      },
+      "images": [
+        "https://www.chanel.com/images//t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/oval-sunglasses-gold-metal-metal-packshot-default-a71833x01060l1523-9599199936542.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images//t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/oval-sunglasses-gold-metal-metal-packshot-default-a71833x01060l1523-9599199936542.jpg"
+        }
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "A71833X01060L152354OUNI",
+          "inStock": true
+        }
+      ],
+      "availabilityStatus": "IN_STOCK",
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "chanel",
+        "chanel-accessories",
+        "ch-sunglasses",
+        "ch-women-sunglasses"
+      ],
+      "leaf": "ch-women-sunglasses",
+      "leaves": [
+        "ch-women-sunglasses"
+      ],
+      "kind": "sunglasses",
+      "localImages": [
+        "/products/ch-pdp/a71833x01060l152354ouni/1.jpg"
+      ],
+      "localImage": "/products/ch-pdp/a71833x01060l152354ouni/1.jpg"
+    },
+    {
+      "id": "A71834X01060L521259LUNI",
+      "productCode": "A71834X01060L521259LUNI",
+      "sku": "A71834X01060L521259LUNI",
+      "title": "Pilot Sunglasses",
+      "priceLabel": "£510",
+      "gbpPrice": 510.0,
+      "categoryLabel": "Sunglasses",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/eyewear/p/A71834X01060L521259LUNI/pilot-sunglasses-gold/",
+      "hierarchy": [
+        {
+          "label": "Eyewear",
+          "url": "/gb/eyewear/"
+        },
+        {
+          "label": "Sunglasses",
+          "url": ""
+        }
+      ],
+      "details": {
+        "color": "Gold",
+        "description": "Gold. Lenses: Grey, Gradient",
+        "fabrics": "Metal",
+        "reference": "A71834X01060L521259LUNI",
+        "dimensions": null,
+        "eyeLensColor": null,
+        "freeStat": null,
+        "treatment": null
+      },
+      "images": [
+        "https://www.chanel.com/images//t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/pilot-sunglasses-gold-metal-metal-packshot-default-a71834x01060l5212-9599196266526.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images//t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/pilot-sunglasses-gold-metal-metal-packshot-default-a71834x01060l5212-9599196266526.jpg"
+        }
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "A71834X01060L521259LUNI",
+          "inStock": true
+        }
+      ],
+      "availabilityStatus": "IN_STOCK",
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "chanel",
+        "chanel-accessories",
+        "ch-sunglasses",
+        "ch-women-sunglasses"
+      ],
+      "leaf": "ch-women-sunglasses",
+      "leaves": [
+        "ch-women-sunglasses"
+      ],
+      "kind": "sunglasses",
+      "localImages": [
+        "/products/ch-pdp/a71834x01060l521259luni/1.jpg"
+      ],
+      "localImage": "/products/ch-pdp/a71834x01060l521259luni/1.jpg"
+    },
+    {
+      "id": "A71835X01060L152350QUNI",
+      "productCode": "A71835X01060L152350QUNI",
+      "sku": "A71835X01060L152350QUNI",
+      "title": "Pantos Sunglasses",
+      "priceLabel": "£510",
+      "gbpPrice": 510.0,
+      "categoryLabel": "Sunglasses",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/eyewear/p/A71835X01060L152350QUNI/pantos-sunglasses-gold/",
+      "hierarchy": [
+        {
+          "label": "Eyewear",
+          "url": "/gb/eyewear/"
+        },
+        {
+          "label": "Sunglasses",
+          "url": ""
+        }
+      ],
+      "details": {
+        "color": "Gold",
+        "description": "Gold. Lenses: Dark Brown",
+        "fabrics": "Metal",
+        "reference": "A71835X01060L152350QUNI",
+        "dimensions": null,
+        "eyeLensColor": null,
+        "freeStat": null,
+        "treatment": null
+      },
+      "images": [
+        "https://www.chanel.com/images//t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/pantos-sunglasses-gold-metal-metal-packshot-default-a71835x01060l1523-9599195840542.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images//t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/pantos-sunglasses-gold-metal-metal-packshot-default-a71835x01060l1523-9599195840542.jpg"
+        }
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "A71835X01060L152350QUNI",
+          "inStock": true
+        }
+      ],
+      "availabilityStatus": "IN_STOCK",
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "chanel",
+        "chanel-accessories",
+        "ch-sunglasses",
+        "ch-women-sunglasses"
+      ],
+      "leaf": "ch-women-sunglasses",
+      "leaves": [
+        "ch-women-sunglasses"
+      ],
+      "kind": "sunglasses",
+      "localImages": [
+        "/products/ch-pdp/a71835x01060l152350quni/1.jpg"
+      ],
+      "localImage": "/products/ch-pdp/a71835x01060l152350quni/1.jpg"
+    },
+    {
+      "id": "A71836X08101S141254NEXOR",
+      "productCode": "A71836X08101S141254NEXOR",
+      "sku": "A71836X08101S141254NEXOR",
+      "title": "Rectangle Blue Light Glasses",
+      "priceLabel": "£395",
+      "gbpPrice": 395.0,
+      "categoryLabel": "Blue Light Glasses",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/eyewear/p/A71836X08101S141254NEXOR/rectangle-blue-light-glasses-dark-tortoise/",
+      "hierarchy": [
+        {
+          "label": "Eyewear",
+          "url": "/gb/eyewear/"
+        },
+        {
+          "label": "Blue Light Glasses",
+          "url": ""
+        }
+      ],
+      "details": {
+        "color": "Dark Tortoise",
+        "description": "Dark Tortoise. Lenses: Blue light filtering",
+        "fabrics": "Acetate",
+        "reference": "A71836X08101S141254NEXOR",
+        "dimensions": null,
+        "eyeLensColor": null,
+        "freeStat": null,
+        "treatment": null
+      },
+      "images": [
+        "https://www.chanel.com/images//t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/rectangle-blue-light-glasses-dark-tortoise-acetate-acetate-packshot-default-a71836x08101s1412-9599196168222.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images//t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/rectangle-blue-light-glasses-dark-tortoise-acetate-acetate-packshot-default-a71836x08101s1412-9599196168222.jpg"
+        }
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "A71836X08101S141254NEXOR",
+          "inStock": true
+        }
+      ],
+      "availabilityStatus": "IN_STOCK",
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "chanel",
+        "chanel-accessories",
+        "ch-sunglasses",
+        "ch-women-sunglasses"
+      ],
+      "leaf": "ch-women-sunglasses",
+      "leaves": [
+        "ch-women-sunglasses"
+      ],
+      "kind": "sunglasses",
+      "localImages": [
+        "/products/ch-pdp/a71836x08101s141254nexor/1.jpg"
+      ],
+      "localImage": "/products/ch-pdp/a71836x08101s141254nexor/1.jpg"
+    },
+    {
+      "id": "A71837X06081S051250TUNI",
+      "productCode": "A71837X06081S051250TUNI",
+      "sku": "A71837X06081S051250TUNI",
+      "title": "Pantos Blue Light Glasses",
+      "priceLabel": "£465",
+      "gbpPrice": 465.0,
+      "categoryLabel": "Blue Light Glasses",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/eyewear/p/A71837X06081S051250TUNI/pantos-blue-light-glasses-black/",
+      "hierarchy": [
+        {
+          "label": "Eyewear",
+          "url": "/gb/eyewear/"
+        },
+        {
+          "label": "Blue Light Glasses",
+          "url": ""
+        }
+      ],
+      "details": {
+        "color": "Black",
+        "description": "Black. Lenses: Blue light filtering",
+        "fabrics": "Acetate & Metal",
+        "reference": "A71837X06081S051250TUNI",
+        "dimensions": null,
+        "eyeLensColor": null,
+        "freeStat": null,
+        "treatment": null
+      },
+      "images": [
+        "https://www.chanel.com/images//t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/pantos-blue-light-glasses-black-acetate-metal-acetate-metal-packshot-default-a71837x06081s0512-9599196889118.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images//t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/pantos-blue-light-glasses-black-acetate-metal-acetate-metal-packshot-default-a71837x06081s0512-9599196889118.jpg"
+        }
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "A71837X06081S051250TUNI",
+          "inStock": true
+        }
+      ],
+      "availabilityStatus": "IN_STOCK",
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "chanel",
+        "chanel-accessories",
+        "ch-sunglasses",
+        "ch-women-sunglasses"
+      ],
+      "leaf": "ch-women-sunglasses",
+      "leaves": [
+        "ch-women-sunglasses"
+      ],
+      "kind": "sunglasses",
+      "localImages": [
+        "/products/ch-pdp/a71837x06081s051250tuni/1.jpg"
+      ],
+      "localImage": "/products/ch-pdp/a71837x06081s051250tuni/1.jpg"
     },
     {
       "id": "A71838X06081S619300POCCI",
@@ -27012,6 +27682,475 @@
         "/products/ch-pdp/a75360x01060v312753muni/1.jpg"
       ],
       "localImage": "/products/ch-pdp/a75360x01060v312753muni/1.jpg"
+    },
+    {
+      "id": "A75361X01060V291552NUNI",
+      "productCode": "A75361X01060V291552NUNI",
+      "sku": "A75361X01060V291552NUNI",
+      "title": "Square Eyeglasses",
+      "priceLabel": "£12",
+      "gbpPrice": 12.0,
+      "categoryLabel": "Optical",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/eyewear/p/A75361X01060V291552NUNI/square-eyeglasses-light-gold/",
+      "hierarchy": [
+        {
+          "label": "Eyewear",
+          "url": "/gb/eyewear/"
+        },
+        {
+          "label": "Optical",
+          "url": ""
+        }
+      ],
+      "details": {
+        "color": "Light Gold",
+        "description": "",
+        "fabrics": "Metal",
+        "reference": "A75361X01060V291552NUNI",
+        "dimensions": null,
+        "eyeLensColor": null,
+        "freeStat": null,
+        "treatment": null
+      },
+      "images": [
+        "https://www.chanel.com/images//t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/square-eyeglasses-light-gold-metal-metal-packshot-default-a75361x01060v2915-9599269765150.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images//t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/square-eyeglasses-light-gold-metal-metal-packshot-default-a75361x01060v2915-9599269765150.jpg"
+        }
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "A75361X01060V291552NUNI",
+          "inStock": true
+        }
+      ],
+      "availabilityStatus": "IN_STOCK",
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "chanel",
+        "chanel-accessories",
+        "ch-sunglasses",
+        "ch-women-sunglasses"
+      ],
+      "leaf": "ch-women-sunglasses",
+      "leaves": [
+        "ch-women-sunglasses"
+      ],
+      "kind": "sunglasses",
+      "localImages": [
+        "/products/ch-pdp/a75361x01060v291552nuni/1.jpg"
+      ],
+      "localImage": "/products/ch-pdp/a75361x01060v291552nuni/1.jpg"
+    },
+    {
+      "id": "A75362X01060V312557LUNI",
+      "productCode": "A75362X01060V312557LUNI",
+      "sku": "A75362X01060V312557LUNI",
+      "title": "Cat-Eye Eyeglasses",
+      "priceLabel": "£12",
+      "gbpPrice": 12.0,
+      "categoryLabel": "Optical",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/eyewear/p/A75362X01060V312557LUNI/cat-eye-eyeglasses-gold/",
+      "hierarchy": [
+        {
+          "label": "Eyewear",
+          "url": "/gb/eyewear/"
+        },
+        {
+          "label": "Optical",
+          "url": ""
+        }
+      ],
+      "details": {
+        "color": "Gold",
+        "description": "",
+        "fabrics": "Metal",
+        "reference": "A75362X01060V312557LUNI",
+        "dimensions": null,
+        "eyeLensColor": null,
+        "freeStat": null,
+        "treatment": null
+      },
+      "images": [
+        "https://www.chanel.com/images//t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/cat-eye-eyeglasses-gold-metal-metal-packshot-default-a75362x01060v3125-9599271305246.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images//t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/cat-eye-eyeglasses-gold-metal-metal-packshot-default-a75362x01060v3125-9599271305246.jpg"
+        }
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "A75362X01060V312557LUNI",
+          "inStock": true
+        }
+      ],
+      "availabilityStatus": "IN_STOCK",
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "chanel",
+        "chanel-accessories",
+        "ch-sunglasses",
+        "ch-women-sunglasses"
+      ],
+      "leaf": "ch-women-sunglasses",
+      "leaves": [
+        "ch-women-sunglasses"
+      ],
+      "kind": "sunglasses",
+      "localImages": [
+        "/products/ch-pdp/a75362x01060v312557luni/1.jpg"
+      ],
+      "localImage": "/products/ch-pdp/a75362x01060v312557luni/1.jpg"
+    },
+    {
+      "id": "A75363X01060V313550QUNI",
+      "productCode": "A75363X01060V313550QUNI",
+      "sku": "A75363X01060V313550QUNI",
+      "title": "Pantos Eyeglasses",
+      "priceLabel": "£12",
+      "gbpPrice": 12.0,
+      "categoryLabel": "Optical",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/eyewear/p/A75363X01060V313550QUNI/pantos-eyeglasses-silver/",
+      "hierarchy": [
+        {
+          "label": "Eyewear",
+          "url": "/gb/eyewear/"
+        },
+        {
+          "label": "Optical",
+          "url": ""
+        }
+      ],
+      "details": {
+        "color": "Silver",
+        "description": "",
+        "fabrics": "Metal",
+        "reference": "A75363X01060V313550QUNI",
+        "dimensions": null,
+        "eyeLensColor": null,
+        "freeStat": null,
+        "treatment": null
+      },
+      "images": [
+        "https://www.chanel.com/images//t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/pantos-eyeglasses-silver-metal-metal-packshot-default-a75363x01060v3135-9599304826910.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images//t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/pantos-eyeglasses-silver-metal-metal-packshot-default-a75363x01060v3135-9599304826910.jpg"
+        }
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "A75363X01060V313550QUNI",
+          "inStock": true
+        }
+      ],
+      "availabilityStatus": "IN_STOCK",
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "chanel",
+        "chanel-accessories",
+        "ch-sunglasses",
+        "ch-women-sunglasses"
+      ],
+      "leaf": "ch-women-sunglasses",
+      "leaves": [
+        "ch-women-sunglasses"
+      ],
+      "kind": "sunglasses",
+      "localImages": [
+        "/products/ch-pdp/a75363x01060v313550quni/1.jpg"
+      ],
+      "localImage": "/products/ch-pdp/a75363x01060v313550quni/1.jpg"
+    },
+    {
+      "id": "A75364X06081V187550OOCCI",
+      "productCode": "A75364X06081V187550OOCCI",
+      "sku": "A75364X06081V187550OOCCI",
+      "title": "Pantos Eyeglasses",
+      "priceLabel": "£12",
+      "gbpPrice": 12.0,
+      "categoryLabel": "Optical",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/eyewear/p/A75364X06081V187550OOCCI/pantos-eyeglasses-striped-brown/",
+      "hierarchy": [
+        {
+          "label": "Eyewear",
+          "url": "/gb/eyewear/"
+        },
+        {
+          "label": "Optical",
+          "url": ""
+        }
+      ],
+      "details": {
+        "color": "Striped Brown",
+        "description": "",
+        "fabrics": "Acetate & Metal",
+        "reference": "A75364X06081V187550OOCCI",
+        "dimensions": null,
+        "eyeLensColor": null,
+        "freeStat": null,
+        "treatment": null
+      },
+      "images": [
+        "https://www.chanel.com/images//t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/pantos-eyeglasses-striped-brown-acetate-metal-acetate-metal-packshot-default-a75364x06081v1875-9599264620574.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images//t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/pantos-eyeglasses-striped-brown-acetate-metal-acetate-metal-packshot-default-a75364x06081v1875-9599264620574.jpg"
+        }
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "A75364X06081V187550OOCCI",
+          "inStock": true
+        }
+      ],
+      "availabilityStatus": "IN_STOCK",
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "chanel",
+        "chanel-accessories",
+        "ch-sunglasses",
+        "ch-women-sunglasses"
+      ],
+      "leaf": "ch-women-sunglasses",
+      "leaves": [
+        "ch-women-sunglasses"
+      ],
+      "kind": "sunglasses",
+      "localImages": [
+        "/products/ch-pdp/a75364x06081v187550oocci/1.jpg"
+      ],
+      "localImage": "/products/ch-pdp/a75364x06081v187550oocci/1.jpg"
+    },
+    {
+      "id": "A75365X06081V362251NOCCI",
+      "productCode": "A75365X06081V362251NOCCI",
+      "sku": "A75365X06081V362251NOCCI",
+      "title": "Square Eyeglasses",
+      "priceLabel": "£12",
+      "gbpPrice": 12.0,
+      "categoryLabel": "Optical",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/eyewear/p/A75365X06081V362251NOCCI/square-eyeglasses-black/",
+      "hierarchy": [
+        {
+          "label": "Eyewear",
+          "url": "/gb/eyewear/"
+        },
+        {
+          "label": "Optical",
+          "url": ""
+        }
+      ],
+      "details": {
+        "color": "Black",
+        "description": "",
+        "fabrics": "Acetate & Metal",
+        "reference": "A75365X06081V362251NOCCI",
+        "dimensions": null,
+        "eyeLensColor": null,
+        "freeStat": null,
+        "treatment": null
+      },
+      "images": [
+        "https://www.chanel.com/images//t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/square-eyeglasses-black-acetate-metal-acetate-metal-packshot-default-a75365x06081v3622-9599270223902.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images//t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/square-eyeglasses-black-acetate-metal-acetate-metal-packshot-default-a75365x06081v3622-9599270223902.jpg"
+        }
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "A75365X06081V362251NOCCI",
+          "inStock": true
+        }
+      ],
+      "availabilityStatus": "IN_STOCK",
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "chanel",
+        "chanel-accessories",
+        "ch-sunglasses",
+        "ch-women-sunglasses"
+      ],
+      "leaf": "ch-women-sunglasses",
+      "leaves": [
+        "ch-women-sunglasses"
+      ],
+      "kind": "sunglasses",
+      "localImages": [
+        "/products/ch-pdp/a75365x06081v362251nocci/1.jpg"
+      ],
+      "localImage": "/products/ch-pdp/a75365x06081v362251nocci/1.jpg"
+    },
+    {
+      "id": "A75366X08101V362252NOCCI",
+      "productCode": "A75366X08101V362252NOCCI",
+      "sku": "A75366X08101V362252NOCCI",
+      "title": "Cat-Eye Eyeglasses",
+      "priceLabel": "£12",
+      "gbpPrice": 12.0,
+      "categoryLabel": "Optical",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/eyewear/p/A75366X08101V362252NOCCI/cat-eye-eyeglasses-black/",
+      "hierarchy": [
+        {
+          "label": "Eyewear",
+          "url": "/gb/eyewear/"
+        },
+        {
+          "label": "Optical",
+          "url": ""
+        }
+      ],
+      "details": {
+        "color": "Black",
+        "description": "",
+        "fabrics": "Acetate",
+        "reference": "A75366X08101V362252NOCCI",
+        "dimensions": null,
+        "eyeLensColor": null,
+        "freeStat": null,
+        "treatment": null
+      },
+      "images": [
+        "https://www.chanel.com/images//t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/cat-eye-eyeglasses-black-acetate-acetate-packshot-default-a75366x08101v3622-9599265079326.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images//t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/cat-eye-eyeglasses-black-acetate-acetate-packshot-default-a75366x08101v3622-9599265079326.jpg"
+        }
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "A75366X08101V362252NOCCI",
+          "inStock": true
+        }
+      ],
+      "availabilityStatus": "IN_STOCK",
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "chanel",
+        "chanel-accessories",
+        "ch-sunglasses",
+        "ch-women-sunglasses"
+      ],
+      "leaf": "ch-women-sunglasses",
+      "leaves": [
+        "ch-women-sunglasses"
+      ],
+      "kind": "sunglasses",
+      "localImages": [
+        "/products/ch-pdp/a75366x08101v362252nocci/1.jpg"
+      ],
+      "localImage": "/products/ch-pdp/a75366x08101v362252nocci/1.jpg"
+    },
+    {
+      "id": "A75367X08101V187452NOCCI",
+      "productCode": "A75367X08101V187452NOCCI",
+      "sku": "A75367X08101V187452NOCCI",
+      "title": "Rectangle Eyeglasses",
+      "priceLabel": "£12",
+      "gbpPrice": 12.0,
+      "categoryLabel": "Optical",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/eyewear/p/A75367X08101V187452NOCCI/rectangle-eyeglasses-tortoise/",
+      "hierarchy": [
+        {
+          "label": "Eyewear",
+          "url": "/gb/eyewear/"
+        },
+        {
+          "label": "Optical",
+          "url": ""
+        }
+      ],
+      "details": {
+        "color": "Tortoise",
+        "description": "",
+        "fabrics": "Acetate",
+        "reference": "A75367X08101V187452NOCCI",
+        "dimensions": null,
+        "eyeLensColor": null,
+        "freeStat": null,
+        "treatment": null
+      },
+      "images": [
+        "https://www.chanel.com/images//t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/rectangle-eyeglasses-tortoise-acetate-acetate-packshot-default-a75367x08101v1874-9599266553886.jpg"
+      ],
+      "imageMeta": [
+        {
+          "typology": "PACKSHOT_DEFAULT",
+          "source": "https://www.chanel.com/images//t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_620/rectangle-eyeglasses-tortoise-acetate-acetate-packshot-default-a75367x08101v1874-9599266553886.jpg"
+        }
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "A75367X08101V187452NOCCI",
+          "inStock": true
+        }
+      ],
+      "availabilityStatus": "IN_STOCK",
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "chanel",
+        "chanel-accessories",
+        "ch-sunglasses",
+        "ch-women-sunglasses"
+      ],
+      "leaf": "ch-women-sunglasses",
+      "leaves": [
+        "ch-women-sunglasses"
+      ],
+      "kind": "sunglasses",
+      "localImages": [
+        "/products/ch-pdp/a75367x08101v187452nocci/1.jpg"
+      ],
+      "localImage": "/products/ch-pdp/a75367x08101v187452nocci/1.jpg"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-11-06T19:08:47.225367+00:00",
+  "scrapedAt": "2026-11-20T19:27:02.870431+00:00",
   "hub": "https://www.chanel.com/gb/fragrance/",
   "note": "Chanel GB fragrance hub — Women + Men + Les Exclusifs + Les Eaux under Accessories→샤넬→향수.",
   "leaves": [
@@ -11,7 +11,7 @@
     }
   ],
   "leafCounts": {
-    "ch-fragrance": 333
+    "ch-fragrance": 334
   },
   "skipped": [],
   "failed": [],
@@ -557,6 +557,72 @@
         "/products/ch-pdp/101120/1.jpg"
       ],
       "localImage": "/products/ch-pdp/101120/1.jpg"
+    },
+    {
+      "id": "101206",
+      "productCode": "101206",
+      "sku": "101206",
+      "title": "COCO SET COCO MADEMOISELLE EAU DE PARFUM 50 ML, ROUGE COCO BAUME 918 MY ROSE AND POUCH",
+      "titleShort": "COCO SET",
+      "subtitle": "COCO MADEMOISELLE EAU DE PARFUM 50 ML, ROUGE COCO BAUME 918 MY ROSE AND POUCH",
+      "priceLabel": "£161",
+      "gbpPrice": 161.0,
+      "categoryLabel": "Fragrance",
+      "collection": null,
+      "collectionCode": null,
+      "url": "https://www.chanel.com/gb/fragrance/p/101206/coco-set-coco-mademoiselle-eau-de-parfum-50-ml-rouge-coco-baume-918-my-rose-and-pouch/",
+      "hierarchy": [
+        {
+          "label": "Fragrance",
+          "url": "/gb/fragrance/"
+        },
+        {
+          "label": "Fragrance",
+          "url": ""
+        }
+      ],
+      "details": {
+        "characteristics": [
+          {
+            "label": "Material",
+            "value": "COCO MADEMOISELLE EAU DE PARFUM 50 ML, ROUGE COCO BAUME 918 MY ROSE AND POUCH"
+          },
+          {
+            "label": "Reference",
+            "value": "101206"
+          }
+        ],
+        "subtitle": "COCO MADEMOISELLE EAU DE PARFUM 50 ML, ROUGE COCO BAUME 918 MY ROSE AND POUCH",
+        "editorial": "COCO MADEMOISELLE EAU DE PARFUM 50 ML, ROUGE COCO BAUME 918 MY ROSE AND POUCH",
+        "reference": "101206"
+      },
+      "images": [
+        "https://www.chanel.com/images/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_1240/1pce-packshot-default-101206-9603444473886.jpg"
+      ],
+      "sizes": [
+        {
+          "size": "UNI",
+          "orliSize": "UNI",
+          "sku": "101206",
+          "inStock": true
+        }
+      ],
+      "inStock": true,
+      "new": false,
+      "collections": [
+        "chanel",
+        "chanel-accessories",
+        "ch-fragrance"
+      ],
+      "leaf": "ch-fragrance",
+      "leaves": [
+        "ch-fragrance"
+      ],
+      "kind": "fragrance",
+      "localImages": [
+        "/products/ch-pdp/101206/1.jpg"
+      ],
+      "localImage": "/products/ch-pdp/101206/1.jpg"
     },
     {
       "id": "101258",
