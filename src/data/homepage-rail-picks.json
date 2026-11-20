@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-11-20T14:48:49Z",
+  "generatedAt": "2026-11-20T21:02:44Z",
   "limit": 4,
   "rails": {
     "luxury": {
       "productIds": [
-        "ps-slim-fit-light-blue-fine-stripe-shirt",
-        "ps-a-suit-to-travel-in-women-s-black-slim-fit-wool-trousers",
-        "ps-a-suit-to-travel-in-women-s-slim-fit-navy-wool-trousers",
-        "ps-ecru-floral-scarf-print-viscose-shirt"
+        "ps-dark-grey-zebra-logo-polo-shirt",
+        "ps-brown-zebra-logo-polo-shirt",
+        "ps-multicolour-slim-fit-cotton-shirt",
+        "ps-blue-liberty-floral-cotton-shirt"
       ],
       "brands": [
         "paul-smith",
@@ -46,30 +46,30 @@
     },
     "shoes": {
       "productIds": [
-        "bv-a009yhv5u221003",
-        "bv-a007byv6vc09063",
-        "bv-a009ygv7bb12782",
-        "bv-a007byv6vc09263"
+        "ax-x000010504",
+        "ax-x000010502",
+        "bb-check-cashmere-baby-blanket",
+        "bv-a009yhv5u221003"
       ],
       "brands": [
-        "보테가-베네타",
-        "보테가-베네타",
-        "보테가-베네타",
+        "arcteryx",
+        "arcteryx",
+        "burberry",
         "보테가-베네타"
       ]
     },
     "accessories": {
       "productIds": [
-        "al-w077xe-5",
-        "al-w079ff-4103",
-        "al-w311xf-5",
-        "al-w429xf-6"
+        "lu-london-undercover-e-gift-card",
+        "lu-city-gent-umbrella",
+        "lu-toyo-steel-y350-toolbox-silver",
+        "lu-city-lux-umbrella"
       ],
       "brands": [
-        "all-saints",
-        "all-saints",
-        "all-saints",
-        "all-saints"
+        "london-undercover",
+        "london-undercover",
+        "london-undercover",
+        "london-undercover"
       ]
     },
     "sports": {
@@ -88,11 +88,12 @@
     }
   },
   "brands": {
-    "all-saints": [
-      "accessories",
-      "accessories",
-      "accessories",
-      "accessories"
+    "arcteryx": [
+      "shoes",
+      "shoes"
+    ],
+    "burberry": [
+      "shoes"
     ],
     "christopher-ward": [
       "watches",
@@ -105,6 +106,12 @@
       "sports",
       "sports",
       "sports"
+    ],
+    "london-undercover": [
+      "accessories",
+      "accessories",
+      "accessories",
+      "accessories"
     ],
     "mulberry": [
       "bags",
@@ -119,9 +126,6 @@
       "luxury"
     ],
     "보테가-베네타": [
-      "shoes",
-      "shoes",
-      "shoes",
       "shoes"
     ]
   },
