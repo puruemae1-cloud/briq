@@ -1,0 +1,94 @@
+{
+  "banners": [
+    {
+      "id": "asos",
+      "nameKo": "에이소스",
+      "nameEn": "ASOS",
+      "href": "https://www.asos.com/",
+      "sort": 1,
+      "enabled": true,
+      "mode": "purchase"
+    },
+    {
+      "id": "zalando",
+      "nameKo": "잘란도",
+      "nameEn": "Zalando",
+      "href": "https://www.zalando.co.uk",
+      "sort": 2,
+      "enabled": true,
+      "mode": "purchase"
+    },
+    {
+      "id": "next",
+      "nameKo": "넥스트",
+      "nameEn": "Next",
+      "href": "https://www.next.co.uk",
+      "sort": 3,
+      "enabled": true,
+      "mode": "purchase"
+    },
+    {
+      "id": "very",
+      "nameKo": "베리",
+      "nameEn": "Very",
+      "href": "https://www.very.co.uk",
+      "sort": 4,
+      "enabled": true,
+      "mode": "purchase"
+    },
+    {
+      "id": "flannels",
+      "nameKo": "플래널스",
+      "nameEn": "Flannels",
+      "href": "https://www.flannels.com",
+      "sort": 5,
+      "enabled": true,
+      "mode": "purchase"
+    },
+    {
+      "id": "endclothing",
+      "nameKo": "엔드 클로딩",
+      "nameEn": "END.",
+      "href": "https://www.endclothing.com",
+      "sort": 6,
+      "enabled": true,
+      "mode": "purchase"
+    },
+    {
+      "id": "boohoo",
+      "nameKo": "부후",
+      "nameEn": "boohoo",
+      "href": "https://www.boohoo.com",
+      "sort": 7,
+      "enabled": true,
+      "mode": "purchase"
+    },
+    {
+      "id": "selfridges",
+      "nameKo": "셀프리지스",
+      "nameEn": "Selfridges",
+      "href": "https://www.selfridges.com",
+      "sort": 8,
+      "enabled": true,
+      "mode": "purchase"
+    },
+    {
+      "id": "harrods",
+      "nameKo": "해로즈",
+      "nameEn": "Harrods",
+      "href": "https://www.harrods.com",
+      "sort": 9,
+      "enabled": true,
+      "mode": "purchase"
+    },
+    {
+      "id": "netaporter",
+      "nameKo": "넷어포터",
+      "nameEn": "NET-A-PORTER",
+      "href": "https://www.net-a-porter.com",
+      "sort": 10,
+      "enabled": true,
+      "mode": "purchase"
+    }
+  ]
+}
