@@ -1,7 +1,7 @@
 {
   "hub": "men-jewellery",
   "category": "accessories",
-  "scrapedAt": "2026-11-11T20:56:43.958596+00:00",
+  "scrapedAt": "2026-11-20T22:42:26.569870+00:00",
   "leaves": [
     "bv-men-jewellery-earrings",
     "bv-men-jewellery-rings",
@@ -15,20 +15,20 @@
       "scraped": 2
     },
     "bv-men-jewellery-rings": {
-      "official": 73,
-      "scraped": 73
+      "official": 9,
+      "scraped": 9
     },
     "bv-men-jewellery-bracelets": {
-      "official": 41,
-      "scraped": 41
+      "official": 32,
+      "scraped": 32
     },
     "bv-men-jewellery-necklaces": {
-      "official": 10,
-      "scraped": 10
+      "official": 11,
+      "scraped": 11
     },
     "bv-men-jewellery-cufflinks": {
-      "official": 3,
-      "scraped": 3
+      "official": 2,
+      "scraped": 2
     }
   },
   "products": [
@@ -44,7 +44,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/knot-earrings-silver-708285V50708117.html",
       "gbpPrice": 360.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Silver",
         "Due to hygiene-related reasons, this piece may not be returned"
@@ -170,7 +170,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 360.0,
           "listGbpPrice": null
         }
@@ -198,7 +198,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intreccio-small-earrings-silver-795574V50708117.html",
       "gbpPrice": 320.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Silver",
         "Due to hygiene-related reasons, this piece may not be returned"
@@ -327,7 +327,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 320.0,
           "listGbpPrice": null
         }
@@ -340,8 +340,8 @@
         "bv-men-jewellery-earrings",
         "bv-men-jewellery-rings"
       ],
-      "leafId": "bv-men-jewellery-rings",
-      "cgid": "men-rings",
+      "leafId": "bv-men-jewellery-earrings",
+      "cgid": "men-earrings",
       "hubCategory": "accessories"
     },
     {
@@ -356,7 +356,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/veneta-ring-silver-865872V50708117.html",
       "gbpPrice": 620.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Silver"
       ],
@@ -477,7 +477,7 @@
           "id": "13",
           "value": "13",
           "displayValue": "13",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 620.0,
           "listGbpPrice": null
         },
@@ -485,7 +485,7 @@
           "id": "15",
           "value": "15",
           "displayValue": "15",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 620.0,
           "listGbpPrice": null
         },
@@ -493,7 +493,7 @@
           "id": "17",
           "value": "17",
           "displayValue": "17",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 620.0,
           "listGbpPrice": null
         },
@@ -501,7 +501,7 @@
           "id": "19",
           "value": "19",
           "displayValue": "19",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 620.0,
           "listGbpPrice": null
         },
@@ -509,7 +509,7 @@
           "id": "21",
           "value": "21",
           "displayValue": "21",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 620.0,
           "listGbpPrice": null
         }
@@ -734,7 +734,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/veneta-ring-espresso-A005TKV507C2006.html",
       "gbpPrice": 450.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Espresso"
       ],
@@ -883,7 +883,7 @@
           "id": "17",
           "value": "17",
           "displayValue": "17",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 450.0,
           "listGbpPrice": null
         },
@@ -891,7 +891,7 @@
           "id": "19",
           "value": "19",
           "displayValue": "19",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 450.0,
           "listGbpPrice": null
         },
@@ -927,7 +927,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/stack-ring-silver-yellow-gold-857537V507D8119.html",
       "gbpPrice": 450.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Silver/Yellow Gold"
       ],
@@ -1068,7 +1068,7 @@
           "id": "15",
           "value": "15",
           "displayValue": "15",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 450.0,
           "listGbpPrice": null
         },
@@ -1076,7 +1076,7 @@
           "id": "17",
           "value": "17",
           "displayValue": "17",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 450.0,
           "listGbpPrice": null
         },
@@ -1084,7 +1084,7 @@
           "id": "19",
           "value": "19",
           "displayValue": "19",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 450.0,
           "listGbpPrice": null
         },
@@ -1120,7 +1120,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intreccio-ring-blood-stone-857485V5HU14514.html",
       "gbpPrice": 760.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Blood Stone"
       ],
@@ -1259,7 +1259,7 @@
           "id": "15",
           "value": "15",
           "displayValue": "15",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 760.0,
           "listGbpPrice": null
         },
@@ -1267,7 +1267,7 @@
           "id": "17",
           "value": "17",
           "displayValue": "17",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 760.0,
           "listGbpPrice": null
         },
@@ -1275,7 +1275,7 @@
           "id": "19",
           "value": "19",
           "displayValue": "19",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 760.0,
           "listGbpPrice": null
         }
@@ -1496,7 +1496,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intreccio-ring-silver-838190V50708117.html",
       "gbpPrice": 490.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Silver"
       ],
@@ -1653,7 +1653,7 @@
           "id": "19",
           "value": "19",
           "displayValue": "19",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 490.0,
           "listGbpPrice": null
         },
@@ -2092,7 +2092,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intreccio-ring-silver-795575V50708117.html",
       "gbpPrice": 680.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Silver"
       ],
@@ -2239,7 +2239,7 @@
           "id": "17",
           "value": "17",
           "displayValue": "17",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 680.0,
           "listGbpPrice": null
         },
@@ -2247,7 +2247,7 @@
           "id": "19",
           "value": "19",
           "displayValue": "19",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 680.0,
           "listGbpPrice": null
         },
@@ -2255,7 +2255,7 @@
           "id": "21",
           "value": "21",
           "displayValue": "21",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 680.0,
           "listGbpPrice": null
         }
@@ -2283,7 +2283,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/veneta-bracelet-petroleum-A005TIV507C4089.html",
       "gbpPrice": 430.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Petroleum"
       ],
@@ -2407,7 +2407,7 @@
           "id": "S",
           "value": "S",
           "displayValue": "S",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 430.0,
           "listGbpPrice": null
         },
@@ -2415,7 +2415,7 @@
           "id": "M",
           "value": "M",
           "displayValue": "M",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 430.0,
           "listGbpPrice": null
         },
@@ -2621,7 +2621,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/veneta-bracelet-espresso-A005TIV507C2006.html",
       "gbpPrice": 430.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Espresso"
       ],
@@ -2745,7 +2745,7 @@
           "id": "S",
           "value": "S",
           "displayValue": "S",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 430.0,
           "listGbpPrice": null
         },
@@ -2753,7 +2753,7 @@
           "id": "M",
           "value": "M",
           "displayValue": "M",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 430.0,
           "listGbpPrice": null
         },
@@ -2761,7 +2761,7 @@
           "id": "L",
           "value": "L",
           "displayValue": "L",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 430.0,
           "listGbpPrice": null
         }
@@ -2790,7 +2790,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/veneta-bracelet-espresso-A005TJV507C2006.html",
       "gbpPrice": 410.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Espresso"
       ],
@@ -2914,7 +2914,7 @@
           "id": "S",
           "value": "S",
           "displayValue": "S",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 410.0,
           "listGbpPrice": null
         },
@@ -2922,7 +2922,7 @@
           "id": "M",
           "value": "M",
           "displayValue": "M",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 410.0,
           "listGbpPrice": null
         },
@@ -2959,7 +2959,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/rope-leather-bracelet-tannin-876412V507C2388.html",
       "gbpPrice": 380.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Tannin"
       ],
@@ -3083,7 +3083,7 @@
           "id": "S",
           "value": "S",
           "displayValue": "S",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 380.0,
           "listGbpPrice": null
         },
@@ -3091,7 +3091,7 @@
           "id": "M",
           "value": "M",
           "displayValue": "M",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 380.0,
           "listGbpPrice": null
         },
@@ -3297,7 +3297,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/rope-leather-bracelet-espresso-876412V507C2006.html",
       "gbpPrice": 380.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Espresso"
       ],
@@ -3421,7 +3421,7 @@
           "id": "S",
           "value": "S",
           "displayValue": "S",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 380.0,
           "listGbpPrice": null
         },
@@ -3633,7 +3633,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/veneta-bracelet-silver-865855V50708117.html",
       "gbpPrice": 620.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Silver"
       ],
@@ -3755,7 +3755,7 @@
           "id": "S",
           "value": "S",
           "displayValue": "S",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 620.0,
           "listGbpPrice": null
         },
@@ -3763,7 +3763,7 @@
           "id": "M",
           "value": "M",
           "displayValue": "M",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 620.0,
           "listGbpPrice": null
         },
@@ -4136,7 +4136,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/stack-cuff-bracelet-silver-yellow-gold-857508V507D8119.html",
       "gbpPrice": 850.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Silver/Yellow Gold"
       ],
@@ -4257,7 +4257,7 @@
           "id": "S",
           "value": "S",
           "displayValue": "S",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 850.0,
           "listGbpPrice": null
         },
@@ -4265,7 +4265,7 @@
           "id": "M",
           "value": "M",
           "displayValue": "M",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 850.0,
           "listGbpPrice": null
         },
@@ -4273,7 +4273,7 @@
           "id": "L",
           "value": "L",
           "displayValue": "L",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 850.0,
           "listGbpPrice": null
         }
@@ -4470,7 +4470,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/leather-bracelet-blue-royal-829387V507C4296.html",
       "gbpPrice": 500.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Blue Royal"
       ],
@@ -4591,7 +4591,7 @@
           "id": "S",
           "value": "S",
           "displayValue": "S",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 500.0,
           "listGbpPrice": null
         },
@@ -4599,7 +4599,7 @@
           "id": "M",
           "value": "M",
           "displayValue": "M",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 500.0,
           "listGbpPrice": null
         },
@@ -4636,7 +4636,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/leather-bracelet-amber-829387V507C2587.html",
       "gbpPrice": 500.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Amber"
       ],
@@ -4757,7 +4757,7 @@
           "id": "S",
           "value": "S",
           "displayValue": "S",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 500.0,
           "listGbpPrice": null
         },
@@ -4765,7 +4765,7 @@
           "id": "M",
           "value": "M",
           "displayValue": "M",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 500.0,
           "listGbpPrice": null
         },
@@ -4802,7 +4802,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/leather-bracelet-fondant-829387V507C2113.html",
       "gbpPrice": 500.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Fondant"
       ],
@@ -4926,7 +4926,7 @@
           "id": "S",
           "value": "S",
           "displayValue": "S",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 500.0,
           "listGbpPrice": null
         },
@@ -5307,7 +5307,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/leather-bracelet-fondant-844783V507C2113.html",
       "gbpPrice": 360.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Fondant"
       ],
@@ -5429,7 +5429,7 @@
           "id": "S",
           "value": "S",
           "displayValue": "S",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 360.0,
           "listGbpPrice": null
         },
@@ -5437,7 +5437,7 @@
           "id": "M",
           "value": "M",
           "displayValue": "M",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 360.0,
           "listGbpPrice": null
         },
@@ -5445,7 +5445,7 @@
           "id": "L",
           "value": "L",
           "displayValue": "L",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 360.0,
           "listGbpPrice": null
         }
@@ -5474,7 +5474,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/leather-bracelet-fondant-838329V507C2113.html",
       "gbpPrice": 380.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Fondant"
       ],
@@ -5596,7 +5596,7 @@
           "id": "S",
           "value": "S",
           "displayValue": "S",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 380.0,
           "listGbpPrice": null
         },
@@ -5612,7 +5612,7 @@
           "id": "L",
           "value": "L",
           "displayValue": "L",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 380.0,
           "listGbpPrice": null
         }
@@ -5641,7 +5641,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/leather-bracelet-redstone-829387V507C6562.html",
       "gbpPrice": 500.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Redstone"
       ],
@@ -5781,7 +5781,7 @@
           "id": "L",
           "value": "L",
           "displayValue": "L",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 500.0,
           "listGbpPrice": null
         }
@@ -5810,7 +5810,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/knot-leather-bracelet-rosewood-815938VAHUA6557.html",
       "gbpPrice": 410.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Color: Rosewood"
       ],
@@ -5935,7 +5935,7 @@
           "id": "S",
           "value": "S",
           "displayValue": "S",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 410.0,
           "listGbpPrice": null
         },
@@ -5943,7 +5943,7 @@
           "id": "M",
           "value": "M",
           "displayValue": "M",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 410.0,
           "listGbpPrice": null
         },
@@ -5951,7 +5951,7 @@
           "id": "L",
           "value": "L",
           "displayValue": "L",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 410.0,
           "listGbpPrice": null
         }
@@ -5980,7 +5980,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/knot-leather-bracelet-fondant-815938V507C1139.html",
       "gbpPrice": 410.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Color: Fondant"
       ],
@@ -6107,7 +6107,7 @@
           "id": "S",
           "value": "S",
           "displayValue": "S",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 410.0,
           "listGbpPrice": null
         },
@@ -6115,7 +6115,7 @@
           "id": "M",
           "value": "M",
           "displayValue": "M",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 410.0,
           "listGbpPrice": null
         },
@@ -6123,7 +6123,7 @@
           "id": "L",
           "value": "L",
           "displayValue": "L",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 410.0,
           "listGbpPrice": null
         }
@@ -6492,7 +6492,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/friendship-bracelet-black-815941V58O11000.html",
       "gbpPrice": 260.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Color: Black"
       ],
@@ -6617,7 +6617,7 @@
           "id": "L",
           "value": "L",
           "displayValue": "L",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 260.0,
           "listGbpPrice": null
         }
@@ -6956,7 +6956,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/friendship-bracelet-avocado-815941V58O13132.html",
       "gbpPrice": 260.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Color: Avocado"
       ],
@@ -7081,7 +7081,7 @@
           "id": "L",
           "value": "L",
           "displayValue": "L",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 260.0,
           "listGbpPrice": null
         }
@@ -7264,7 +7264,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/friendship-bracelet-lake-815941V58O14189.html",
       "gbpPrice": 260.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Color: Lake"
       ],
@@ -7391,7 +7391,7 @@
           "id": "L",
           "value": "L",
           "displayValue": "L",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 260.0,
           "listGbpPrice": null
         }
@@ -7574,7 +7574,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/friendship-bracelet-teal-815941V58O14419.html",
       "gbpPrice": 260.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Color: Teal"
       ],
@@ -7699,7 +7699,7 @@
           "id": "L",
           "value": "L",
           "displayValue": "L",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 260.0,
           "listGbpPrice": null
         }
@@ -7882,7 +7882,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/friendship-bracelet-lilac-815941V58O15202.html",
       "gbpPrice": 260.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Color: Lilac"
       ],
@@ -8009,7 +8009,7 @@
           "id": "L",
           "value": "L",
           "displayValue": "L",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 260.0,
           "listGbpPrice": null
         }
@@ -8194,7 +8194,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/friendship-bracelet-lighthouse-815941V58O17193.html",
       "gbpPrice": 260.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Color: Lighthouse"
       ],
@@ -8321,7 +8321,7 @@
           "id": "L",
           "value": "L",
           "displayValue": "L",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 260.0,
           "listGbpPrice": null
         }
@@ -8694,7 +8694,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/chain-necklace-silver-875948V50708117.html",
       "gbpPrice": 720.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Silver"
       ],
@@ -8814,7 +8814,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 720.0,
           "listGbpPrice": null
         }
@@ -8994,7 +8994,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/prisma-necklace-silver-basalt-865972V507C8115.html",
       "gbpPrice": 1070.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Silver/Basalt"
       ],
@@ -9118,7 +9118,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 1070.0,
           "listGbpPrice": null
         }
@@ -9147,7 +9147,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/rope-chain-necklace-espresso-876407V507C2006.html",
       "gbpPrice": 980.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Espresso"
       ],
@@ -9269,7 +9269,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 980.0,
           "listGbpPrice": null
         }
@@ -9298,7 +9298,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/veneta-necklace-silver-865853V50708117.html",
       "gbpPrice": 670.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Silver"
       ],
@@ -9420,7 +9420,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 670.0,
           "listGbpPrice": null
         }
@@ -9449,7 +9449,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/stack-necklace-silver-yellow-gold-857500V507D8119.html",
       "gbpPrice": 760.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Silver/Yellow Gold"
       ],
@@ -9569,7 +9569,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 760.0,
           "listGbpPrice": null
         }
@@ -9598,7 +9598,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/veneta-chain-necklace-silver-876163V50708117.html",
       "gbpPrice": 450.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Silver"
       ],
@@ -9720,7 +9720,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 450.0,
           "listGbpPrice": null
         }
@@ -9749,7 +9749,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intreccio-necklace-silver-838326V50708117.html",
       "gbpPrice": 710.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Silver"
       ],
@@ -9871,7 +9871,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 710.0,
           "listGbpPrice": null
         }
@@ -10538,7 +10538,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/animals-pendant-necklace-white-black-A005WTVBOBH9010.html",
       "gbpPrice": 810.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: White/Black"
       ],
@@ -10661,7 +10661,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 810.0,
           "listGbpPrice": null
         }
@@ -11013,7 +11013,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/knot-necklace-silver-A005TMV50708117.html",
       "gbpPrice": 670.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Silver"
       ],
@@ -11135,7 +11135,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 670.0,
           "listGbpPrice": null
         }
@@ -11164,7 +11164,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/blown-bracelet-espresso-shamrock-A005WPV1A951986.html",
       "gbpPrice": 360.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Espresso/Shamrock"
       ],
@@ -11288,7 +11288,7 @@
           "id": "S",
           "value": "S",
           "displayValue": "S",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 360.0,
           "listGbpPrice": null
         },
@@ -11296,7 +11296,7 @@
           "id": "M",
           "value": "M",
           "displayValue": "M",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 360.0,
           "listGbpPrice": null
         },
@@ -12287,6 +12287,459 @@
       ],
       "leafId": "bv-men-jewellery-rings",
       "cgid": "men-rings",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "A006DVV50708117",
+      "sku": "A006DVV50708117",
+      "internalId": "A006DVV50708117",
+      "name": "Intreccio Ring",
+      "brand": "bottega veneta",
+      "color": "Silver",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/intreccio-ring-silver-A006DVV50708117.html",
+      "url": "https://www.bottegaveneta.com/en-gb/intreccio-ring-silver-A006DVV50708117.html",
+      "gbpPrice": 430.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Silver"
+      ],
+      "longDescription": [
+        "Sterling silver ring",
+        "Intreccio engraved pattern"
+      ],
+      "compactedLongDesc": "Ring with signature Intreccio pattern crafted in classic sterling silver.",
+      "composition": "• Material: sterling silver",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "",
+      "sizeChartId": "default-W-RINGS",
+      "sizeGuide": {
+        "id": "default-W-RINGS",
+        "titleKo": "Rings",
+        "noteKo": "보테가 베네타 공홈 사이즈 가이드 기준입니다.",
+        "headers": [
+          "BV",
+          "UK",
+          "US",
+          "KR"
+        ],
+        "rows": [
+          [
+            "9",
+            "J",
+            "5",
+            "5"
+          ],
+          [
+            "10",
+            "K",
+            "5.25",
+            "5.25"
+          ],
+          [
+            "11",
+            "L-&frac12;",
+            "5.5",
+            "5.5"
+          ],
+          [
+            "12",
+            "M-&frac12;",
+            "5.75",
+            "5.75"
+          ],
+          [
+            "13",
+            "N",
+            "6",
+            "6"
+          ],
+          [
+            "14",
+            "O",
+            "6.5",
+            "6.5"
+          ],
+          [
+            "15",
+            "O-&frac12;",
+            "7",
+            "7"
+          ],
+          [
+            "16",
+            "P",
+            "7.5",
+            "7.5"
+          ],
+          [
+            "17",
+            "Q",
+            "8",
+            "8"
+          ],
+          [
+            "18",
+            "Q-&frac12;",
+            "8.5",
+            "8.5"
+          ],
+          [
+            "19",
+            "R",
+            "9",
+            "9"
+          ],
+          [
+            "20",
+            "S",
+            "9.25",
+            "9.25"
+          ],
+          [
+            "21",
+            "T",
+            "9.5",
+            "9.5"
+          ]
+        ]
+      },
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/ee249f3c-0c2e-4a4f-b19d-334a0768d14a/eCom/A006DVV50708117_A.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/4187beff-49e1-4f5f-8117-7e85d56bfcaf/eCom/A006DVV50708117_C.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/3d9c6ece-0d89-4f92-af32-ccaee1e3c831/eCom/A006DVV50708117_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/ee249f3c-0c2e-4a4f-b19d-334a0768d14a/Small/A006DVV50708117_A.jpg?v=2"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a006dvv50708117/1.jpg",
+        "/products/bv-pdp/a006dvv50708117/2.jpg",
+        "/products/bv-pdp/a006dvv50708117/3.jpg",
+        "/products/bv-pdp/a006dvv50708117/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "11",
+          "value": "11",
+          "displayValue": "11",
+          "inStock": false,
+          "gbpPrice": 430.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "13",
+          "value": "13",
+          "displayValue": "13",
+          "inStock": true,
+          "gbpPrice": 430.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "15",
+          "value": "15",
+          "displayValue": "15",
+          "inStock": true,
+          "gbpPrice": 430.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "17",
+          "value": "17",
+          "displayValue": "17",
+          "inStock": true,
+          "gbpPrice": 430.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "19",
+          "value": "19",
+          "displayValue": "19",
+          "inStock": true,
+          "gbpPrice": 430.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "21",
+          "value": "21",
+          "displayValue": "21",
+          "inStock": false,
+          "gbpPrice": 430.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "23",
+          "value": "23",
+          "displayValue": "23",
+          "inStock": false,
+          "gbpPrice": 430.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-men",
+        "bv-men-jewellery",
+        "bv-men-jewellery-rings"
+      ],
+      "leafId": "bv-men-jewellery-rings",
+      "cgid": "men-rings",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "A00DQEV50708117",
+      "sku": "A00DQEV50708117",
+      "internalId": "A00DQEV50708117",
+      "name": "Intreccio Signet Ring",
+      "brand": "bottega veneta",
+      "color": "Silver",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/intreccio-signet-ring-silver-A00DQEV50708117.html",
+      "url": "https://www.bottegaveneta.com/en-gb/intreccio-signet-ring-silver-A00DQEV50708117.html",
+      "gbpPrice": 490.0,
+      "listGbpPrice": null,
+      "inStock": false,
+      "shortDescription": [
+        "Colour: Silver"
+      ],
+      "longDescription": [
+        "Sterling silver ring",
+        "Intreccio engraved pattern"
+      ],
+      "compactedLongDesc": "Signet ring with signature Intreccio detailing crafted in classic sterling silver.",
+      "composition": "• Material: sterling silver",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "",
+      "sizeChartId": "default-W-RINGS",
+      "sizeGuide": {
+        "id": "default-W-RINGS",
+        "titleKo": "Rings",
+        "noteKo": "보테가 베네타 공홈 사이즈 가이드 기준입니다.",
+        "headers": [
+          "BV",
+          "UK",
+          "US",
+          "KR"
+        ],
+        "rows": [
+          [
+            "9",
+            "J",
+            "5",
+            "5"
+          ],
+          [
+            "10",
+            "K",
+            "5.25",
+            "5.25"
+          ],
+          [
+            "11",
+            "L-&frac12;",
+            "5.5",
+            "5.5"
+          ],
+          [
+            "12",
+            "M-&frac12;",
+            "5.75",
+            "5.75"
+          ],
+          [
+            "13",
+            "N",
+            "6",
+            "6"
+          ],
+          [
+            "14",
+            "O",
+            "6.5",
+            "6.5"
+          ],
+          [
+            "15",
+            "O-&frac12;",
+            "7",
+            "7"
+          ],
+          [
+            "16",
+            "P",
+            "7.5",
+            "7.5"
+          ],
+          [
+            "17",
+            "Q",
+            "8",
+            "8"
+          ],
+          [
+            "18",
+            "Q-&frac12;",
+            "8.5",
+            "8.5"
+          ],
+          [
+            "19",
+            "R",
+            "9",
+            "9"
+          ],
+          [
+            "20",
+            "S",
+            "9.25",
+            "9.25"
+          ],
+          [
+            "21",
+            "T",
+            "9.5",
+            "9.5"
+          ]
+        ]
+      },
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/bf8809f7-e1d4-4db8-bf83-72f05dc3e98d/eCom/A00DQEV50708117_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/425d5d6f-6dce-4c04-9f8c-91104e5ee0b8/eCom/A00DQEV50708117_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/69e3f149-9857-43c2-b9cb-b10334b54fc5/eCom/A00DQEV50708117_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/349fa17a-7420-43ea-9c21-c48dd1f4fa94/eCom/A00DQEV50708117_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/7ce93989-35e1-4178-a483-5c52a637895d/eCom/A00DQEV50708117_F.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/bf8809f7-e1d4-4db8-bf83-72f05dc3e98d/Small/A00DQEV50708117_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a00dqev50708117/1.jpg",
+        "/products/bv-pdp/a00dqev50708117/2.jpg",
+        "/products/bv-pdp/a00dqev50708117/3.jpg",
+        "/products/bv-pdp/a00dqev50708117/4.jpg",
+        "/products/bv-pdp/a00dqev50708117/5.jpg",
+        "/products/bv-pdp/a00dqev50708117/6.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "11",
+          "value": "11",
+          "displayValue": "11",
+          "inStock": false,
+          "gbpPrice": 490.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "13",
+          "value": "13",
+          "displayValue": "13",
+          "inStock": false,
+          "gbpPrice": 490.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "15",
+          "value": "15",
+          "displayValue": "15",
+          "inStock": false,
+          "gbpPrice": 490.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "17",
+          "value": "17",
+          "displayValue": "17",
+          "inStock": false,
+          "gbpPrice": 490.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "19",
+          "value": "19",
+          "displayValue": "19",
+          "inStock": false,
+          "gbpPrice": 490.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "21",
+          "value": "21",
+          "displayValue": "21",
+          "inStock": false,
+          "gbpPrice": 490.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-men",
+        "bv-men-jewellery",
+        "bv-men-jewellery-rings"
+      ],
+      "leafId": "bv-men-jewellery-rings",
+      "cgid": "men-rings",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "A006DTV50708117",
+      "sku": "A006DTV50708117",
+      "internalId": "814525495",
+      "name": "Intreccio Necklace",
+      "brand": "bottega veneta",
+      "color": "Silver",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/intreccio-necklace-silver-A006DTV50708117.html",
+      "url": "https://www.bottegaveneta.com/en-gb/intreccio-necklace-silver-A006DTV50708117.html",
+      "gbpPrice": 450.0,
+      "listGbpPrice": null,
+      "inStock": false,
+      "shortDescription": [
+        "Colour: Silver"
+      ],
+      "longDescription": [
+        "Sterling silver necklace",
+        "Intreccio engraved pattern",
+        "T-bar closure"
+      ],
+      "compactedLongDesc": "Necklace with T-bar closure and signature Intreccio detailing crafted in classic sterling silver.",
+      "composition": "• Material: sterling silver",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Length: 56 cm\n\n• T-bar diamenter: 12.5 mm\n\n• T-bar length: 24 mm",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/ce5ad56e-ec1a-4dd3-b8e9-ea487be60f93/eCom/A006DTV50708117_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/9fb75adb-0710-4a57-9df7-b4afcabd977c/eCom/A006DTV50708117_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/b2477fdc-e50b-4fd2-b7ee-20a15ca30788/eCom/A006DTV50708117_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/ce5ad56e-ec1a-4dd3-b8e9-ea487be60f93/Small/A006DTV50708117_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a006dtv50708117/1.jpg",
+        "/products/bv-pdp/a006dtv50708117/2.jpg",
+        "/products/bv-pdp/a006dtv50708117/3.jpg",
+        "/products/bv-pdp/a006dtv50708117/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": false,
+          "gbpPrice": 450.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-men",
+        "bv-men-jewellery",
+        "bv-men-jewellery-necklaces"
+      ],
+      "leafId": "bv-men-jewellery-necklaces",
+      "cgid": "men-necklaces",
       "hubCategory": "accessories"
     }
   ]

@@ -1,7 +1,7 @@
 {
   "hub": "men-wallets",
   "category": "accessories",
-  "scrapedAt": "2026-11-11T20:49:41.814423+00:00",
+  "scrapedAt": "2026-11-20T22:36:29.797295+00:00",
   "leaves": [
     "bv-men-wallets-small",
     "bv-men-wallets-long",
@@ -13,32 +13,32 @@
   ],
   "leafCounts": {
     "bv-men-wallets-small": {
-      "official": 57,
-      "scraped": 57
+      "official": 56,
+      "scraped": 56
     },
     "bv-men-wallets-long": {
-      "official": 26,
-      "scraped": 26
+      "official": 24,
+      "scraped": 24
     },
     "bv-men-wallets-card-cases": {
-      "official": 44,
-      "scraped": 44
+      "official": 39,
+      "scraped": 39
     },
     "bv-men-wallets-pouches": {
-      "official": 35,
-      "scraped": 35
+      "official": 27,
+      "scraped": 27
     },
     "bv-men-wallets-intrecciato": {
-      "official": 77,
-      "scraped": 77
+      "official": 60,
+      "scraped": 60
     },
     "bv-men-wallets-piccolo": {
-      "official": 30,
-      "scraped": 30
+      "official": 20,
+      "scraped": 20
     },
     "bv-men-wallets-cassette": {
-      "official": 23,
-      "scraped": 23
+      "official": 20,
+      "scraped": 20
     }
   },
   "products": [
@@ -1725,7 +1725,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-bi-fold-wallet-green-tweed-mineral-749400VCPQ63825.html",
       "gbpPrice": 440.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Colour: Green Tweed/Mineral",
         "Lining: Calfskin"
@@ -1758,7 +1758,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 440.0,
           "listGbpPrice": null
         }
@@ -11882,7 +11882,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-piccolo--card-case-dark-green-817397V4LQ13009.html",
       "gbpPrice": 350.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Calf leather",
         "Colour: Dark Green"
@@ -11914,7 +11914,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 350.0,
           "listGbpPrice": null
         }
@@ -12895,8 +12895,10 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/1412d819-571a-41a7-a99c-ef613da15c1e/eCom/A006XHV71S22008_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/0b3e2052-bb50-44c0-9cf2-5607aadb3ae0/eCom/A006XHV71S22008_B.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/ec3b3503-c1ea-4d89-b1c6-e0327dff9955/eCom/A006XHV71S22008_C.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/675ac4ac-2fcb-47a8-881e-2fcda2bbd692/eCom/A006XHV71S22008_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/d08606e3-65cf-473f-9d0a-c71abb76ad84/eCom/A006XHV71S22008_E.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/ca15ff95-97ce-4494-a2be-6abc9ccc9c20/eCom/A006XHV71S22008_F.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/1412d819-571a-41a7-a99c-ef613da15c1e/Small/A006XHV71S22008_A.jpg?v=1"
       ],
@@ -12905,7 +12907,9 @@
         "/products/bv-pdp/a006xhv71s22008/2.jpg",
         "/products/bv-pdp/a006xhv71s22008/3.jpg",
         "/products/bv-pdp/a006xhv71s22008/4.jpg",
-        "/products/bv-pdp/a006xhv71s22008/5.jpg"
+        "/products/bv-pdp/a006xhv71s22008/5.jpg",
+        "/products/bv-pdp/a006xhv71s22008/6.jpg",
+        "/products/bv-pdp/a006xhv71s22008/7.jpg"
       ],
       "sizes": [
         {
@@ -13430,6 +13434,1518 @@
       ],
       "leafId": "bv-men-wallets-card-cases",
       "cgid": "men-card-cases",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "743211V2HLQ4435",
+      "sku": "743211V2HLQ4435",
+      "internalId": "814514298",
+      "name": "Intrecciato Bi-Fold Wallet",
+      "brand": "bottega veneta",
+      "color": "Deep sea",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/intrecciato-bi-fold-wallet-deep-sea-743211V2HLQ4435.html",
+      "url": "https://www.bottegaveneta.com/en-gb/intrecciato-bi-fold-wallet-deep-sea-743211V2HLQ4435.html",
+      "gbpPrice": 490.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Deep Sea",
+        "Lining: Calfskin"
+      ],
+      "longDescription": [
+        "Intrecciato calfskin and grained nubuck leather wallet",
+        "Eight card slots, two note compartments, two additional pockets"
+      ],
+      "compactedLongDesc": "Bi-fold wallet in Intrecciato calfskin and grained nubuck leather.",
+      "composition": "• Material: calfskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 9.5 cm | 3.75\"\n\n• Width: 11 cm | 4.3\" \n\n• Depth: 1 cm | 0.44\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/d5342bc4-5c45-4eda-9470-40b3dd9ada45/eCom/743211V2HLQ4435_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/9c9eb968-e6ee-4286-82a9-5c29c9e81883/eCom/743211V2HLQ4435_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/3a1a41b1-df18-4302-a2d9-2d7f6609cac6/eCom/743211V2HLQ4435_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/d5342bc4-5c45-4eda-9470-40b3dd9ada45/Small/743211V2HLQ4435_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/743211v2hlq4435/1.jpg",
+        "/products/bv-pdp/743211v2hlq4435/2.jpg",
+        "/products/bv-pdp/743211v2hlq4435/3.jpg",
+        "/products/bv-pdp/743211v2hlq4435/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 490.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-men",
+        "bv-men-wallets",
+        "bv-men-wallets-small"
+      ],
+      "leafId": "bv-men-wallets-small",
+      "cgid": "men-small-wallets",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "749412V2HLQ4435",
+      "sku": "749412V2HLQ4435",
+      "internalId": "814539584",
+      "name": "Intrecciato Bi-Fold Wallet With Coin Purse",
+      "brand": "bottega veneta",
+      "color": "Deep sea",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/intrecciato-bi-fold-wallet-with-coin-purse-deep-sea-749412V2HLQ4435.html",
+      "url": "https://www.bottegaveneta.com/en-gb/intrecciato-bi-fold-wallet-with-coin-purse-deep-sea-749412V2HLQ4435.html",
+      "gbpPrice": 530.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Deep Sea",
+        "Lining: Calfskin",
+        "Hardware: Silver finish"
+      ],
+      "longDescription": [
+        "Intrecciato calfskin and grained nubuck leather wallet",
+        "Four card slots, two note compartments, two additional pockets, one coin purse"
+      ],
+      "compactedLongDesc": "Bi-fold wallet in Intrecciato calfskin and grained nubuck leather with coin purse.",
+      "composition": "• Material: calfskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 9.5 cm | 3.75\"\n\n• Width: 11 cm | 4.3\" \n\n• Depth: 1 cm | 0.44\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/121622d4-88c2-4fcf-86eb-e1c7b80e100b/eCom/749412V2HLQ4435_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/3d63178f-9e54-4a21-a2fe-1581a7f9b2e8/eCom/749412V2HLQ4435_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/ba876188-6a65-4d7d-a262-2b8110e041a4/eCom/749412V2HLQ4435_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/121622d4-88c2-4fcf-86eb-e1c7b80e100b/Small/749412V2HLQ4435_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/749412v2hlq4435/1.jpg",
+        "/products/bv-pdp/749412v2hlq4435/2.jpg",
+        "/products/bv-pdp/749412v2hlq4435/3.jpg",
+        "/products/bv-pdp/749412v2hlq4435/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 530.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-men",
+        "bv-men-wallets",
+        "bv-men-wallets-small"
+      ],
+      "leafId": "bv-men-wallets-small",
+      "cgid": "men-small-wallets",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "749412VCPQ61975",
+      "sku": "749412VCPQ61975",
+      "internalId": "814514303",
+      "name": "Intrecciato Bi-Fold Wallet With Coin Purse",
+      "brand": "bottega veneta",
+      "color": "Volcanic grey/basil",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/intrecciato-bi-fold-wallet-with-coin-purse-volcanic-grey-basil-749412VCPQ61975.html",
+      "url": "https://www.bottegaveneta.com/en-gb/intrecciato-bi-fold-wallet-with-coin-purse-volcanic-grey-basil-749412VCPQ61975.html",
+      "gbpPrice": 560.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Volcanic Grey/Basil",
+        "Lining: Calfskin",
+        "Hardware: Silver finish"
+      ],
+      "longDescription": [
+        "Intrecciato bi-colour calfskin leather wallet",
+        "Four card slots, two note compartments, two additional pockets, one coin purse"
+      ],
+      "compactedLongDesc": "Bi-fold wallet in Intrecciato calf leather with coin purse, featuring a contrasted interior.",
+      "composition": "• Material: calfskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 9.5 cm | 3.75\"\n\n• Width: 11 cm | 4.3\" \n\n• Depth: 1 cm | 0.44\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/ab88d591-edb9-405f-b28b-0ca32e18f791/eCom/749412VCPQ61975_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/aa3c258a-e060-4450-8816-5211c0b35180/eCom/749412VCPQ61975_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/ee870929-a030-4c52-8238-fea4ba7a0be0/eCom/749412VCPQ61975_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/ab88d591-edb9-405f-b28b-0ca32e18f791/Small/749412VCPQ61975_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/749412vcpq61975/1.jpg",
+        "/products/bv-pdp/749412vcpq61975/2.jpg",
+        "/products/bv-pdp/749412vcpq61975/3.jpg",
+        "/products/bv-pdp/749412vcpq61975/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 560.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-men",
+        "bv-men-wallets",
+        "bv-men-wallets-small"
+      ],
+      "leafId": "bv-men-wallets-small",
+      "cgid": "men-small-wallets",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "743211VCPQ61975",
+      "sku": "743211VCPQ61975",
+      "internalId": "814514297",
+      "name": "Intrecciato Bi-Fold Wallet",
+      "brand": "bottega veneta",
+      "color": "Volcanic grey/basil",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/intrecciato-bi-fold-wallet-volcanic-grey-basil-743211VCPQ61975.html",
+      "url": "https://www.bottegaveneta.com/en-gb/intrecciato-bi-fold-wallet-volcanic-grey-basil-743211VCPQ61975.html",
+      "gbpPrice": 530.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Volcanic Grey/Basil",
+        "Lining: Calfskin"
+      ],
+      "longDescription": [
+        "Intrecciato bi-colour calfskin leather wallet",
+        "Eight card slots, two note compartments, two additional pockets"
+      ],
+      "compactedLongDesc": "Bi-fold wallet in Intrecciato calf leather with contrasted interior.",
+      "composition": "• Material: calfskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 9.5 cm | 3.75\"\n\n• Width: 11 cm | 4.3\" \n\n• Depth: 1 cm | 0.44\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/b756f9dc-a2ec-40fb-8471-7b970b10b42f/eCom/743211VCPQ61975_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/73435d4d-960b-4ebc-a810-04253a4a7d46/eCom/743211VCPQ61975_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/186e5b31-25e2-4d6b-895a-32c946b27613/eCom/743211VCPQ61975_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/b756f9dc-a2ec-40fb-8471-7b970b10b42f/Small/743211VCPQ61975_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/743211vcpq61975/1.jpg",
+        "/products/bv-pdp/743211vcpq61975/2.jpg",
+        "/products/bv-pdp/743211vcpq61975/3.jpg",
+        "/products/bv-pdp/743211vcpq61975/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 530.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-men",
+        "bv-men-wallets",
+        "bv-men-wallets-small"
+      ],
+      "leafId": "bv-men-wallets-small",
+      "cgid": "men-small-wallets",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "749400VCPQ61975",
+      "sku": "749400VCPQ61975",
+      "internalId": "814514301",
+      "name": "Intrecciato Slim Bi-Fold Wallet",
+      "brand": "bottega veneta",
+      "color": "Volcanic grey/basil",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/intrecciato-slim-bi-fold-wallet-volcanic-grey-basil-749400VCPQ61975.html",
+      "url": "https://www.bottegaveneta.com/en-gb/intrecciato-slim-bi-fold-wallet-volcanic-grey-basil-749400VCPQ61975.html",
+      "gbpPrice": 440.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Volcanic Grey/Basil",
+        "Lining: Calfskin"
+      ],
+      "longDescription": [
+        "Intrecciato bi-colour calfskin leather wallet",
+        "Six card slots, one bill compartment, two additional pockets"
+      ],
+      "compactedLongDesc": "Slim bi-fold wallet in Intrecciato calf leather with contrasted interior.",
+      "composition": "• Material: calfskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 10 cm | 4\"\n\n• Width: 9.5 cm | 3.75\"\n\n• Depth: 1 cm | 0.44\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/b4f876c1-41b6-402d-adb6-336582e75422/eCom/749400VCPQ61975_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/d67754c1-6ad7-482d-ba44-55385a5e01fb/eCom/749400VCPQ61975_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/8975b729-7ca5-4c56-bd0b-beffbcc6e251/eCom/749400VCPQ61975_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/b4f876c1-41b6-402d-adb6-336582e75422/Small/749400VCPQ61975_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/749400vcpq61975/1.jpg",
+        "/products/bv-pdp/749400vcpq61975/2.jpg",
+        "/products/bv-pdp/749400vcpq61975/3.jpg",
+        "/products/bv-pdp/749400vcpq61975/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 440.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-men",
+        "bv-men-wallets",
+        "bv-men-wallets-small"
+      ],
+      "leafId": "bv-men-wallets-small",
+      "cgid": "men-small-wallets",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "775546VCPQ48966",
+      "sku": "775546VCPQ48966",
+      "internalId": "814514358",
+      "name": "Intrecciato Small Bi-Fold Wallet",
+      "brand": "bottega veneta",
+      "color": "Black",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/intrecciato-small-bi-fold-wallet-black-775546VCPQ48966.html",
+      "url": "https://www.bottegaveneta.com/en-gb/intrecciato-small-bi-fold-wallet-black-775546VCPQ48966.html",
+      "gbpPrice": 530.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Black",
+        "Lining: Calfskin",
+        "Hardware: Black finish"
+      ],
+      "longDescription": [
+        "Intrecciato calfskin leather wallet",
+        "Six card slots, one bill compartment, one L-zipped coin purse",
+        "Press stud closure"
+      ],
+      "compactedLongDesc": "Small bi-fold wallet in Intrecciato calf leather.",
+      "composition": "• Material: calfskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 10 cm | 4\"\n\n• Width: 9 cm | 3.5\"\n\n• Depth: 2 cm | 0.4\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/d5f18120-61c7-4e93-8352-2a3666682823/eCom/775546VCPQ48966_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/1d516c0b-35ce-4b6f-bf07-edb4884604e0/eCom/775546VCPQ48966_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/4d407880-41ac-4f3d-9199-066b06d7ae9b/eCom/775546VCPQ48966_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/4ca7e424-2b4e-452f-8000-e1cb1c36abf6/eCom/775546VCPQ48966_E.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/d5f18120-61c7-4e93-8352-2a3666682823/Small/775546VCPQ48966_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/775546vcpq48966/1.jpg",
+        "/products/bv-pdp/775546vcpq48966/2.jpg",
+        "/products/bv-pdp/775546vcpq48966/3.jpg",
+        "/products/bv-pdp/775546vcpq48966/4.jpg",
+        "/products/bv-pdp/775546vcpq48966/5.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 530.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-men",
+        "bv-men-wallets",
+        "bv-men-wallets-small"
+      ],
+      "leafId": "bv-men-wallets-small",
+      "cgid": "men-small-wallets",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "775546VCPQ61975",
+      "sku": "775546VCPQ61975",
+      "internalId": "814514359",
+      "name": "Intrecciato Small Bi-Fold Wallet",
+      "brand": "bottega veneta",
+      "color": "Volcanic grey/basil",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/intrecciato-small-bi-fold-wallet-volcanic-grey-basil-775546VCPQ61975.html",
+      "url": "https://www.bottegaveneta.com/en-gb/intrecciato-small-bi-fold-wallet-volcanic-grey-basil-775546VCPQ61975.html",
+      "gbpPrice": 560.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Volcanic Grey/Basil",
+        "Lining: Calfskin",
+        "Hardware: Silver finish"
+      ],
+      "longDescription": [
+        "Intrecciato bi-colour calfskin leather wallet",
+        "Six card slots, one bill compartment, one L-zipped coin purse",
+        "Press stud closure"
+      ],
+      "compactedLongDesc": "Small bi-fold wallet in Intrecciato calf leather with contrasted interior.",
+      "composition": "• Material: calfskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 10 cm | 4\"\n\n• Width: 9 cm | 3.5\"\n\n• Depth: 2 cm | 0.4\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/f2035421-e1dc-4e73-9f64-53309dee0f54/eCom/775546VCPQ61975_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/760649be-e2cd-4dd6-9fd3-32ac6e1923c0/eCom/775546VCPQ61975_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/40c4734a-ba75-4502-a772-2643bc37658e/eCom/775546VCPQ61975_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/a141c705-81f1-438f-bae0-d4ae46d8b00a/eCom/775546VCPQ61975_E.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/f2035421-e1dc-4e73-9f64-53309dee0f54/Small/775546VCPQ61975_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/775546vcpq61975/1.jpg",
+        "/products/bv-pdp/775546vcpq61975/2.jpg",
+        "/products/bv-pdp/775546vcpq61975/3.jpg",
+        "/products/bv-pdp/775546vcpq61975/4.jpg",
+        "/products/bv-pdp/775546vcpq61975/5.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 560.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-men",
+        "bv-men-wallets",
+        "bv-men-wallets-small"
+      ],
+      "leafId": "bv-men-wallets-small",
+      "cgid": "men-small-wallets",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "796966V6PD14447",
+      "sku": "796966V6PD14447",
+      "internalId": "814514437",
+      "name": "Intrecciato Piccolo Bi-Fold Wallet",
+      "brand": "bottega veneta",
+      "color": "Deep sea/bark",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/intrecciato-piccolo-bi-fold-wallet-deep-sea-bark-796966V6PD14447.html",
+      "url": "https://www.bottegaveneta.com/en-gb/intrecciato-piccolo-bi-fold-wallet-deep-sea-bark-796966V6PD14447.html",
+      "gbpPrice": 560.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Deep Sea/Bark",
+        "Lining: Calfskin"
+      ],
+      "longDescription": [
+        "Intrecciato piccolo bi-colour calfskin leather wallet",
+        "Eight card slots, two note compartments, two additional pockets",
+        "Our VN Preserve calfskin leather is realised through the BioBasedLeather® process, which ensures a limited presence of petrol-based components and exclusive reliance on renewable energy sources"
+      ],
+      "compactedLongDesc": "Bi-fold wallet in Intrecciato piccolo calf leather with contrasted interior.",
+      "composition": "• Material: calfskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 9.5 cm | 3.75\"\n\n• Width: 11 cm | 4.3\" \n\n• Depth: 1 cm | 0.44\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/aedd6b02-9abb-4f61-89ef-d51bb9a47658/eCom/796966V6PD14447_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/691ed46d-86cf-43cc-a7db-9438550c1699/eCom/796966V6PD14447_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/bbae38ec-caf4-410d-81e2-44484150ac1d/eCom/796966V6PD14447_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/aedd6b02-9abb-4f61-89ef-d51bb9a47658/Small/796966V6PD14447_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/796966v6pd14447/1.jpg",
+        "/products/bv-pdp/796966v6pd14447/2.jpg",
+        "/products/bv-pdp/796966v6pd14447/3.jpg",
+        "/products/bv-pdp/796966v6pd14447/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 560.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-men",
+        "bv-men-wallets",
+        "bv-men-wallets-small"
+      ],
+      "leafId": "bv-men-wallets-small",
+      "cgid": "men-small-wallets",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "A00DL4V4LQ28803",
+      "sku": "A00DL4V4LQ28803",
+      "internalId": "814511110",
+      "name": "Intrecciato Piccolo Slim Bi-Fold Wallet With Coin Purse",
+      "brand": "bottega veneta",
+      "color": "Black",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/intrecciato-piccolo-slim-bi-fold-wallet-with-coin-purse-black-A00DL4V4LQ28803.html",
+      "url": "https://www.bottegaveneta.com/en-gb/intrecciato-piccolo-slim-bi-fold-wallet-with-coin-purse-black-A00DL4V4LQ28803.html",
+      "gbpPrice": 530.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Black",
+        "Lining: Calfskin",
+        "Hardware: Silver finish"
+      ],
+      "longDescription": [
+        "Intrecciato piccolo calfskin leather slim wallet with coin purse",
+        "Two card slots, one bill compartment, one coin purse"
+      ],
+      "compactedLongDesc": "Slim bi-fold wallet in Intrecciato piccolo calf leather with coin purse.",
+      "composition": "• Material: calfskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 9 cm | 3.5\"\n\n• Width: 11 cm | 4.3\" \n\n• Depth: 2 cm | 0.4\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/98d505ef-3f97-4a50-8a83-fea7afad2a69/eCom/A00DL4V4LQ28803_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/fc6f0e7d-e844-43f7-992a-fcdbbea05b69/eCom/A00DL4V4LQ28803_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/2b2bc256-831f-4baf-b81d-28568ec28b7c/eCom/A00DL4V4LQ28803_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/98d505ef-3f97-4a50-8a83-fea7afad2a69/Small/A00DL4V4LQ28803_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a00dl4v4lq28803/1.jpg",
+        "/products/bv-pdp/a00dl4v4lq28803/2.jpg",
+        "/products/bv-pdp/a00dl4v4lq28803/3.jpg",
+        "/products/bv-pdp/a00dl4v4lq28803/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 530.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-men",
+        "bv-men-wallets",
+        "bv-men-wallets-small"
+      ],
+      "leafId": "bv-men-wallets-small",
+      "cgid": "men-small-wallets",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "861796V6PD14447",
+      "sku": "861796V6PD14447",
+      "internalId": "814514757",
+      "name": "Intrecciato Piccolo Zip Around Wallet",
+      "brand": "bottega veneta",
+      "color": "Deep sea/bark",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/intrecciato-piccolo-zip-around-wallet-deep-sea-bark-861796V6PD14447.html",
+      "url": "https://www.bottegaveneta.com/en-gb/intrecciato-piccolo-zip-around-wallet-deep-sea-bark-861796V6PD14447.html",
+      "gbpPrice": 800.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Deep Sea/Bark",
+        "Lining: Calfskin",
+        "Hardware: Silver finish"
+      ],
+      "longDescription": [
+        "Intrecciato piccolo bi-colour calfskin leather wallet",
+        "Eight card slots, two note compartments, two additional pockets, one zipped coin purse",
+        "Zip closure",
+        "Our VN Preserve calfskin leather is realised through the BioBasedLeather® process, which ensures a limited presence of petrol-based components and exclusive reliance on renewable energy sources"
+      ],
+      "compactedLongDesc": "Zip around wallet in Intrecciato piccolo calf leather with contrasted interior.",
+      "composition": "• Material: calfskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 10 cm | 4\"\n\n• Width: 19 cm | 7.5\"\n\n• Depth: 2 cm | 0.4\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/424ed51b-817d-41f0-ae58-1f414066c341/eCom/861796V6PD14447_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/e04f76e4-e3ac-4493-ac5d-1d51efff2f62/eCom/861796V6PD14447_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/7463415a-1bcf-48f5-9642-e9b682854e4b/eCom/861796V6PD14447_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/424ed51b-817d-41f0-ae58-1f414066c341/Small/861796V6PD14447_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/861796v6pd14447/1.jpg",
+        "/products/bv-pdp/861796v6pd14447/2.jpg",
+        "/products/bv-pdp/861796v6pd14447/3.jpg",
+        "/products/bv-pdp/861796v6pd14447/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 800.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-men",
+        "bv-men-wallets",
+        "bv-men-wallets-long"
+      ],
+      "leafId": "bv-men-wallets-long",
+      "cgid": "men-long-wallets",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "814838VCPQ61975",
+      "sku": "814838VCPQ61975",
+      "internalId": "814838VCPQ61975",
+      "name": "Intrecciato Zip Around Wallet",
+      "brand": "bottega veneta",
+      "color": "",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/intrecciato-zip-around-wallet-volcanic-grey-basil-814838VCPQ61975.html",
+      "url": "https://www.bottegaveneta.com/en-gb/intrecciato-zip-around-wallet-volcanic-grey-basil-814838VCPQ61975.html",
+      "gbpPrice": null,
+      "listGbpPrice": null,
+      "inStock": false,
+      "shortDescription": [
+        "Colour: Volcanic Grey/Basil",
+        "Lining: Calfskin",
+        "Hardware: Silver finish"
+      ],
+      "longDescription": [
+        "Intrecciato bi-colour calfskin leather wallet",
+        "Eight card slots, two note compartments, two additional pockets, one zipped coin purse",
+        "Zip closure"
+      ],
+      "compactedLongDesc": "Zip around wallet in Intrecciato calf leather with contrasted interior.",
+      "composition": "• Material: calfskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 10 cm | 4\"\n\n• Width: 19 cm | 7.5\"\n\n• Depth: 2 cm | 0.4\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/bce4b3b9-38b7-4bc3-9ef1-b219389348a0/eCom/814838VCPQ61975_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/34c1b664-e647-4617-ae82-45bfd790707b/eCom/814838VCPQ61975_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/6c87cb29-4d10-4cf7-b4d0-77c360398182/eCom/814838VCPQ61975_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/4a0400bf-0dc4-430d-87eb-66dfd5fa0e15/eCom/814838VCPQ61975_D.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/814838vcpq61975/1.jpg",
+        "/products/bv-pdp/814838vcpq61975/2.jpg",
+        "/products/bv-pdp/814838vcpq61975/3.jpg",
+        "/products/bv-pdp/814838vcpq61975/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "814838VCPQ61975",
+          "value": "OS",
+          "displayValue": "One Size",
+          "inStock": false,
+          "gbpPrice": null,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-men",
+        "bv-men-wallets",
+        "bv-men-wallets-long"
+      ],
+      "leafId": "bv-men-wallets-long",
+      "cgid": "men-long-wallets",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "814838VCPQ48966",
+      "sku": "814838VCPQ48966",
+      "internalId": "814514470",
+      "name": "Intrecciato Zip Around Wallet",
+      "brand": "bottega veneta",
+      "color": "Black",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/intrecciato-zip-around-wallet-black-814838VCPQ48966.html",
+      "url": "https://www.bottegaveneta.com/en-gb/intrecciato-zip-around-wallet-black-814838VCPQ48966.html",
+      "gbpPrice": 730.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Black",
+        "Lining: Calfskin",
+        "Hardware: Black finish"
+      ],
+      "longDescription": [
+        "Intrecciato calfskin leather wallet",
+        "Eight card slots, two note compartments, two additional pockets, one zipped coin purse",
+        "Zip closure"
+      ],
+      "compactedLongDesc": "Zip around wallet in Intrecciato calf leather.",
+      "composition": "• Material: calfskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 10 cm | 4\"\n\n• Width: 19 cm | 7.5\"\n\n• Depth: 2 cm | 0.4\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/0e8b2044-def1-4b72-bcef-383b48fe9fbd/eCom/814838VCPQ48966_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/b1209608-23eb-4a99-8743-de306f237188/eCom/814838VCPQ48966_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/283b3892-8e15-471d-894a-d2ff16681fab/eCom/814838VCPQ48966_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/0e8b2044-def1-4b72-bcef-383b48fe9fbd/Small/814838VCPQ48966_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/814838vcpq48966/1.jpg",
+        "/products/bv-pdp/814838vcpq48966/2.jpg",
+        "/products/bv-pdp/814838vcpq48966/3.jpg",
+        "/products/bv-pdp/814838vcpq48966/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 730.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-men",
+        "bv-men-wallets",
+        "bv-men-wallets-long"
+      ],
+      "leafId": "bv-men-wallets-long",
+      "cgid": "men-long-wallets",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "814838V2HLQ4435",
+      "sku": "814838V2HLQ4435",
+      "internalId": "814534946",
+      "name": "Intrecciato Zip-Around Wallet",
+      "brand": "bottega veneta",
+      "color": "Deep sea",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/intrecciato-zip-around-wallet-deep-sea-814838V2HLQ4435.html",
+      "url": "https://www.bottegaveneta.com/en-gb/intrecciato-zip-around-wallet-deep-sea-814838V2HLQ4435.html",
+      "gbpPrice": 730.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Deep Sea",
+        "Lining: Calfskin",
+        "Hardware: Silver finish"
+      ],
+      "longDescription": [
+        "Intrecciato calfskin and grained nubuck wallet",
+        "Eight card slots, two note compartments, two additional pockets, one zipped coin purse",
+        "Zip closure"
+      ],
+      "compactedLongDesc": "Zip-around wallet in Intrecciato calfskin and grained nubuck leather.",
+      "composition": "• Material: calfskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 10 cm | 4\"\n\n• Width: 19 cm | 7.5\"\n\n• Depth: 2 cm | 0.4\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/a52de7e8-cdfa-4688-b27f-4a489ffac89e/eCom/814838V2HLQ4435_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/0cba5aba-044b-493f-bcc4-54aad220b5cb/eCom/814838V2HLQ4435_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/c899bb00-062c-4b6e-8c4c-e7be1f5fcd36/eCom/814838V2HLQ4435_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/a52de7e8-cdfa-4688-b27f-4a489ffac89e/Small/814838V2HLQ4435_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/814838v2hlq4435/1.jpg",
+        "/products/bv-pdp/814838v2hlq4435/2.jpg",
+        "/products/bv-pdp/814838v2hlq4435/3.jpg",
+        "/products/bv-pdp/814838v2hlq4435/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 730.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-men",
+        "bv-men-wallets",
+        "bv-men-wallets-long"
+      ],
+      "leafId": "bv-men-wallets-long",
+      "cgid": "men-long-wallets",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "749434VCPQ61975",
+      "sku": "749434VCPQ61975",
+      "internalId": "814514308",
+      "name": "Intrecciato Long Wallet",
+      "brand": "bottega veneta",
+      "color": "Volcanic grey/basil",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/intrecciato-long-wallet-volcanic-grey-basil-749434VCPQ61975.html",
+      "url": "https://www.bottegaveneta.com/en-gb/intrecciato-long-wallet-volcanic-grey-basil-749434VCPQ61975.html",
+      "gbpPrice": 650.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Volcanic Grey/Basil",
+        "Lining: Calfskin",
+        "Hardware: Silver finish"
+      ],
+      "longDescription": [
+        "Intrecciato bi-colour calfskin leather wallet",
+        "Eighteen card slots, two note compartments, two additional pockets"
+      ],
+      "compactedLongDesc": "Long wallet in Intrecciato calf leather with contrasted interior.",
+      "composition": "• Material: calfskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 10 cm | 4\"\n\n• Width: 18 cm | 7.1\"\n\n• Depth: 1 cm | 0.44\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/9552bec2-3b9f-47fe-aa89-3f2f57d96a13/eCom/749434VCPQ61975_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/7798cc49-6549-4f19-bab7-e198fe6b7d77/eCom/749434VCPQ61975_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/31312b4e-719a-44ae-9d99-b14b39a64693/eCom/749434VCPQ61975_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/9552bec2-3b9f-47fe-aa89-3f2f57d96a13/Small/749434VCPQ61975_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/749434vcpq61975/1.jpg",
+        "/products/bv-pdp/749434vcpq61975/2.jpg",
+        "/products/bv-pdp/749434vcpq61975/3.jpg",
+        "/products/bv-pdp/749434vcpq61975/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 650.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-men",
+        "bv-men-wallets",
+        "bv-men-wallets-long"
+      ],
+      "leafId": "bv-men-wallets-long",
+      "cgid": "men-long-wallets",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "749449V5FC41919",
+      "sku": "749449V5FC41919",
+      "internalId": "814534938",
+      "name": "Intrecciato Credit Card Case",
+      "brand": "bottega veneta",
+      "color": "Volcanic grey/basil",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/intrecciato-credit-card-case-volcanic-grey-basil-749449V5FC41919.html",
+      "url": "https://www.bottegaveneta.com/en-gb/intrecciato-credit-card-case-volcanic-grey-basil-749449V5FC41919.html",
+      "gbpPrice": 350.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Volcanic Grey/Basil",
+        "Lining: Calfskin"
+      ],
+      "longDescription": [
+        "Intrecciato bi-colour calfskin leather card case with L-opening",
+        "Six card slots, one central pocket"
+      ],
+      "compactedLongDesc": "Credit card case in Intrecciato calf leather with contrasted interior.",
+      "composition": "• Material: calfskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 8 cm | 3.1\"\n\n• Width: 10.5 cm | 4.1\"\n\n• Depth: 0.5 cm | 0.2\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/2a64f45e-da01-4c5c-85f8-78e393fb0ce0/eCom/749449V5FC41919_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/c7dbd69a-5330-4603-b84c-63452f40a981/eCom/749449V5FC41919_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/2a64f45e-da01-4c5c-85f8-78e393fb0ce0/Small/749449V5FC41919_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/749449v5fc41919/1.jpg",
+        "/products/bv-pdp/749449v5fc41919/2.jpg",
+        "/products/bv-pdp/749449v5fc41919/3.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 350.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-men",
+        "bv-men-wallets",
+        "bv-men-wallets-card-cases"
+      ],
+      "leafId": "bv-men-wallets-card-cases",
+      "cgid": "men-card-cases",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "814657VCPQD1977",
+      "sku": "814657VCPQD1977",
+      "internalId": "814514467",
+      "name": "Intrecciato Business Card Case",
+      "brand": "bottega veneta",
+      "color": "Volcanic grey/basil",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/intrecciato-business-card-case-volcanic-grey-basil-814657VCPQD1977.html",
+      "url": "https://www.bottegaveneta.com/en-gb/intrecciato-business-card-case-volcanic-grey-basil-814657VCPQD1977.html",
+      "gbpPrice": 470.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Volcanic Grey/Basil",
+        "Lining: Calfskin",
+        "Hardware: Silver finish"
+      ],
+      "longDescription": [
+        "Intrecciato bi-colour calfskin leather card case",
+        "One compartment, one card slot, one back pocket"
+      ],
+      "compactedLongDesc": "Business card case in Intrecciato calf leather with contrasted back.",
+      "composition": "• Material: calfskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 7.5 cm | 3\"\n\n• Width: 11 cm | 4.3\" \n\n• Depth: 2.5 cm | 1.0\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/d10d3c5f-3d50-4144-8dd1-51e368253276/eCom/814657VCPQD1977_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/14c1c40c-1932-4cba-8732-c4f6c88272ac/eCom/814657VCPQD1977_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/e68ee497-b308-44d6-bc60-d20228ea94d8/eCom/814657VCPQD1977_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/d10d3c5f-3d50-4144-8dd1-51e368253276/Small/814657VCPQD1977_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/814657vcpqd1977/1.jpg",
+        "/products/bv-pdp/814657vcpqd1977/2.jpg",
+        "/products/bv-pdp/814657vcpqd1977/3.jpg",
+        "/products/bv-pdp/814657vcpqd1977/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 470.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-men",
+        "bv-men-wallets",
+        "bv-men-wallets-card-cases"
+      ],
+      "leafId": "bv-men-wallets-card-cases",
+      "cgid": "men-card-cases",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "749417V2HLQ4435",
+      "sku": "749417V2HLQ4435",
+      "internalId": "814514306",
+      "name": "Intrecciato Flap Card Case",
+      "brand": "bottega veneta",
+      "color": "Deep sea",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/intrecciato-flap-card-case-deep-sea-749417V2HLQ4435.html",
+      "url": "https://www.bottegaveneta.com/en-gb/intrecciato-flap-card-case-deep-sea-749417V2HLQ4435.html",
+      "gbpPrice": 410.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Deep Sea",
+        "Lining: Calfskin"
+      ],
+      "longDescription": [
+        "Intrecciato calfskin and grained nubuck card case",
+        "Six card slots, two additional pockets"
+      ],
+      "compactedLongDesc": "Flap card case in Intrecciato calfskin and grained nubuck leather.",
+      "composition": "• Material: calfskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 11.2 cm | 4.4\"\n\n• Width: 8 cm | 3.1\"\n\n• Depth: 1 cm | 0.44\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/15933d7d-e056-43c8-8c93-afbef1641eaf/eCom/749417V2HLQ4435_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/b999fac0-f5f6-4c96-bd89-6b5153eab19c/eCom/749417V2HLQ4435_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/cf7cc544-72cf-4c54-b277-c1d5dab95391/eCom/749417V2HLQ4435_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/15933d7d-e056-43c8-8c93-afbef1641eaf/Small/749417V2HLQ4435_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/749417v2hlq4435/1.jpg",
+        "/products/bv-pdp/749417v2hlq4435/2.jpg",
+        "/products/bv-pdp/749417v2hlq4435/3.jpg",
+        "/products/bv-pdp/749417v2hlq4435/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 410.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-men",
+        "bv-men-wallets",
+        "bv-men-wallets-card-cases"
+      ],
+      "leafId": "bv-men-wallets-card-cases",
+      "cgid": "men-card-cases",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "A00DL5V4LQ18803",
+      "sku": "A00DL5V4LQ18803",
+      "internalId": "814511111",
+      "name": "Intrecciato Piccolo L-Zip Card Case",
+      "brand": "bottega veneta",
+      "color": "Black",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/intrecciato-piccolo-l-zip-card-case-black-A00DL5V4LQ18803.html",
+      "url": "https://www.bottegaveneta.com/en-gb/intrecciato-piccolo-l-zip-card-case-black-A00DL5V4LQ18803.html",
+      "gbpPrice": 490.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Black",
+        "Lining: Calfskin",
+        "Hardware: Silver finish"
+      ],
+      "longDescription": [
+        "Intrecciato piccolo calfskin leather card case",
+        "One main compartment with L-zip closure",
+        "Five card slots, one flat pocket"
+      ],
+      "compactedLongDesc": "Zipped card case in Intrecciato piccolo calf leather.",
+      "composition": "• Material: calfskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 8 cm | 3.1\"\n\n• Width: 14.3 cm | 5.6\"\n\n• Depth: 0.5 cm | 0.2\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/c8a02a52-1a3d-41b7-9be4-1c9d567d1e6f/eCom/A00DL5V4LQ18803_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/dcaa8d22-95e9-4c01-bb44-b827e6e232a0/eCom/A00DL5V4LQ18803_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/66a440a6-d40f-420d-9ca7-4c8e2b58164a/eCom/A00DL5V4LQ18803_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/c8a02a52-1a3d-41b7-9be4-1c9d567d1e6f/Small/A00DL5V4LQ18803_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a00dl5v4lq18803/1.jpg",
+        "/products/bv-pdp/a00dl5v4lq18803/2.jpg",
+        "/products/bv-pdp/a00dl5v4lq18803/3.jpg",
+        "/products/bv-pdp/a00dl5v4lq18803/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 490.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-men",
+        "bv-men-wallets",
+        "bv-men-wallets-card-cases"
+      ],
+      "leafId": "bv-men-wallets-card-cases",
+      "cgid": "men-card-cases",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "749417VCPQ61975",
+      "sku": "749417VCPQ61975",
+      "internalId": "814514305",
+      "name": "Intrecciato Flap Card Case",
+      "brand": "bottega veneta",
+      "color": "Volcanic grey/basil",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/intrecciato-flap-card-case-volcanic-grey-basil-749417VCPQ61975.html",
+      "url": "https://www.bottegaveneta.com/en-gb/intrecciato-flap-card-case-volcanic-grey-basil-749417VCPQ61975.html",
+      "gbpPrice": 440.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Volcanic Grey/Basil",
+        "Lining: Calfskin"
+      ],
+      "longDescription": [
+        "Intrecciato bi-colour calfskin leather card case",
+        "Six card slots, two additional pockets"
+      ],
+      "compactedLongDesc": "Flap card case in Intrecciato calf leather with contrasted interior.",
+      "composition": "• Material: calfskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 11.2 cm | 4.4\"\n\n• Width: 8 cm | 3.1\"\n\n• Depth: 1 cm | 0.44\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/e0cef3ef-66e4-437d-929f-102153cd37da/eCom/749417VCPQ61975_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/cd192a18-1521-4943-88e3-468f84683678/eCom/749417VCPQ61975_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/6d146a89-13bc-4aa9-8a21-b0674f1b7c67/eCom/749417VCPQ61975_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/e0cef3ef-66e4-437d-929f-102153cd37da/Small/749417VCPQ61975_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/749417vcpq61975/1.jpg",
+        "/products/bv-pdp/749417vcpq61975/2.jpg",
+        "/products/bv-pdp/749417vcpq61975/3.jpg",
+        "/products/bv-pdp/749417vcpq61975/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 440.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-men",
+        "bv-men-wallets",
+        "bv-men-wallets-card-cases"
+      ],
+      "leafId": "bv-men-wallets-card-cases",
+      "cgid": "men-card-cases",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "844018V2HL08966",
+      "sku": "844018V2HL08966",
+      "internalId": "814514606",
+      "name": "Traveler Phone Pouch",
+      "brand": "bottega veneta",
+      "color": "Black",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/traveler-phone-pouch-black-844018V2HL08966.html",
+      "url": "https://www.bottegaveneta.com/en-gb/traveler-phone-pouch-black-844018V2HL08966.html",
+      "gbpPrice": 1430.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Black",
+        "Lining: Canvas",
+        "Hardware: Black finish"
+      ],
+      "longDescription": [
+        "Intrecciato calfskin leather phone pouch",
+        "Adjustable cross-body strap",
+        "One main compartment, one flat inside pocket",
+        "Zip closure"
+      ],
+      "compactedLongDesc": "Phone pouch in Intrecciato calf leather with adjustable cross-body strap.",
+      "composition": "• Material: calfskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 12 cm | 4.7\"\n\n• Width: 20 cm | 7.9\"\n\n• Depth: 5.5 cm | 2.1\"\n\n• Strap drop: 52 cm | 20.5\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/1b5c0076-3261-4080-8ebe-b2b246798071/eCom/844018V2HL08966_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/ac25ccd0-e979-4bfd-81a5-df5120a2e39d/eCom/844018V2HL08966_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/9dcb6b44-ccbc-4b84-9e6a-5b55aaa0a343/eCom/844018V2HL08966_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/f843a723-9e55-4c4a-9547-be8627ecda8c/eCom/844018V2HL08966_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/1b5c0076-3261-4080-8ebe-b2b246798071/Small/844018V2HL08966_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/844018v2hl08966/1.jpg",
+        "/products/bv-pdp/844018v2hl08966/2.jpg",
+        "/products/bv-pdp/844018v2hl08966/3.jpg",
+        "/products/bv-pdp/844018v2hl08966/4.jpg",
+        "/products/bv-pdp/844018v2hl08966/5.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 1430.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-men",
+        "bv-men-wallets",
+        "bv-men-wallets-pouches"
+      ],
+      "leafId": "bv-men-wallets-pouches",
+      "cgid": "men-pouches",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "876093V6TO24447",
+      "sku": "876093V6TO24447",
+      "internalId": "814515375",
+      "name": "Intrecciato Piccolo Prism Pouch",
+      "brand": "bottega veneta",
+      "color": "Deep sea/bark",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/intrecciato-piccolo-prism-pouch-deep-sea-bark-876093V6TO24447.html",
+      "url": "https://www.bottegaveneta.com/en-gb/intrecciato-piccolo-prism-pouch-deep-sea-bark-876093V6TO24447.html",
+      "gbpPrice": 1700.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Deep Sea/Bark",
+        "Lining: Calfskin",
+        "Hardware: Silver finish"
+      ],
+      "longDescription": [
+        "Intrecciato piccolo bi-colour nappa leather pouch with detachable wristlet",
+        "One single compartment, one internal flat leather pocket with six card slots",
+        "Single exterior front pocket with magnetic closure",
+        "Detachable leather wristlet with a hook",
+        "Zip closure"
+      ],
+      "compactedLongDesc": "Pouch in Intrecciato piccolo nappa leather with contrasted interior, featuring a detachable wristlet.",
+      "composition": "• Material: lambskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 17.5 cm | 6.9\"\n\n• Width: 26 cm | 10.2\"\n\n• Depth: 6 cm | 2.3\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/913a541b-b1b3-487c-bf74-cd5e00600549/eCom/876093V6TO24447_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/4d2a6304-8f7a-4bdf-a903-998c0267ea7d/eCom/876093V6TO24447_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/9deaa2c7-beb8-4f86-9e1b-30682feacdbf/eCom/876093V6TO24447_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/5287fe97-89d1-4e66-baad-40aef5cab940/eCom/876093V6TO24447_F.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/913a541b-b1b3-487c-bf74-cd5e00600549/Small/876093V6TO24447_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/876093v6to24447/1.jpg",
+        "/products/bv-pdp/876093v6to24447/2.jpg",
+        "/products/bv-pdp/876093v6to24447/3.jpg",
+        "/products/bv-pdp/876093v6to24447/4.jpg",
+        "/products/bv-pdp/876093v6to24447/5.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 1700.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-men",
+        "bv-men-wallets",
+        "bv-men-wallets-pouches"
+      ],
+      "leafId": "bv-men-wallets-pouches",
+      "cgid": "men-pouches",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "857931V2HL01972",
+      "sku": "857931V2HL01972",
+      "internalId": "814514756",
+      "name": "Intrecciato Mini Bag With Flap",
+      "brand": "bottega veneta",
+      "color": "Volcanic grey",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/intrecciato-mini-bag-with-flap-volcanic-grey-857931V2HL01972.html",
+      "url": "https://www.bottegaveneta.com/en-gb/intrecciato-mini-bag-with-flap-volcanic-grey-857931V2HL01972.html",
+      "gbpPrice": 1730.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Volcanic Grey",
+        "Lining: Nappa",
+        "Hardware: Silver"
+      ],
+      "longDescription": [
+        "Intrecciato calfskin leather mini bag",
+        "Adjustable and detachable top handle and cross-body strap",
+        "One main compartment, one flat inside pocket",
+        "Flap closure"
+      ],
+      "compactedLongDesc": "Mini bag with flap in Intrecciato calf leather, featuring an adjustable and detachable top handle and cross-body strap.",
+      "composition": "• Material: calfskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 12 cm | 4.7\"\n\n• Width: 20 cm | 7.9\"\n\n• Depth: 6.5 cm | 2.5\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/cc9714d7-a59e-486f-8df1-cb084c12397c/eCom/857931V2HL01972_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/2ff33be4-7e53-4351-a564-3e7b8400febf/eCom/857931V2HL01972_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/989042bf-5776-486e-a717-35a13a079a36/eCom/857931V2HL01972_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/cb3e7a08-e95b-442b-8518-6c88d2440e5b/eCom/857931V2HL01972_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/8f4ca41f-97b5-4d8c-9b4c-8caad25ea282/eCom/857931V2HL01972_E.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/cc9714d7-a59e-486f-8df1-cb084c12397c/Small/857931V2HL01972_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/857931v2hl01972/1.jpg",
+        "/products/bv-pdp/857931v2hl01972/2.jpg",
+        "/products/bv-pdp/857931v2hl01972/3.jpg",
+        "/products/bv-pdp/857931v2hl01972/4.jpg",
+        "/products/bv-pdp/857931v2hl01972/5.jpg",
+        "/products/bv-pdp/857931v2hl01972/6.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 1730.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-men",
+        "bv-men-wallets",
+        "bv-men-wallets-pouches"
+      ],
+      "leafId": "bv-men-wallets-pouches",
+      "cgid": "men-pouches",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "795712V2HL18966",
+      "sku": "795712V2HL18966",
+      "internalId": "814514390",
+      "name": "Intrecciato Prism Pouch",
+      "brand": "bottega veneta",
+      "color": "Black",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/intrecciato-prism-pouch-black-795712V2HL18966.html",
+      "url": "https://www.bottegaveneta.com/en-gb/intrecciato-prism-pouch-black-795712V2HL18966.html",
+      "gbpPrice": 1430.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Black",
+        "Lining: Nylon",
+        "Hardware: Black finish"
+      ],
+      "longDescription": [
+        "One single compartment, one internal flat leather pocket with six card slots",
+        "Single exterior front pocket with magnetic closure",
+        "Detachable leather wristlet with a hook",
+        "Zip closure"
+      ],
+      "compactedLongDesc": "Pouch in Intrecciato calf leather with detachable wristlet.",
+      "composition": "• Material: calfskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 17 cm | 6.7\"\n\n• Width: 25 cm | 9.8\"\n\n• Depth: 4 cm | 1.6\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/db27b1bf-fc99-439c-8219-e0776eeaa7a5/eCom/795712V2HL18966_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/3d9d3d7a-5989-4fcd-a804-c3870271e2df/eCom/795712V2HL18966_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/e201a3d3-e51e-45d9-86b7-60b008a2276b/eCom/795712V2HL18966_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/1e06f5be-7811-493e-b87f-ce21d8f0e4c9/eCom/795712V2HL18966_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/db27b1bf-fc99-439c-8219-e0776eeaa7a5/Small/795712V2HL18966_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/795712v2hl18966/1.jpg",
+        "/products/bv-pdp/795712v2hl18966/2.jpg",
+        "/products/bv-pdp/795712v2hl18966/3.jpg",
+        "/products/bv-pdp/795712v2hl18966/4.jpg",
+        "/products/bv-pdp/795712v2hl18966/5.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 1430.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-men",
+        "bv-men-wallets",
+        "bv-men-wallets-pouches"
+      ],
+      "leafId": "bv-men-wallets-pouches",
+      "cgid": "men-pouches",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "729295VCPQD1977",
+      "sku": "729295VCPQD1977",
+      "internalId": "814514254",
+      "name": "Intrecciato Travel Pouch",
+      "brand": "bottega veneta",
+      "color": "Volcanic grey/basil",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/intrecciato-travel-pouch-volcanic-grey-basil-729295VCPQD1977.html",
+      "url": "https://www.bottegaveneta.com/en-gb/intrecciato-travel-pouch-volcanic-grey-basil-729295VCPQD1977.html",
+      "gbpPrice": 1520.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Volcanic Grey/Basil",
+        "Lining: Light Paper Nylon",
+        "Hardware: Silver finish"
+      ],
+      "longDescription": [
+        "Intrecciato bi-colour calfskin leather pouch with handle",
+        "One interior zipped pocket, one open pocket",
+        "Zip closure"
+      ],
+      "compactedLongDesc": "Travel pouch in Intrecciato calf leather with handle and contrasted interior.",
+      "composition": "• Material: calfskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 13 cm | 5.1\"\n\n• Width: 26 cm | 10.2\"\n\n• Depth: 10 cm | 3.9\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/21dd5dc3-a091-4521-a35a-6eb7d9d65852/eCom/729295VCPQD1977_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/a02f796a-813d-45e9-b6a0-3ce611b32910/eCom/729295VCPQD1977_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/79d74c74-2312-40b3-90e5-df7d57a2f58f/eCom/729295VCPQD1977_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/21dd5dc3-a091-4521-a35a-6eb7d9d65852/Small/729295VCPQD1977_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/729295vcpqd1977/1.jpg",
+        "/products/bv-pdp/729295vcpqd1977/2.jpg",
+        "/products/bv-pdp/729295vcpqd1977/3.jpg",
+        "/products/bv-pdp/729295vcpqd1977/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 1520.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-men",
+        "bv-men-wallets",
+        "bv-men-wallets-pouches"
+      ],
+      "leafId": "bv-men-wallets-pouches",
+      "cgid": "men-pouches",
       "hubCategory": "accessories"
     }
   ]

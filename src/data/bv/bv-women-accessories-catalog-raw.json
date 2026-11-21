@@ -1,7 +1,7 @@
 {
   "hub": "women-accessories",
   "category": "accessories",
-  "scrapedAt": "2026-11-11T21:55:12.108080+00:00",
+  "scrapedAt": "2026-11-20T23:30:13.898533+00:00",
   "leaves": [
     "bv-women-acc-key-rings",
     "bv-women-acc-belts",
@@ -13,28 +13,28 @@
   ],
   "leafCounts": {
     "bv-women-acc-key-rings": {
-      "official": 74,
-      "scraped": 74
+      "official": 61,
+      "scraped": 61
     },
     "bv-women-acc-belts": {
-      "official": 31,
-      "scraped": 31
+      "official": 23,
+      "scraped": 23
     },
     "bv-women-acc-tech": {
-      "official": 4,
-      "scraped": 4
+      "official": 2,
+      "scraped": 2
     },
     "bv-women-acc-scarves": {
-      "official": 22,
-      "scraped": 22
+      "official": 6,
+      "scraped": 6
     },
     "bv-women-acc-gloves": {
-      "official": 7,
-      "scraped": 7
+      "official": 6,
+      "scraped": 6
     },
     "bv-women-acc-hats": {
-      "official": 11,
-      "scraped": 11
+      "official": 13,
+      "scraped": 13
     },
     "bv-women-acc-bathrobes": {
       "official": 2,
@@ -1678,12 +1678,12 @@
       "id": "A006LVV6TO08803",
       "sku": "A006LVV6TO08803",
       "internalId": "814446669",
-      "name": "Key Holder Necklace ",
+      "name": "Key Holder Necklace",
       "brand": "bottega veneta",
       "color": "Black",
       "gender": "Men",
-      "link": "https://www.bottegaveneta.com/en-gb/key-holder-necklace--black-A006LVV6TO08803.html",
-      "url": "https://www.bottegaveneta.com/en-gb/key-holder-necklace--black-A006LVV6TO08803.html",
+      "link": "https://www.bottegaveneta.com/en-gb/key-holder-necklace-black-A006LVV6TO08803.html",
+      "url": "https://www.bottegaveneta.com/en-gb/key-holder-necklace-black-A006LVV6TO08803.html",
       "gbpPrice": 440.0,
       "listGbpPrice": null,
       "inStock": true,
@@ -1741,6 +1741,7 @@
       },
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/018b245e-419a-41d0-9c57-d9ae7c067292/eCom/A006LVV6TO08803_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/1dca9573-6ede-43e5-a0a3-7097056e6204/eCom/A006LVV6TO08803_B.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/d4909080-b8e7-432c-ac1d-ba17aaa4fcd1/eCom/A006LVV6TO08803_C.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/d1e9a35c-8578-4108-ad25-c142da078247/eCom/A006LVV6TO08803_D.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/018b245e-419a-41d0-9c57-d9ae7c067292/Small/A006LVV6TO08803_A.jpg?v=1"
@@ -1749,7 +1750,8 @@
         "/products/bv-pdp/a006lvv6to08803/1.jpg",
         "/products/bv-pdp/a006lvv6to08803/2.jpg",
         "/products/bv-pdp/a006lvv6to08803/3.jpg",
-        "/products/bv-pdp/a006lvv6to08803/4.jpg"
+        "/products/bv-pdp/a006lvv6to08803/4.jpg",
+        "/products/bv-pdp/a006lvv6to08803/5.jpg"
       ],
       "sizes": [
         {
@@ -3360,7 +3362,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/onda-key-ring-deep-mahogany-867867V3D806149.html",
       "gbpPrice": 350.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Deep Mahogany",
         "Hardware: Brass Vibrato finish",
@@ -3424,7 +3426,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 350.0,
           "listGbpPrice": null
         }
@@ -3650,7 +3652,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/badge-holder-on-strap-fondant-855187V4L312113.html",
       "gbpPrice": 350.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Calfskin",
         "Colour: Fondant"
@@ -3718,7 +3720,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 350.0,
           "listGbpPrice": null
         }
@@ -6494,7 +6496,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/letter-i-charm-abyss-844681V3D814140.html",
       "gbpPrice": 380.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Unlined",
         "Colour: Abyss"
@@ -6560,7 +6562,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 380.0,
           "listGbpPrice": null
         }
@@ -6853,7 +6855,7 @@
           "id": "85",
           "value": "85",
           "displayValue": "85",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 710.0,
           "listGbpPrice": null
         },
@@ -7065,12 +7067,12 @@
       "id": "855245VCPP51208",
       "sku": "855245VCPP51208",
       "internalId": "855245VCPP51208",
-      "name": "Andiamo Belt ",
+      "name": "Andiamo Belt",
       "brand": "bottega veneta",
       "color": "Black",
       "gender": "Women",
-      "link": "https://www.bottegaveneta.com/en-gb/andiamo-belt--black-855245VCPP51208.html",
-      "url": "https://www.bottegaveneta.com/en-gb/andiamo-belt--black-855245VCPP51208.html",
+      "link": "https://www.bottegaveneta.com/en-gb/andiamo-belt-black-855245VCPP51208.html",
+      "url": "https://www.bottegaveneta.com/en-gb/andiamo-belt-black-855245VCPP51208.html",
       "gbpPrice": 710.0,
       "listGbpPrice": null,
       "inStock": true,
@@ -7179,7 +7181,7 @@
           "id": "80",
           "value": "80",
           "displayValue": "80",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 710.0,
           "listGbpPrice": null
         },
@@ -7521,12 +7523,12 @@
       "id": "806097VCPP51778",
       "sku": "806097VCPP51778",
       "internalId": "806097VCPP51778",
-      "name": "Andiamo Belt ",
+      "name": "Andiamo Belt",
       "brand": "bottega veneta",
       "color": "Silica grey",
       "gender": "Women",
-      "link": "https://www.bottegaveneta.com/en-gb/andiamo-belt--silica-grey-806097VCPP51778.html",
-      "url": "https://www.bottegaveneta.com/en-gb/andiamo-belt--silica-grey-806097VCPP51778.html",
+      "link": "https://www.bottegaveneta.com/en-gb/andiamo-belt-silica-grey-806097VCPP51778.html",
+      "url": "https://www.bottegaveneta.com/en-gb/andiamo-belt-silica-grey-806097VCPP51778.html",
       "gbpPrice": 710.0,
       "listGbpPrice": null,
       "inStock": true,
@@ -7665,7 +7667,7 @@
           "id": "100",
           "value": "100",
           "displayValue": "100",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 710.0,
           "listGbpPrice": null
         }
@@ -7972,7 +7974,7 @@
           "id": "85",
           "value": "85",
           "displayValue": "85",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 580.0,
           "listGbpPrice": null
         },
@@ -8436,7 +8438,7 @@
           "id": "90",
           "value": "90",
           "displayValue": "90",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 560.0,
           "listGbpPrice": null
         },
@@ -8836,7 +8838,7 @@
           "id": "S",
           "value": "S",
           "displayValue": "S",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 620.0,
           "listGbpPrice": null
         },
@@ -10282,7 +10284,7 @@
           "id": "85",
           "value": "85",
           "displayValue": "85",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 525.0,
           "listGbpPrice": null
         },
@@ -10298,7 +10300,7 @@
           "id": "95",
           "value": "95",
           "displayValue": "95",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 525.0,
           "listGbpPrice": null
         }
@@ -10327,7 +10329,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/thin-watch-belt-black-805803V4R011019.html",
       "gbpPrice": 410.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Calfskin",
         "Colour: Black",
@@ -10436,7 +10438,7 @@
           "id": "80",
           "value": "80",
           "displayValue": "80",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 410.0,
           "listGbpPrice": null
         },
@@ -10444,7 +10446,7 @@
           "id": "85",
           "value": "85",
           "displayValue": "85",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 410.0,
           "listGbpPrice": null
         },
@@ -10452,7 +10454,7 @@
           "id": "90",
           "value": "90",
           "displayValue": "90",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 410.0,
           "listGbpPrice": null
         },
@@ -10608,7 +10610,7 @@
           "id": "80",
           "value": "80",
           "displayValue": "80",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 380.0,
           "listGbpPrice": null
         },
@@ -10624,7 +10626,7 @@
           "id": "90",
           "value": "90",
           "displayValue": "90",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 380.0,
           "listGbpPrice": null
         },
@@ -10669,7 +10671,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/knot-belt-black-837003V4R431019.html",
       "gbpPrice": 620.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Calfskin",
         "Colour: Black",
@@ -10782,7 +10784,7 @@
           "id": "80",
           "value": "80",
           "displayValue": "80",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 620.0,
           "listGbpPrice": null
         },
@@ -13841,7 +13843,7 @@
           "id": "7_5",
           "value": "7_5",
           "displayValue": "7.5",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 670.0,
           "listGbpPrice": null
         },
@@ -13849,7 +13851,7 @@
           "id": "8",
           "value": "8",
           "displayValue": "8",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 670.0,
           "listGbpPrice": null
         },
@@ -13857,7 +13859,7 @@
           "id": "8_5",
           "value": "8_5",
           "displayValue": "8.5",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 670.0,
           "listGbpPrice": null
         }
@@ -13948,7 +13950,7 @@
           "id": "6_5",
           "value": "6_5",
           "displayValue": "6.5",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 670.0,
           "listGbpPrice": null
         },
@@ -13956,7 +13958,7 @@
           "id": "7",
           "value": "7",
           "displayValue": "7",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 670.0,
           "listGbpPrice": null
         },
@@ -13964,7 +13966,7 @@
           "id": "7_5",
           "value": "7_5",
           "displayValue": "7.5",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 670.0,
           "listGbpPrice": null
         },
@@ -14212,7 +14214,7 @@
           "id": "7_5",
           "value": "7_5",
           "displayValue": "7.5",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 670.0,
           "listGbpPrice": null
         },
@@ -14220,7 +14222,7 @@
           "id": "8",
           "value": "8",
           "displayValue": "8",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 670.0,
           "listGbpPrice": null
         },
@@ -15225,7 +15227,7 @@
           "id": "M",
           "value": "M",
           "displayValue": "M",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 180.0,
           "listGbpPrice": null
         },
@@ -15523,7 +15525,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/sardine-hair-clip-yellow-gold-857329VAHU08120.html",
       "gbpPrice": 430.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Yellow Gold"
       ],
@@ -15646,7 +15648,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 430.0,
           "listGbpPrice": null
         }
@@ -15674,7 +15676,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/sardine-hair-clip-silver-857329V50708117.html",
       "gbpPrice": 400.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Silver"
       ],
@@ -15799,7 +15801,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 400.0,
           "listGbpPrice": null
         }
@@ -16571,6 +16573,7 @@
         "https://bottega-veneta.dam.kering.com/asset/b979bba5-c4f8-49fd-9439-a0cd1f126f16/eCom/A00A39V77G11090_B.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/309fa4ee-5a53-4577-a2eb-881b714f6930/eCom/A00A39V77G11090_C.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/febb36a6-4c37-410a-9087-9fc6adc8ea73/eCom/A00A39V77G11090_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/c5699503-8c33-43b1-94d1-a8aa2340ac10/eCom/A00A39V77G11090_E.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/43ca7b22-1a02-46c9-af30-b59eab73234d/eCom/A00A39V77G11090_F.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/3f61e4d7-13bc-4e3c-90ce-babfa4e58ed0/Small/A00A39V77G11090_A.jpg?v=1"
       ],
@@ -16580,7 +16583,8 @@
         "/products/bv-pdp/a00a39v77g11090/3.jpg",
         "/products/bv-pdp/a00a39v77g11090/4.jpg",
         "/products/bv-pdp/a00a39v77g11090/5.jpg",
-        "/products/bv-pdp/a00a39v77g11090/6.jpg"
+        "/products/bv-pdp/a00a39v77g11090/6.jpg",
+        "/products/bv-pdp/a00a39v77g11090/7.jpg"
       ],
       "sizes": [
         {
@@ -16664,7 +16668,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/dog-charm-obsidian-grey-dark-truffle-A006A7V3D841927.html",
       "gbpPrice": 580.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Obsidian Grey/Dark Truffle"
       ],
@@ -16729,7 +16733,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 580.0,
           "listGbpPrice": null
         }
@@ -16759,7 +16763,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/dog-charm-espresso-gingerbread-A006A7V3D842453.html",
       "gbpPrice": 580.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Colour: Espresso/Gingerbread"
       ],
@@ -16824,7 +16828,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 580.0,
           "listGbpPrice": null
         }
@@ -20355,6 +20359,971 @@
       ],
       "leafId": "bv-women-acc-key-rings",
       "cgid": "women-key-rings",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "807068V3D818913",
+      "sku": "807068V3D818913",
+      "internalId": "814514462",
+      "name": "Dog Charm",
+      "brand": "bottega veneta",
+      "color": "Bright red",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/dog-charm-bright-red-807068V3D818913.html",
+      "url": "https://www.bottegaveneta.com/en-gb/dog-charm-bright-red-807068V3D818913.html",
+      "gbpPrice": 530.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Bright Red",
+        "Lining: Unlined"
+      ],
+      "longDescription": [
+        "Intreccio nappa leather dog charm",
+        "Bottega Veneta leather tag",
+        "Leather lanyard designed to be attached to any handle"
+      ],
+      "compactedLongDesc": "Charm realised in Intreccio nappa leather with dog shape, featuring a leather lanyard.",
+      "composition": "• Material: lambskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 7 cm | 2.7\"\n\n• Width: 7.5 cm | 2.9\"\n\n• Depth: 3 cm | 1.2\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/60752199-64f3-4819-aebd-021b5cf8dff4/eCom/807068V3D818913_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/54a34191-7d84-4aa1-8b06-a0567ca8ff3b/eCom/807068V3D818913_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/60752199-64f3-4819-aebd-021b5cf8dff4/Small/807068V3D818913_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/807068v3d818913/1.jpg",
+        "/products/bv-pdp/807068v3d818913/2.jpg",
+        "/products/bv-pdp/807068v3d818913/3.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 530.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-women",
+        "bv-women-accessories",
+        "bv-women-acc-key-rings"
+      ],
+      "leafId": "bv-women-acc-key-rings",
+      "cgid": "women-key-rings",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "A00EGQV3D864202",
+      "sku": "A00EGQV3D864202",
+      "internalId": "814512122",
+      "name": "Dog Charm",
+      "brand": "bottega veneta",
+      "color": "Abyss/indigo",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/dog-charm-abyss-indigo-A00EGQV3D864202.html",
+      "url": "https://www.bottegaveneta.com/en-gb/dog-charm-abyss-indigo-A00EGQV3D864202.html",
+      "gbpPrice": 620.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Abyss/Indigo",
+        "Lining: Unlined"
+      ],
+      "longDescription": [
+        "Intreccio nappa and denim dog charm",
+        "Bottega Veneta leather tag",
+        "Leather lanyard designed to be attached to any handle"
+      ],
+      "compactedLongDesc": "Charm realised in Intreccio nappa leather with dog shape, featuring denim detailing and a leather lanyard.",
+      "composition": "• Material: lambskin, cotton, polyester, polyamide, other fibers",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 7 cm | 2.7\"\n\n• Width: 7.5 cm | 2.9\"\n\n• Depth: 3 cm | 1.2\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/c65fa2fb-8a2d-43c1-a631-7ee27d74fd43/eCom/A00EGQV3D864202_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/9d2dcbae-268d-476b-bddc-c361af8eb8ec/eCom/A00EGQV3D864202_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/c65fa2fb-8a2d-43c1-a631-7ee27d74fd43/Small/A00EGQV3D864202_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a00egqv3d864202/1.jpg",
+        "/products/bv-pdp/a00egqv3d864202/2.jpg",
+        "/products/bv-pdp/a00egqv3d864202/3.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 620.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-women",
+        "bv-women-accessories",
+        "bv-women-acc-key-rings"
+      ],
+      "leafId": "bv-women-acc-key-rings",
+      "cgid": "women-key-rings",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "A00EPVV0HW52094",
+      "sku": "A00EPVV0HW52094",
+      "internalId": "A00EPVV0HW52094",
+      "name": "Tile Belt",
+      "brand": "bottega veneta",
+      "color": "Espresso",
+      "gender": "Women",
+      "link": "https://www.bottegaveneta.com/en-gb/tile-belt-espresso-A00EPVV0HW52094.html",
+      "url": "https://www.bottegaveneta.com/en-gb/tile-belt-espresso-A00EPVV0HW52094.html",
+      "gbpPrice": 560.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Espresso",
+        "Hardware: Gold finish",
+        "Lining: Calfskin"
+      ],
+      "longDescription": [
+        "Intrecciato piccolo leather belt",
+        "Metal elongated double buckle",
+        "Prong closure"
+      ],
+      "compactedLongDesc": "Belt in Intrecciato piccolo nappa leather with elongated metal double buckle.",
+      "composition": "• Material: lambskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 2 cm | 0.8\"\n• Depth: 0.5 cm | 0.2\"",
+      "sizeChartId": "default-W-BELTS",
+      "sizeGuide": {
+        "id": "default-W-BELTS",
+        "titleKo": "Women's Belts",
+        "noteKo": "보테가 베네타 공홈 사이즈 가이드 기준입니다.",
+        "headers": [
+          "BV",
+          "사이즈"
+        ],
+        "rows": [
+          [
+            "65",
+            "S"
+          ],
+          [
+            "70",
+            "S"
+          ],
+          [
+            "75",
+            "S"
+          ],
+          [
+            "80",
+            "M"
+          ],
+          [
+            "85",
+            "M"
+          ],
+          [
+            "90",
+            "M"
+          ],
+          [
+            "95",
+            "L"
+          ],
+          [
+            "100",
+            "L"
+          ],
+          [
+            "105",
+            "L"
+          ],
+          [
+            "110",
+            "L"
+          ]
+        ]
+      },
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/89416bd1-6b1a-4389-9abf-8d06e2b5e877/eCom/A00EPVV0HW52094_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/09184258-98cf-471c-bf68-7a8ca9d7b4c8/eCom/A00EPVV0HW52094_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/a6d27223-e869-4360-b3df-846c7c1e2019/eCom/A00EPVV0HW52094_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/89416bd1-6b1a-4389-9abf-8d06e2b5e877/Small/A00EPVV0HW52094_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a00epvv0hw52094/1.jpg",
+        "/products/bv-pdp/a00epvv0hw52094/2.jpg",
+        "/products/bv-pdp/a00epvv0hw52094/3.jpg",
+        "/products/bv-pdp/a00epvv0hw52094/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "70",
+          "value": "70",
+          "displayValue": "70",
+          "inStock": false,
+          "gbpPrice": 560.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "75",
+          "value": "75",
+          "displayValue": "75",
+          "inStock": true,
+          "gbpPrice": 560.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "80",
+          "value": "80",
+          "displayValue": "80",
+          "inStock": true,
+          "gbpPrice": 560.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "85",
+          "value": "85",
+          "displayValue": "85",
+          "inStock": true,
+          "gbpPrice": 560.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "90",
+          "value": "90",
+          "displayValue": "90",
+          "inStock": true,
+          "gbpPrice": 560.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-women",
+        "bv-women-accessories",
+        "bv-women-acc-belts"
+      ],
+      "leafId": "bv-women-acc-belts",
+      "cgid": "women-belts",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "855244V5N224448",
+      "sku": "855244V5N224448",
+      "internalId": "855244V5N224448",
+      "name": "Reverso Belt",
+      "brand": "bottega veneta",
+      "color": "Deep sea/olive stone",
+      "gender": "Women",
+      "link": "https://www.bottegaveneta.com/en-gb/reverso-belt-deep-sea-olive-stone-855244V5N224448.html",
+      "url": "https://www.bottegaveneta.com/en-gb/reverso-belt-deep-sea-olive-stone-855244V5N224448.html",
+      "gbpPrice": 560.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Deep Sea - Olive Stone",
+        "Hardware: Gold finish",
+        "Lining: Calfskin"
+      ],
+      "longDescription": [
+        "Reversible Intrecciato piccolo calfskin leather belt",
+        "Metal buckle",
+        "Prong closure"
+      ],
+      "compactedLongDesc": "Reversible belt in Intrecciato piccolo calf leather with metal buckle.",
+      "composition": "• Material: calfskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 2.5 cm | 1\"\n\n• Depth: 0.5 cm | 0.2\"",
+      "sizeChartId": "default-W-BELTS",
+      "sizeGuide": {
+        "id": "default-W-BELTS",
+        "titleKo": "Women's Belts",
+        "noteKo": "보테가 베네타 공홈 사이즈 가이드 기준입니다.",
+        "headers": [
+          "BV",
+          "사이즈"
+        ],
+        "rows": [
+          [
+            "65",
+            "S"
+          ],
+          [
+            "70",
+            "S"
+          ],
+          [
+            "75",
+            "S"
+          ],
+          [
+            "80",
+            "M"
+          ],
+          [
+            "85",
+            "M"
+          ],
+          [
+            "90",
+            "M"
+          ],
+          [
+            "95",
+            "L"
+          ],
+          [
+            "100",
+            "L"
+          ],
+          [
+            "105",
+            "L"
+          ],
+          [
+            "110",
+            "L"
+          ]
+        ]
+      },
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/ef100188-fafc-4cdc-ae62-12cb973de439/eCom/855244V5N224448_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/d323c360-9ec2-47d8-a53f-9da1f663b032/eCom/855244V5N224448_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/5150e568-ea8a-4dcb-88d6-556a78e17994/eCom/855244V5N224448_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/a28be9cc-37ab-4bfa-acef-4a1f53e43f51/eCom/855244V5N224448_E.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/ef100188-fafc-4cdc-ae62-12cb973de439/Small/855244V5N224448_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/855244v5n224448/1.jpg",
+        "/products/bv-pdp/855244v5n224448/2.jpg",
+        "/products/bv-pdp/855244v5n224448/3.jpg",
+        "/products/bv-pdp/855244v5n224448/4.jpg",
+        "/products/bv-pdp/855244v5n224448/5.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "70",
+          "value": "70",
+          "displayValue": "70",
+          "inStock": true,
+          "gbpPrice": 560.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "75",
+          "value": "75",
+          "displayValue": "75",
+          "inStock": true,
+          "gbpPrice": 560.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "80",
+          "value": "80",
+          "displayValue": "80",
+          "inStock": true,
+          "gbpPrice": 560.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "85",
+          "value": "85",
+          "displayValue": "85",
+          "inStock": true,
+          "gbpPrice": 560.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "90",
+          "value": "90",
+          "displayValue": "90",
+          "inStock": true,
+          "gbpPrice": 560.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "95",
+          "value": "95",
+          "displayValue": "95",
+          "inStock": true,
+          "gbpPrice": 560.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-women",
+        "bv-women-accessories",
+        "bv-women-acc-belts"
+      ],
+      "leafId": "bv-women-acc-belts",
+      "cgid": "women-belts",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "A00DZ4V7HP09060",
+      "sku": "A00DZ4V7HP09060",
+      "internalId": "814521982",
+      "name": "Silk Twill Foulard",
+      "brand": "bottega veneta",
+      "color": "Chalk/black",
+      "gender": "Women",
+      "link": "https://www.bottegaveneta.com/en-gb/silk-twill-foulard-chalk-black-A00DZ4V7HP09060.html",
+      "url": "https://www.bottegaveneta.com/en-gb/silk-twill-foulard-chalk-black-A00DZ4V7HP09060.html",
+      "gbpPrice": 270.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Color: Chalk/Black"
+      ],
+      "longDescription": [
+        "Silk twill foulard",
+        "Polka-dot print"
+      ],
+      "compactedLongDesc": "Foulard in lightweight silk with polka-dot print.",
+      "composition": "• Material: 100% silk",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• 70 x 70 cm",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/2d04959e-08b6-4464-8a7d-b1ba4668cfd8/eCom/A00DZ4V7HP09060_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/4fc6865a-7b47-4bfe-a8d0-a4c6a42d15a8/eCom/A00DZ4V7HP09060_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/65ec99ec-e720-4be6-80b2-7806ccab36e8/eCom/A00DZ4V7HP09060_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/2d04959e-08b6-4464-8a7d-b1ba4668cfd8/Small/A00DZ4V7HP09060_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a00dz4v7hp09060/1.jpg",
+        "/products/bv-pdp/a00dz4v7hp09060/2.jpg",
+        "/products/bv-pdp/a00dz4v7hp09060/3.jpg",
+        "/products/bv-pdp/a00dz4v7hp09060/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 270.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-women",
+        "bv-women-accessories",
+        "bv-women-acc-scarves"
+      ],
+      "leafId": "bv-women-acc-scarves",
+      "cgid": "women-scarves",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "A00C4ZV7EY02113",
+      "sku": "A00C4ZV7EY02113",
+      "internalId": "A00C4ZV7EY02113",
+      "name": "Leather Midi Gloves",
+      "brand": "bottega veneta",
+      "color": "Fondant",
+      "gender": "Women",
+      "link": "https://www.bottegaveneta.com/en-gb/leather-midi-gloves-fondant-A00C4ZV7EY02113.html",
+      "url": "https://www.bottegaveneta.com/en-gb/leather-midi-gloves-fondant-A00C4ZV7EY02113.html",
+      "gbpPrice": 700.0,
+      "listGbpPrice": null,
+      "inStock": false,
+      "shortDescription": [
+        "Color: Fondant"
+      ],
+      "longDescription": [
+        "Soft nappa leather midi gloves",
+        "Intrecciato leather detail",
+        "Fully lined in cashmere"
+      ],
+      "compactedLongDesc": "Midi gloves in soft nappa leather featuring internal Intrecciato detailing and a cashmere lining.",
+      "composition": "• Material: lambskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "",
+      "sizeChartId": "default-W-GLOVES",
+      "sizeGuide": {
+        "id": "default-W-GLOVES",
+        "titleKo": "Women's Gloves",
+        "noteKo": "보테가 베네타 공홈 사이즈 가이드 기준입니다.",
+        "headers": [
+          "BV",
+          "사이즈"
+        ],
+        "rows": [
+          [
+            "6",
+            "XS"
+          ],
+          [
+            "6.5",
+            "S"
+          ],
+          [
+            "7",
+            "S"
+          ],
+          [
+            "7.5",
+            "M"
+          ],
+          [
+            "8",
+            "L"
+          ],
+          [
+            "8.5",
+            "L"
+          ]
+        ]
+      },
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/530a84b5-2756-4d14-a92f-f6a98a8778c6/eCom/A00C4ZV7EY02113_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/530a84b5-2756-4d14-a92f-f6a98a8778c6/Small/A00C4ZV7EY02113_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a00c4zv7ey02113/1.jpg",
+        "/products/bv-pdp/a00c4zv7ey02113/2.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "6_5",
+          "value": "6_5",
+          "displayValue": "6.5",
+          "inStock": false,
+          "gbpPrice": 700.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "7",
+          "value": "7",
+          "displayValue": "7",
+          "inStock": false,
+          "gbpPrice": 700.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "7_5",
+          "value": "7_5",
+          "displayValue": "7.5",
+          "inStock": false,
+          "gbpPrice": 700.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "8",
+          "value": "8",
+          "displayValue": "8",
+          "inStock": false,
+          "gbpPrice": 700.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "8_5",
+          "value": "8_5",
+          "displayValue": "8.5",
+          "inStock": false,
+          "gbpPrice": 700.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-women",
+        "bv-women-accessories",
+        "bv-women-acc-gloves"
+      ],
+      "leafId": "bv-women-acc-gloves",
+      "cgid": "women-gloves",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "A00DYLV15E34037",
+      "sku": "A00DYLV15E34037",
+      "internalId": "814584765",
+      "name": "Intrecciato Leather Small Hair Clip",
+      "brand": "bottega veneta",
+      "color": "Denim",
+      "gender": "Women",
+      "link": "https://www.bottegaveneta.com/en-gb/intrecciato-leather-small-hair-clip-denim-A00DYLV15E34037.html",
+      "url": "https://www.bottegaveneta.com/en-gb/intrecciato-leather-small-hair-clip-denim-A00DYLV15E34037.html",
+      "gbpPrice": 560.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Denim"
+      ],
+      "longDescription": [
+        "Intrecciato nappa leather hair clip",
+        "Metal fastening"
+      ],
+      "compactedLongDesc": "Hair clip in Intrecciato nappa leather with metal fastening.",
+      "composition": "• Material: lambskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• External dimension: 40 x 65 mm",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/cb67925c-b2e7-429a-8c2d-a53ce3165091/eCom/A00DYLV15E34037_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/25c86c16-9cb6-40f6-b68a-288dfd3284bc/eCom/A00DYLV15E34037_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/ae15087e-195b-4c87-98b4-2c6d20f34e84/eCom/A00DYLV15E34037_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/cb67925c-b2e7-429a-8c2d-a53ce3165091/Small/A00DYLV15E34037_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a00dylv15e34037/1.jpg",
+        "/products/bv-pdp/a00dylv15e34037/2.jpg",
+        "/products/bv-pdp/a00dylv15e34037/3.jpg",
+        "/products/bv-pdp/a00dylv15e34037/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 560.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-women",
+        "bv-women-accessories",
+        "bv-women-acc-hats"
+      ],
+      "leafId": "bv-women-acc-hats",
+      "cgid": "women-hats",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "A00DYLVE3M15988",
+      "sku": "A00DYLVE3M15988",
+      "internalId": "814525292",
+      "name": "Intrecciato Leather Small Hair Clip",
+      "brand": "bottega veneta",
+      "color": "Blossom pink",
+      "gender": "Women",
+      "link": "https://www.bottegaveneta.com/en-gb/intrecciato-leather-small-hair-clip-blossom-pink-A00DYLVE3M15988.html",
+      "url": "https://www.bottegaveneta.com/en-gb/intrecciato-leather-small-hair-clip-blossom-pink-A00DYLVE3M15988.html",
+      "gbpPrice": 580.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Blossom Pink"
+      ],
+      "longDescription": [
+        "Intrecciato nappa leather hair clip",
+        "Metal fastening"
+      ],
+      "compactedLongDesc": "Hair clip in Intrecciato nappa leather with metal fastening.",
+      "composition": "• Material: lambskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• External dimension: 40 x 65 mm",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/cb3a0884-b5c1-4680-9c86-f2b9e41fce3d/eCom/A00DYLVE3M15988_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/a2df1714-f9ca-4a24-9754-868124fb58e2/eCom/A00DYLVE3M15988_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/0365862a-db95-46f9-a36d-39271518ebfb/eCom/A00DYLVE3M15988_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/e825cd04-5001-4f61-beb3-04ade350b3d8/eCom/A00DYLVE3M15988_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/cb3a0884-b5c1-4680-9c86-f2b9e41fce3d/Small/A00DYLVE3M15988_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a00dylve3m15988/1.jpg",
+        "/products/bv-pdp/a00dylve3m15988/2.jpg",
+        "/products/bv-pdp/a00dylve3m15988/3.jpg",
+        "/products/bv-pdp/a00dylve3m15988/4.jpg",
+        "/products/bv-pdp/a00dylve3m15988/5.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 580.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-women",
+        "bv-women-accessories",
+        "bv-women-acc-hats"
+      ],
+      "leafId": "bv-women-acc-hats",
+      "cgid": "women-hats",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "A00DYFVE3M12006",
+      "sku": "A00DYFVE3M12006",
+      "internalId": "814525288",
+      "name": "Intrecciato Leather Medium Clip",
+      "brand": "bottega veneta",
+      "color": "Espresso",
+      "gender": "Women",
+      "link": "https://www.bottegaveneta.com/en-gb/intrecciato-leather-medium-clip-espresso-A00DYFVE3M12006.html",
+      "url": "https://www.bottegaveneta.com/en-gb/intrecciato-leather-medium-clip-espresso-A00DYFVE3M12006.html",
+      "gbpPrice": 650.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Espresso"
+      ],
+      "longDescription": [
+        "Intrecciato nappa leather hair clip",
+        "Metal fastening"
+      ],
+      "compactedLongDesc": "Hair clip in Intrecciato nappa leather with metal fastening.",
+      "composition": "• Material: lambskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• External dimension: 90 x 50 mm",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/49b5ab93-a10e-4c56-b3af-7f8250828b4f/eCom/A00DYFVE3M12006_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/dbf7608a-2a16-4476-a367-f4c47eda3f76/eCom/A00DYFVE3M12006_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/b4c32e7c-4461-47e3-8ec9-f72f8b854da4/eCom/A00DYFVE3M12006_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/49b5ab93-a10e-4c56-b3af-7f8250828b4f/Small/A00DYFVE3M12006_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a00dyfve3m12006/1.jpg",
+        "/products/bv-pdp/a00dyfve3m12006/2.jpg",
+        "/products/bv-pdp/a00dyfve3m12006/3.jpg",
+        "/products/bv-pdp/a00dyfve3m12006/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 650.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-women",
+        "bv-women-accessories",
+        "bv-women-acc-hats"
+      ],
+      "leafId": "bv-women-acc-hats",
+      "cgid": "women-hats",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "A00DYFVE3M16176",
+      "sku": "A00DYFVE3M16176",
+      "internalId": "814525289",
+      "name": "Intrecciato Leather Medium Clip",
+      "brand": "bottega veneta",
+      "color": "Deep mahogany",
+      "gender": "Women",
+      "link": "https://www.bottegaveneta.com/en-gb/intrecciato-leather-medium-clip-deep-mahogany-A00DYFVE3M16176.html",
+      "url": "https://www.bottegaveneta.com/en-gb/intrecciato-leather-medium-clip-deep-mahogany-A00DYFVE3M16176.html",
+      "gbpPrice": 650.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Deep Mahogany"
+      ],
+      "longDescription": [
+        "Intrecciato nappa leather hair clip",
+        "Metal fastening"
+      ],
+      "compactedLongDesc": "Hair clip in Intrecciato nappa leather with metal fastening.",
+      "composition": "• Material: lambskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• External dimension: 90 x 50 mm",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/778d3d4c-ce86-4a21-98f2-79f9884ddbd8/eCom/A00DYFVE3M16176_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/7c478bee-4798-4179-b285-12304b20402b/eCom/A00DYFVE3M16176_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/1c0117ac-3329-4e92-a188-d27ff21f1aa9/eCom/A00DYFVE3M16176_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/778d3d4c-ce86-4a21-98f2-79f9884ddbd8/Small/A00DYFVE3M16176_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a00dyfve3m16176/1.jpg",
+        "/products/bv-pdp/a00dyfve3m16176/2.jpg",
+        "/products/bv-pdp/a00dyfve3m16176/3.jpg",
+        "/products/bv-pdp/a00dyfve3m16176/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 650.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-women",
+        "bv-women-accessories",
+        "bv-women-acc-hats"
+      ],
+      "leafId": "bv-women-acc-hats",
+      "cgid": "women-hats",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "A00DYMVE3M15988",
+      "sku": "A00DYMVE3M15988",
+      "internalId": "814525296",
+      "name": "Intrecciato Leather Large Clip",
+      "brand": "bottega veneta",
+      "color": "Blossom pink",
+      "gender": "Women",
+      "link": "https://www.bottegaveneta.com/en-gb/intrecciato-leather-large-clip-blossom-pink-A00DYMVE3M15988.html",
+      "url": "https://www.bottegaveneta.com/en-gb/intrecciato-leather-large-clip-blossom-pink-A00DYMVE3M15988.html",
+      "gbpPrice": 595.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Blossom Pink"
+      ],
+      "longDescription": [
+        "Intrecciato nappa leather hair clip",
+        "Metal fastening"
+      ],
+      "compactedLongDesc": "Hair clip in Intrecciato nappa leather with metal fastening.",
+      "composition": "• Material: lambskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• External dimension: 110 x 30 mm",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/0fcf4e2f-0bce-415a-ac0b-59c0eda1e363/eCom/A00DYMVE3M15988_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/926387d2-0451-4aef-a643-0b532f0edc44/eCom/A00DYMVE3M15988_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/dcc2eab8-24d6-47cb-bd92-9d38c3b0effd/eCom/A00DYMVE3M15988_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/0fcf4e2f-0bce-415a-ac0b-59c0eda1e363/Small/A00DYMVE3M15988_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a00dymve3m15988/1.jpg",
+        "/products/bv-pdp/a00dymve3m15988/2.jpg",
+        "/products/bv-pdp/a00dymve3m15988/3.jpg",
+        "/products/bv-pdp/a00dymve3m15988/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 595.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-women",
+        "bv-women-accessories",
+        "bv-women-acc-hats"
+      ],
+      "leafId": "bv-women-acc-hats",
+      "cgid": "women-hats",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "A00DYMVE3M11000",
+      "sku": "A00DYMVE3M11000",
+      "internalId": "814525295",
+      "name": "Intrecciato Leather Large Clip",
+      "brand": "bottega veneta",
+      "color": "Black",
+      "gender": "Women",
+      "link": "https://www.bottegaveneta.com/en-gb/intrecciato-leather-large-clip-black-A00DYMVE3M11000.html",
+      "url": "https://www.bottegaveneta.com/en-gb/intrecciato-leather-large-clip-black-A00DYMVE3M11000.html",
+      "gbpPrice": 595.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Black"
+      ],
+      "longDescription": [
+        "Intrecciato nappa leather hair clip",
+        "Metal fastening"
+      ],
+      "compactedLongDesc": "Hair clip in Intrecciato nappa leather with metal fastening.",
+      "composition": "• Material: lambskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• External dimension: 110 x 30 mm",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/4c4d31d5-5215-4a8e-b5e1-087687fc134e/eCom/A00DYMVE3M11000_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/9cdf18f6-746c-42b0-a801-ed73eae1fff6/eCom/A00DYMVE3M11000_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/7cb9f0b4-ac4f-4e9b-b8d5-f0c82e0cfaa3/eCom/A00DYMVE3M11000_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/4c4d31d5-5215-4a8e-b5e1-087687fc134e/Small/A00DYMVE3M11000_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a00dymve3m11000/1.jpg",
+        "/products/bv-pdp/a00dymve3m11000/2.jpg",
+        "/products/bv-pdp/a00dymve3m11000/3.jpg",
+        "/products/bv-pdp/a00dymve3m11000/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 595.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-women",
+        "bv-women-accessories",
+        "bv-women-acc-hats"
+      ],
+      "leafId": "bv-women-acc-hats",
+      "cgid": "women-hats",
       "hubCategory": "accessories"
     }
   ]

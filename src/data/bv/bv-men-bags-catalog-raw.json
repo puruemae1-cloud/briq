@@ -1,7 +1,7 @@
 {
   "hub": "men-bags",
   "category": "bags",
-  "scrapedAt": "2026-11-11T20:13:51.523258+00:00",
+  "scrapedAt": "2026-11-20T22:08:50.481476+00:00",
   "leaves": [
     "bv-men-bags-intrecciato",
     "bv-men-bags-diago",
@@ -18,52 +18,52 @@
   ],
   "leafCounts": {
     "bv-men-bags-intrecciato": {
-      "official": 50,
-      "scraped": 50
+      "official": 45,
+      "scraped": 45
     },
     "bv-men-bags-diago": {
-      "official": 33,
-      "scraped": 33
-    },
-    "bv-men-bags-veneto": {
       "official": 27,
       "scraped": 27
     },
+    "bv-men-bags-veneto": {
+      "official": 19,
+      "scraped": 19
+    },
     "bv-men-bags-andiamo": {
+      "official": 10,
+      "scraped": 10
+    },
+    "bv-men-bags-cabat": {
+      "official": 4,
+      "scraped": 4
+    },
+    "bv-men-bags-getaway": {
+      "official": 9,
+      "scraped": 9
+    },
+    "bv-men-bags-crossbody": {
+      "official": 61,
+      "scraped": 61
+    },
+    "bv-men-bags-tote": {
+      "official": 51,
+      "scraped": 51
+    },
+    "bv-men-bags-backpack": {
       "official": 12,
       "scraped": 12
     },
-    "bv-men-bags-cabat": {
-      "official": 7,
-      "scraped": 7
-    },
-    "bv-men-bags-getaway": {
-      "official": 16,
-      "scraped": 16
-    },
-    "bv-men-bags-crossbody": {
-      "official": 70,
-      "scraped": 70
-    },
-    "bv-men-bags-tote": {
-      "official": 62,
-      "scraped": 62
-    },
-    "bv-men-bags-backpack": {
-      "official": 13,
-      "scraped": 13
-    },
     "bv-men-bags-belt": {
-      "official": 7,
-      "scraped": 7
+      "official": 6,
+      "scraped": 6
     },
     "bv-men-bags-briefcase": {
-      "official": 7,
-      "scraped": 7
+      "official": 4,
+      "scraped": 4
     },
     "bv-men-bags-document-case": {
-      "official": 5,
-      "scraped": 5
+      "official": 4,
+      "scraped": 4
     }
   },
   "products": [
@@ -203,8 +203,8 @@
         "bv-men-bags-crossbody",
         "bv-men-bags-tote"
       ],
-      "leafId": "bv-men-bags-tote",
-      "cgid": "men-tote-bags",
+      "leafId": "bv-men-bags-crossbody",
+      "cgid": "men-crossbody-bags",
       "hubCategory": "bags"
     },
     {
@@ -346,8 +346,8 @@
         "bv-men-bags-intrecciato",
         "bv-men-bags-crossbody"
       ],
-      "leafId": "bv-men-bags-crossbody",
-      "cgid": "men-crossbody-bags",
+      "leafId": "bv-men-bags-intrecciato",
+      "cgid": "men-intrecciato",
       "hubCategory": "bags"
     },
     {
@@ -1875,7 +1875,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-duffle-black-781053V2HL18803.html",
       "gbpPrice": 4370.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Canvas",
         "Colour: Black",
@@ -1917,7 +1917,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 4370.0,
           "listGbpPrice": null
         }
@@ -2239,7 +2239,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-cabin-duffle-black-795287V2HL18803.html",
       "gbpPrice": 4900.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Canvas",
         "Colour: Black",
@@ -2277,7 +2277,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 4900.0,
           "listGbpPrice": null
         }
@@ -3585,7 +3585,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/diago-belt-bag-belt-bag-bark-green-805773V4FV13770.html",
       "gbpPrice": 1710.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Calfskin bonded Intreccio",
         "Colour: Bark Green",
@@ -3626,7 +3626,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1710.0,
           "listGbpPrice": null
         }
@@ -4126,8 +4126,8 @@
         "bv-men-bags-diago",
         "bv-men-bags-crossbody"
       ],
-      "leafId": "bv-men-bags-crossbody",
-      "cgid": "men-crossbody-bags",
+      "leafId": "bv-men-bags-diago",
+      "cgid": "men-diago",
       "hubCategory": "bags"
     },
     {
@@ -4464,8 +4464,8 @@
         "bv-men-bags-diago",
         "bv-men-bags-crossbody"
       ],
-      "leafId": "bv-men-bags-crossbody",
-      "cgid": "men-crossbody-bags",
+      "leafId": "bv-men-bags-diago",
+      "cgid": "men-diago",
       "hubCategory": "bags"
     },
     {
@@ -5863,7 +5863,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/veneto-large-messenger-espresso-876350V5KD02008.html",
       "gbpPrice": 3740.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Suede",
         "Colour: Espresso",
@@ -5906,7 +5906,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 3740.0,
           "listGbpPrice": null
         }
@@ -6162,15 +6162,19 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/8b3d587f-9ddf-4dbf-b1d9-c3d9e4d875ea/eCom/876338V5KD08803_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/8be61657-44ab-4195-b662-0450dc3f68b8/eCom/876338V5KD08803_B.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/a61a1333-a9f3-4562-aa90-e98d3e3ba054/eCom/876338V5KD08803_C.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/331c7237-8572-45eb-b958-779224013d47/eCom/876338V5KD08803_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/c105a01d-87d5-46c2-9d2f-442c539dc7f3/eCom/876338V5KD08803_E.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/8b3d587f-9ddf-4dbf-b1d9-c3d9e4d875ea/Small/876338V5KD08803_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/876338v5kd08803/1.jpg",
         "/products/bv-pdp/876338v5kd08803/2.jpg",
         "/products/bv-pdp/876338v5kd08803/3.jpg",
-        "/products/bv-pdp/876338v5kd08803/4.jpg"
+        "/products/bv-pdp/876338v5kd08803/4.jpg",
+        "/products/bv-pdp/876338v5kd08803/5.jpg",
+        "/products/bv-pdp/876338v5kd08803/6.jpg"
       ],
       "sizes": [
         {
@@ -6206,7 +6210,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/veneto-belt-bag-bark-green-876334V6SE03815.html",
       "gbpPrice": 2140.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Suede",
         "Colour: Bark Green",
@@ -6243,7 +6247,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 2140.0,
           "listGbpPrice": null
         }
@@ -6740,7 +6744,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/veneto-fondant-826877V5KD02145.html",
       "gbpPrice": 2940.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Suede",
         "Colour: Fondant",
@@ -6781,7 +6785,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 2940.0,
           "listGbpPrice": null
         }
@@ -7777,10 +7781,11 @@
         "bottega-veneta-bags",
         "bv-men",
         "bv-men-bags",
-        "bv-men-bags-andiamo"
+        "bv-men-bags-andiamo",
+        "bv-men-bags-tote"
       ],
-      "leafId": "bv-men-bags-andiamo",
-      "cgid": "men-andiamo",
+      "leafId": "bv-men-bags-tote",
+      "cgid": "men-tote-bags",
       "hubCategory": "bags"
     },
     {
@@ -7795,7 +7800,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/large-andiamo-black-766019VCPP11249.html",
       "gbpPrice": 6680.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Lambskin bonded Intrecciato",
         "Colour: Black",
@@ -7840,7 +7845,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 6680.0,
           "listGbpPrice": null
         }
@@ -7869,7 +7874,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/andiamo-messenger-fondant-807715V2HLD2364.html",
       "gbpPrice": 4640.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Canvas",
         "Colour: Fondant",
@@ -7912,7 +7917,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 4640.0,
           "listGbpPrice": null
         }
@@ -8086,7 +8091,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/andiamo-messenger-black-807715V2HLD1208.html",
       "gbpPrice": 4640.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Canvas",
         "Colour: Black",
@@ -8133,7 +8138,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 4640.0,
           "listGbpPrice": null
         }
@@ -8636,7 +8641,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/getaway-briefcase-black-766361V2HL18803.html",
       "gbpPrice": 3920.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Canvas",
         "Colour: Black",
@@ -8679,7 +8684,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 3920.0,
           "listGbpPrice": null
         }
@@ -8708,7 +8713,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/getaway-weekender-black-766372V71R08966.html",
       "gbpPrice": 4990.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Canvas",
         "Colour: Black",
@@ -8748,7 +8753,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 4990.0,
           "listGbpPrice": null
         }
@@ -10013,7 +10018,7 @@
       "gender": "Men",
       "link": "https://www.bottegaveneta.com/en-gb/dustbag-bike-midnight-876011V2HL04330.html",
       "url": "https://www.bottegaveneta.com/en-gb/dustbag-bike-midnight-876011V2HL04330.html",
-      "gbpPrice": 1730.0,
+      "gbpPrice": 1870.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -10040,7 +10045,8 @@
         "https://bottega-veneta.dam.kering.com/asset/073bc6b8-2287-43e0-9c61-734798447acf/eCom/876011V2HL04330_C.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/asset/6edac82e-6abd-4669-a8e2-0a8da0ef2635/eCom/876011V2HL04330_D.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/asset/3dead785-06e7-4141-83c7-0b1a153c6167/eCom/876011V2HL04330_E.jpg?v=2",
-        "https://bottega-veneta.dam.kering.com/asset/723400fb-bf96-4fda-a05f-35fee31a3919/eCom/876011V2HL04330_F.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/723400fb-bf96-4fda-a05f-35fee31a3919/eCom/876011V2HL04330_F.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/02a7b520-3d37-49e2-9531-d8b99665711a/Small/876011V2HL04330_A.jpg?v=2"
       ],
       "localImages": [
         "/products/bv-pdp/876011v2hl04330/1.jpg",
@@ -10048,7 +10054,8 @@
         "/products/bv-pdp/876011v2hl04330/3.jpg",
         "/products/bv-pdp/876011v2hl04330/4.jpg",
         "/products/bv-pdp/876011v2hl04330/5.jpg",
-        "/products/bv-pdp/876011v2hl04330/6.jpg"
+        "/products/bv-pdp/876011v2hl04330/6.jpg",
+        "/products/bv-pdp/876011v2hl04330/7.jpg"
       ],
       "sizes": [
         {
@@ -10056,7 +10063,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 1730.0,
+          "gbpPrice": 1870.0,
           "listGbpPrice": null
         }
       ],
@@ -12085,8 +12092,10 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/1412d819-571a-41a7-a99c-ef613da15c1e/eCom/A006XHV71S22008_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/0b3e2052-bb50-44c0-9cf2-5607aadb3ae0/eCom/A006XHV71S22008_B.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/ec3b3503-c1ea-4d89-b1c6-e0327dff9955/eCom/A006XHV71S22008_C.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/675ac4ac-2fcb-47a8-881e-2fcda2bbd692/eCom/A006XHV71S22008_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/d08606e3-65cf-473f-9d0a-c71abb76ad84/eCom/A006XHV71S22008_E.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/ca15ff95-97ce-4494-a2be-6abc9ccc9c20/eCom/A006XHV71S22008_F.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/1412d819-571a-41a7-a99c-ef613da15c1e/Small/A006XHV71S22008_A.jpg?v=1"
       ],
@@ -12095,7 +12104,9 @@
         "/products/bv-pdp/a006xhv71s22008/2.jpg",
         "/products/bv-pdp/a006xhv71s22008/3.jpg",
         "/products/bv-pdp/a006xhv71s22008/4.jpg",
-        "/products/bv-pdp/a006xhv71s22008/5.jpg"
+        "/products/bv-pdp/a006xhv71s22008/5.jpg",
+        "/products/bv-pdp/a006xhv71s22008/6.jpg",
+        "/products/bv-pdp/a006xhv71s22008/7.jpg"
       ],
       "sizes": [
         {
@@ -12359,6 +12370,7 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/340574bf-8777-413f-a4cd-9c2ba5f31c5e/eCom/876350V5KD03770_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/a40284ac-af34-4549-be41-8274a0d7fc90/eCom/876350V5KD03770_B.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/0426cc02-7a9e-44ad-8d1a-8b5bd70a151c/eCom/876350V5KD03770_C.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/22b4f7f2-6833-41d0-8e5a-b39e130c1257/eCom/876350V5KD03770_D.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/d712c340-4841-438c-a6f8-7f46a46ebace/eCom/876350V5KD03770_F.jpg?v=1",
@@ -12371,7 +12383,8 @@
         "/products/bv-pdp/876350v5kd03770/3.jpg",
         "/products/bv-pdp/876350v5kd03770/4.jpg",
         "/products/bv-pdp/876350v5kd03770/5.jpg",
-        "/products/bv-pdp/876350v5kd03770/6.jpg"
+        "/products/bv-pdp/876350v5kd03770/6.jpg",
+        "/products/bv-pdp/876350v5kd03770/7.jpg"
       ],
       "sizes": [
         {
@@ -13516,7 +13529,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/triangolo-bucket-black-A006JSV74U08803.html",
       "gbpPrice": 4900.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Suede bonded Intreccio",
         "Colour: Black",
@@ -13558,7 +13571,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 4900.0,
           "listGbpPrice": null
         }
@@ -13774,6 +13787,1683 @@
         "bv-men",
         "bv-men-bags",
         "bv-men-bags-diago",
+        "bv-men-bags-tote"
+      ],
+      "leafId": "bv-men-bags-tote",
+      "cgid": "men-tote-bags",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "795287V2HL11972",
+      "sku": "795287V2HL11972",
+      "internalId": "814514378",
+      "name": "Intrecciato Cabin Duffle",
+      "brand": "bottega veneta",
+      "color": "Volcanic grey",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/intrecciato-cabin-duffle-volcanic-grey-795287V2HL11972.html",
+      "url": "https://www.bottegaveneta.com/en-gb/intrecciato-cabin-duffle-volcanic-grey-795287V2HL11972.html",
+      "gbpPrice": 4900.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Canvas",
+        "Colour: Volcanic Grey",
+        "Hardware: Silver finish"
+      ],
+      "longDescription": [
+        "Intrecciato leather duffle bag with adjustable and detachable strap",
+        "Single exterior side zipped pocket",
+        "One interior zipped pocket, double flat open pockets",
+        "Zip closure"
+      ],
+      "compactedLongDesc": "Duffle bag in Intrecciato leather with adjustable and detachable strap.",
+      "composition": "• Material: calfskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 29 cm | 11.4\"\n\n• Width: 55 cm | 21.6\"\n\n• Depth: 24 cm | 9.4\"\n\n• Handle drop: 15 cm | 5.9\"\n\n• Strap drop: 53 cm | 20.9\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/8c3028e5-c7fe-40ce-9d42-80061cb6d6d5/eCom/795287V2HL11972_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/1225c9f1-9fc6-4be5-8338-6cf5fe189a9e/eCom/795287V2HL11972_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/cdb35a2a-0020-459b-a5ce-6422df6947d7/eCom/795287V2HL11972_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/8c3028e5-c7fe-40ce-9d42-80061cb6d6d5/Small/795287V2HL11972_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/795287v2hl11972/1.jpg",
+        "/products/bv-pdp/795287v2hl11972/2.jpg",
+        "/products/bv-pdp/795287v2hl11972/3.jpg",
+        "/products/bv-pdp/795287v2hl11972/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 4900.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-men",
+        "bv-men-bags",
+        "bv-men-bags-intrecciato"
+      ],
+      "leafId": "bv-men-bags-intrecciato",
+      "cgid": "men-intrecciato",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "876359V4RT31982",
+      "sku": "876359V4RT31982",
+      "internalId": "814515507",
+      "name": "Intrecciato 1975 Backpack",
+      "brand": "bottega veneta",
+      "color": "Volcanic grey",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/intrecciato-1975-backpack-volcanic-grey-876359V4RT31982.html",
+      "url": "https://www.bottegaveneta.com/en-gb/intrecciato-1975-backpack-volcanic-grey-876359V4RT31982.html",
+      "gbpPrice": 3740.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Nylon",
+        "Colour: Volcanic Grey",
+        "Hardware: Silver finish"
+      ],
+      "longDescription": [
+        "Intrecciato silky calf backpack",
+        "Backside in padded mesh, with quilted Intreccio pattern",
+        "Single exterior front zipped pocket",
+        "Interior padded laptop compartment",
+        "Zip closure"
+      ],
+      "compactedLongDesc": "Backpack made using Intrecciato craft in silky calfskin leather.",
+      "composition": "• Material: calfskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 44 cm | 17.3\"\n\n• Width: 32 cm | 12.6\"\n\n• Depth: 16 cm | 6.3\"\n\n• Handle drop: 8.5 cm | 3.3\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/5e95ced0-29ed-464f-8c7b-424111a48ac4/eCom/876359V4RT31982_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/46773cd8-9a64-423f-8d23-01710964c193/eCom/876359V4RT31982_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/894a5873-f8dc-4b60-adba-0f0ab909be9a/eCom/876359V4RT31982_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/41a52081-34f9-416d-a028-243997769aa9/eCom/876359V4RT31982_F.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/5e95ced0-29ed-464f-8c7b-424111a48ac4/Small/876359V4RT31982_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/876359v4rt31982/1.jpg",
+        "/products/bv-pdp/876359v4rt31982/2.jpg",
+        "/products/bv-pdp/876359v4rt31982/3.jpg",
+        "/products/bv-pdp/876359v4rt31982/4.jpg",
+        "/products/bv-pdp/876359v4rt31982/5.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 3740.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-men",
+        "bv-men-bags",
+        "bv-men-bags-intrecciato",
+        "bv-men-bags-backpack"
+      ],
+      "leafId": "bv-men-bags-backpack",
+      "cgid": "men-backpacks",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "805971V7H914435",
+      "sku": "805971V7H914435",
+      "internalId": "814514451",
+      "name": "Intrecciato Back To School Backpack",
+      "brand": "bottega veneta",
+      "color": "Deep sea",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/intrecciato-back-to-school-backpack-deep-sea-805971V7H914435.html",
+      "url": "https://www.bottegaveneta.com/en-gb/intrecciato-back-to-school-backpack-deep-sea-805971V7H914435.html",
+      "gbpPrice": 3830.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Canvas",
+        "Colour: Deep Sea",
+        "Hardware: Silver finish"
+      ],
+      "longDescription": [
+        "Grained nubuck backpack with Intrecciato trims",
+        "Two exterior flap pockets",
+        "Single interior laptop compartment and two open pockets",
+        "Flap closure"
+      ],
+      "compactedLongDesc": "Backpack in grained nubuck, featuring Intrecciato leather trims, external pockets and a flap closure.",
+      "composition": "• Material: calfskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 39 cm | 15.3\"\n\n• Width: 31 cm | 12.2\"\n\n• Depth: 14 cm | 5.5\"\n\n• Handle drop: 6 cm | 2.3\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/e88e10c8-0b56-409a-8978-951fd7544a6a/eCom/805971V7H914435_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/a6e99d85-c6bb-453a-96e5-a972723a4245/eCom/805971V7H914435_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/ea1c382b-bdc7-476f-a6fe-ace728321e28/eCom/805971V7H914435_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/e64d9984-252e-4f5f-8d72-c46067e91dd6/eCom/805971V7H914435_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/d380099a-8a6b-4ae2-bd63-29d098090d5d/eCom/805971V7H914435_F.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/e88e10c8-0b56-409a-8978-951fd7544a6a/Small/805971V7H914435_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/805971v7h914435/1.jpg",
+        "/products/bv-pdp/805971v7h914435/2.jpg",
+        "/products/bv-pdp/805971v7h914435/3.jpg",
+        "/products/bv-pdp/805971v7h914435/4.jpg",
+        "/products/bv-pdp/805971v7h914435/5.jpg",
+        "/products/bv-pdp/805971v7h914435/6.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 3830.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-men",
+        "bv-men-bags",
+        "bv-men-bags-intrecciato",
+        "bv-men-bags-backpack"
+      ],
+      "leafId": "bv-men-bags-backpack",
+      "cgid": "men-backpacks",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "805971V71R08966",
+      "sku": "805971V71R08966",
+      "internalId": "814514452",
+      "name": "Intrecciato Back To School Backpack",
+      "brand": "bottega veneta",
+      "color": "Black",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/intrecciato-back-to-school-backpack-black-805971V71R08966.html",
+      "url": "https://www.bottegaveneta.com/en-gb/intrecciato-back-to-school-backpack-black-805971V71R08966.html",
+      "gbpPrice": 4190.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Canvas",
+        "Colour: Black",
+        "Hardware: Matte Black finish"
+      ],
+      "longDescription": [
+        "Intrecciato matte leather backpack",
+        "Two exterior flap pockets",
+        "Single interior laptop compartment and two open pockets",
+        "Flap closure"
+      ],
+      "compactedLongDesc": "Backpack in matte Intrecciato leather, featuring external pockets and a flap closure.",
+      "composition": "• Material: calfskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 39 cm | 15.3\"\n\n• Width: 31 cm | 12.2\"\n\n• Depth: 14 cm | 5.5\"\n\n• Handle drop: 6 cm | 2.3\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/c73d2c83-048d-41b4-859c-e010cc08be38/eCom/805971V71R08966_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/948224fd-b607-401f-a06d-73c2277ec87b/eCom/805971V71R08966_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/d5f5bd32-2e76-47d8-9d34-80327164664d/eCom/805971V71R08966_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/09bdb84f-d244-481d-a5b0-4ba7401d678d/eCom/805971V71R08966_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/17d406a6-5aa4-4f1d-bfbe-b7cde5474573/eCom/805971V71R08966_E.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/a15477b9-0f88-4277-ba58-44ccd5939a61/eCom/805971V71R08966_F.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/a238af4f-c3a0-4c42-b2d4-66cef1a8f0d5/eCom/805971V71R08966_H.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/c73d2c83-048d-41b4-859c-e010cc08be38/Small/805971V71R08966_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/805971v71r08966/1.jpg",
+        "/products/bv-pdp/805971v71r08966/2.jpg",
+        "/products/bv-pdp/805971v71r08966/3.jpg",
+        "/products/bv-pdp/805971v71r08966/4.jpg",
+        "/products/bv-pdp/805971v71r08966/5.jpg",
+        "/products/bv-pdp/805971v71r08966/6.jpg",
+        "/products/bv-pdp/805971v71r08966/7.jpg",
+        "/products/bv-pdp/805971v71r08966/8.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 4190.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-men",
+        "bv-men-bags",
+        "bv-men-bags-intrecciato",
+        "bv-men-bags-backpack"
+      ],
+      "leafId": "bv-men-bags-backpack",
+      "cgid": "men-backpacks",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "795628V2HL11972",
+      "sku": "795628V2HL11972",
+      "internalId": "814514383",
+      "name": "Small Intrecciato Zipped Tote",
+      "brand": "bottega veneta",
+      "color": "Volcanic grey",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/small-intrecciato-zipped-tote-volcanic-grey-795628V2HL11972.html",
+      "url": "https://www.bottegaveneta.com/en-gb/small-intrecciato-zipped-tote-volcanic-grey-795628V2HL11972.html",
+      "gbpPrice": 3300.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Canvas",
+        "Colour: Volcanic Grey",
+        "Hardware: Silver finish"
+      ],
+      "longDescription": [
+        "Small Intrecciato leather zipped tote bag",
+        "One external hidden pocket with magnetic closure",
+        "One interior zipped pocket, one interior flat open pocket, one metal hook on leather strap",
+        "Zip closure"
+      ],
+      "compactedLongDesc": "Zipped tote bag in Intrecciato leather.",
+      "composition": "• Material: calfskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 31 cm | 12.2\"\n\n• Width: 43 cm | 16.9\"\n\n• Depth: 15.5 cm | 6.1\"\n\n• Handle drop: 26.5 cm| 10.4\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/45089c90-378c-4936-bc83-90a19c9a598d/eCom/795628V2HL11972_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/a3925fc7-1f09-47e1-9c07-ff5086e7797c/eCom/795628V2HL11972_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/bfeb8088-0ee8-40a1-b4c9-6a9b9b15a448/eCom/795628V2HL11972_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/e7757a2d-fad6-4d06-b908-862e167160ca/eCom/795628V2HL11972_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/f4071f2f-04d3-4315-9145-b912f841fa96/eCom/795628V2HL11972_F.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/45089c90-378c-4936-bc83-90a19c9a598d/Small/795628V2HL11972_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/795628v2hl11972/1.jpg",
+        "/products/bv-pdp/795628v2hl11972/2.jpg",
+        "/products/bv-pdp/795628v2hl11972/3.jpg",
+        "/products/bv-pdp/795628v2hl11972/4.jpg",
+        "/products/bv-pdp/795628v2hl11972/5.jpg",
+        "/products/bv-pdp/795628v2hl11972/6.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 3300.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-men",
+        "bv-men-bags",
+        "bv-men-bags-intrecciato",
+        "bv-men-bags-tote"
+      ],
+      "leafId": "bv-men-bags-tote",
+      "cgid": "men-tote-bags",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "795628V71R08966",
+      "sku": "795628V71R08966",
+      "internalId": "814524110",
+      "name": "Small Intrecciato Zipped Tote",
+      "brand": "bottega veneta",
+      "color": "Black",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/small-intrecciato-zipped-tote-black-795628V71R08966.html",
+      "url": "https://www.bottegaveneta.com/en-gb/small-intrecciato-zipped-tote-black-795628V71R08966.html",
+      "gbpPrice": 3660.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Canvas",
+        "Colour: Black",
+        "Hardware: Matte Black finish"
+      ],
+      "longDescription": [
+        "Small Intrecciato matte leather zipped tote bag",
+        "One external hidden pocket with magnetic closure",
+        "One interior zipped pocket, one interior flat open pocket, one metal hook on leather strap",
+        "Zip closure"
+      ],
+      "compactedLongDesc": "Zipped tote bag in matte Intrecciato leather.",
+      "composition": "• Material: calfskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 31 cm | 12.2\"\n\n• Width: 43 cm | 16.9\"\n\n• Depth: 15.5 cm | 6.1\"\n\n• Handle drop: 26.5 cm| 10.4\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/09ddf44d-c8d8-482f-a09e-3ab32ae3128a/eCom/795628V71R08966_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/60dab955-f194-4ffc-8aa3-86592fa54ad1/eCom/795628V71R08966_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/c87836ae-97ef-468f-a7d0-d0e13c52cbff/eCom/795628V71R08966_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/09ddf44d-c8d8-482f-a09e-3ab32ae3128a/Small/795628V71R08966_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/795628v71r08966/1.jpg",
+        "/products/bv-pdp/795628v71r08966/2.jpg",
+        "/products/bv-pdp/795628v71r08966/3.jpg",
+        "/products/bv-pdp/795628v71r08966/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 3660.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-men",
+        "bv-men-bags",
+        "bv-men-bags-intrecciato",
+        "bv-men-bags-tote"
+      ],
+      "leafId": "bv-men-bags-tote",
+      "cgid": "men-tote-bags",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "857931V2HL01972",
+      "sku": "857931V2HL01972",
+      "internalId": "814514756",
+      "name": "Intrecciato Mini Bag With Flap",
+      "brand": "bottega veneta",
+      "color": "Volcanic grey",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/intrecciato-mini-bag-with-flap-volcanic-grey-857931V2HL01972.html",
+      "url": "https://www.bottegaveneta.com/en-gb/intrecciato-mini-bag-with-flap-volcanic-grey-857931V2HL01972.html",
+      "gbpPrice": 1730.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Volcanic Grey",
+        "Lining: Nappa",
+        "Hardware: Silver"
+      ],
+      "longDescription": [
+        "Intrecciato calfskin leather mini bag",
+        "Adjustable and detachable top handle and cross-body strap",
+        "One main compartment, one flat inside pocket",
+        "Flap closure"
+      ],
+      "compactedLongDesc": "Mini bag with flap in Intrecciato calf leather, featuring an adjustable and detachable top handle and cross-body strap.",
+      "composition": "• Material: calfskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 12 cm | 4.7\"\n\n• Width: 20 cm | 7.9\"\n\n• Depth: 6.5 cm | 2.5\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/cc9714d7-a59e-486f-8df1-cb084c12397c/eCom/857931V2HL01972_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/2ff33be4-7e53-4351-a564-3e7b8400febf/eCom/857931V2HL01972_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/989042bf-5776-486e-a717-35a13a079a36/eCom/857931V2HL01972_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/cb3e7a08-e95b-442b-8518-6c88d2440e5b/eCom/857931V2HL01972_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/8f4ca41f-97b5-4d8c-9b4c-8caad25ea282/eCom/857931V2HL01972_E.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/cc9714d7-a59e-486f-8df1-cb084c12397c/Small/857931V2HL01972_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/857931v2hl01972/1.jpg",
+        "/products/bv-pdp/857931v2hl01972/2.jpg",
+        "/products/bv-pdp/857931v2hl01972/3.jpg",
+        "/products/bv-pdp/857931v2hl01972/4.jpg",
+        "/products/bv-pdp/857931v2hl01972/5.jpg",
+        "/products/bv-pdp/857931v2hl01972/6.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 1730.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-men",
+        "bv-men-bags",
+        "bv-men-bags-intrecciato",
+        "bv-men-bags-crossbody"
+      ],
+      "leafId": "bv-men-bags-crossbody",
+      "cgid": "men-crossbody-bags",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "A00E84V00108803",
+      "sku": "A00E84V00108803",
+      "internalId": "814534715",
+      "name": "Intrecciato Piccolo Phone Pouch",
+      "brand": "bottega veneta",
+      "color": "Black",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/intrecciato-piccolo-phone-pouch-black-A00E84V00108803.html",
+      "url": "https://www.bottegaveneta.com/en-gb/intrecciato-piccolo-phone-pouch-black-A00E84V00108803.html",
+      "gbpPrice": 1430.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Black",
+        "Lining: Suede",
+        "Hardware: Silver finish"
+      ],
+      "longDescription": [
+        "Intrecciato piccolo nappa leather phone pouch",
+        "Adjustable cross-body strap",
+        "One main compartment, one flat inside pocket",
+        "Hidden magnetic closure"
+      ],
+      "compactedLongDesc": "Phone pouch in Intrecciato piccolo nappa leather, featuring an adjustable cross-body strap.",
+      "composition": "• Material: lambskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 13 cm | 5.1\"\n\n• Width: 21 cm | 8.2\"\n\n• Depth: 2.5 cm | 1\"\n\n• Strap drop: 53 cm | 20.9\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/28681415-e96f-4f40-9040-d28be08e56b9/eCom/A00E84V00108803_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/937ee208-e818-43ca-b980-0b328a8f6e59/eCom/A00E84V00108803_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/430598d8-0481-4674-aec2-4dfbe67660d9/eCom/A00E84V00108803_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/28681415-e96f-4f40-9040-d28be08e56b9/Small/A00E84V00108803_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a00e84v00108803/1.jpg",
+        "/products/bv-pdp/a00e84v00108803/2.jpg",
+        "/products/bv-pdp/a00e84v00108803/3.jpg",
+        "/products/bv-pdp/a00e84v00108803/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 1430.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-men",
+        "bv-men-bags",
+        "bv-men-bags-intrecciato",
+        "bv-men-bags-crossbody"
+      ],
+      "leafId": "bv-men-bags-crossbody",
+      "cgid": "men-crossbody-bags",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "A00E84V00101972",
+      "sku": "A00E84V00101972",
+      "internalId": "814513509",
+      "name": "Intrecciato Piccolo Phone Pouch",
+      "brand": "bottega veneta",
+      "color": "Volcanic grey",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/intrecciato-piccolo-phone-pouch-volcanic-grey-A00E84V00101972.html",
+      "url": "https://www.bottegaveneta.com/en-gb/intrecciato-piccolo-phone-pouch-volcanic-grey-A00E84V00101972.html",
+      "gbpPrice": 1430.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Volcanic Grey",
+        "Lining: Suede",
+        "Hardware: Silver finish"
+      ],
+      "longDescription": [
+        "Intrecciato piccolo nappa leather phone pouch",
+        "Adjustable cross-body strap",
+        "One main compartment, one flat inside pocket",
+        "Hidden magnetic closure"
+      ],
+      "compactedLongDesc": "Phone pouch in Intrecciato piccolo nappa leather, featuring an adjustable cross-body strap.",
+      "composition": "• Material: lambskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 13 cm | 5.1\"\n\n• Width: 21 cm | 8.2\"\n\n• Depth: 2.5 cm | 1\"\n\n• Strap drop: 53 cm | 20.9\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/fdcc072f-6172-462f-958b-29d029cdfab1/eCom/A00E84V00101972_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/57000609-734e-44e8-ba48-cf57ea1f4256/eCom/A00E84V00101972_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/caa04d21-446e-42bd-93c6-913eb1e177a5/eCom/A00E84V00101972_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/9208c603-e474-42c3-8867-118a1b859f77/eCom/A00E84V00101972_E.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/fdcc072f-6172-462f-958b-29d029cdfab1/Small/A00E84V00101972_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a00e84v00101972/1.jpg",
+        "/products/bv-pdp/a00e84v00101972/2.jpg",
+        "/products/bv-pdp/a00e84v00101972/3.jpg",
+        "/products/bv-pdp/a00e84v00101972/4.jpg",
+        "/products/bv-pdp/a00e84v00101972/5.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 1430.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-men",
+        "bv-men-bags",
+        "bv-men-bags-intrecciato",
+        "bv-men-bags-crossbody"
+      ],
+      "leafId": "bv-men-bags-crossbody",
+      "cgid": "men-crossbody-bags",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "755923V2HL11972",
+      "sku": "755923V2HL11972",
+      "internalId": "814534940",
+      "name": "Small Intrecciato Camera Bag",
+      "brand": "bottega veneta",
+      "color": "Volcanic grey",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/small-intrecciato-camera-bag-volcanic-grey-755923V2HL11972.html",
+      "url": "https://www.bottegaveneta.com/en-gb/small-intrecciato-camera-bag-volcanic-grey-755923V2HL11972.html",
+      "gbpPrice": 2140.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Canvas",
+        "Colour: Volcanic Grey",
+        "Hardware: Silver finish"
+      ],
+      "longDescription": [
+        "Small Intrecciato leather cross-body bag with detachable strap and metal D-ring",
+        "One interior flat pocket",
+        "Zip closure"
+      ],
+      "compactedLongDesc": "Cross-body bag in Intrecciato leather with detachable strap.",
+      "composition": "• Material: calfskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 15 cm | 5.9\"\n\n• Width: 24.5 cm | 9.6\"\n\n• Depth: 6 cm | 2.3\"\n\n• Strap drop: 55 cm | 21.7\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/d431017d-9b65-4239-b19b-25d1ff2a2b00/eCom/755923V2HL11972_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/48981bc7-ed77-432d-8d5e-b77d86a3d24c/eCom/755923V2HL11972_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/eacf7d69-1b90-4b73-bcdd-b796c4e8f655/eCom/755923V2HL11972_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/d431017d-9b65-4239-b19b-25d1ff2a2b00/Small/755923V2HL11972_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/755923v2hl11972/1.jpg",
+        "/products/bv-pdp/755923v2hl11972/2.jpg",
+        "/products/bv-pdp/755923v2hl11972/3.jpg",
+        "/products/bv-pdp/755923v2hl11972/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 2140.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-men",
+        "bv-men-bags",
+        "bv-men-bags-intrecciato",
+        "bv-men-bags-crossbody"
+      ],
+      "leafId": "bv-men-bags-crossbody",
+      "cgid": "men-crossbody-bags",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "815796V4FV14435",
+      "sku": "815796V4FV14435",
+      "internalId": "814514476",
+      "name": "Large Diago",
+      "brand": "bottega veneta",
+      "color": "Deep sea",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/large-diago-deep-sea-815796V4FV14435.html",
+      "url": "https://www.bottegaveneta.com/en-gb/large-diago-deep-sea-815796V4FV14435.html",
+      "gbpPrice": 2940.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Calfskin bonded Intreccio",
+        "Colour: Deep Sea",
+        "Hardware: Silver finish"
+      ],
+      "longDescription": [
+        "Large grained Intreccio leather cross-body bag with adjustable strap",
+        "Single interior zipped pocket",
+        "Magnetic closure"
+      ],
+      "compactedLongDesc": "Cross-body bag in grained Intreccio leather with adjustable strap.",
+      "composition": "• Material: calfskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 21.5 cm | 8.5\"\n\n• Width: 32 cm | 12.6\"\n\n• Depth: 5 cm | 2\"\n\n• Strap drop: 46.5 cm | 18.3\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/7f3c8fc0-b883-49e4-8cc3-de9c02e6937b/eCom/815796V4FV14435_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/286c8696-e9c0-490f-a028-c00ebd2ba72b/eCom/815796V4FV14435_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/9e8ec09d-8601-490c-9c76-b58143f7ef17/eCom/815796V4FV14435_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/291b3ceb-14b7-495c-9cd6-8b8066d336d1/eCom/815796V4FV14435_F.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/52545796-6fa4-4db7-9ddf-19cf20ecd15b/eCom/815796V4FV14435_G.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/7f3c8fc0-b883-49e4-8cc3-de9c02e6937b/Small/815796V4FV14435_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/815796v4fv14435/1.jpg",
+        "/products/bv-pdp/815796v4fv14435/2.jpg",
+        "/products/bv-pdp/815796v4fv14435/3.jpg",
+        "/products/bv-pdp/815796v4fv14435/4.jpg",
+        "/products/bv-pdp/815796v4fv14435/5.jpg",
+        "/products/bv-pdp/815796v4fv14435/6.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 2940.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-men",
+        "bv-men-bags",
+        "bv-men-bags-diago",
+        "bv-men-bags-crossbody"
+      ],
+      "leafId": "bv-men-bags-crossbody",
+      "cgid": "men-crossbody-bags",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "795637V4FV14435",
+      "sku": "795637V4FV14435",
+      "internalId": "814514388",
+      "name": "Diago",
+      "brand": "bottega veneta",
+      "color": "Deep sea",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/diago-deep-sea-795637V4FV14435.html",
+      "url": "https://www.bottegaveneta.com/en-gb/diago-deep-sea-795637V4FV14435.html",
+      "gbpPrice": 2220.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Calfskin bonded Intreccio",
+        "Colour: Deep Sea",
+        "Hardware: Silver finish"
+      ],
+      "longDescription": [
+        "Grained Intreccio leather cross-body bag with adjustable strap",
+        "Single interior zipped pocket",
+        "Magnetic closure"
+      ],
+      "compactedLongDesc": "Cross-body bag in grained Intreccio leather.",
+      "composition": "• Material: calfskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 16.5 cm | 6.5\"\n\n• Width: 22.5 cm | 8.9\"\n\n• Depth: 5.5 cm | 2.1\"\n\n• Strap drop: 57.5 cm | 22.4\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/8ed4a741-af58-4240-a325-b105b003502b/eCom/795637V4FV14435_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/41d1ae1c-c3de-46d8-8e68-52d632ed603e/eCom/795637V4FV14435_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/d9ebf820-d9a9-4689-9ced-05185d479c5e/eCom/795637V4FV14435_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/10e890d8-89da-4d96-b6c0-7a140ea65abf/eCom/795637V4FV14435_E.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/2a4d4357-8710-4aab-99c7-2bc40febcca0/eCom/795637V4FV14435_H.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/8ed4a741-af58-4240-a325-b105b003502b/Small/795637V4FV14435_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/795637v4fv14435/1.jpg",
+        "/products/bv-pdp/795637v4fv14435/2.jpg",
+        "/products/bv-pdp/795637v4fv14435/3.jpg",
+        "/products/bv-pdp/795637v4fv14435/4.jpg",
+        "/products/bv-pdp/795637v4fv14435/5.jpg",
+        "/products/bv-pdp/795637v4fv14435/6.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 2220.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-men",
+        "bv-men-bags",
+        "bv-men-bags-diago",
+        "bv-men-bags-crossbody"
+      ],
+      "leafId": "bv-men-bags-crossbody",
+      "cgid": "men-crossbody-bags",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "837364V4FV14435",
+      "sku": "837364V4FV14435",
+      "internalId": "814539590",
+      "name": "Small Diago Tote",
+      "brand": "bottega veneta",
+      "color": "Deep sea",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/small-diago-tote-deep-sea-837364V4FV14435.html",
+      "url": "https://www.bottegaveneta.com/en-gb/small-diago-tote-deep-sea-837364V4FV14435.html",
+      "gbpPrice": 2580.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Suede",
+        "Colour: Deep Sea",
+        "Hardware: Silver finish"
+      ],
+      "longDescription": [
+        "Small grained Intreccio leather tote bag with two handles and an adjustable and detachable strap",
+        "Single interior zipped pocket and two flat open pockets",
+        "Zip closure"
+      ],
+      "compactedLongDesc": "Tote bag in grained Intreccio leather with adjustable and detachable cross-body strap.",
+      "composition": "• Material: calfskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 25 cm | 9.8\"\n\n• Width: 22 cm | 8.6\"\n\n• Depth: 7 cm | 2.7\"\n\n• Handle drop: 13 cm | 5.1\"\n\n• Strap drop: 50 cm | 19.7\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/7b2bea4b-2e2c-49b2-ad88-d578375abfea/eCom/837364V4FV14435_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/d15ab416-2677-4025-89e6-aa2d95ca4cb6/eCom/837364V4FV14435_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/57064634-3ac6-4a96-8780-24551d8f96cb/eCom/837364V4FV14435_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/7b2bea4b-2e2c-49b2-ad88-d578375abfea/Small/837364V4FV14435_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/837364v4fv14435/1.jpg",
+        "/products/bv-pdp/837364v4fv14435/2.jpg",
+        "/products/bv-pdp/837364v4fv14435/3.jpg",
+        "/products/bv-pdp/837364v4fv14435/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 2580.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-men",
+        "bv-men-bags",
+        "bv-men-bags-diago",
+        "bv-men-bags-crossbody",
+        "bv-men-bags-tote"
+      ],
+      "leafId": "bv-men-bags-tote",
+      "cgid": "men-tote-bags",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "837112V7H801983",
+      "sku": "837112V7H801983",
+      "internalId": "814514515",
+      "name": "Diago Zipped Messenger",
+      "brand": "bottega veneta",
+      "color": "Concrete",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/diago-zipped-messenger-concrete-837112V7H801983.html",
+      "url": "https://www.bottegaveneta.com/en-gb/diago-zipped-messenger-concrete-837112V7H801983.html",
+      "gbpPrice": 2140.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Canvas",
+        "Colour: Concrete",
+        "Hardware: Silver finish"
+      ],
+      "longDescription": [
+        "Grained Intreccio nubuck cross-body bag with contrasted stitching",
+        "Adjustable strap",
+        "Single interior zipped pocket and two flat open pockets",
+        "Zip closure"
+      ],
+      "compactedLongDesc": "Zipped cross-body bag in grained Intreccio leather with adjustable strap and contrasted stitching.",
+      "composition": "• Material: calfskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 15 cm | 5.9\"\n\n• Width: 25 cm | 9.8\"\n\n• Depth: 5 cm | 2\"\n\n• Strap drop: 50 cm | 19.7\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/44ae2596-7929-4dc5-a7d3-e29c850e7750/eCom/837112V7H801983_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/c42a1acc-8036-408f-a91e-a23beac4b9d3/eCom/837112V7H801983_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/a1e68884-0931-45d7-ad0b-4eff641da8e6/eCom/837112V7H801983_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/b81a918c-e7c7-43d2-a9fc-0f18d81201e5/eCom/837112V7H801983_H.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/44ae2596-7929-4dc5-a7d3-e29c850e7750/Small/837112V7H801983_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/837112v7h801983/1.jpg",
+        "/products/bv-pdp/837112v7h801983/2.jpg",
+        "/products/bv-pdp/837112v7h801983/3.jpg",
+        "/products/bv-pdp/837112v7h801983/4.jpg",
+        "/products/bv-pdp/837112v7h801983/5.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 2140.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-men",
+        "bv-men-bags",
+        "bv-men-bags-diago",
+        "bv-men-bags-crossbody"
+      ],
+      "leafId": "bv-men-bags-crossbody",
+      "cgid": "men-crossbody-bags",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "876350V5KD04053",
+      "sku": "876350V5KD04053",
+      "internalId": "814515504",
+      "name": "Veneto Large Messenger",
+      "brand": "bottega veneta",
+      "color": "Olive stone",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/veneto-large-messenger-olive-stone-876350V5KD04053.html",
+      "url": "https://www.bottegaveneta.com/en-gb/veneto-large-messenger-olive-stone-876350V5KD04053.html",
+      "gbpPrice": 3740.0,
+      "listGbpPrice": null,
+      "inStock": false,
+      "shortDescription": [
+        "Lining: Suede",
+        "Colour: Olive Stone",
+        "Hardware: Silver finish"
+      ],
+      "longDescription": [
+        "Large Intrecciato nappa messenger with flap",
+        "One main compartment with an interior zipped pocket and one open pocket on the front",
+        "Flap closure with magnets"
+      ],
+      "compactedLongDesc": "Messenger bag with flap and rounded shape in soft Intrecciato nappa leather.",
+      "composition": "• Material: lambskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 24 cm | 9.4\"\n\n• Width: 36 cm | 14.1\"\n\n• Depth: 10 cm | 3.9\"\n\n• Strap drop: 50 cm | 19.7\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/a11d4541-cb90-4b9c-9732-fb204a32cd29/eCom/876350V5KD04053_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/943a8cea-e0d8-44ce-867d-a57eac0f1821/eCom/876350V5KD04053_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/722613ff-b094-4064-a95b-2a00328a10ca/eCom/876350V5KD04053_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/3be25848-4ccc-42d7-ba23-324ca58098e9/eCom/876350V5KD04053_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/a9276233-dfe6-42b7-966c-a0cf3f9fd1e2/eCom/876350V5KD04053_F.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/74d84cbd-3cb9-4064-9c63-de2210791b3e/eCom/876350V5KD04053_H.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/a11d4541-cb90-4b9c-9732-fb204a32cd29/Small/876350V5KD04053_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/876350v5kd04053/1.jpg",
+        "/products/bv-pdp/876350v5kd04053/2.jpg",
+        "/products/bv-pdp/876350v5kd04053/3.jpg",
+        "/products/bv-pdp/876350v5kd04053/4.jpg",
+        "/products/bv-pdp/876350v5kd04053/5.jpg",
+        "/products/bv-pdp/876350v5kd04053/6.jpg",
+        "/products/bv-pdp/876350v5kd04053/7.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": false,
+          "gbpPrice": 3740.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-men",
+        "bv-men-bags",
+        "bv-men-bags-veneto"
+      ],
+      "leafId": "bv-men-bags-veneto",
+      "cgid": "men-veneto",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "827066V7H914451",
+      "sku": "827066V7H914451",
+      "internalId": "814514493",
+      "name": "Andiamo Voyager",
+      "brand": "bottega veneta",
+      "color": "Deep sea",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/andiamo-voyager-deep-sea-827066V7H914451.html",
+      "url": "https://www.bottegaveneta.com/en-gb/andiamo-voyager-deep-sea-827066V7H914451.html",
+      "gbpPrice": 6770.0,
+      "listGbpPrice": null,
+      "inStock": false,
+      "shortDescription": [
+        "Lining: Canvas",
+        "Colour: Deep Sea",
+        "Hardware: Silver finish"
+      ],
+      "longDescription": [
+        "Grained nubuck and calfskin weekender with adjustable and detachable cross-body strap and two top handles",
+        "One interior zipped pocket, two flat open pockets and one key hook on strap",
+        "Magnet closure"
+      ],
+      "compactedLongDesc": "Weekender in grained nubuck and calf leather with signature knot detail, featuring an adjustable and detachable cross-body strap.",
+      "composition": "• Material: calfskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 39 cm | 15.3\"\n\n• Width: 43 cm | 16.9\"\n\n• Depth: 20 cm | 7.9\"\n\n• Handle drop: 9 cm | 3.5\"\n\n• Strap drop: 42 cm | 16.5\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/8bc1cceb-7067-47f0-b002-e5de9bd59bd5/eCom/827066V7H914451_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/10af3acc-8f1c-4900-94e8-44723ef56c5d/eCom/827066V7H914451_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/2df32438-6837-48a4-a88b-0f6a8a742a08/eCom/827066V7H914451_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/8bc1cceb-7067-47f0-b002-e5de9bd59bd5/Small/827066V7H914451_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/827066v7h914451/1.jpg",
+        "/products/bv-pdp/827066v7h914451/2.jpg",
+        "/products/bv-pdp/827066v7h914451/3.jpg",
+        "/products/bv-pdp/827066v7h914451/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": false,
+          "gbpPrice": 6770.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-men",
+        "bv-men-bags",
+        "bv-men-bags-andiamo",
+        "bv-men-bags-tote"
+      ],
+      "leafId": "bv-men-bags-tote",
+      "cgid": "men-tote-bags",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "A00DR5V71R08966",
+      "sku": "A00DR5V71R08966",
+      "internalId": "814511114",
+      "name": "Small Andiamo Messenger",
+      "brand": "bottega veneta",
+      "color": "Black",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/small-andiamo-messenger-black-A00DR5V71R08966.html",
+      "url": "https://www.bottegaveneta.com/en-gb/small-andiamo-messenger-black-A00DR5V71R08966.html",
+      "gbpPrice": 4190.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Canvas",
+        "Colour: Black",
+        "Hardware: Matte Black finish"
+      ],
+      "longDescription": [
+        "Small Intrecciato matte leather messenger with adjustable and detachable cross-body strap",
+        "Two interior flat open pockets and one zipped pocket",
+        "Flap closure"
+      ],
+      "compactedLongDesc": "Messenger in matte Intrecciato leather with signature knot detail, featuring an adjustable and detachable cross-body strap.",
+      "composition": "• Material: calfskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 20 cm | 7.9\"\n\n• Width: 29 cm | 11.4\"\n\n• Depth: 13 cm | 5.1\"\n\n• Strap drop: 58 cm | 22.8\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/e2093861-a0db-4049-ad20-aa3af863c4c3/eCom/A00DR5V71R08966_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/7cb2899c-76d2-4046-affb-1c1dae0c6f52/eCom/A00DR5V71R08966_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/f425e7c3-e47c-4a46-b5d1-3612a8a982c8/eCom/A00DR5V71R08966_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/98543de9-fbb7-442d-936c-adfb6b18c5ba/eCom/A00DR5V71R08966_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/5ed2fe94-29bd-4e54-babc-f56de9a3e3b2/eCom/A00DR5V71R08966_F.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/e2093861-a0db-4049-ad20-aa3af863c4c3/Small/A00DR5V71R08966_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a00dr5v71r08966/1.jpg",
+        "/products/bv-pdp/a00dr5v71r08966/2.jpg",
+        "/products/bv-pdp/a00dr5v71r08966/3.jpg",
+        "/products/bv-pdp/a00dr5v71r08966/4.jpg",
+        "/products/bv-pdp/a00dr5v71r08966/5.jpg",
+        "/products/bv-pdp/a00dr5v71r08966/6.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 4190.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-men",
+        "bv-men-bags",
+        "bv-men-bags-andiamo",
+        "bv-men-bags-crossbody",
+        "bv-men-bags-tote"
+      ],
+      "leafId": "bv-men-bags-tote",
+      "cgid": "men-tote-bags",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "A00E7YV5KD08803",
+      "sku": "A00E7YV5KD08803",
+      "internalId": "814513484",
+      "name": "Quotidiano Cross-Body Bag",
+      "brand": "bottega veneta",
+      "color": "Black",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/quotidiano-cross-body-bag-black-A00E7YV5KD08803.html",
+      "url": "https://www.bottegaveneta.com/en-gb/quotidiano-cross-body-bag-black-A00E7YV5KD08803.html",
+      "gbpPrice": 2050.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Black",
+        "Lining: Suede",
+        "Hardware: Silver finish"
+      ],
+      "longDescription": [
+        "Intrecciato piccolo leather cross-body bag",
+        "Adjustable cross-body strap",
+        "One main compartment",
+        "Zip closure"
+      ],
+      "compactedLongDesc": "Cross-body bag in Intrecciato piccolo leather.",
+      "composition": "• Material: lambskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 21.5 cm | 8.5\"\n\n• Width: 23 cm | 9\"\n\n• Depth: 6.5 cm | 2.5\"\n\n• Strap drop: 53 cm | 20.9\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/8dbf6f76-be44-456e-86df-1cd9a4892fbc/eCom/A00E7YV5KD08803_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/d0d2d1e1-aa8d-475a-96fc-5a9f9eef4951/eCom/A00E7YV5KD08803_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/8b01e735-f244-495e-8be4-6e2d86eee360/eCom/A00E7YV5KD08803_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/501e7d84-fa80-4beb-8731-51e29ecafe4e/eCom/A00E7YV5KD08803_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/8dbf6f76-be44-456e-86df-1cd9a4892fbc/Small/A00E7YV5KD08803_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a00e7yv5kd08803/1.jpg",
+        "/products/bv-pdp/a00e7yv5kd08803/2.jpg",
+        "/products/bv-pdp/a00e7yv5kd08803/3.jpg",
+        "/products/bv-pdp/a00e7yv5kd08803/4.jpg",
+        "/products/bv-pdp/a00e7yv5kd08803/5.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 2050.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-men",
+        "bv-men-bags",
+        "bv-men-bags-crossbody",
+        "bv-men-bags-tote"
+      ],
+      "leafId": "bv-men-bags-tote",
+      "cgid": "men-tote-bags",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "A00E7YV5KD04053",
+      "sku": "A00E7YV5KD04053",
+      "internalId": "814513483",
+      "name": "Quotidiano Cross-Body Bag",
+      "brand": "bottega veneta",
+      "color": "Olive stone",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/quotidiano-cross-body-bag-olive-stone-A00E7YV5KD04053.html",
+      "url": "https://www.bottegaveneta.com/en-gb/quotidiano-cross-body-bag-olive-stone-A00E7YV5KD04053.html",
+      "gbpPrice": 2050.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Olive Stone",
+        "Lining: Suede",
+        "Hardware: Silver finish"
+      ],
+      "longDescription": [
+        "Intrecciato piccolo leather cross-body bag",
+        "Adjustable cross-body strap",
+        "One main compartment",
+        "Zip closure"
+      ],
+      "compactedLongDesc": "Cross-body bag in Intrecciato piccolo leather.",
+      "composition": "• Material: lambskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 21.5 cm | 8.5\"\n\n• Width: 23 cm | 9\"\n\n• Depth: 6.5 cm | 2.5\"\n\n• Strap drop: 53 cm | 20.9\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/9129d2a4-e542-47dd-8919-e0b015e22bac/eCom/A00E7YV5KD04053_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/ab5ad35b-cac9-4ce5-9808-48c19ed63805/eCom/A00E7YV5KD04053_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/489e022d-9638-4a4c-8406-a53b8e768d2b/eCom/A00E7YV5KD04053_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/7c370ae2-8b55-43c5-a494-dd5ccece40db/eCom/A00E7YV5KD04053_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/9129d2a4-e542-47dd-8919-e0b015e22bac/Small/A00E7YV5KD04053_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a00e7yv5kd04053/1.jpg",
+        "/products/bv-pdp/a00e7yv5kd04053/2.jpg",
+        "/products/bv-pdp/a00e7yv5kd04053/3.jpg",
+        "/products/bv-pdp/a00e7yv5kd04053/4.jpg",
+        "/products/bv-pdp/a00e7yv5kd04053/5.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 2050.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-men",
+        "bv-men-bags",
+        "bv-men-bags-crossbody",
+        "bv-men-bags-tote"
+      ],
+      "leafId": "bv-men-bags-tote",
+      "cgid": "men-tote-bags",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "815748V4TD13519",
+      "sku": "815748V4TD13519",
+      "internalId": "814537083",
+      "name": "Small Traveler",
+      "brand": "bottega veneta",
+      "color": "Bark",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/small-traveler-bark-815748V4TD13519.html",
+      "url": "https://www.bottegaveneta.com/en-gb/small-traveler-bark-815748V4TD13519.html",
+      "gbpPrice": 3120.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Suede",
+        "Colour: Bark",
+        "Hardware: Silver finish"
+      ],
+      "longDescription": [
+        "Small Intrecciato deer skin leather hobo bag with adjustable strap",
+        "Two interior open pockets one zipped pocket and key-hook on strap",
+        "Zip closure"
+      ],
+      "compactedLongDesc": "Hobo bag in Intrecciato deer skin with adjustable strap.",
+      "composition": "• Material: deerskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 29.5 cm | 11.6\"\n\n• Width: 35 cm | 13.8\"\n\n• Depth: 8.5 cm | 3.3\"\n\n• Strap drop: 46 cm| 18.1\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/ce584f57-03c3-4669-9d1b-7b5ffdfa563c/eCom/815748V4TD13519_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/28110660-4d99-4f01-942b-bbcb37157f81/eCom/815748V4TD13519_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/d3a77548-58a5-4df6-a6ab-3c77dfe2cf3a/eCom/815748V4TD13519_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/020cc09c-6d27-44bf-a1e7-edd04b4b16eb/eCom/815748V4TD13519_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/ce584f57-03c3-4669-9d1b-7b5ffdfa563c/Small/815748V4TD13519_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/815748v4td13519/1.jpg",
+        "/products/bv-pdp/815748v4td13519/2.jpg",
+        "/products/bv-pdp/815748v4td13519/3.jpg",
+        "/products/bv-pdp/815748v4td13519/4.jpg",
+        "/products/bv-pdp/815748v4td13519/5.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 3120.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-men",
+        "bv-men-bags",
+        "bv-men-bags-crossbody",
+        "bv-men-bags-tote"
+      ],
+      "leafId": "bv-men-bags-tote",
+      "cgid": "men-tote-bags",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "844018V2HL08966",
+      "sku": "844018V2HL08966",
+      "internalId": "814514606",
+      "name": "Traveler Phone Pouch",
+      "brand": "bottega veneta",
+      "color": "Black",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/traveler-phone-pouch-black-844018V2HL08966.html",
+      "url": "https://www.bottegaveneta.com/en-gb/traveler-phone-pouch-black-844018V2HL08966.html",
+      "gbpPrice": 1430.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Black",
+        "Lining: Canvas",
+        "Hardware: Black finish"
+      ],
+      "longDescription": [
+        "Intrecciato calfskin leather phone pouch",
+        "Adjustable cross-body strap",
+        "One main compartment, one flat inside pocket",
+        "Zip closure"
+      ],
+      "compactedLongDesc": "Phone pouch in Intrecciato calf leather with adjustable cross-body strap.",
+      "composition": "• Material: calfskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 12 cm | 4.7\"\n\n• Width: 20 cm | 7.9\"\n\n• Depth: 5.5 cm | 2.1\"\n\n• Strap drop: 52 cm | 20.5\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/1b5c0076-3261-4080-8ebe-b2b246798071/eCom/844018V2HL08966_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/ac25ccd0-e979-4bfd-81a5-df5120a2e39d/eCom/844018V2HL08966_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/9dcb6b44-ccbc-4b84-9e6a-5b55aaa0a343/eCom/844018V2HL08966_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/f843a723-9e55-4c4a-9547-be8627ecda8c/eCom/844018V2HL08966_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/1b5c0076-3261-4080-8ebe-b2b246798071/Small/844018V2HL08966_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/844018v2hl08966/1.jpg",
+        "/products/bv-pdp/844018v2hl08966/2.jpg",
+        "/products/bv-pdp/844018v2hl08966/3.jpg",
+        "/products/bv-pdp/844018v2hl08966/4.jpg",
+        "/products/bv-pdp/844018v2hl08966/5.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 1430.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-men",
+        "bv-men-bags",
+        "bv-men-bags-crossbody"
+      ],
+      "leafId": "bv-men-bags-crossbody",
+      "cgid": "men-crossbody-bags",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "806974V4TD13519",
+      "sku": "806974V4TD13519",
+      "internalId": "814514461",
+      "name": "Traveler",
+      "brand": "bottega veneta",
+      "color": "Bark",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/traveler-bark-806974V4TD13519.html",
+      "url": "https://www.bottegaveneta.com/en-gb/traveler-bark-806974V4TD13519.html",
+      "gbpPrice": 4010.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Suede",
+        "Colour: Bark",
+        "Hardware: Silver finish"
+      ],
+      "longDescription": [
+        "Intrecciato deerskin leather hobo bag with adjustable strap",
+        "Two interior open pockets one zipped pocket and key-hook on strap",
+        "Zip closure"
+      ],
+      "compactedLongDesc": "Hobo bag in Intrecciato deer skin with adjustable strap.",
+      "composition": "• Material: deerskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 33 cm | 13\"\n\n• Width: 44 cm | 17.3\"\n\n• Depth: 9 cm | 3.5\"\n\n• Strap drop: 25 cm | 9.8\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/8451bc6c-4b59-4005-b54d-031dfa3df5c4/eCom/806974V4TD13519_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/d44a401e-8a35-42af-a023-c885c127cf47/eCom/806974V4TD13519_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/b2d6c546-f5ca-44e0-8e2d-d19b6180ae59/eCom/806974V4TD13519_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/8451bc6c-4b59-4005-b54d-031dfa3df5c4/Small/806974V4TD13519_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/806974v4td13519/1.jpg",
+        "/products/bv-pdp/806974v4td13519/2.jpg",
+        "/products/bv-pdp/806974v4td13519/3.jpg",
+        "/products/bv-pdp/806974v4td13519/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 4010.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-men",
+        "bv-men-bags",
+        "bv-men-bags-crossbody",
+        "bv-men-bags-tote"
+      ],
+      "leafId": "bv-men-bags-tote",
+      "cgid": "men-tote-bags",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "855504V2HL11981",
+      "sku": "855504V2HL11981",
+      "internalId": "814514634",
+      "name": "Mini Intrecciato Zipped Tote",
+      "brand": "bottega veneta",
+      "color": "Volcanic grey",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/mini-intrecciato-zipped-tote-volcanic-grey-855504V2HL11981.html",
+      "url": "https://www.bottegaveneta.com/en-gb/mini-intrecciato-zipped-tote-volcanic-grey-855504V2HL11981.html",
+      "gbpPrice": 2580.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Canvas",
+        "Colour: Volcanic Grey",
+        "Hardware: Silver finish"
+      ],
+      "longDescription": [
+        "Mini Intrecciato leather zipped tote bag with adjustable and detachable cross-body strap",
+        "One external hidden pocket with magnetic closure",
+        "One interior zipped pocket and two flat open pockets",
+        "Zip closure"
+      ],
+      "compactedLongDesc": "Zipped tote bag in Intrecciato leather with adjustable and detachable cross-body strap.",
+      "composition": "• Material: calfskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 18 cm | 7.1\"\n\n• Width: 27 cm | 10.6\"\n\n• Depth: 10 cm | 3.9\"\n\n• Handle drop: 12 cm | 4.7\"\n\n• Strap drop: 47 cm | 18.5\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/de169262-6452-4d04-bd45-73044e8a3a2c/eCom/855504V2HL11981_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/23bea671-050f-4f26-8668-41de01a713cb/eCom/855504V2HL11981_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/c51a18e5-ee00-49ab-b21b-83ca125a7dc4/eCom/855504V2HL11981_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/707af7ce-86ef-42d2-9c86-0a83c538ec8f/eCom/855504V2HL11981_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/de169262-6452-4d04-bd45-73044e8a3a2c/Small/855504V2HL11981_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/855504v2hl11981/1.jpg",
+        "/products/bv-pdp/855504v2hl11981/2.jpg",
+        "/products/bv-pdp/855504v2hl11981/3.jpg",
+        "/products/bv-pdp/855504v2hl11981/4.jpg",
+        "/products/bv-pdp/855504v2hl11981/5.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 2580.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-men",
+        "bv-men-bags",
+        "bv-men-bags-crossbody",
+        "bv-men-bags-tote"
+      ],
+      "leafId": "bv-men-bags-tote",
+      "cgid": "men-tote-bags",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "876011V2HL06144",
+      "sku": "876011V2HL06144",
+      "internalId": "814305219",
+      "name": "Dustbag Bike",
+      "brand": "bottega veneta",
+      "color": "Deep mahogany",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/dustbag-bike-deep-mahogany-876011V2HL06144.html",
+      "url": "https://www.bottegaveneta.com/en-gb/dustbag-bike-deep-mahogany-876011V2HL06144.html",
+      "gbpPrice": 1870.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Hardware: Silver finish",
+        "Colour: Deep Mahogany",
+        "Lining: Nylon"
+      ],
+      "longDescription": [
+        "Intrecciato calfskin leather pouch",
+        "One main compartment",
+        "Drawstring and magnetic closure",
+        "Adjustable cross-body strap"
+      ],
+      "compactedLongDesc": "Dustbag in Intrecciato calf leather with drawstring closure and adjustable cross-body strap.",
+      "composition": "• Material: Calfskin leather",
+      "material": "",
+      "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
+      "sizeModel": "• Height: 18 cm | 7.1\"\n\n• Width: 24 cm | 9.4\"\n\n• Depth: 5 cm | 3.2\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/5b63e63a-0209-45a6-b402-f1c939610b6e/eCom/876011V2HL06144_A.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/d692fb53-6fe0-45cb-a8a9-42f3fae72653/eCom/876011V2HL06144_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/9c287bb9-6379-4f9b-8ed6-1ad0709bfd3c/eCom/876011V2HL06144_C.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/bf786cb5-2e88-4149-9d2c-3b318b0775e7/eCom/876011V2HL06144_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/baa93b16-03db-47ae-84ad-9f9e7bdcbc83/eCom/876011V2HL06144_E.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/65c61c59-d15e-4bb5-b3a7-53fe888cfb5b/eCom/876011V2HL06144_F.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/5b63e63a-0209-45a6-b402-f1c939610b6e/Small/876011V2HL06144_A.jpg?v=2"
+      ],
+      "localImages": [
+        "/products/bv-pdp/876011v2hl06144/1.jpg",
+        "/products/bv-pdp/876011v2hl06144/2.jpg",
+        "/products/bv-pdp/876011v2hl06144/3.jpg",
+        "/products/bv-pdp/876011v2hl06144/4.jpg",
+        "/products/bv-pdp/876011v2hl06144/5.jpg",
+        "/products/bv-pdp/876011v2hl06144/6.jpg",
+        "/products/bv-pdp/876011v2hl06144/7.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 1870.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-men",
+        "bv-men-bags",
+        "bv-men-bags-crossbody"
+      ],
+      "leafId": "bv-men-bags-crossbody",
+      "cgid": "men-crossbody-bags",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "867484V60G01972",
+      "sku": "867484V60G01972",
+      "internalId": "814514765",
+      "name": "Corriere",
+      "brand": "bottega veneta",
+      "color": "Volcanic grey",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/corriere-volcanic-grey-867484V60G01972.html",
+      "url": "https://www.bottegaveneta.com/en-gb/corriere-volcanic-grey-867484V60G01972.html",
+      "gbpPrice": 3740.0,
+      "listGbpPrice": null,
+      "inStock": false,
+      "shortDescription": [
+        "Lining: Suede",
+        "Colour: Volcanic Grey",
+        "Hardware: Silver finish"
+      ],
+      "longDescription": [
+        "Intrecciato nappa supple tote bag with detachable leather tag and keyring",
+        "One interior Intrecciato zipped pocket",
+        "Magnet closure"
+      ],
+      "compactedLongDesc": "Tote bag in supple Intrecciato nappa leather, featuring a detachable leather tag with keyring.",
+      "composition": "• Material: lambskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 37 cm | 14.5\"\n\n• Width: 35 cm | 13.8\"\n\n• Depth: 21 cm | 8.3\"\n\n• Handle drop: 33 cm | 13\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/0b2ba794-bfea-4be9-9d82-a7c42f310fce/eCom/867484V60G01972_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/e64f1098-807a-4537-88de-327b10a975dc/eCom/867484V60G01972_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/5d2cb129-1c35-4538-b2fd-36bda0a29756/eCom/867484V60G01972_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/7b3e6648-58e5-499c-8005-74aeaac500cc/eCom/867484V60G01972_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/43cce9c1-a4a7-445c-8ba5-0fe1ae7ea499/eCom/867484V60G01972_G.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/0b2ba794-bfea-4be9-9d82-a7c42f310fce/Small/867484V60G01972_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/867484v60g01972/1.jpg",
+        "/products/bv-pdp/867484v60g01972/2.jpg",
+        "/products/bv-pdp/867484v60g01972/3.jpg",
+        "/products/bv-pdp/867484v60g01972/4.jpg",
+        "/products/bv-pdp/867484v60g01972/5.jpg",
+        "/products/bv-pdp/867484v60g01972/6.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": false,
+          "gbpPrice": 3740.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-men",
+        "bv-men-bags",
         "bv-men-bags-tote"
       ],
       "leafId": "bv-men-bags-tote",

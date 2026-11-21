@@ -1,7 +1,7 @@
 {
   "hub": "men-eyewear",
   "category": "accessories",
-  "scrapedAt": "2026-11-11T20:55:04.256873+00:00",
+  "scrapedAt": "2026-11-20T22:41:13.059725+00:00",
   "leaves": [
     "bv-men-eyewear-sunglasses",
     "bv-men-eyewear-opticals",
@@ -12,28 +12,28 @@
   ],
   "leafCounts": {
     "bv-men-eyewear-sunglasses": {
-      "official": 96,
-      "scraped": 96
+      "official": 70,
+      "scraped": 70
     },
     "bv-men-eyewear-opticals": {
-      "official": 8,
-      "scraped": 8
+      "official": 7,
+      "scraped": 7
     },
     "bv-men-eyewear-aviator": {
-      "official": 27,
-      "scraped": 27
+      "official": 24,
+      "scraped": 24
     },
     "bv-men-eyewear-panthos": {
-      "official": 11,
-      "scraped": 11
+      "official": 9,
+      "scraped": 9
     },
     "bv-men-eyewear-rectangular": {
-      "official": 13,
-      "scraped": 13
+      "official": 9,
+      "scraped": 9
     },
     "bv-men-eyewear-squared": {
-      "official": 18,
-      "scraped": 18
+      "official": 10,
+      "scraped": 10
     }
   },
   "products": [
@@ -3436,7 +3436,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/dizzy-square-sunglasses-black-grey-832792V2Q301049.html",
       "gbpPrice": 385.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Black/Grey"
       ],
@@ -3474,7 +3474,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 385.0,
           "listGbpPrice": null
         }
@@ -3909,7 +3909,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-rectangular-sunglasses-havana-brown-861360V2Q302819.html",
       "gbpPrice": 395.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Havana/Brown"
       ],
@@ -3948,7 +3948,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 395.0,
           "listGbpPrice": null
         }
@@ -4171,7 +4171,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/classic-rectangular-sunglasses-gold-green-861367V44508045.html",
       "gbpPrice": 365.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Gold/Green"
       ],
@@ -4208,7 +4208,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 365.0,
           "listGbpPrice": null
         }
@@ -4301,7 +4301,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/dash-oval-sunglasses-silver-green-872418V44501427.html",
       "gbpPrice": 415.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Silver/Green"
       ],
@@ -4337,7 +4337,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 415.0,
           "listGbpPrice": null
         }
@@ -4493,7 +4493,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/classic-oval-sunglasses-gold-green-861368V44508045.html",
       "gbpPrice": 365.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Gold/Green"
       ],
@@ -4530,7 +4530,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 365.0,
           "listGbpPrice": null
         }
@@ -5391,7 +5391,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/fin-panthos-sunglasses-gold-832879V44508020.html",
       "gbpPrice": 490.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Gold"
       ],
@@ -5424,7 +5424,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 490.0,
           "listGbpPrice": null
         }

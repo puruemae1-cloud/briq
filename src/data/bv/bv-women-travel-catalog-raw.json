@@ -1,14 +1,14 @@
 {
   "hub": "women-travel",
   "category": "accessories",
-  "scrapedAt": "2026-11-11T21:52:37.284563+00:00",
+  "scrapedAt": "2026-11-20T23:27:35.713274+00:00",
   "leaves": [
     "bv-women-travel"
   ],
   "leafCounts": {
     "bv-women-travel": {
-      "official": 70,
-      "scraped": 70
+      "official": 43,
+      "scraped": 43
     }
   },
   "products": [
@@ -1136,7 +1136,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-duffle-black-781053V2HL18803.html",
       "gbpPrice": 4370.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Canvas",
         "Colour: Black",
@@ -1178,7 +1178,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 4370.0,
           "listGbpPrice": null
         }
@@ -4453,7 +4453,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/odyssey-intrecciato-cabin-suitcase-obsidian-grey-radar-A00AJTV56Y21701.html",
       "gbpPrice": 6860.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Canvas",
         "Colour: Obsidian Grey/Radar",
@@ -4497,7 +4497,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 6860.0,
           "listGbpPrice": null
         }

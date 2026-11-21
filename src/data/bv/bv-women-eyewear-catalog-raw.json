@@ -1,7 +1,7 @@
 {
   "hub": "women-eyewear",
   "category": "accessories",
-  "scrapedAt": "2026-11-11T21:56:53.106669+00:00",
+  "scrapedAt": "2026-11-20T23:32:03.074560+00:00",
   "leaves": [
     "bv-women-eyewear-sunglasses",
     "bv-women-eyewear-opticals",
@@ -14,36 +14,36 @@
   ],
   "leafCounts": {
     "bv-women-eyewear-sunglasses": {
-      "official": 138,
-      "scraped": 138
+      "official": 104,
+      "scraped": 104
     },
     "bv-women-eyewear-opticals": {
-      "official": 14,
-      "scraped": 14
+      "official": 12,
+      "scraped": 12
     },
     "bv-women-eyewear-aviator": {
-      "official": 41,
-      "scraped": 41
+      "official": 38,
+      "scraped": 38
     },
     "bv-women-eyewear-panthos": {
-      "official": 11,
-      "scraped": 11
+      "official": 9,
+      "scraped": 9
     },
     "bv-women-eyewear-rectangular": {
+      "official": 9,
+      "scraped": 9
+    },
+    "bv-women-eyewear-squared": {
       "official": 13,
       "scraped": 13
     },
-    "bv-women-eyewear-squared": {
-      "official": 20,
-      "scraped": 20
-    },
     "bv-women-eyewear-cat-eye": {
-      "official": 29,
-      "scraped": 29
-    },
-    "bv-women-eyewear-oval": {
       "official": 22,
       "scraped": 22
+    },
+    "bv-women-eyewear-oval": {
+      "official": 15,
+      "scraped": 15
     }
   },
   "products": [
@@ -511,7 +511,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/knot-cat-eye-sunglasses-gold-green-799386V44508045.html",
       "gbpPrice": 425.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Gold/Green"
       ],
@@ -546,7 +546,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 425.0,
           "listGbpPrice": null
         }
@@ -705,7 +705,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/angle-acetate-pointed-cat-eye-sunglasses-havana-brown-660165V23302819.html",
       "gbpPrice": 320.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Frame Colour: Havana/Brown"
       ],
@@ -736,7 +736,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 320.0,
           "listGbpPrice": null
         }
@@ -2600,7 +2600,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/dash-oval-sunglasses-silver-green-872418V44501427.html",
       "gbpPrice": 415.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Silver/Green"
       ],
@@ -2636,7 +2636,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 415.0,
           "listGbpPrice": null
         }
@@ -2730,7 +2730,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/classic-oval-sunglasses-gold-green-861368V44508045.html",
       "gbpPrice": 365.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Gold/Green"
       ],
@@ -2767,7 +2767,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 365.0,
           "listGbpPrice": null
         }
@@ -3526,7 +3526,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/classic-rectangular-sunglasses-gold-green-861367V44508045.html",
       "gbpPrice": 365.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Gold/Green"
       ],
@@ -3563,7 +3563,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 365.0,
           "listGbpPrice": null
         }
@@ -3660,7 +3660,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-rectangular-sunglasses-havana-brown-861360V2Q302819.html",
       "gbpPrice": 395.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Havana/Brown"
       ],
@@ -3699,7 +3699,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 395.0,
           "listGbpPrice": null
         }
@@ -4056,7 +4056,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/mitre-oval-sunglasses-havana-brown-799394V2Q302900.html",
       "gbpPrice": 385.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Havana/Brown"
       ],
@@ -4090,7 +4090,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 385.0,
           "listGbpPrice": null
         }
@@ -4444,7 +4444,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/dizzy-square-sunglasses-black-grey-832792V2Q301049.html",
       "gbpPrice": 385.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Black/Grey"
       ],
@@ -4482,7 +4482,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 385.0,
           "listGbpPrice": null
         }
@@ -5549,7 +5549,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/mitre-oval-sunglasses-black-grey-799394V2Q301049.html",
       "gbpPrice": 385.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Black/Grey"
       ],
@@ -5583,7 +5583,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 385.0,
           "listGbpPrice": null
         }
@@ -8551,7 +8551,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/fin-panthos-sunglasses-gold-832879V44508020.html",
       "gbpPrice": 490.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Gold"
       ],
@@ -8584,7 +8584,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 490.0,
           "listGbpPrice": null
         }
@@ -11265,6 +11265,134 @@
       ],
       "leafId": "bv-women-eyewear-cat-eye",
       "cgid": "women-sunglasses-cat-eye",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "845792V2Q303315",
+      "sku": "845792V2Q303315",
+      "internalId": "814537085",
+      "name": "Drop Squared Sunglasses",
+      "brand": "bottega veneta",
+      "color": "Green/green",
+      "gender": "E",
+      "link": "https://www.bottegaveneta.com/en-gb/drop-squared-sunglasses-green-green-845792V2Q303315.html",
+      "url": "https://www.bottegaveneta.com/en-gb/drop-squared-sunglasses-green-green-845792V2Q303315.html",
+      "gbpPrice": 515.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Green/Green"
+      ],
+      "longDescription": [
+        "Squared sunglasses made with Eastman Acetate Renew, an acetate with 27% recycled content",
+        "Lenses made from polyamide with 39% bio-based content",
+        "Metal temple tips featuring signature drop shape",
+        "BV1436S 005"
+      ],
+      "compactedLongDesc": "Squared sunglasses in recycled acetate with signature drop-shaped temple tips.",
+      "composition": "• Material: acetate",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Lens width: 60 mm | 2.4\"\n\n• Bridge length: 16 mm | 0.6\"\n\n• Temple length: 185 mm | 7.3\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/8fc3fe5d-a5b3-465b-88f8-4e5fb8e1a680/eCom/845792V2Q303315_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/36af354a-3642-4def-ae58-fe49feac3425/eCom/845792V2Q303315_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/0632d7f3-2a79-4a20-b20b-429288f8cc63/eCom/845792V2Q303315_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/8fc3fe5d-a5b3-465b-88f8-4e5fb8e1a680/Small/845792V2Q303315_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/845792v2q303315/1.jpg",
+        "/products/bv-pdp/845792v2q303315/2.jpg",
+        "/products/bv-pdp/845792v2q303315/3.jpg",
+        "/products/bv-pdp/845792v2q303315/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 515.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-women",
+        "bv-women-eyewear",
+        "bv-women-eyewear-sunglasses",
+        "bv-women-eyewear-squared"
+      ],
+      "leafId": "bv-women-eyewear-squared",
+      "cgid": "women-sunglasses-squared",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "861369V44508107",
+      "sku": "861369V44508107",
+      "internalId": "814537125",
+      "name": "Drop Aviator Sunglasses",
+      "brand": "bottega veneta",
+      "color": "Silver/grey",
+      "gender": "E",
+      "link": "https://www.bottegaveneta.com/en-gb/drop-aviator-sunglasses-silver-grey-861369V44508107.html",
+      "url": "https://www.bottegaveneta.com/en-gb/drop-aviator-sunglasses-silver-grey-861369V44508107.html",
+      "gbpPrice": 610.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Silver/Grey"
+      ],
+      "longDescription": [
+        "Aviator sunglasses made in silver finish metal",
+        "Lenses made from polyamide with 39% bio-based content",
+        "Constrasted metal temples tips featuring signature drop shape in gold",
+        "BV1437S 002"
+      ],
+      "compactedLongDesc": "Aviator sunglasses in silver-finished metal with signature drop-shaped temple tips.",
+      "composition": "• Material: metal",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Lens width: 64 mm | 2.5\"\n\n• Bridge length: 12 mm | 0.5\"\n\n• Temple length: 185 mm | 7.3\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/e901e306-e5ce-4495-a2c0-6619f8736fe0/eCom/861369V44508107_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/2625c78c-7b49-4b90-9bf5-eabe1c771425/eCom/861369V44508107_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/d87b49a2-5e4d-44e7-91dc-5974cc85687d/eCom/861369V44508107_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/c766dccb-8c94-4806-bcdc-5c0e025962ae/eCom/861369V44508107_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/e901e306-e5ce-4495-a2c0-6619f8736fe0/Small/861369V44508107_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/861369v44508107/1.jpg",
+        "/products/bv-pdp/861369v44508107/2.jpg",
+        "/products/bv-pdp/861369v44508107/3.jpg",
+        "/products/bv-pdp/861369v44508107/4.jpg",
+        "/products/bv-pdp/861369v44508107/5.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 610.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-women",
+        "bv-women-eyewear",
+        "bv-women-eyewear-sunglasses",
+        "bv-women-eyewear-aviator"
+      ],
+      "leafId": "bv-women-eyewear-aviator",
+      "cgid": "women-sunglasses-aviator",
       "hubCategory": "accessories"
     }
   ]

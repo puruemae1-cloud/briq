@@ -1,7 +1,7 @@
 {
   "hub": "men-accessories",
   "category": "accessories",
-  "scrapedAt": "2026-11-11T20:53:53.144977+00:00",
+  "scrapedAt": "2026-11-20T22:40:07.024585+00:00",
   "leaves": [
     "bv-men-acc-key-rings",
     "bv-men-acc-belts",
@@ -13,28 +13,28 @@
   ],
   "leafCounts": {
     "bv-men-acc-key-rings": {
-      "official": 73,
-      "scraped": 73
+      "official": 62,
+      "scraped": 62
     },
     "bv-men-acc-belts": {
-      "official": 24,
-      "scraped": 24
+      "official": 18,
+      "scraped": 18
     },
     "bv-men-acc-tech": {
-      "official": 6,
-      "scraped": 6
+      "official": 3,
+      "scraped": 3
     },
     "bv-men-acc-scarves-ties": {
-      "official": 30,
-      "scraped": 30
+      "official": 7,
+      "scraped": 7
     },
     "bv-men-acc-gloves": {
-      "official": 6,
-      "scraped": 6
-    },
-    "bv-men-acc-hats": {
       "official": 4,
       "scraped": 4
+    },
+    "bv-men-acc-hats": {
+      "official": 2,
+      "scraped": 2
     },
     "bv-men-acc-bathrobes": {
       "official": 2,
@@ -606,12 +606,12 @@
       "id": "A006LVV6TO08803",
       "sku": "A006LVV6TO08803",
       "internalId": "814446669",
-      "name": "Key Holder Necklace ",
+      "name": "Key Holder Necklace",
       "brand": "bottega veneta",
       "color": "Black",
       "gender": "Men",
-      "link": "https://www.bottegaveneta.com/en-gb/key-holder-necklace--black-A006LVV6TO08803.html",
-      "url": "https://www.bottegaveneta.com/en-gb/key-holder-necklace--black-A006LVV6TO08803.html",
+      "link": "https://www.bottegaveneta.com/en-gb/key-holder-necklace-black-A006LVV6TO08803.html",
+      "url": "https://www.bottegaveneta.com/en-gb/key-holder-necklace-black-A006LVV6TO08803.html",
       "gbpPrice": 440.0,
       "listGbpPrice": null,
       "inStock": true,
@@ -669,6 +669,7 @@
       },
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/018b245e-419a-41d0-9c57-d9ae7c067292/eCom/A006LVV6TO08803_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/1dca9573-6ede-43e5-a0a3-7097056e6204/eCom/A006LVV6TO08803_B.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/d4909080-b8e7-432c-ac1d-ba17aaa4fcd1/eCom/A006LVV6TO08803_C.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/d1e9a35c-8578-4108-ad25-c142da078247/eCom/A006LVV6TO08803_D.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/018b245e-419a-41d0-9c57-d9ae7c067292/Small/A006LVV6TO08803_A.jpg?v=1"
@@ -677,7 +678,8 @@
         "/products/bv-pdp/a006lvv6to08803/1.jpg",
         "/products/bv-pdp/a006lvv6to08803/2.jpg",
         "/products/bv-pdp/a006lvv6to08803/3.jpg",
-        "/products/bv-pdp/a006lvv6to08803/4.jpg"
+        "/products/bv-pdp/a006lvv6to08803/4.jpg",
+        "/products/bv-pdp/a006lvv6to08803/5.jpg"
       ],
       "sizes": [
         {
@@ -3361,7 +3363,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/onda-key-ring-deep-mahogany-867867V3D806149.html",
       "gbpPrice": 350.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Deep Mahogany",
         "Hardware: Brass Vibrato finish",
@@ -3425,7 +3427,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 350.0,
           "listGbpPrice": null
         }
@@ -3926,7 +3928,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/badge-holder-on-strap-fondant-855187V4L312113.html",
       "gbpPrice": 350.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Calfskin",
         "Colour: Fondant"
@@ -3994,7 +3996,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 350.0,
           "listGbpPrice": null
         }
@@ -6326,6 +6328,7 @@
         "https://bottega-veneta.dam.kering.com/asset/3e2c357d-952d-484b-8913-7bc6f8e88d48/eCom/A003ANVCPQ48803_B.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/e903167b-9683-49e7-9271-fc5df91bb717/eCom/A003ANVCPQ48803_C.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/18dfde7b-6c79-4da6-b996-3e2f16b50382/eCom/A003ANVCPQ48803_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/52e0dd4e-f02c-4020-a7cb-7a0e9c4e52a0/eCom/A003ANVCPQ48803_E.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/719c77f1-a4d7-43e9-a486-6558cc905ef9/Small/A003ANVCPQ48803_A.jpg?v=1"
       ],
       "localImages": [
@@ -6333,7 +6336,8 @@
         "/products/bv-pdp/a003anvcpq48803/2.jpg",
         "/products/bv-pdp/a003anvcpq48803/3.jpg",
         "/products/bv-pdp/a003anvcpq48803/4.jpg",
-        "/products/bv-pdp/a003anvcpq48803/5.jpg"
+        "/products/bv-pdp/a003anvcpq48803/5.jpg",
+        "/products/bv-pdp/a003anvcpq48803/6.jpg"
       ],
       "sizes": [
         {
@@ -6553,7 +6557,7 @@
           "id": "100",
           "value": "100",
           "displayValue": "100",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 560.0,
           "listGbpPrice": null
         },
@@ -6561,7 +6565,7 @@
           "id": "105",
           "value": "105",
           "displayValue": "105",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 560.0,
           "listGbpPrice": null
         },
@@ -7210,7 +7214,7 @@
           "id": "80",
           "value": "80",
           "displayValue": "80",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 500.0,
           "listGbpPrice": null
         },
@@ -7218,7 +7222,7 @@
           "id": "85",
           "value": "85",
           "displayValue": "85",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 500.0,
           "listGbpPrice": null
         },
@@ -7226,7 +7230,7 @@
           "id": "90",
           "value": "90",
           "displayValue": "90",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 500.0,
           "listGbpPrice": null
         },
@@ -7242,7 +7246,7 @@
           "id": "100",
           "value": "100",
           "displayValue": "100",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 500.0,
           "listGbpPrice": null
         },
@@ -7250,7 +7254,7 @@
           "id": "105",
           "value": "105",
           "displayValue": "105",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 500.0,
           "listGbpPrice": null
         },
@@ -7258,7 +7262,7 @@
           "id": "110",
           "value": "110",
           "displayValue": "110",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 500.0,
           "listGbpPrice": null
         },
@@ -7753,7 +7757,7 @@
           "id": "90",
           "value": "90",
           "displayValue": "90",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 560.0,
           "listGbpPrice": null
         },
@@ -7785,7 +7789,7 @@
           "id": "110",
           "value": "110",
           "displayValue": "110",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 560.0,
           "listGbpPrice": null
         },
@@ -7924,7 +7928,7 @@
           "id": "85",
           "value": "85",
           "displayValue": "85",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 500.0,
           "listGbpPrice": null
         },
@@ -7940,7 +7944,7 @@
           "id": "95",
           "value": "95",
           "displayValue": "95",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 500.0,
           "listGbpPrice": null
         },
@@ -7956,7 +7960,7 @@
           "id": "105",
           "value": "105",
           "displayValue": "105",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 500.0,
           "listGbpPrice": null
         },
@@ -9141,7 +9145,7 @@
           "id": "100",
           "value": "100",
           "displayValue": "100",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 530.0,
           "listGbpPrice": null
         },
@@ -9874,7 +9878,7 @@
           "id": "100",
           "value": "100",
           "displayValue": "100",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 500.0,
           "listGbpPrice": null
         },
@@ -9890,7 +9894,7 @@
           "id": "110",
           "value": "110",
           "displayValue": "110",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 500.0,
           "listGbpPrice": null
         },
@@ -9906,7 +9910,7 @@
           "id": "120",
           "value": "120",
           "displayValue": "120",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 500.0,
           "listGbpPrice": null
         }
@@ -13160,7 +13164,7 @@
           "id": "7_5",
           "value": "7_5",
           "displayValue": "7.5",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 670.0,
           "listGbpPrice": null
         },
@@ -13184,7 +13188,7 @@
           "id": "9",
           "value": "9",
           "displayValue": "9",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 670.0,
           "listGbpPrice": null
         },
@@ -13302,7 +13306,7 @@
           "id": "9",
           "value": "9",
           "displayValue": "9",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 670.0,
           "listGbpPrice": null
         },
@@ -13310,7 +13314,7 @@
           "id": "9_5",
           "value": "9_5",
           "displayValue": "9.5",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 670.0,
           "listGbpPrice": null
         }
@@ -13420,7 +13424,7 @@
           "id": "8_5",
           "value": "8_5",
           "displayValue": "8.5",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 700.0,
           "listGbpPrice": null
         },
@@ -13428,7 +13432,7 @@
           "id": "9",
           "value": "9",
           "displayValue": "9",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 700.0,
           "listGbpPrice": null
         },
@@ -13436,7 +13440,7 @@
           "id": "9_5",
           "value": "9_5",
           "displayValue": "9.5",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 700.0,
           "listGbpPrice": null
         }
@@ -14302,7 +14306,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/dog-charm-obsidian-grey-dark-truffle-A006A7V3D841927.html",
       "gbpPrice": 580.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Obsidian Grey/Dark Truffle"
       ],
@@ -14367,7 +14371,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 580.0,
           "listGbpPrice": null
         }
@@ -14538,7 +14542,7 @@
           "id": "115",
           "value": "115",
           "displayValue": "115",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 580.0,
           "listGbpPrice": null
         },
@@ -14694,7 +14698,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/dog-charm-espresso-gingerbread-A006A7V3D842453.html",
       "gbpPrice": 580.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Colour: Espresso/Gingerbread"
       ],
@@ -14725,7 +14729,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 580.0,
           "listGbpPrice": null
         }
@@ -14739,6 +14743,303 @@
       ],
       "leafId": "bv-men-acc-key-rings",
       "cgid": "men-keyrings",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "A00EGQV3D864202",
+      "sku": "A00EGQV3D864202",
+      "internalId": "814512122",
+      "name": "Dog Charm",
+      "brand": "bottega veneta",
+      "color": "Abyss/indigo",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/dog-charm-abyss-indigo-A00EGQV3D864202.html",
+      "url": "https://www.bottegaveneta.com/en-gb/dog-charm-abyss-indigo-A00EGQV3D864202.html",
+      "gbpPrice": 620.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Abyss/Indigo",
+        "Lining: Unlined"
+      ],
+      "longDescription": [
+        "Intreccio nappa and denim dog charm",
+        "Bottega Veneta leather tag",
+        "Leather lanyard designed to be attached to any handle"
+      ],
+      "compactedLongDesc": "Charm realised in Intreccio nappa leather with dog shape, featuring denim detailing and a leather lanyard.",
+      "composition": "• Material: lambskin, cotton, polyester, polyamide, other fibers",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 7 cm | 2.7\"\n\n• Width: 7.5 cm | 2.9\"\n\n• Depth: 3 cm | 1.2\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/c65fa2fb-8a2d-43c1-a631-7ee27d74fd43/eCom/A00EGQV3D864202_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/9d2dcbae-268d-476b-bddc-c361af8eb8ec/eCom/A00EGQV3D864202_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/c65fa2fb-8a2d-43c1-a631-7ee27d74fd43/Small/A00EGQV3D864202_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a00egqv3d864202/1.jpg",
+        "/products/bv-pdp/a00egqv3d864202/2.jpg",
+        "/products/bv-pdp/a00egqv3d864202/3.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 620.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-men",
+        "bv-men-accessories",
+        "bv-men-acc-key-rings"
+      ],
+      "leafId": "bv-men-acc-key-rings",
+      "cgid": "men-keyrings",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "807068V3D818913",
+      "sku": "807068V3D818913",
+      "internalId": "814514462",
+      "name": "Dog Charm",
+      "brand": "bottega veneta",
+      "color": "Bright red",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/dog-charm-bright-red-807068V3D818913.html",
+      "url": "https://www.bottegaveneta.com/en-gb/dog-charm-bright-red-807068V3D818913.html",
+      "gbpPrice": 530.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Bright Red",
+        "Lining: Unlined"
+      ],
+      "longDescription": [
+        "Intreccio nappa leather dog charm",
+        "Bottega Veneta leather tag",
+        "Leather lanyard designed to be attached to any handle"
+      ],
+      "compactedLongDesc": "Charm realised in Intreccio nappa leather with dog shape, featuring a leather lanyard.",
+      "composition": "• Material: lambskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 7 cm | 2.7\"\n\n• Width: 7.5 cm | 2.9\"\n\n• Depth: 3 cm | 1.2\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/60752199-64f3-4819-aebd-021b5cf8dff4/eCom/807068V3D818913_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/54a34191-7d84-4aa1-8b06-a0567ca8ff3b/eCom/807068V3D818913_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/60752199-64f3-4819-aebd-021b5cf8dff4/Small/807068V3D818913_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/807068v3d818913/1.jpg",
+        "/products/bv-pdp/807068v3d818913/2.jpg",
+        "/products/bv-pdp/807068v3d818913/3.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 530.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-men",
+        "bv-men-accessories",
+        "bv-men-acc-key-rings"
+      ],
+      "leafId": "bv-men-acc-key-rings",
+      "cgid": "men-keyrings",
+      "hubCategory": "accessories"
+    },
+    {
+      "id": "A003ANVCPQ48966",
+      "sku": "A003ANVCPQ48966",
+      "internalId": "A003ANVCPQ48966",
+      "name": "Andiamo Belt",
+      "brand": "bottega veneta",
+      "color": "Black/black",
+      "gender": "Men",
+      "link": "https://www.bottegaveneta.com/en-gb/andiamo-belt-black-black-A003ANVCPQ48966.html",
+      "url": "https://www.bottegaveneta.com/en-gb/andiamo-belt-black-black-A003ANVCPQ48966.html",
+      "gbpPrice": 710.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Black",
+        "Hardware: Black finish",
+        "Lining: Calfskin"
+      ],
+      "longDescription": [
+        "Intrecciato calfskin leather belt",
+        "Metal knot buckle",
+        "Pin closure"
+      ],
+      "compactedLongDesc": "Belt in Intrecciato calf leather with signature knot buckle.",
+      "composition": "• Material: Calfskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 3.5 cm | 1.4\"\n\n• Width: 0 cm\n\n• Depth: 0.5 cm | 0.2\"",
+      "sizeChartId": "default-M-BELTS",
+      "sizeGuide": {
+        "id": "default-M-BELTS",
+        "titleKo": "Men's Belts",
+        "noteKo": "보테가 베네타 공홈 사이즈 가이드 기준입니다.",
+        "headers": [
+          "BV",
+          "사이즈"
+        ],
+        "rows": [
+          [
+            "75",
+            "S"
+          ],
+          [
+            "80",
+            "S"
+          ],
+          [
+            "85",
+            "S"
+          ],
+          [
+            "90",
+            "M"
+          ],
+          [
+            "95",
+            "M"
+          ],
+          [
+            "100",
+            "M"
+          ],
+          [
+            "105",
+            "L"
+          ],
+          [
+            "110",
+            "L"
+          ],
+          [
+            "115",
+            "L"
+          ],
+          [
+            "120",
+            "L"
+          ]
+        ]
+      },
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/85ecd0ac-aec6-499a-b363-0ea1c5c60313/eCom/A003ANVCPQ48966_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/9a9b388c-3652-48dd-b06d-df214b8b4611/eCom/A003ANVCPQ48966_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/cf57e196-3cdf-465d-a6d9-f2420570d6b6/eCom/A003ANVCPQ48966_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/85ecd0ac-aec6-499a-b363-0ea1c5c60313/Small/A003ANVCPQ48966_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a003anvcpq48966/1.jpg",
+        "/products/bv-pdp/a003anvcpq48966/2.jpg",
+        "/products/bv-pdp/a003anvcpq48966/3.jpg",
+        "/products/bv-pdp/a003anvcpq48966/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "80",
+          "value": "80",
+          "displayValue": "80",
+          "inStock": true,
+          "gbpPrice": 710.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "85",
+          "value": "85",
+          "displayValue": "85",
+          "inStock": true,
+          "gbpPrice": 710.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "90",
+          "value": "90",
+          "displayValue": "90",
+          "inStock": true,
+          "gbpPrice": 710.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "95",
+          "value": "95",
+          "displayValue": "95",
+          "inStock": true,
+          "gbpPrice": 710.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "100",
+          "value": "100",
+          "displayValue": "100",
+          "inStock": true,
+          "gbpPrice": 710.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "105",
+          "value": "105",
+          "displayValue": "105",
+          "inStock": true,
+          "gbpPrice": 710.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "110",
+          "value": "110",
+          "displayValue": "110",
+          "inStock": true,
+          "gbpPrice": 710.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "115",
+          "value": "115",
+          "displayValue": "115",
+          "inStock": true,
+          "gbpPrice": 710.0,
+          "listGbpPrice": null
+        },
+        {
+          "id": "120",
+          "value": "120",
+          "displayValue": "120",
+          "inStock": false,
+          "gbpPrice": 710.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-accessories",
+        "bv-men",
+        "bv-men-accessories",
+        "bv-men-acc-belts"
+      ],
+      "leafId": "bv-men-acc-belts",
+      "cgid": "men-belts",
       "hubCategory": "accessories"
     }
   ]

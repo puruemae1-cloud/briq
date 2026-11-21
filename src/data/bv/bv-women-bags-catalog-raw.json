@@ -1,7 +1,7 @@
 {
   "hub": "women-bags",
   "category": "bags",
-  "scrapedAt": "2026-11-11T21:09:48.437395+00:00",
+  "scrapedAt": "2026-11-20T22:52:09.194302+00:00",
   "leaves": [
     "bv-women-bags-mini",
     "bv-women-bags-crossbody",
@@ -24,76 +24,76 @@
   ],
   "leafCounts": {
     "bv-women-bags-mini": {
-      "official": 102,
-      "scraped": 102
+      "official": 100,
+      "scraped": 100
     },
     "bv-women-bags-crossbody": {
-      "official": 68,
-      "scraped": 68
+      "official": 53,
+      "scraped": 53
     },
     "bv-women-bags-shoulder": {
-      "official": 64,
-      "scraped": 64
+      "official": 58,
+      "scraped": 58
     },
     "bv-women-bags-top-handle": {
-      "official": 74,
-      "scraped": 74
+      "official": 51,
+      "scraped": 51
     },
     "bv-women-bags-tote": {
-      "official": 66,
-      "scraped": 66
+      "official": 46,
+      "scraped": 46
     },
     "bv-women-bags-clutch": {
-      "official": 48,
-      "scraped": 48
+      "official": 32,
+      "scraped": 32
     },
     "bv-women-bags-jodie": {
-      "official": 22,
-      "scraped": 22
-    },
-    "bv-women-bags-andiamo": {
-      "official": 65,
-      "scraped": 65
-    },
-    "bv-women-bags-barbara": {
       "official": 16,
       "scraped": 16
     },
+    "bv-women-bags-andiamo": {
+      "official": 47,
+      "scraped": 47
+    },
+    "bv-women-bags-barbara": {
+      "official": 10,
+      "scraped": 10
+    },
     "bv-women-bags-campana": {
-      "official": 26,
-      "scraped": 26
+      "official": 27,
+      "scraped": 27
     },
     "bv-women-bags-pinacoteca": {
-      "official": 14,
-      "scraped": 14
+      "official": 10,
+      "scraped": 10
     },
     "bv-women-bags-sardine": {
-      "official": 6,
-      "scraped": 6
+      "official": 1,
+      "scraped": 1
     },
     "bv-women-bags-cabat": {
-      "official": 21,
-      "scraped": 21
-    },
-    "bv-women-bags-bang-bang": {
-      "official": 13,
-      "scraped": 13
-    },
-    "bv-women-bags-lauren": {
-      "official": 12,
-      "scraped": 12
-    },
-    "bv-women-bags-parachute": {
-      "official": 18,
-      "scraped": 18
-    },
-    "bv-women-bags-knot-clutch": {
       "official": 15,
       "scraped": 15
     },
-    "bv-women-bags-madison": {
+    "bv-women-bags-bang-bang": {
       "official": 11,
       "scraped": 11
+    },
+    "bv-women-bags-lauren": {
+      "official": 7,
+      "scraped": 7
+    },
+    "bv-women-bags-parachute": {
+      "official": 11,
+      "scraped": 11
+    },
+    "bv-women-bags-knot-clutch": {
+      "official": 8,
+      "scraped": 8
+    },
+    "bv-women-bags-madison": {
+      "official": 12,
+      "scraped": 12
     }
   },
   "products": [
@@ -963,8 +963,8 @@
         "bv-women-bags-top-handle",
         "bv-women-bags-clutch"
       ],
-      "leafId": "bv-women-bags-crossbody",
-      "cgid": "women-crossbody-bags",
+      "leafId": "bv-women-bags-clutch",
+      "cgid": "women-clutches",
       "hubCategory": "bags"
     },
     {
@@ -1248,8 +1248,8 @@
         "bv-women-bags-top-handle",
         "bv-women-bags-andiamo"
       ],
-      "leafId": "bv-women-bags-andiamo",
-      "cgid": "women-andiamo",
+      "leafId": "bv-women-bags-mini",
+      "cgid": "women-mini-bags",
       "hubCategory": "bags"
     },
     {
@@ -1277,7 +1277,7 @@
         "Shoulder strap with knotted detail"
       ],
       "compactedLongDesc": "Shoulder bag in Intrecciato piccolo nappa leather, featuring a strap with knot detailing.",
-      "composition": "• Material: Lambskin leather",
+      "composition": "• Material: lambskin",
       "material": "",
       "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
       "sizeModel": "• Height: 10 cm\n\n• Width: 23 cm\n\n• Depth: 10 cm\n\n• Handle drop: 20 cm\n\n• Fits iPhone 17 Pro Max, a credit card case and keys.",
@@ -1288,14 +1288,16 @@
         "https://bottega-veneta.dam.kering.com/asset/6f4189f5-e54d-453f-ac1f-bcd0959f55c9/eCom/876370V0HW08425_B.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/dc152e12-71fe-466e-93f5-da886ad0205e/eCom/876370V0HW08425_C.jpg?v=2",
         "https://bottega-veneta.dam.kering.com/asset/aac5fecb-eb49-4388-8761-9962deca6ffb/eCom/876370V0HW08425_D.jpg?v=2",
-        "https://bottega-veneta.dam.kering.com/asset/826669d2-1cee-42f5-85d0-ceb886e6bc47/eCom/876370V0HW08425_F.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/826669d2-1cee-42f5-85d0-ceb886e6bc47/eCom/876370V0HW08425_F.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/5a4e4018-d345-4e44-b0f5-551bbf6a1123/Small/876370V0HW08425_A.jpg?v=2"
       ],
       "localImages": [
         "/products/bv-pdp/876370v0hw08425/1.jpg",
         "/products/bv-pdp/876370v0hw08425/2.jpg",
         "/products/bv-pdp/876370v0hw08425/3.jpg",
         "/products/bv-pdp/876370v0hw08425/4.jpg",
-        "/products/bv-pdp/876370v0hw08425/5.jpg"
+        "/products/bv-pdp/876370v0hw08425/5.jpg",
+        "/products/bv-pdp/876370v0hw08425/6.jpg"
       ],
       "sizes": [
         {
@@ -1670,7 +1672,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/dustbag-notte-basalt-844626V3IV01653.html",
       "gbpPrice": 2500.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Colour: Basalt",
         "Hardware: Muse Brass finish",
@@ -1711,7 +1713,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 2500.0,
           "listGbpPrice": null
         }
@@ -2014,7 +2016,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/dustbag---obsidian-grey-796728V5ZZ01689.html",
       "gbpPrice": 2050.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Colour: Obsidian Grey",
         "Hardware: Silver",
@@ -2058,7 +2060,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 2050.0,
           "listGbpPrice": null
         }
@@ -2432,7 +2434,7 @@
       "gender": "Women",
       "link": "https://www.bottegaveneta.com/en-gb/giorno-barolo-muse-brass-857657V3IV02247.html",
       "url": "https://www.bottegaveneta.com/en-gb/giorno-barolo-muse-brass-857657V3IV02247.html",
-      "gbpPrice": 2570.0,
+      "gbpPrice": 2770.0,
       "listGbpPrice": null,
       "inStock": false,
       "shortDescription": [
@@ -2454,15 +2456,21 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/0ea91419-ac75-4b7a-877b-f251c69847a0/eCom/857657V3IV02247_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/423230f4-a9a0-4193-9382-d017c8fc6bc8/eCom/857657V3IV02247_B.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/f6a70bb3-e81b-4f42-a579-2301e55ab66b/eCom/857657V3IV02247_C.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/6607afb2-1ce8-4287-8e36-03b528861fce/eCom/857657V3IV02247_D.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/05b9aa7e-303f-4994-8de7-ba377ffe957b/eCom/857657V3IV02247_E.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/05b9aa7e-303f-4994-8de7-ba377ffe957b/eCom/857657V3IV02247_E.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/d0c674b1-e27c-47fc-8248-d5660bcd9c00/eCom/857657V3IV02247_F.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/0ea91419-ac75-4b7a-877b-f251c69847a0/Small/857657V3IV02247_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/857657v3iv02247/1.jpg",
         "/products/bv-pdp/857657v3iv02247/2.jpg",
         "/products/bv-pdp/857657v3iv02247/3.jpg",
-        "/products/bv-pdp/857657v3iv02247/4.jpg"
+        "/products/bv-pdp/857657v3iv02247/4.jpg",
+        "/products/bv-pdp/857657v3iv02247/5.jpg",
+        "/products/bv-pdp/857657v3iv02247/6.jpg",
+        "/products/bv-pdp/857657v3iv02247/7.jpg"
       ],
       "sizes": [
         {
@@ -2470,7 +2478,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": false,
-          "gbpPrice": 2570.0,
+          "gbpPrice": 2770.0,
           "listGbpPrice": null
         }
       ],
@@ -2479,10 +2487,11 @@
         "bottega-veneta-bags",
         "bv-women",
         "bv-women-bags",
-        "bv-women-bags-mini"
+        "bv-women-bags-mini",
+        "bv-women-bags-shoulder"
       ],
-      "leafId": "bv-women-bags-mini",
-      "cgid": "women-mini-bags",
+      "leafId": "bv-women-bags-shoulder",
+      "cgid": "women-shoulder-bags",
       "hubCategory": "bags"
     },
     {
@@ -3212,8 +3221,8 @@
         "bv-women-bags-crossbody",
         "bv-women-bags-andiamo"
       ],
-      "leafId": "bv-women-bags-mini",
-      "cgid": "women-mini-bags",
+      "leafId": "bv-women-bags-andiamo",
+      "cgid": "women-andiamo",
       "hubCategory": "bags"
     },
     {
@@ -3924,7 +3933,7 @@
         "Metal chain"
       ],
       "compactedLongDesc": "Pouch in Intrecciato nappa leather with signature knot closure and metal chain.",
-      "composition": "• Material: Lambskin",
+      "composition": "• Material: lambskin",
       "material": "",
       "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
       "sizeModel": "• Height: 11.5 cm | 4.5\" \n\n• Width: 19 cm | 7.5\" \n\n• Depth: 4 cm | 1.6\" \n\n• Strap drop: 57 cm | 22.4\" \n\n• Fits iPhone 17 Pro Max, a credit card case, airpods and keys.",
@@ -3961,10 +3970,11 @@
         "bottega-veneta-bags",
         "bv-women",
         "bv-women-bags",
-        "bv-women-bags-mini"
+        "bv-women-bags-mini",
+        "bv-women-bags-crossbody"
       ],
-      "leafId": "bv-women-bags-mini",
-      "cgid": "women-mini-bags",
+      "leafId": "bv-women-bags-crossbody",
+      "cgid": "women-crossbody-bags",
       "hubCategory": "bags"
     },
     {
@@ -4178,7 +4188,8 @@
         "bv-women-bags",
         "bv-women-bags-mini",
         "bv-women-bags-andiamo",
-        "bv-women-bags-crossbody"
+        "bv-women-bags-crossbody",
+        "bv-women-bags-top-handle"
       ],
       "leafId": "bv-women-bags-andiamo",
       "cgid": "women-andiamo",
@@ -4319,7 +4330,8 @@
         "bv-women-bags",
         "bv-women-bags-mini",
         "bv-women-bags-top-handle",
-        "bv-women-bags-andiamo"
+        "bv-women-bags-andiamo",
+        "bv-women-bags-crossbody"
       ],
       "leafId": "bv-women-bags-andiamo",
       "cgid": "women-andiamo",
@@ -4453,8 +4465,8 @@
         "bv-women-bags-mini",
         "bv-women-bags-crossbody"
       ],
-      "leafId": "bv-women-bags-mini",
-      "cgid": "women-mini-bags",
+      "leafId": "bv-women-bags-crossbody",
+      "cgid": "women-crossbody-bags",
       "hubCategory": "bags"
     },
     {
@@ -4696,7 +4708,7 @@
         "Adjustable strap with buckle"
       ],
       "compactedLongDesc": "Pouch in Intrecciato piccolo nappa leather with adjustable strap.",
-      "composition": "• Material: Lambskin leather",
+      "composition": "• Material: lambskin",
       "material": "",
       "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
       "sizeModel": "• Height: 15 cm | 5.9\"\n\n• Width: 24.5 cm | 9.6”",
@@ -4707,14 +4719,16 @@
         "https://bottega-veneta.dam.kering.com/asset/77ef95d5-eb2d-4202-b31e-9664686841c1/eCom/876625V0HW01007_B.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/1cb87c48-38e1-480b-84af-c22ce1739bec/eCom/876625V0HW01007_C.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/436657f1-0e04-4477-b28c-1c1c7b1a97a5/eCom/876625V0HW01007_D.jpg?v=2",
-        "https://bottega-veneta.dam.kering.com/asset/34f8043a-9f44-4099-b350-cd23e579dce2/eCom/876625V0HW01007_F.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/34f8043a-9f44-4099-b350-cd23e579dce2/eCom/876625V0HW01007_F.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/3e31d39e-0f1d-4bec-ba4b-5d77d230e639/Small/876625V0HW01007_A.jpg?v=4"
       ],
       "localImages": [
         "/products/bv-pdp/876625v0hw01007/1.jpg",
         "/products/bv-pdp/876625v0hw01007/2.jpg",
         "/products/bv-pdp/876625v0hw01007/3.jpg",
         "/products/bv-pdp/876625v0hw01007/4.jpg",
-        "/products/bv-pdp/876625v0hw01007/5.jpg"
+        "/products/bv-pdp/876625v0hw01007/5.jpg",
+        "/products/bv-pdp/876625v0hw01007/6.jpg"
       ],
       "sizes": [
         {
@@ -4878,7 +4892,7 @@
       "gender": "Women",
       "link": "https://www.bottegaveneta.com/en-gb/intrecciato-concert-pouch-sea-salt-794258VCPP19197.html",
       "url": "https://www.bottegaveneta.com/en-gb/intrecciato-concert-pouch-sea-salt-794258VCPP19197.html",
-      "gbpPrice": 1730.0,
+      "gbpPrice": 1870.0,
       "listGbpPrice": null,
       "inStock": false,
       "shortDescription": [
@@ -4920,7 +4934,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": false,
-          "gbpPrice": 1730.0,
+          "gbpPrice": 1870.0,
           "listGbpPrice": null
         }
       ],
@@ -5885,7 +5899,8 @@
         "bv-women",
         "bv-women-bags",
         "bv-women-bags-mini",
-        "bv-women-bags-cabat"
+        "bv-women-bags-cabat",
+        "bv-women-bags-tote"
       ],
       "leafId": "bv-women-bags-cabat",
       "cgid": "women-cabat",
@@ -6364,7 +6379,8 @@
         "bv-women",
         "bv-women-bags",
         "bv-women-bags-crossbody",
-        "bv-women-bags-campana"
+        "bv-women-bags-campana",
+        "bv-women-bags-mini"
       ],
       "leafId": "bv-women-bags-campana",
       "cgid": "women-campana",
@@ -6813,8 +6829,8 @@
         "bv-women-bags-top-handle",
         "bv-women-bags-andiamo"
       ],
-      "leafId": "bv-women-bags-andiamo",
-      "cgid": "women-andiamo",
+      "leafId": "bv-women-bags-top-handle",
+      "cgid": "women-top-handle-bags",
       "hubCategory": "bags"
     },
     {
@@ -6883,7 +6899,8 @@
         "bv-women",
         "bv-women-bags",
         "bv-women-bags-crossbody",
-        "bv-women-bags-andiamo"
+        "bv-women-bags-andiamo",
+        "bv-women-bags-tote"
       ],
       "leafId": "bv-women-bags-andiamo",
       "cgid": "women-andiamo",
@@ -7109,7 +7126,8 @@
       ],
       "leafId": "bv-women-bags-top-handle",
       "cgid": "women-top-handle-bags",
-      "hubCategory": "bags"
+      "hubCategory": "bags",
+      "pdpError": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
     },
     {
       "id": "817191V08Z09614",
@@ -7760,7 +7778,8 @@
         "bottega-veneta-bags",
         "bv-women",
         "bv-women-bags",
-        "bv-women-bags-crossbody"
+        "bv-women-bags-crossbody",
+        "bv-women-bags-mini"
       ],
       "leafId": "bv-women-bags-crossbody",
       "cgid": "women-crossbody-bags",
@@ -8988,7 +9007,8 @@
         "bv-women",
         "bv-women-bags",
         "bv-women-bags-shoulder",
-        "bv-women-bags-campana"
+        "bv-women-bags-campana",
+        "bv-women-bags-tote"
       ],
       "leafId": "bv-women-bags-campana",
       "cgid": "women-campana",
@@ -9414,7 +9434,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/campana-midnight-844249V4SC04338.html",
       "gbpPrice": 3830.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Lambskin bonded Intrecciato",
         "Colour: Midnight",
@@ -9452,7 +9472,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 3830.0,
           "listGbpPrice": null
         }
@@ -9503,9 +9523,11 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/eff23c8e-8ef0-4560-a330-15e5aeb662d5/eCom/A008QVV6JG01019_A.jpg?v=3",
+        "https://bottega-veneta.dam.kering.com/asset/0f531342-856d-410e-bc44-b709dd3e8e1d/eCom/A008QVV6JG01019_B.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/0a0ec919-eca5-432d-8eca-250d7e2787ee/eCom/A008QVV6JG01019_C.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/76e9302d-00b4-4b74-9982-60b04398bb3a/eCom/A008QVV6JG01019_D.jpg?v=3",
         "https://bottega-veneta.dam.kering.com/asset/3b8a3156-6c63-4848-b985-15196361f212/eCom/A008QVV6JG01019_E.jpg?v=4",
+        "https://bottega-veneta.dam.kering.com/asset/f1afa1d8-a16b-4e11-8be0-533a5b870cf9/eCom/A008QVV6JG01019_F.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/f2fae7bf-cc10-468e-9a2a-e07d0a717a36/eCom/A008QVV6JG01019_G.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/eff23c8e-8ef0-4560-a330-15e5aeb662d5/Small/A008QVV6JG01019_A.jpg?v=3"
       ],
@@ -9515,7 +9537,9 @@
         "/products/bv-pdp/a008qvv6jg01019/3.jpg",
         "/products/bv-pdp/a008qvv6jg01019/4.jpg",
         "/products/bv-pdp/a008qvv6jg01019/5.jpg",
-        "/products/bv-pdp/a008qvv6jg01019/6.jpg"
+        "/products/bv-pdp/a008qvv6jg01019/6.jpg",
+        "/products/bv-pdp/a008qvv6jg01019/7.jpg",
+        "/products/bv-pdp/a008qvv6jg01019/8.jpg"
       ],
       "sizes": [
         {
@@ -9919,7 +9943,7 @@
       "gender": "Women",
       "link": "https://www.bottegaveneta.com/en-gb/giorno-black-857657V3IV08425.html",
       "url": "https://www.bottegaveneta.com/en-gb/giorno-black-857657V3IV08425.html",
-      "gbpPrice": 2570.0,
+      "gbpPrice": 2770.0,
       "listGbpPrice": null,
       "inStock": true,
       "shortDescription": [
@@ -9945,7 +9969,8 @@
         "https://bottega-veneta.dam.kering.com/asset/5c82a6b1-d721-47cf-b14b-c398b6ad9a42/eCom/857657V3IV08425_C.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/aff5a08d-bd85-4abf-a825-439e2021826c/eCom/857657V3IV08425_D.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/401fe3ea-77e5-472c-a364-938637f22ddc/eCom/857657V3IV08425_E.jpg?v=1",
-        "https://bottega-veneta.dam.kering.com/asset/6e22013c-8d25-42b5-a59d-909be31eaf9e/eCom/857657V3IV08425_F.jpg?v=1"
+        "https://bottega-veneta.dam.kering.com/asset/6e22013c-8d25-42b5-a59d-909be31eaf9e/eCom/857657V3IV08425_F.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/5654b767-62d6-4ee5-89fb-292295f4f1f6/Small/857657V3IV08425_A.jpg?v=1"
       ],
       "localImages": [
         "/products/bv-pdp/857657v3iv08425/1.jpg",
@@ -9953,7 +9978,8 @@
         "/products/bv-pdp/857657v3iv08425/3.jpg",
         "/products/bv-pdp/857657v3iv08425/4.jpg",
         "/products/bv-pdp/857657v3iv08425/5.jpg",
-        "/products/bv-pdp/857657v3iv08425/6.jpg"
+        "/products/bv-pdp/857657v3iv08425/6.jpg",
+        "/products/bv-pdp/857657v3iv08425/7.jpg"
       ],
       "sizes": [
         {
@@ -9961,7 +9987,7 @@
           "value": "U",
           "displayValue": "U",
           "inStock": true,
-          "gbpPrice": 2570.0,
+          "gbpPrice": 2770.0,
           "listGbpPrice": null
         }
       ],
@@ -10597,10 +10623,11 @@
         "bottega-veneta-bags",
         "bv-women",
         "bv-women-bags",
-        "bv-women-bags-shoulder"
+        "bv-women-bags-shoulder",
+        "bv-women-bags-jodie"
       ],
-      "leafId": "bv-women-bags-shoulder",
-      "cgid": "women-shoulder-bags",
+      "leafId": "bv-women-bags-jodie",
+      "cgid": "women-jodie",
       "hubCategory": "bags"
     },
     {
@@ -11721,7 +11748,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/maxi-veneta-fondant-856739V66V02190.html",
       "gbpPrice": 7040.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Suede",
         "Colour: Fondant",
@@ -11762,7 +11789,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 7040.0,
           "listGbpPrice": null
         }
@@ -11931,7 +11958,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/small-pinacoteca-espresso-mineral-819004V5AG12054.html",
       "gbpPrice": 2580.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Suede",
         "Colour: Espresso/Mineral",
@@ -11970,7 +11997,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 2580.0,
           "listGbpPrice": null
         }
@@ -12993,7 +13020,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/large-andiamo-fondant-766019VCPP12272.html",
       "gbpPrice": 6680.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Lambskin bonded Intrecciato",
         "Colour: Fondant",
@@ -13038,7 +13065,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 6680.0,
           "listGbpPrice": null
         }
@@ -13267,11 +13294,13 @@
         "bottega-veneta-bags",
         "bv-women",
         "bv-women-bags",
-        "bv-women-bags-top-handle"
+        "bv-women-bags-top-handle",
+        "bv-women-bags-crossbody"
       ],
       "leafId": "bv-women-bags-top-handle",
       "cgid": "women-top-handle-bags",
-      "hubCategory": "bags"
+      "hubCategory": "bags",
+      "pdpError": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
     },
     {
       "id": "868128V5KD09637",
@@ -13746,8 +13775,8 @@
         "bv-women-bags-top-handle",
         "bv-women-bags-clutch"
       ],
-      "leafId": "bv-women-bags-clutch",
-      "cgid": "women-clutches",
+      "leafId": "bv-women-bags-top-handle",
+      "cgid": "women-top-handle-bags",
       "hubCategory": "bags"
     },
     {
@@ -15731,10 +15760,11 @@
         "bottega-veneta-bags",
         "bv-women",
         "bv-women-bags",
-        "bv-women-bags-tote"
+        "bv-women-bags-tote",
+        "bv-women-bags-cabat"
       ],
-      "leafId": "bv-women-bags-tote",
-      "cgid": "women-tote-bags",
+      "leafId": "bv-women-bags-cabat",
+      "cgid": "women-cabat",
       "hubCategory": "bags"
     },
     {
@@ -16815,8 +16845,8 @@
         "bv-women-bags-clutch",
         "bv-women-bags-top-handle"
       ],
-      "leafId": "bv-women-bags-top-handle",
-      "cgid": "women-top-handle-bags",
+      "leafId": "bv-women-bags-clutch",
+      "cgid": "women-clutches",
       "hubCategory": "bags"
     },
     {
@@ -18993,7 +19023,8 @@
         "bottega-veneta-bags",
         "bv-women",
         "bv-women-bags",
-        "bv-women-bags-andiamo"
+        "bv-women-bags-andiamo",
+        "bv-women-bags-top-handle"
       ],
       "leafId": "bv-women-bags-andiamo",
       "cgid": "women-andiamo",
@@ -19011,7 +19042,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/east-west-andiamo-fondant-766010VCPP12272.html",
       "gbpPrice": 4010.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Lambskin bonded Intrecciato",
         "Colour: Fondant",
@@ -19054,7 +19085,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 4010.0,
           "listGbpPrice": null
         }
@@ -19137,7 +19168,8 @@
         "bottega-veneta-bags",
         "bv-women",
         "bv-women-bags",
-        "bv-women-bags-andiamo"
+        "bv-women-bags-andiamo",
+        "bv-women-bags-crossbody"
       ],
       "leafId": "bv-women-bags-andiamo",
       "cgid": "women-andiamo",
@@ -19224,7 +19256,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/east-west-andiamo-black-766010VCPP11139.html",
       "gbpPrice": 4010.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Lambskin bonded Intrecciato",
         "Colour: Black",
@@ -19269,7 +19301,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 4010.0,
           "listGbpPrice": null
         }
@@ -19808,7 +19840,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/large-andiamo-black-766019VCPP11249.html",
       "gbpPrice": 6680.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Lambskin bonded Intrecciato",
         "Colour: Black",
@@ -19853,7 +19885,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 6680.0,
           "listGbpPrice": null
         }
@@ -19863,7 +19895,9 @@
         "bottega-veneta-bags",
         "bv-women",
         "bv-women-bags",
-        "bv-women-bags-andiamo"
+        "bv-women-bags-andiamo",
+        "bv-women-bags-top-handle",
+        "bv-women-bags-tote"
       ],
       "leafId": "bv-women-bags-andiamo",
       "cgid": "women-andiamo",
@@ -20084,7 +20118,8 @@
         "bottega-veneta-bags",
         "bv-women",
         "bv-women-bags",
-        "bv-women-bags-andiamo"
+        "bv-women-bags-andiamo",
+        "bv-women-bags-tote"
       ],
       "leafId": "bv-women-bags-andiamo",
       "cgid": "women-andiamo",
@@ -20157,7 +20192,8 @@
         "bottega-veneta-bags",
         "bv-women",
         "bv-women-bags",
-        "bv-women-bags-barbara"
+        "bv-women-bags-barbara",
+        "bv-women-bags-tote"
       ],
       "leafId": "bv-women-bags-barbara",
       "cgid": "women-barbara",
@@ -20300,7 +20336,8 @@
         "bottega-veneta-bags",
         "bv-women",
         "bv-women-bags",
-        "bv-women-bags-campana"
+        "bv-women-bags-campana",
+        "bv-women-bags-shoulder"
       ],
       "leafId": "bv-women-bags-campana",
       "cgid": "women-campana",
@@ -20384,7 +20421,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/small-campana-black-muse-brass-854248V4SC01019.html",
       "gbpPrice": 3390.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Lambskin bonded Intrecciato",
         "Colour: Black",
@@ -20422,7 +20459,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 3390.0,
           "listGbpPrice": null
         }
@@ -20432,7 +20469,8 @@
         "bottega-veneta-bags",
         "bv-women",
         "bv-women-bags",
-        "bv-women-bags-campana"
+        "bv-women-bags-campana",
+        "bv-women-bags-shoulder"
       ],
       "leafId": "bv-women-bags-campana",
       "cgid": "women-campana",
@@ -21916,7 +21954,8 @@
         "bottega-veneta-bags",
         "bv-women",
         "bv-women-bags",
-        "bv-women-bags-bang-bang"
+        "bv-women-bags-bang-bang",
+        "bv-women-bags-crossbody"
       ],
       "leafId": "bv-women-bags-bang-bang",
       "cgid": "women-bang-bang",
@@ -22264,7 +22303,9 @@
         "bottega-veneta-bags",
         "bv-women",
         "bv-women-bags",
-        "bv-women-bags-parachute"
+        "bv-women-bags-parachute",
+        "bv-women-bags-shoulder",
+        "bv-women-bags-tote"
       ],
       "leafId": "bv-women-bags-parachute",
       "cgid": "women-parachute",
@@ -22543,7 +22584,8 @@
         "bv-women",
         "bv-women-bags",
         "bv-women-bags-madison",
-        "bv-women-bags-shoulder"
+        "bv-women-bags-shoulder",
+        "bv-women-bags-mini"
       ],
       "leafId": "bv-women-bags-madison",
       "cgid": "women-madison",
@@ -22582,6 +22624,7 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/626ebe43-b5ef-4747-93d8-e90ff1513840/eCom/A0062ZV5KD09538_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/6e3b1579-1e5c-49f1-8ac1-08369d7549e1/eCom/A0062ZV5KD09538_B.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/f8761a3d-62fb-4154-b983-278c0c5097e4/eCom/A0062ZV5KD09538_C.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/af8b4a54-bebc-4539-958f-95a889be4f1c/eCom/A0062ZV5KD09538_D.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/c70baa46-1d86-4f52-a153-fe58b36ad634/eCom/A0062ZV5KD09538_H.jpg?v=1",
@@ -22592,7 +22635,8 @@
         "/products/bv-pdp/a0062zv5kd09538/2.jpg",
         "/products/bv-pdp/a0062zv5kd09538/3.jpg",
         "/products/bv-pdp/a0062zv5kd09538/4.jpg",
-        "/products/bv-pdp/a0062zv5kd09538/5.jpg"
+        "/products/bv-pdp/a0062zv5kd09538/5.jpg",
+        "/products/bv-pdp/a0062zv5kd09538/6.jpg"
       ],
       "sizes": [
         {
@@ -22976,7 +23020,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/notturno-terra-pink-843893V75F05149.html",
       "gbpPrice": 1870.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Colour: Terra Pink",
         "Hardware: Gold",
@@ -23020,7 +23064,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 1870.0,
           "listGbpPrice": null
         }
@@ -23280,6 +23324,7 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/b5a9ea6c-2da3-4c1d-a639-e247af20771f/eCom/867031V66V04270_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/317a3839-eade-4b35-9826-5e6f09e52c2c/eCom/867031V66V04270_B.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/dc3e63ea-104e-4585-a36f-ac803a946115/eCom/867031V66V04270_C.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/8fe47c4d-eae3-492d-beaa-dc0dfaf96ba3/eCom/867031V66V04270_D.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/b5a9ea6c-2da3-4c1d-a639-e247af20771f/Small/867031V66V04270_A.jpg?v=1"
@@ -23288,7 +23333,8 @@
         "/products/bv-pdp/867031v66v04270/1.jpg",
         "/products/bv-pdp/867031v66v04270/2.jpg",
         "/products/bv-pdp/867031v66v04270/3.jpg",
-        "/products/bv-pdp/867031v66v04270/4.jpg"
+        "/products/bv-pdp/867031v66v04270/4.jpg",
+        "/products/bv-pdp/867031v66v04270/5.jpg"
       ],
       "sizes": [
         {
@@ -23615,8 +23661,10 @@
       "sizeGuide": null,
       "imageUrls": [
         "https://bottega-veneta.dam.kering.com/asset/b91007bc-01c1-4e63-b4b7-79bf667482e4/eCom/844107V5ZZ41689_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/70363f64-df88-4ee7-b417-58a23aeaacb0/eCom/844107V5ZZ41689_B.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/b6811dd9-363a-4b72-9e72-8c42f4455330/eCom/844107V5ZZ41689_C.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/73deefac-5b34-4d3b-be87-cf325e7ca187/eCom/844107V5ZZ41689_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/a14a638b-a1b7-4d91-893e-666fbcb02f2e/eCom/844107V5ZZ41689_E.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/d42b82aa-ebc3-4e7d-a586-8361f1dfd519/eCom/844107V5ZZ41689_F.jpg?v=1",
         "https://bottega-veneta.dam.kering.com/asset/b91007bc-01c1-4e63-b4b7-79bf667482e4/Small/844107V5ZZ41689_A.jpg?v=1"
       ],
@@ -23625,7 +23673,9 @@
         "/products/bv-pdp/844107v5zz41689/2.jpg",
         "/products/bv-pdp/844107v5zz41689/3.jpg",
         "/products/bv-pdp/844107v5zz41689/4.jpg",
-        "/products/bv-pdp/844107v5zz41689/5.jpg"
+        "/products/bv-pdp/844107v5zz41689/5.jpg",
+        "/products/bv-pdp/844107v5zz41689/6.jpg",
+        "/products/bv-pdp/844107v5zz41689/7.jpg"
       ],
       "sizes": [
         {
@@ -24004,8 +24054,8 @@
         "bv-women-bags-top-handle",
         "bv-women-bags-andiamo"
       ],
-      "leafId": "bv-women-bags-andiamo",
-      "cgid": "women-andiamo",
+      "leafId": "bv-women-bags-crossbody",
+      "cgid": "women-crossbody-bags",
       "hubCategory": "bags"
     },
     {
@@ -24092,7 +24142,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/small-lauren-1980-black-875265V0HW01007.html",
       "gbpPrice": 3480.0,
       "listGbpPrice": null,
-      "inStock": true,
+      "inStock": false,
       "shortDescription": [
         "Lining: Suede",
         "Colour: Black",
@@ -24136,7 +24186,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": true,
+          "inStock": false,
           "gbpPrice": 3480.0,
           "listGbpPrice": null
         }
@@ -24572,10 +24622,11 @@
         "bottega-veneta-bags",
         "bv-women",
         "bv-women-bags",
-        "bv-women-bags-shoulder"
+        "bv-women-bags-shoulder",
+        "bv-women-bags-parachute"
       ],
-      "leafId": "bv-women-bags-shoulder",
-      "cgid": "women-shoulder-bags",
+      "leafId": "bv-women-bags-parachute",
+      "cgid": "women-parachute",
       "hubCategory": "bags"
     },
     {
@@ -26012,7 +26063,7 @@
       "url": "https://www.bottegaveneta.com/en-gb/baby-barbara-tote-wheatfield-black-A0062ZV73H22636.html",
       "gbpPrice": 3740.0,
       "listGbpPrice": null,
-      "inStock": false,
+      "inStock": true,
       "shortDescription": [
         "Lining: Lambskin",
         "Colour: Wheatfield/Black",
@@ -26058,7 +26109,7 @@
           "id": "U",
           "value": "U",
           "displayValue": "U",
-          "inStock": false,
+          "inStock": true,
           "gbpPrice": 3740.0,
           "listGbpPrice": null
         }
@@ -27513,7 +27564,8 @@
         "bv-women-bags",
         "bv-women-bags-crossbody",
         "bv-women-bags-top-handle",
-        "bv-women-bags-clutch"
+        "bv-women-bags-clutch",
+        "bv-women-bags-mini"
       ],
       "leafId": "bv-women-bags-clutch",
       "cgid": "women-clutches",
@@ -28215,10 +28267,12 @@
         "bottega-veneta-bags",
         "bv-women",
         "bv-women-bags",
-        "bv-women-bags-tote"
+        "bv-women-bags-tote",
+        "bv-women-bags-mini",
+        "bv-women-bags-cabat"
       ],
-      "leafId": "bv-women-bags-tote",
-      "cgid": "women-tote-bags",
+      "leafId": "bv-women-bags-cabat",
+      "cgid": "women-cabat",
       "hubCategory": "bags"
     },
     {
@@ -28381,7 +28435,7 @@
         "Leather loop attachment with snap botton for shoulder carry"
       ],
       "compactedLongDesc": "Dustbag in Intrecciato calf leather with drawstring closure and loop attachment for shoulder carry.",
-      "composition": "• Material: calfskin",
+      "composition": "• Material: lambskin",
       "material": "",
       "productCare": "",
       "sizeModel": "• Height: 23 cm | 9.1\" \n\n• Width: 32 cm | 12.6\" \n\n• Depth: 1 cm | 0.4\" \n\n• Strap drop: 35 cm | 13.8\" \n\n• Fits iPhone 17 Pro Max, a credit card case, airpods and keys.",
@@ -28694,10 +28748,11 @@
         "bv-women",
         "bv-women-bags",
         "bv-women-bags-crossbody",
-        "bv-women-bags-top-handle"
+        "bv-women-bags-top-handle",
+        "bv-women-bags-andiamo"
       ],
-      "leafId": "bv-women-bags-top-handle",
-      "cgid": "women-top-handle-bags",
+      "leafId": "bv-women-bags-andiamo",
+      "cgid": "women-andiamo",
       "hubCategory": "bags"
     },
     {
@@ -28762,10 +28817,11 @@
         "bv-women",
         "bv-women-bags",
         "bv-women-bags-crossbody",
-        "bv-women-bags-top-handle"
+        "bv-women-bags-top-handle",
+        "bv-women-bags-andiamo"
       ],
-      "leafId": "bv-women-bags-top-handle",
-      "cgid": "women-top-handle-bags",
+      "leafId": "bv-women-bags-andiamo",
+      "cgid": "women-andiamo",
       "hubCategory": "bags"
     },
     {
@@ -28832,8 +28888,8 @@
         "bv-women-bags-crossbody",
         "bv-women-bags-top-handle"
       ],
-      "leafId": "bv-women-bags-top-handle",
-      "cgid": "women-top-handle-bags",
+      "leafId": "bv-women-bags-crossbody",
+      "cgid": "women-crossbody-bags",
       "hubCategory": "bags"
     },
     {
@@ -28969,6 +29025,2069 @@
       ],
       "leafId": "bv-women-bags-top-handle",
       "cgid": "women-top-handle-bags",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "843893V5ZZ44427",
+      "sku": "843893V5ZZ44427",
+      "internalId": "814514595",
+      "name": "Notturno",
+      "brand": "bottega veneta",
+      "color": "Deep sea",
+      "gender": "Women",
+      "link": "https://www.bottegaveneta.com/en-gb/notturno-deep-sea-843893V5ZZ44427.html",
+      "url": "https://www.bottegaveneta.com/en-gb/notturno-deep-sea-843893V5ZZ44427.html",
+      "gbpPrice": 1870.0,
+      "listGbpPrice": null,
+      "inStock": false,
+      "shortDescription": [
+        "Colour: Deep Sea",
+        "Hardware: Gold finish",
+        "Lining: Suede"
+      ],
+      "longDescription": [
+        "Intrecciato suede leather pouch",
+        "Two main compartments, one interior zip pocket",
+        "Flap closure with magnets",
+        "Adjustable leather tubular strap with sliding knots"
+      ],
+      "compactedLongDesc": "Pouch in Intrecciato suede with adjustable tubular strap featuring sliding knot details.",
+      "composition": "• Material: calfskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 11 cm | 4.3\"\n\n• Width: 21 cm | 8.3\"\n\n• Depth: 9 cm | 3.5\"\n\n• Strap drop: 55 cm | 21.7\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/bb866511-2a2f-4699-a6af-0bf85090e6de/eCom/843893V5ZZ44427_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/8cbe2c4d-94a6-4496-9bd2-671db64c8a37/eCom/843893V5ZZ44427_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/316ed0e9-336f-4614-a06f-3677833c94f9/eCom/843893V5ZZ44427_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/1c2d6139-02cf-4034-bce2-4b077f28318d/eCom/843893V5ZZ44427_F.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/bb866511-2a2f-4699-a6af-0bf85090e6de/Small/843893V5ZZ44427_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/843893v5zz44427/1.jpg",
+        "/products/bv-pdp/843893v5zz44427/2.jpg",
+        "/products/bv-pdp/843893v5zz44427/3.jpg",
+        "/products/bv-pdp/843893v5zz44427/4.jpg",
+        "/products/bv-pdp/843893v5zz44427/5.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": false,
+          "gbpPrice": 1870.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-women",
+        "bv-women-bags",
+        "bv-women-bags-mini"
+      ],
+      "leafId": "bv-women-bags-mini",
+      "cgid": "women-mini-bags",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "A005POV0HW02009",
+      "sku": "A005POV0HW02009",
+      "internalId": "814513730",
+      "name": "Andiamo Clutch 25",
+      "brand": "bottega veneta",
+      "color": "Espresso",
+      "gender": "Women",
+      "link": "https://www.bottegaveneta.com/en-gb/andiamo-clutch-25-espresso-A005POV0HW02009.html",
+      "url": "https://www.bottegaveneta.com/en-gb/andiamo-clutch-25-espresso-A005POV0HW02009.html",
+      "gbpPrice": 2580.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Lambskin",
+        "Colour: Espresso",
+        "Hardware: Brass finish"
+      ],
+      "longDescription": [
+        "Intrecciato leather top handle clutch with metallic knot closure and sliding detachable cross-body strap",
+        "Four card slots, one additional flat pocket"
+      ],
+      "compactedLongDesc": "Top handle clutch in Intrecciato leather with signature knot closure and sliding detachable cross-body strap.",
+      "composition": "• Material: lambskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 13.5 cm | 5.3\"\n\n• Width: 24 cm | 9.4\"\n\n• Depth: 7 cm | 2.7\"\n\n• Handle drop: 3.5 cm | 1.4\"\n\n• Strap drop: 43 cm | 16.9\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/db70c7db-f535-4ea8-a3a7-04ccf915f9a3/eCom/A005POV0HW02009_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/577c12bd-52f3-4b8b-85c4-9701f0f855c7/eCom/A005POV0HW02009_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/90dd95a9-12c2-4e2a-9214-6da5f6490a77/eCom/A005POV0HW02009_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/db70c7db-f535-4ea8-a3a7-04ccf915f9a3/Small/A005POV0HW02009_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a005pov0hw02009/1.jpg",
+        "/products/bv-pdp/a005pov0hw02009/2.jpg",
+        "/products/bv-pdp/a005pov0hw02009/3.jpg",
+        "/products/bv-pdp/a005pov0hw02009/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 2580.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-women",
+        "bv-women-bags",
+        "bv-women-bags-mini",
+        "bv-women-bags-top-handle"
+      ],
+      "leafId": "bv-women-bags-top-handle",
+      "cgid": "women-top-handle-bags",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "874957V5ZZ14439",
+      "sku": "874957V5ZZ14439",
+      "internalId": "814515275",
+      "name": "Mini Andiamo",
+      "brand": "bottega veneta",
+      "color": "Deep sea",
+      "gender": "Women",
+      "link": "https://www.bottegaveneta.com/en-gb/mini-andiamo-deep-sea-874957V5ZZ14439.html",
+      "url": "https://www.bottegaveneta.com/en-gb/mini-andiamo-deep-sea-874957V5ZZ14439.html",
+      "gbpPrice": 3300.0,
+      "listGbpPrice": null,
+      "inStock": false,
+      "shortDescription": [
+        "Lining: Suede bonded Intrecciato",
+        "Colour: Deep Sea",
+        "Hardware: Brass finish"
+      ],
+      "longDescription": [
+        "Mini Intrecciato suede top handle bag with sliding cross-body strap",
+        "Compartmented interior with one zipped pocket, one open pocket",
+        "Magnetic closure"
+      ],
+      "compactedLongDesc": "Top handle bag in Intrecciato suede with signature knot detail and sliding cross-body strap.",
+      "composition": "• Material: calfskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 15 cm | 5.9\"\n\n• Width: 20 cm | 7.9\"\n\n• Depth: 9 cm | 3.5\"\n\n• Handle drop: 6 cm | 2.4\"\n\n• Strap drop: 53 cm | 20.9\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/7d2e30cf-242e-49f1-a5f6-6173bce0d191/eCom/874957V5ZZ14439_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/9da018b2-de0f-4782-8496-1753343e612b/eCom/874957V5ZZ14439_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/899a9518-1a59-4be5-9dd4-34a6f20e100f/eCom/874957V5ZZ14439_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/819d4aa9-ecba-4afb-bebb-e18ef60807c0/eCom/874957V5ZZ14439_F.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/7d2e30cf-242e-49f1-a5f6-6173bce0d191/Small/874957V5ZZ14439_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/874957v5zz14439/1.jpg",
+        "/products/bv-pdp/874957v5zz14439/2.jpg",
+        "/products/bv-pdp/874957v5zz14439/3.jpg",
+        "/products/bv-pdp/874957v5zz14439/4.jpg",
+        "/products/bv-pdp/874957v5zz14439/5.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": false,
+          "gbpPrice": 3300.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-women",
+        "bv-women-bags",
+        "bv-women-bags-mini",
+        "bv-women-bags-andiamo"
+      ],
+      "leafId": "bv-women-bags-andiamo",
+      "cgid": "women-andiamo",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "A005POV0P644430",
+      "sku": "A005POV0P644430",
+      "internalId": "814513734",
+      "name": "Andiamo Clutch 25",
+      "brand": "bottega veneta",
+      "color": "Deep sea",
+      "gender": "Women",
+      "link": "https://www.bottegaveneta.com/en-gb/andiamo-clutch-25-deep-sea-A005POV0P644430.html",
+      "url": "https://www.bottegaveneta.com/en-gb/andiamo-clutch-25-deep-sea-A005POV0P644430.html",
+      "gbpPrice": 2580.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Lambskin",
+        "Colour: Deep Sea",
+        "Hardware: Brass finish"
+      ],
+      "longDescription": [
+        "Intrecciato suede top handle clutch with metallic knot closure and sliding detachable cross-body strap",
+        "Four card slots, one additional flat pocket"
+      ],
+      "compactedLongDesc": "Top handle clutch in Intrecciato suede with signature knot closure and sliding detachable cross-body strap.",
+      "composition": "• Material: calfskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 13.5 cm | 5.3\"\n\n• Width: 24 cm | 9.4\"\n\n• Depth: 7 cm | 2.7\"\n\n• Handle drop: 3.5 cm | 1.4\"\n\n• Strap drop: 43 cm | 16.9\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/fd05666d-2913-4b9b-a1ce-39af5cdb903c/eCom/A005POV0P644430_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/a01d26af-2b83-4ab4-a354-c53179cffd59/eCom/A005POV0P644430_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/97c635c2-49b3-44ac-b8a4-bc219cd56668/eCom/A005POV0P644430_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/fd05666d-2913-4b9b-a1ce-39af5cdb903c/Small/A005POV0P644430_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a005pov0p644430/1.jpg",
+        "/products/bv-pdp/a005pov0p644430/2.jpg",
+        "/products/bv-pdp/a005pov0p644430/3.jpg",
+        "/products/bv-pdp/a005pov0p644430/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 2580.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-women",
+        "bv-women-bags",
+        "bv-women-bags-mini",
+        "bv-women-bags-crossbody",
+        "bv-women-bags-clutch"
+      ],
+      "leafId": "bv-women-bags-clutch",
+      "cgid": "women-clutches",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "A00DGUV7GP18473",
+      "sku": "A00DGUV7GP18473",
+      "internalId": "814511102",
+      "name": "Andiamo Clutch 25",
+      "brand": "bottega veneta",
+      "color": "Silver/chalk",
+      "gender": "Women",
+      "link": "https://www.bottegaveneta.com/en-gb/andiamo-clutch-25-silver-chalk-A00DGUV7GP18473.html",
+      "url": "https://www.bottegaveneta.com/en-gb/andiamo-clutch-25-silver-chalk-A00DGUV7GP18473.html",
+      "gbpPrice": 3480.0,
+      "listGbpPrice": null,
+      "inStock": false,
+      "shortDescription": [
+        "Lining: Lambskin",
+        "Colour: Silver/Chalk",
+        "Hardware: Silver finish"
+      ],
+      "longDescription": [
+        "Sequins top handle clutch with metallic knot closure and sliding detachable cross-body strap",
+        "Four card slots, one additional flat pocket"
+      ],
+      "compactedLongDesc": "Top handle clutch with all-over sequined detailing, featuring a signature knot closure and detachable sliding cross-body strap.",
+      "composition": "• Material: polyester",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 13.5 cm | 5.3\"\n\n• Width: 24 cm | 9.4\"\n\n• Depth: 7 cm | 2.7\"\n\n• Handle drop: 3.5 cm | 1.4\"\n\n• Strap drop: 43 cm | 16.9\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/b2f579f3-ca11-4624-a86e-66030b3c9938/eCom/A00DGUV7GP18473_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/dce3d98d-4f07-4c34-afb5-7812ea3b3906/eCom/A00DGUV7GP18473_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/c90b4621-3e5a-4d4f-880d-637d48ec8765/eCom/A00DGUV7GP18473_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/6c233917-6760-4985-82f0-19c399981d8b/eCom/A00DGUV7GP18473_H.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/b2f579f3-ca11-4624-a86e-66030b3c9938/Small/A00DGUV7GP18473_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a00dguv7gp18473/1.jpg",
+        "/products/bv-pdp/a00dguv7gp18473/2.jpg",
+        "/products/bv-pdp/a00dguv7gp18473/3.jpg",
+        "/products/bv-pdp/a00dguv7gp18473/4.jpg",
+        "/products/bv-pdp/a00dguv7gp18473/5.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": false,
+          "gbpPrice": 3480.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-women",
+        "bv-women-bags",
+        "bv-women-bags-mini",
+        "bv-women-bags-crossbody",
+        "bv-women-bags-top-handle",
+        "bv-women-bags-clutch"
+      ],
+      "leafId": "bv-women-bags-clutch",
+      "cgid": "women-clutches",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "A00CQCV7FG12477",
+      "sku": "A00CQCV7FG12477",
+      "internalId": "814510955",
+      "name": "Mini Andiamo",
+      "brand": "bottega veneta",
+      "color": "Tiramisu/light brown",
+      "gender": "Women",
+      "link": "https://www.bottegaveneta.com/en-gb/mini-andiamo-tiramisu-light-brown-A00CQCV7FG12477.html",
+      "url": "https://www.bottegaveneta.com/en-gb/mini-andiamo-tiramisu-light-brown-A00CQCV7FG12477.html",
+      "gbpPrice": 4010.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Lambskin",
+        "Colour: Tiramisu/Light Brown",
+        "Hardware: Brass finish"
+      ],
+      "longDescription": [
+        "Mini Intrecciato cloudy merino shearling top handle bag with sliding cross-body strap",
+        "Compartmented interior with one zipped pocket, one open pocket",
+        "Magnetic closure"
+      ],
+      "compactedLongDesc": "Top handle bag in Intrecciato merino shearling, featuring a signature knot detail and sliding cross-body strap.",
+      "composition": "• Material: lambskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 15 cm | 5.9\"\n\n• Width: 20 cm | 7.9\"\n\n• Depth: 9 cm | 3.5\"\n\n• Handle drop: 6 cm | 2.4\"\n\n• Strap drop: 53 cm | 20.9\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/fd431956-4720-45fb-8044-4961f878e29e/eCom/A00CQCV7FG12477_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/40c1d109-753a-4d81-906d-93808cf01b5c/eCom/A00CQCV7FG12477_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/ac68912b-b14a-4e92-8a30-284bbe569014/eCom/A00CQCV7FG12477_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/f214a624-820f-47b5-a125-aa5ac905422a/eCom/A00CQCV7FG12477_F.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/fd431956-4720-45fb-8044-4961f878e29e/Small/A00CQCV7FG12477_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a00cqcv7fg12477/1.jpg",
+        "/products/bv-pdp/a00cqcv7fg12477/2.jpg",
+        "/products/bv-pdp/a00cqcv7fg12477/3.jpg",
+        "/products/bv-pdp/a00cqcv7fg12477/4.jpg",
+        "/products/bv-pdp/a00cqcv7fg12477/5.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 4010.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-women",
+        "bv-women-bags",
+        "bv-women-bags-mini",
+        "bv-women-bags-andiamo"
+      ],
+      "leafId": "bv-women-bags-andiamo",
+      "cgid": "women-andiamo",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "A005P5V60G02009",
+      "sku": "A005P5V60G02009",
+      "internalId": "814574382",
+      "name": "Baby Madison",
+      "brand": "bottega veneta",
+      "color": "Espresso",
+      "gender": "Women",
+      "link": "https://www.bottegaveneta.com/en-gb/baby-madison-espresso-A005P5V60G02009.html",
+      "url": "https://www.bottegaveneta.com/en-gb/baby-madison-espresso-A005P5V60G02009.html",
+      "gbpPrice": 2940.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Lambskin",
+        "Colour: Espresso",
+        "Hardware: Brass finish"
+      ],
+      "longDescription": [
+        "Baby Intrecciato leather shoulder bag with sliding chain",
+        "The memory flap can be reshaped and adapted to hold countless forms",
+        "Leather shoulder pads",
+        "One main interior compartment with one zipped pocket and an external flat open pocket at the back of the bag",
+        "Metallic knot lock closure"
+      ],
+      "compactedLongDesc": "Shoulder bag in Intrecciato leather with malleable memory flap, sculptural knot closure, and sliding cross-body chain featuring a leather shoulder pad.",
+      "composition": "• Material: lambskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 13 cm | 5.1\"\n\n• Width: 22.5 cm | 8.9\"\n\n• Depth: 4.5 cm | 1.8\"\n\n• Handle drop: 26 cm | 2.4\"\n\n• Strap drop: 48 cm | 18.9”",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/776ba9d6-e8c3-4506-affb-6c09236a1018/eCom/A005P5V60G02009_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/e436eb6a-f070-4bef-bb91-ef30ae4af1b8/eCom/A005P5V60G02009_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/0d507c0a-f8f5-40d2-b47d-63677d424f55/eCom/A005P5V60G02009_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/776ba9d6-e8c3-4506-affb-6c09236a1018/Small/A005P5V60G02009_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a005p5v60g02009/1.jpg",
+        "/products/bv-pdp/a005p5v60g02009/2.jpg",
+        "/products/bv-pdp/a005p5v60g02009/3.jpg",
+        "/products/bv-pdp/a005p5v60g02009/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 2940.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-women",
+        "bv-women-bags",
+        "bv-women-bags-mini",
+        "bv-women-bags-madison"
+      ],
+      "leafId": "bv-women-bags-madison",
+      "cgid": "women-madison",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "A00CQ7V7FH12472",
+      "sku": "A00CQ7V7FH12472",
+      "internalId": "814510956",
+      "name": "Baby Madison",
+      "brand": "bottega veneta",
+      "color": "Tiramisu/light brown",
+      "gender": "Women",
+      "link": "https://www.bottegaveneta.com/en-gb/baby-madison-tiramisu-light-brown-A00CQ7V7FH12472.html",
+      "url": "https://www.bottegaveneta.com/en-gb/baby-madison-tiramisu-light-brown-A00CQ7V7FH12472.html",
+      "gbpPrice": 3740.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Lambskin",
+        "Colour: Tiramisu/Light Brown",
+        "Hardware: Brass finish"
+      ],
+      "longDescription": [
+        "Baby Intrecciato cloudy merino shearling shoulder bag with sliding chain",
+        "The memory flap can be reshaped and adapted to hold countless forms",
+        "Leather shoulder pads",
+        "One main interior compartment with one zipped pocket and an external flat open pocket at the back of the bag",
+        "Metallic knot lock closure"
+      ],
+      "compactedLongDesc": "Shoulder bag in Intrecciato merino shearling with malleable memory flap. Featuring a sculptural knot closure, sliding cross-body chain and leather shoulder pad.",
+      "composition": "• Material: lambskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 13 cm | 5.1\"\n\n• Width: 22.5 cm | 8.9\"\n\n• Depth: 4.5 cm | 1.8\"\n\n• Handle drop: 26 cm | 2.4\"\n\n• Strap drop: 48 cm | 18.9”",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/24e95be5-0ea7-4f19-8b90-4af438eb3250/eCom/A00CQ7V7FH12472_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/992317e4-21e4-4c23-98a9-b5cbab0c6596/eCom/A00CQ7V7FH12472_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/0a641777-89c4-451c-875d-34e8d43bed2c/eCom/A00CQ7V7FH12472_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/9e21b710-cf0e-4903-8bf5-2de29f4538a6/eCom/A00CQ7V7FH12472_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/34e6beac-f33d-4baa-91c0-85b380c2f481/eCom/A00CQ7V7FH12472_F.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/24e95be5-0ea7-4f19-8b90-4af438eb3250/Small/A00CQ7V7FH12472_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a00cq7v7fh12472/1.jpg",
+        "/products/bv-pdp/a00cq7v7fh12472/2.jpg",
+        "/products/bv-pdp/a00cq7v7fh12472/3.jpg",
+        "/products/bv-pdp/a00cq7v7fh12472/4.jpg",
+        "/products/bv-pdp/a00cq7v7fh12472/5.jpg",
+        "/products/bv-pdp/a00cq7v7fh12472/6.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 3740.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-women",
+        "bv-women-bags",
+        "bv-women-bags-mini",
+        "bv-women-bags-shoulder",
+        "bv-women-bags-madison"
+      ],
+      "leafId": "bv-women-bags-madison",
+      "cgid": "women-madison",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "A0062ZV5KD02840",
+      "sku": "A0062ZV5KD02840",
+      "internalId": "814513794",
+      "name": "Baby Barbara Tote",
+      "brand": "bottega veneta",
+      "color": "Bark",
+      "gender": "Women",
+      "link": "https://www.bottegaveneta.com/en-gb/baby-barbara-tote-bark-A0062ZV5KD02840.html",
+      "url": "https://www.bottegaveneta.com/en-gb/baby-barbara-tote-bark-A0062ZV5KD02840.html",
+      "gbpPrice": 3390.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Lambskin",
+        "Colour: Bark",
+        "Hardware: Brass Vibrato finish"
+      ],
+      "longDescription": [
+        "Baby Intrecciato leather tote bag with sliding cross-body strap",
+        "Single compartment",
+        "Internal hand mirror with leather cover",
+        "Flap with magnetic closure"
+      ],
+      "compactedLongDesc": "Tote bag with streamlined silhouette made with Intrecciato craft in supple nappa leather, featuring a sliding cross-body strap.",
+      "composition": "• Material: lambskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 15 cm | 5.9\"\n\n• Width: 21.5 cm | 8.5\"\n\n• Depth: 12 cm | 4.7\"\n\n• Handle drop: 9.5 cm | 3.7\"\n\n• Strap drop: 55 cm | 21.7\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/d56bd99b-4d7c-40f9-9a8a-c27339078aaf/eCom/A0062ZV5KD02840_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/dd61d286-c539-42fd-94bf-ddb110467ddd/eCom/A0062ZV5KD02840_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/e09514a8-fa97-4354-8960-6c526c85f923/eCom/A0062ZV5KD02840_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/d56bd99b-4d7c-40f9-9a8a-c27339078aaf/Small/A0062ZV5KD02840_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a0062zv5kd02840/1.jpg",
+        "/products/bv-pdp/a0062zv5kd02840/2.jpg",
+        "/products/bv-pdp/a0062zv5kd02840/3.jpg",
+        "/products/bv-pdp/a0062zv5kd02840/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 3390.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-women",
+        "bv-women-bags",
+        "bv-women-bags-mini",
+        "bv-women-bags-tote",
+        "bv-women-bags-barbara"
+      ],
+      "leafId": "bv-women-bags-barbara",
+      "cgid": "women-barbara",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "A00D1DVCPP02028",
+      "sku": "A00D1DVCPP02028",
+      "internalId": "814511766",
+      "name": "Small Giorno",
+      "brand": "bottega veneta",
+      "color": "Espresso",
+      "gender": "Women",
+      "link": "https://www.bottegaveneta.com/en-gb/small-giorno-espresso-A00D1DVCPP02028.html",
+      "url": "https://www.bottegaveneta.com/en-gb/small-giorno-espresso-A00D1DVCPP02028.html",
+      "gbpPrice": 2140.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Suede",
+        "Colour: Espresso"
+      ],
+      "longDescription": [
+        "Small Intrecciato leather pouch with flap",
+        "One main compartment",
+        "Drawstring closure",
+        "Leather loop attachment for shoulder carry"
+      ],
+      "compactedLongDesc": "Pouch in Intrecciato leather with flap and drawstring closure, featuring a loop attachment for shoulder carry.",
+      "composition": "• Material: lambskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 15 cm | 5.9\"\n\n• Width: 24 cm | 9.4\"\n\n• Depth: 6 cm | 2.4\"\n\n• Shoulder drop: 55 cm | 21.7\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/a9a059e8-cf45-4755-99d7-30a302cb5a10/eCom/A00D1DVCPP02028_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/c6754237-f510-433d-ae86-c27c38fbc555/eCom/A00D1DVCPP02028_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/5745b427-2908-4486-9594-b61be1856f5e/eCom/A00D1DVCPP02028_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/0a53e7f0-d1db-4d57-bd56-79178d97cec9/eCom/A00D1DVCPP02028_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/bc201e85-aac2-469e-a829-557f9c39d855/eCom/A00D1DVCPP02028_E.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/3e171ed9-da90-4380-b000-ace1779b7784/eCom/A00D1DVCPP02028_F.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/a9a059e8-cf45-4755-99d7-30a302cb5a10/Small/A00D1DVCPP02028_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a00d1dvcpp02028/1.jpg",
+        "/products/bv-pdp/a00d1dvcpp02028/2.jpg",
+        "/products/bv-pdp/a00d1dvcpp02028/3.jpg",
+        "/products/bv-pdp/a00d1dvcpp02028/4.jpg",
+        "/products/bv-pdp/a00d1dvcpp02028/5.jpg",
+        "/products/bv-pdp/a00d1dvcpp02028/6.jpg",
+        "/products/bv-pdp/a00d1dvcpp02028/7.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 2140.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-women",
+        "bv-women-bags",
+        "bv-women-bags-mini",
+        "bv-women-bags-shoulder"
+      ],
+      "leafId": "bv-women-bags-shoulder",
+      "cgid": "women-shoulder-bags",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "A00LTWV5ZZ04427",
+      "sku": "A00LTWV5ZZ04427",
+      "internalId": "814595347",
+      "name": "Giorno",
+      "brand": "bottega veneta",
+      "color": "Deep sea",
+      "gender": "Women",
+      "link": "https://www.bottegaveneta.com/en-gb/giorno-deep-sea-A00LTWV5ZZ04427.html",
+      "url": "https://www.bottegaveneta.com/en-gb/giorno-deep-sea-A00LTWV5ZZ04427.html",
+      "gbpPrice": 2770.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Suede",
+        "Colour: Deep Sea"
+      ],
+      "longDescription": [
+        "Intrecciato suede pouch with flap",
+        "One main compartment",
+        "Drawstring closure",
+        "Leather loop attachment for shoulder carry"
+      ],
+      "compactedLongDesc": "Pouch in Intrecciato suede with flap and drawstring closure, featuring a loop attachment for shoulder carry.",
+      "composition": "• Material: calfskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 19 cm\n\n• Width: 33 cm\n\n• Depth: 8 cm\n\n• Strap drop: 45 cm",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/beefcc45-7a20-4806-acb4-7b3afaec46ab/eCom/A00LTWV5ZZ04427_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/f2559079-c17f-4f5e-91ea-5706d56b9036/eCom/A00LTWV5ZZ04427_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/caeda208-1e84-4973-b5c8-011d39313b53/eCom/A00LTWV5ZZ04427_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/d402cb0d-f788-49d2-a111-2764d9fc0f48/eCom/A00LTWV5ZZ04427_F.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/beefcc45-7a20-4806-acb4-7b3afaec46ab/Small/A00LTWV5ZZ04427_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a00ltwv5zz04427/1.jpg",
+        "/products/bv-pdp/a00ltwv5zz04427/2.jpg",
+        "/products/bv-pdp/a00ltwv5zz04427/3.jpg",
+        "/products/bv-pdp/a00ltwv5zz04427/4.jpg",
+        "/products/bv-pdp/a00ltwv5zz04427/5.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 2770.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-women",
+        "bv-women-bags",
+        "bv-women-bags-mini",
+        "bv-women-bags-shoulder"
+      ],
+      "leafId": "bv-women-bags-shoulder",
+      "cgid": "women-shoulder-bags",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "816987V7FE17183",
+      "sku": "816987V7FE17183",
+      "internalId": "814534947",
+      "name": "Small Dustbag",
+      "brand": "bottega veneta",
+      "color": "Acid yellow sfumato",
+      "gender": "Women",
+      "link": "https://www.bottegaveneta.com/en-gb/small-dustbag-acid-yellow-sfumato-816987V7FE17183.html",
+      "url": "https://www.bottegaveneta.com/en-gb/small-dustbag-acid-yellow-sfumato-816987V7FE17183.html",
+      "gbpPrice": 1610.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Acid Yellow Sfumato",
+        "Hardware: Gold finish",
+        "Lining: Suede"
+      ],
+      "longDescription": [
+        "Shaded Intrecciato nappa leather pouch",
+        "One main compartment",
+        "Drawstring closure",
+        "Leather loop attachment with snap button for shoulder carry"
+      ],
+      "compactedLongDesc": "Small dustbag in Intrecciato nappa leather with shaded gradient effect, featuring a drawstring closure and loop attachment for shoulder carry.",
+      "composition": "• Material: lambskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 16.6 cm | 6.6\"\n\n• Width: 21 cm | 8.3\"\n\n• Depth: 1 cm | 0.4\"\n\n• Strap drop: 55 cm | 21.7\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/62f9d1a5-ae2d-43e8-9e4e-90c2149b5d6c/eCom/816987V7FE17183_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/49f382d8-6345-4f49-9b48-a57bcaa79ef4/eCom/816987V7FE17183_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/d8cd9ead-2875-4b63-b84f-408c896efd98/eCom/816987V7FE17183_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/62f9d1a5-ae2d-43e8-9e4e-90c2149b5d6c/Small/816987V7FE17183_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/816987v7fe17183/1.jpg",
+        "/products/bv-pdp/816987v7fe17183/2.jpg",
+        "/products/bv-pdp/816987v7fe17183/3.jpg",
+        "/products/bv-pdp/816987v7fe17183/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 1610.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-women",
+        "bv-women-bags",
+        "bv-women-bags-mini"
+      ],
+      "leafId": "bv-women-bags-mini",
+      "cgid": "women-mini-bags",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "A00ECFV60G01000",
+      "sku": "A00ECFV60G01000",
+      "internalId": "814546569",
+      "name": "Mini Bucket",
+      "brand": "bottega veneta",
+      "color": "Black",
+      "gender": "Women",
+      "link": "https://www.bottegaveneta.com/en-gb/mini-bucket-black-A00ECFV60G01000.html",
+      "url": "https://www.bottegaveneta.com/en-gb/mini-bucket-black-A00ECFV60G01000.html",
+      "gbpPrice": 1690.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Colour: Black",
+        "Hardware: Gold finish",
+        "Lining: Suede"
+      ],
+      "longDescription": [
+        "Intrecciato piccolo nappa leather bucket bag",
+        "One main compartment",
+        "Sliding shoulder strap with leather wrapped detail"
+      ],
+      "compactedLongDesc": "Bucket bag in Intrecciato piccolo nappa, featuring a sliding shoulder strap with leather wrapped detailing.",
+      "composition": "• Material: lambskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 18 cm | 7.1\"\n\n• Width: 13.5 cm | 5.3\"\n\n• Depth: 13.5 cm | 5.3\"\n\n• Strap drop: 24 cm | 9.4\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/20b65321-10ee-4cf4-88c2-c11366050a90/eCom/A00ECFV60G01000_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/0f8d81d9-0fb4-4040-adcf-f8db73f5b4cb/eCom/A00ECFV60G01000_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/bd199c70-6266-451c-bfcd-aa0dfe079e3b/eCom/A00ECFV60G01000_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/20b65321-10ee-4cf4-88c2-c11366050a90/Small/A00ECFV60G01000_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a00ecfv60g01000/1.jpg",
+        "/products/bv-pdp/a00ecfv60g01000/2.jpg",
+        "/products/bv-pdp/a00ecfv60g01000/3.jpg",
+        "/products/bv-pdp/a00ecfv60g01000/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 1690.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-women",
+        "bv-women-bags",
+        "bv-women-bags-mini"
+      ],
+      "leafId": "bv-women-bags-mini",
+      "cgid": "women-mini-bags",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "839394V3IV01019",
+      "sku": "839394V3IV01019",
+      "internalId": "813929814",
+      "name": "Dustbag Notte",
+      "brand": "bottega veneta",
+      "color": "Black",
+      "gender": "Women",
+      "link": "https://www.bottegaveneta.com/en-gb/dustbag-notte-black-839394V3IV01019.html",
+      "url": "https://www.bottegaveneta.com/en-gb/dustbag-notte-black-839394V3IV01019.html",
+      "gbpPrice": 2500.0,
+      "listGbpPrice": null,
+      "inStock": false,
+      "shortDescription": [
+        "Lining: Nylon",
+        "Colour: Black",
+        "Hardware: Muse brass finish"
+      ],
+      "longDescription": [
+        "Intrecciato calfskin leather pouch",
+        "One main compartment",
+        "Drawstring closure",
+        "Leather loop attachment for shoulder carry",
+        "Leather braided metal chain"
+      ],
+      "compactedLongDesc": "Dustbag in Intrecciato calf leather with tubular leather braided metal chain. Features a drawsting closure and loop attachment for shoulder carry.",
+      "composition": "• Material: Calfskin",
+      "material": "",
+      "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
+      "sizeModel": "• Height: 19 cm | 7.5 in \n\n• Width: 33 cm | 13 in \n\n• Depth: 8 cm | 3.1 in \n\n• Handle Drop: 42 cm | 16.5 in \n\n• Fits iPhone 17 Pro Max, a credit card case, airpods and keys.",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/5d938c8b-913e-44e3-b3a9-ab824cae1507/eCom/839394V3IV01019_A.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/1784de27-e8c4-4060-9647-395ae97178b5/eCom/839394V3IV01019_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/317af5c1-85a5-4258-a7da-46f235969333/eCom/839394V3IV01019_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/b3ea1f1c-f1bc-4ac0-b9b8-147ced5be7ac/eCom/839394V3IV01019_D.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/fca9a52e-a0ac-452e-8702-a0fc48df90f6/eCom/839394V3IV01019_F.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/5d938c8b-913e-44e3-b3a9-ab824cae1507/Small/839394V3IV01019_A.jpg?v=2"
+      ],
+      "localImages": [
+        "/products/bv-pdp/839394v3iv01019/1.jpg",
+        "/products/bv-pdp/839394v3iv01019/2.jpg",
+        "/products/bv-pdp/839394v3iv01019/3.jpg",
+        "/products/bv-pdp/839394v3iv01019/4.jpg",
+        "/products/bv-pdp/839394v3iv01019/5.jpg",
+        "/products/bv-pdp/839394v3iv01019/6.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": false,
+          "gbpPrice": 2500.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-women",
+        "bv-women-bags",
+        "bv-women-bags-mini"
+      ],
+      "leafId": "bv-women-bags-mini",
+      "cgid": "women-mini-bags",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "843890VCPP01019",
+      "sku": "843890VCPP01019",
+      "internalId": "813974213",
+      "name": "Andiamo Phone Pouch",
+      "brand": "bottega veneta",
+      "color": "Black",
+      "gender": "Women",
+      "link": "https://www.bottegaveneta.com/en-gb/andiamo-phone-pouch-black-843890VCPP01019.html",
+      "url": "https://www.bottegaveneta.com/en-gb/andiamo-phone-pouch-black-843890VCPP01019.html",
+      "gbpPrice": 1520.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Calfskin",
+        "Colour: Black",
+        "Hardware: Muse brass finish"
+      ],
+      "longDescription": [
+        "Intrecciato nappa leather phone pouch",
+        "One main compartment",
+        "Metal knot closure",
+        "Sliding leather strap"
+      ],
+      "compactedLongDesc": "Phone pouch in Intrecciato nappa leather with signature knot closure and sliding strap.",
+      "composition": "• Material: Lambskin leather",
+      "material": "",
+      "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
+      "sizeModel": "• Height: 21.5 cm | 8.5\" \n\n• Width: 14 cm | 5.5\" \n\n• Depth: 7 cm | 2.8\" \n\n• Strap drop: 55 cm | 21.7\" \n\n• Fits iPhone 17 Pro Max, a credit card case, airpods and keys.",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/f7360a5b-fcde-4442-98f0-d62fe2396968/eCom/843890VCPP01019_A.jpg?v=3",
+        "https://bottega-veneta.dam.kering.com/asset/cd9b7de1-e4cc-4317-8fb8-39e27742200e/eCom/843890VCPP01019_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/7bce3de1-e670-4fc5-baa8-3d7608fc3de0/eCom/843890VCPP01019_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/40ef48fe-9a8f-4f9a-aff3-48e7db9ff697/eCom/843890VCPP01019_D.jpg?v=3",
+        "https://bottega-veneta.dam.kering.com/asset/0b298c8a-b16f-498b-bc62-f291e09c2739/eCom/843890VCPP01019_E.jpg?v=3",
+        "https://bottega-veneta.dam.kering.com/asset/cc8ad863-8348-43ae-9b64-a44d699883ab/eCom/843890VCPP01019_H.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/f7360a5b-fcde-4442-98f0-d62fe2396968/Small/843890VCPP01019_A.jpg?v=3"
+      ],
+      "localImages": [
+        "/products/bv-pdp/843890vcpp01019/1.jpg",
+        "/products/bv-pdp/843890vcpp01019/2.jpg",
+        "/products/bv-pdp/843890vcpp01019/3.jpg",
+        "/products/bv-pdp/843890vcpp01019/4.jpg",
+        "/products/bv-pdp/843890vcpp01019/5.jpg",
+        "/products/bv-pdp/843890vcpp01019/6.jpg",
+        "/products/bv-pdp/843890vcpp01019/7.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 1520.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-women",
+        "bv-women-bags",
+        "bv-women-bags-mini"
+      ],
+      "leafId": "bv-women-bags-mini",
+      "cgid": "women-mini-bags",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "A005PEV0HW02801",
+      "sku": "A005PEV0HW02801",
+      "internalId": "814513724",
+      "name": "Baby Campana",
+      "brand": "bottega veneta",
+      "color": "Bark",
+      "gender": "Women",
+      "link": "https://www.bottegaveneta.com/en-gb/baby-campana-bark-A005PEV0HW02801.html",
+      "url": "https://www.bottegaveneta.com/en-gb/baby-campana-bark-A005PEV0HW02801.html",
+      "gbpPrice": 2770.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Lambskin bonded Intrecciato",
+        "Colour: Bark",
+        "Hardware: Brass finish"
+      ],
+      "longDescription": [
+        "Baby Intrecciato leather shoulder bag with sliding cross-body strap",
+        "Leather tie closure with hidden magnet"
+      ],
+      "compactedLongDesc": "Shoulder bag with archival silhouette in supple Intrecciato leather, featuring a tie closure and a sliding cross-body strap.",
+      "composition": "• Material: lambskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 12.5 cm | 4.9\"\n\n• Width: 20 cm | 7.9\"\n\n• Depth: 9 cm | 3.5\"\n\n• Handle drop: 13.5 cm | 5.3\"\n\n• Strap drop: 55 cm | 21.7\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/97ae27ef-499b-47f4-89db-8b1a7c98cbc7/eCom/A005PEV0HW02801_A.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/9e7f2a1f-9111-442d-87e2-b96baf202650/eCom/A005PEV0HW02801_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/b2bb1376-f486-4f13-bddb-560464100a90/eCom/A005PEV0HW02801_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/97ae27ef-499b-47f4-89db-8b1a7c98cbc7/Small/A005PEV0HW02801_A.jpg?v=2"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a005pev0hw02801/1.jpg",
+        "/products/bv-pdp/a005pev0hw02801/2.jpg",
+        "/products/bv-pdp/a005pev0hw02801/3.jpg",
+        "/products/bv-pdp/a005pev0hw02801/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 2770.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-women",
+        "bv-women-bags",
+        "bv-women-bags-mini",
+        "bv-women-bags-campana"
+      ],
+      "leafId": "bv-women-bags-campana",
+      "cgid": "women-campana",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "A00CI3V08Z02801",
+      "sku": "A00CI3V08Z02801",
+      "internalId": "814510926",
+      "name": "Mini Knot Lock",
+      "brand": "bottega veneta",
+      "color": "Bark",
+      "gender": "Women",
+      "link": "https://www.bottegaveneta.com/en-gb/mini-knot-lock-bark-A00CI3V08Z02801.html",
+      "url": "https://www.bottegaveneta.com/en-gb/mini-knot-lock-bark-A00CI3V08Z02801.html",
+      "gbpPrice": 2500.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Suede",
+        "Colour: Bark",
+        "Hardware: Brass finish"
+      ],
+      "longDescription": [
+        "Mini Intrecciato piccolo leather cross-body bag",
+        "Adjustable top handle",
+        "Adjustable and detachable strap",
+        "Two compartments and an external flat back pocket",
+        "Metallic knot lock closure"
+      ],
+      "compactedLongDesc": "Cross-body bag in Intrecciato leather with adjustable top handle and sculptural knot closure.",
+      "composition": "• Material: lambskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 12.7 cm | 5\"\n\n• Width: 19.5 cm | 7.7\"\n\n• Depth: 5.2 cm\n\n• Handle drop: 7 cm | 2.7\"\n\n• Strap drop: 51 cm | 20.1”",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/32a26cce-1328-42f4-bbb2-a0912b3f093a/eCom/A00CI3V08Z02801_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/84246490-b36f-4840-b486-38fba6c86397/eCom/A00CI3V08Z02801_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/2536cf1c-e2b9-4554-84a5-c26b5ec52245/eCom/A00CI3V08Z02801_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/9225964e-c642-402a-8fe0-fa215738aaeb/eCom/A00CI3V08Z02801_F.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/32a26cce-1328-42f4-bbb2-a0912b3f093a/Small/A00CI3V08Z02801_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a00ci3v08z02801/1.jpg",
+        "/products/bv-pdp/a00ci3v08z02801/2.jpg",
+        "/products/bv-pdp/a00ci3v08z02801/3.jpg",
+        "/products/bv-pdp/a00ci3v08z02801/4.jpg",
+        "/products/bv-pdp/a00ci3v08z02801/5.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 2500.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-women",
+        "bv-women-bags",
+        "bv-women-bags-crossbody",
+        "bv-women-bags-top-handle"
+      ],
+      "leafId": "bv-women-bags-top-handle",
+      "cgid": "women-top-handle-bags",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "A00CI3V08Z01019",
+      "sku": "A00CI3V08Z01019",
+      "internalId": "814510925",
+      "name": "Mini Knot Lock",
+      "brand": "bottega veneta",
+      "color": "Black",
+      "gender": "Women",
+      "link": "https://www.bottegaveneta.com/en-gb/mini-knot-lock-black-A00CI3V08Z01019.html",
+      "url": "https://www.bottegaveneta.com/en-gb/mini-knot-lock-black-A00CI3V08Z01019.html",
+      "gbpPrice": 2500.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Suede",
+        "Colour: Black",
+        "Hardware: Brass finish"
+      ],
+      "longDescription": [
+        "Mini Intrecciato piccolo leather cross-body bag",
+        "Adjustable top handle",
+        "Adjustable and detachable strap",
+        "Two compartments and an external flat back pocket",
+        "Metallic knot lock closure"
+      ],
+      "compactedLongDesc": "Cross-body bag in Intrecciato leather with adjustable top handle and sculptural knot closure.",
+      "composition": "• Material: lambskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 12.7 cm | 5\"\n\n• Width: 19.5 cm | 7.7\"\n\n• Depth: 5.2 cm\n\n• Handle drop: 7 cm | 2.7\"\n\n• Strap drop: 51 cm | 20.1”",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/d0ee49e3-8839-4bb1-9b59-982bf99ec4c9/eCom/A00CI3V08Z01019_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/8734022c-5fdb-4142-94d3-0464047c4d78/eCom/A00CI3V08Z01019_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/11f3c617-68cb-4e3b-9f8c-5ac2491ad850/eCom/A00CI3V08Z01019_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/3f8f6300-f69c-4c0a-99fb-add9a4a69725/eCom/A00CI3V08Z01019_F.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/d0ee49e3-8839-4bb1-9b59-982bf99ec4c9/Small/A00CI3V08Z01019_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a00ci3v08z01019/1.jpg",
+        "/products/bv-pdp/a00ci3v08z01019/2.jpg",
+        "/products/bv-pdp/a00ci3v08z01019/3.jpg",
+        "/products/bv-pdp/a00ci3v08z01019/4.jpg",
+        "/products/bv-pdp/a00ci3v08z01019/5.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 2500.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-women",
+        "bv-women-bags",
+        "bv-women-bags-crossbody",
+        "bv-women-bags-top-handle"
+      ],
+      "leafId": "bv-women-bags-top-handle",
+      "cgid": "women-top-handle-bags",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "817191V08Z01019",
+      "sku": "817191V08Z01019",
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-women",
+        "bv-women-bags",
+        "bv-women-bags-crossbody"
+      ],
+      "leafId": "bv-women-bags-crossbody",
+      "cgid": "women-crossbody-bags",
+      "url": "https://www.bottegaveneta.com/en-gb/knot-lock-black-muse-brass-817191V08Z01019.html",
+      "pdpError": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "id": "844250V5ZZ04430",
+      "sku": "844250V5ZZ04430",
+      "internalId": "814514613",
+      "name": "Large Campana",
+      "brand": "bottega veneta",
+      "color": "Deep sea",
+      "gender": "Women",
+      "link": "https://www.bottegaveneta.com/en-gb/large-campana-deep-sea-844250V5ZZ04430.html",
+      "url": "https://www.bottegaveneta.com/en-gb/large-campana-deep-sea-844250V5ZZ04430.html",
+      "gbpPrice": 5080.0,
+      "listGbpPrice": null,
+      "inStock": false,
+      "shortDescription": [
+        "Lining: Suede bonded Intrecciato",
+        "Colour: Deep Sea",
+        "Hardware: Brass finish"
+      ],
+      "longDescription": [
+        "Large Intrecciato suede leather shoulder bag",
+        "Internal zipped pocket",
+        "Leather tie closure with hidden magnet"
+      ],
+      "compactedLongDesc": "Shoulder bag with archival silhouette in soft Intrecciato suede, featuring a tie closure.",
+      "composition": "• Material: calfskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 24 cm | 9.4\"\n\n• Width: 39 cm | 15.4\"\n\n• Depth: 18.5 cm | 7.3\"\n\n• Handle drop: 25 cm | 9.8\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/aec8d8cb-3d59-4eae-b4c1-417a904e2757/eCom/844250V5ZZ04430_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/a09f8c4e-2683-4690-8555-4c0d81c01bb0/eCom/844250V5ZZ04430_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/6c36733e-55f9-4ac8-8af1-b0e2232b9b0a/eCom/844250V5ZZ04430_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/aec8d8cb-3d59-4eae-b4c1-417a904e2757/Small/844250V5ZZ04430_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/844250v5zz04430/1.jpg",
+        "/products/bv-pdp/844250v5zz04430/2.jpg",
+        "/products/bv-pdp/844250v5zz04430/3.jpg",
+        "/products/bv-pdp/844250v5zz04430/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": false,
+          "gbpPrice": 5080.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-women",
+        "bv-women-bags",
+        "bv-women-bags-shoulder",
+        "bv-women-bags-tote",
+        "bv-women-bags-campana"
+      ],
+      "leafId": "bv-women-bags-campana",
+      "cgid": "women-campana",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "873188V66V01019",
+      "sku": "873188V66V01019",
+      "internalId": "814267575",
+      "name": "Small Veneta",
+      "brand": "bottega veneta",
+      "color": "Black/muse brass",
+      "gender": "Women",
+      "link": "https://www.bottegaveneta.com/en-gb/small-veneta-black-muse-brass-873188V66V01019.html",
+      "url": "https://www.bottegaveneta.com/en-gb/small-veneta-black-muse-brass-873188V66V01019.html",
+      "gbpPrice": 3740.0,
+      "listGbpPrice": null,
+      "inStock": false,
+      "shortDescription": [
+        "Lining: Suede",
+        "Colour: Black",
+        "Hardware: Brass finish"
+      ],
+      "longDescription": [
+        "Small padded Intrecciato supple leather shoulder bag",
+        "One main compartment",
+        "Zip closure"
+      ],
+      "compactedLongDesc": "Shoulder bag with seamless Intrecciato craftsmanship in padded, supple leather.",
+      "composition": "• Material: lambskin",
+      "material": "",
+      "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
+      "sizeModel": "• Height: 21 cm\n\n• Width: 35 cm\n\n• Depth: 5 cm\n\n• Handle drop: 14 cm",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/e6bee2b5-de54-4b74-aae7-7f121fbab73e/eCom/873188V66V01019_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/de6095ab-0546-4997-9dd2-fe1b65d1e818/eCom/873188V66V01019_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/8e701fd0-b795-4123-9753-f6b3cb5a1f09/eCom/873188V66V01019_C.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/33f4a043-dbf5-4a54-8eb8-310200af77ad/eCom/873188V66V01019_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/e6bee2b5-de54-4b74-aae7-7f121fbab73e/Small/873188V66V01019_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/873188v66v01019/1.jpg",
+        "/products/bv-pdp/873188v66v01019/2.jpg",
+        "/products/bv-pdp/873188v66v01019/3.jpg",
+        "/products/bv-pdp/873188v66v01019/4.jpg",
+        "/products/bv-pdp/873188v66v01019/5.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": false,
+          "gbpPrice": 3740.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-women",
+        "bv-women-bags",
+        "bv-women-bags-shoulder"
+      ],
+      "leafId": "bv-women-bags-shoulder",
+      "cgid": "women-shoulder-bags",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "873188V66V02801",
+      "sku": "873188V66V02801",
+      "internalId": "814515266",
+      "name": "Small Veneta",
+      "brand": "bottega veneta",
+      "color": "Bark",
+      "gender": "Women",
+      "link": "https://www.bottegaveneta.com/en-gb/small-veneta-bark-873188V66V02801.html",
+      "url": "https://www.bottegaveneta.com/en-gb/small-veneta-bark-873188V66V02801.html",
+      "gbpPrice": 3740.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Suede",
+        "Colour: Bark",
+        "Hardware: Brass finish"
+      ],
+      "longDescription": [
+        "Small padded Intrecciato supple leather shoulder bag",
+        "One main compartment",
+        "Zip closure"
+      ],
+      "compactedLongDesc": "Shoulder bag with seamless Intrecciato craftsmanship in padded, supple leather.",
+      "composition": "• Material: lambskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 21 cm | 8.3\"\n\n• Width: 35 cm | 13.8\"\n\n• Depth: 5 cm | 2\"\n\n• Handle drop: 14 cm | 5.5\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/0bf731ab-e65e-4c1a-b5e0-d6208849c8af/eCom/873188V66V02801_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/4c082c5e-d1b7-42ae-8571-ff9d9e23d184/eCom/873188V66V02801_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/0cf28acc-0383-4092-a0ab-ad0528c49a01/eCom/873188V66V02801_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/5d0e87e8-e3ac-4216-8169-175993965c4e/eCom/873188V66V02801_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/0bf731ab-e65e-4c1a-b5e0-d6208849c8af/Small/873188V66V02801_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/873188v66v02801/1.jpg",
+        "/products/bv-pdp/873188v66v02801/2.jpg",
+        "/products/bv-pdp/873188v66v02801/3.jpg",
+        "/products/bv-pdp/873188v66v02801/4.jpg",
+        "/products/bv-pdp/873188v66v02801/5.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 3740.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-women",
+        "bv-women-bags",
+        "bv-women-bags-shoulder"
+      ],
+      "leafId": "bv-women-bags-shoulder",
+      "cgid": "women-shoulder-bags",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "A00A4PV60G02840",
+      "sku": "A00A4PV60G02840",
+      "internalId": "814510812",
+      "name": "Large Corso",
+      "brand": "bottega veneta",
+      "color": "Bark",
+      "gender": "Women",
+      "link": "https://www.bottegaveneta.com/en-gb/large-corso-bark-A00A4PV60G02840.html",
+      "url": "https://www.bottegaveneta.com/en-gb/large-corso-bark-A00A4PV60G02840.html",
+      "gbpPrice": 4010.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Suede",
+        "Colour: Bark",
+        "Hardware: Brass Vibrato finish"
+      ],
+      "longDescription": [
+        "Large Intrecciato and smooth leather tote bag",
+        "Single detachable interior zippered pocket",
+        "Hook leather closure"
+      ],
+      "compactedLongDesc": "Tote bag with spacious collapsible form in supple Intrecciato leather, featuring contrasted smooth leather sides.",
+      "composition": "• Material: lambskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 29.5 cm | 11.6\"\n\n• Width: 34 cm | 13.4\"\n\n• Depth: 20.5 cm | 8\"\n\n• Handle drop: 33 cm | 13\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/af456feb-1c1d-47db-a45d-ad5a92aa41e3/eCom/A00A4PV60G02840_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/69af91dc-aee2-4dc6-aeb5-fcce0792e5ec/eCom/A00A4PV60G02840_B.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/62626604-db2a-4f42-8a6c-ad7585bbfae1/eCom/A00A4PV60G02840_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/947794b7-256a-471b-8e6a-01f87e5b5cf8/eCom/A00A4PV60G02840_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/af456feb-1c1d-47db-a45d-ad5a92aa41e3/Small/A00A4PV60G02840_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a00a4pv60g02840/1.jpg",
+        "/products/bv-pdp/a00a4pv60g02840/2.jpg",
+        "/products/bv-pdp/a00a4pv60g02840/3.jpg",
+        "/products/bv-pdp/a00a4pv60g02840/4.jpg",
+        "/products/bv-pdp/a00a4pv60g02840/5.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 4010.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-women",
+        "bv-women-bags",
+        "bv-women-bags-tote"
+      ],
+      "leafId": "bv-women-bags-tote",
+      "cgid": "women-tote-bags",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "A006T5V60G02840",
+      "sku": "A006T5V60G02840",
+      "internalId": "814513791",
+      "name": "Corso",
+      "brand": "bottega veneta",
+      "color": "Bark",
+      "gender": "Women",
+      "link": "https://www.bottegaveneta.com/en-gb/corso-bark-A006T5V60G02840.html",
+      "url": "https://www.bottegaveneta.com/en-gb/corso-bark-A006T5V60G02840.html",
+      "gbpPrice": 3300.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Suede",
+        "Colour: Bark",
+        "Hardware: Brass Vibrato finish"
+      ],
+      "longDescription": [
+        "Intrecciato and smooth leather tote bag",
+        "Single detachable interior zippered pocket",
+        "Hook leather closure"
+      ],
+      "compactedLongDesc": "Tote bag with spacious collapsible form in supple Intrecciato leather, featuring contrasted smooth leather sides.",
+      "composition": "• Material: lambskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 26 cm | 10.2\"\n\n• Width: 30 cm | 11.8\"\n\n• Depth: 18.5 cm | 7.3\"\n\n• Handle drop: 22.5 cm | 8.9",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/d0c75526-53d6-4bbe-88f6-63cb72334a3b/eCom/A006T5V60G02840_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/e3b64644-60be-491c-98d0-f3827d95c420/eCom/A006T5V60G02840_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/4edef00b-e254-4a05-8eb2-cc920a4707a3/eCom/A006T5V60G02840_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/d0c75526-53d6-4bbe-88f6-63cb72334a3b/Small/A006T5V60G02840_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a006t5v60g02840/1.jpg",
+        "/products/bv-pdp/a006t5v60g02840/2.jpg",
+        "/products/bv-pdp/a006t5v60g02840/3.jpg",
+        "/products/bv-pdp/a006t5v60g02840/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 3300.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-women",
+        "bv-women-bags",
+        "bv-women-bags-tote"
+      ],
+      "leafId": "bv-women-bags-tote",
+      "cgid": "women-tote-bags",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "608810V1OW12765",
+      "sku": "608810V1OW12765",
+      "internalId": "814514236",
+      "name": "Cabat",
+      "brand": "bottega veneta",
+      "color": "Bark",
+      "gender": "Women",
+      "link": "https://www.bottegaveneta.com/en-gb/cabat-bark-608810V1OW12765.html",
+      "url": "https://www.bottegaveneta.com/en-gb/cabat-bark-608810V1OW12765.html",
+      "gbpPrice": 7570.0,
+      "listGbpPrice": null,
+      "inStock": false,
+      "shortDescription": [
+        "Lining: Unlined",
+        "Colour: Bark",
+        "Hardware: Gold finish"
+      ],
+      "longDescription": [
+        "Intreccio leather tote bag",
+        "Single detachable interior zippered pocket"
+      ],
+      "compactedLongDesc": "Tote bag made with Intreccio craft in nappa leather.",
+      "composition": "• Material: lambskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 29 cm | 11.4\"\n\n• Width: 40 cm | 15.7\"\n\n• Depth: 16 cm | 6.3\"\n\n• Handle drop: 18 cm | 7.1\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/c46f33ef-4ec8-4a3d-a599-64c408cf3ea6/eCom/608810V1OW12765_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/4781a07c-68e1-4817-b1a0-ae7ae5c68b90/eCom/608810V1OW12765_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/6d51deb8-b720-474c-992d-38acfbecac80/eCom/608810V1OW12765_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/c46f33ef-4ec8-4a3d-a599-64c408cf3ea6/Small/608810V1OW12765_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/608810v1ow12765/1.jpg",
+        "/products/bv-pdp/608810v1ow12765/2.jpg",
+        "/products/bv-pdp/608810v1ow12765/3.jpg",
+        "/products/bv-pdp/608810v1ow12765/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": false,
+          "gbpPrice": 7570.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-women",
+        "bv-women-bags",
+        "bv-women-bags-tote",
+        "bv-women-bags-cabat"
+      ],
+      "leafId": "bv-women-bags-cabat",
+      "cgid": "women-cabat",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "766014VCPP12273",
+      "sku": "766014VCPP12273",
+      "internalId": "813122209",
+      "name": "Small Andiamo",
+      "brand": "bottega veneta",
+      "color": "Barolo/muse brass",
+      "gender": "Women",
+      "link": "https://www.bottegaveneta.com/en-gb/small-andiamo-barolo-muse-brass-766014VCPP12273.html",
+      "url": "https://www.bottegaveneta.com/en-gb/small-andiamo-barolo-muse-brass-766014VCPP12273.html",
+      "gbpPrice": 3830.0,
+      "listGbpPrice": null,
+      "inStock": false,
+      "shortDescription": [
+        "Lining: Lambskin bonded Intrecciato",
+        "Colour: Barolo",
+        "Hardware: Brass finish"
+      ],
+      "longDescription": [
+        "Small Intrecciato leather top handle bag with sliding cross-body strap",
+        "Compartmented interior with one zippered pocket, two open pockets",
+        "Magnetic closure"
+      ],
+      "compactedLongDesc": "Top handle bag in supple Intrecciato leather with signature knot detail and sliding cross-body strap.",
+      "composition": "• Material: lambskin",
+      "material": "",
+      "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
+      "sizeModel": "• Height: 20 cm\n\n• Width: 25 cm\n\n• Depth: 10 cm\n\n• Handle drop: 6 cm\n\n• Strap drop: 50 cm",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/m/6ebc894cfee0e7de/eCom-766014VCPP12273_A.jpg?v=4",
+        "https://bottega-veneta.dam.kering.com/m/bfbdf912f4cfa38/eCom-766014VCPP12273_B.jpg?v=4",
+        "https://bottega-veneta.dam.kering.com/m/31a33c4c99d9b668/eCom-766014VCPP12273_C.jpg?v=4",
+        "https://bottega-veneta.dam.kering.com/m/6ab84097e8e75e5c/eCom-766014VCPP12273_D.jpg?v=4",
+        "https://bottega-veneta.dam.kering.com/m/7c54d03b61b33eef/eCom-766014VCPP12273_E.jpg?v=4",
+        "https://bottega-veneta.dam.kering.com/m/727000c3e64fcc15/eCom-766014VCPP12273_F.jpg?v=4",
+        "https://bottega-veneta.dam.kering.com/m/52136122c2840c82/eCom-766014VCPP12273_G.jpg?v=4",
+        "https://bottega-veneta.dam.kering.com/m/6984a79d4b93fd06/eCom-766014VCPP12273_H.jpg?v=4",
+        "https://bottega-veneta.dam.kering.com/m/6ebc894cfee0e7de/Small-766014VCPP12273_A.jpg?v=4"
+      ],
+      "localImages": [
+        "/products/bv-pdp/766014vcpp12273/1.jpg",
+        "/products/bv-pdp/766014vcpp12273/2.jpg",
+        "/products/bv-pdp/766014vcpp12273/3.jpg",
+        "/products/bv-pdp/766014vcpp12273/4.jpg",
+        "/products/bv-pdp/766014vcpp12273/5.jpg",
+        "/products/bv-pdp/766014vcpp12273/6.jpg",
+        "/products/bv-pdp/766014vcpp12273/7.jpg",
+        "/products/bv-pdp/766014vcpp12273/8.jpg",
+        "/products/bv-pdp/766014vcpp12273/9.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": false,
+          "gbpPrice": 3830.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-women",
+        "bv-women-bags",
+        "bv-women-bags-andiamo"
+      ],
+      "leafId": "bv-women-bags-andiamo",
+      "cgid": "women-andiamo",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "A0069UV75D01069",
+      "sku": "A0069UV75D01069",
+      "internalId": "814513803",
+      "name": "Small Andiamo",
+      "brand": "bottega veneta",
+      "color": "Black",
+      "gender": "Women",
+      "link": "https://www.bottegaveneta.com/en-gb/small-andiamo-black-A0069UV75D01069.html",
+      "url": "https://www.bottegaveneta.com/en-gb/small-andiamo-black-A0069UV75D01069.html",
+      "gbpPrice": 4010.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Lambskin",
+        "Colour: Black",
+        "Hardware: Black"
+      ],
+      "longDescription": [
+        "Small Intrecciato leather top handle bag with sliding cross-body strap",
+        "Compartmented interior with one zipped pocket, one open pocket",
+        "Magnetic closure"
+      ],
+      "compactedLongDesc": "Top handle bag in supple Intrecciato leather with signature tonal knot detail and sliding cross-body strap.",
+      "composition": "• Material: lambskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 20 cm | 7.9\"\n\n• Width: 25 cm | 9.8\"\n\n• Depth: 10 cm | 3.9\"\n\n• Handle drop: 6 cm | 2.4\"\n\n• Strap drop: 50 cm | 19.7\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/e8f58f3b-5de7-415f-ac2f-7a64d1fcc2ce/eCom/A0069UV75D01069_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/9f6e01d6-8e2b-4adc-a7cf-13804dd644cb/eCom/A0069UV75D01069_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/ba865dac-8253-4f13-a555-883e789806c6/eCom/A0069UV75D01069_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/e8f58f3b-5de7-415f-ac2f-7a64d1fcc2ce/Small/A0069UV75D01069_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/a0069uv75d01069/1.jpg",
+        "/products/bv-pdp/a0069uv75d01069/2.jpg",
+        "/products/bv-pdp/a0069uv75d01069/3.jpg",
+        "/products/bv-pdp/a0069uv75d01069/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 4010.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-women",
+        "bv-women-bags",
+        "bv-women-bags-andiamo"
+      ],
+      "leafId": "bv-women-bags-andiamo",
+      "cgid": "women-andiamo",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "766014VCPP12853",
+      "sku": "766014VCPP12853",
+      "internalId": "814514348",
+      "name": "Small Andiamo",
+      "brand": "bottega veneta",
+      "color": "Bark",
+      "gender": "Women",
+      "link": "https://www.bottegaveneta.com/en-gb/small-andiamo-bark-766014VCPP12853.html",
+      "url": "https://www.bottegaveneta.com/en-gb/small-andiamo-bark-766014VCPP12853.html",
+      "gbpPrice": 3830.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Lambskin bonded Intrecciato",
+        "Colour: Bark",
+        "Hardware: Brass finish"
+      ],
+      "longDescription": [
+        "Small Intrecciato leather top handle bag with sliding cross-body strap",
+        "Compartmented interior with one zipped pocket, one open pocket",
+        "Magnetic closure"
+      ],
+      "compactedLongDesc": "Top handle bag in supple Intrecciato leather with signature knot detail and sliding cross-body strap.",
+      "composition": "• Material: lambskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 20 cm | 7.9\"\n\n• Width: 25 cm | 9.8\"\n\n• Depth: 10 cm | 3.9\"\n\n• Handle drop: 6 cm | 2.4\"\n\n• Strap drop: 50 cm | 19.7\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/d85363c8-60f2-4728-b493-3273b7f8fd91/eCom/766014VCPP12853_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/f7d9943c-e3f3-4d5f-adb3-4b4fcfa70f06/eCom/766014VCPP12853_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/336a9379-6182-4dd6-b612-35b38476ba07/eCom/766014VCPP12853_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/5670e589-7cec-4b1a-b6b5-abbca4967413/eCom/766014VCPP12853_E.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/ca1f57fd-b565-4cba-9194-7180555ad712/eCom/766014VCPP12853_G.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/d85363c8-60f2-4728-b493-3273b7f8fd91/Small/766014VCPP12853_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/766014vcpp12853/1.jpg",
+        "/products/bv-pdp/766014vcpp12853/2.jpg",
+        "/products/bv-pdp/766014vcpp12853/3.jpg",
+        "/products/bv-pdp/766014vcpp12853/4.jpg",
+        "/products/bv-pdp/766014vcpp12853/5.jpg",
+        "/products/bv-pdp/766014vcpp12853/6.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 3830.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-women",
+        "bv-women-bags",
+        "bv-women-bags-andiamo"
+      ],
+      "leafId": "bv-women-bags-andiamo",
+      "cgid": "women-andiamo",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "844249V4SC02801",
+      "sku": "844249V4SC02801",
+      "internalId": "814514610",
+      "name": "Campana",
+      "brand": "bottega veneta",
+      "color": "Bark",
+      "gender": "Women",
+      "link": "https://www.bottegaveneta.com/en-gb/campana-bark-844249V4SC02801.html",
+      "url": "https://www.bottegaveneta.com/en-gb/campana-bark-844249V4SC02801.html",
+      "gbpPrice": 3830.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Lambskin bonded Intrecciato",
+        "Colour: Bark",
+        "Hardware: Brass finish"
+      ],
+      "longDescription": [
+        "Intrecciato leather shoulder bag",
+        "Leather tie closure with hidden magnet"
+      ],
+      "compactedLongDesc": "Shoulder bag with archival silhouette in supple Intrecciato leather, featuring a tie closure.",
+      "composition": "• Material: lambskin",
+      "material": "",
+      "productCare": "",
+      "sizeModel": "• Height: 20 cm | 7.9\"\n\n• Width: 33 cm | 13\"\n\n• Depth: 16.5 cm | 6.7\"\n\n• Handle drop: 20 cm | 7.9\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/8fbcb447-c6ff-4e7e-a8cc-aefe37864995/eCom/844249V4SC02801_A.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/4dd785c3-874d-40b4-8bb2-abb5734c6ea7/eCom/844249V4SC02801_C.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/7d192717-9fe4-404c-8413-0c2e6db208ce/eCom/844249V4SC02801_D.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/8fbcb447-c6ff-4e7e-a8cc-aefe37864995/Small/844249V4SC02801_A.jpg?v=1"
+      ],
+      "localImages": [
+        "/products/bv-pdp/844249v4sc02801/1.jpg",
+        "/products/bv-pdp/844249v4sc02801/2.jpg",
+        "/products/bv-pdp/844249v4sc02801/3.jpg",
+        "/products/bv-pdp/844249v4sc02801/4.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 3830.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-women",
+        "bv-women-bags",
+        "bv-women-bags-campana"
+      ],
+      "leafId": "bv-women-bags-campana",
+      "cgid": "women-campana",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "844249V4SC01019",
+      "sku": "844249V4SC01019",
+      "internalId": "813976173",
+      "name": "Campana",
+      "brand": "bottega veneta",
+      "color": "Black/muse brass",
+      "gender": "Women",
+      "link": "https://www.bottegaveneta.com/en-gb/campana-black-muse-brass-844249V4SC01019.html",
+      "url": "https://www.bottegaveneta.com/en-gb/campana-black-muse-brass-844249V4SC01019.html",
+      "gbpPrice": 3830.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Lambskin bonded Intrecciato",
+        "Colour: Black",
+        "Hardware: Brass finish"
+      ],
+      "longDescription": [
+        "Intrecciato leather shoulder bag",
+        "Leather tie closure with hidden magnet"
+      ],
+      "compactedLongDesc": "Shoulder bag with archival silhouette in supple Intrecciato leather with tie closure.",
+      "composition": "• Material: lambskin",
+      "material": "",
+      "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
+      "sizeModel": "• Height: 20 cm\n\n• Width: 33 cm\n\n• Depth: 16,5 cm\n\n• Handle drop: 20 cm",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/fa4f37d6-5cc6-4e7d-a22a-7623faf63d03/eCom/844249V4SC01019_A.jpg?v=4",
+        "https://bottega-veneta.dam.kering.com/asset/4d343d3d-19c0-40e3-a979-5fd77cc53198/eCom/844249V4SC01019_B.jpg?v=3",
+        "https://bottega-veneta.dam.kering.com/asset/a9e0a0a7-918f-4049-9812-ef277e43c6a9/eCom/844249V4SC01019_C.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/2025d8c4-689c-43cc-aac1-61a32e46c1eb/eCom/844249V4SC01019_D.jpg?v=3",
+        "https://bottega-veneta.dam.kering.com/asset/df57f3a6-9ca3-4368-b4c9-4d6cf2fb7e04/eCom/844249V4SC01019_F.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/af1d5b0b-3358-45c6-8e6f-597f7c2e5f1e/eCom/844249V4SC01019_G.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/fa4f37d6-5cc6-4e7d-a22a-7623faf63d03/Small/844249V4SC01019_A.jpg?v=4"
+      ],
+      "localImages": [
+        "/products/bv-pdp/844249v4sc01019/1.jpg",
+        "/products/bv-pdp/844249v4sc01019/2.jpg",
+        "/products/bv-pdp/844249v4sc01019/3.jpg",
+        "/products/bv-pdp/844249v4sc01019/4.jpg",
+        "/products/bv-pdp/844249v4sc01019/5.jpg",
+        "/products/bv-pdp/844249v4sc01019/6.jpg",
+        "/products/bv-pdp/844249v4sc01019/7.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 3830.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-women",
+        "bv-women-bags",
+        "bv-women-bags-campana"
+      ],
+      "leafId": "bv-women-bags-campana",
+      "cgid": "women-campana",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "608810V1OW18425",
+      "sku": "608810V1OW18425",
+      "internalId": "810486792",
+      "name": "Cabat",
+      "brand": "bottega veneta",
+      "color": "Black",
+      "gender": "E",
+      "link": "https://www.bottegaveneta.com/en-gb/cabat-black-608810V1OW18425.html",
+      "url": "https://www.bottegaveneta.com/en-gb/cabat-black-608810V1OW18425.html",
+      "gbpPrice": 7570.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Unlined",
+        "Colour: Black",
+        "Hardware: Gold finish"
+      ],
+      "longDescription": [
+        "Intrecciato leather tote bag",
+        "Single detachable interior zippered pocket"
+      ],
+      "compactedLongDesc": "Intreccio leather tote bag.",
+      "composition": "• Material: lambskin",
+      "material": "",
+      "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
+      "sizeModel": "• Height: 29 cm | 11.4” \n\n• Width: 40 cm | 15.7” \n\n• Depth: 16 cm | 6.3\" \n\n• Handle drop: 18 cm | 7.1”",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/m/5a781e7ea80ecd37/eCom-608810V1OW18425_A.jpg?v=7",
+        "https://bottega-veneta.dam.kering.com/m/400f16b7749f8947/eCom-608810V1OW18425_B.jpg?v=7",
+        "https://bottega-veneta.dam.kering.com/m/15043f1e775397d1/eCom-608810V1OW18425_C.jpg?v=5",
+        "https://bottega-veneta.dam.kering.com/m/4ddab43df63b6fe2/eCom-608810V1OW18425_D.jpg?v=4",
+        "https://bottega-veneta.dam.kering.com/m/5a781e7ea80ecd37/Small-608810V1OW18425_A.jpg?v=7"
+      ],
+      "localImages": [
+        "/products/bv-pdp/608810v1ow18425/1.jpg",
+        "/products/bv-pdp/608810v1ow18425/2.jpg",
+        "/products/bv-pdp/608810v1ow18425/3.jpg",
+        "/products/bv-pdp/608810v1ow18425/4.jpg",
+        "/products/bv-pdp/608810v1ow18425/5.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 7570.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-women",
+        "bv-women-bags",
+        "bv-women-bags-cabat"
+      ],
+      "leafId": "bv-women-bags-cabat",
+      "cgid": "women-cabat",
+      "hubCategory": "bags"
+    },
+    {
+      "id": "866062V2EZ03816",
+      "sku": "866062V2EZ03816",
+      "internalId": "814298017",
+      "name": "Soft Knot",
+      "brand": "bottega veneta",
+      "color": "Basil",
+      "gender": "Women",
+      "link": "https://www.bottegaveneta.com/en-gb/soft-knot-basil-866062V2EZ03816.html",
+      "url": "https://www.bottegaveneta.com/en-gb/soft-knot-basil-866062V2EZ03816.html",
+      "gbpPrice": 3830.0,
+      "listGbpPrice": null,
+      "inStock": true,
+      "shortDescription": [
+        "Lining: Unlined",
+        "Colour: Basil",
+        "Hardware: Brass Vibrato finish"
+      ],
+      "longDescription": [
+        "Soft Intreccio leather minaudière",
+        "Single compartment",
+        "Metallic knot clasp closure"
+      ],
+      "compactedLongDesc": "Minaudière clutch in soft Intreccio leather, featuring a sleek signature knot closure.",
+      "composition": "• Material: Calfskin",
+      "material": "",
+      "productCare": "WEAR AND CARE\n\nThis is the product of Italian craftsmanship made in a natural leather. Any variations, veining, marks, or irregularities are unique characteristics we embrace. \n\nStore and handle with care. Avoid contact with any liquids, creams, oils, make-up, perfumes, direct sunlight, heat and abrasive surfaces.",
+      "sizeModel": "• Height: 11.5 cm | 4.5\"\n\n• Width: 19 cm | 7.5\"\n\n• Depth: 4 cm | 1.6\"",
+      "sizeChartId": "",
+      "sizeGuide": null,
+      "imageUrls": [
+        "https://bottega-veneta.dam.kering.com/asset/ce8e6908-ce10-4fb6-a100-afb87973e3e4/eCom/866062V2EZ03816_A.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/3ff2f300-0761-4b2b-bf55-861be227ece5/eCom/866062V2EZ03816_B.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/1a02bf12-e89c-4993-8294-5cd364d1185b/eCom/866062V2EZ03816_C.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/4e5c3c3c-faf3-46e3-b2e4-1b1e6567b5d4/eCom/866062V2EZ03816_D.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/0d36a67b-76f1-43e1-95fe-6337610bd629/eCom/866062V2EZ03816_F.jpg?v=1",
+        "https://bottega-veneta.dam.kering.com/asset/6d93e3cb-50fb-4f78-ad5b-9f6e0806d6f2/eCom/866062V2EZ03816_G.jpg?v=2",
+        "https://bottega-veneta.dam.kering.com/asset/ce8e6908-ce10-4fb6-a100-afb87973e3e4/Small/866062V2EZ03816_A.jpg?v=2"
+      ],
+      "localImages": [
+        "/products/bv-pdp/866062v2ez03816/1.jpg",
+        "/products/bv-pdp/866062v2ez03816/2.jpg",
+        "/products/bv-pdp/866062v2ez03816/3.jpg",
+        "/products/bv-pdp/866062v2ez03816/4.jpg",
+        "/products/bv-pdp/866062v2ez03816/5.jpg",
+        "/products/bv-pdp/866062v2ez03816/6.jpg",
+        "/products/bv-pdp/866062v2ez03816/7.jpg"
+      ],
+      "sizes": [
+        {
+          "id": "U",
+          "value": "U",
+          "displayValue": "U",
+          "inStock": true,
+          "gbpPrice": 3830.0,
+          "listGbpPrice": null
+        }
+      ],
+      "collections": [
+        "bottega-veneta",
+        "bottega-veneta-bags",
+        "bv-women",
+        "bv-women-bags",
+        "bv-women-bags-knot-clutch"
+      ],
+      "leafId": "bv-women-bags-knot-clutch",
+      "cgid": "women-knot-clutch",
       "hubCategory": "bags"
     }
   ]
