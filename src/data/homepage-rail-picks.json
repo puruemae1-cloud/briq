@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-11-21T19:46:43Z",
+  "generatedAt": "2026-11-22T20:14:58Z",
   "limit": 4,
   "rails": {
     "luxury": {
       "productIds": [
-        "bv-a003brv6zf02201",
-        "bv-871198v6or01010",
-        "bv-875219v6oe01010",
-        "bv-871316v6ko02549"
+        "ps-navy-mid-fit-garment-dye-chinos",
+        "ps-relaxed-tapered-fit-navy-cotton-twill-trousers",
+        "ps-black-ink-works-print-viscose-blend-shirt",
+        "ps-black-embroidered-flower-t-shirt"
       ],
       "brands": [
-        "보테가-베네타",
-        "보테가-베네타",
-        "보테가-베네타",
-        "보테가-베네타"
+        "paul-smith",
+        "paul-smith",
+        "paul-smith",
+        "paul-smith"
       ]
     },
     "watches": {
@@ -32,44 +32,44 @@
     },
     "bags": {
       "productIds": [
-        "vw-4e010002-w00wg-burnt-orange",
-        "vw-4803001cw-l00bx-black",
-        "vw-46030014w-n000k-black",
-        "vw-46030014w-l00eo-black"
-      ],
-      "brands": [
-        "vivienne-westwood",
-        "vivienne-westwood",
-        "vivienne-westwood",
-        "vivienne-westwood"
-      ]
-    },
-    "shoes": {
-      "productIds": [
-        "ce-356834582c-38no",
-        "ce-352193676c-38no",
-        "ce-352213958c-38no",
-        "ce-352213886c-36ps"
-      ],
-      "brands": [
-        "celine",
-        "celine",
-        "celine",
-        "celine"
-      ]
-    },
-    "accessories": {
-      "productIds": [
-        "mb-zipped-flat-pouch",
-        "mb-zipped-credit-card-slip",
-        "mb-wine-carrier",
-        "mb-waxed-baseball-cap"
+        "mb-xl-delilah",
+        "mb-woven-tote",
+        "mb-tree-tote-raffia",
+        "mb-tree-tote"
       ],
       "brands": [
         "mulberry",
         "mulberry",
         "mulberry",
         "mulberry"
+      ]
+    },
+    "shoes": {
+      "productIds": [
+        "bv-a009yhv5u221003",
+        "bv-a007byv6vc09063",
+        "bv-a009ygv7bb12782",
+        "bv-a007byv6vc09263"
+      ],
+      "brands": [
+        "보테가-베네타",
+        "보테가-베네타",
+        "보테가-베네타",
+        "보테가-베네타"
+      ]
+    },
+    "accessories": {
+      "productIds": [
+        "vw-3g01003p-c006f-flag",
+        "vw-1f020001-w012o-giant-mac-andy-blue",
+        "vw-3101000h-c006d-sex",
+        "vw-8102002b-j009m-black"
+      ],
+      "brands": [
+        "vivienne-westwood",
+        "vivienne-westwood",
+        "vivienne-westwood",
+        "vivienne-westwood"
       ]
     },
     "sports": {
@@ -88,12 +88,6 @@
     }
   },
   "brands": {
-    "celine": [
-      "shoes",
-      "shoes",
-      "shoes",
-      "shoes"
-    ],
     "christopher-ward": [
       "watches",
       "watches",
@@ -107,22 +101,28 @@
       "sports"
     ],
     "mulberry": [
-      "accessories",
-      "accessories",
-      "accessories",
-      "accessories"
-    ],
-    "vivienne-westwood": [
       "bags",
       "bags",
       "bags",
       "bags"
     ],
-    "보테가-베네타": [
+    "paul-smith": [
       "luxury",
       "luxury",
       "luxury",
       "luxury"
+    ],
+    "vivienne-westwood": [
+      "accessories",
+      "accessories",
+      "accessories",
+      "accessories"
+    ],
+    "보테가-베네타": [
+      "shoes",
+      "shoes",
+      "shoes",
+      "shoes"
     ]
   },
   "overlaps": {},
