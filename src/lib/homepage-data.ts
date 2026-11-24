@@ -31,7 +31,7 @@ export type HomepageData = {
 };
 
 /** Homepage Flannels rail size — highest-discount winter layers. */
-export const FLANNELS_HOME_LIMIT = 120;
+export const FLANNELS_HOME_LIMIT = 140;
 
 
 function discountRatio(p: Product): number {
