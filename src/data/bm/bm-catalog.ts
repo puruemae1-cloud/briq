@@ -13,7 +13,8 @@ function krwFromGbp(gbp: number): number {
 }
 
 const sampleGbp = 6450;
-const sampleKrw = krwFromGbp(sampleGbp);
+/** Silent sitewide −5% (same as other non-Flannels catalogs). */
+const sampleKrw = Math.round((krwFromGbp(sampleGbp) * 0.95) / 1000) * 1000;
 
 const _products: Product[] = [
   {
